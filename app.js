@@ -48,14 +48,14 @@
         license.href=story.photoLicenseUrl;license.rel="noopener noreferrer";license.target="_blank";
         credit.append(license);
       }
-      imgLink.after(credit);
+      card.append(credit);
     }
     const content=element("div","story-content");
     const meta=element("div","story-meta");meta.append(element("span","story-category",story.category || "News"),element("time","story-date",formatDate(story.date)));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
     const summary=element("p","story-excerpt",story.summary || "");
     const bottom=element("div","story-bottom");const read=element("a",null,"Read story");read.href=articleURL(story);read.setAttribute("aria-label",`Read ${story.title}`);
-    bottom.append(read,element("span","story-arrow","↗"));content.append(meta,title,summary,bottom);card.append(imgLink,content);
+    bottom.append(read,element("span","story-arrow","↗"));content.append(meta,title,summary,bottom);card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderCards() {
