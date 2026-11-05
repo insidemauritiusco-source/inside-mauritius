@@ -139,6 +139,16 @@
       sourceLine.append(sourceLink);
       body.append(sourceLine);
     }
+    if(typeof story.sourceUrl2 === "string" && /^https:\/\//i.test(story.sourceUrl2)) {
+      const sourceLine2=element("p","article-source");
+      sourceLine2.append(document.createTextNode("Second reporting source: "));
+      const sourceLink2=element("a",null,story.sourceName2 || "Read second report");
+      sourceLink2.href=story.sourceUrl2;
+      sourceLink2.target="_blank";
+      sourceLink2.rel="noopener noreferrer";
+      sourceLine2.append(sourceLink2);
+      body.append(sourceLine2);
+    }
     embedVideo(story.video,body);
     $("shareFeedback").textContent="";
     document.title=`${story.title} | Inside Mauritius`;
