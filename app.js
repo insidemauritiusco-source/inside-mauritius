@@ -1,7 +1,9 @@
 /* Inside Mauritius: lightweight static-site renderer. No account, server or tracking required. */
 (() => {
   "use strict";
-  const raw = Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [];
+  const dashboardPosts = Array.isArray(window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES) ? window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES : [];
+  const legacyPosts = Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [];
+  const raw = [...dashboardPosts, ...legacyPosts];
   const articles = raw.filter(item => item && typeof item.id === "string" && typeof item.title === "string");
   const config = window.INSIDE_MAURITIUS_CONFIG || {};
   const $ = (id) => document.getElementById(id);
