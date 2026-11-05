@@ -90,6 +90,16 @@
     $("articleCaption").textContent=story.imageAlt||"Inside Mauritius editorial illustration";
     const body=$("articleBody");body.replaceChildren();
     for(const paragraph of (Array.isArray(story.content)?story.content:[])) if(typeof paragraph==="string" && paragraph.trim()) body.append(element("p",null,paragraph));
+    if(typeof story.sourceUrl === "string" && /^https:\/\//i.test(story.sourceUrl)) {
+      const sourceLine=element("p","article-source");
+      sourceLine.append(document.createTextNode("Original source: "));
+      const sourceLink=element("a",null,story.sourceName || "Read source report");
+      sourceLink.href=story.sourceUrl;
+      sourceLink.target="_blank";
+      sourceLink.rel="noopener noreferrer";
+      sourceLine.append(sourceLink);
+      body.append(sourceLine);
+    }
     embedVideo(story.video,body);
     $("shareFeedback").textContent="";
     document.title=`${story.title} | Inside Mauritius`;
