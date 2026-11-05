@@ -36,6 +36,10 @@
     const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
     img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) img.src="cover-mauritius.svg";};
     imgLink.append(img,element("span","image-corner",story.label || "INSIDE MAURITIUS"));
+    if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
+      const credit=element("span","photo-inline-credit","Illustrative photo · "+(story.photoAuthor||"Wikimedia Commons")+" · "+(story.photoLicense||""));
+      card.append(credit);
+    }
     const content=element("div","story-content");
     const meta=element("div","story-meta");meta.append(element("span","story-category",story.category || "News"),element("time","story-date",formatDate(story.date)));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
@@ -64,6 +68,13 @@
     document.querySelector(".hero-photo").src=imageFor(lead);
     document.querySelector(".hero-photo").alt=lead.imageAlt || "Mauritius landscape";
     document.querySelector(".hero-link").href=articleURL(lead);
+    const hero=$("heroFeature");
+    const oldCredit=hero.querySelector(".hero-photo-credit");
+    if(oldCredit) oldCredit.remove();
+    if(lead.photoSourceUrl && /^https:\/\//i.test(lead.photoSourceUrl)) {
+      const credit=element("span","hero-photo-credit","Illustrative archive photo · "+(lead.photoAuthor||"Wikimedia Commons")+" · "+(lead.photoLicense||""));
+      hero.append(credit);
+    }
   }
   function embedVideo(url, parent) {
     if(typeof url!=="string" || !url.trim()) return;
