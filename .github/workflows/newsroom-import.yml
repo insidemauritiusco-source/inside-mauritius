@@ -1,0 +1,54 @@
+name: Newsroom link importer
+
+on:
+  repository_dispatch:
+    types: [inside-mauritius-import]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: newsroom-imports
+  cancel-in-progress: false
+
+jobs:
+  import-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Extract public metadata and prepare review draft
+        env:
+          PAYLOAD_JSON: ${{ toJSON(github.event.client_payload) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          data=json.loads(os.environ["PAYLOAD_JSON"])
+          with open("newsroom-import-request.json","w",encoding="utf8") as f:
+              json.dump({"id":data.get("id"),"sources":data.get("sources")},f)
+          PY
+          python3 scripts/newsroom_import.py
+      - name: Save review result (never auto-publish article)
+        run: |
+          mkdir -p newsroom-imports
+          python3 - <<'PY'
+          import json, pathlib
+          p=pathlib.Path("newsroom-import-result.json")
+          d=json.loads(p.read_text(encoding="utf8"))
+          dest=pathlib.Path("newsroom-imports")/(d["id"]+".json")
+          dest.write_text(p.read_text(encoding="utf8"),encoding="utf8")
+          print(dest)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newsroom-imports
+          git commit -m "Save news source metadata for editor review" || exit 0
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            git push origin HEAD:main && exit 0
+            sleep 2
+          done
+          exit 1
