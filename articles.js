@@ -15,12 +15,88 @@
 */
 window.INSIDE_MAURITIUS_CONFIG = {
   contactEmail: "", // e.g. news@yourdomain.com (only enter an address you own)
-  breakingHeadline: "Inside Mauritius is now online — local stories, community voices and world perspectives.",
+  breakingHeadline: "Water security: Business Mauritius launches a six-week water-saving toolkit for companies.",
   breakingIsBreaking: false, // set to true only for verified breaking news
   siteName: "Inside Mauritius"
 };
 
 window.INSIDE_MAURITIUS_ARTICLES = [
+  {
+    "id": "business-mauritius-water-saving-toolkit-2026",
+    "category": "Mauritius",
+    "label": "WATER SECURITY",
+    "title": "Business Mauritius launches water-saving initiative for companies",
+    "summary": "A six-week toolkit unveiled on 4 November aims to help employers and staff reduce water use amid Mauritius' supply pressures.",
+    "date": "2026-11-04",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Editorial illustration of Mauritius landscape; not a photograph of the forum",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Business Mauritius introduced a Water-Saving Toolkit during its Water Stewardship Forum on Wednesday, 4 November 2026. The event was organised with support from the Mauritius Chamber of Agriculture.",
+      "The six-week initiative encourages companies and their employees to take practical steps to reduce water consumption. Business Mauritius called for closer cooperation between the public and private sectors as the island addresses ongoing water-security challenges.",
+      "Energy and Public Utilities Minister Patrick Assirvaden was among those present at the forum, according to Top FM. The initiative focuses on responsible use of water in workplaces; it is not a notice of household water-distribution hours.",
+      "This article is an original summary of reporting published on 4 November 2026. For local supply notices, consult the Central Water Authority's official announcements."
+    ],
+    "sourceName": "Top FM Mauritius — 4 November 2026",
+    "sourceUrl": "https://www.topfm.mu/actualites/securite-hydrique-business-mauritius-appelle-un-effort-national-pour-preserver-les-ressources-en-eau"
+  },
+  {
+    "id": "mauritius-planters-water-concerns-government-nov-2026",
+    "category": "Mauritius",
+    "label": "AGRICULTURE",
+    "title": "Farmers raise irrigation and supply concerns at government meeting",
+    "summary": "At a meeting in Réduit, planters highlighted water shortages, farming inputs and the challenges facing local agriculture.",
+    "date": "2026-11-04",
+    "image": "cover-city.svg",
+    "imageAlt": "Generic editorial illustration of Mauritius; not an image from the agriculture meeting",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Local planters discussed drought-related irrigation difficulties, pesticide management and broader operational concerns with government representatives at Bonâme Hall in Réduit, the Government Information Service reported on 4 November.",
+      "The meeting was co-chaired by Agro-Industry Minister Arvin Boolell and Junior Minister Gilles Fabrice David. The minister encouraged more research and practical responses to climate-related pressures on agriculture.",
+      "Government officials said 257.9 hectares had been earmarked for planters. Participants also called for continued dialogue on the problems affecting agricultural production.",
+      "This is an original summary of the Government Information Service's report, not a first-hand account of the meeting."
+    ],
+    "sourceName": "Government Information Service — 4 November 2026",
+    "sourceUrl": "https://gis.govmu.org/gis/?id=2864&page_id=4042"
+  },
+  {
+    "id": "75-complete-adult-literacy-programme-mauritius-2026",
+    "category": "Community",
+    "label": "EDUCATION",
+    "title": "75 participants complete adult literacy programme in Mauritius",
+    "summary": "Graduates received certificates after completing training designed to strengthen everyday literacy, numeracy and life skills.",
+    "date": "2026-11-04",
+    "image": "cover-voices.svg",
+    "imageAlt": "Illustration representing learning and community discussion; not a ceremony photograph",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Seventy-five participants completed the National Certificate Level 1 in Adult Literacy and were recognised at a ceremony at the Paul Octave Wiéhé Auditorium in Réduit, according to a Government Information Service report dated 4 November.",
+      "The programme is a joint initiative of the Mauritius Institute of Training and Development and the National Social Inclusion Foundation. It helps adults develop foundational reading, numeracy, information-technology and life skills.",
+      "Officials highlighted the value of lifelong learning and access to education. The programme involved support from 11 non-governmental organisations, according to the government report.",
+      "This Inside Mauritius item summarises the published government announcement."
+    ],
+    "sourceName": "Government Information Service — 4 November 2026",
+    "sourceUrl": "https://gis.govmu.org/gis/?id=2870&page_id=4042"
+  },
+  {
+    "id": "cooperative-diwali-market-port-louis-nov-2026",
+    "category": "Community",
+    "label": "LOCAL EVENTS",
+    "title": "Diwali cooperative market showcases Mauritian-made products in Port Louis",
+    "summary": "The Victoria Urban Terminal fair was scheduled for 3–5 November, bringing together local artisans and cooperative producers.",
+    "date": "2026-11-03",
+    "image": "cover-community.svg",
+    "imageAlt": "Decorative illustration representing Mauritian community life; not a photo of the market",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "A Cooperative Market Fair was scheduled to take place at Victoria Urban Terminal in Port Louis from 3 to 5 November 2026, according to the Government Information Service.",
+      "Organised by the Ministry of Industry, SME and Cooperatives ahead of Diwali, the fair features locally made craft products, food items, decorative plants and other goods offered by cooperative societies.",
+      "The published schedule listed opening hours of 9:00 a.m. to 4:30 p.m. These are the announced dates and hours, not a real-time confirmation that stalls are currently open.",
+      "This article is an original summary of an official announcement published on 3 November 2026."
+    ],
+    "sourceName": "Government Information Service — 3 November 2026",
+    "sourceUrl": "https://gis.govmu.org/gis/?id=2861&page_id=4008"
+  },
   {
     id: "welcome-inside-mauritius",
     category: "Mauritius",
