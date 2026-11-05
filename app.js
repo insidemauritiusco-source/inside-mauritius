@@ -34,7 +34,7 @@
     const card = element("article","story-card");
     const imgLink = element("a","story-image-link");imgLink.href=articleURL(story);imgLink.setAttribute("aria-label",`Read ${story.title}`);
     const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
-    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) img.src="cover-mauritius.svg";};
+    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) {img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; requested archive photograph could not load";const credit=card.querySelector(".photo-inline-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     imgLink.append(img,element("span","image-corner",story.label || "INSIDE MAURITIUS"));
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
       const credit=element("span","photo-inline-credit");
@@ -77,6 +77,7 @@
     document.querySelector(".hero-copy p").textContent=lead.summary;
     document.querySelector(".hero-photo").src=imageFor(lead);
     document.querySelector(".hero-photo").alt=lead.imageAlt || "Mauritius landscape";
+    document.querySelector(".hero-photo").onerror=()=>{const image=document.querySelector(".hero-photo");if(!image.src.endsWith("cover-mauritius.svg")){image.src="cover-mauritius.svg";image.alt="Generic Mauritius illustration";const credit=$("heroFeature").querySelector(".hero-photo-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     document.querySelector(".hero-link").href=articleURL(lead);
     const hero=$("heroFeature");
     const oldCredit=hero.querySelector(".hero-photo-credit");
@@ -109,6 +110,7 @@
     const byline=$("articleByline");byline.replaceChildren(element("strong",null,story.author||"Inside Mauritius"),element("span",null,"•"),element("time",null,formatDate(story.date,true)));
     const img=$("articleImage");img.src=imageFor(story);img.alt=story.imageAlt||"Editorial illustration";
     const caption=$("articleCaption");caption.replaceChildren();
+    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")){img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; archive photograph unavailable";caption.textContent="Generic Inside Mauritius illustration. The archive photograph could not be loaded.";}};
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
       caption.append(document.createTextNode((story.photoCaption || "Illustrative archive photograph") + " "));
       const credit=element("a",null,"Photo: " + (story.photoAuthor || "Wikimedia Commons"));
