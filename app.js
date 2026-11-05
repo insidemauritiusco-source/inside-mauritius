@@ -87,7 +87,21 @@
     $("articleDeck").textContent=story.summary||"";
     const byline=$("articleByline");byline.replaceChildren(element("strong",null,story.author||"Inside Mauritius"),element("span",null,"•"),element("time",null,formatDate(story.date,true)));
     const img=$("articleImage");img.src=imageFor(story);img.alt=story.imageAlt||"Editorial illustration";
-    $("articleCaption").textContent=story.imageAlt||"Inside Mauritius editorial illustration";
+    const caption=$("articleCaption");caption.replaceChildren();
+    if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
+      caption.append(document.createTextNode((story.photoCaption || "Illustrative archive photograph") + " "));
+      const credit=element("a",null,"Photo: " + (story.photoAuthor || "Wikimedia Commons"));
+      credit.href=story.photoSourceUrl;credit.target="_blank";credit.rel="noopener noreferrer";
+      caption.append(credit);
+      if(story.photoLicense && story.photoLicenseUrl && /^https:\/\//i.test(story.photoLicenseUrl)) {
+        caption.append(document.createTextNode(" · "));
+        const licence=element("a",null,story.photoLicense);
+        licence.href=story.photoLicenseUrl;licence.target="_blank";licence.rel="noopener noreferrer";
+        caption.append(licence);
+      }
+    } else {
+      caption.textContent=story.imageAlt || "Inside Mauritius editorial illustration";
+    }
     const body=$("articleBody");body.replaceChildren();
     for(const paragraph of (Array.isArray(story.content)?story.content:[])) if(typeof paragraph==="string" && paragraph.trim()) body.append(element("p",null,paragraph));
     if(typeof story.sourceUrl === "string" && /^https:\/\//i.test(story.sourceUrl)) {
