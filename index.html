@@ -1,65 +1,114 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inside Mauritius | News</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f5f8;color:#17243a}
-header{background:#102747;color:white;padding:22px 16px;text-align:center}
-header h1{margin:0;font-size:28px}
-header p{margin:8px 0 0;color:#cbd8e9}
-nav{display:flex;justify-content:center;gap:18px;background:#fff;padding:15px;flex-wrap:wrap}
-nav a{color:#102747;text-decoration:none;font-weight:bold}
-.breaking{background:#c91f32;color:white;padding:13px;text-align:center;font-weight:bold}
-main{max-width:900px;margin:auto;padding:20px}
-.hero{background:#fff;padding:25px;border-radius:12px;margin-bottom:20px}
-.hero h2{font-size:25px}
-.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 2px 8px #0001}
-.card h3{margin-top:0}
-.tag{color:#c91f32;font-weight:bold;font-size:13px}
-footer{background:#102747;color:white;text-align:center;padding:25px;margin-top:30px}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Inside Mauritius brings you stories, perspectives and video coverage from Mauritius and around the world.">
+  <meta name="author" content="Inside Mauritius">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inside Mauritius">
+  <meta property="og:title" content="Inside Mauritius | Local News. Wider Perspective.">
+  <meta property="og:description" content="The independent home for Mauritius stories, community voices and world updates.">
+  <meta property="og:url" content="https://mr.insidemauritius.com/">
+  <meta property="og:image" content="https://mr.insidemauritius.com/social-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mr.insidemauritius.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <title>Inside Mauritius | Local News. Wider Perspective.</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"Inside Mauritius","url":"https://mr.insidemauritius.com/","logo":"https://mr.insidemauritius.com/logo.png","description":"Mauritius-focused news and editorial website"}</script>
+  <script defer src="articles.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
-<header>
-<h1>INSIDE MAURITIUS</h1>
-<p>Local News • Breaking News • World Updates</p>
-</header>
-<nav>
-<a href="#home">Home</a>
-<a href="#news">Mauritius</a>
-<a href="#world">World</a>
-<a href="#contact">Contact</a>
-</nav>
-<div class="breaking">BREAKING NEWS | Inside Mauritius</div>
-<main id="home">
-<section class="hero">
-<h2>Welcome to Inside Mauritius</h2>
-<p>Your destination for news, stories and updates from Mauritius and around the world.</p>
-</section>
-<h2 id="news">Latest News</h2>
-<article class="card">
-<p class="tag">MAURITIUS</p>
-<h3>Latest Mauritius Headlines</h3>
-<p>Local news and important updates will appear here.</p>
-</article>
-<article class="card" id="world">
-<p class="tag">WORLD NEWS</p>
-<h3>International Updates</h3>
-<p>Follow major stories from around the world.</p>
-</article>
-<section class="card" id="contact">
-<h3>Contact Inside Mauritius</h3>
-<p>Follow our social media channels for more updates.</p>
-</section>
-</main>
-<footer>
-<p>© 2026 Inside Mauritius</p>
-<p>News • Information • Community</p>
-</footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="flag-stripe" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="utility-strip">
+    <div class="container utility-inner">
+      <div class="utility-left"><span class="live-pulse" aria-hidden="true"></span><span>MAURITIUS TIME</span><time id="liveClock" aria-label="Current time in Mauritius">--:--:--</time><span class="utility-divider">/</span><span id="liveDate">Mauritius · UTC+4</span></div>
+      <span class="utility-right">Independent stories. Local perspective.</span>
+    </div>
+  </div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Inside Mauritius home"><img src="logo.png" alt="Inside Mauritius official logo" width="195" height="132"><span class="brand-tagline">LOCAL NEWS <span aria-hidden="true">•</span> WORLD UPDATES</span></a>
+      <div class="header-side">
+        <span class="header-edition"><strong>THE MAURITIUS EDITION</strong><small>Closer to the stories that matter.</small></span>
+        <a class="send-tip" href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 3 9.5 14.5M21 3l-7 18-4.5-8.5L1 8z"/></svg> Share a story</a>
+      </div>
+    </div>
+  </header>
+  <div class="nav-wrap">
+    <div class="container nav-inner">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" data-nav="home">Home</a>
+        <a class="nav-link" href="#latest" data-filter-nav="Mauritius">Mauritius</a>
+        <a class="nav-link" href="#latest" data-filter-nav="World">World</a>
+        <a class="nav-link" href="#latest" data-filter-nav="Community">Community</a>
+        <a class="nav-link" href="#videos">Videos</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <a href="#latest" class="nav-search" aria-label="Browse all stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg></a>
+    </div>
+  </div>
+  <div class="breaking-ribbon" role="region" aria-label="Latest news ticker">
+    <div class="container breaking-inner"><span class="breaking-label"><span class="breaking-dot" aria-hidden="true"></span> NEWSROOM</span><p id="tickerText">Inside Mauritius is now online — local stories, community voices and world perspectives.</p><a href="#latest">Read more <span aria-hidden="true">↗</span></a></div>
+  </div>
+
+  <main id="main">
+    <div id="homePage">
+      <section class="top-section container" id="home" aria-labelledby="heroHeading">
+        <div class="section-eyebrow"><span class="eyebrow-line"></span> INSIDE THE HEADLINES <span class="eyebrow-date" id="todayLine"></span></div>
+        <div class="feature-grid">
+          <article class="lead-feature" id="heroFeature">
+            <img class="hero-photo" src="cover-mauritius.svg" alt="Illustration of Mauritius mountains and coast" width="1200" height="720">
+            <div class="hero-shade"></div>
+            <div class="hero-copy"><span class="hero-kicker">THE LEAD STORY</span><h1 id="heroHeading">A fresh perspective on Mauritius and the world.</h1><p>Welcome to Inside Mauritius, your place for stories that connect our island to the world.</p><a class="hero-link" href="#latest">Explore our stories <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <div class="feature-side">
+            <article class="side-feature side-world"><span class="side-top"><span class="side-label">WORLD VIEW</span><span class="side-index">01 / 02</span></span><div><h2>Beyond the island. Into the conversation.</h2><p>Stories that connect Mauritius with global perspectives.</p><a href="#latest" data-filter-nav="World">Explore world news <span aria-hidden="true">↗</span></a></div></article>
+            <article class="side-feature side-community"><span class="side-top"><span class="side-label">OUR COMMUNITY</span><span class="side-index">02 / 02</span></span><div><h2>Every community has a story.</h2><a href="#latest" data-filter-nav="Community">Discover more <span aria-hidden="true">↗</span></a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="coverage-band" aria-label="Our coverage">
+        <div class="container coverage-inner"><span class="coverage-intro">COVERING WHAT MATTERS</span><a href="#latest" data-filter-nav="Mauritius"><span class="coverage-icon">◈</span> Mauritius</a><a href="#latest" data-filter-nav="World"><span class="coverage-icon">◎</span> World</a><a href="#latest" data-filter-nav="Community"><span class="coverage-icon">⌘</span> Community</a><a href="#videos"><span class="coverage-icon">▷</span> Video stories</a></div>
+      </section>
+
+      <section class="news-section container" id="latest" aria-labelledby="latestHeading">
+        <div class="section-title-line"><div><span class="section-label">THE NEWS DESK</span><h2 id="latestHeading">Latest stories<span class="heading-dot">.</span></h2><p class="section-description">Mauritius first, with the world in view.</p></div><span class="issue-index">INSIDE MAURITIUS / STORIES</span></div>
+        <div class="news-toolbar">
+          <div class="filter-list" id="filterList" role="group" aria-label="Filter stories by category">
+            <button class="filter-button selected" type="button" data-filter="All" aria-pressed="true">All stories</button>
+            <button class="filter-button" type="button" data-filter="Mauritius" aria-pressed="false">Mauritius</button>
+            <button class="filter-button" type="button" data-filter="World" aria-pressed="false">World</button>
+            <button class="filter-button" type="button" data-filter="Community" aria-pressed="false">Community</button>
+            <button class="filter-button" type="button" data-filter="Video" aria-pressed="false">Video</button>
+          </div>
+          <label class="news-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.7"/><path d="m15 15 6 6"/></svg><span class="sr-only">Search stories</span><input id="storySearch" type="search" placeholder="Search stories..." autocomplete="off"></label>
+        </div>
+        <div class="story-grid" id="storyGrid" aria-live="polite"></div>
+        <p class="results-note" id="resultsNote"></p>
+        <div class="empty-results" id="emptyResults" hidden><span aria-hidden="true">⌕</span><h3>No matching stories</h3><p>Try another search or choose a different category.</p><button type="button" id="resetFilters">View all stories</button></div>
+      </section>
+
+      <section class="video-section" id="videos" aria-labelledby="videoHeading">
+        <div class="container video-inner"><div class="video-copy"><span class="eyebrow-light">IN FOCUS / VIDEO</span><h2 id="videoHeading">Stories worth <em>watching.</em></h2><p>Interviews, reports and first-hand perspectives from Mauritius. Video reports will appear here as they're published.</p><a href="#latest" data-filter-nav="Video" class="video-button">Browse video stories <span aria-hidden="true">↗</span></a></div><div class="video-art" aria-hidden="true"><img src="cover-video.svg" alt="" width="720" height="500"><span class="play-disc">▶</span><span class="video-caption">THE INSIDE MAURITIUS VIDEO DESK</span></div></div>
+      </section>
+
+      <section class="about-section container" id="about" aria-labelledby="aboutHeading"><div><span class="section-label">WHO WE ARE</span><h2 id="aboutHeading">From the island.<br><em>For the curious.</em></h2></div><div class="about-copy"><p><strong>Inside Mauritius</strong> is a growing digital destination for news, local perspectives, culture and international updates.</p><p>We are building a place where stories from Mauritius can be explored in a clear, accessible and mobile-friendly format.</p><a href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contactHeading"><div class="container contact-inner"><div><span class="eyebrow-light">BE PART OF THE STORY</span><h2 id="contactHeading">Something happening<br>in your community?</h2><p>Have a news tip, a video or a local story to share? Reach out to the Inside Mauritius team.</p></div><div class="contact-card"><span class="contact-mini">LET'S CONNECT</span><h3>Have a story to tell?</h3><p id="contactInfo">Contact information will be added here by the website owner.</p><a id="contactAction" class="contact-cta" href="mailto:" hidden>Contact the newsroom <span aria-hidden="true">↗</span></a><span class="contact-foot">Mauritius · Indian Ocean</span></div></div></section>
+    </div>
+
+    <article id="articlePage" class="article-page container" hidden aria-live="polite"><a href="#latest" class="back-link">← All stories</a><div class="article-topline" id="articleTopline"></div><h1 class="article-title" id="articleTitle"></h1><p class="article-deck" id="articleDeck"></p><div class="article-byline" id="articleByline"></div><figure class="article-figure"><img id="articleImage" src="cover-mauritius.svg" alt="" width="1200" height="720"><figcaption id="articleCaption"></figcaption></figure><div class="article-body-wrap"><div class="article-body" id="articleBody"></div><aside class="article-aside"><div class="aside-label">SHARE THIS STORY</div><button type="button" id="shareStory" class="share-button">Share article ↗</button><p id="shareFeedback" role="status"></p><div class="aside-rule"></div><span>INSIDE MAURITIUS</span><small>Local News · World Updates</small></aside></div><div class="article-end"><a href="#latest">← More from Inside Mauritius</a></div></article>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><div class="footer-brand"><a href="#home" aria-label="Back to Inside Mauritius homepage"><span class="footer-wordmark">INSIDE <b>MAURITIUS</b><span class="heading-dot">.</span></span></a><p>Local stories. Wider perspective.<br>Made for Mauritius, open to the world.</p></div><div class="footer-links"><div><h3>EXPLORE</h3><a href="#home">Home</a><a href="#latest">Latest stories</a><a href="#videos">Video desk</a></div><div><h3>MORE</h3><a href="#about">About us</a><a href="#contact">Contact</a><a href="#top">Back to top ↑</a></div></div></div><div class="container footer-bottom"><span>© <span id="copyrightYear">2026</span> Inside Mauritius. All rights reserved.</span><span>mr.insidemauritius.com <span class="footer-heart">♥</span> Mauritius</span></div></footer>
 </body>
 </html>
-
