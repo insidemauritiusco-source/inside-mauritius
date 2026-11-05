@@ -27,6 +27,22 @@
 <aside class="panel"><div class="panel-head"><h2>Newsroom articles <span id="count" style="color:#8995a5">(0)</span></h2><button class="btn" id="newArticle" type="button">+ New</button></div><div id="stories" class="stack"><p class="empty">Loading stories…</p></div><div style="padding:16px;border-top:1px solid #edf0f3"><p class="help" style="margin:0">These are the stories created using this dashboard. Your earlier published news remains on the site.</p></div></aside>
 <section class="panel"><div class="panel-head"><h2 id="editorTitle">New news article</h2><span class="tag">Inside Mauritius</span></div>
 
+
+<section class="quick-panel" id="sourceImporter" aria-labelledby="sourceImportTitle">
+  <div class="quick-heading"><span class="quick-icon">🔗</span><div><h2 id="sourceImportTitle">Import from 1 or 2 news links</h2><p>Find public headlines, summaries, dates and image suggestions automatically. Review before publication.</p></div></div>
+  <div class="field"><label for="sourceOne">News link 1 *</label><input id="sourceOne" type="url" inputmode="url" placeholder="https://defimedia.info/..." autocomplete="off"></div>
+  <div class="field"><label for="sourceTwo">News link 2 (optional, same story)</label><input id="sourceTwo" type="url" inputmode="url" placeholder="https://another-news-site.mu/..." autocomplete="off"></div>
+  <button class="btn primary quick-action" type="button" id="autoImportLinks">Import links automatically</button>
+  <p id="sourceImportState" class="quick-message" role="status" aria-live="polite">Uses public page metadata. Some sites may block extraction. You must check facts and photograph rights.</p>
+  <div class="preview" id="sourceImportPreview" hidden>
+    <h3 style="font-size:19px;margin:0 0 8px">Imported source preview</h3>
+    <div id="sourceImportSources" style="display:grid;gap:9px"></div>
+    <img id="sourceImportImage" alt="Source publisher's preview image; not cleared for reuse" referrerpolicy="no-referrer" hidden style="width:100%;max-width:260px;max-height:160px;object-fit:cover;margin:10px 0">
+    <p class="help"><strong>Image suggestions are for reference only.</strong> You must own or have rights to republish an image. An unrelated original illustration is safer when rights are unknown.</p>
+    <button class="btn dark" type="button" id="applyImported" disabled>Fill article editor for review</button>
+  </div>
+</section>
+
 <div class="quick-panel" id="quickPanel" aria-labelledby="quickTitle">
   <div class="quick-heading"><span class="quick-icon">⚡</span><div><h2 id="quickTitle">Quick Import</h2><p>Paste your news, choose a photo, and automatically fill the editor below.</p></div></div>
   <div class="quick-grid">
@@ -45,6 +61,7 @@
 <div class="grid"><div class="field"><label for="label">Story tag</label><input id="label" maxlength="30" value="NEWS" placeholder="NEWS / EDUCATION / WATER"></div><div class="field"><label for="author">Byline</label><input id="author" maxlength="80" value="Inside Mauritius News Desk"></div></div>
 <div class="field"><label for="body">Article text *</label><textarea id="body" rows="9" required placeholder="Write one or more paragraphs. Leave a blank line between paragraphs."></textarea><small>Write original reporting or summaries. Verify important facts before publishing.</small></div>
 <div class="grid"><div class="field"><label for="sourceName">Original source / reference</label><input id="sourceName" placeholder="Government Information Service"></div><div class="field"><label for="sourceUrl">Source link</label><input id="sourceUrl" type="url" placeholder="https://…"></div></div>
+<div class="grid"><div class="field"><label for="sourceName2">Second reporting source</label><input id="sourceName2" placeholder="Name of second publication"></div><div class="field"><label for="sourceUrl2">Second source link</label><input id="sourceUrl2" type="url" placeholder="https://..."></div></div>
 <div class="field"><label for="imageUrl">Photograph URL (optional)</label><input id="imageUrl" type="url" placeholder="https://…/photo.jpg"><small>Use a photograph you own or have permission to reuse. External image links can sometimes fail.</small></div>
 <div class="field"><label for="photoFile">Or upload a licensed photo to GitHub</label><input id="photoFile" type="file" accept="image/jpeg,image/png,image/webp"><small>Max 4 MB. With GitHub publishing, a selected photo uploads to your repository under <code>news-images/</code>.</small><img id="uploadPreview" class="upload-preview" alt="Selected photo preview"></div>
 <div class="field"><label for="imageAlt">Photo description</label><input id="imageAlt" placeholder="Describe the photo for accessibility"></div>
@@ -72,8 +89,99 @@ const DRAFTKEY='inside-mauritius-newsroom-draft-v1';
 function isoDate(){return new Intl.DateTimeFormat('en-CA',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Indian/Mauritius'}).format(new Date());}
 function say(msg,type=''){const el=$('status');el.textContent=msg;el.className='status'+(type?' '+type:'');}
 function slug(s){return s.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,70)||'news';}
-const fields=['headline','summary','category','date','label','author','body','sourceName','sourceUrl','imageUrl','imageAlt','photoAuthor','photoSourceUrl','photoLicense','photoLicenseUrl','photoCaption','video'];
+const fields=['headline','summary','category','date','label','author','body','sourceName','sourceUrl','sourceName2','sourceUrl2','imageUrl','imageAlt','photoAuthor','photoSourceUrl','photoLicense','photoLicenseUrl','photoCaption','video'];
 function formValues(){const v={};for(const key of fields)v[key]=$(key).value.trim();v.photoIllustrative=$('photoIllustrative').checked;return v;}
+
+
+let sourceImportResult=null;
+function sourceStatus(message){$('sourceImportState').textContent=message;}
+function validNewsLink(link){
+  try {let u=new URL(link);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.length>3&&u.port==='';}catch{return false;}
+}
+function setImportButton(disabled){$('autoImportLinks').disabled=disabled;}
+function importSourceCard(source){
+  const p=document.createElement('div');
+  p.style.cssText='padding:10px;background:white;border:1px solid #e1e6ec;border-radius:7px;line-height:1.7;font-size:12px';
+  if(!source.ok){p.textContent='Could not read: '+source.url+' — '+(source.error||'This source may block metadata requests.');return p;}
+  const title=document.createElement('strong');title.textContent=source.title||'Untitled';
+  const publisher=document.createElement('p');publisher.textContent=(source.publisher||'Publisher')+(source.publishedDate?' · '+source.publishedDate:'');publisher.style.margin='3px 0';
+  const summary=document.createElement('p');summary.textContent=source.description||'No public summary available; read the original report.';summary.style.margin='5px 0';
+  const link=document.createElement('a');link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open original source';
+  p.append(title,publisher,summary,link);return p;
+}
+async function importLinks(){
+  const first=$('sourceOne').value.trim(),second=$('sourceTwo').value.trim();
+  const sources=[first,second].filter(Boolean);
+  if(!first||sources.some(url=>!validNewsLink(url))){sourceStatus('Enter one or two valid HTTPS news links, starting with link 1.');return;}
+  const token=$('token').value.trim();
+  if(!token){sourceStatus('To fetch links from any publisher, first enter your restricted GitHub token in Publish to GitHub below. It is used only for your GitHub account request, not sent to the news sites.');$('token').scrollIntoView({behavior:'smooth',block:'center'});return;}
+  const id='news_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,10);
+  setImportButton(true);
+  sourceImportResult=null;$('sourceImportPreview').hidden=true;$('applyImported').disabled=true;
+  sourceStatus('Sending your source links to your private GitHub Actions request…');
+  try{
+    const res=await fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/dispatches',{
+      method:'POST',headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'},
+      body:JSON.stringify({event_type:'inside-mauritius-import',client_payload:{id,sources}})
+    });
+    if(res.status!==204){let msg='GitHub request failed ('+res.status+').';if(res.status===401||res.status===403)msg+=' Check your token: Contents read and write permission.';if(res.status===404)msg+=' Check that repository Actions are enabled.';sourceStatus(msg);setImportButton(false);return;}
+    sourceStatus('GitHub is reading the public metadata. You may keep this page open to collect the preview. No article will be published automatically.');
+    for(let attempt=0;attempt<75;attempt++){
+      await new Promise(resolve=>setTimeout(resolve,4000));
+      let check;
+      try {
+        check=await fetch('https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/newsroom-imports/'+id+'.json?refresh='+Date.now(),{cache:'no-store'});
+      }catch{continue}
+      if(check.status!==200)continue;
+      const result=await check.json();
+      if(result.id!==id)continue;
+      sourceImportResult=result;
+      $('sourceImportSources').replaceChildren(...(result.sources||[]).map(importSourceCard));
+      $('sourceImportPreview').hidden=false;
+      const image=$('sourceImportImage');
+      image.hidden=true;image.removeAttribute('src');
+      if(result.suggestedImage&&validNewsLink(result.suggestedImage)){
+        image.src=result.suggestedImage;image.hidden=false;
+        image.onerror=()=>{image.hidden=true;};
+      }
+      $('applyImported').disabled=!result.ok;
+      let msg=(result.sources||[]).filter(x=>x.ok).length+' source(s) read. ';
+      if(result.sameTopicLikely===false)msg+='WARNING: These links may report different events. Check both before combining facts. ';
+      msg+='Metadata extracted; not fact-checked. Read the source and review the resulting draft before publishing.';
+      sourceStatus(msg);
+      setImportButton(false);
+      $('sourceImportPreview').scrollIntoView({behavior:'smooth',block:'nearest'});
+      return;
+    }
+    sourceStatus('No result returned yet. Check GitHub Actions for a workflow error, then try again. Your existing draft is safe.');
+  }catch(e){sourceStatus('Import error: '+e.message);}
+  finally{setImportButton(false);}
+}
+function applyImportedMetadata(){
+  const result=sourceImportResult;
+  if(!result||!result.ok)return;
+  if(selectedId&&!confirm('Start a new draft instead of changing the selected published article?'))return;
+  resetForm();
+  const ok=(result.sources||[]).filter(x=>x.ok),primary=ok[0],secondary=ok[1];
+  $('headline').value=(result.headline||'').slice(0,180);
+  $('summary').value=(result.summary||'').slice(0,420);
+  $('sourceName').value=primary?.publisher||'';
+  $('sourceUrl').value=primary?.url||'';
+  if(secondary){
+    $('sourceName2').value=secondary.publisher||'';
+    $('sourceUrl2').value=secondary.url||'';
+  }
+  $('date').value=result.publishedDate||isoDate();
+  $('category').value=categoryFor(result.headline||'');
+  $('label').value=labelFor(result.headline||'');
+  $('author').value='Inside Mauritius News Desk';
+  $('body').value=(result.editorialNotes||[]).join('\n\n')+'\n\n[Replace these notes with an original, fact-checked report. Check any differences between sources.]';
+  $('imageUrl').value='';
+  $('imageAlt').value='Editorial illustration — not a photo of the reported event';
+  $('rightsConfirm').checked=false;
+  say('Metadata imported as an UNPUBLISHED draft. Write an original verified report, correct the headline/date, and use only photos you may legally republish.','good');
+  $('headline').scrollIntoView({behavior:'smooth',block:'start'});
+}
 
 function sourceNameFor(url){
   if(!url)return '';
@@ -147,8 +255,8 @@ function quickImportArticle(){
 
 function resetForm(){selectedId=null;selectedPhoto=null;$('editor').reset();$('rightsConfirm').checked=false;$('date').value=isoDate();$('label').value='NEWS';$('author').value='Inside Mauritius News Desk';$('photoIllustrative').checked=true;$('uploadPreview').classList.remove('visible');$('uploadPreview').removeAttribute('src');$('previewArea').hidden=true;renderList();}
 function renderList(){let node=$('stories');node.replaceChildren();$('count').textContent=`(${posts.length})`;$('deleteBtn').disabled=!selectedId;$('editorTitle').textContent=selectedId?'Edit news article':'New news article';if(!posts.length){const p=document.createElement('p');p.className='empty';p.textContent='No dashboard stories yet. Create your first verified news report.';node.append(p);return;}for(const post of posts){const b=document.createElement('button');b.type='button';b.className='story'+(post.id===selectedId?' active':'');const strong=document.createElement('strong');strong.textContent=post.title;const sm=document.createElement('small');sm.textContent=`${post.category} · ${post.date}`;b.append(strong,sm);b.addEventListener('click',()=>choose(post.id));node.append(b);}}
-function choose(id){const post=posts.find(x=>x.id===id);if(!post)return;selectedId=id;selectedPhoto=null;$('rightsConfirm').checked=false;const values={headline:post.title,summary:post.summary,category:post.category,date:post.date,label:post.label,author:post.author,body:(post.content||[]).join('\n\n'),sourceName:post.sourceName,sourceUrl:post.sourceUrl,imageUrl:post.image?.startsWith('news-images/')?'':post.image,imageAlt:post.imageAlt,photoAuthor:post.photoAuthor,photoSourceUrl:post.photoSourceUrl,photoLicense:post.photoLicense,photoLicenseUrl:post.photoLicenseUrl,photoCaption:post.photoCaption,video:post.video};for(const key of fields)$(key).value=values[key]||'';$('photoIllustrative').checked=post.photoIllustrative!==false;$('photoFile').value='';$('uploadPreview').classList.remove('visible');$('previewArea').hidden=true;renderList();window.scrollTo({top:0,behavior:'smooth'});say('Loaded selected article. Changes remain unpublished until you publish.');}
-function asPost(){const v=formValues();if(!v.headline||!v.summary||!v.body||!v.date)throw Error('Please complete the headline, summary, date and article text.');for(const k of ['sourceUrl','imageUrl','photoSourceUrl','photoLicenseUrl','video'])if(v[k]&&!/^https:\/\//i.test(v[k]))throw Error(k+' must start with https://');const old=posts.find(x=>x.id===selectedId);const id=selectedId||`${slug(v.headline)}-${v.date}`;if(!selectedId&&posts.some(p=>p.id===id))throw Error('A story with this headline and date already exists.');return {id,category:v.category,label:v.label||'NEWS',title:v.headline,summary:v.summary,date:v.date,image:v.imageUrl||(old?.image||'cover-mauritius.svg'),imageAlt:v.imageAlt||'Editorial illustration',author:v.author||'Inside Mauritius News Desk',content:v.body.split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean),...(v.sourceName?{sourceName:v.sourceName}:{}),...(v.sourceUrl?{sourceUrl:v.sourceUrl}:{}),...(v.photoAuthor?{photoAuthor:v.photoAuthor}:{}),...(v.photoSourceUrl?{photoSourceUrl:v.photoSourceUrl}:{}),...(v.photoLicense?{photoLicense:v.photoLicense}:{}),...(v.photoLicenseUrl?{photoLicenseUrl:v.photoLicenseUrl}:{}),...(v.photoCaption?{photoCaption:v.photoCaption}:{}),photoIllustrative:v.photoIllustrative,...(v.video?{video:v.video}:{})};}
+function choose(id){const post=posts.find(x=>x.id===id);if(!post)return;selectedId=id;selectedPhoto=null;$('rightsConfirm').checked=false;const values={headline:post.title,summary:post.summary,category:post.category,date:post.date,label:post.label,author:post.author,body:(post.content||[]).join('\n\n'),sourceName:post.sourceName,sourceUrl:post.sourceUrl,sourceName2:post.sourceName2,sourceUrl2:post.sourceUrl2,imageUrl:post.image?.startsWith('news-images/')?'':post.image,imageAlt:post.imageAlt,photoAuthor:post.photoAuthor,photoSourceUrl:post.photoSourceUrl,photoLicense:post.photoLicense,photoLicenseUrl:post.photoLicenseUrl,photoCaption:post.photoCaption,video:post.video};for(const key of fields)$(key).value=values[key]||'';$('photoIllustrative').checked=post.photoIllustrative!==false;$('photoFile').value='';$('uploadPreview').classList.remove('visible');$('previewArea').hidden=true;renderList();window.scrollTo({top:0,behavior:'smooth'});say('Loaded selected article. Changes remain unpublished until you publish.');}
+function asPost(){const v=formValues();if(!v.headline||!v.summary||!v.body||!v.date)throw Error('Please complete the headline, summary, date and article text.');for(const k of ['sourceUrl','sourceUrl2','imageUrl','photoSourceUrl','photoLicenseUrl','video'])if(v[k]&&!/^https:\/\//i.test(v[k]))throw Error(k+' must start with https://');const old=posts.find(x=>x.id===selectedId);const id=selectedId||`${slug(v.headline)}-${v.date}`;if(!selectedId&&posts.some(p=>p.id===id))throw Error('A story with this headline and date already exists.');return {id,category:v.category,label:v.label||'NEWS',title:v.headline,summary:v.summary,date:v.date,image:v.imageUrl||(old?.image||'cover-mauritius.svg'),imageAlt:v.imageAlt||'Editorial illustration',author:v.author||'Inside Mauritius News Desk',content:v.body.split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean),...(v.sourceName?{sourceName:v.sourceName}:{}),...(v.sourceUrl?{sourceUrl:v.sourceUrl}:{}),...(v.sourceName2?{sourceName2:v.sourceName2}:{}),...(v.sourceUrl2?{sourceUrl2:v.sourceUrl2}:{}),...(v.photoAuthor?{photoAuthor:v.photoAuthor}:{}),...(v.photoSourceUrl?{photoSourceUrl:v.photoSourceUrl}:{}),...(v.photoLicense?{photoLicense:v.photoLicense}:{}),...(v.photoLicenseUrl?{photoLicenseUrl:v.photoLicenseUrl}:{}),...(v.photoCaption?{photoCaption:v.photoCaption}:{}),photoIllustrative:v.photoIllustrative,...(v.video?{video:v.video}:{})};}
 function dataJS(list){return '/* Inside Mauritius newsroom posts. Published through the Newsroom Studio. */\nwindow.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = '+JSON.stringify(list,null,2)+';\n';}
 function saveDownload(list){const data=new Blob([dataJS(list)],{type:'text/javascript;charset=utf-8'});const url=URL.createObjectURL(data);const a=document.createElement('a');a.href=url;a.download=FILE;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function setBusy(val){busy=val;for(const id of ['publishBtn','downloadBtn','deleteBtn','reloadBtn'])$(id).disabled=val||(id==='deleteBtn'&&!selectedId);}
@@ -176,6 +284,8 @@ function download(){try{const post=asPost();saveDownload(merge(post));say('Downl
 async function reload(){if(busy)return;setBusy(true);try{const res=await fetch(`${FILE}?t=${Date.now()}`,{cache:'no-store'});if(!res.ok)throw Error(`Could not reload data (${res.status})`);const txt=await res.text();const found=txt.match(/window\.INSIDE_MAURITIUS_NEWSROOM_ARTICLES\s*=\s*(\[[\s\S]*\]);/);if(!found)throw Error('Published data file format was not recognised.');posts=JSON.parse(found[1]);selectedId=null;resetForm();say('Latest published articles loaded.','good');}catch(err){say(err.message,'bad');}finally{setBusy(false);}}
 async function removeSelected(){if(!selectedId||busy)return;if(!confirm('Remove this story from the website? This does not delete any previously uploaded image file.'))return;const token=$('token').value.trim();const list=posts.filter(p=>p.id!==selectedId);if(!token){saveDownload(list);say('Downloaded data file without the selected story. Upload it to GitHub to make the removal live.','good');return;}setBusy(true);try{const remote=await getGithub(token);await putGithub(FILE,b64unicode(dataJS(list)),token,'Remove newsroom article',remote.sha);posts=list;resetForm();say('Removed article from GitHub. The website will update after deployment.','good');}catch(err){say(err.message,'bad')}finally{setBusy(false);}}
 $('quickImport').addEventListener('click',quickImportArticle);
+$('autoImportLinks').addEventListener('click',importLinks);
+$('applyImported').addEventListener('click',applyImportedMetadata);
 $('editor').addEventListener('submit',publish);$('newArticle').addEventListener('click',()=>{resetForm();say('New article ready.');});$('previewBtn').addEventListener('click',preview);$('saveDraft').addEventListener('click',updateDraft);$('downloadBtn').addEventListener('click',download);$('reloadBtn').addEventListener('click',reload);$('deleteBtn').addEventListener('click',removeSelected);$('photoFile').addEventListener('change',()=>{selectedPhoto=$('photoFile').files[0]||null;const img=$('uploadPreview');if(selectedPhoto){if(selectedPhoto.size>4*1024*1024){say('Photo is too large. Please choose an image under 4 MB.','bad');selectedPhoto=null;return;}img.src=URL.createObjectURL(selectedPhoto);img.classList.add('visible')}else{img.removeAttribute('src');img.classList.remove('visible')}});
 resetForm();loadDraft();
 })();
