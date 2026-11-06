@@ -22,6 +22,101 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
   {
+    "id": "mauritius-weather-friday-6-november-2026",
+    "category": "Mauritius",
+    "label": "WEATHER UPDATE",
+    "title": "Mauritius forecast for Friday: showers expected in the east and on high ground",
+    "summary": "The 04:30 weather bulletin for 6 November forecasts showers in eastern districts and elevated areas, with daytime highs up to 31°C near the coast.",
+    "date": "2026-11-06",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius editorial illustration; not a photograph of the reported event",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "The Mauritius Meteorological Services forecast issued at 04:30 on Friday, 6 November 2026, says cloud bands from the east are influencing local conditions.",
+      "Cloudy spells with showers are expected during the morning and daytime, mainly over the eastern part of Mauritius and the high grounds. Maximum temperatures are forecast at 24–26°C on the central plateau and other high grounds, and 28–31°C in coastal areas.",
+      "Easterly winds of about 20 km/h are forecast. The sea is expected to be moderate beyond the reefs, with south-westerly swells around two metres. Patches of fog may develop in some areas.",
+      "This summary reflects the 04:30 bulletin and is not a live weather alert. Residents should check the meteorological service for later updates."
+    ],
+    "sourceName": "Mauritius Meteorological Services — 6 November 2026, 04:30",
+    "sourceUrl": "https://metservice.intnet.mu/forecast-bulletin-english-mauritius.php"
+  },
+  {
+    "id": "rodrigues-heavy-rain-watch-november-2026",
+    "category": "Mauritius",
+    "label": "WEATHER WATCH",
+    "title": "Rodrigues under heavy-rain watch through Saturday afternoon",
+    "summary": "A watch issued on 5 November runs until 16:00 on Saturday, 7 November; thunderstorms and locally heavy showers are possible.",
+    "date": "2026-11-05",
+    "image": "cover-community.svg",
+    "imageAlt": "Inside Mauritius editorial illustration; not a photograph of the reported event",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "The Mauritius Meteorological Services issued a heavy-rain watch for Rodrigues at 16:00 on Thursday, 5 November 2026, valid until 16:00 on Saturday, 7 November.",
+      "Active clouds approaching from the northeast may bring periods of moderate rain, temporarily heavy showers and thunderstorms. Localised water accumulation may occur.",
+      "Officials advise avoiding low-water crossings and areas that collect water, staying in safe places during storms and driving cautiously where fog affects visibility.",
+      "This story summarises the official bulletin issued on 5 November. Check the service's latest notices for any change to the watch."
+    ],
+    "sourceName": "Mauritius Meteorological Services — Special Weather Bulletin, 5 November 2026",
+    "sourceUrl": "https://metservice.intnet.mu/warning-bulletin-special-weather.php"
+  },
+  {
+    "id": "mont-choisy-jellyfish-advisory-november-2026",
+    "category": "Mauritius",
+    "label": "BEACH SAFETY",
+    "title": "Mont-Choisy: Coast Guard warns of jellyfish in the lagoon",
+    "summary": "The National Coast Guard reported jellyfish near Mont-Choisy public beach on 5 November and advised the public against swimming or water activities in the area.",
+    "date": "2026-11-05",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius editorial illustration; not a photograph of the reported event",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Le Défi Media reported on 5 November 2026 that the National Coast Guard had detected jellyfish in the lagoon at Mont-Choisy and near the public beach.",
+      "Police advised beachgoers to avoid swimming and other water activities in the affected area until further notice.",
+      "This is a summary of an advisory reported on 5 November, not a live assessment of beach conditions. Follow current instructions from the National Coast Guard and local authorities."
+    ],
+    "sourceName": "Le Défi Media — 5 November 2026",
+    "sourceUrl": "https://defimedia.info/mont-choisy-presence-de-meduses-dans-le-lagon-appel-la-prudence"
+  },
+  {
+    "id": "plaine-des-papayes-work-accident-inquiry-november-2026",
+    "category": "Mauritius",
+    "label": "WORKPLACE SAFETY",
+    "title": "Labour ministry investigates fatal accident involving three workers in Plaine-des-Papayes",
+    "summary": "An investigation was announced after three Bangladeshi workers died in a workplace incident on Mosque Road on 4 November.",
+    "date": "2026-11-05",
+    "image": "cover-city.svg",
+    "imageAlt": "Inside Mauritius editorial illustration; not a photograph of the reported event",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Three Bangladeshi workers died in a workplace accident on Mosque Road in Plaine-des-Papayes on Wednesday, 4 November 2026, according to police information reported by local media.",
+      "On Thursday, 5 November, Le Défi Media reported that the Ministry of Labour had opened an investigation into the circumstances of the tragedy, including whether workplace safety procedures and protective-equipment requirements were followed.",
+      "The inquiry is intended to establish the facts. No final finding about responsibility has been announced in the report cited here.",
+      "Inside Mauritius extends its condolences to the families affected. This article is an independently written summary of the published report."
+    ],
+    "sourceName": "Le Défi Media — 5 November 2026",
+    "sourceUrl": "https://defimedia.info/drame-plaine-des-papayes-le-ministere-du-travail-ouvre-une-enquete-apres-la-mort-de-trois-ouvriers"
+  },
+  {
+    "id": "bank-mauritius-foreign-exchange-intervention-5-nov-2026",
+    "category": "Mauritius",
+    "label": "ECONOMY",
+    "title": "Bank of Mauritius sells US$15 million in foreign-exchange intervention",
+    "summary": "The central bank intervened on Thursday, 5 November, selling US$15 million at Rs 46.75 per dollar, according to local reporting.",
+    "date": "2026-11-05",
+    "image": "cover-world.svg",
+    "imageAlt": "Inside Mauritius editorial illustration; not a photograph of the reported event",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "On Thursday, 5 November 2026, the Bank of Mauritius sold US$15 million on the local foreign-exchange market at a reported rate of Rs 46.75 per US dollar.",
+      "Le Défi Media reported that this was the eleventh such intervention since January 2026 and brought the cumulative amount sold through these operations to US$155 million.",
+      "The rate quoted is specific to the reported central-bank intervention. It should not be taken as a live consumer exchange rate.",
+      "This is an original short summary based on the report published on 5 November."
+    ],
+    "sourceName": "Le Défi Media — 5 November 2026",
+    "sourceUrl": "https://defimedia.info/marche-des-changes-la-bom-injecte-15-millions-de-dollars-ce-jeudi"
+  },
+
+  {
     "id": "business-mauritius-water-saving-toolkit-2026",
     "category": "Mauritius",
     "label": "WATER SECURITY",
