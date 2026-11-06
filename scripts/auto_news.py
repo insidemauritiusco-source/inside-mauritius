@@ -183,6 +183,8 @@ def item_to_story(node, source, via_google):
     publication = pub_date(node.findtext("pubDate") or node.findtext("published") or node.findtext(ATOM_NS+"published"))
     if not title or len(title) < 12 or not publication:
         return None
+    if title.casefold().strip(" .:!?-") in {"blog", "actualités", "actualites", "news", "accueil", "home", "vidéos", "videos"}:
+        return None
     # Google's RSS links redirect readers to publishers; never imply the feed is our own reporting.
     allowed_hosts = ("news.google.com",) if via_google else (SOURCE_SITES[source],)
     link = valid_url(link, allowed_hosts)
