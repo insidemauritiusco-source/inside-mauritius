@@ -72,10 +72,20 @@
     filter=["All","Mauritius","World","Community","Video"].includes(value)?value:"All";
     renderCards();
   }
+  // Compact headlines on the homepage; the full title remains on the article page.
+  function compactLeadTitle(value) {
+    const title = String(value || "").trim();
+    const limit = window.matchMedia("(max-width: 620px)").matches ? 94 : 145;
+    if (title.length <= limit) return title;
+    const slice = title.slice(0, limit + 1);
+    const cut = slice.lastIndexOf(" ");
+    return (cut > limit * .65 ? slice.slice(0, cut) : slice.slice(0, limit)).trimEnd() + "…";
+  }
   function initFeature() {
     if(!articles.length) return;
     const lead=articles[0];
-    $("heroHeading").textContent=lead.title;
+    $("heroHeading").textContent=compactLeadTitle(lead.title);
+    $("heroHeading").title=lead.title;
     document.querySelector(".hero-copy p").textContent=lead.summary;
     document.querySelector(".hero-photo").src=imageFor(lead);
     document.querySelector(".hero-photo").alt=lead.imageAlt || "Mauritius landscape";
@@ -176,7 +186,15 @@
     catch {$("shareFeedback").textContent="Copy this address from your browser to share.";}
   }
   function initTicker() {
-    if (typeof config.breakingHeadline === "string" && config.breakingHeadline.trim()) $("tickerText").textContent = config.breakingHeadline.trim();
+    const newestSource = dashboardPosts.find(story => story && story.title && story.id);
+    if (newestSource) {
+      const publisher = (newestSource.sourceName || newestSource.author || "external source").replace(/\\s*\\(via Google News\\)/i, "");
+      $("tickerText").textContent = "Latest source headline · " + newestSource.title + " — " + publisher;
+      const tickerLink = document.querySelector(".breaking-inner > a");
+      if (tickerLink) tickerLink.href = articleURL(newestSource);
+    } else if (typeof config.breakingHeadline === "string" && config.breakingHeadline.trim()) {
+      $("tickerText").textContent = config.breakingHeadline.trim();
+    }
     const label=document.querySelector(".breaking-label");
     if (label && label.lastChild && label.lastChild.nodeType===3) label.lastChild.textContent = config.breakingIsBreaking ? " BREAKING NEWS" : " NEWSROOM";
   }
