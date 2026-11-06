@@ -41,3 +41,15 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 }
 @media(max-width:375px){.hero-copy h1{font-size:24px}.lead-feature{min-height:350px}}
 .video-source-link{display:inline-block;color:#fff;text-decoration:underline;text-underline-offset:3px;font-size:13px;margin:0 0 14px;}
+
+/* Balanced editorial hero for long syndicated headlines (6 Nov 2026). */
+@media(min-width:621px){
+  .hero-copy h1{font-size:clamp(29px,3vw,42px);line-height:1.12;letter-spacing:-.035em;overflow-wrap:break-word;}
+  .hero-copy p{max-width:490px;}
+}
+@media(min-width:621px) and (max-width:1000px){
+  .hero-copy h1{font-size:clamp(28px,3.8vw,37px);}
+}
+@media(max-width:620px){
+  .hero-copy h1{font-size:clamp(25px,6.3vw,34px);line-height:1.15;}
+}
