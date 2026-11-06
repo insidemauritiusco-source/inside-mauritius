@@ -177,6 +177,31 @@ def classify_category(title):
         return "World"
     return "Mauritius"
 
+def publisher_excerpt(node, title, source):
+    """Use a short, clearly attributed RSS excerpt, never the full article.
+
+    Only direct publisher feeds are passed here. A missing or repetitive feed
+    description must not be presented as Inside Mauritius reporting.
+    """
+    description = clean(node.findtext("description"), 2200)
+    if not description:
+        return ""
+    description = re.sub(
+        r"\\bThe post .{0,240}? appeared first on .*$", "", description,
+        flags=re.IGNORECASE
+    ).strip()
+    if description.casefold().startswith(title.casefold()):
+        description = description[len(title):].lstrip(" :–—.-")
+    if len(description) < 35 or description.casefold() == title.casefold():
+        return ""
+    words = description.split()
+    if len(words) < 7:
+        return ""
+    excerpt = " ".join(words[:24]).rstrip(" ,;:.")
+    if len(words) > 24:
+        excerpt += "…"
+    return "Short excerpt from " + source + " RSS feed: " + excerpt
+
 def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
@@ -200,6 +225,18 @@ def item_to_story(node, source, via_google):
             source_element.text or "").strip().lower():
             title = title.rsplit(" - ", 1)[0]
     local_date = publication.astimezone(TZ).date().isoformat()
+    excerpt = publisher_excerpt(node, title, source) if not via_google else ""
+    if source == "ION News":
+        summary = excerpt or (
+            "ION News published this report on "
+            + publication.astimezone(TZ).strftime("%d %B %Y")
+            + ". Read the original publisher report for full details."
+        )
+    else:
+        summary = excerpt or (
+            "Latest headline from " + source
+            + ". Read the publisher's original report for the full details."
+        )
     digest = hashlib.sha256(link.encode("utf-8")).hexdigest()[:16]
     img = image_from_feed(node, source, link)
     story = {
@@ -207,8 +244,9 @@ def item_to_story(node, source, via_google):
         "category": classify_category(title),
         "label": "SOURCE HEADLINE",
         "title": title,
-        "summary": "Latest headline from " + source + ". Read the publisher's original report for the full details.",
+        "summary": summary,
         "date": local_date,
+        "publishedAt": publication.isoformat(),
         "author": source + " (external report)",
         "image": img or "cover-mauritius.svg",
         "imageAlt": ("Image preview supplied by " + source + "; copyright remains with its owner") if img else "Inside Mauritius generic illustration, not event footage",
