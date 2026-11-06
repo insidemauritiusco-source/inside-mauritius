@@ -75,7 +75,7 @@
   // Compact headlines on the homepage; the full title remains on the article page.
   function compactLeadTitle(value) {
     const title = String(value || "").trim();
-    const limit = window.matchMedia("(max-width: 620px)").matches ? 94 : 145;
+    const limit = window.matchMedia("(max-width: 620px)").matches ? 76 : 91;
     if (title.length <= limit) return title;
     const slice = title.slice(0, limit + 1);
     const cut = slice.lastIndexOf(" ");
