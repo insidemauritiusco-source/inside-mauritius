@@ -31,16 +31,28 @@
     return e;
   }
   function articleURL(story) { return `#article/${encodeURIComponent(story.id)}`; }
-  function imageFor(story) { return (typeof story.image === "string" && story.image.trim()) ? story.image : "cover-mauritius.svg"; }
+  function imageFor(story) {
+    const image = typeof story.image === "string" ? story.image.trim() : "";
+    if (image && !image.startsWith("cover-")) return image;
+    const choices = story.category === "World"
+      ? ["cover-world.svg","cover-city.svg"]
+      : story.category === "Video"
+        ? ["cover-video.svg","cover-voices.svg"]
+        : ["cover-mauritius.svg","cover-city.svg","cover-community.svg","cover-voices.svg"];
+    const key = String(story.id || story.title || "");
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
+    return choices[hash % choices.length];
+  }
   function makeStoryCard(story) {
     const card = element("article","story-card");
     const imgLink = element("a","story-image-link");imgLink.href=articleURL(story);imgLink.setAttribute("aria-label",`Read ${story.title}`);
     const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
-    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) {img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; requested archive photograph could not load";const credit=card.querySelector(".photo-inline-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
+    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) {img.src="cover-mauritius.svg";img.alt="Generic illustration; source photograph unavailable";const credit=card.querySelector(".photo-inline-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     imgLink.append(img,element("span","image-corner",story.label || "INSIDE MAURITIUS"));
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
       const credit=element("span","photo-inline-credit");
-      credit.append(document.createTextNode("Illustrative archive photo · "));
+      credit.append(document.createTextNode(story.photoIllustrative === false ? "Source image · " : "Illustrative archive photo · "));
       const source=element("a",null,story.photoAuthor||"Wikimedia Commons");
       source.href=story.photoSourceUrl;source.rel="noopener noreferrer";source.target="_blank";
       credit.append(source);
