@@ -78,3 +78,11 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
  .story-excerpt{font-size:12px;line-height:1.5}
  .story-image-link{aspect-ratio:16/9}
 }
+
+
+/* Events Calendar: responsive embed for desktop and mobile. */
+.events-section{padding-top:72px;padding-bottom:90px}
+.events-calendar-wrap{width:100%;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:var(--shadow)}
+.events-calendar-wrap iframe{display:block;width:100%;min-height:600px;border:0}
+.events-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+@media(max-width:620px){.events-section{padding-top:53px;padding-bottom:66px}.events-calendar-wrap iframe{min-height:530px;height:530px}}
