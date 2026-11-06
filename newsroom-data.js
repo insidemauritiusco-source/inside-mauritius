@@ -85,6 +85,40 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-8aeeef6d93b64c69",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Faits divers",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 02:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41WC10NjFrdVVlOVJJMV9LeTJBZXVBQ2xhd3BvYlZHQUphZm44ejYzNkhxR3N2LU5CT2VnV29ka05KeTlxUzJ1Nlk2eXlEOTQ?oc=5"
+  },
+  {
+    "id": "source-7edad54f44f4a8e6",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Intelligence artificielle : Maurice dans le top 8 du Commonwealth pour la pr\u00e9paration des jeunes",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-05",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 05 November 2026 at 23:28 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBlMDdyMFpYNXpCQjA3XzVxczVpVE94elhEU21JdmZDcXMwU1JDRXR2MjJDUXhQNW1WTTJ4Y2tjaGhDRTdOeVBSdjV3?oc=5"
+  },
+  {
     "id": "source-5d47003f1ed327a7",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -138,23 +172,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-1a6fe4b7bea83b08",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Intelligence artificielle",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 21:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE05MFMwbW9nRTZFN3Y5SmxkbjF6OEhDelZrb1ZGNjMtMXk0aWJ5Z2lvR3ZWcXBXZUJFb0tSNnlwcC1XRHVva292TWFR?oc=5"
   },
   {
     "id": "source-39f103317313e7e8",
@@ -460,23 +477,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdUZXak1YUzJ0UW5DZjlpN1NkQzFEMDJCNm5FSHA5b3FjMzBPWTJXMXBUSE1ZdE50UE44R0pNTFlmWUQ0cWpfMUVJSGx3YmhpTE1jSFNmMVNvaTNjclhWbU5qeEJ5cTRna2hNNTFTenRiMEtnY0pFWUd1alc1akZ3WERJVkpmWVBpc0NraEswdw?oc=5"
-  },
-  {
-    "id": "source-1553a0db0559fc1f",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Saison des fortes pluies : Port-Louis se dit pr\u00eat \u00e0 toute \u00e9ventualit\u00e9",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 11:12 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS0ZId2V5X2U3MlBZdXU3Tk40TndhZkxpdkh5cFJYbTFiYkdKYVU4cTZiMS1SVU5RNDdmWUk0QUZpVjRpUkczYmJRd0ZJbWRaeWJwZjlTTkJ0UHZ4WXU3SWRxbmhNTWs3dHBrRDFTWHNrWG5UNllQbjIzSlhJc0pvU1oyaV9WNzcwclJtRkRvWE9zT2UzZjhkQg?oc=5"
   },
   {
     "id": "source-6fb542fcc34cab21",
