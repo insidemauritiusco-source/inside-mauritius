@@ -46,8 +46,8 @@ SOURCES = [
     ("Mauritius Times", "https://www.mauritiustimes.com/feed/"),
 ]
 VIDEO_CHANNELS = [
-    # Public channel ID linked from Top FM's online station listings.
-    ("TOPTV MAURITIUS", "UCui343-hEA3I-b-4zO5Bzlw"),
+    # No channel feed is enabled until its ID and video RSS availability are verified.
+    # Readers can access original Top FM / TOP TV videos from the website video desk.
 ]
 
 def clean(s, limit=200):
