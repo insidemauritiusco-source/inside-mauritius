@@ -85,23 +85,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
-    "id": "source-7edad54f44f4a8e6",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Intelligence artificielle : Maurice dans le top 8 du Commonwealth pour la pr\u00e9paration des jeunes",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 23:28 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBlMDdyMFpYNXpCQjA3XzVxczVpVE94elhEU21JdmZDcXMwU1JDRXR2MjJDUXhQNW1WTTJ4Y2tjaGhDRTdOeVBSdjV3?oc=5"
-  },
-  {
     "id": "source-5d47003f1ed327a7",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -157,6 +140,23 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-1a6fe4b7bea83b08",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Intelligence artificielle",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-05",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 05 November 2026 at 21:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE05MFMwbW9nRTZFN3Y5SmxkbjF6OEhDelZrb1ZGNjMtMXk0aWJ5Z2lvR3ZWcXBXZUJFb0tSNnlwcC1XRHVva292TWFR?oc=5"
+  },
+  {
     "id": "source-39f103317313e7e8",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -175,7 +175,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   },
   {
     "id": "source-32e1a868aec387c7",
-    "category": "Mauritius",
+    "category": "World",
     "label": "SOURCE HEADLINE",
     "title": "Melania Trump appelle \u00e0 un cessez-le-feu \"durable\" en Ukraine",
     "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
@@ -360,23 +360,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdzMzYUJwNWdNMUY2VVNnMVV4b2tDR0t6WFVpYXNzdE1mczdrZTRQNHBmYVA3MWhvZ1NCcjhpU2NpbUxVbEpYM0JKb1NaRmVVQ3lDVklqV0ZtcjdjN09Id0d3eGlVV2p3NVJTd1ZwYUdJWldEajRhS05veWdfRmpaQW9VcmdzRV9BRGF4c09Eamlwb2NiRkJYSGZQaUtmQ0ZOS19hSzYxWQ?oc=5"
   },
   {
-    "id": "source-f17c7e942c6b932a",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Drogue : les centres de r\u00e9habilitation r\u00e9clament davantage de moyens",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 16:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbE1wV29QbXBkUnBoRzRJcUhHWjdBWTc2YU5FWEtPNlVBbG1LTlJUbVBtdzU0YUh5M0N5Ni1VRXdVUU1kUlp2M2NBTXc4cGpMWUpCTWk1Y1dmNHBpVVdZRWlOdGQtZ1pTeU9PYURfYzRCMEV2QnZ3V2FuVnpVTlJ4MGJHdEhVVF8yaHNtNHlxMXNhVlZIdkprU2VFc0Itbkk?oc=5"
-  },
-  {
     "id": "source-81190d31b30494ac",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -394,7 +377,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9MbHI0bHdKWVdyMDU5T1RYV2tsTzc2MHExamtNYXQ3TGdSejBoZFo2bHZpdjU1LXByWXRvdy12WFZ2NGpSTWhpNWtJX1RpQTZWSEZXRWx4Zy0tQktnMDZtOUxKNnk3bzhuVUJ2UFVrZXZOdw?oc=5"
   },
   {
-    "id": "source-851abb0c4c98e66c",
+    "id": "source-8f6a54edc0e45c4f",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
     "title": "Drogue : la NADC alerte sur les risques de contamination li\u00e9s aux produits en circulation",
@@ -408,7 +391,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
       "Published by the source on 05 November 2026 at 16:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcVFLRFFQZV9xMTY2eTU1ODY4b3EwX2dfOGd0MWp3TDk4YzRVWC1xcVc3em1xNkQ1VVh2RDFtdU40UEM5Sks0b2t0NGdlNjdmY1p6UkJ3a0VzTjM2cHBGbUVwdXFhak1Xb2MzZjZZLWlsNmxJY3ZTYWhjX2VuTzFBUkxSU3VqOU8ycXdPdnlXZTU5Q1EzdzR5Tk96TE9kWXdlLXNsYk5IZ3otMmg3OUdlbF9jYnlwYXBLc2Fn?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzRNVTJGZ2NOYjFGNXFvdGFEQ1VuMDlFZE1RSXg1cmp4VlIzenJOcjlhV3ZraE02ZDk0RGNhUUpTWVR4NENreTBzUlY3TVZLZG1acnQ5eGZOZ3ZXMkFsY2c3ZWZxNjNhemlFMTQ0WE02ZlpwSGpyOEFlS3JxdG9tS2o2QW5DV3BBNl9ZU3FtUDJDd211bWhUZHg5US04b3dFTzBNbFVkc1h0OEhNdDluRHd2TGJrZw?oc=5"
   },
   {
     "id": "source-2966377929cce3a1",
@@ -477,6 +460,23 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdUZXak1YUzJ0UW5DZjlpN1NkQzFEMDJCNm5FSHA5b3FjMzBPWTJXMXBUSE1ZdE50UE44R0pNTFlmWUQ0cWpfMUVJSGx3YmhpTE1jSFNmMVNvaTNjclhWbU5qeEJ5cTRna2hNNTFTenRiMEtnY0pFWUd1alc1akZ3WERJVkpmWVBpc0NraEswdw?oc=5"
+  },
+  {
+    "id": "source-1553a0db0559fc1f",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Saison des fortes pluies : Port-Louis se dit pr\u00eat \u00e0 toute \u00e9ventualit\u00e9",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-05",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 05 November 2026 at 11:12 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS0ZId2V5X2U3MlBZdXU3Tk40TndhZkxpdkh5cFJYbTFiYkdKYVU4cTZiMS1SVU5RNDdmWUk0QUZpVjRpUkczYmJRd0ZJbWRaeWJwZjlTTkJ0UHZ4WXU3SWRxbmhNTWs3dHBrRDFTWHNrWG5UNllQbjIzSlhJc0pvU1oyaV9WNzcwclJtRkRvWE9zT2UzZjhkQg?oc=5"
   },
   {
     "id": "source-6fb542fcc34cab21",
