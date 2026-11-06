@@ -127,17 +127,27 @@ def publisher_thumbnail(article_url, publisher):
             if "html" not in (r.headers.get("Content-Type") or "").lower():
                 return ""
             raw = r.read(130_000).decode("utf-8", errors="replace")
-        match = re.search(
-            r'<meta\\s+[^>]*(?:property|name)\\s*=\\s*["\\\'](?:og:image|twitter:image)["\\\'][^>]*>',
-            raw, flags=re.I
-        )
-        if not match:
+        # HTML meta attributes can appear in any order; parse rather than
+        # relying on an over-escaped regular expression.
+        class MetaImages(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.urls = []
+            def handle_starttag(self, tag, attrs):
+                if tag.lower() != "meta":
+                    return
+                attributes = dict(attrs)
+                key = (attributes.get("property") or attributes.get("name") or "").lower()
+                if key in ("og:image", "og:image:url", "twitter:image", "twitter:image:src"):
+                    value = attributes.get("content", "")
+                    if value:
+                        self.urls.append(value)
+        parser = MetaImages()
+        parser.feed(raw)
+        if not parser.urls:
             return ""
-        tag = match.group(0)
-        attr = re.search(r'content\\s*=\\s*["\\\']([^"\\\']+)["\\\']', tag, flags=re.I)
-        if not attr:
-            return ""
-        candidate = urllib.parse.urljoin(article_url, html.unescape(attr.group(1)))
+        image_value = parser.urls[0]
+        candidate = urllib.parse.urljoin(article_url, html.unescape(image_value))
         # Be conservative: disallow unfamiliar third-party image servers.
         return valid_url(candidate, (SOURCE_SITES[publisher], "cloudinary.com", "wp.com"))
     except Exception:
