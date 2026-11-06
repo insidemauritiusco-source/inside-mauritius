@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '17,47 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/auto_news.py'
 
 permissions:
   contents: write
