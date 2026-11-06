@@ -16,6 +16,16 @@
     if (Number.isNaN(dt.getTime())) return "";
     return new Intl.DateTimeFormat("en-GB", { day:"numeric", month:long?"long":"short", year:"numeric", timeZone:"UTC" }).format(dt);
   }
+  function formatPublishedAt(value) {
+    if (!value || typeof value !== "string") return "";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return new Intl.DateTimeFormat("en-GB", {
+      day: "numeric", month: "long", year: "numeric",
+      hour: "2-digit", minute: "2-digit", hour12: false,
+      timeZone: "Indian/Mauritius"
+    }).format(date) + " MUT";
+  }
   function clockTick() {
     const now = new Date();
     $("liveClock").textContent = new Intl.DateTimeFormat("en-GB", {timeZone:"Indian/Mauritius",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(now);
@@ -68,8 +78,18 @@
     const meta=element("div","story-meta");meta.append(element("span","story-category",story.category || "News"),element("time","story-date",formatDate(story.date)));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
     const summary=element("p","story-excerpt",story.summary || "");
+    if (!story.summary) summary.hidden = true;
     const bottom=element("div","story-bottom");const read=element("a",null,"Read story");read.href=articleURL(story);read.setAttribute("aria-label",`Read ${story.title}`);
-    bottom.append(read,element("span","story-arrow","↗"));content.append(meta,title,summary,bottom);card.prepend(imgLink);card.append(content);
+    if (story.sourceUrl && /^https:\/\//i.test(story.sourceUrl)) {
+      const original=element("a",null,"Original report · " + (story.sourceName || "Publisher"));
+      original.href=story.sourceUrl;
+      original.target="_blank";
+      original.rel="noopener noreferrer";
+      bottom.append(original);
+    } else {
+      bottom.append(read,element("span","story-arrow","↗"));
+    }
+    content.append(meta,title,summary,bottom);card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderCards() {
@@ -131,7 +151,7 @@
     $("articleTopline").textContent=`${(story.category||"News").toUpperCase()} / ${(story.label||"STORY").toUpperCase()}`;
     $("articleTitle").textContent=story.title;
     $("articleDeck").textContent=story.summary||"";
-    const byline=$("articleByline");byline.replaceChildren(element("strong",null,story.author||"Inside Mauritius"),element("span",null,"•"),element("time",null,formatDate(story.date,true)));
+    const byline=$("articleByline");byline.replaceChildren(element("strong",null,story.author||"Inside Mauritius"),element("span",null,"•"),element("time",null,formatPublishedAt(story.publishedAt) || formatDate(story.date,true)));
     const img=$("articleImage");img.src=imageFor(story);img.alt=story.imageAlt||"Editorial illustration";
     const caption=$("articleCaption");caption.replaceChildren();
     img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")){img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; archive photograph unavailable";caption.textContent="Generic Inside Mauritius illustration. The archive photograph could not be loaded.";}};
