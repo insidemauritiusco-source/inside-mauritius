@@ -153,6 +153,30 @@ def publisher_thumbnail(article_url, publisher):
     except Exception:
         return ""
 
+def classify_category(title):
+    """Conservative headline-only categorisation; ambiguous items stay Mauritius."""
+    t = clean(title, 500).casefold()
+    world_terms = (
+        "ukraine", "ucrânia", "zelensky", "zelenski", "trump",
+        "washington", "white house", "maison-blanche", "etats-unis",
+        "états-unis", "usa", "russie", "russia", "poutine", "putin",
+        "gaza", "israël", "israel", "palestine", "liban", "lebanon",
+        "macron", "france", "royaume-uni", "united kingdom",
+        "chine", "china", "inde", "india", "bangladesh",
+        "élections américaines", "elections americaines",
+        "melania", "mélania", "onu ", "nations unies"
+    )
+    local_terms = ("maurice", "mauritius", "rodrigues", "port-louis",
+                   "plaine-des-papayes", "grand-baie", "curepipe",
+                   "vacoas", "quatre-bornes", "moka", "flacq")
+    # Explicit local context takes priority; avoids labelling Mauritius
+    # coverage of foreign nationals as World.
+    if any(word in t for word in local_terms):
+        return "Mauritius"
+    if any(word in t for word in world_terms):
+        return "World"
+    return "Mauritius"
+
 def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
@@ -178,7 +202,7 @@ def item_to_story(node, source, via_google):
     img = image_from_feed(node, source, link)
     story = {
         "id": "source-" + digest,
-        "category": "Mauritius",
+        "category": classify_category(title),
         "label": "SOURCE HEADLINE",
         "title": title,
         "summary": "Latest headline from " + source + ". Read the publisher's original report for the full details.",
