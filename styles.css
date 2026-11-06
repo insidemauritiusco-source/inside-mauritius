@@ -60,3 +60,21 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
   .story-content{padding:17px 18px;}
   .story-excerpt{font-size:13px;line-height:1.55;}
 }
+
+/* Inside Mauritius editorial cards: compact, consistent news-desk layout. */
+.story-grid{gap:20px}
+.story-card{border-radius:9px;box-shadow:0 3px 16px rgba(16,24,39,.045)}
+.story-image-link{aspect-ratio:16/9;background:#e9eef2}
+.story-content{padding:17px 18px 18px}
+.story-card h3{font-size:clamp(19px,1.65vw,23px);line-height:1.24;letter-spacing:-.02em;margin:10px 0 8px;overflow-wrap:break-word}
+.story-excerpt{font-size:12px;line-height:1.5;margin:0 0 17px}
+.story-bottom{padding-top:12px}
+.story-category{letter-spacing:.065em}
+.photo-inline-credit{font-size:10px}
+@media(max-width:620px){
+ .story-grid{gap:15px}
+ .story-card h3{font-size:clamp(20px,5.2vw,24px);line-height:1.25}
+ .story-content{padding:16px}
+ .story-excerpt{font-size:12px;line-height:1.5}
+ .story-image-link{aspect-ratio:16/9}
+}
