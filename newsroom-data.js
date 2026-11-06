@@ -69,21 +69,21 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://ionnews.mu/mahebourg-un-pecheur-de-26-ans-arrete-avec-des-plantes-de-cannabis-et-des-cannabinoides-synthetiques/"
   },
   {
-    "id": "source-7edad54f44f4a8e6",
+    "id": "source-8aeeef6d93b64c69",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Intelligence artificielle : Maurice dans le top 8 du Commonwealth pour la pr\u00e9paration des jeunes",
+    "title": "Faits divers",
     "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "author": "Top FM (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 23:28 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 06 November 2026 at 02:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBlMDdyMFpYNXpCQjA3XzVxczVpVE94elhEU21JdmZDcXMwU1JDRXR2MjJDUXhQNW1WTTJ4Y2tjaGhDRTdOeVBSdjV3?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41WC10NjFrdVVlOVJJMV9LeTJBZXVBQ2xhd3BvYlZHQUphZm44ejYzNkhxR3N2LU5CT2VnV29ka05KeTlxUzJ1Nlk2eXlEOTQ?oc=5"
   },
   {
     "id": "source-5d47003f1ed327a7",
@@ -103,23 +103,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZjFxdmJVRE9KTnBna1gtV1lWU1NUSFd6QkJ2c3B1MzIwV2p1SUdTbnZoWWVqMllDMmJaZGZNTFA1U2w4TkVrSVlyeExEejRiZ2hMeDFRMFV3QjFUeE5ydDBIRFRSZHZXVEZndm9HZFlDSUlYQjB3NEJQcndQNENEcS15YTUyMldEQUZFYzF3UGowUkE?oc=5"
   },
   {
-    "id": "source-bd915f99edf51126",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Drogue : la NADC alerte sur les risques de contamination li\u00e9s aux produits en circulation",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 22:29 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ORk5qeEpfekVFdmRzdHVNWlZpV2RQVzNBeG05cTFubkpRN1ozdDFCRmViTVBhQzZnRFk4TGJWRy04QkxxV3JiRHNn?oc=5"
-  },
-  {
     "id": "source-8f5b7c3bc5075289",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -135,6 +118,23 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "ION News",
     "sourceUrl": "https://ionnews.mu/olivier-barbe-m-berenger-est-devenu-la-risee-de-la-classe-politique-avec-son-show-hebdomadaire-qui-na-ni-queue-ni-tete/"
+  },
+  {
+    "id": "source-1a6fe4b7bea83b08",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Intelligence artificielle",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-05",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 05 November 2026 at 21:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE05MFMwbW9nRTZFN3Y5SmxkbjF6OEhDelZrb1ZGNjMtMXk0aWJ5Z2lvR3ZWcXBXZUJFb0tSNnlwcC1XRHVva292TWFR?oc=5"
   },
   {
     "id": "source-39f103317313e7e8",
@@ -239,6 +239,23 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://ionnews.mu/soins-orthopediques-le-dr-bruno-zipoli-en-mission-a-lhopital-jeetoo-pour-des-interventions-chirurgicales/"
   },
   {
+    "id": "source-fb4cbe7fe12707ee",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab Delo pou koule sak 2 zour \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-05",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 05 November 2026 at 20:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UX1pQVWlVdHZfNkdYd21Pel8xUE5HRmI4Qk1oMnhxbGhBSHo4bjJXTzVxYjVwVDJreTJnV2taakozT1hIeWJNZzM1TzIyWDR3d2JPTUFpUUJtRFYwa3FXVUo1Ukl5RU55enJBYQ?oc=5"
+  },
+  {
     "id": "source-a9e6c9cfa2b2b014",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -307,23 +324,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdzMzYUJwNWdNMUY2VVNnMVV4b2tDR0t6WFVpYXNzdE1mczdrZTRQNHBmYVA3MWhvZ1NCcjhpU2NpbUxVbEpYM0JKb1NaRmVVQ3lDVklqV0ZtcjdjN09Id0d3eGlVV2p3NVJTd1ZwYUdJWldEajRhS05veWdfRmpaQW9VcmdzRV9BRGF4c09Eamlwb2NiRkJYSGZQaUtmQ0ZOS19hSzYxWQ?oc=5"
   },
   {
-    "id": "source-f17c7e942c6b932a",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Drogue : les centres de r\u00e9habilitation r\u00e9clament davantage de moyens",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 16:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbE1wV29QbXBkUnBoRzRJcUhHWjdBWTc2YU5FWEtPNlVBbG1LTlJUbVBtdzU0YUh5M0N5Ni1VRXdVUU1kUlp2M2NBTXc4cGpMWUpCTWk1Y1dmNHBpVVdZRWlOdGQtZ1pTeU9PYURfYzRCMEV2QnZ3V2FuVnpVTlJ4MGJHdEhVVF8yaHNtNHlxMXNhVlZIdkprU2VFc0Itbkk?oc=5"
-  },
-  {
     "id": "source-81190d31b30494ac",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -341,7 +341,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9MbHI0bHdKWVdyMDU5T1RYV2tsTzc2MHExamtNYXQ3TGdSejBoZFo2bHZpdjU1LXByWXRvdy12WFZ2NGpSTWhpNWtJX1RpQTZWSEZXRWx4Zy0tQktnMDZtOUxKNnk3bzhuVUJ2UFVrZXZOdw?oc=5"
   },
   {
-    "id": "source-851abb0c4c98e66c",
+    "id": "source-8f6a54edc0e45c4f",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
     "title": "Drogue : la NADC alerte sur les risques de contamination li\u00e9s aux produits en circulation",
@@ -355,7 +355,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
       "Published by the source on 05 November 2026 at 16:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcVFLRFFQZV9xMTY2eTU1ODY4b3EwX2dfOGd0MWp3TDk4YzRVWC1xcVc3em1xNkQ1VVh2RDFtdU40UEM5Sks0b2t0NGdlNjdmY1p6UkJ3a0VzTjM2cHBGbUVwdXFhak1Xb2MzZjZZLWlsNmxJY3ZTYWhjX2VuTzFBUkxSU3VqOU8ycXdPdnlXZTU5Q1EzdzR5Tk96TE9kWXdlLXNsYk5IZ3otMmg3OUdlbF9jYnlwYXBLc2Fn?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzRNVTJGZ2NOYjFGNXFvdGFEQ1VuMDlFZE1RSXg1cmp4VlIzenJOcjlhV3ZraE02ZDk0RGNhUUpTWVR4NENreTBzUlY3TVZLZG1acnQ5eGZOZ3ZXMkFsY2c3ZWZxNjNhemlFMTQ0WE02ZlpwSGpyOEFlS3JxdG9tS2o2QW5DV3BBNl9ZU3FtUDJDd211bWhUZHg5US04b3dFTzBNbFVkc1h0OEhNdDluRHd2TGJrZw?oc=5"
   },
   {
     "id": "source-2966377929cce3a1",
@@ -460,23 +460,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONS1HS1BFaEx5VmNPTENxMVBlalVIWjFyTHhpc3R6V1J5aE1pOHBxNDlIVUM0WVpONEEtRHl5b3lLV0d5TWNRMDVPcHpFQ00xaWVlVXdzcUR3bTN1Z2lIaFVmdC1EcmNYN2h4alJ2UUdtTDE1M2lqMXA1RTdlbFRIRk5BamFpaGQycnNtdHpKdw?oc=5"
   },
   {
-    "id": "source-1f86a78d3bd7b502",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "[Blog] L\u2019impact du tourisme\u2026",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 10:55 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QcmVTTnM5eUUxbDc2UnRaTU9RaF8tQmdXNlJrUThvVjBOeVVJRmJ0X3dTTktFQ251bV9feWtFRFRqcC1TTHBGM1MxeEY1bVpibm8zVmU3ZmVBVVE?oc=5"
-  },
-  {
     "id": "source-1e9bc681b73d482a",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -543,5 +526,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Top FM (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTkZ2X3dDWUlMZExkMkNqc3ZydENPMUdPODJ1OHVGMTQ0b1JpaHhKWlNoNEF2M05JTW5SMzRHVjFKRmhWZXZrNHlKRzVlUmNQSXBlZWttZ1BQMkoxQWRQR3RoZ3lKZVJrclg4X1pqVVFWd2Y2VFpYRVlRQ2kwM3Q2U1FMVVFEU2lkUTdPV1lVRjA3bVVzV2JiTzRYbE5BS19XWkxhVVdxZHJZd0gyMDBoVzFlYUo3NVJN?oc=5"
+  },
+  {
+    "id": "source-1fcc3d9b77c1b52b",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Divali : le CEB mobilis\u00e9 pour un approvisionnement \u00e9lectrique continu et appelle \u00e0 la prudence",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-04",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 04 November 2026 at 23:12 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObmlxdmlVTE0xOFp6SDdNV2tCSV9XRE9kNFN0N1RLQTBSLUcxdm9hUXo1dGl6TUstRTFPb2RCWklrbGhSQmV2b1RZUk5rS3JYblZXOElCdjh1ZHliMmR0YWRFQ0xTNDZHT3libXRpTEpwNGhVSlZVT0NvT3NfcG1OVFZUcFp6OE9ucmRjUGFReVREVXN0ci1pYk1PUnFnX2RTX1FVeG5QTnFQYmNtT01Kbzdjd2NBTHMwWFE?oc=5"
   }
 ];
