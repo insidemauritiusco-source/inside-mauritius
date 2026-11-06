@@ -301,11 +301,11 @@ def main():
     if not success or not all_items:
         print("No fresh eligible source posts. Keeping previous newsroom-data.js unchanged.")
         return
-    # Enrich a small number of direct publisher articles with declared images.
+    # Enrich direct publisher articles with declared images.
     # Google News intermediate links aren't treated as direct publisher URLs.
     image_candidates = 0
     for item in all_items:
-        if image_candidates >= 12:
+        if image_candidates >= 28:
             break
         if item.get("image") != "cover-mauritius.svg":
             continue
