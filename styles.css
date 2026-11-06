@@ -53,3 +53,10 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 @media(max-width:620px){
   .hero-copy h1{font-size:clamp(25px,6.3vw,34px);line-height:1.15;}
 }
+
+/* Readable mobile article cards, while preserving complete article headlines. */
+@media(max-width:620px){
+  .story-card h3{font-size:clamp(21px,5.6vw,26px);line-height:1.22;letter-spacing:-.025em;overflow-wrap:break-word;}
+  .story-content{padding:17px 18px;}
+  .story-excerpt{font-size:13px;line-height:1.55;}
+}
