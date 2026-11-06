@@ -47,7 +47,7 @@ SOURCES = [
 ]
 VIDEO_CHANNELS = [
     # Public channel ID linked from Top FM's online station listings.
-    ("Top FM video", "UCMBUbBnzxmpemB9h9p8HQxA"),
+    ("TOPTV MAURITIUS", "UCui343-hEA3I-b-4zO5Bzlw"),
 ]
 
 def clean(s, limit=200):
@@ -110,6 +110,39 @@ def image_from_feed(node, source, link):
                 return img
     return ""
 
+def publisher_thumbnail(article_url, publisher):
+    """Read an article's publicly declared OpenGraph/Twitter image metadata.
+
+    Only accept images from the same publishing domain or its known CDN. No
+    rehosting, downloading, resizing or transformation of publisher photography.
+    """
+    if not valid_url(article_url, (SOURCE_SITES[publisher],)):
+        return ""
+    try:
+        req = urllib.request.Request(article_url, headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml"
+        })
+        with urllib.request.urlopen(req, timeout=6) as r:
+            if "html" not in (r.headers.get("Content-Type") or "").lower():
+                return ""
+            raw = r.read(130_000).decode("utf-8", errors="replace")
+        match = re.search(
+            r'<meta\\s+[^>]*(?:property|name)\\s*=\\s*["\\\'](?:og:image|twitter:image)["\\\'][^>]*>',
+            raw, flags=re.I
+        )
+        if not match:
+            return ""
+        tag = match.group(0)
+        attr = re.search(r'content\\s*=\\s*["\\\']([^"\\\']+)["\\\']', tag, flags=re.I)
+        if not attr:
+            return ""
+        candidate = urllib.parse.urljoin(article_url, html.unescape(attr.group(1)))
+        # Be conservative: disallow unfamiliar third-party image servers.
+        return valid_url(candidate, (SOURCE_SITES[publisher], "cloudinary.com", "wp.com"))
+    except Exception:
+        return ""
+
 def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
@@ -132,7 +165,7 @@ def item_to_story(node, source, via_google):
             title = title.rsplit(" - ", 1)[0]
     local_date = publication.astimezone(TZ).date().isoformat()
     digest = hashlib.sha256(link.encode("utf-8")).hexdigest()[:16]
-    img = image_from_feed(node, source, link) if not via_google else ""
+    img = image_from_feed(node, source, link)
     story = {
         "id": "source-" + digest,
         "category": "Mauritius",
@@ -189,7 +222,7 @@ def youtube_stories(name, channel_id):
         stories.append({
             "id": "video-" + video_id,
             "category": "Video",
-            "label": "REAL VIDEO · TOP FM",
+            "label": "REAL VIDEO · TOPTV",
             "title": title,
             "summary": "Watch the original video published by " + name + " on YouTube.",
             "date": published.astimezone(TZ).date().isoformat(),
@@ -234,6 +267,27 @@ def main():
     if not success or not all_items:
         print("No fresh eligible source posts. Keeping previous newsroom-data.js unchanged.")
         return
+    # Enrich a small number of direct publisher articles with declared images.
+    # Google News intermediate links aren't treated as direct publisher URLs.
+    image_candidates = 0
+    for item in all_items:
+        if image_candidates >= 12:
+            break
+        if item.get("image") != "cover-mauritius.svg":
+            continue
+        publisher = item.get("_publisher")
+        if publisher not in SOURCE_SITES or not valid_url(item["sourceUrl"], (SOURCE_SITES[publisher],)):
+            continue
+        image_candidates += 1
+        thumb = publisher_thumbnail(item["sourceUrl"], publisher)
+        if thumb:
+            item["image"] = thumb
+            item["imageAlt"] = "Source-provided photograph preview, credited to " + publisher + "; rights remain with the publisher"
+            item["photoSourceUrl"] = item["sourceUrl"]
+            item["photoAuthor"] = publisher
+            item["photoCaption"] = "Photo preview linked from " + publisher + ". Copyright remains with the original publisher."
+            item["photoIllustrative"] = False
+    print("Checked", image_candidates, "publisher articles for media previews")
     # Sort by source publication time, not crawl time. Deduplicate cross-syndicated links.
     all_items.sort(key=lambda x: x["_published"], reverse=True)
     selected, seen_urls, counts = [], set(), {}
