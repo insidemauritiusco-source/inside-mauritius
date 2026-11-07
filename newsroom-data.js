@@ -1,6 +1,42 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-c1f48c114f816b21",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Comp\u00e9tences num\u00e9riques et IA : Mauritius Telecom lance my.t Learning Hub pour former 50 000 Mauriciens",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T18:07:00+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 22:07 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNV0gtZnRtenNlXzc1MEMzWW16TGhqUHVwSGxnVFJjWHFMQk9uYTdpbGZfaE1BQ3hHVHN3cF9VSVk3dzlyQTBFbVJ1a2QtS21NWEc1LThpTGJSTTNGN3M3OU5KdFpMbXpoNWYzWnI2Y2s0X0Z5bE01T1hPZ2RDdTFzZ3U1VEEtOXkwSWZ5aUlYdHFMTl9ZVUdzbXFjVVdrelBkcW5uazFDeEJiZTJSWFpEQm9RUXFONE81N0J3YS1sOEs4azh2VXJaSzMwbw?oc=5"
+  },
+  {
+    "id": "source-d9a6defc15c342af",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Movember : Cancer de la prostate : 286 hommes touch\u00e9s en 2025",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T17:07:55+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 21:07 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTgtUl9qZ3ZGZWxZSEg4c2F6M0E4b0twTEUyNWFTZVphVFUtMllEQlI2ZFdUbThHNFE4aFFVUVlBWklrR3p6UXBGSjNueXJjemxrNDJ4VENUVExBc3gySm9JYzVFWWpPZTBzMTRTZkc4OFhQRHV6SDRtc2Z4anY4a2gtTQ?oc=5"
+  },
+  {
     "id": "source-6180da85fa58e1b8",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -43,6 +79,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
+  },
+  {
+    "id": "source-e5eafc0721198619",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab Elodie bizin pran bokou prekosion \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T16:39:24+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 20:39 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41dFRRLVJWUWtTZGdQbjBOSnR3LWt4QWRpVUNUeVJTTnZKcHJyamJuR1V1ZVIyLTFmVWdvZThoZW9NTmU2MXlwZWw0Unp1S0I4Zzlyc1hTb3A5UlZlM09XZVJBZTFEdmpFT0dQQWpraUlldXlXdGhR?oc=5"
   },
   {
     "id": "source-b02ffcc663e240e0",
@@ -111,6 +165,42 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-0b12cbda70cc07eb",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Palmar : des d\u00e9marches pour classer \u00e0 nouveau un terrain de l\u2019\u00c9tat comme plage publique",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T16:12:05+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 20:12 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd0JUUk9pSUl2ZThXeU5iQlBnSGFscE9WSTc3ZGEwWFpaTVFZSmJQRnpoWUxTZjdETC05dUtiSHpCU1JoUThFRWdBMHBiX2JDc1FLMGdnM29oaGNkU3lqQ3ZPVW5LakV4LUVoTFVWdUQyaDlPV1NYTGtkMlBhMU5pSlNacENKcDAxUlZUVl9pUWdRSnN5VzdXWG9MTTBEbXEweDJmQVJKVjk?oc=5"
+  },
+  {
+    "id": "source-f8422c743004f6c2",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Projet NICE : 200 jeunes bient\u00f4t form\u00e9s \u00e0 la discipline et \u00e0 la citoyennet\u00e9\u2026",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T15:35:41+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 19:35 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CSjVBUk96RC1XbkJZOHlFMWJ1enNTWS1TTVdHQWJqbHlLajhxYS1FclBqSEtIaFQtel9TU1Q1RnNIandsNkRpdkdn?oc=5"
+  },
+  {
     "id": "source-1873e389a0f7ba4c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -167,6 +257,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV3h1MERUcHJhd2gtXzdGSHlrNWM3cnZvOGRiSGhPRXF6Rm52RzZfNGR4U3ZkNzJpdnpaQ0JPZkJIVlI5YUcyQk1tdGNseXRJV2FyMUZIMVdHUGl0QjJFTzVNTU5CVVl0OTU5YzZNLVZ2QTJZams1ajlWWWpWdUZjZXBLMnRlbm1iQlR5ZWRqNHg4TS1JVnVwX3dZVzk4Rmx1eWJuWDAxX1ltQnNLZFdXOHln?oc=5"
+  },
+  {
+    "id": "source-c77361aa1a3c134c",
+    "category": "World",
+    "label": "SOURCE HEADLINE",
+    "title": "5 754 incidents cybern\u00e9tiques signal\u00e9s : une campagne nationale pour un usage responsable des r\u00e9seaux sociaux",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T12:52:23+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 16:52 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVDFtbXlmQzJwdjhMSEpVRGpBMGlXQWdfcnE5aGlxdml3WWNUQ3JuUkNuVzIta29ueTVLbFNmcUxBeEo2TFFmYVAzVHJqbG1pODg1V05JbDFuSXViRktvTWRTUEhUYkl0c0FfUkJBR0s5MFJFYTMyb0ZMaUxIaHlJQWJTOFd5X2RCdHJJbUROX0J4U1FSaDlGRHRnSXBUdlBGZjNWUnZpeVJESEZNMExGak00bi1tbHJ1em1YMDNqdjJnRmpUcWc?oc=5"
   },
   {
     "id": "source-c655a60b717689df",
@@ -289,24 +397,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMk1HUjBnb2VFUkoyYXBodW13dUNQUGppTEVkeFFpbmVKUk1zWm90Rjc2SHFJbjlCZG9zaV9VU1hhRXhFdXdiMGNrNG1NX1FTUl8zLUFqQV9JbW00MnU4c2o5OUR6TFNDaGNfekNjNlhlRjA3OHVaRUdrNzdMMDJKRW9HUXpHQUtJV1Y5R2wzR21ZU092WVVWdUF0VzdlWWotUExoTTM4ZHBqUQ?oc=5"
   },
   {
-    "id": "source-ebd6ae10075a688d",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Jean Fran\u00e7ois Veckranges recherch\u00e9 depuis le 20 octobre : La police lance un appel \u00e0 t\u00e9moins",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T10:21:49+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 14:21 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjXzNXYlcyUGlWNE16ekNNSi1Nc2dobzNEQkhyYmdnc1ZGZENYOU1nNnNRZ3RYTUkzeHgxSWw0M01sRFN4NGc5SnJuR196UGlscHhUZEtockUzMGlaMG9sQ0l4UUNvUG9NSXpVM0oxYzk?oc=5"
-  },
-  {
     "id": "source-a6aea813dc5018af",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -341,6 +431,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNcHA2NWZid2ExZTRBeTJXYXFNNkNqTmxldTlseDJxUjBCNWs0c01mOEpoWHlPaGJwSFM5N2NDTGowc2Z3OGtMdXdsNGM4VDg1eHdoVkFkQ0xheTZ2Z25RdmJKekRUa0tSWWR0ajEwXzFUdlh3R1pHU2sta3RxUGM?oc=5"
+  },
+  {
+    "id": "source-104e8d98c2927baf",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Midterm Elections : Bernard Saminaden salue le syst\u00e8me d\u00e9mocratique am\u00e9ricain",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T08:13:08+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 12:13 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdVRIWGhCRGNkZjR2SjA1NVROdnR0WjJQbGJLOTRodWx0ZGdfajhYMGV2V0J1cDhMYU13aW10b3EwMV9EcXRyYlFhbXV2Tmltd2ZmMUZ4QTdUZ2Z5RjBpallUZ2xPWWZSY0dPb1RCeUg5bU5ES3lIbzA0MWhBTDlrbHUxZzREV0FvcVhwN1hMa1FkVURXQlF2SlBvejByVlBEYWVjVnZ3?oc=5"
   },
   {
     "id": "source-05cef080b71a0c3d",
@@ -397,22 +505,40 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPams2VlBYYzA5QzhqaGNNQmZqRnNUSk1mZDlSTGhlUDhhaE4wMi1tNkZMMnl2R1IxVW95dHZMbVMxZVdpMHVqcUFLdW1TNG9EbENWUkJGT1FpOXhyZnQwSnNIUm1tSzNqV0hUcWJfTGhqSm1DRW5vZHpsODZxYzR5LV8yclFzYnFxaXNmZWtnSDJINDEtWF8xMndEaHd5ZFJmRXNGSjdn?oc=5"
   },
   {
-    "id": "source-c349ce2db071aba0",
-    "category": "World",
+    "id": "source-86c3cb41bf942e80",
+    "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "\u00c9lections de mi-mandat aux \u00c9tats-Unis : quel impact sur la guerre en Iran et les prix du p\u00e9trole ?",
+    "title": "World Knits, Kline Ltd et Universal Fabrics : la FTU privil\u00e9gie les n\u00e9gociations pour les 600 travailleurs",
     "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
     "date": "2026-11-06",
-    "publishedAt": "2026-11-06T05:46:22+00:00",
+    "publishedAt": "2026-11-06T05:44:38+00:00",
     "author": "Top FM (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 09:46 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 06 November 2026 at 09:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5VTk9pVHV0bFNzajJGdTZuN2xBeEJ4Zm9ucWlOWjNzVUppLUJUSVJQdjh6cy0yTjhERHkwTGZnWGFtS3UxY0czelN3?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOanR5VHZIX0NIVFJ6R0pRU0JqQ2VEUnFtVGNURkNmcEx6LWRSWjdSMmZIU0FmNTJ5MUF6TURKOWhHVGlUTHp4UGpIZ003UWc2V2Jua2pkUWVnS2dkOGRYRE5wbG1XVEttUzl5X3YxV1dLTGNnTW5sSy1KUG1WRVhVbEhGVUp5bE80OVpwY3l6NTI4TE9LTXRmUTJ1UDAwNW1iaFhnMlI4RFNLYTBfOVB0MmtzUkVCdGhUMFE?oc=5"
+  },
+  {
+    "id": "source-d8a010e7e158760e",
+    "category": "World",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c9lections de mi-mandat aux \u00c9tats-Unis : quel impact sur la guerre en Iran et les prix du p\u00e9trole ?",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T05:42:09+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 09:42 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB2U25UNWhGaWNBcjhULXpMckJzYVdyeEwwS0s1RGY0Z2NiSmxhQURHOWlNYm5FN0pEZVNDel83UEwtdllzb0I1R1RB?oc=5"
   },
   {
     "id": "source-6e601afdce4c63fa",
@@ -433,42 +559,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTWhteXN6Q25reER5aUVYNVhkQTdGeFJqVkhEc0toZnVMRnlZYW4wbXNmY25xMEhyaFNEQmRTLUFwVllkZmEtQVNtazBzSDh4c1hIUjV6cjF2aFB6MHE4TzQzYUVVU2Z1RWs1WWdFMmhYdHh3Tkp3dzhVTnNZaWVDbW1ycw?oc=5"
   },
   {
-    "id": "source-4c4fa35af0bb01d9",
-    "category": "World",
-    "label": "SOURCE HEADLINE",
-    "title": "\u00c9lections de mi-mandat aux \u00c9tats-Unis : quel impact sur la guerre en Iran et les prix du p\u00e9trole",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T04:27:19+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 08:27 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTjNaWmVta1BBdkkwSlZRek9PVEhLY2p2MlVWQXdtSExMbkdoRDdEYUhUbnhYbWl1YmMxM09PWDRoOThUbENlWlNHQUdERjVaNnd3LVBSREJjQ2lFNzZWcFBJM2thWnNpTkpPR1B0VHp5T3l2eGRRR0NqN09xUlNUbW56SUVBTmY5QmxZWUJqYkRIaFZhMV9JWDJwVzBubE5nYl9LNEwyS3JETldHd1YyYzR1aGNfeTNmTVdqcVg4bHp6NHdH?oc=5"
-  },
-  {
-    "id": "source-5d47003f1ed327a7",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Secteur textile : jusqu\u2019\u00e0 600 travailleurs dans l\u2019incertitude\u2026",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "publishedAt": "2026-11-05T18:44:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 22:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZjFxdmJVRE9KTnBna1gtV1lWU1NUSFd6QkJ2c3B1MzIwV2p1SUdTbnZoWWVqMllDMmJaZGZNTFA1U2w4TkVrSVlyeExEejRiZ2hMeDFRMFV3QjFUeE5ydDBIRFRSZHZXVEZndm9HZFlDSUlYQjB3NEJQcndQNENEcS15YTUyMldEQUZFYzF3UGowUkE?oc=5"
-  },
-  {
     "id": "source-af43104bde47f97f",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -485,42 +575,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWHV4a1hrWDZ0bUtIQkdxeFFGTHQzeUdPSklKU3FlY29qMmJFWDhINjRkWExTUWtRVFBXY2lNX01HSWY5SUdKTU04XzFnT2RWbkN1VFplX3k2Q1lfZnozbDQ2c19fZVpMZDdFaEhlVDNKRThpMTJITG5HcEV6d252N0s5MmFhY2VEbUIxcFpCUW80bnBvSUx3aU1EMGZrNERBQ3hMdml3?oc=5"
-  },
-  {
-    "id": "source-39f103317313e7e8",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Meurtre de Selven Iyempermal : un second suspect arr\u00eat\u00e9",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "publishedAt": "2026-11-05T17:20:22+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 21:20 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZXV2dnNNeTYxYk5nREgtYU5ubnIwUVFPTXNoTnRzZzBabWttT3VkN1liTVFVUTBlYjFfbEpPNnFWU0dncExaUW5PaHFiS1lwYTdQdmZUQ3QxOTlRVG5pbVpyaUJPM2UtT0MxcmpCOWwwOVhyNjItcllhYzJfU3hKRkpB?oc=5"
-  },
-  {
-    "id": "source-32e1a868aec387c7",
-    "category": "World",
-    "label": "SOURCE HEADLINE",
-    "title": "Melania Trump appelle \u00e0 un cessez-le-feu \"durable\" en Ukraine",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "publishedAt": "2026-11-05T17:18:56+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 21:18 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNS19DcjVwRjVsYm5JX3FJOVltWGFoQXVmdXhDa2FRLVhUZ01JTEYzTGYwWHR3eDI5aHdQX3NWdDNzUDBKZjhFN3Uya0IwMWo1NDdZRFlmbkw4Rkd3azBzQmhzNXF4N2J3MDJlekxNR1dkaWNTUG1iemwzRjFTR01TZ1BXVkd6MTg?oc=5"
   },
   {
     "id": "source-a9e6c9cfa2b2b014",
@@ -557,59 +611,5 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdzMzYUJwNWdNMUY2VVNnMVV4b2tDR0t6WFVpYXNzdE1mczdrZTRQNHBmYVA3MWhvZ1NCcjhpU2NpbUxVbEpYM0JKb1NaRmVVQ3lDVklqV0ZtcjdjN09Id0d3eGlVV2p3NVJTd1ZwYUdJWldEajRhS05veWdfRmpaQW9VcmdzRV9BRGF4c09Eamlwb2NiRkJYSGZQaUtmQ0ZOS19hSzYxWQ?oc=5"
-  },
-  {
-    "id": "source-8f6a54edc0e45c4f",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Drogue : la NADC alerte sur les risques de contamination li\u00e9s aux produits en circulation",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "publishedAt": "2026-11-05T12:01:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 16:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSzRNVTJGZ2NOYjFGNXFvdGFEQ1VuMDlFZE1RSXg1cmp4VlIzenJOcjlhV3ZraE02ZDk0RGNhUUpTWVR4NENreTBzUlY3TVZLZG1acnQ5eGZOZ3ZXMkFsY2c3ZWZxNjNhemlFMTQ0WE02ZlpwSGpyOEFlS3JxdG9tS2o2QW5DV3BBNl9ZU3FtUDJDd211bWhUZHg5US04b3dFTzBNbFVkc1h0OEhNdDluRHd2TGJrZw?oc=5"
-  },
-  {
-    "id": "source-1e9bc681b73d482a",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "NICE 2026 : hommage aux ONG et sponsors engag\u00e9s dans l\u2019\u00e9ducation civique des jeunes",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-05",
-    "publishedAt": "2026-11-05T06:25:58+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 05 November 2026 at 10:25 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcnJ5eVBkYkNIemY0YzAyYlpzcGltT2tKTlYxQ0ZaWUJpLTFXUHpQVUl3dFJ5WjEwd2lONlVlX1p1MTFOY21SQWZVdldZMUJ3RjdsaENGaFhEdldrRUlqcDkxbWhvV3pvbFdMeGRJTXU5SlRsREktbVZ0TlNXNV9xWDFCdFpVTUxiV2VpLW1FbjA5WWh5T3VjcFppS2FaSk1sXzRLbTg5UW9NZjZV?oc=5"
-  },
-  {
-    "id": "source-1fcc3d9b77c1b52b",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Divali : le CEB mobilis\u00e9 pour un approvisionnement \u00e9lectrique continu et appelle \u00e0 la prudence",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-04",
-    "publishedAt": "2026-11-04T19:12:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 04 November 2026 at 23:12 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObmlxdmlVTE0xOFp6SDdNV2tCSV9XRE9kNFN0N1RLQTBSLUcxdm9hUXo1dGl6TUstRTFPb2RCWklrbGhSQmV2b1RZUk5rS3JYblZXOElCdjh1ZHliMmR0YWRFQ0xTNDZHT3libXRpTEpwNGhVSlZVT0NvT3NfcG1OVFZUcFp6OE9ucmRjUGFReVREVXN0ci1pYk1PUnFnX2RTX1FVeG5QTnFQYmNtT01Kbzdjd2NBTHMwWFE?oc=5"
   }
 ];
