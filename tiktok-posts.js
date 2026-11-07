@@ -43,6 +43,7 @@ window.INSIDE_MAURITIUS_TIKTOK_POSTS = [
     title: "Featured TikTok video — new link",
     summary: "Watch this TikTok post. The original video contains its creator, caption and full details.",
     date: "2026-11-07",
+    addedAt: "2026-11-07T05:56:05+04:00", // GitHub commit time (website), NOT original TikTok publication time
     author: "Inside Mauritius",
     image: "cover-video.svg",
     imageAlt: "Inside Mauritius generic video illustration; not a thumbnail from the TikTok video",
@@ -59,6 +60,7 @@ window.INSIDE_MAURITIUS_TIKTOK_POSTS = [
     title: "Featured TikTok video",
     summary: "Watch this featured TikTok post. Open the original video for the creator's caption and details.",
     date: "2026-11-07",
+    addedAt: "2026-11-07T05:52:24+04:00", // GitHub commit time (website), NOT original TikTok publication time
     author: "Inside Mauritius",
     image: "cover-video.svg",
     imageAlt: "Generic Inside Mauritius video illustration, not footage from the TikTok video",
