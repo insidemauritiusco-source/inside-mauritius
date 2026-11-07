@@ -71,6 +71,49 @@
     for (let i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
     return choices[hash % choices.length];
   }
+
+  // Website likes are personal to a device; no public totals or TikTok statistics are implied.
+  const likeStoragePrefix = "inside-mauritius:liked:";
+  const sessionLikes = new Map();
+  function isStoryLiked(story) {
+    const key = likeStoragePrefix + story.id;
+    if (sessionLikes.has(key)) return sessionLikes.get(key);
+    try { return window.localStorage.getItem(key) === "1"; }
+    catch { return false; }
+  }
+  function updateLikeControl(button, liked, story) {
+    button.setAttribute("aria-pressed", String(liked));
+    button.textContent = liked ? "♥ Liked" : "♡ Like";
+    button.setAttribute("aria-label", (liked ? "Unlike " : "Like ") + story.title);
+  }
+  function makeLikeButton(story) {
+    const button = element("button", "story-like-button");
+    button.type = "button";
+    button.dataset.storyId = story.id;
+    button.title = "Website like saved on this device only";
+    updateLikeControl(button, isStoryLiked(story), story);
+    button.addEventListener("click", () => {
+      const liked = button.getAttribute("aria-pressed") !== "true";
+      const key = likeStoragePrefix + story.id;
+      sessionLikes.set(key, liked);
+      try {
+        if (liked) window.localStorage.setItem(key, "1");
+        else window.localStorage.removeItem(key);
+      } catch { /* Like still works for this visit if browser storage is blocked. */ }
+      document.querySelectorAll(".story-like-button").forEach(other => {
+        if (other.dataset.storyId === story.id) updateLikeControl(other, liked, story);
+      });
+    });
+    return button;
+  }
+  function makeTikTokFollowLink() {
+    const link = element("a", "story-tiktok-follow", "Follow on TikTok ↗");
+    link.href = "https://www.tiktok.com/@insidemauritius";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", "Follow Inside Mauritius on TikTok");
+    return link;
+  }
   function makeStoryCard(story) {
     const card = element("article","story-card");
     const imgLink = element("a","story-image-link");imgLink.href=articleURL(story);imgLink.setAttribute("aria-label",`Read ${story.title}`);
@@ -109,7 +152,9 @@
     } else {
       bottom.append(read,element("span","story-arrow","↗"));
     }
-    content.append(meta,title,summary,bottom);card.prepend(imgLink);card.append(content);
+    const socialActions = element("div", "story-social-actions");
+    socialActions.append(makeLikeButton(story), makeTikTokFollowLink());
+    content.append(meta,title,summary,bottom,socialActions);card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderCards() {
@@ -216,6 +261,7 @@
     }
     embedVideo(story.video,body);
     $("shareFeedback").textContent="";
+    $("articleSocialActions").replaceChildren(makeLikeButton(story), makeTikTokFollowLink());
     document.title=`${story.title} | Inside Mauritius`;
     window.scrollTo({top:0,behavior:"instant"});
   }
