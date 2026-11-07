@@ -22,6 +22,26 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
   {
+    "id": "divali-2026-mauritius-festival-of-lights",
+    "category": "Community",
+    "label": "DIVALI 2026",
+    "title": "Divali 2026 in Mauritius: Festival of Lights on Sunday, 8 November",
+    "summary": "Mauritius will celebrate Divali on Sunday, 8 November 2026, as listed in the government's amended public-holiday notice. Here's what to know about the Festival of Lights.",
+    "date": "2026-11-07",
+    "author": "Inside Mauritius News Desk",
+    "image": "cover-community.svg",
+    "imageAlt": "Generic Inside Mauritius community illustration, not a photograph of Divali celebrations",
+    "content": [
+      "Divali, the Festival of Lights, falls on Sunday, 8 November 2026 in Mauritius, according to the Prime Minister's Office amended list of public holidays for 2026.",
+      "The festival is traditionally associated with lighting lamps, sharing sweets, and gathering with family and friends. It celebrates light, hope, and the triumph of good over evil.",
+      "Inside Mauritius wishes everyone celebrating a joyful and peaceful Divali. Follow our TikTok account @insidemauritius for community updates and video stories from across the island.",
+      "This is a festival information article, not an announcement of a particular public event. Readers should confirm the details of individual celebrations with their organisers."
+    ],
+    "sourceName": "Prime Minister's Office, Mauritius — Public Holidays 2026 (amended, 25 May 2026)",
+    "sourceUrl": "https://pmo.govmu.org/Communique/GN_No._611-Amendment_to_Public_Holidays_2026.pdf"
+  },
+
+  {
     "id": "mauritius-weather-friday-6-november-2026",
     "category": "Mauritius",
     "label": "WEATHER UPDATE",
