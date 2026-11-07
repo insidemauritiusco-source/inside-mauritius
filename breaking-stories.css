@@ -1,0 +1,7 @@
+/* Breaking labels appear only on explicitly flagged newsroom stories. */
+.story-card.is-breaking{border:1px solid rgba(216,41,64,.38);box-shadow:0 16px 36px rgba(155,28,51,.12)}
+.story-card.is-breaking .image-corner{background:#c91d39;color:white}
+.breaking-story-badge{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;padding:5px 10px;border-radius:5px;background:#c91d39;color:#fff;font-size:10px;font-weight:900;letter-spacing:.11em}
+.breaking-story-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff}
+.story-card.is-breaking .story-category{background:#fff0f2}
+@media(prefers-reduced-motion:no-preference){.story-card.is-breaking .breaking-story-badge::before{animation:news-pulse 2s ease-in-out infinite}}
