@@ -22,6 +22,26 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
   {
+    "id": "curepipe-la-vigie-overturned-pickup-reported-2026-11-07",
+    "category": "Mauritius",
+    "label": "ACCIDENT REPORTED · UNCONFIRMED",
+    "title": "Curepipe: overturned pickup reported near La Vigie; details awaiting confirmation",
+    "summary": "A supplied photograph shows a pickup overturned on its roof. An accompanying report places the scene near Imperial College and a La Vigie hardware store in Curepipe. The exact time, circumstances and any injuries have not been independently confirmed.",
+    "date": "2026-11-07",
+    "author": "Inside Mauritius News Desk",
+    "image": "cover-city.svg",
+    "imageAlt": "Inside Mauritius generic city illustration, not a photograph of the reported Curepipe crash",
+    "content": [
+      "A photograph shared with Inside Mauritius shows a light-coloured pickup upside down near a roadside barrier, with a person in a reflective vest standing nearby.",
+      "An accompanying account attributed to SL News places the reported incident in Curepipe, near Imperial College and the La Vigie hardware store. Inside Mauritius has not independently verified the precise location, when the photograph was taken or whether this is a new incident.",
+      "The supplied account says officers attended the scene and warned of slippery road conditions. These details have not been independently confirmed with the authorities.",
+      "The cause of the incident, the number of people involved and whether anyone was injured have not been established.",
+      "Motorists in the area should proceed cautiously, adapt their speed to road conditions and follow instructions from traffic authorities.",
+      "Verification status (7 November 2026): based on a user-supplied photograph and text attributed to SL News. The article will be updated if reliable additional information becomes available."
+    ]
+  },
+
+  {
     "id": "divali-2026-mauritius-festival-of-lights",
     "category": "Community",
     "label": "DIVALI 2026",
