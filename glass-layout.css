@@ -1,0 +1,19 @@
+/* Inside Mauritius glass layout preview. Original logo and content untouched. */
+:root{--paper:#edf4f9;--surface:rgba(255,255,255,.76);--line:rgba(94,131,162,.20);--shadow:0 16px 42px rgba(19,54,83,.11);--navy:#112b48;--red:#d82940}
+body{background:radial-gradient(ellipse at 12% 8%,rgba(52,145,211,.16),transparent 40%),radial-gradient(ellipse at 90% 38%,rgba(24,167,152,.10),transparent 42%),linear-gradient(145deg,#f2f8fd,#e7f1f7 55%,#f7fafc);background-attachment:fixed}
+.site-header,.nav-wrap,.breaking-ribbon,.coverage-band{background:rgba(255,255,255,.74);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:rgba(112,147,172,.22)}
+.site-header{background:rgba(255,255,255,.52)}
+.nav-wrap{box-shadow:0 8px 28px rgba(20,60,92,.07)}
+.lead-feature,.side-feature,.story-card,.contact-card,.video-art{border-radius:18px}
+.story-card{background:rgba(255,255,255,.74);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow)}
+.story-card:hover{box-shadow:0 22px 48px rgba(19,54,83,.17)}
+.side-community{background:rgba(255,255,255,.75);backdrop-filter:blur(14px)}
+.news-search,.filter-button{border-radius:12px}
+.filter-button.selected{background:#174b75;border-color:#174b75}
+.news-live-time{border-radius:14px}
+.coverage-band{margin-block:10px}
+.coverage-icon{background:rgba(224,239,250,.8)}
+.hero-copy h1,.section-title-line h2,.story-card h3{letter-spacing:-.025em}
+.hero-shade{background:linear-gradient(90deg,rgba(5,21,43,.89),rgba(5,21,43,.58) 60%,rgba(5,21,43,.17))}
+@media(max-width:700px){.container{width:calc(100% - 28px)}.top-section{padding-top:22px}.feature-grid{gap:12px}.story-grid{gap:15px}.story-content{padding:16px}.lead-feature{border-radius:16px}.hero-copy{left:20px;right:18px;bottom:22px}.hero-copy h1{font-size:clamp(29px,8vw,42px)}.nav-wrap{backdrop-filter:blur(22px)}}
+@media(prefers-reduced-motion:reduce){.story-card,.hero-photo{transition:none}}
