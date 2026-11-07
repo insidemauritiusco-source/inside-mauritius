@@ -21,6 +21,29 @@ window.INSIDE_MAURITIUS_CONFIG = {
 };
 
 window.INSIDE_MAURITIUS_ARTICLES = [
+  {
+    "id": "mauritius-morning-news-7-november-2026",
+    "category": "Mauritius",
+    "label": "MORNING UPDATE",
+    "title": "Mauritius morning update, 7 November: Showers in the east and centre; Divali tomorrow",
+    "summary": "The 04:30 Mauritius Meteorological Services bulletin forecasts showers mainly in the east and on the central plateau, while Divali will be celebrated on Sunday, 8 November.",
+    "date": "2026-11-07",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic landscape illustration; not an image of current weather conditions",
+    "author": "Inside Mauritius News Desk",
+    "content": [
+      "Good morning, Mauritius. Here are two verified updates for Saturday, 7 November 2026.",
+      "WEATHER: According to the Mauritius Meteorological Services forecast issued at 04:30 on Saturday, cloudy skies and showers are expected during the day, mainly over the eastern part of the island and the central plateau. Some morning showers may be temporarily moderate, with patches of fog in certain areas.",
+      "Maximum temperatures are forecast at 25–27°C over the central plateau and 29–32°C in coastal regions. Easterly winds are expected at around 25 km/h, with gusts of approximately 50 km/h. The sea is forecast to be rough beyond the reefs, with south-westerly swells around two metres. Take care on wet roads and follow updated official advice.",
+      "DIVALI TOMORROW: The Prime Minister’s Office amended 2026 public-holiday notice lists Divali for Sunday, 8 November 2026. Inside Mauritius sends warm wishes to everyone preparing for the Festival of Lights.",
+      "This article is a dated morning summary, not a live weather alert. Forecasts and safety warnings can change during the day. Check Mauritius Meteorological Services for the latest bulletins.",
+      "Watch Inside Mauritius on TikTok at @insidemauritius for daily local news, and share this article with your community."
+    ],
+    "sourceName": "Mauritius Meteorological Services — 04:30 forecast, 7 November 2026",
+    "sourceUrl": "https://metservice.intnet.mu/forecast-bulletin-french-mauritius.php",
+    "sourceName2": "Prime Minister’s Office — amended public holidays for 2026",
+    "sourceUrl2": "https://pmo.govmu.org/Communique/GN_No._611-Amendment_to_Public_Holidays_2026.pdf"
+  },
 {
   "id": "port-louis-weather-2026-11-07",
   "category": "Mauritius",
