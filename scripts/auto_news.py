@@ -23,8 +23,8 @@ OUTPUT = ROOT / "newsroom-data.js"
 TZ = ZoneInfo("Indian/Mauritius")
 NOW = dt.datetime.now(dt.timezone.utc)
 MAX_AGE_DAYS = 3
-MAX_TOTAL = 32
-MAX_EACH_SOURCE = 9
+MAX_TOTAL = 60
+MAX_EACH_SOURCE = 13
 USER_AGENT = "InsideMauritiusHeadlineLinks/1.0 (news aggregation; mr.insidemauritius.com)"
 MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
@@ -34,6 +34,7 @@ SOURCE_SITES = {
     "Le Défi Media / Radio Plus": "defimedia.info",
     "L'Express": "lexpress.mu",
     "ION News": "ionnews.mu",
+    "Le Mauricien": "lemauricien.com",
     "Mauritius Times": "mauritiustimes.com",
 }
 SOURCES = [
@@ -43,6 +44,7 @@ SOURCES = [
     ("L'Express", "https://news.google.com/rss/search?q=site%3Alexpress.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     # Direct publisher feeds: failures do not stop the other sources.
     ("ION News", "https://ionnews.mu/feed/"),
+    ("Le Mauricien", "https://www.lemauricien.com/feed/"),
     ("Mauritius Times", "https://www.mauritiustimes.com/feed/"),
 ]
 VIDEO_CHANNELS = [
