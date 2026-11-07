@@ -252,6 +252,13 @@
     document.querySelector(".hero-photo").alt=lead.imageAlt || "Mauritius landscape";
     document.querySelector(".hero-photo").onerror=()=>{const image=document.querySelector(".hero-photo");if(!image.src.endsWith("cover-mauritius.svg")){image.src="cover-mauritius.svg";image.alt="Generic Mauritius illustration";const credit=$("heroFeature").querySelector(".hero-photo-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     document.querySelector(".hero-link").href=articleURL(lead);
+    const heroPublished = $("heroPublishedAt");
+    if (heroPublished) {
+      heroPublished.textContent = displayPostTime(lead);
+      heroPublished.dateTime = lead.publishedAt || lead.addedAt || lead.date || "";
+    }
+    const heroKicker = document.querySelector(".hero-kicker");
+    if (heroKicker) heroKicker.textContent = lead.category === "Video" ? "VIDEO SPOTLIGHT" : "INSIDE THE HEADLINES";
     const hero=$("heroFeature");
     const oldCredit=hero.querySelector(".hero-photo-credit");
     if(oldCredit) oldCredit.remove();
