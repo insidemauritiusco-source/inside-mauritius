@@ -22,6 +22,24 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
 {
+  "id": "senior-counsel-attorney-sponsorship-recommendation-panel-7-november-2026",
+  "category": "Mauritius",
+  "label": "LEGAL AFFAIRS",
+  "title": "Senior Counsel and Senior Attorney: sponsorship concerns ahead of Recommendation Panel meeting",
+  "summary": "The system has a gap that causes grumbling among lawyers and professors wishing to be promoted to Senior Counsel or Senior Attorney.",
+  "date": "2026-11-07",
+  "publishedAt": "2026-11-07T18:23:07+04:00",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius editorial illustration; not a photo of the panel meeting",
+  "author": "Inside Mauritius (text supplied for publication)",
+  "content": [
+    "The system has a gap that causes grumbling among lawyers and professors wishing to be promoted to Senior Counsel or Senior Attorney. The \"Recommendation Panel\" meeting scheduled next Tuesday at the request of the Attorney General, under the \"Senior Counsel and Senior Attorney Act\" should produce a solution. “Sponsorship”, as required by law, does not allow everyone to be housed on the same sign, due to the limited number of “Senior Counselors” and “Senior Attorneys”. It is, indeed, provided that two 'Senior Counselors' or two 'Senior Attorneys' must sponsor the application of one lawyer or one confessor at the same time."
+  ],
+  "sourceName": "Original Facebook video",
+  "sourceUrl": "https://www.facebook.com/share/v/1FaQeVxKyg/",
+  "video": "https://www.facebook.com/share/v/1FaQeVxKyg/"
+},
+{
   "id": "gourmet-experience-labourdonnais-7-november-2026",
   "category": "Community",
   "label": "PUBLIC EVENT",
