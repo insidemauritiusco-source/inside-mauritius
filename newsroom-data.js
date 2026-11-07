@@ -1,6 +1,42 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-49ec0536e906f301",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Assises : Vedanand Seetul reconnu coupable du meurtre de son \u00e9pouse",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T17:39:56+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 07 November 2026 at 21:39 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUkthQkRKNE5HWllWZEd6TmNOOW9BamRGMlNoY19QZTUyVC1PbHRLcFJnSDA5aVBxdm5BQml4ZnBKY0d1UnYzcFF1YWdkWWNFejVtMloyek13S3F2d2lRMFJ4dmM1VGl4cGRnNVBjMmpLV0FKWFBRR1NiOFU1U2dtUWtkVGZHWVZJUzZOMG52OUxrQQ?oc=5"
+  },
+  {
+    "id": "source-bf3fbece92e6a7ad",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c0 la d\u00e9couverte des chutes Victoria, joyau touristique du Zimbabwe",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T13:28:32+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 07 November 2026 at 17:28 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb1hyS21pOUxZNDNnMmhsMExGaXlxTGZJOVk2U2ktbjZhM1lMMERSd2V6OGZRc1BCZDRZaGhtTnZXZmdlcjJ5VVRzRm5ObzdybUdMcm1qMmptTzhHZjlkdDVHZWZELW9VdG5LUGltbU8wbmVhOHpRTDBYUG9QNFl4ekowWjNVNkNVNm9NRkdkOA?oc=5"
+  },
+  {
     "id": "source-fcc648d93d0e8190",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -449,6 +485,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOXdzejlKODJVZWFSNGo2QVRmeXFoa2l4bGtEbHR1TEZabDhzWEdEMHdsUHVRUVhDbGh0a3NxVTltY3Q0LXhNbkV6TGJUWHM3VlhnSHlqRUxrMFZ6OTBrYlQ4cnV0cFVBQm5oZUozdTZNa1lCXzZGa0pLTGtrM0U3VDZQTm94VFlEc25yRmJBMTVzcmM3YjIyVW9zMXhOWVZGWjhSekplTU55N0tYNUE?oc=5"
   },
   {
+    "id": "source-2f1c9d16fb398cba",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Autisme : un accord pour former les professionnels et mieux accompagner les familles",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T04:29:06+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 07 November 2026 at 08:29 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVg0eGdJUDVVTWFFYk9ySVlGMjh3TGM4UVVGa3I1NTV6eG00TGdaWmFfcldQdEVFeDdPb0VOWUNLdWVHcXVFNFVZQmhGQmI0ZkQ5MFJZQ1BFdW1LS0JCcDFMRFMtNEotakcwLU9nMkpTN1BLbWpPYnBCX3BNM2VJclJ5SkhvaHl6ZjVuWW5QNEVzVzhvNGRlN1RwQkVyRUdVUk5vM0dPdEdNcVlFM1lWdXR5VDA?oc=5"
+  },
+  {
     "id": "source-7689c63873361e0f",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -539,6 +593,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb210b2N0aWVuajNCWDI3eXVYYmFFRXRtcF9BLTlyd1ZHcENscXlHcTBoWFE3OXdCcDU4U0hDRXBwNEpMYkQ0TThjMXRCMW1BUU1sNzRQZTJRamNqWUlSR1BPN1NpdlV6aTdkX3UtTlNTN1l0RjY0UUFYWmxRbV83dk54cFZmZ0J2SVFpYXhR?oc=5"
   },
   {
+    "id": "source-fd1fb4df2004b945",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab TERRES DE L'\u00c9TAT : UN BAIL TR\u00c8S VIP ? \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T16:44:59+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 20:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HSmdmclZ5bjJrNV9OR2VFTTNRUnB4OGdMUThELTZTTFlRb3pZbWdpOWdXWGVuOUJNQlNHTTJfNjNZdG5HZGowc0lpN0FvNGVxMXZlLVBxM1ZISUpDRXc2RXBlRWxJcm56RlJFeXJHMGtSeW96R3c?oc=5"
+  },
+  {
     "id": "source-1873e389a0f7ba4c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -575,6 +647,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9RX1ZxRkxWR0lwNkp6eXBZdG5CYXJPaXcwV0kyWnFVMGtIRFBpRk9oZUp6VldfaHNBcDJmUkMzNFJWeUp2LVBoR196ZTZLeVNtcUlxY250Q3FQNDRoVHQ1ak9nUzVNWFM2M0pfdURpR2VpQlBRaTFtaQ?oc=5"
   },
   {
+    "id": "source-b8e9f910a3c4bf87",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Gestion de l\u2019eau : Business Mauritius veut renforcer la coop\u00e9ration avec les autorit\u00e9s",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T12:57:09+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 16:57 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVWhJVTA0eXd1VFB1RjZkdHhuX1FTLWFFZE5rNmxjaDIyYy1hZ3lVMXFaQTdzdG5HZVk2dlpkQ3VfRkJieWlHZkV2MWpMb256NV9HbUEtaUFuclcyWFR5dEhEak5TUjFYWG9aV1V1UG9yS0FyY2NERURjZ1ppSTVGTUQ1VEVibk9NTnJXb0piekVjLWZ6dDMzUlczZVE?oc=5"
+  },
+  {
     "id": "source-9225a3bbb836955d",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -591,42 +681,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNS0JFSEV5WTlMbElOLVNiNkRMSTB0ODk2UzlJMlE2VXU4cElwZnJLdGllSWtJR2ZvMVhGX2xXNng4VWRXcVFBbTRrdURlMFc3NWlnT2dBUWRZSnJFWFgtR0tTYTBvbTUyc1owWXpuYWpEZkY3V0YtUm9UaW8xYnlVc3dYRTZQZ2c1T2IySDAxRUJuUXhMYXJ2TWR2SVZtYjF6MjhWWTd5WVY3TlNVdUE?oc=5"
-  },
-  {
-    "id": "source-1b713ace65102c65",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Croix du Morne Brabant : le ministre Mahen Gondeea d\u00e9nonce un comportement irresponsable",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T12:06:14+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 16:06 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMk5wSEpfR3h5dlFrN2RiZW9PZFRwaFY5X1Fwb25KaVRXc21oNHJhcFI4QUk3UWlfRkxfZFpscWRLd0NYOFhCX0JHemFuUlBiTko4WU82WnQ3azZCOGNzQzNVMENmY2I4OS1EQzlYNWt4WHBEbC1BaF9pdVJsbUx6LUtOS011X21oWjU5SncwRnpzMlV4TUVFcXVMV0xhTFhmUlFiRVl3QTYyYkhRcnc?oc=5"
-  },
-  {
-    "id": "source-0c89f38f8b6ec33b",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Projet NICE : 200 jeunes bient\u00f4t form\u00e9s \u00e0 la discipline et \u00e0 la citoyennet\u00e9\u2026",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T11:50:34+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 15:50 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQVZWcXJRaU5Eb29kR2d3UndlWlhPVTkyZkNDMExrWDV6emZlNTNnUW9hMjBkd2R6bzBfX0ZVNGtGTmE1OHZKT3VRMEdON1Frd19MYTRLYTI1ekF1a1pUZEs2U3lwb2I5Tk15NEJuUW1HMXNCNWttMUNlOURSd2FLckl3NlZWRGExQVRoUlFjN1FzeUdxRGVkaGxDNDZfUQ?oc=5"
   },
   {
     "id": "source-e5d0dc0fcbbf9bc9",
@@ -647,24 +701,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fb1ZRRjI1eGJ6S0RsNHZ2b1pVWWpVNkJSUEJnTnZjSVl1UnpBc3J3LTRwVnZaV3U4TFc5THRjZy1kRXQzRlJiYkIxUllpNjUxWGJRaTZfSy1CQnFUbEI2Z00xbkxsWFJMbUxIOA?oc=5"
   },
   {
-    "id": "source-4e6d622aae045a9e",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Victoria Urban Terminal : tous les commerces ont rouvert",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T10:48:47+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 14:48 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcEltbkRXSHd5MHNYSTVwdHBoNEM2R290M0Z0Q1RRYWg2N1d2aTc0eG9QVGdtZWNZbERZWER2Tlg1WExjeGhLeDZtODV0SzdFVDZsQXk4cmMyTEszcW50ZUpGb1FQMFF4YzY3eDY2ekJveWNzdE9DemVZNGRIdmZLVmVMYw?oc=5"
-  },
-  {
     "id": "source-013b32ea8de25976",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -681,24 +717,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMk1HUjBnb2VFUkoyYXBodW13dUNQUGppTEVkeFFpbmVKUk1zWm90Rjc2SHFJbjlCZG9zaV9VU1hhRXhFdXdiMGNrNG1NX1FTUl8zLUFqQV9JbW00MnU4c2o5OUR6TFNDaGNfekNjNlhlRjA3OHVaRUdrNzdMMDJKRW9HUXpHQUtJV1Y5R2wzR21ZU092WVVWdUF0VzdlWWotUExoTTM4ZHBqUQ?oc=5"
-  },
-  {
-    "id": "source-a6aea813dc5018af",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Sunshine Pottery : de l\u2019argile \u00e0 la lumi\u00e8re de Divali",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T10:21:08+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 14:21 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE45QVRNTHVyd3hpYW94LWh4V2ZMajc1N3lVdDZkQWl5Sl9iczJDMnhjc1BVMnhVU2tDOVUzVURkZlR4YldrWVl1c292MW54S2pNX2VDSGhlRU1abkNDLU45bkROVnB5VFRYQXE2THB5NGRxTkpGQ25oNGNpcw?oc=5"
   },
   {
     "id": "source-1e9bc681b73d482a",
