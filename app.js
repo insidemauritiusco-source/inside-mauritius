@@ -43,13 +43,19 @@
         return label + " · " + timestamp + " MUT";
       }
     }
-    return formatDate(story.date, long);
+    const dateLabel = formatDate(story.date, long);
+    if (!dateLabel) return "Publication date not available";
+    if (story.tiktokUrl) return "Video link · " + dateLabel + " · Time not recorded";
+    return "Dated " + dateLabel + " · Time not recorded";
   }
   function clockTick() {
     const now = new Date();
-    $("liveClock").textContent = new Intl.DateTimeFormat("en-GB", {timeZone:"Indian/Mauritius",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(now);
+    const mauritiusClock = new Intl.DateTimeFormat("en-GB", {timeZone:"Indian/Mauritius",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(now);
+    $("liveClock").textContent = mauritiusClock;
+    if ($("newsClock")) $("newsClock").textContent = mauritiusClock;
     const fullDate = new Intl.DateTimeFormat("en-GB", {timeZone:"Indian/Mauritius",weekday:"short",day:"numeric",month:"short",year:"numeric"}).format(now);
     $("liveDate").textContent = fullDate;
+    if ($("newsDate")) $("newsDate").textContent = fullDate;
     $("todayLine").textContent = fullDate.toUpperCase();
     $("copyrightYear").textContent = new Intl.DateTimeFormat("en-GB",{timeZone:"Indian/Mauritius",year:"numeric"}).format(now);
   }
@@ -118,10 +124,19 @@
   }
   function makeStoryCard(story) {
     const card = element("article","story-card");
-    const imgLink = element("a","story-image-link");imgLink.href=articleURL(story);imgLink.setAttribute("aria-label",`Read ${story.title}`);
+    const imgLink = element("a","story-image-link");
+    const isTikTok = typeof story.tiktokUrl === "string" && /^https:\/\/(?:vt\.tiktok\.com|www\.tiktok\.com)\//i.test(story.tiktokUrl);
+    imgLink.href = isTikTok ? story.tiktokUrl : articleURL(story);
+    imgLink.setAttribute("aria-label", isTikTok ? `Watch TikTok video: ${story.title}` : `Read ${story.title}`);
+    if (isTikTok) { imgLink.target="_blank"; imgLink.rel="noopener noreferrer"; imgLink.classList.add("story-video-cover"); }
     const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
     img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) {img.src="cover-mauritius.svg";img.alt="Generic illustration; source photograph unavailable";const credit=card.querySelector(".photo-inline-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     imgLink.append(img,element("span","image-corner",story.label || "INSIDE MAURITIUS"));
+    if (isTikTok) {
+      const watch=element("span","story-video-play","▶");
+      watch.setAttribute("aria-hidden","true");
+      imgLink.append(watch,element("span","story-video-label","Watch original on TikTok ↗"));
+    }
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
       const credit=element("span","photo-inline-credit");
       credit.append(document.createTextNode(story.photoIllustrative === false ? "Source image · " : "Illustrative archive photo · "));
@@ -151,6 +166,11 @@
       original.target="_blank";
       original.rel="noopener noreferrer";
       bottom.append(original);
+    } else if (isTikTok) {
+      const watch=element("a",null,"Watch video on TikTok ↗");
+      watch.href=story.tiktokUrl;
+      watch.target="_blank";watch.rel="noopener noreferrer";
+      bottom.append(watch);
     } else {
       bottom.append(read,element("span","story-arrow","↗"));
     }
@@ -249,6 +269,14 @@
     bylineTime.dateTime=story.publishedAt || story.date || "";
     byline.replaceChildren(element("strong",null,story.author||"Inside Mauritius"),element("span",null,"•"),bylineTime);
     const img=$("articleImage");img.src=imageFor(story);img.alt=story.imageAlt||"Editorial illustration";
+    const imageOpen=$("articleImageOpen");
+    if (imageOpen) {
+      imageOpen.href = story.tiktokUrl || imageFor(story);
+      imageOpen.setAttribute("aria-label",story.tiktokUrl ? "Watch original video on TikTok" : "Open full-size article image");
+      imageOpen.target="_blank";
+      imageOpen.rel="noopener noreferrer";
+      imageOpen.title=story.tiktokUrl ? "Watch TikTok video" : "View full image";
+    }
     const caption=$("articleCaption");caption.replaceChildren();
     img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")){img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; archive photograph unavailable";caption.textContent="Generic Inside Mauritius illustration. The archive photograph could not be loaded.";}};
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
