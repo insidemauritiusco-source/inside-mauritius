@@ -80,6 +80,10 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 }
 
 
+/* Timestamps wrap cleanly on compact news cards. */
+.story-date{max-width:70%;text-align:right;line-height:1.45;letter-spacing:0}
+.article-byline time{line-height:1.45}
+
 /* Events Calendar: responsive embed for desktop and mobile. */
 .events-section{padding-top:72px;padding-bottom:90px}
 .events-calendar-wrap{width:100%;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:var(--shadow)}
