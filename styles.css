@@ -165,3 +165,9 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .article-figure>a{display:block;cursor:zoom-in}
 .article-figure>a:focus-visible{outline:3px solid #d82940;outline-offset:4px}
 @media(max-width:620px){.news-live-time{gap:5px 13px;padding:12px 13px}.news-live-time #newsClock{font-size:23px}.news-live-time #newsDate{width:100%;font-size:12px}.story-meta .story-date{font-size:12px!important}}
+
+/* Large readable publication date/time directly BELOW each news post */
+.story-posted-row{margin-top:14px;padding:13px 12px;border-top:2px solid #dce3ec;background:#f0f4f9;border-radius:0 0 7px 7px;display:flex;flex-direction:column;gap:4px}
+.story-posted-label{font-size:11px;font-weight:900;letter-spacing:.09em;color:#294768}
+.story-posted-time{display:block;font-size:15px;font-weight:850;color:#0b263f;line-height:1.4;letter-spacing:0;overflow-wrap:anywhere}
+@media(max-width:620px){.story-posted-row{padding:12px}.story-posted-time{font-size:15px}}
