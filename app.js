@@ -305,6 +305,27 @@
       link.href="https://www.tiktok.com/@insidemauritius/video/"+videoId;
       link.target="_blank";link.rel="noopener noreferrer";
       original.append(link);parent.append(original);
+    } else if ((host === "www.facebook.com" || host === "facebook.com") && /^\/share\/v\/[A-Za-z0-9]+\/?$/.test(parsed.pathname)) {
+      // Official Facebook video plugin; some videos may not allow embedding.
+      // Preserve a direct source link so the original is always accessible.
+      const frame=element("iframe","facebook-article-player");
+      frame.src="https://www.facebook.com/plugins/video.php?href="+encodeURIComponent(parsed.href)+"&show_text=false&width=560";
+      frame.title="Original Facebook news video";
+      frame.loading="lazy";
+      frame.referrerPolicy="strict-origin-when-cross-origin";
+      frame.allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
+      frame.allowFullscreen=true;
+      frame.style.width="100%";
+      frame.style.minHeight="315px";
+      frame.style.border="0";
+      parent.append(frame);
+      const notice=element("p","article-source");
+      const link=element("a",null,"Watch the original video on Facebook");
+      link.href=parsed.href;
+      link.target="_blank";
+      link.rel="noopener noreferrer";
+      notice.append(link);
+      parent.append(notice);
     } else if (host === "vt.tiktok.com" && /^\/[A-Za-z0-9_-]{5,32}\/?$/.test(parsed.pathname)) {
       // Short TikTok links do not include the numeric ID required by the official player.
       // Provide a safe, functioning link instead of an empty or broken iframe.
