@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Inside Mauritius Morning News for 7 November 2026</title>
+  <desc id="desc">Morning bulletin cover showing showers in the east and central plateau, with Divali on Sunday 8 November 2026. Editorial graphic, not event photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071a36"/><stop offset=".60" stop-color="#153a65"/><stop offset="1" stop-color="#005e87"/>
+    </linearGradient>
+    <linearGradient id="rain" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d6f4ff"/><stop offset="1" stop-color="#74cfff"/></linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6bd51"/><stop offset="1" stop-color="#e95422"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <path d="M0 515C235 455 390 518 567 461S960 417 1200 493v227H0Z" fill="#06355e" opacity=".50"/>
+  <rect width="1200" height="10" fill="#ea263b"/><rect y="10" width="300" height="8" fill="#ec2b43"/><rect y="10" x="300" width="300" height="8" fill="#1b5ed2"/><rect y="10" x="600" width="300" height="8" fill="#ffd83d"/><rect y="10" x="900" width="300" height="8" fill="#10a466"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <text x="55" y="85" font-size="36" font-weight="900" fill="white" letter-spacing="2">INSIDE <tspan fill="#ff5265">MAURITIUS</tspan></text>
+    <rect x="55" y="111" rx="7" width="260" height="48" fill="#e72c43"/>
+    <text x="74" y="146" font-size="25" font-weight="800" fill="#fff">MORNING NEWS</text>
+    <text x="1145" y="84" font-size="25" font-weight="800" text-anchor="end" fill="#eff7ff">SAT 7 NOV 2026</text>
+    <text x="1145" y="120" font-size="17" text-anchor="end" fill="#a6c7e2">Published 07:11 MUT</text>
+    <text x="55" y="225" font-size="66" font-weight="900" fill="white">MAURITIUS UPDATE</text>
+    <text x="55" y="268" font-size="23" fill="#c9e2ff">WEATHER  ·  COMMUNITY NEWS</text>
+    <rect x="54" y="305" width="526" height="294" rx="20" fill="#e9f5ff"/>
+    <rect x="620" y="305" width="526" height="294" rx="20" fill="#fff7ea"/>
+    <g transform="translate(82,329)">
+      <g fill="#91bbd4"><ellipse cx="82" cy="75" rx="67" ry="36"/><ellipse cx="141" cy="76" rx="61" ry="33"/><circle cx="100" cy="53" r="48"/></g>
+      <g stroke="url(#rain)" stroke-width="12" stroke-linecap="round"><path d="M58 134l-10 26"/><path d="M112 138l-10 26"/><path d="M166 136l-10 26"/></g>
+    </g>
+    <text x="82" y="540" fill="#092c51" font-size="41" font-weight="900">SHOWERS EXPECTED</text>
+    <text x="82" y="577" fill="#3b5f80" font-size="20">East and central plateau</text>
+    <g transform="translate(855,329)">
+      <ellipse cx="58" cy="161" rx="110" ry="16" fill="#ebc47a" opacity=".35"/>
+      <path d="M-26 140q84 86 169 0l-20-29H-6Z" fill="#a43128"/>
+      <path d="M-25 138q84 43 169 0" fill="none" stroke="#f19a49" stroke-width="10"/>
+      <path d="M59 107C10 64 65 21 63-9c51 55 43 102-4 116Z" fill="url(#light)"/>
+      <path d="M64 100c-19-20 8-47 5-62 22 24 24 49-5 62Z" fill="#fff4aa"/>
+      <path d="M59 104v36" stroke="#593a22" stroke-width="7"/>
+    </g>
+    <text x="645" y="540" fill="#8a1629" font-size="42" font-weight="900">DIVALI TOMORROW</text>
+    <text x="645" y="577" fill="#8a4d35" font-size="20">Sunday 8 November 2026</text>
+    <line x1="55" y1="629" x2="1145" y2="629" stroke="#75a6cd" opacity=".55" stroke-width="2"/>
+    <text x="55" y="674" font-size="27" font-weight="800" fill="white">FOLLOW @insidemauritius</text>
+    <text x="1145" y="672" font-size="22" text-anchor="end" fill="#d9e9f8">mr.insidemauritius.com</text>
+  </g>
+</svg>
