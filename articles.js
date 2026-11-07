@@ -21,6 +21,69 @@ window.INSIDE_MAURITIUS_CONFIG = {
 };
 
 window.INSIDE_MAURITIUS_ARTICLES = [
+{
+  "id": "gourmet-experience-labourdonnais-7-november-2026",
+  "category": "Community",
+  "label": "PUBLIC EVENT",
+  "title": "Gourmet Experience 2026 at Château de Labourdonnais: 7 November, 11:00–23:00",
+  "summary": "Château de Labourdonnais in Mapou hosts Gourmet Experience on Saturday 7 November, with food stands and music from 11:00 to 23:00. Tickets are listed by Otayo; check entry conditions before travelling.",
+  "date": "2026-11-07",
+  "image": "cover-community.svg",
+  "imageAlt": "Inside Mauritius community illustration; not a photograph of this event",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "Event notice: Gourmet Experience 2026 takes place on Saturday 7 November 2026 from 11:00 to 23:00 (Mauritius time), at Château de Labourdonnais, Mapou. The venue's event announcement and Otayo ticket listing confirm the schedule and location.",
+    "The programme features food, culinary discoveries and music. Otayo advertises regular admission from Rs 450, with day and night entry options. Check the original booking page for ticket availability and conditions before visiting.",
+    "Event organiser: not independently confirmed by the source listings. Venue: Château de Labourdonnais. This is an advance event notice, not confirmation that activities have begun or that tickets remain available."
+  ],
+  "sourceName": "Château de Labourdonnais — official event listing",
+  "sourceUrl": "https://domainedelabourdonnais.com/event/a-gourmet-experience-at-chateau-de-labourdonnais/",
+  "sourceName2": "Otayo — tickets and schedule",
+  "sourceUrl2": "https://otayo.com/event/gourmet-experience-2026/",
+  "publishedAt": "2026-11-07T06:36:09.243Z",
+  "eventDate": "2026-11-07"
+},
+{
+  "id": "festival-seggae-zwe-anjalay-7-november-2026",
+  "category": "Community",
+  "label": "PUBLIC EVENT",
+  "title": "Festival Seggae Zwe returns to Anjalay Coopen Stadium tonight, 7 November",
+  "summary": "Festival Seggae Zwe is scheduled for Saturday 7 November at 19:00 at Anjalay Coopen Stadium, Belle Vue. Otayo lists admission from Rs 500; check entry and ticket availability before travelling.",
+  "date": "2026-11-07",
+  "image": "cover-community.svg",
+  "imageAlt": "Inside Mauritius community illustration; not a photograph of the concert",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "Event notice: The third Festival Seggae Zwe is scheduled for Saturday 7 November 2026, starting at 19:00 Mauritius time at Anjalay Coopen Stadium, Belle Vue. The programme celebrates seggae with a lineup of Mauritian artists.",
+    "Ticket agency Otayo advertises normal tickets at Rs 500 and VIP at Rs 1,000. The separate event listing on Deals.mu says doors open at 17:30. Check conditions and availability at the linked ticketing page, as prices and access can change.",
+    "L'Express identified Bruno Raya as an organiser in its 4 November preview. This is a scheduled-event announcement; it does not confirm that the concert has begun."
+  ],
+  "sourceName": "Otayo — Festival Seggae Zwe tickets and schedule",
+  "sourceUrl": "https://otayo.com/event/festival-seggae-zwe/",
+  "sourceName2": "L'Express — 4 November 2026 organiser interview",
+  "sourceUrl2": "https://lexpress.mu/node/564396",
+  "publishedAt": "2026-11-07T06:36:09.243Z",
+  "eventDate": "2026-11-07"
+},
+{
+  "id": "kyiv-missile-strike-7-november-2026",
+  "category": "World",
+  "label": "WORLD UPDATE",
+  "title": "Ukraine: Kyiv officials report missile strike and damage to residential buildings",
+  "summary": "Kyiv authorities reported a Russian missile attack early on 7 November, with residential buildings damaged and two people injured, according to Reuters. The report reflects preliminary local official accounts.",
+  "date": "2026-11-07",
+  "image": "cover-world.svg",
+  "imageAlt": "Inside Mauritius world-news illustration, not a photograph of the attack",
+  "author": "Inside Mauritius World Desk",
+  "content": [
+    "Reuters reported on Saturday 7 November 2026 that Russian forces launched a missile attack on Kyiv early in the day, citing Mayor Vitali Klitschko and the city's military administration.",
+    "Local authorities said debris damaged the facade of a five-storey residential building and that other buildings, including a kindergarten building, were affected. The military administration reported two injuries. These are early official accounts, and damage and casualty figures may change.",
+    "The report comes ahead of US-led talks planned in Abu Dhabi involving Ukrainian and Russian negotiators. Inside Mauritius has not independently investigated the incident; read the original Reuters report for updates."
+  ],
+  "sourceName": "Reuters — 7 November 2026",
+  "sourceUrl": "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+  "publishedAt": "2026-11-07T06:36:09.243Z"
+},
   {
     "id": "mauritius-morning-news-7-november-2026",
     "category": "Mauritius",
