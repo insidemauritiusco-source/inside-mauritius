@@ -1,0 +1,14 @@
+/* Broadcast-style breaking news strip; existing ticker text and behavior remain intact. */
+.breaking-ribbon{position:relative;overflow:hidden;background:linear-gradient(110deg,rgba(10,32,59,.97),rgba(20,65,104,.94));border-bottom:2px solid #e3344b;box-shadow:0 9px 24px rgba(13,39,67,.16);color:#fff}
+.breaking-ribbon::before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(115deg,transparent 0,transparent 70px,rgba(255,255,255,.025) 71px,rgba(255,255,255,.025) 73px)}
+.breaking-inner{position:relative;min-height:66px;gap:18px}
+.breaking-label{position:relative;align-self:stretch;display:flex;gap:10px;align-items:center;padding:0 23px;background:linear-gradient(135deg,#ed304b,#b91430);font-size:12px;font-weight:900;letter-spacing:.11em;box-shadow:6px 0 20px rgba(222,31,60,.18)}
+.breaking-label::after{content:"";position:absolute;right:-11px;top:0;border-top:33px solid transparent;border-bottom:33px solid transparent;border-left:11px solid #b91430}
+.breaking-dot{width:8px;height:8px;animation:news-pulse 2s ease-in-out infinite}
+.breaking-inner p{padding-left:9px;font-size:14px;font-weight:750;letter-spacing:.012em;color:#f8fbff}
+.breaking-inner>a{color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 14px;font-weight:800}
+.breaking-inner>a:hover{color:#fff;background:rgba(255,255,255,.23)}
+@keyframes news-pulse{50%{opacity:.45;box-shadow:0 0 0 7px rgba(255,255,255,.08)}}
+@media(max-width:700px){.breaking-inner{min-height:58px;gap:8px}.breaking-label{font-size:10px;padding:0 12px;letter-spacing:.035em}.breaking-label::after{right:-8px;border-top-width:29px;border-bottom-width:29px;border-left-width:8px}.breaking-inner p{font-size:12px;padding-left:7px}.breaking-inner>a{padding:6px 8px;font-size:10px}}
+@media(max-width:390px){.breaking-inner>a{display:none}.breaking-label{padding-inline:9px}}
+@media(prefers-reduced-motion:reduce){.breaking-dot{animation:none}}
