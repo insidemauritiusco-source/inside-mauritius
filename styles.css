@@ -90,3 +90,15 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .events-calendar-wrap iframe{display:block;width:100%;min-height:600px;border:0}
 .events-note{font-size:12px;color:var(--muted);margin:12px 0 0}
 @media(max-width:620px){.events-section{padding-top:53px;padding-bottom:66px}.events-calendar-wrap iframe{min-height:530px;height:530px}}
+
+/* Simple reader engagement buttons; likes are local to each reader's device. */
+.story-social-actions,.article-social-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.story-social-actions{border-top:1px solid #e7e9ee;margin-top:13px;padding-top:12px}
+.article-social-actions{margin:15px 0 20px}
+.story-like-button,.story-tiktok-follow{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:9px 12px;border-radius:6px;font-size:11px;font-weight:800;line-height:1.3;text-align:center}
+.story-like-button{border:1px solid #d6dce5;background:#fff;color:#162337}
+.story-like-button:hover{border-color:#be4154}
+.story-like-button[aria-pressed="true"]{border-color:#c94258;background:#fff0f2;color:#b61e3a}
+.story-tiktok-follow{border:1px solid #1b2940;background:#1b2940;color:#fff}
+.story-tiktok-follow:hover{background:#31425e;color:#fff}
+.story-like-button:focus-visible,.story-tiktok-follow:focus-visible{outline:3px solid #da4e64;outline-offset:2px}
