@@ -21,6 +21,24 @@ window.INSIDE_MAURITIUS_CONFIG = {
 };
 
 window.INSIDE_MAURITIUS_ARTICLES = [
+{
+  "id": "port-louis-weather-2026-11-07",
+  "category": "Mauritius",
+  "label": "WEATHER · 7 NOVEMBER 2026",
+  "title": "Port Louis weather: morning showers, cloudy and windy on 7 November",
+  "summary": "Saturday's forecast for Port Louis: morning showers, then cloudy, windy and humid conditions. High 28°C, low 22°C.",
+  "date": "2026-11-07",
+  "publishedAt": "2026-11-07T02:41:57.713Z",
+  "author": "Inside Mauritius",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Generic Mauritius illustration; not a live weather photograph",
+  "content": [
+    "Weather forecast for Port Louis, Mauritius, for Saturday, 7 November 2026: a few morning showers, otherwise cloudy, windy and humid. The forecast maximum is 28°C and minimum 22°C.",
+    "Sunday, 8 November: cloudy with a few showers, mainly early in the day, and breezy in the morning. Maximum 29°C, minimum 21°C.",
+    "Carry an umbrella when heading out. This forecast covers Port Louis; conditions elsewhere in Mauritius may differ.",
+    "Forecast retrieved from the weather service available through ChatGPT on 7 November 2026. This is a dated forecast, not a live island-wide bulletin or an official weather warning."
+  ]
+},
   {
     "id": "curepipe-la-vigie-overturned-pickup-reported-2026-11-07",
     "category": "Mauritius",
