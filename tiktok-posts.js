@@ -37,6 +37,22 @@
 */
 window.INSIDE_MAURITIUS_TIKTOK_POSTS = [
   {
+    id: "tiktok-ZSpr2jFB1",
+    category: "Video",
+    label: "FEATURED TIKTOK",
+    title: "Featured TikTok video — new link",
+    summary: "Watch this TikTok post. The original video contains its creator, caption and full details.",
+    date: "2026-11-07",
+    author: "Inside Mauritius",
+    image: "cover-video.svg",
+    imageAlt: "Inside Mauritius generic video illustration; not a thumbnail from the TikTok video",
+    content: [
+      "This TikTok video link was shared with Inside Mauritius on 7 November 2026.",
+      "Open the original post on TikTok to watch the video and read the creator's caption. This link does not independently verify the video's subject or reporting."
+    ],
+    tiktokUrl: "https://vt.tiktok.com/ZSpr2jFB1/"
+  },
+  {
     id: "tiktok-ZSprY5DKX",
     category: "Video",
     label: "FEATURED TIKTOK",
