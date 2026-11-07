@@ -43,6 +43,16 @@
         return label + " · " + timestamp + " MUT";
       }
     }
+    if (story.tiktokUrl && typeof story.addedAt === "string") {
+      const added = new Date(story.addedAt);
+      if (!Number.isNaN(added.getTime())) {
+        const timestamp = new Intl.DateTimeFormat("en-GB", {
+          day:"numeric",month:long?"long":"short",year:"numeric",
+          hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Indian/Mauritius"
+        }).format(added);
+        return "Added to website · " + timestamp + " MUT (TikTok post time unverified)";
+      }
+    }
     const dateLabel = formatDate(story.date, long);
     if (!dateLabel) return "Publication date not available";
     if (story.tiktokUrl) return "Video link · " + dateLabel + " · Time not recorded";
@@ -177,9 +187,9 @@
     // Always display publication information below the post, not in a tiny top-right label.
     // Missing source time is labelled honestly rather than invented.
     const posted=element("div","story-posted-row");
-    const postedLabel=element("span","story-posted-label",story.id.startsWith("source-") ? "SOURCE DATE & TIME" : "POST DATE & TIME");
+    const postedLabel=element("span","story-posted-label",story.id.startsWith("source-") ? "SOURCE DATE & TIME" : story.tiktokUrl ? "VIDEO WEBSITE DATE & TIME" : "POST DATE & TIME");
     const postedDate=element("time","story-posted-time",displayPostTime(story));
-    postedDate.dateTime=story.publishedAt || story.date || "";
+    postedDate.dateTime=story.publishedAt || story.addedAt || story.date || "";
     posted.append(postedLabel,postedDate);
     content.append(meta,title,summary,bottom,socialActions,posted);card.prepend(imgLink);card.append(content);
     return card;
