@@ -3,7 +3,9 @@
   "use strict";
   const dashboardPosts = Array.isArray(window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES) ? window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES : [];
   const legacyPosts = Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [];
-  const raw = [...dashboardPosts, ...legacyPosts];
+  const tiktokPosts = Array.isArray(window.INSIDE_MAURITIUS_TIKTOK_POSTS) ? window.INSIDE_MAURITIUS_TIKTOK_POSTS : [];
+  const validTikTokPosts = tiktokPosts.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.date === "string" && /^https:\/\/www\.tiktok\.com\/@insidemauritius\/video\/\d{12,25}(?:[?#].*)?$/.test(item.tiktokUrl || ""));
+  const raw = [...validTikTokPosts, ...dashboardPosts, ...legacyPosts];
   const articles = raw.filter(item => item && typeof item.id === "string" && typeof item.title === "string");
   const config = window.INSIDE_MAURITIUS_CONFIG || {};
   const $ = (id) => document.getElementById(id);
@@ -205,6 +207,22 @@
       let id = host==="youtu.be" ? parsed.pathname.substring(1) : (parsed.searchParams.get("v") || parsed.pathname.split("/").pop());
       if(!/^[a-zA-Z0-9_-]{11}$/.test(id||"")) return;
       const iframe=element("iframe");iframe.src=`https://www.youtube-nocookie.com/embed/${id}`;iframe.title="Inside Mauritius video";iframe.loading="lazy";iframe.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";iframe.referrerPolicy="strict-origin-when-cross-origin";iframe.allowFullscreen=true;parent.append(iframe);
+    } else if (host === "www.tiktok.com" && /^\/@insidemauritius\/video\/\d{12,25}\/?$/.test(parsed.pathname)) {
+      // Official TikTok video player; numeric ID is extracted only from the account's public post URL.
+      const videoId = parsed.pathname.match(/\/video\/(\d{12,25})\/?$/)[1];
+      const frame=element("iframe","tiktok-article-player");
+      frame.src="https://www.tiktok.com/player/v1/"+videoId;
+      frame.title="Inside Mauritius TikTok news video";
+      frame.loading="lazy";
+      frame.referrerPolicy="strict-origin-when-cross-origin";
+      frame.allow="fullscreen";
+      frame.allowFullscreen=true;
+      parent.append(frame);
+      const original=element("p","article-source");
+      const link=element("a",null,"Watch this video on TikTok ↗");
+      link.href="https://www.tiktok.com/@insidemauritius/video/"+videoId;
+      link.target="_blank";link.rel="noopener noreferrer";
+      original.append(link);parent.append(original);
     } else if (/\.mp4($|\?)/i.test(parsed.pathname+parsed.search) && (parsed.origin===window.location.origin || parsed.protocol==="file:")) {
       const vid=element("video");vid.controls=true;vid.preload="metadata";vid.playsInline=true;
       const source=element("source");source.src=parsed.href;source.type="video/mp4";vid.append(source);parent.append(vid);
@@ -260,6 +278,7 @@
       body.append(sourceLine2);
     }
     embedVideo(story.video,body);
+    embedVideo(story.tiktokUrl,body);
     $("shareFeedback").textContent="";
     $("articleSocialActions").replaceChildren(makeLikeButton(story), makeTikTokFollowLink());
     document.title=`${story.title} | Inside Mauritius`;
