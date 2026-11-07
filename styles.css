@@ -134,3 +134,18 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .article-body .tiktok-shortlink a{display:inline-block;padding:12px 18px;border-radius:7px;background:#1b2940;color:white;font-weight:800;text-decoration:none}
 .article-body .tiktok-shortlink a:hover{background:#31425e;color:white}
 @media(max-width:620px){.tiktok-featured-post{grid-template-columns:1fr;gap:15px;padding:16px}.tiktok-featured-visual{min-height:95px}.tiktok-featured-actions a{width:100%}}
+
+/* Mauritius live clock remains readable on smaller phone screens */
+.utility-left{min-width:0;flex-wrap:wrap;row-gap:2px}
+.utility-left time#liveClock{display:inline-block!important;min-width:84px;white-space:nowrap;color:#fff!important;font-size:14px;font-weight:900;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.utility-left #liveDate{white-space:nowrap;color:#dce8f4;font-size:11px}
+@media(max-width:620px){
+ .utility-inner{min-height:49px;padding-block:5px}
+ .utility-left{width:100%;justify-content:center;gap:4px 9px;font-size:10px}
+ .utility-left time#liveClock{font-size:15px;min-width:79px;text-align:center}
+ .utility-left #liveDate{width:100%;text-align:center;font-size:10px}
+ .live-pulse{width:6px;height:6px}
+ .story-date{max-width:none;overflow-wrap:anywhere}
+ .article-byline{flex-wrap:wrap;gap:6px}
+ .article-byline time{font-size:13px;font-weight:750;color:#273547}
+}
