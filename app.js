@@ -153,9 +153,7 @@
     }
     const content=element("div","story-content");
     const meta=element("div","story-meta");
-    const storyTime=element("time","story-date",displayPostTime(story));
-    storyTime.dateTime=story.publishedAt || story.date || "";
-    meta.append(element("span","story-category",story.category || "News"),storyTime);
+    meta.append(element("span","story-category",story.category || "News"));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
     const summary=element("p","story-excerpt",story.summary || "");
     if (!story.summary) summary.hidden = true;
@@ -176,7 +174,14 @@
     }
     const socialActions = element("div", "story-social-actions");
     socialActions.append(makeLikeButton(story), makeTikTokFollowLink());
-    content.append(meta,title,summary,bottom,socialActions);card.prepend(imgLink);card.append(content);
+    // Always display publication information below the post, not in a tiny top-right label.
+    // Missing source time is labelled honestly rather than invented.
+    const posted=element("div","story-posted-row");
+    const postedLabel=element("span","story-posted-label",story.id.startsWith("source-") ? "SOURCE DATE & TIME" : "POST DATE & TIME");
+    const postedDate=element("time","story-posted-time",displayPostTime(story));
+    postedDate.dateTime=story.publishedAt || story.date || "";
+    posted.append(postedLabel,postedDate);
+    content.append(meta,title,summary,bottom,socialActions,posted);card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderCards() {
