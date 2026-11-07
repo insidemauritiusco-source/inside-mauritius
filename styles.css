@@ -118,3 +118,19 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .article-body .tiktok-article-player{display:block;width:min(100%,460px);height:700px;aspect-ratio:auto;border:0;border-radius:12px;margin:20px auto 22px;background:#101827}
 .article-body .article-source a{color:#ae243f;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:620px){.article-body .tiktok-article-player{width:100%;height:min(690px,155vw);min-height:440px}}
+
+/* Featured TikTok link card; accessible while a short link lacks the video ID for an embed. */
+.tiktok-featured-post{max-width:760px;margin:0 auto 25px;display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:24px;padding:20px;border:1px solid rgba(255,255,255,.16);border-radius:13px;background:#1b2940}
+.tiktok-featured-visual{display:grid;place-items:center;min-height:156px;border-radius:10px;background:linear-gradient(135deg,#233b59,#b72b57);color:#fff;font-size:42px}
+.tiktok-featured-copy h4{margin:7px 0 8px;color:#fff;font:700 clamp(22px,3vw,29px)/1.18 Georgia,"Times New Roman",serif}
+.tiktok-featured-copy p{margin:0 0 15px;color:#cbd4e3;font-size:13px;line-height:1.65}
+.tiktok-featured-actions{display:flex;flex-wrap:wrap;gap:10px}
+.tiktok-featured-actions a{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:7px;font-size:12px;font-weight:800;min-height:40px;text-decoration:none}
+.tiktok-featured-primary{background:#fa536c;color:#fff}
+.tiktok-featured-primary:hover{background:#dc3e5a;color:#fff}
+.tiktok-featured-secondary{border:1px solid #a8b4c7;color:#fff}
+.tiktok-featured-secondary:hover{background:#354863;color:#fff}
+.tiktok-featured-actions a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.article-body .tiktok-shortlink a{display:inline-block;padding:12px 18px;border-radius:7px;background:#1b2940;color:white;font-weight:800;text-decoration:none}
+.article-body .tiktok-shortlink a:hover{background:#31425e;color:white}
+@media(max-width:620px){.tiktok-featured-post{grid-template-columns:1fr;gap:15px;padding:16px}.tiktok-featured-visual{min-height:95px}.tiktok-featured-actions a{width:100%}}
