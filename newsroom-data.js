@@ -113,6 +113,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://ionnews.mu/en-direct-the-rp-caterings-trophy/"
   },
   {
+    "id": "source-0dd2b5762c786c31",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Le gouvernement envisage de collaborer avec StopNCII pour lutter contre la diffusion non consentie d\u2019images intimes",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T10:17:00+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 07 November 2026 at 14:17 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcUsyeWJxQ3dpbWV2WHI1alNEOGJDZk50eTU2X2NaUk9WRkxPdEwxd1pvOUlxb3BiRVpfemJjQk15Uk10MDZPZF8xcy1Sakw0QVRZZFNRdzl5RXZNNW5TWXBqVDFmTUFNTy1iYXlzcVlxX0NzX2syQ1lPczdrejlzckVfNjh6NElZcXppZ1h1R2gtaThnWkVlb0xjY3R6dVFtOGh4MmM1b2xaRUV2RFVtS2IyRGFlWEVRb1ZxZGNvQlcwUWNVX0h3V29B?oc=5"
+  },
+  {
     "id": "source-a5a68bd5af72666e",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -191,6 +209,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "ION News",
     "sourceUrl": "https://ionnews.mu/en-direct-the-driveline-handicap-trophy/"
+  },
+  {
+    "id": "source-322c60a05f6d0baa",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "F\u00fbts en plastique : une solution de stockage qui exige des pr\u00e9cautions",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T09:00:00+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 07 November 2026 at 13:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVG5UZGtuVldfdkRMZndPYnFRdGR1R1lGZ1ozaEZoVU03Qy1iMmlpR3NSblM4Snd4VVFDblFkb3NMek1yRnVOc2I3dFpjQ2lwWEtlSldnUkxGYTFiM2JxdDhZOERqclNpekJ6a043VFlfZmdYOGhUZkM4Y2xFYTM2MXpodlBsclFHRlUyNDNyelJBckNhMUE?oc=5"
   },
   {
     "id": "source-7f8593edbbebb269",
@@ -503,6 +539,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HSmdmclZ5bjJrNV9OR2VFTTNRUnB4OGdMUThELTZTTFlRb3pZbWdpOWdXWGVuOUJNQlNHTTJfNjNZdG5HZGowc0lpN0FvNGVxMXZlLVBxM1ZISUpDRXc2RXBlRWxJcm56RlJFeXJHMGtSeW96R3c?oc=5"
   },
   {
+    "id": "source-ed82a4412ff93de2",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Lottotech : Rs 8,7 milliards vers\u00e9es \u00e0 l\u2019\u00c9tat depuis 2012",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T16:10:45+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 20:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NZXFXVWg0b2Y5UkYyUldURUNYbnZhaTVGZHBOR2ttWjhGYllqeWpMdUVRMkgtdWV2eFFydEJrcG9lN0NKTzZoSVdoa2cyS3FhUGZFUXp3RmxOOUhUNEJsSzVGNFVTTVVNX0lIRlhGWWZqa3lOV0pZZ2pEdGE?oc=5"
+  },
+  {
     "id": "source-1873e389a0f7ba4c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -539,22 +593,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9RX1ZxRkxWR0lwNkp6eXBZdG5CYXJPaXcwV0kyWnFVMGtIRFBpRk9oZUp6VldfaHNBcDJmUkMzNFJWeUp2LVBoR196ZTZLeVNtcUlxY250Q3FQNDRoVHQ1ak9nUzVNWFM2M0pfdURpR2VpQlBRaTFtaQ?oc=5"
   },
   {
-    "id": "source-c77361aa1a3c134c",
-    "category": "World",
+    "id": "source-b8e9f910a3c4bf87",
+    "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "5 754 incidents cybern\u00e9tiques signal\u00e9s : une campagne nationale pour un usage responsable des r\u00e9seaux sociaux",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "title": "Gestion de l\u2019eau : Business Mauritius veut renforcer la coop\u00e9ration avec les autorit\u00e9s",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
     "date": "2026-11-06",
-    "publishedAt": "2026-11-06T12:52:23+00:00",
-    "author": "Top FM (external report)",
+    "publishedAt": "2026-11-06T12:57:09+00:00",
+    "author": "L'Express (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 16:52 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 16:57 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVDFtbXlmQzJwdjhMSEpVRGpBMGlXQWdfcnE5aGlxdml3WWNUQ3JuUkNuVzIta29ueTVLbFNmcUxBeEo2TFFmYVAzVHJqbG1pODg1V05JbDFuSXViRktvTWRTUEhUYkl0c0FfUkJBR0s5MFJFYTMyb0ZMaUxIaHlJQWJTOFd5X2RCdHJJbUROX0J4U1FSaDlGRHRnSXBUdlBGZjNWUnZpeVJESEZNMExGak00bi1tbHJ1em1YMDNqdjJnRmpUcWc?oc=5"
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVWhJVTA0eXd1VFB1RjZkdHhuX1FTLWFFZE5rNmxjaDIyYy1hZ3lVMXFaQTdzdG5HZVk2dlpkQ3VfRkJieWlHZkV2MWpMb256NV9HbUEtaUFuclcyWFR5dEhEak5TUjFYWG9aV1V1UG9yS0FyY2NERURjZ1ppSTVGTUQ1VEVibk9NTnJXb0piekVjLWZ6dDMzUlczZVE?oc=5"
   },
   {
     "id": "source-9225a3bbb836955d",
@@ -665,24 +719,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMk1HUjBnb2VFUkoyYXBodW13dUNQUGppTEVkeFFpbmVKUk1zWm90Rjc2SHFJbjlCZG9zaV9VU1hhRXhFdXdiMGNrNG1NX1FTUl8zLUFqQV9JbW00MnU4c2o5OUR6TFNDaGNfekNjNlhlRjA3OHVaRUdrNzdMMDJKRW9HUXpHQUtJV1Y5R2wzR21ZU092WVVWdUF0VzdlWWotUExoTTM4ZHBqUQ?oc=5"
   },
   {
-    "id": "source-a6aea813dc5018af",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Sunshine Pottery : de l\u2019argile \u00e0 la lumi\u00e8re de Divali",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T10:21:08+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 14:21 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE45QVRNTHVyd3hpYW94LWh4V2ZMajc1N3lVdDZkQWl5Sl9iczJDMnhjc1BVMnhVU2tDOVUzVURkZlR4YldrWVl1c292MW54S2pNX2VDSGhlRU1abkNDLU45bkROVnB5VFRYQXE2THB5NGRxTkpGQ25oNGNpcw?oc=5"
-  },
-  {
     "id": "source-104e8d98c2927baf",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -699,24 +735,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Top FM (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdVRIWGhCRGNkZjR2SjA1NVROdnR0WjJQbGJLOTRodWx0ZGdfajhYMGV2V0J1cDhMYU13aW10b3EwMV9EcXRyYlFhbXV2Tmltd2ZmMUZ4QTdUZ2Z5RjBpallUZ2xPWWZSY0dPb1RCeUg5bU5ES3lIbzA0MWhBTDlrbHUxZzREV0FvcVhwN1hMa1FkVURXQlF2SlBvejByVlBEYWVjVnZ3?oc=5"
-  },
-  {
-    "id": "source-f2adb2fb89698dca",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Affaire des valises de Rs 114 millions : Kobita Jugnauth questionne la FCC sur la fuite de photos des objets saisis",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-06",
-    "publishedAt": "2026-11-06T06:01:13+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 10:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPams2VlBYYzA5QzhqaGNNQmZqRnNUSk1mZDlSTGhlUDhhaE4wMi1tNkZMMnl2R1IxVW95dHZMbVMxZVdpMHVqcUFLdW1TNG9EbENWUkJGT1FpOXhyZnQwSnNIUm1tSzNqV0hUcWJfTGhqSm1DRW5vZHpsODZxYzR5LV8yclFzYnFxaXNmZWtnSDJINDEtWF8xMndEaHd5ZFJmRXNGSjdn?oc=5"
   },
   {
     "id": "source-1e9bc681b73d482a",
@@ -753,23 +771,5 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR3E2cHZFdTJvckFuRjJwNTdJSDdzSG9rVVZ5cmhpdldseVRjc0V0TzAtbHU5eWgyclhjc3AzeUctSDdIMi03Z3FmbW8zaEd5dGg2VFp2Z29tTERfSjZsbmNNdF9LdTNCOTJWU3duVm9MVTlfeXd2c0ZjSU1pY211eWhhbmFKNlBZV2wwdA?oc=5"
-  },
-  {
-    "id": "source-794459ab1599c5d2",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "\u00abWater Tank Grant Scheme\u00bb : La CWA rappelle que les b\u00e9n\u00e9ficiaires ne doivent rien d\u00e9bourser de plus",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-04",
-    "publishedAt": "2026-11-04T13:14:07+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 04 November 2026 at 17:14 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2tPbFpzZWpKcndRdWpZcjZ0V2pucmt5NXVDYzNHMUt2cDFTd0dpQjVDMG5NUzRZbklfaHFqVEEwV1luS0U1cTNSTzdOc19wTVRGMmVsZWRlVUR0RUw4QlhlQkNxeGthdFltQnVTVG05dTdvc00tUnhuZllvNkZkb28yclVVVHA4QUZMVUM4bzNCcms0NTVsTEpSNGFCalVGV3c?oc=5"
   }
 ];
