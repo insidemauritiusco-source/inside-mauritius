@@ -9,7 +9,8 @@
   Use the FULL video URL copied from TikTok, for example:
     https://www.tiktok.com/@insidemauritius/video/1234567890123456789
   The numeric video ID above is ONLY a placeholder, not a real post.
-  Do not paste a TikTok profile URL or a short vt.tiktok.com link.
+  A full video URL is needed for an in-page player. A vt.tiktok.com short link
+  can be listed as a click-through post until its real numeric ID is available.
 
   To add one video, copy this sample object into the array below and
   replace EVERY example/placeholder field before saving. Do not add
@@ -32,7 +33,23 @@
   }
 
   Separate multiple entries with commas. The file must remain valid JS.
-  No video is inserted until you provide real video details.
+  Add verified titles/details when available; use neutral descriptions otherwise.
 */
 window.INSIDE_MAURITIUS_TIKTOK_POSTS = [
+  {
+    id: "tiktok-ZSprY5DKX",
+    category: "Video",
+    label: "FEATURED TIKTOK",
+    title: "Featured TikTok video",
+    summary: "Watch this featured TikTok post. Open the original video for the creator's caption and details.",
+    date: "2026-11-07",
+    author: "Inside Mauritius",
+    image: "cover-video.svg",
+    imageAlt: "Generic Inside Mauritius video illustration, not footage from the TikTok video",
+    content: [
+      "This video was shared with Inside Mauritius. View the original post on TikTok for its full caption, creator attribution and playback.",
+      "An in-page TikTok player can be enabled once the full video URL containing its numeric post ID is available."
+    ],
+    tiktokUrl: "https://vt.tiktok.com/ZSprY5DKX/"
+  }
 ];
