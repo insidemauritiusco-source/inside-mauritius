@@ -113,3 +113,8 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .tiktok-feed-note{text-align:center!important;max-width:700px!important;margin:16px auto 0!important;font-size:12px!important;color:#c4cedb!important}
 .tiktok-feed-note a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:620px){.tiktok-feed{padding-bottom:40px}.tiktok-embed-wrap{padding:8px}.tiktok-feed-heading h3{font-size:28px}}
+
+/* Individual TikTok video news articles */
+.article-body .tiktok-article-player{display:block;width:min(100%,460px);height:700px;aspect-ratio:auto;border:0;border-radius:12px;margin:20px auto 22px;background:#101827}
+.article-body .article-source a{color:#ae243f;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:620px){.article-body .tiktok-article-player{width:100%;height:min(690px,155vw);min-height:440px}}
