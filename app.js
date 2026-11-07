@@ -221,10 +221,19 @@
     content.append(meta,title,summary,bottom,socialActions,posted);card.prepend(imgLink);card.append(content);
     return card;
   }
+  function renderTopStories() {
+    const section = document.getElementById("topStories");
+    const grid = document.getElementById("topStoriesGrid");
+    if (!section || !grid) return;
+    const latestMauritius = articles.filter(story => story.category === "Mauritius").slice(0, 3);
+    section.hidden = latestMauritius.length === 0;
+    grid.replaceChildren(...latestMauritius.map(makeStoryCard));
+  }
   function renderCards() {
     const key=query.trim().toLocaleLowerCase();
     const matching=articles.filter(story => (filter === "All" || story.category === filter) && (!key || `${story.title} ${story.summary || ""} ${story.category} ${story.label || ""}`.toLocaleLowerCase().includes(key)));
     $("storyGrid").replaceChildren(...matching.map(makeStoryCard));
+    renderTopStories();
     $("emptyResults").hidden=matching.length!==0;
     $("resultsNote").textContent = `${matching.length} ${matching.length===1?"story":"stories"} shown`;
     document.querySelectorAll("[data-filter]").forEach(btn=>{const yes=btn.dataset.filter===filter;btn.classList.toggle("selected",yes);btn.setAttribute("aria-pressed",String(yes));});
