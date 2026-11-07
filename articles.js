@@ -28,8 +28,9 @@ window.INSIDE_MAURITIUS_ARTICLES = [
     "title": "Mauritius morning update, 7 November: Showers in the east and centre; Divali tomorrow",
     "summary": "The 04:30 Mauritius Meteorological Services bulletin forecasts showers mainly in the east and on the central plateau, while Divali will be celebrated on Sunday, 8 November.",
     "date": "2026-11-07",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic landscape illustration; not an image of current weather conditions",
+    "publishedAt": "2026-11-07T07:11:59+04:00",
+    "image": "morning-news-2026-11-07.svg",
+    "imageAlt": "Inside Mauritius branded morning news illustration showing showers and Divali; not event photography",
     "author": "Inside Mauritius News Desk",
     "content": [
       "Good morning, Mauritius. Here are two verified updates for Saturday, 7 November 2026.",
