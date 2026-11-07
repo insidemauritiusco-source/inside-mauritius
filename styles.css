@@ -102,3 +102,14 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .story-tiktok-follow{border:1px solid #1b2940;background:#1b2940;color:#fff}
 .story-tiktok-follow:hover{background:#31425e;color:#fff}
 .story-like-button:focus-visible,.story-tiktok-follow:focus-visible{outline:3px solid #da4e64;outline-offset:2px}
+
+/* Official TikTok creator feed in the video desk */
+.tiktok-feed{padding-top:25px;padding-bottom:58px;border-top:1px solid rgba(255,255,255,.12)}
+.tiktok-feed-heading{text-align:center;max-width:690px;margin:0 auto 24px}
+.tiktok-feed-heading h3{font:700 clamp(26px,4vw,38px)/1.2 Georgia,"Times New Roman",serif;margin:9px 0 12px;color:#fff}
+.tiktok-feed-heading p{max-width:600px;margin:0 auto;color:#c4cedb;font-size:13px;line-height:1.7}
+.tiktok-embed-wrap{max-width:760px;margin:auto;display:flex;justify-content:center;background:#fff;border-radius:12px;padding:12px;min-height:160px;overflow:hidden;color:#19243a}
+.tiktok-embed-wrap blockquote{width:100%}
+.tiktok-feed-note{text-align:center!important;max-width:700px!important;margin:16px auto 0!important;font-size:12px!important;color:#c4cedb!important}
+.tiktok-feed-note a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:620px){.tiktok-feed{padding-bottom:40px}.tiktok-embed-wrap{padding:8px}.tiktok-feed-heading h3{font-size:28px}}
