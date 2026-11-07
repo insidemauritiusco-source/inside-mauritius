@@ -1,0 +1,16 @@
+/* More visual, readable headline cards. Publication timestamps remain source-derived. */
+.story-grid{gap:24px}
+.story-card{border-radius:18px;overflow:hidden;box-shadow:0 14px 35px rgba(15,48,78,.10)}
+.story-image-link{aspect-ratio:16/9;background:#dceaf3}
+.story-image{width:100%;height:100%;object-fit:cover}
+.story-content{padding:22px 23px 24px}
+.story-meta{flex-wrap:wrap;align-items:center;gap:7px 12px}
+.story-date{font-size:11px;letter-spacing:0;text-transform:none;color:#526b83;font-weight:750;font-variant-numeric:tabular-nums}
+.story-category{background:#fce9ed;border-radius:999px;padding:5px 10px;color:#b41d36}
+.story-card h3{font-size:clamp(22px,2.2vw,28px);line-height:1.18;margin:16px 0 11px}
+.story-excerpt{font-size:14px;color:#42566c}
+.story-bottom{border-top-color:rgba(70,107,138,.15)}
+.story-bottom a{color:#164c78}
+.story-card:hover .story-image{transform:scale(1.035)}
+@media(min-width:850px){.story-grid .story-card:first-child{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.story-grid .story-card:first-child .story-image-link{height:100%;min-height:300px;aspect-ratio:auto}.story-grid .story-card:first-child h3{font-size:clamp(27px,3vw,38px)}}
+@media(max-width:700px){.story-grid{gap:16px}.story-content{padding:17px}.story-card h3{font-size:23px}.story-date{font-size:11px}}
