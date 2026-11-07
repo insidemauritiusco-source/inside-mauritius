@@ -245,11 +245,11 @@
   function initFeature() {
     if(!articles.length) return;
     const lead=articles[0];
-    $("heroHeading").textContent=compactLeadTitle(lead.title);
+    $("heroHeading").textContent=compactLeadTitle(lead.heroTitle || lead.title);
     $("heroHeading").title=lead.title;
     document.querySelector(".hero-copy p").textContent=lead.summary;
-    document.querySelector(".hero-photo").src=imageFor(lead);
-    document.querySelector(".hero-photo").alt=lead.imageAlt || "Mauritius landscape";
+    document.querySelector(".hero-photo").src=lead.heroImage || imageFor(lead);
+    document.querySelector(".hero-photo").alt=lead.heroImageAlt || lead.imageAlt || "Mauritius landscape";
     document.querySelector(".hero-photo").onerror=()=>{const image=document.querySelector(".hero-photo");if(!image.src.endsWith("cover-mauritius.svg")){image.src="cover-mauritius.svg";image.alt="Generic Mauritius illustration";const credit=$("heroFeature").querySelector(".hero-photo-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
     document.querySelector(".hero-link").href=articleURL(lead);
     const heroPublished = $("heroPublishedAt");
