@@ -161,6 +161,9 @@
   }
   function makeStoryCard(story) {
     const card = element("article","story-card");
+    // Only explicit editorial flags trigger Breaking News; never infer urgency from a headline.
+    const isBreaking = story.breaking === true || story.isBreaking === true;
+    if (isBreaking) card.classList.add("is-breaking");
     const imgLink = element("a","story-image-link");
     const isTikTok = typeof story.tiktokUrl === "string" && /^https:\/\/(?:vt\.tiktok\.com|www\.tiktok\.com)\//i.test(story.tiktokUrl);
     imgLink.href = isTikTok ? story.tiktokUrl : articleURL(story);
@@ -190,6 +193,7 @@
     }
     const content=element("div","story-content");
     const meta=element("div","story-meta");
+    if (isBreaking) content.append(element("span","breaking-story-badge","BREAKING NEWS"));
     meta.append(element("span","story-category",story.category || "News"));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
     const summary=element("p","story-excerpt",story.summary || "");
