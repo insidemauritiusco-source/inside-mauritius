@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Inside Mauritius Government News illustration</title><desc id="desc">Original illustration of a government-style building in front of a deep navy background, not a photograph or an official government emblem</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09182d"/><stop offset=".65" stop-color="#1c4673"/><stop offset="1" stop-color="#186882"/></linearGradient><linearGradient id="front" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5f0df"/><stop offset="1" stop-color="#b3c5d6"/></linearGradient></defs>
+<rect width="1200" height="720" fill="url(#bg)"/>
+<path d="M0 585C230 522 359 589 590 533S956 494 1200 550v170H0Z" fill="#07345d" opacity=".85"/>
+<circle cx="985" cy="154" r="117" fill="#fff" opacity=".05"/>
+<path d="M118 563H1080v22H118Z" fill="#d6e0ea"/><path d="M143 535H1055v25H143Z" fill="#718ba1"/>
+<path d="M200 286l400-138 400 138v28H200Z" fill="url(#front)"/>
+<path d="M242 334h716v25H242Z" fill="#dbe8ec"/>
+<g fill="#dce6eb">
+<rect x="265" y="360" width="54" height="172"/><rect x="391" y="360" width="54" height="172"/><rect x="517" y="360" width="54" height="172"/><rect x="642" y="360" width="54" height="172"/><rect x="768" y="360" width="54" height="172"/><rect x="890" y="360" width="54" height="172"/>
+</g>
+<g fill="#5c7086"><rect x="255" y="352" width="74" height="19"/><rect x="381" y="352" width="74" height="19"/><rect x="507" y="352" width="74" height="19"/><rect x="632" y="352" width="74" height="19"/><rect x="758" y="352" width="74" height="19"/><rect x="880" y="352" width="74" height="19"/></g>
+<rect x="235" y="529" width="730" height="17" fill="#dfebed"/>
+<rect x="550" y="435" width="102" height="99" rx="51" fill="#244667"/>
+<path d="M594 160V105" stroke="#e5eef4" stroke-width="7"/>
+<path d="M598 104l73 20-73 18Z" fill="#e53245"/>
+<g><rect x="0" y="0" width="300" height="10" fill="#ea2b40"/><rect x="300" y="0" width="300" height="10" fill="#2347c5"/><rect x="600" y="0" width="300" height="10" fill="#f7d035"/><rect x="900" y="0" width="300" height="10" fill="#14ad63"/></g>
+<g font-family="Arial,Helvetica,sans-serif" font-weight="800" fill="#fff"><text x="65" y="94" font-size="39" letter-spacing="4">INSIDE MAURITIUS</text><rect x="65" y="114" width="377" height="53" rx="5" fill="#d92b46"/><text x="80" y="152" font-size="30" letter-spacing="2">GOVERNMENT NEWS</text></g>
+<text x="65" y="670" font-size="20" font-family="Arial,Helvetica,sans-serif" fill="#c7e0ec">Illustration · Original editorial artwork, not an official government image</text>
+</svg>
