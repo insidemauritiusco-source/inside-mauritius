@@ -237,7 +237,7 @@
     document.querySelectorAll("[data-filter]").forEach(btn=>{const yes=btn.dataset.filter===filter;btn.classList.toggle("selected",yes);btn.setAttribute("aria-pressed",String(yes));});
   }
   function setFilter(value) {
-    filter=["All","Mauritius","World","Community","Video"].includes(value)?value:"All";
+    filter=["All","Mauritius","Government","World","Community","Video"].includes(value)?value:"All";
     renderCards();
   }
   // Compact headlines on the homepage; the full title remains on the article page.
