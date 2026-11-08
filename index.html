@@ -73,8 +73,10 @@
 
   <main id="main">
     <div id="homePage">
+      <div class="dashboard-shell container">
+        <div class="dashboard-main">
       <section class="top-section container" id="home" aria-labelledby="heroHeading">
-        <div class="section-eyebrow"><span class="eyebrow-line"></span> INSIDE THE HEADLINES <span class="eyebrow-date" id="todayLine"></span></div>
+        <div class="section-eyebrow"><span class="eyebrow-line"></span> TOP NEWS <span class="eyebrow-date" id="todayLine"></span></div>
         <div class="feature-grid">
           <article class="lead-feature" id="heroFeature">
             <img class="hero-photo" src="cover-mauritius.svg" alt="Illustration of Mauritius mountains and coast" width="1200" height="720">
@@ -92,10 +94,10 @@
         <div class="container coverage-inner"><span class="coverage-intro">COVERING WHAT MATTERS</span><a href="#latest" data-filter-nav="Mauritius"><span class="coverage-icon">◈</span> Mauritius</a><a href="#latest" data-filter-nav="Government"><span class="coverage-icon">▣</span> Government</a><a href="#latest" data-filter-nav="World"><span class="coverage-icon">◎</span> World</a><a href="#latest" data-filter-nav="Community"><span class="coverage-icon">⌘</span> Community</a><a href="#videos"><span class="coverage-icon">▷</span> Video stories</a></div>
       </section>
 
-      <section class="top-stories container" id="topStories" aria-labelledby="topStoriesHeading" hidden><div class="top-stories-heading"><div><span class="section-label">MAURITIUS / LATEST COVERAGE</span><h2 id="topStoriesHeading">Top Stories<span class="heading-dot">.</span></h2><p>Recent Mauritius reports from our news desk.</p></div><a href="#latest" data-filter-nav="Mauritius">All Mauritius news ↗</a></div><div class="top-stories-grid" id="topStoriesGrid"></div></section>
+      <section class="top-stories container" id="topStories" aria-labelledby="topStoriesHeading" hidden><div class="top-stories-heading"><div><span class="section-label">MAURITIUS / LATEST COVERAGE</span><h2 id="topStoriesHeading">Latest Coverage<span class="heading-dot">.</span></h2><p>Recent Mauritius reports from our news desk.</p></div><a href="#latest" data-filter-nav="Mauritius">All Mauritius news ↗</a></div><div class="top-stories-grid" id="topStoriesGrid"></div></section>
 
       <section class="news-section container" id="latest" aria-labelledby="latestHeading">
-        <div class="section-title-line"><div><span class="section-label">THE NEWS DESK</span><h2 id="latestHeading">Latest stories<span class="heading-dot">.</span></h2><p class="section-description">Mauritius first, with the world in view.</p></div><span class="issue-index">INSIDE MAURITIUS / STORIES</span></div>
+        <div class="section-title-line"><div><span class="section-label">THE NEWS DESK</span><h2 id="latestHeading">Your News Feed<span class="heading-dot">.</span></h2><p class="section-description">Mauritius first, with the world in view.</p></div><span class="issue-index">INSIDE MAURITIUS / STORIES</span></div>
         <div class="news-live-time" role="group" aria-label="Live time in Mauritius"><span class="live-time-label">● LIVE MAURITIUS TIME</span><time id="newsClock" aria-label="Current live Mauritius time">--:--:--</time><span id="newsDate">Mauritius · UTC+4</span></div>
         <div class="news-toolbar">
           <div class="filter-list" id="filterList" role="group" aria-label="Filter stories by category">
@@ -112,6 +114,45 @@
         <p class="results-note" id="resultsNote"></p>
         <div class="empty-results" id="emptyResults" hidden><span aria-hidden="true">⌕</span><h3>No matching stories</h3><p>Try another search or choose a different category.</p><button type="button" id="resetFilters">View all stories</button></div>
       </section>
+
+        </div>
+        <aside class="dashboard-sidebar" aria-label="Daily Mauritius news index">
+          <section class="dashboard-widget daily-index">
+            <div class="dashboard-widget-heading"><h2>Daily Index</h2><span class="dashboard-index-mark" aria-hidden="true">i</span></div>
+            <div class="index-today"><span class="index-today-label">MAURITIUS EDITION</span><time id="dashboardDate">Mauritius · UTC+4</time><strong id="dashboardClock">--:--:--</strong><span class="index-zone">Mauritius time (MUT)</span></div>
+            <div class="index-quick-links">
+              <a href="#latest" data-filter-nav="Mauritius">Local News</a>
+              <a href="#latest" data-filter-nav="Government">Government</a>
+              <a href="#latest" data-filter-nav="World">World</a>
+              <a href="#latest" data-filter-nav="Video">Videos</a>
+            </div>
+          </section>
+          <section class="dashboard-widget news-at-glance">
+            <div class="dashboard-widget-heading"><h2>News at a Glance</h2><span aria-hidden="true">✦</span></div>
+            <p class="glance-note">Latest published headlines from Inside Mauritius and attributed sources. Select a story to read it.</p>
+            <div class="glance-tabs" role="group" aria-label="News summary timeframe"><span>Latest headlines</span><span>Real publication dates</span></div>
+            <ol id="dashboardHeadlines" class="dashboard-headlines"><li>News headlines will appear when available.</li></ol>
+            <a class="glance-more" href="#latest">Read all headlines <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="dashboard-widget feed-categories">
+            <div class="dashboard-widget-heading"><h2>Explore News</h2></div>
+            <div class="sidebar-tags">
+              <a href="#latest" data-filter-nav="Government">Government</a>
+              <a href="#latest" data-filter-nav="Mauritius">Mauritius</a>
+              <a href="#latest" data-filter-nav="Community">Community</a>
+              <a href="#latest" data-filter-nav="World">World</a>
+              <a href="#latest" data-filter-nav="Video">Videos</a>
+            </div>
+            <a class="sidebar-news-action" href="#latest">Browse all news <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="dashboard-feature">
+            <span class="dashboard-feature-kicker">DISCOVER</span>
+            <h2>Inside<br>Mauritius</h2>
+            <p>Local stories, official updates, community voices and video coverage.</p>
+            <a href="#about">Discover our newsroom <span aria-hidden="true">↗</span></a>
+          </section>
+        </aside>
+      </div>
 
       <section class="video-section" id="videos" aria-labelledby="videoHeading">
         <div class="container video-inner"><div class="video-copy"><span class="eyebrow-light">IN FOCUS / VIDEO</span><h2 id="videoHeading">Stories worth <em>watching.</em></h2><p>Interviews, reports and first-hand perspectives from Mauritius. Video reports will appear here as they're published.</p><a href="#latest" data-filter-nav="Video" class="video-button">Browse video stories <span aria-hidden="true">↗</span></a><p style="margin:14px 0 0"><a class="video-source-link" href="https://topfm.mu/top-tv" target="_blank" rel="noopener noreferrer">Watch original TOP TV reports at Top FM ↗</a></p><p style="margin:8px 0 0"><a class="video-source-link" href="https://www.youtube.com/results?search_query=Top+FM+Mauritius+official+news" target="_blank" rel="noopener noreferrer">Find official Top FM news videos on YouTube ↗</a></p><p style="margin:10px 0 0"><a class="video-source-link" href="https://www.tiktok.com/@insidemauritius" target="_blank" rel="noopener noreferrer" aria-label="Follow Inside Mauritius on TikTok">Follow @insidemauritius on TikTok ↗</a></p></div><div class="video-art" aria-hidden="true"><img src="cover-video.svg" alt="" width="720" height="500"><span class="play-disc">▶</span><span class="video-caption">THE INSIDE MAURITIUS VIDEO DESK</span></div></div>
