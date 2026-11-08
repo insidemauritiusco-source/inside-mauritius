@@ -22,6 +22,78 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
 {
+  "id": "government-ki-pri-mobile-price-app-2026-11-07",
+  "category": "Government",
+  "label": "GOVERNMENT · COMMERCE",
+  "title": "‘Ki Pri’: New Government App Aims to Help Consumers Check Regulated Prices",
+  "summary": "A Government Information Service communiqué dated 7 November 2026 announces the ‘Ki Pri’ mobile application to make checking regulated prices easier.",
+  "date": "2026-11-07",
+  "image": "cover-government.svg",
+  "imageAlt": "Original Inside Mauritius government-news illustration; not an official government photograph",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "The Government Information Service published a communiqué on 7 November 2026 titled ‘Ki Pri’: une nouvelle application mobile pour faciliter la vérification des prix réglementés.",
+    "The announcement concerns a mobile application intended to help people check regulated prices. The original French-language communiqué is available through the official Government Information Service website.",
+    "Inside Mauritius has not independently confirmed current app-store availability or all of the application's functions. Consult the official communiqué for details and updates."
+  ],
+  "sourceName": "Government Information Service — communiqué, 7 November 2026",
+  "sourceUrl": "https://gis.govmu.org/gis/?id=2914&page_id=4022"
+},
+{
+  "id": "government-cabinet-highlights-6-november-2026",
+  "category": "Government",
+  "label": "GOVERNMENT · CABINET",
+  "title": "Cabinet Decisions: Official Highlights for 6 November Released",
+  "summary": "The Government Information Service has published the official highlights of the Cabinet meeting held on Friday, 6 November 2026.",
+  "date": "2026-11-06",
+  "image": "cover-government.svg",
+  "imageAlt": "Illustrated government-style building, not a photograph of a Cabinet meeting",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "The Government Information Service published ‘Highlights of Cabinet Meeting – Friday 06.11.26’ on 6 November 2026.",
+    "Readers can consult the official communiqué and its linked document for the full list of recorded Cabinet decisions.",
+    "This article is a notice of publication of the Cabinet highlights and does not independently interpret or endorse any policy."
+  ],
+  "sourceName": "Government Information Service — Cabinet highlights, 6 November 2026",
+  "sourceUrl": "https://gis.govmu.org/gis/?id=2913&page_id=4022"
+},
+{
+  "id": "government-flood-preparedness-campaign-2026-11-06",
+  "category": "Government",
+  "label": "GOVERNMENT · PUBLIC SAFETY",
+  "title": "Flood Preparedness: Mauritius Trains Emergency Responders",
+  "summary": "Mauritius launched its 2026–2027 flood-preparedness campaign in Port Louis with practical rescue and first-aid demonstrations.",
+  "date": "2026-11-06",
+  "image": "cover-government.svg",
+  "imageAlt": "Original government-news illustration; not a photograph of flood training",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "The National Disaster Risk Reduction and Management Centre, under the Prime Minister’s Office, launched the National Flood Prevention and Preparedness Campaign 2026–2027 in Port Louis on 6 November, in collaboration with Landscope Mauritius.",
+    "The training demonstrations covered rescue techniques, removing people trapped in vehicles, evacuating flood casualties and first aid, according to the Government Information Service.",
+    "Officials stressed household preparedness, awareness of local flood risks and following warnings and evacuation instructions. These exercises do not constitute a live flood warning."
+  ],
+  "sourceName": "Government Information Service — flood preparedness, 6 November 2026",
+  "sourceUrl": "https://gis.govmu.org/gis/?id=2901&page_id=4042"
+},
+{
+  "id": "government-digital-public-services-workshop-2026-11-06",
+  "category": "Government",
+  "label": "GOVERNMENT · TECHNOLOGY",
+  "title": "Digital Services: Mauritius Explores ID, Wallet and Payment Systems",
+  "summary": "A government-led workshop explored digital public infrastructure that could improve access to public services and secure information exchange.",
+  "date": "2026-11-06",
+  "image": "cover-government.svg",
+  "imageAlt": "Original government-news illustration; not a photograph of the technology workshop",
+  "author": "Inside Mauritius News Desk",
+  "content": [
+    "The Ministry of Information Technology, Communication and Innovation organised a digital public infrastructure workshop with India's Centre for Open Societal Systems, attended by government, banking, telecommunications and academic participants.",
+    "The workshop discussed how Mauritius might use connected systems to improve delivery of public services. Minister Avinash Ramtohul described possible components including digital identity, a digital wallet and electronic payments.",
+    "These were proposals or areas under discussion at the workshop, not confirmation that the systems are already available to the public."
+  ],
+  "sourceName": "Government Information Service — digital public infrastructure, 6 November 2026",
+  "sourceUrl": "https://gis.govmu.org/gis/?id=2896&page_id=4042"
+},
+{
   "id": "water-network-renewal-8-nov-2026",
   "category": "Mauritius",
   "label": "WATER INFRASTRUCTURE",
