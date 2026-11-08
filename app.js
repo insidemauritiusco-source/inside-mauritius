@@ -231,6 +231,12 @@
     link.setAttribute("aria-label", "Follow Inside Mauritius on TikTok");
     return link;
   }
+  function rssPreview(story) {
+    const raw = typeof story.summary === "string" ? story.summary.trim() : "";
+    return story.id && story.id.startsWith("source-")
+      ? raw.replace(/^Short excerpt from .+? RSS feed:\s*/i, "").replace(/^Latest headline from .+?\. Read the publisher's original report for the full details\.$/i, "Read the original publisher's report for full details.")
+      : raw;
+  }
   function makeStoryCard(story) {
     const card = element("article","story-card");
     // Only explicit editorial flags trigger Breaking News; never infer urgency from a headline.
@@ -282,14 +288,21 @@
     if (isBreaking) content.append(element("span","breaking-story-badge","BREAKING NEWS"));
     meta.append(element("span","story-category",story.category || "News"));
     const title=element("h3");const titleLink=element("a",null,story.title);titleLink.href=articleURL(story);title.append(titleLink);
-    const summary=element("p","story-excerpt",story.summary || "");
-    if (!story.summary) summary.hidden = true;
+    const summary=element("p","story-excerpt",rssPreview(story));
+    if (!rssPreview(story)) summary.hidden = true;
+    if (story.id && story.id.startsWith("source-")) card.classList.add("rss-source-card");
     const bottom=element("div","story-bottom");const read=element("a",null,"Read story");read.href=articleURL(story);read.setAttribute("aria-label",`Read ${story.title}`);
     if (story.sourceUrl && /^https:\/\//i.test(story.sourceUrl)) {
       const original=element("a",null,"Original report · " + (story.sourceName || "Publisher"));
       original.href=story.sourceUrl;
       original.target="_blank";
       original.rel="noopener noreferrer";
+      if (story.id && story.id.startsWith("source-")) {
+        original.textContent = "Read Full Article ↗";
+        original.className = "rss-full-article-link";
+        original.setAttribute("aria-label", "Read the full article at " + (story.sourceName || "the original publisher"));
+        bottom.append(read);
+      }
       bottom.append(original);
     } else if (isTikTok) {
       const watch=element("a",null,"Watch video on TikTok ↗");
@@ -308,7 +321,12 @@
     const postedDate=element("time","story-posted-time",displayPostTime(story));
     postedDate.dateTime=story.publishedAt || story.addedAt || story.date || "";
     posted.append(postedLabel,postedDate);
-    content.append(meta,title,summary,bottom,socialActions,posted);card.prepend(imgLink);card.append(content);
+    if (story.id && story.id.startsWith("source-")) {
+      meta.append(element("span","rss-publisher","SOURCE · " + (story.sourceName || "External publisher")));
+      const notice=element("p","rss-preview-note","Publisher feed preview · Visit the original article for the complete report.");
+      content.append(meta,title,summary,notice,bottom,socialActions,posted);
+    } else content.append(meta,title,summary,bottom,socialActions,posted);
+    card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderTopStories() {
@@ -452,7 +470,7 @@
     $("homePage").hidden=true;$("articlePage").hidden=false;
     $("articleTopline").textContent=`${(story.category||"News").toUpperCase()} / ${(story.label||"STORY").toUpperCase()}`;
     $("articleTitle").textContent=story.title;
-    $("articleDeck").textContent=story.summary||"";
+    $("articleDeck").textContent=rssPreview(story);
     const byline=$("articleByline");
     const bylineTime=element("time",null,displayPostTime(story,true));
     bylineTime.dateTime=story.publishedAt || story.date || "";
@@ -496,11 +514,19 @@
       caption.textContent=story.imageAlt || "Inside Mauritius editorial illustration";
     }
     const body=$("articleBody");body.replaceChildren();
+    if (story.id && story.id.startsWith("source-")) {
+      const sourceNote=element("p","rss-article-notice","This is a publisher RSS preview, not the full original article. Follow the source link to read the complete report.");
+      body.append(sourceNote);
+    }
     for(const paragraph of (Array.isArray(story.content)?story.content:[])) if(typeof paragraph==="string" && paragraph.trim()) body.append(element("p",null,paragraph));
     if(typeof story.sourceUrl === "string" && /^https:\/\//i.test(story.sourceUrl)) {
       const sourceLine=element("p","article-source");
       sourceLine.append(document.createTextNode("Original source: "));
       const sourceLink=element("a",null,story.sourceName || "Read source report");
+      if (story.id && story.id.startsWith("source-")) {
+        sourceLink.textContent = "Read Full Article at " + (story.sourceName || "the publisher") + " ↗";
+        sourceLink.className = "rss-full-article-link";
+      }
       sourceLink.href=story.sourceUrl;
       sourceLink.target="_blank";
       sourceLink.rel="noopener noreferrer";
