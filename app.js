@@ -87,6 +87,8 @@
     const fullDate = new Intl.DateTimeFormat("en-GB", {timeZone:"Indian/Mauritius",weekday:"short",day:"numeric",month:"short",year:"numeric"}).format(now);
     $("liveDate").textContent = fullDate;
     if ($("newsDate")) $("newsDate").textContent = fullDate;
+    if ($("dashboardClock")) $("dashboardClock").textContent = mauritiusClock;
+    if ($("dashboardDate")) $("dashboardDate").textContent = fullDate;
     $("todayLine").textContent = fullDate.toUpperCase();
     $("copyrightYear").textContent = new Intl.DateTimeFormat("en-GB",{timeZone:"Indian/Mauritius",year:"numeric"}).format(now);
   }
@@ -249,6 +251,26 @@
     $("emptyResults").hidden=matching.length!==0;
     $("resultsNote").textContent = `${matching.length} ${matching.length===1?"story":"stories"} shown`;
     document.querySelectorAll("[data-filter]").forEach(btn=>{const yes=btn.dataset.filter===filter;btn.classList.toggle("selected",yes);btn.setAttribute("aria-pressed",String(yes));});
+  }
+  // Real article headlines only. No invented AI summaries or false recency claims.
+  function renderDashboardHeadlines() {
+    const list=$("dashboardHeadlines");
+    if (!list) return;
+    const items=articles.filter(item => item && item.title && item.date).slice(0,5);
+    if (!items.length) {
+      list.replaceChildren(element("li",null,"No published headlines available."));
+      return;
+    }
+    const nodes=items.map(item => {
+      const li=element("li");
+      const link=element("a",null,compactLeadTitle(item.title));
+      link.href=articleURL(item);
+      const type=element("span","dashboard-headline-type",(item.category || "News").toUpperCase());
+      const when=element("span","dashboard-headline-time",displayPostTime(item));
+      li.append(type,link,when);
+      return li;
+    });
+    list.replaceChildren(...nodes);
   }
   function setFilter(value) {
     filter=["All","Mauritius","Government","World","Community","Video"].includes(value)?value:"All";
@@ -470,7 +492,7 @@
   }
   function init() {
     clockTick();window.setInterval(clockTick,1000);
-    initFeature();renderCards();initContacts();initTicker();
+    initFeature();renderCards();renderDashboardHeadlines();initContacts();initTicker();
     $("filterList").addEventListener("click",event=>{const btn=event.target.closest("[data-filter]");if(btn)setFilter(btn.dataset.filter);});
     $("storySearch").addEventListener("input",event=>{query=event.target.value;renderCards();});
     $("resetFilters").addEventListener("click",()=>{query="";$("storySearch").value="";setFilter("All");});
