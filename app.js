@@ -147,6 +147,82 @@
     });
     return button;
   }
+  function storyLink(story) {
+    const relative=articleURL(story);
+    return window.location.origin + window.location.pathname + relative;
+  }
+  async function shareStoryLink(story, feedback) {
+    const url=storyLink(story);
+    const data={title:story.title,text:story.summary || "Inside Mauritius News",url};
+    if (navigator.share) {
+      try { await navigator.share(data);if(feedback) feedback.textContent="Shared!";return; }
+      catch(err) { if(err && err.name==="AbortError")return; }
+    }
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw Error("Clipboard unavailable");
+      await navigator.clipboard.writeText(url);
+      if(feedback) feedback.textContent="Link copied!";
+    } catch {
+      if(feedback) feedback.textContent="Open the article and copy its URL to share.";
+    }
+  }
+  function makeShareButton(story) {
+    const button=element("button","story-share-button","↗ Share");
+    button.type="button";
+    button.setAttribute("aria-label","Share: "+story.title);
+    const feedback=element("span","story-share-feedback");
+    feedback.setAttribute("role","status");
+    button.addEventListener("click",()=>shareStoryLink(story,feedback));
+    const wrap=element("span","story-share-wrap");
+    wrap.append(button,feedback);
+    return wrap;
+  }
+  function makeFeatureHeadlineCard(story,index) {
+    const card=element("article","feature-headline-card");
+    const imageLink=element("a","feature-headline-image");
+    imageLink.href=articleURL(story);
+    imageLink.setAttribute("aria-label","Read "+story.title);
+    const img=element("img");
+    img.src=imageFor(story);
+    img.loading="lazy";
+    img.alt=story.imageAlt || "Editorial news image";
+    img.referrerPolicy="no-referrer";
+    img.onerror=()=>{if(img.getAttribute("src")!=="cover-mauritius.svg")img.src="cover-mauritius.svg";};
+    imageLink.append(img);
+    const body=element("div","feature-headline-copy");
+    const cat=element("span","feature-headline-category",story.category || "News");
+    const title=element("h3");
+    const a=element("a",null,story.heroTitle || story.title);
+    a.href=articleURL(story);
+    title.append(a);
+    const time=element("time","feature-headline-date",displayPostTime(story));
+    time.dateTime=story.publishedAt || story.addedAt || story.date || "";
+    body.append(cat,title,time);
+    card.append(imageLink,body);
+    if(index===0)card.classList.add("feature-headline-card-primary");
+    return card;
+  }
+  function renderFeatureHeadlines() {
+    const grid=$("featureHeadlines");
+    if(!grid)return;
+    const list=articles.filter(item=>item && item.title && item.id && item.id!==articles[0]?.id).slice(0,3);
+    if(!list.length){grid.replaceChildren(element("p","feature-loading","No additional headlines available."));return;}
+    grid.replaceChildren(...list.map(makeFeatureHeadlineCard));
+  }
+  function renderHeadlineStripe() {
+    const strip=$("headlineStripe");
+    if(!strip)return;
+    const stories=articles.filter(item=>item && item.title && item.id).slice(0,3);
+    strip.replaceChildren(...stories.map(item=>{
+      const a=element("a","headline-stripe-item");
+      a.href=articleURL(item);
+      const category=element("span","headline-stripe-category",(item.category || "News").toUpperCase());
+      const title=element("strong",null,item.heroTitle || item.title);
+      const when=element("small",null,displayPostTime(item));
+      a.append(category,title,when);
+      return a;
+    }));
+  }
   function makeTikTokFollowLink() {
     const link = element("a", "story-tiktok-follow", "Follow on TikTok ↗");
     link.href = "https://www.tiktok.com/@insidemauritius";
@@ -224,7 +300,7 @@
       bottom.append(read,element("span","story-arrow","↗"));
     }
     const socialActions = element("div", "story-social-actions");
-    socialActions.append(makeLikeButton(story), makeTikTokFollowLink());
+    socialActions.append(makeLikeButton(story), makeTikTokFollowLink(), makeShareButton(story));
     // Always display publication information below the post, not in a tiny top-right label.
     // Missing source time is labelled honestly rather than invented.
     const posted=element("div","story-posted-row");
@@ -492,7 +568,9 @@
   }
   function init() {
     clockTick();window.setInterval(clockTick,1000);
-    initFeature();renderCards();renderDashboardHeadlines();initContacts();initTicker();
+    initFeature();renderFeatureHeadlines();renderHeadlineStripe();renderCards();renderDashboardHeadlines();initContacts();initTicker();
+    const heroShare=$("heroShareButton");
+    if (heroShare && articles[0]) heroShare.addEventListener("click",()=>shareStoryLink(articles[0],$("heroShareStatus")));
     $("filterList").addEventListener("click",event=>{const btn=event.target.closest("[data-filter]");if(btn)setFilter(btn.dataset.filter);});
     $("storySearch").addEventListener("input",event=>{query=event.target.value;renderCards();});
     $("resetFilters").addEventListener("click",()=>{query="";$("storySearch").value="";setFilter("All");});
