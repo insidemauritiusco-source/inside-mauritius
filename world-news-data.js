@@ -1,0 +1,1 @@
+// Replaced by the scheduled world-news collector after the feature is approved and merged.\nwindow.INSIDE_MAURITIUS_WORLD_NEWS = {generatedAt:null,headlines:[]};\n
