@@ -39,38 +39,40 @@ window.INSIDE_MAURITIUS_ARTICLES = [
   "sourceUrl": "https://www.topfm.mu/actualites/divali-2026-mgr-jean-michael-durhone-appelle-faire-rayonner-la-paix-et-la-fraternite"
 },
 {
-  "id": "editorial-20261108-night-market",
+  "id": "editorial-20261107-pisa-results",
   "category": "Mauritius",
-  "label": "MAURITIUS · BUSINESS",
-  "title": "Night markets: no implementation planned in 2026, reports Le Défi Media",
-  "summary": "Le Défi Media's 8 November news feed reports that night-market implementation is not envisaged in 2026.",
-  "date": "2026-11-08",
+  "label": "MAURITIUS · EDUCATION",
+  "title": "PISA 2025: Mauritian students below OECD averages in three key subjects",
+  "summary": "Top FM reports that the 2025 PISA assessment highlights structural challenges in reading and mathematics, with science producing Mauritius' strongest results.",
+  "date": "2026-11-07",
+  "publishedAt": "2026-11-07T11:52:00+04:00",
   "image": "cover-mauritius.svg",
-  "imageAlt": "Inside Mauritius generic illustration",
-  "author": "Inside Mauritius — source-based news summary",
+  "imageAlt": "Inside Mauritius editorial illustration",
+  "author": "Inside Mauritius — source-based summary",
   "content": [
-    "Le Défi Media lists a report stating that night markets are not expected to be implemented in 2026.",
-    "This is a short source-based headline summary. Check the publisher for any further explanation or changes."
+    "According to Top FM's 7 November report, Mauritius scored below the OECD averages in reading, mathematics and science in PISA 2025.",
+    "The Council of Ministers reviewed the findings and their implications for the education system. The report identifies particular structural challenges in reading comprehension and mathematics."
   ],
-  "sourceName": "Le Défi Media — 8 November 2026",
-  "sourceUrl": "https://defimedia.info/"
+  "sourceName": "Top FM Mauritius — 7 November 2026",
+  "sourceUrl": "https://www.topfm.mu/actualites/education-pisa-2025-met-en-evidence-des-difficultes-structurelles-en-lecture-et-en-mathematiques"
 },
 {
-  "id": "editorial-20261108-health",
+  "id": "editorial-20261106-cyber-incidents",
   "category": "Mauritius",
-  "label": "MAURITIUS · HEALTH",
-  "title": "Public health: new services open as resource concerns persist",
-  "summary": "Le Défi Media reports on the inauguration of health services alongside concerns about resources in Mauritius.",
-  "date": "2026-11-08",
+  "label": "MAURITIUS · TECHNOLOGY",
+  "title": "Mauritius reports 5,754 cyber incidents and launches digital safety campaign",
+  "summary": "Top FM reports that 5,754 cyber incidents were recorded between 1 January and 5 November 2026, prompting a national digital responsibility campaign.",
+  "date": "2026-11-06",
+  "publishedAt": "2026-11-06T16:14:00+04:00",
   "image": "cover-mauritius.svg",
-  "imageAlt": "Inside Mauritius generic illustration",
-  "author": "Inside Mauritius — source-based news summary",
+  "imageAlt": "Inside Mauritius editorial illustration",
+  "author": "Inside Mauritius — source-based summary",
   "content": [
-    "An 8 November report listed by Le Défi Media addresses the opening of new public-health services and concerns over the resources available to deliver care.",
-    "This is a source-attributed summary; the original publisher should be consulted for additional details."
+    "Top FM reports that Mauritius' computer emergency response team recorded 5,754 cyber incidents between 1 January and 5 November 2026.",
+    "The authorities announced a public awareness campaign about online fraud, misinformation, privacy and cyberbullying."
   ],
-  "sourceName": "Le Défi Media — 8 November 2026",
-  "sourceUrl": "https://defimedia.info/"
+  "sourceName": "Top FM Mauritius — 6 November 2026",
+  "sourceUrl": "https://topfm.mu/actualites/5-754-incidents-cybernetiques-signales-une-campagne-nationale-pour-un-usage-responsable-des-reseaux"
 },
 {
   "id": "editorial-20261108-ukraine",
