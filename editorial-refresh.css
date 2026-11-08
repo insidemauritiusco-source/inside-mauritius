@@ -1,0 +1,143 @@
+/*
+  Inside Mauritius — Editorial Refresh
+  8 November 2026
+  Replaces the old blue glass background; preserves brand logo, content,
+  navigation, live clocks, article data and published newsroom behavior.
+*/
+:root {
+  --ink: #183043;
+  --ink-soft: #4f6572;
+  --muted: #71848e;
+  --paper: #f7faf9;
+  --surface: #fff;
+  --line: #dfe8e6;
+  --navy: #132c40;
+  --navy-2: #203c51;
+  --red: #d82940;
+  --shadow: 0 15px 36px rgba(20, 53, 65, .085);
+}
+
+body {
+  background-color: #f7faf9;
+  background-image:
+    radial-gradient(ellipse 42rem 30rem at 0% 6%, rgba(55, 163, 159, .085), transparent 72%),
+    radial-gradient(ellipse 42rem 27rem at 100% 22%, rgba(71, 145, 196, .07), transparent 75%),
+    linear-gradient(180deg, #f7faf9 0%, #fbfcfb 46%, #f4f8f7 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Airy translucent masthead, with the existing logo unchanged. */
+.site-header {
+  background: rgba(255, 255, 255, .87);
+  border-bottom: 1px solid rgba(201, 219, 216, .65);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+.nav-wrap {
+  background: rgba(255, 255, 255, .94);
+  border-bottom: 1px solid rgba(197, 215, 216, .78);
+  box-shadow: 0 8px 22px rgba(17, 51, 68, .055);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+.header-edition small, .brand-tagline { color: #627a88; }
+.nav-link { transition: color .2s ease; }
+.nav-link:hover, .nav-link.active { color: var(--red); }
+.send-tip { background: #17384d; border-radius: 10px; }
+
+/* The news ticker keeps its high contrast broadcast design. */
+.top-section { padding-top: 37px; }
+.section-eyebrow { color: #223c4c; }
+.eyebrow-line { border-radius: 3px; }
+.lead-feature, .side-feature {
+  border-radius: 19px;
+  box-shadow: 0 16px 39px rgba(19, 50, 62, .10);
+}
+.hero-shade {
+  background: linear-gradient(90deg, rgba(6, 24, 37, .90) 0%, rgba(8, 32, 48, .63) 56%, rgba(6, 24, 37, .17) 100%),
+              linear-gradient(0deg, rgba(6, 24, 37, .28), transparent 60%);
+}
+.hero-kicker { border-radius: 5px; }
+.side-world { background: linear-gradient(145deg, #173b54, #10283b); }
+.side-community {
+  background: linear-gradient(135deg, #e5f3ef, #f3f9f5);
+  color: #193b44;
+}
+.side-community::before { background: rgba(42, 156, 135, .11); }
+
+/* A subtle visual separation between the lead story and news desk. */
+.coverage-band {
+  background: rgba(255, 255, 255, .82);
+  border-color: rgba(207, 224, 220, .9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.coverage-icon { background: #e7f2ef; color: #b71d35; }
+.news-section { padding-top: 70px; }
+.section-title-line h2, .top-stories-heading h2 { color: #162e40; }
+.section-description, .top-stories-heading p { color: #58707e; }
+.news-toolbar { border-bottom-color: #dce7e5; }
+.filter-button {
+  border-color: #d6e3e0;
+  background: rgba(255, 255, 255, .79);
+  border-radius: 999px;
+  color: #3c596a;
+}
+.filter-button.selected {
+  color: #fff;
+  background: #153d57;
+  border-color: #153d57;
+}
+.news-search { background: #fff; border-color: #d6e3e0; border-radius: 999px; }
+.news-live-time {
+  background: linear-gradient(110deg, #173b54, #102b40);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(17, 48, 69, .11);
+}
+
+/* Solid, easy-to-read news cards replace the older blue glass effect. */
+.story-card, .top-stories-grid .story-card {
+  background: #fff;
+  border: 1px solid #e0eae8;
+  border-radius: 17px;
+  box-shadow: 0 12px 28px rgba(22, 57, 69, .065);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.story-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(22, 57, 69, .12);
+}
+.story-category { background: #fff1f3; color: #b82039; }
+.story-date { color: #56707e; }
+.story-excerpt { color: #506677; }
+.story-bottom { border-top-color: #e5eceb; }
+.story-bottom a { color: #174962; }
+.story-card.is-breaking { border-color: rgba(216, 41, 64, .38); }
+
+/* Supporting content matches the calmer editorial background. */
+.events-calendar-wrap, .contact-card {
+  background: #fff;
+  border: 1px solid #e2ebe9;
+  border-radius: 17px;
+  box-shadow: 0 16px 34px rgba(22, 57, 69, .08);
+}
+.article-figure img, .article-body video, .video-art { border-radius: 17px; }
+.video-section { background: linear-gradient(135deg, #132e42, #0b1d2d); }
+.site-footer { background: #112739; }
+
+@media (max-width: 700px) {
+  body { background-attachment: scroll; }
+  .top-section { padding-top: 22px; }
+  .lead-feature { border-radius: 16px; }
+  .side-feature { border-radius: 15px; }
+  .story-card, .top-stories-grid .story-card { border-radius: 15px; }
+  .news-section { padding-top: 49px; }
+  .primary-nav, .primary-nav.is-open { background: #fff; }
+  .coverage-band { -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-card { transition: none; }
+  .story-card:hover { transform: none; }
+}
