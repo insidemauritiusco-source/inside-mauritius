@@ -160,11 +160,25 @@
     if (isBreaking) card.classList.add("is-breaking");
     const imgLink = element("a","story-image-link");
     const isTikTok = typeof story.tiktokUrl === "string" && /^https:\/\/(?:vt\.tiktok\.com|www\.tiktok\.com)\//i.test(story.tiktokUrl);
-    imgLink.href = isTikTok ? story.tiktokUrl : articleURL(story);
-    imgLink.setAttribute("aria-label", isTikTok ? `Watch TikTok video: ${story.title}` : `Read ${story.title}`);
-    if (isTikTok) { imgLink.target="_blank"; imgLink.rel="noopener noreferrer"; imgLink.classList.add("story-video-cover"); }
+    const isArchivePhoto = story.category === "Government" && typeof story.photoSourceUrl === "string" && /^https:\/\/commons\.wikimedia\.org\/wiki\//i.test(story.photoSourceUrl);
+    imgLink.href = isTikTok ? story.tiktokUrl : isArchivePhoto ? story.photoSourceUrl : articleURL(story);
+    imgLink.setAttribute("aria-label", isTikTok ? `Watch TikTok video: ${story.title}` : isArchivePhoto ? `Open original archive photograph for: ${story.title}` : `Read ${story.title}`);
+    if (isTikTok || isArchivePhoto) { imgLink.target="_blank"; imgLink.rel="noopener noreferrer"; }
+    if (isTikTok) imgLink.classList.add("story-video-cover");
+    if (isArchivePhoto) imgLink.classList.add("government-photo-link");
     const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
-    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")) {img.src="cover-mauritius.svg";img.alt="Generic illustration; source photograph unavailable";const credit=card.querySelector(".photo-inline-credit");if(credit)credit.textContent="Illustration displayed · Archive photograph unavailable";}};
+    if (isArchivePhoto) img.referrerPolicy="no-referrer";
+    img.onerror=()=>{
+      const fallback=story.category === "Government" ? "cover-government.svg" : "cover-mauritius.svg";
+      if (img.getAttribute("src") === fallback) return;
+      img.src=fallback;
+      img.alt=story.category === "Government" ? "Inside Mauritius government news illustration; external archive photo could not be loaded" : "Inside Mauritius illustration; source image unavailable";
+      if (story.category === "Government") {
+        const notice=element("span","photo-fallback-note","Photo unavailable here. Tap to view the original ↗");
+        imgLink.append(notice);
+        card.classList.add("photo-fallback-used");
+      }
+    };
     imgLink.append(img,element("span","image-corner",story.label || "INSIDE MAURITIUS"));
     if (isTikTok) {
       const watch=element("span","story-video-play","▶");
@@ -348,14 +362,27 @@
     const img=$("articleImage");img.src=imageFor(story);img.alt=story.imageAlt||"Editorial illustration";
     const imageOpen=$("articleImageOpen");
     if (imageOpen) {
-      imageOpen.href = story.tiktokUrl || imageFor(story);
-      imageOpen.setAttribute("aria-label",story.tiktokUrl ? "Watch original video on TikTok" : "Open full-size article image");
+      imageOpen.href = story.tiktokUrl || (story.category === "Government" && story.photoSourceUrl ? story.photoSourceUrl : imageFor(story));
+      imageOpen.setAttribute("aria-label",story.tiktokUrl ? "Watch original video on TikTok" : story.category === "Government" && story.photoSourceUrl ? "Open original government archive photo on Wikimedia Commons" : "Open full-size article image");
       imageOpen.target="_blank";
       imageOpen.rel="noopener noreferrer";
       imageOpen.title=story.tiktokUrl ? "Watch TikTok video" : "View full image";
     }
     const caption=$("articleCaption");caption.replaceChildren();
-    img.onerror=()=>{if(!img.src.endsWith("cover-mauritius.svg")){img.src="cover-mauritius.svg";img.alt="Generic illustration of Mauritius; archive photograph unavailable";caption.textContent="Generic Inside Mauritius illustration. The archive photograph could not be loaded.";}};
+    if (story.category === "Government" && story.photoSourceUrl) img.referrerPolicy="no-referrer";
+    img.onerror=()=>{
+      const fallback=story.category === "Government" ? "cover-government.svg" : "cover-mauritius.svg";
+      if(img.getAttribute("src")===fallback) return;
+      img.src=fallback;
+      img.alt=story.category === "Government" ? "Government News illustration; archive photograph unavailable on this device" : "Inside Mauritius illustration; photo unavailable";
+      if(story.category === "Government" && /^https:\/\//.test(story.photoSourceUrl || "")) {
+        const notice=element("span","photo-fallback-article","Photograph unavailable on this page. ");
+        const link=element("a",null,"Open original photo on Wikimedia Commons ↗");
+        link.href=story.photoSourceUrl;link.target="_blank";link.rel="noopener noreferrer";
+        notice.append(link,document.createTextNode(" · "));
+        caption.prepend(notice);
+      } else caption.textContent="Inside Mauritius illustration shown because the photograph could not load.";
+    };
     if(story.photoSourceUrl && /^https:\/\//i.test(story.photoSourceUrl)) {
       caption.append(document.createTextNode((story.photoCaption || "Illustrative archive photograph") + " "));
       const credit=element("a",null,"Photo: " + (story.photoAuthor || "Wikimedia Commons"));
