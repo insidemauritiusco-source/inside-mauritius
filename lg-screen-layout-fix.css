@@ -1,0 +1,77 @@
+/*
+ Inside Mauritius — desktop legibility and header spacing repair
+ Based on the reader's LG-screen screenshot. Loaded after existing themes.
+ No article, timestamp, photo, calendar, or TikTok behavior is changed.
+*/
+:root{--im-readable:#13283b;--im-accent:#cb243e}
+@media(min-width:1101px){
+ .container{width:min(1520px,calc(100% - 60px))}
+ .site-header .header-inner{min-height:88px!important;max-height:none;padding-block:4px;gap:20px}
+ .site-header .brand{gap:15px;flex-shrink:0}
+ .site-header .brand img{width:215px!important;height:80px!important;max-width:none;object-fit:contain;object-position:left center}
+ .site-header .brand-tagline{font-size:11px;line-height:1.5;letter-spacing:.09em;padding-left:16px}
+ .site-header .header-side{gap:16px}
+ .site-header .header-edition strong{font-size:11px}
+ .site-header .header-edition small{font-size:12px}
+ .site-header .send-tip{font-size:13px;min-height:39px;padding:10px 14px}
+ .nav-wrap .nav-inner{min-height:53px;gap:13px}
+ .nav-wrap .primary-nav{flex:1;display:flex;align-items:center;justify-content:space-between;gap:2px;min-width:0}
+ .nav-wrap .nav-link{font-size:14px!important;padding:15px 10px!important;white-space:nowrap;font-weight:850;line-height:1.25}
+ .nav-wrap .nav-link::after{left:10px;right:10px}
+ .brand-identity-band .brand-identity-inner{min-height:42px!important;padding-block:5px!important}
+ .brand-identity-band .brand-positioning strong{font-size:11px}
+ .brand-identity-band .brand-positioning small{font-size:10px}
+ .brand-identity-band .brand-social-links a{font-size:11px;min-height:29px;padding:5px 10px}
+ .breaking-ribbon .breaking-inner{min-height:45px}
+ .dashboard-shell{grid-template-columns:minmax(0,2.62fr) minmax(320px,.9fr);gap:24px;padding-top:15px}
+ .dashboard-main .section-eyebrow{font-size:18px;margin-bottom:12px}
+ .dashboard-main .feature-grid{grid-template-columns:minmax(0,1.53fr) minmax(260px,.92fr);gap:15px}
+ .dashboard-main .lead-feature{min-height:475px!important}
+ .dashboard-main .hero-copy h1{font-size:clamp(30px,2.75vw,44px)!important;line-height:1.13}
+ .dashboard-main .hero-copy p{font-size:14px!important;line-height:1.5}
+ .dashboard-main .side-feature h2{font-size:clamp(23px,2.1vw,31px);line-height:1.14}
+ .dashboard-main .side-feature p{font-size:12px;line-height:1.45}
+ .dashboard-main .story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+ .dashboard-main .story-card h3{font-size:clamp(19px,1.44vw,24px);line-height:1.23}
+ .dashboard-main .story-excerpt{font-size:13px;line-height:1.6}
+ .dashboard-main .story-posted-time{font-size:13px}
+ .dashboard-widget-heading h2{font-size:24px}
+ .dashboard-headlines li>a{font-size:14px;line-height:1.43}
+ .dashboard-headline-time{font-size:11px}
+ .dashboard-main .section-title-line h2{font-size:30px}
+ .dashboard-main .top-stories-heading h2{font-size:29px}
+}
+@media(min-width:1101px) and (max-width:1270px){
+ .site-header .brand img{width:180px!important;height:76px!important}
+ .site-header .brand-tagline{font-size:9px;padding-left:10px}
+ .nav-wrap .nav-link{font-size:12px!important;padding:14px 7px!important}
+ .dashboard-main .feature-grid{grid-template-columns:minmax(0,1.4fr) minmax(230px,.9fr)}
+ .dashboard-main .hero-copy h1{font-size:31px!important}
+}
+@media(min-width:621px) and (max-width:1100px){
+ .container{width:calc(100% - 36px)}
+ .site-header .header-inner{min-height:81px!important;padding-block:5px}
+ .site-header .brand img{width:162px!important;height:72px!important}
+ .nav-wrap .nav-link{font-size:12px!important;padding:14px 8px!important}
+ .brand-identity-band .brand-identity-inner{min-height:45px;padding-block:5px}
+ .dashboard-shell{padding-top:15px}
+ .dashboard-main .story-card h3{font-size:21px}
+ .dashboard-headlines li>a{font-size:13px}
+}
+@media(max-width:620px){
+ .container{width:calc(100% - 28px)}
+ .site-header .header-inner{min-height:72px!important;padding-block:5px}
+ .site-header .brand img{width:123px!important;height:64px!important}
+ .nav-wrap .nav-inner{min-height:49px}
+ .nav-wrap .primary-nav.is-open .nav-link{font-size:15px!important;min-height:42px;padding:11px 15px!important}
+ .brand-identity-band .brand-identity-inner{padding-block:5px;min-height:0;gap:6px}
+ .brand-identity-band .brand-positioning small{font-size:10px}
+ .brand-identity-band .brand-social-links a{padding:5px 8px;min-height:30px;font-size:10px}
+ .breaking-ribbon .breaking-inner{min-height:42px}
+ .dashboard-shell{padding-top:13px}
+ .dashboard-main .lead-feature{min-height:390px!important}
+ .dashboard-main .hero-copy h1{font-size:clamp(25px,6.9vw,33px)}
+ .dashboard-main .story-card h3{font-size:23px}
+ .dashboard-main .story-excerpt{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.dashboard-main .story-card{transition:none}}
