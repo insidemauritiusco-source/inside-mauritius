@@ -99,7 +99,7 @@
   function articleURL(story) { return `#article/${encodeURIComponent(story.id)}`; }
   function imageFor(story) {
     const image = typeof story.image === "string" ? story.image.trim() : "";
-    if (image && !image.startsWith("cover-")) return image;
+    if (image === "cover-government.svg" || (image && !image.startsWith("cover-"))) return image;
     const choices = story.category === "World"
       ? ["cover-world.svg","cover-city.svg"]
       : story.category === "Video"
