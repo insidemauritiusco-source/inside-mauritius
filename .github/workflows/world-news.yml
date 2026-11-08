@@ -1,0 +1,37 @@
+name: Refresh attributed world news links
+on:
+  schedule:
+    - cron: '22 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/world_news.py'
+permissions:
+  contents: write
+concurrency:
+  group: inside-mauritius-world-news
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Collect recent world source headlines
+        run: python3 scripts/world_news.py
+      - name: Commit updated headline links
+        run: |
+          if git diff --quiet -- world-news-data.js; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add world-news-data.js
+          git commit -m "Refresh attributed global headline links"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            git push origin HEAD:main && exit 0
+            sleep 3
+          done
+          exit 1
