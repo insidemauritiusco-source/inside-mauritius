@@ -90,18 +90,22 @@
           <article class="lead-feature" id="heroFeature">
             <img class="hero-photo" src="cover-mauritius.svg" alt="Illustration of Mauritius mountains and coast" width="1200" height="720">
             <div class="hero-shade"></div>
-            <div class="hero-copy"><span class="hero-kicker">INSIDE THE HEADLINES</span><h1 id="heroHeading">Mauritius news, in focus.</h1><p>Local news and stories that matter, with clear reporting and trusted sources.</p><div class="hero-story-meta"><span class="hero-story-meta-label">MAURITIUS EDITION</span><time id="heroPublishedAt" aria-label="Lead story publication date and time">Latest update</time></div><a class="hero-link" href="#latest">READ FULL STORY <span aria-hidden="true">↗</span></a></div>
+            <div class="hero-copy"><span class="hero-kicker">INSIDE THE HEADLINES</span><h1 id="heroHeading">Mauritius news, in focus.</h1><p>Local news and stories that matter, with clear reporting and trusted sources.</p><div class="hero-story-meta"><span class="hero-story-meta-label">MAURITIUS EDITION</span><time id="heroPublishedAt" aria-label="Lead story publication date and time">Latest update</time></div><div class="hero-cta-row"><a class="hero-link" href="#latest">READ FULL STORY <span aria-hidden="true">↗</span></a><a class="hero-follow-cta" href="https://www.tiktok.com/@insidemauritius" target="_blank" rel="noopener noreferrer">＋ Follow</a><button type="button" class="hero-share-cta" id="heroShareButton">↗ Share</button></div><span class="hero-share-status" id="heroShareStatus" role="status" aria-live="polite"></span></div>
           </article>
-          <div class="feature-side">
-            <article class="side-feature side-world"><span class="side-top"><span class="side-label">WORLD VIEW</span><span class="side-index">01 / 02</span></span><div><h2>Beyond the island. Into the conversation.</h2><p>Stories that connect Mauritius with global perspectives.</p><div class="world-source-links"><a href="#latest" data-filter-nav="World">Explore world news <span aria-hidden="true">↗</span></a><a href="https://www.bbc.com/news/world" target="_blank" rel="noopener noreferrer" aria-label="Read BBC World News on the official BBC website">BBC World News <span aria-hidden="true">↗</span></a></div><small class="world-source-note">BBC News is an external source, not affiliated with Inside Mauritius.</small></div></article>
-            <article class="side-feature side-community"><span class="side-top"><span class="side-label">GOVERNMENT DESK</span><span class="side-index">02 / 02</span></span><div><h2>The decisions shaping Mauritius.</h2><p>Official announcements, services and public updates.</p><a href="#latest" data-filter-nav="Government">Government news <span aria-hidden="true">↗</span></a></div></article>
-          </div>
+          <div class="feature-side feature-side-news" aria-label="More top headlines">
+            <div class="feature-side-heading"><span>MORE TOP HEADLINES</span><a href="#latest">All stories ↗</a></div>
+            <div id="featureHeadlines" class="feature-headline-grid">
+              <p class="feature-loading">Recent published stories appear here.</p>
+            </div>
+          </div>>
         </div>
       </section>
 
       <section class="coverage-band" aria-label="Our coverage">
         <div class="container coverage-inner"><span class="coverage-intro">COVERING WHAT MATTERS</span><a href="#latest" data-filter-nav="Mauritius"><span class="coverage-icon">◈</span> Mauritius</a><a href="#latest" data-filter-nav="Government"><span class="coverage-icon">▣</span> Government</a><a href="#latest" data-filter-nav="World"><span class="coverage-icon">◎</span> World</a><a href="#latest" data-filter-nav="Community"><span class="coverage-icon">⌘</span> Community</a><a href="#videos"><span class="coverage-icon">▷</span> Video stories</a></div>
       </section>
+
+      <section class="headline-stripe" aria-label="Quick news highlights"><div class="headline-stripe-label">LATEST UPDATES</div><div id="headlineStripe" class="headline-stripe-list"><span>Latest verified headlines from our news desk</span></div></section>
 
       <section class="top-stories container" id="topStories" aria-labelledby="topStoriesHeading" hidden><div class="top-stories-heading"><div><span class="section-label">MAURITIUS / LATEST COVERAGE</span><h2 id="topStoriesHeading">Latest Coverage<span class="heading-dot">.</span></h2><p>Recent Mauritius reports from our news desk.</p></div><a href="#latest" data-filter-nav="Mauritius">All Mauritius news ↗</a></div><div class="top-stories-grid" id="topStoriesGrid"></div></section>
 
@@ -137,7 +141,7 @@
             </div>
           </section>
           <section class="dashboard-widget news-at-glance">
-            <div class="dashboard-widget-heading"><h2>News at a Glance</h2><span aria-hidden="true">✦</span></div>
+            <div class="dashboard-widget-heading"><h2>Latest News Summary</h2><span aria-hidden="true">✦</span></div>
             <p class="glance-note">Latest published headlines from Inside Mauritius and attributed sources. Select a story to read it.</p>
             <div class="glance-tabs" role="group" aria-label="News summary timeframe"><span>Latest headlines</span><span>Real publication dates</span></div>
             <ol id="dashboardHeadlines" class="dashboard-headlines"><li>News headlines will appear when available.</li></ol>
