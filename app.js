@@ -5,9 +5,10 @@
   const legacyPosts = Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [];
   const tiktokPosts = Array.isArray(window.INSIDE_MAURITIUS_TIKTOK_POSTS) ? window.INSIDE_MAURITIUS_TIKTOK_POSTS : [];
   const validTikTokPosts = tiktokPosts.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.date === "string" && (/^https:\/\/www\.tiktok\.com\/@insidemauritius\/video\/\d{12,25}(?:[?#].*)?$/.test(item.tiktokUrl || "") || /^https:\/\/vt\.tiktok\.com\/[A-Za-z0-9_-]{5,32}\/?(?:[?#].*)?$/.test(item.tiktokUrl || "")));
-  // Homepage order: recent Inside Mauritius reporting first, followed by recent
-  // TikTok links and publisher feeds. Older local posts remain in the archive.
-  // Do not invent precise publishing times for date-only entries.
+  // Show genuinely newest reports first across editorial stories, TikTok links
+  // and source headlines; source publication timestamps are not crawl times.
+  // Date-only stories are ordered at midnight Mauritius time without inventing
+  // a publication hour. This keeps today's imported news visible at the top.
   function orderingTimestamp(item) {
     const value = typeof item.publishedAt === "string" ? item.publishedAt
       : typeof item.addedAt === "string" ? item.addedAt : item.date;
@@ -15,19 +16,12 @@
     const parsed = Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(value) ? value + "T00:00:00+04:00" : value);
     return Number.isFinite(parsed) ? parsed : 0;
   }
-  const freshnessCutoff = Date.now() - (48 * 60 * 60 * 1000);
-  const recentOriginal = legacyPosts.filter(item => orderingTimestamp(item) >= freshnessCutoff);
-  const olderOriginal = legacyPosts.filter(item => orderingTimestamp(item) < freshnessCutoff);
-  const recentTikTok = validTikTokPosts.filter(item => orderingTimestamp(item) >= freshnessCutoff);
-  const olderTikTok = validTikTokPosts.filter(item => orderingTimestamp(item) < freshnessCutoff);
   const newestFirst = (a, b) => orderingTimestamp(b) - orderingTimestamp(a);
   const raw = [
-    ...recentOriginal.sort(newestFirst),
-    ...recentTikTok.sort(newestFirst),
-    ...dashboardPosts,
-    ...olderOriginal.sort(newestFirst),
-    ...olderTikTok.sort(newestFirst)
-  ];
+    ...legacyPosts,
+    ...validTikTokPosts,
+    ...dashboardPosts
+  ].sort(newestFirst);
   const seenIds = new Set();
   const articles = raw.filter(item => {
     if (!item || typeof item.id !== "string" || typeof item.title !== "string" || seenIds.has(item.id)) return false;
