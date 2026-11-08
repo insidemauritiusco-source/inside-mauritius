@@ -1,6 +1,64 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-bb14ad5d76792ed4",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[En images] Divali \u00e0 travers l\u2019\u00eele",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T16:24:38+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 20:24 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QTHJfQ3BVcHFNSGpTWEFaS2g5emltbnluU2ZvaVNLa1FTQlRrZnpkZzlpNFhQUjV3T2EtYjliUVBGMm4zbXdhcW9WYklYSi1rd3dNOFhkS2tGVzVmN0IwWnpn?oc=5"
+  },
+  {
+    "id": "source-48bb08e3a0b4c53e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Hippisme - Bonjour Champ-de-mars: Rapidash aff\u00fbt\u00e9 pour son retour",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T16:07:59+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 20:07 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb210b2N0aWVuajNCWDI3eXVYYmFFRXRtcF9BLTlyd1ZHcENscXlHcTBoWFE3OXdCcDU4U0hDRXBwNEpMYkQ0TThjMXRCMW1BUU1sNzRQZTJRamNqWUlSR1BPN1NpdlV6aTdkX3UtTlNTN1l0RjY0UUFYWmxRbV83dk54cFZmZ0J2SVFpYXhR?oc=5"
+  },
+  {
+    "id": "source-393ce52593bc348e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Football : La Cure Waves et Pamplemousses SC se quittent sur un nul lors de la premi\u00e8re journ\u00e9e",
+    "summary": "Short excerpt from ION News RSS feed: La premi\u00e8re journ\u00e9e de la National Super League 2026-2027 a d\u00e9but\u00e9 samedi 7 novembre avec une affiche entre les deux premiers du pr\u00e9c\u00e9dent championnat\u2026",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T16:01:26+00:00",
+    "author": "ION News (external report)",
+    "image": "https://ionnews.mu/wp-content/uploads/2026/11/New-Project-1.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to ION News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to ION News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 20:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "ION News",
+    "sourceUrl": "https://ionnews.mu/football-la-cure-waves-et-pamplemousses-sc-se-quittent-sur-un-nul-lors-de-la-premiere-journee/",
+    "photoSourceUrl": "https://ionnews.mu/football-la-cure-waves-et-pamplemousses-sc-se-quittent-sur-un-nul-lors-de-la-premiere-journee/",
+    "photoAuthor": "ION News",
+    "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-ad775bc324c8dc1c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -177,6 +235,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Top FM (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOelp0aWZUUl9mVnVSaXRybE9INzRFUEFRbGlfUnloTS1aR3hSUnY2WUNQRjZFUUxrNElpRlZDZ0pEdmpPcHNaUkJpUWt0eHpod19CSmdmc0lfTFFLYlJ0MUVfQi1HZnNFZTA1dTVZY3FQZVZrYXNKUDdXQUk2UFZWVEs3bUNuckpIYmEtVUJmdlRvQ0pKeWVLS2NKSUJ5clVIX3FRbURzdnBhZTdzSnljYWxVRWdLYno4eUdRY281Q01SS012dVZBb2tn?oc=5"
+  },
+  {
+    "id": "source-1eecf590f2190199",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "C\u00e9l\u00e9brations de Diwali : prudence avec les lampes allum\u00e9es et l\u2019huile chaude en cuisine, avertit la Mauritus Fire Rescue Service",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T12:26:22+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 16:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1V0WlB5NWRpNVJlU1RUcWt1dmhXVjJZXzBaUjktWU9YanZidUR6VDAxQjE2QnFKTmlCYjBkOWxMZDZrck1QRW5VR2UxMmJ2UExMZ3JFTng3QkRtcmV5SHozMWZxLWNQbERPamk5aEdWbk1tTndid1Q2bHdEeHlKSGtNRlVWRXQxRWpEZ2RuN0xTSnJYX0RKbDQ5TWNURnFOZGZUbjhEa1JPS3hpS0t1MDI0Sjg5OHBEUlZxTm5WXzFXbl9xa3c?oc=5"
   },
   {
     "id": "source-2bbb1ee69299b017",
@@ -441,28 +517,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkZDRvS1JBbzV5NTg5d0k2NFRGcGdMNjRVS2V0YmloTUg1Y1h5ak85NThLcTcwQVI4YWRLZ1BMd2hBZ2ZnanpkaE8ycnZTenpON24yUEJ5V19fVmdWTGk5Rg?oc=5"
   },
   {
-    "id": "source-9809cf9e981da210",
-    "category": "World",
-    "label": "SOURCE HEADLINE",
-    "title": "Fausses alertes \u00e0 la bombe : enqu\u00eate ouverte en France sur un \u201clien avec des puissances \u00e9trang\u00e8res\u201d",
-    "summary": "Short excerpt from ION News RSS feed: Alors que des dizaines de vols commerciaux ont \u00e9t\u00e9 vis\u00e9s par des alertes \u00e0 la bombe en Europe depuis le d\u00e9but de la semaine\u2026",
-    "date": "2026-11-08",
-    "publishedAt": "2026-11-08T06:04:24+00:00",
-    "author": "ION News (external report)",
-    "image": "https://ionnews.mu/wp-content/uploads/2026/11/2026-11-05T120310Z-981107119-RC2NHOAEQZJ0-RTRMADP-3-EUROPE-FLIGHTS-FRANCE.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to ION News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to ION News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 08 November 2026 at 10:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "ION News",
-    "sourceUrl": "https://ionnews.mu/fausses-alertes-a-la-bombe-enquete-ouverte-en-france-sur-un-lien-avec-des-puissances-etrangeres/",
-    "photoSourceUrl": "https://ionnews.mu/fausses-alertes-a-la-bombe-enquete-ouverte-en-france-sur-un-lien-avec-des-puissances-etrangeres/",
-    "photoAuthor": "ION News",
-    "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
     "id": "source-640516e1c3f1014d",
     "category": "World",
     "label": "SOURCE HEADLINE",
@@ -571,42 +625,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXNLZGpkQ2k2MkJxTWNvMDJQUXZ5dndPSmRhWU53dXpmOUl4U0s2MGhncUZTS2s2Y3h5S21GRHhYWUgxRFR6QVIyRXNLaDliUHduYXUwaWptN053VFFaMWMtUi1VUm83cW0tYkRtajJHSVdvdjVMOWdpVGFrdXRZVEl4bVROcjJfVE5VOEdmaW9jbDgwVFFz?oc=5"
   },
   {
-    "id": "source-ed5bf9317a53b409",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Interview de\u2026 Kaushal Ramlackhan : \u00abNous continuerons \u00e0 d\u00e9velopper des leaders capables de construire des organisations durables\u00bb",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T17:44:39+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 21:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSVJMdC0xQXF4azlITmsyODdrLUNRXzNSVHZIYVNiMnM2U0p6Q2VfZ0tBWUpoWnNuTHZvSVhHemhaZWV1MENUNjhGelpraEVkT29xOWhfMWRkQ0xQNDNMdkpGVFJGS056cWR3amE5OHR3ZFFULXdfUGhfOEp4Mm5USWJSMTNzeGpyVU5fZXl3SVN5djFjRVRyTjdEU1J2cnl4c1dzN1NSeWM3SXdOYmV3Yjl0R1FRNEQ0N0tFM3ZjNUNDWXJEV2NxSnlQbU5JLWZVUXkxWkFwWQ?oc=5"
-  },
-  {
-    "id": "source-49ec0536e906f301",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Assises : Vedanand Seetul reconnu coupable du meurtre de son \u00e9pouse",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T17:39:56+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 21:39 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUkthQkRKNE5HWllWZEd6TmNOOW9BamRGMlNoY19QZTUyVC1PbHRLcFJnSDA5aVBxdm5BQml4ZnBKY0d1UnYzcFF1YWdkWWNFejVtMloyek13S3F2d2lRMFJ4dmM1VGl4cGRnNVBjMmpLV0FKWFBRR1NiOFU1U2dtUWtkVGZHWVZJUzZOMG52OUxrQQ?oc=5"
-  },
-  {
     "id": "source-e11e9654eea28d47",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -623,24 +641,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaWkzMFRBbW9nSVZvcE83a1RyS2ZVQjRWMVFpNzdMcHpYeVB5RWFIaHBKOUJheUdNOEJNWXFDZVQwdXpmdC01dUVoVmdhNjYyWEhzYWRnQUxfcE5pRGRJa1B0ZkVoS3d6YlRKbWpoSW1RajBnTkpNTUNGbTM5c2Q0Q010LVdBOUE?oc=5"
-  },
-  {
-    "id": "source-93837c6986345496",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "\u00ab Au C\u0153ur de l\u2019Info \u00bb : zoom sur la s\u00e9curit\u00e9 alimentaire",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T16:23:15+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 20:23 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWHJHOHFUZklzVzhxQmRnMHk5c0VlWC1DczRSY3RpdXFreTh1MUxyMDNKdF9oYV90R2xzMXJ1R3ZDZHBFaUozR0ZyRHhCUy0tLTFVVmdjR3NkT0pUM1BobUphdlQ0YTlBMEt6Y29nU1dfdkx1dkFudEMyczBtSDhtSQ?oc=5"
   },
   {
     "id": "source-f4ff9cb0952d601e",
@@ -715,42 +715,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSjJ4TjZRbDYwOElsb1YtamR2aE8yV1pDWXRLNkkxSWdSQmphUkFfNzdkMWJWUTdvSFNsYXRRYzNzTDFHbmQtZldiUERUckZSWGszMUt6bEdBMUdWUFVqQ1NVdUZ2ZFBEenM0Y21CeFlxLWxsNGVTaGNkOFZSV1BQSV9KMDR0V1RqcnhWdF92QVNyUTQyMGdvc2JJWXg3Q3o0LVNfc0Vyc2d2bWhqNFJlRnNFaFJfODZiUzNTdF9jZ2lLSVU1?oc=5"
   },
   {
-    "id": "source-864bd8acdb3ced15",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "\u00c9ducation : PISA 2025 met en \u00e9vidence des difficult\u00e9s structurelles en lecture et en math\u00e9matiques \u00e0 Maurice",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T10:15:49+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 14:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ucVZGWi1tUkFaalg1aWE4TFRBdDQ4YlA3bldrdHFIREU2N19pTDMtTDh0czFYQXZuZU1KZTh6QVF3RzVaOERFbUZR?oc=5"
-  },
-  {
-    "id": "source-18a3b3bb037ada6f",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "En couverture : Les grands titres de l'express de ce samedi 7 novembre 2026",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T02:03:48+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 06:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS2pSOENrWEZ6cUpQam01bFVURGhUbUdDcVIyTjFSQWhKWHZUcVo3eE9nZmthZl9GSVVfS3paMVFPeTNMbkdPc1pPMm9pQ1h5emJxSXZUT01mREFMeEJUUlFvcUZPVXMtV2RKbUZzN3FNSjFZeXM2NURONS1sbV92Szg4UnJOZDh1ajh0RXdLdVM?oc=5"
-  },
-  {
     "id": "source-6101e4a3ef6ea888",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -823,21 +787,21 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVWhJVTA0eXd1VFB1RjZkdHhuX1FTLWFFZE5rNmxjaDIyYy1hZ3lVMXFaQTdzdG5HZVk2dlpkQ3VfRkJieWlHZkV2MWpMb256NV9HbUEtaUFuclcyWFR5dEhEak5TUjFYWG9aV1V1UG9yS0FyY2NERURjZ1ppSTVGTUQ1VEVibk9NTnJXb0piekVjLWZ6dDMzUlczZVE?oc=5"
   },
   {
-    "id": "source-e5d0dc0fcbbf9bc9",
+    "id": "source-013b32ea8de25976",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Victoria Urban Terminal : Retour \u00e0 la normale ce vendredi",
+    "title": "Intelligence artificielle : Mauritius Telecom lance une plateforme gratuite pour former 50 000 Mauriciens",
     "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
     "date": "2026-11-06",
-    "publishedAt": "2026-11-06T11:16:38+00:00",
+    "publishedAt": "2026-11-06T10:45:55+00:00",
     "author": "L'Express (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 06 November 2026 at 15:16 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 06 November 2026 at 14:45 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fb1ZRRjI1eGJ6S0RsNHZ2b1pVWWpVNkJSUEJnTnZjSVl1UnpBc3J3LTRwVnZaV3U4TFc5THRjZy1kRXQzRlJiYkIxUllpNjUxWGJRaTZfSy1CQnFUbEI2Z00xbkxsWFJMbUxIOA?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMk1HUjBnb2VFUkoyYXBodW13dUNQUGppTEVkeFFpbmVKUk1zWm90Rjc2SHFJbjlCZG9zaV9VU1hhRXhFdXdiMGNrNG1NX1FTUl8zLUFqQV9JbW00MnU4c2o5OUR6TFNDaGNfekNjNlhlRjA3OHVaRUdrNzdMMDJKRW9HUXpHQUtJV1Y5R2wzR21ZU092WVVWdUF0VzdlWWotUExoTTM4ZHBqUQ?oc=5"
   }
 ];
