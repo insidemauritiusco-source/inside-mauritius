@@ -22,6 +22,60 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
 {
+  "id": "water-network-renewal-8-nov-2026",
+  "category": "Mauritius",
+  "label": "WATER INFRASTRUCTURE",
+  "title": "Mauritius water network: CWA estimates 1,500 km of pipes need renewal",
+  "summary": "Government is reviewing priority water projects; CWA estimates that around 1,500 km of water pipes require replacement.",
+  "date": "2026-11-08",
+  "publishedAt": "2026-11-08T08:53:38.948Z",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius editorial illustration, not a photograph of this story",
+  "author": "Inside Mauritius News Desk — source-based summary",
+  "content": [
+    "Le Défi Media reported on 7 November that the government is reviewing its water-project priorities. The CWA estimates around 1,500 km of ageing pipes need replacing. A funded programme covers approximately 114 km in 13 regions; it does not cover the full national requirement.",
+    "Please consult the original source for updates. This is a sourced news summary, not an independently verified breaking-news report."
+  ],
+  "sourceName": "Le Défi Media (7 November 2026)",
+  "sourceUrl": "https://defimedia.info/eau-le-gm-se-penche-sur-le-calendrier-de-ses-grands-chantiers"
+},
+{
+  "id": "flood-experts-8-nov-2026",
+  "category": "Mauritius",
+  "label": "FLOOD PREVENTION",
+  "title": "Flood prevention: three US experts scheduled to visit Mauritius from 8 to 23 November",
+  "summary": "Technical specialists will help Mauritian authorities review the Land Drainage Master Plan and prepare recommendations for flood-risk management.",
+  "date": "2026-11-08",
+  "publishedAt": "2026-11-08T08:53:38.948Z",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius editorial illustration, not a photograph of this story",
+  "author": "Inside Mauritius News Desk — source-based summary",
+  "content": [
+    "Le Mauricien reported that three US specialists will visit Mauritius from 8 to 23 November 2026 under the Ambassador's Water Expert Program. A workshop is planned for 19–20 November to help develop a flood-resilience roadmap. The plans and expected recommendations have not yet been completed.",
+    "Please consult the original source for updates. This is a sourced news summary, not an independently verified breaking-news report."
+  ],
+  "sourceName": "Le Mauricien (7 November 2026)",
+  "sourceUrl": "https://www.lemauricien.com/actualites/societe/risques-dinondation-trois-experts-americains-a-maurice-pour-revoir-le-plan-de-drainage/722644/"
+},
+{
+  "id": "thomas-harel-dakar-8-nov-2026",
+  "category": "Community",
+  "label": "SPORT",
+  "title": "Thomas Harel to represent Mauritius in Dakar Youth Olympic cycling race",
+  "summary": "Mauritian cyclist Thomas Harel is scheduled to take part in Sunday's 76.5 km men's road race at the Youth Olympic Games.",
+  "date": "2026-11-08",
+  "publishedAt": "2026-11-08T08:53:38.948Z",
+  "image": "cover-community.svg",
+  "imageAlt": "Inside Mauritius editorial illustration, not a photograph of this story",
+  "author": "Inside Mauritius News Desk — source-based summary",
+  "content": [
+    "L'Express reported on 8 November that Thomas Harel was set to compete among 41 riders in the Dakar Youth Olympics road race, scheduled for 15:00 Mauritius time. The race features nine laps totalling 76.5 km. This pre-race report does not claim a result.",
+    "Please consult the original source for updates. This is a sourced news summary, not an independently verified breaking-news report."
+  ],
+  "sourceName": "L'Express (8 November 2026)",
+  "sourceUrl": "https://lexpress.mu/s/cyclisme-privilege-dune-ligne-de-depart-olympique-pour-thomas-harel-564502"
+},
+{
   "id": "senior-counsel-attorney-sponsorship-recommendation-panel-7-november-2026",
   "category": "Mauritius",
   "label": "LEGAL AFFAIRS",
