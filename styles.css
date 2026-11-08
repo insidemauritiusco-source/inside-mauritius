@@ -275,3 +275,10 @@ button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inh
 .side-feature .world-source-links a{font-size:11px;line-height:1.35;max-width:100%}
 .world-source-note{display:block;max-width:255px;margin-top:12px;font-size:10px;line-height:1.35;color:#c5cdd8}
 @media(max-width:620px){.side-world{min-height:240px}.side-feature .world-source-links a{font-size:10px}.world-source-note{font-size:9px}}
+
+/* Government photo link and fallback — keeps every news card usable */
+.government-photo-link{cursor:pointer}
+.government-photo-link:focus-visible{outline:3px solid #d82940;outline-offset:3px}
+.photo-fallback-note{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(9,22,42,.93);color:#fff;padding:9px 10px;border-radius:5px;font-size:12px;font-weight:800;line-height:1.35;text-align:center;z-index:3}
+.photo-fallback-article{display:block;background:#fff3df;color:#5d3c0e;border-radius:5px;padding:9px 12px;margin-bottom:7px;font-size:13px}
+.photo-fallback-article a{color:#8f1830;font-weight:800;text-decoration:underline}
