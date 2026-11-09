@@ -1,6 +1,24 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-90264be83fc1a1de",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Divali 2026 : un spectacle culturel haut en couleurs \u00e0 Roche-Terre avec RadioPlus",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T16:37:46+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 20:37 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVm5WemNBcHVLZVk4czRheDNIdjNSLVRRcmpmTWFLeWxzYXFJYkJxV1ZiZEpoc0VzLWpKRGZzNmFXSFBGbnFuN3pTQUdXc1hLUDMwbTFELU9QLUN3d3ZGQ0Q4d3JtdWNaRlU3aEl4WHRESTVscTBucjhtNTJmOVBVekxlYmFkNWhnQXpoc1lrd1ZzYkhCN1RvSnRtQ3U4b1V2Q1E?oc=5"
+  },
+  {
     "id": "source-bb14ad5d76792ed4",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -53,24 +71,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb210b2N0aWVuajNCWDI3eXVYYmFFRXRtcF9BLTlyd1ZHcENscXlHcTBoWFE3OXdCcDU4U0hDRXBwNEpMYkQ0TThjMXRCMW1BUU1sNzRQZTJRamNqWUlSR1BPN1NpdlV6aTdkX3UtTlNTN1l0RjY0UUFYWmxRbV83dk54cFZmZ0J2SVFpYXhR?oc=5"
-  },
-  {
-    "id": "source-fd1fb4df2004b945",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "[Info Soir\u00e9e] : \u00ab TERRES DE L'\u00c9TAT : UN BAIL TR\u00c8S VIP ? \u00bb",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-08",
-    "publishedAt": "2026-11-08T16:04:14+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 08 November 2026 at 20:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HSmdmclZ5bjJrNV9OR2VFTTNRUnB4OGdMUThELTZTTFlRb3pZbWdpOWdXWGVuOUJNQlNHTTJfNjNZdG5HZGowc0lpN0FvNGVxMXZlLVBxM1ZISUpDRXc2RXBlRWxJcm56RlJFeXJHMGtSeW96R3c?oc=5"
   },
   {
     "id": "source-393ce52593bc348e",
@@ -291,24 +291,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1V0WlB5NWRpNVJlU1RUcWt1dmhXVjJZXzBaUjktWU9YanZidUR6VDAxQjE2QnFKTmlCYjBkOWxMZDZrck1QRW5VR2UxMmJ2UExMZ3JFTng3QkRtcmV5SHozMWZxLWNQbERPamk5aEdWbk1tTndid1Q2bHdEeHlKSGtNRlVWRXQxRWpEZ2RuN0xTSnJYX0RKbDQ5TWNURnFOZGZUbjhEa1JPS3hpS0t1MDI0Sjg5OHBEUlZxTm5WXzFXbl9xa3c?oc=5"
   },
   {
-    "id": "source-ffe44da122fe5055",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Pouvoir d\u2019achat : face au \u00ab syndrome du 20 du mois \u00bb, Ishwind Caleechurn propose 1 semaine de travail de 45 heures\u2026",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-08",
-    "publishedAt": "2026-11-08T12:26:19+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 08 November 2026 at 16:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPamp1anVhc0VKS3VIMlJZTjNmbzl1OWZBUWE1eXBlVzkyNmU2eGJhRmluRDJ5RGY1c09hc1YtWm1IWGxvUV9la0ZBeXpJaHZiU1l1RS1CQzBzWWRXTGJtV2lQSkMwdGhqZnBqaEpDU1lTMll2NFBHMS1MM3VkSWUyQklJWHB3T3AtRDdjcEZNelNkNHkzVWc5dVpiN0xLU1N1MV82ZjhuVkU4ZEdxZ2FvSmluSXRzVllPS05CeVktVGpmeHg4Nmx1WDBYMA?oc=5"
-  },
-  {
     "id": "source-2bbb1ee69299b017",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -347,6 +329,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
+  },
+  {
+    "id": "source-50cede51d14a4909",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Pouvoir d\u2019achat : face au \u00ab syndrome du 20 du mois \u00bb, Ishwind Caleechurn propose 1 semaine de travail de 45 heures\u2026",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T10:44:38+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 14:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQamFFMnJURDB2ODMxbWxDVzdCZk5RYS1SMGZCcHpENm5UVmJzN3BtanB2dmY2ZkVOVGZ2UFh3Mm54R0tLZWRwMmRFQW52MngwVmJhUWlDdW9zVVd0RDh5R1BJbnNDd2pDQTczM0p4VWg3bkFhcWVXamh5RWVoRUtPbTlaaVN0YXVoMndyWjNrM1hUbElaaUY5clQ3a0duRjZMalVJaDVhNnZYOElSdUlrNWdwZC1KcXdQNmFRcU5SUllRbEdHTkE?oc=5"
   },
   {
     "id": "source-b169c4e9e47049a2",
@@ -661,76 +661,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQW4tdzk2MzliSWtFeG9CRzNqeDJaNEVZb1FOemVmaFBMVExzOWcxVnBrNmZxcS0xb1ZvUVVHUTNhdi1JcmVaTV9DaTRraS1KbkVUTEo5UERmOXBFYTh4MENsOW1iaXAzT1NUUGdYZlphR3NrQVltN2M3VnlLRmJqNUZYN29SNzlyVEg2NExR?oc=5"
   },
   {
-    "id": "source-d57e0c46065fd5c0",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Dommage collat\u00e9ral de la drogue : Tania et ses trois enfants contraints de vivre dans une pi\u00e8ce sans \u00e9lectricit\u00e9",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T15:09:18+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 19:09 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWjFaQXk3VHp2a1J6cUdRV01LbUl2Y2Jpc0VMODJmbVVuMThmelhscTRrX05oYXVxel9KRTlYbGx2QnRYakhLMDA3OFFIYmFPeWZ6ZE15ZGFkQ0ttVThlVGEtYnNyTzJFcURXQ3lPY2hHdGlvTG9nVFpkdC10QkJ2NWhSWlpZMEtBQjF6U01xR0xrdW5VNlhyYUMwWURYWHhWX082MUFfYmdYTjg?oc=5"
-  },
-  {
-    "id": "source-e198ff8ba735bfde",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Myt Learning Hub : Une plateforme gratuite pour former 50 000 Mauriciens \u00e0 l\u2019IA",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T14:04:09+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 18:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdFRMYjk0czBTTlY3R25TYzE5Y0FNQVlsd19DRy1OVzJVblp6XzBOTVpLRjdHczg2ZDNHaVMzdTlFRVlTLWJCWklJWjljTk5xRHBpV1JmbG82WDhYNHRlWkVXWElwSkNWc1d6NzZmdW53OHpsLWdzNGUxZmRlNXhVdkY2WE5IZFJOZ2E0Wm5zU29lUQ?oc=5"
-  },
-  {
-    "id": "source-0368fcebea22ad19",
+    "id": "source-0dd2b5762c786c31",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
     "title": "Le gouvernement envisage de collaborer avec StopNCII pour lutter contre la diffusion non consentie d\u2019images intimes",
     "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
     "date": "2026-11-07",
-    "publishedAt": "2026-11-07T08:46:35+00:00",
+    "publishedAt": "2026-11-07T10:17:00+00:00",
     "author": "Top FM (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 12:46 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 07 November 2026 at 14:17 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOWVVdTBxZG5ma2xvTEhVM0luSDZkRWxwMW1fU0VtTkpWY2xqT0d5VHhEX1hUeHdyLXBXZXV3RGU5QVlRd2JxcnU0S0xOeUQ0NVQ4RHJFZUJxdmZhRktRZThaZlFfSDhRNFpFUE1aRHMzN0pCeHotQjlOanhPZExnUXo2b2dKdE82Nnh5V1FtekQxa2x6ODFNUVk2X1ZvNVVLODdnUjBBaWRsWl9sTnJGbV94LWgxN0JaMzNHdXV1T2ZJY1RT?oc=5"
-  },
-  {
-    "id": "source-18a3b3bb037ada6f",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "En couverture : Les grands titres de l'express de ce samedi 7 novembre 2026",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-07",
-    "publishedAt": "2026-11-07T02:03:48+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 07 November 2026 at 06:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS2pSOENrWEZ6cUpQam01bFVURGhUbUdDcVIyTjFSQWhKWHZUcVo3eE9nZmthZl9GSVVfS3paMVFPeTNMbkdPc1pPMm9pQ1h5emJxSXZUT01mREFMeEJUUlFvcUZPVXMtV2RKbUZzN3FNSjFZeXM2NURONS1sbV92Szg4UnJOZDh1ajh0RXdLdVM?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcUsyeWJxQ3dpbWV2WHI1alNEOGJDZk50eTU2X2NaUk9WRkxPdEwxd1pvOUlxb3BiRVpfemJjQk15Uk10MDZPZF8xcy1Sakw0QVRZZFNRdzl5RXZNNW5TWXBqVDFmTUFNTy1iYXlzcVlxX0NzX2syQ1lPczdrejlzckVfNjh6NElZcXppZ1h1R2gtaThnWkVlb0xjY3R6dVFtOGh4MmM1b2xaRUV2RFVtS2IyRGFlWEVRb1ZxZGNvQlcwUWNVX0h3V29B?oc=5"
   },
   {
     "id": "source-6101e4a3ef6ea888",
@@ -767,6 +713,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTgtUl9qZ3ZGZWxZSEg4c2F6M0E4b0twTEUyNWFTZVphVFUtMllEQlI2ZFdUbThHNFE4aFFVUVlBWklrR3p6UXBGSjNueXJjemxrNDJ4VENUVExBc3gySm9JYzVFWWpPZTBzMTRTZkc4OFhQRHV6SDRtc2Z4anY4a2gtTQ?oc=5"
+  },
+  {
+    "id": "source-ed82a4412ff93de2",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Lottotech : Rs 8,7 milliards vers\u00e9es \u00e0 l\u2019\u00c9tat depuis 2012",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T16:10:45+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 06 November 2026 at 20:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NZXFXVWg0b2Y5UkYyUldURUNYbnZhaTVGZHBOR2ttWjhGYllqeWpMdUVRMkgtdWV2eFFydEJrcG9lN0NKTzZoSVdoa2cyS3FhUGZFUXp3RmxOOUhUNEJsSzVGNFVTTVVNX0lIRlhGWWZqa3lOV0pZZ2pEdGE?oc=5"
   },
   {
     "id": "source-0a2a725dd28c235e",
