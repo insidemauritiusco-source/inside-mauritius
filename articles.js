@@ -22,6 +22,111 @@ window.INSIDE_MAURITIUS_CONFIG = {
 
 window.INSIDE_MAURITIUS_ARTICLES = [
 {
+  "id": "editorial-20261108-divali-message",
+  "category": "Mauritius",
+  "label": "MAURITIUS · CULTURE",
+  "title": "Divali 2026: Port-Louis bishop calls for peace and fraternity",
+  "summary": "In a message for Divali, Bishop Jean Michaël Durhône calls for solidarity, dialogue and mutual respect across Mauritius.",
+  "date": "2026-11-08",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius illustration, not a photograph of the event",
+  "author": "Inside Mauritius — source-based news summary",
+  "content": [
+    "Top FM Mauritius reports that Bishop Jean Michaël Durhône addressed a Divali message to the Hindu community and Mauritians more broadly, emphasizing peace, solidarity and fraternity.",
+    "The bishop's message also highlights the value of dialogue and respect across the country's communities. Read the original Top FM report for the full account."
+  ],
+  "sourceName": "Top FM Mauritius — 8 November 2026",
+  "sourceUrl": "https://www.topfm.mu/actualites/divali-2026-mgr-jean-michael-durhone-appelle-faire-rayonner-la-paix-et-la-fraternite"
+},
+{
+  "id": "editorial-20261107-pisa-results",
+  "category": "Mauritius",
+  "label": "MAURITIUS · EDUCATION",
+  "title": "PISA 2025: Mauritian students below OECD averages in three key subjects",
+  "summary": "Top FM reports that the 2025 PISA assessment highlights structural challenges in reading and mathematics, with science producing Mauritius' strongest results.",
+  "date": "2026-11-07",
+  "publishedAt": "2026-11-07T11:52:00+04:00",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius editorial illustration",
+  "author": "Inside Mauritius — source-based summary",
+  "content": [
+    "According to Top FM's 7 November report, Mauritius scored below the OECD averages in reading, mathematics and science in PISA 2025.",
+    "The Council of Ministers reviewed the findings and their implications for the education system. The report identifies particular structural challenges in reading comprehension and mathematics."
+  ],
+  "sourceName": "Top FM Mauritius — 7 November 2026",
+  "sourceUrl": "https://www.topfm.mu/actualites/education-pisa-2025-met-en-evidence-des-difficultes-structurelles-en-lecture-et-en-mathematiques"
+},
+{
+  "id": "editorial-20261106-cyber-incidents",
+  "category": "Mauritius",
+  "label": "MAURITIUS · TECHNOLOGY",
+  "title": "Mauritius reports 5,754 cyber incidents and launches digital safety campaign",
+  "summary": "Top FM reports that 5,754 cyber incidents were recorded between 1 January and 5 November 2026, prompting a national digital responsibility campaign.",
+  "date": "2026-11-06",
+  "publishedAt": "2026-11-06T16:14:00+04:00",
+  "image": "cover-mauritius.svg",
+  "imageAlt": "Inside Mauritius editorial illustration",
+  "author": "Inside Mauritius — source-based summary",
+  "content": [
+    "Top FM reports that Mauritius' computer emergency response team recorded 5,754 cyber incidents between 1 January and 5 November 2026.",
+    "The authorities announced a public awareness campaign about online fraud, misinformation, privacy and cyberbullying."
+  ],
+  "sourceName": "Top FM Mauritius — 6 November 2026",
+  "sourceUrl": "https://topfm.mu/actualites/5-754-incidents-cybernetiques-signales-une-campagne-nationale-pour-un-usage-responsable-des-reseaux"
+},
+{
+  "id": "editorial-20261108-ukraine",
+  "category": "World",
+  "label": "WORLD · EUROPE",
+  "title": "Ukraine: emergency crews targeted after deadly strikes in Zaporizhzhia region",
+  "summary": "Associated Press reports that a drone struck rescue crews at a site hit in earlier deadly attacks; rescue equipment was damaged.",
+  "date": "2026-11-08",
+  "image": "cover-world.svg",
+  "imageAlt": "Inside Mauritius world news illustration, not footage",
+  "author": "Inside Mauritius — AP source-based summary",
+  "content": [
+    "According to Associated Press reporting on 8 November, a drone hit emergency responders working at a former school and shelter in southern Ukraine after earlier strikes killed dozens.",
+    "The AP says rescue equipment was damaged, but no injuries were reported in the later drone attack. Read the original AP report for the latest figures."
+  ],
+  "sourceName": "Associated Press — 8 November 2026",
+  "sourceUrl": "https://apnews.com/article/e64dd583955f11e4cf08ef5af6eaf35b"
+},
+{
+  "id": "editorial-20261108-gulf",
+  "category": "World",
+  "label": "WORLD · MARKETS",
+  "title": "Gulf markets fall as investors watch US-Iran tensions",
+  "summary": "Reuters reports that most Gulf stock markets declined on Sunday amid regional tensions and uncertainty about the US response.",
+  "date": "2026-11-08",
+  "image": "cover-world.svg",
+  "imageAlt": "Inside Mauritius world news illustration, not market photography",
+  "author": "Inside Mauritius — Reuters source-based summary",
+  "content": [
+    "Reuters reports that most Gulf stock markets declined on Sunday 8 November as investors assessed developments involving Iran and the United States.",
+    "The report describes market moves in Saudi Arabia, Qatar and Egypt. See Reuters for detailed prices and developing context."
+  ],
+  "sourceName": "Reuters — 8 November 2026",
+  "sourceUrl": "https://www.reuters.com/world/middle-east/gulf-markets-retreat-traders-await-trumps-next-move-iran-2026-11-08/"
+},
+{
+  "id": "editorial-20261108-pope",
+  "category": "World",
+  "label": "WORLD · SOUTH AMERICA",
+  "title": "Pope Leo XIV travels to Argentina after Uruguay visit",
+  "summary": "Associated Press reports that the pope is heading to Argentina after concluding his visit to Uruguay.",
+  "date": "2026-11-08",
+  "image": "cover-world.svg",
+  "imageAlt": "Inside Mauritius world news illustration",
+  "author": "Inside Mauritius — AP source-based summary",
+  "content": [
+    "Associated Press reports that Pope Leo XIV concluded his visit to Uruguay and continued his South American journey to Argentina.",
+    "The upcoming visit comes amid public debate about economic policies in Argentina, according to the AP report."
+  ],
+  "sourceName": "Associated Press — 8 November 2026",
+  "sourceUrl": "https://apnews.com/article/cc1937bec636468892ac71bf5d59ea88"
+},
+
+{
   "id": "government-ki-pri-mobile-price-app-2026-11-07",
   "category": "Government",
   "label": "GOVERNMENT · COMMERCE",
