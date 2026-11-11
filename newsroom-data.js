@@ -107,6 +107,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://ionnews.mu/en-direct-lheure-du-debat-axee-sur-les-deux-ans-au-pouvoir-du-gouvernement-quel-bilan/"
   },
   {
+    "id": "source-cafcbc436f2ec1cb",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c9dition : la romanci\u00e8re mauricienne Ananda Devi obtient le prix Jean Giono",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T15:10:15+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 19:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdjVXVXlvWDdRUmpxRWF2UlFuNktEV2Z5cFBHVzZEWWJKQ2lkMWJ5czg4TklGdTA3NmthYnpTQngxLVFZM19GQTVHT0ZBTF9qUG1yRHh4QktISkhqMGZhY3VNQUZ0LVl3V0tlaG5UMjhMUUxRb0hWMHg3MVZQaGRYTkFJZlA3UWpLaGxzeUQyb3N2OEFQeUtzNmtsOA?oc=5"
+  },
+  {
     "id": "source-59e6c7d90b47ced9",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -123,6 +141,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUWpkM3ZGSFN1c29XZnB3ZnBhdE1EMVd5VEtVQnAxQXUtTGR3bXBlem04OEV4U09nelRYRXhqTXk1N29TS3BMZmhveUJtVDhka1VGeVJDMGEwWVhLV1lySDZpaWF3ZzZ0UUFuZUNzbjUzcUlxTjJVMEUyYkRIQmpFajl4emJ3aDlxTC0yTkYycC04RF9UUm0wemxqb2o?oc=5"
+  },
+  {
+    "id": "source-0a388ab3db4d2914",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Parlement : le centre \u00e9questre du Petit-Gamin vis\u00e9 par un avis de d\u00e9molition, indique Rajesh Bhagwan",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T14:15:21+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 18:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaWtLWXhwWHc4ZkE5bkJxVTdRRmlfbE5HT0xhYm41VWtYTnNRTTBXRVJhdHJCdy1wa3VNLVNxWFB1N3JDVTRveFYwOG4temtpVlRDTEJXUThTYzhvSjZLT2ZGQVNsem9OSzlEdUNxa0tKRWo5NlVLY013YUpOTHhzaUxrSWpaWHQ2T3pRcG1VLXdSdU51aWZRWk94bjhOdDkzeGpxdnBwZFJNanh6ai1MNGlJVllaLVk0ZnVZSw?oc=5"
   },
   {
     "id": "source-1c439482bc7cdd78",
@@ -161,24 +197,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZEhTdVpvbnZYSEN5SkJmMzluN1dfY21UT1dCVUxwTk5uZFVGYTJ4M0FQVlAxYmttNFZraUVMaDdlQTQyN2hMUlkzZTdmZU9qNGk5RWR0dkdneFF3cmZBcGZ1RGVVTmMzN1RLVXFQZ0o4eVV5YmduNC1nT3FyUjNUc2NaT1dUSEt6V2Noc3FsOEZtVUdHRkh4Wkk5UGpRMVd5N1Mzb0lndFdGMjlTWnl3S2xvUUk?oc=5"
   },
   {
-    "id": "source-5d50d7ddd643a2e0",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "R\u00e9forme des pensions : la mobilisation s\u2019essouffle, mais les syndicats maintiennent la pression",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-10",
-    "publishedAt": "2026-11-10T13:11:17+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 10 November 2026 at 17:11 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTVVtRHpJMXRTelV3WFpjaWZNdUxXdnlZRi1pRlBGNVEwLUV2VUdBVnJwd1N1MG1MdnNVQ1FzMjNJRVp2ZkxfNlY5RzBnenpzOElpZFNZOVlEUWJnYzhJbmxMbEg0OGlnM0FRczg3V3BfTkRyU0VtWkMwNjNOc0pWbHlYNkN4ZC1HbVFEc0VmSDUyT1hEbkg1TzU4dnloY0U3aUJ2ZzBEazZNZHFRc1Bod3pVclFic0NabFlN?oc=5"
-  },
-  {
     "id": "source-5ee353a65388bfe8",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -213,6 +231,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Top FM (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcHVGUHRwbngzZVRuRFlDT2xTR1FSN0ZyRWhHVEllS1REU1JYMjFDSFhUS19YUDlIY3B0OVI2X2JnRWtKaWdwMjlXYXF2b24wV1c4SWNPMkhlXzR2cXVnTzFseTNIcGMxSkRPZ2pEWV9uRnZZU1A4U0ZRQVdGZE5KTnIyX2YxSWlYUi1kZEFUdmFBaWlaNjItb0dXWGhCMTdldnBqSkp5TkdyU0tNXzJWNzJnelhSaGJFWnZjNlpwZERpQ0VQ?oc=5"
+  },
+  {
+    "id": "source-1c21e9d88ce70c5f",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "R\u00e9forme des pensions : la mobilisation s\u2019essouffle, mais les syndicats maintiennent la pression",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T12:26:19+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 16:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNDBfQnZOSG5ydUVCRGpGbGllY3JvYW5xM0t6MjM1RnBqNzhLUzlPcG9Uam9wWDVtU0NJMlMzSmd0U2xlbFlNMzNZRE9Hc1p5Unlna3J6RUYyaEI2aUVaWkRfaWlhZVZwQ0ZUZDBaOVNLY0duZ2U3Z2R1aU52T3lkVlR1TDVDblIzLXZkaWQ1UnB0STFESjVuZ0tpUjVfcUEtVjlRc2gwUm42dmIwNTVVUV9LYkdia3pnUXhSb3FaYlM?oc=5"
   },
   {
     "id": "source-d1a912a813d73b39",
@@ -585,6 +621,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZDREeThPSWdweWgwbVBtYnBNTG9oRUt4U3FhbTJkU0k1TU44OW9QNHlIYV9QcnhoeTJIdUF4Zy1WcnRmNHNBTFR1QkF5R2JJRDlheTNXV3RYWHZoYjU2aTBPUk94b3dMSUJfTXViM01vU0xwdEd0VVVsLTl3Y09tWXFxOGJ0V0d5MzhPOHZR?oc=5"
   },
   {
+    "id": "source-034812cc42c57524",
+    "category": "World",
+    "label": "SOURCE HEADLINE",
+    "title": "Diplomatie : Navin Ramgoolam re\u00e7u par Emmanuel Macron \u00e0 l\u2019\u00c9lys\u00e9e",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T03:36:30+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 07:36 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYnlqLUdzMUd0N19WaEtVaEFieUxvMWJCdWwwb0NxaWp2MHUzemRyZ2JaYWE1X1ppUE42QlVrekYxUS1RX2pNWXVzZllndDVnU2ZLNVR5WDJZbmRQN3YwcVgzcVNJSTd5emtyMnVSaks5M0lLb3pnZ3NnU1pGWGRlanJDX1Nsdw?oc=5"
+  },
+  {
     "id": "source-531c60aac9465f11",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -657,42 +711,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTXg4YmF5R2t1azBjX0xYX3kyXzZuLVFsX2M5SHFoMFhrelU1VGdGT1JzaWFEaVpWbjBKSGJEa2VHS0pWdmNGdmdJV1ZfQ1N0aWczYThwOF9nZjBHOEtrT09JaXRtbW1YTHdnaEpHMlhhSEJfcjhxbVdINXFlU3BydlVDMXN1U0xYbVQtUEZhTWEyNnNfWXc?oc=5"
   },
   {
-    "id": "source-93837c6986345496",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "\u00ab Au C\u0153ur de l\u2019Info \u00bb : zoom sur la s\u00e9curit\u00e9 alimentaire",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-09",
-    "publishedAt": "2026-11-09T16:42:28+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 09 November 2026 at 20:42 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWHJHOHFUZklzVzhxQmRnMHk5c0VlWC1DczRSY3RpdXFreTh1MUxyMDNKdF9oYV90R2xzMXJ1R3ZDZHBFaUozR0ZyRHhCUy0tLTFVVmdjR3NkT0pUM1BobUphdlQ0YTlBMEt6Y29nU1dfdkx1dkFudEMyczBtSDhtSQ?oc=5"
-  },
-  {
-    "id": "source-51cbcfccbe9359e2",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Restaurant Lai Min : 80 ans d\u2019histoire",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-09",
-    "publishedAt": "2026-11-09T16:00:00+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 09 November 2026 at 20:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aNmR4OVZwQWRuTmF5Z3VpeXlNTEZkcDlnTkpvSnR1aVl3UEljYm1sLTNycjcwSElMckIxc0g5S0gtZDFKMmQ2a3hLTkRwanY5RXg4OXppcldXNWgyQWlzVTNUZGtySVpvSUE?oc=5"
-  },
-  {
     "id": "source-808df9e7d2c1d581",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -709,24 +727,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9MWWlOTGY1QkNMcTFFOHVSamFXNlM0UzJCTFV6TkdyckQ3d0VVMWZQQmkwb1dkdmZXLTc1SFVabUJCWkE3R1pNTUVKNjJnX1ozRXctcy15blpEcUY1VlM0RExxejdGcjk2WUFXVTlGQ0FEeHM1VXE2QkFyVFNnZw?oc=5"
-  },
-  {
-    "id": "source-12bba3968be2d7c0",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Flic-en-Flac : Une Zambienne de 19 ans d\u00e9nonce un viol, un ressortissant nig\u00e9rian arr\u00eat\u00e9",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-09",
-    "publishedAt": "2026-11-09T13:47:10+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 09 November 2026 at 17:47 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOE92MDRabGgwbW96RDhaRW9HeGxOU01seEZ5T0FrVXVQS0VRRmdaeEZSc0hIbW84YmN1Q2gwWHJPek5pcU94Z184VWtDTGpoZTFIN0M0dkMyOW8wSUtDMlhaYlppLXczZXdsUUItLUQtZk5KVnNzbEZ4UC14TVNlYmNTOW13YTM3aGdFYlhJRVBwcmVjZ2xSUmw0cVBRUFRDRlU4?oc=5"
   },
   {
     "id": "source-edb984949f36224e",
@@ -799,6 +799,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlLWdMMkUxN3hSelc2cERCN0wyVjNlamZka29aX0UwR3ZPa0pZVDN0TjFkQ0I1U1pTNUtNdXRiTzZFbmZxLTVuNGliTDNwUTdfZkg3WUJrSVhIeVVXOHVHeGpMNHJybFR4bkNuVzI3VkZRRUVKWVE?oc=5"
+  },
+  {
+    "id": "source-b1fba8b884a9e75f",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Portrait",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T14:30:00+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 08 November 2026 at 18:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Rc0s4UGhXdThVWVpLQW01dEhTNUl5NUVRd3lIbk5Vc1hiRlZweW1jZTlKODV1SmlVTkxiVXlkbkduR3pkQ1ZJMDNCcDFWd3NRQzRycw?oc=5"
   },
   {
     "id": "source-640516e1c3f1014d",
