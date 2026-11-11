@@ -1,6 +1,24 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-b5fb598ffd26865c",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "D\u00e9c\u00e8s de trois ouvriers bangladais : la Pastorale des Migrants appelle \u00e0 placer la vie humaine au c\u0153ur des priorit\u00e9s",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T15:46:54+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 11 November 2026 at 19:46 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1jb1lqOXZiNktBcVRkRmItNDdOcGF1UW1RLWYwak5PQ0NvYzE5ejVxazRDWTVaVmlaRGYyZTFlUDNxTllxOHc5cy1B?oc=5"
+  },
+  {
     "id": "source-fd97b3c2c609b61c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -171,24 +189,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-c051b597a5906abf",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Protection de l\u2019enfance : Pedostop plaide pour une responsabilit\u00e9 institutionnelle accrue",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T12:21:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 16:21 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUTlUOXBDcldBUWNJWkE0QnAtTFp0NWxHU1FGS0hmR3dQUzVZdE41QVlsay1XSWhiRzQ1Z3RDNWFnTVBST2FtUEk0VEIyd29FbVBaR2pqeUVCX2gxWXh1eldFQlkyTlA2SnJEUTBZWkt5OEs3OUQyOFZtNnZ3ZEpiUnNHRWE2S0FLMU1XXy1GVV9Ic05NNVVjV0pXSzdldlFIbEhhNXluVnYtQ1FvQW5GR0xHZzM?oc=5"
   },
   {
     "id": "source-58a1b407c015e4ae",
@@ -391,6 +391,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1oLWx2dFhZNXhWbGJNaG45b3lOazhDMWk0aEctZ1FmQVNicFJCSm5oUE5PcENoSVBuLVZNMXEzWEg?oc=5"
   },
   {
+    "id": "source-a5ce4665350898e0",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "PQ l CWA : 241 compteurs d\u2019eau r\u00e9par\u00e9s ou remplac\u00e9s depuis 2022",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T10:03:06+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 11 November 2026 at 14:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORkJDbjJ5N2twNEVGQ1MzWF82bERSTVpiRkg4Qk1HS2xkRmwwcUw3SnJvWFJOaGFoRWNLaHRpQlBJdjdhSUFLS1JmSndpNDNPeDVEajVqdlNRWGdVYVhLck41V2hWeFlCbmhMQXZOM0dtN0ZrT3FMTFBYenRsRWJrVWJWUzlZRXRxNEp1SQ?oc=5"
+  },
+  {
     "id": "source-3e89dc69100aa2fb",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -425,24 +443,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaW9oU0EwbEl3YXZnYlRWNE9Yemc1WTVuSmh5LVc0R0dlMzJ5NzFpY2otWWo2bWVyVEljcDc4d2lwMmtDbGpZSmZqVG5TSExMUTF1a254b09iSC1CQjBKSWkzRW5kOVJOWlMxcXJfQnJTS1BDYUF4S2Z5eGNmdVhROXJFSDdaQ0E?oc=5"
-  },
-  {
-    "id": "source-3ae07561ed5ebd91",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Licenciements \u00e0 Le Peninsula Bay, Blue Lagoon Hotel : L\u2019Organisation des Travailleurs de l\u2019H\u00f4tellerie, des Clubs Priv\u00e9s et de la Restauration s\u2019\u00e9l\u00e8ve contre des pratiques ill\u00e9gales",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T08:13:53+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 12:13 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQVJwejJUdUlObGZmcF85WkxLYkxnMUZ5cUtKTHlzejZ1VUVRcU9yenlYMF9tcWI2dFVkeklhRWJYanFjVHNrQUROVmtJTE5ucnZEYUs0WlFfTnhtWC1oV18zdjFNeERNeDZJMWNtTVdHNWxCOWFoQllnTWQ0OXNDVjRWb2hQaHl4ZkdfT2pNWFNoYV85eHRzU0tULXMxNUhJQXBYTUU4LUFzUmZobmxfekE1U1F5MmFIWlpMQVJLMlJJWnZY?oc=5"
   },
   {
     "id": "source-8e5a0dbb2a91a37d",
@@ -661,24 +661,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU3cwTUFOdkw5YU16aDdBdW1WbkExSFZhMFItTndIVmNLY1NUOE9Na3czbks4X1lvT3BLaklBY19rd0lWdWZmdHk1SmZiWjlKR3FnZXphd3plOTlMMGlnUWZ3dE5aUUZ4cVlBXzQxRllOaDYySEtOeUQwQ1VTMW5lZmZtQ2E5RjhITW11S2dtdm9NQXpMZEl3eQ?oc=5"
   },
   {
-    "id": "source-5ee353a65388bfe8",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Automobilistes, attention si vous circulez \u00e0 Port-Louis !",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-10",
-    "publishedAt": "2026-11-10T12:52:55+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 10 November 2026 at 16:52 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPenI1MHNoRHFyaEt6MmQ5dzJibmV1YkdxakZSTlpjN0hOZ1hmRW1JOUFRWDZ0VTdnVjNqSlBiVl9UODc0RUJaTTg2ZEh4Z2FGbWVOYmJJRGRkTWcwSG9jSkI1VkxjaHVza01JRFo3Tm9qSDJkX08za0Q4UUkwaXFCQg?oc=5"
-  },
-  {
     "id": "source-1a02e0256f144148",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -751,6 +733,42 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPekpwbWg4RjJKSFVkV0I3YkNBejc2OUxTZXJPc2NRRXFVdGg4RjU4d01tYWxEOXRTYmExUnAySWROZDhEeHlzSVZfMEh1VnlRVDNidnpWdGtISzFFczBSQ29VZS1BQmtvRlNOV04zVTctcUJZTnBqY2NuYUM2dmVrUThjdEpIbEozcjEtTl94clQ?oc=5"
   },
   {
+    "id": "source-a4333ee56a8cb82f",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Port-Louis : gros embouteillages \u00e0 l\u2019entr\u00e9e de la capitale",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T08:33:36+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 12:33 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVFl0alVLZXVUWk05SXc0QkRhV1pOYkY4TTdVZ1JfZmk2T2JuUktQUGFRNlBtZEZ3UUZMVXhuTVFsSFY1VnVJWDFCYVNpM3VoRllPNnhaeXRmZllDX1dDZi0zVnByN1RGSWM2YnN6eVVBMnZLclU2OFF4OEVyY0xLX3dn?oc=5"
+  },
+  {
+    "id": "source-d8ef855cd6553969",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "La Cl\u00e9mence : S\u00e9questr\u00e9e et d\u00e9pouill\u00e9e en ao\u00fbt, une septuag\u00e9naire re\u00e7oit de nouvelles menaces de mort",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T08:07:43+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 10 November 2026 at 12:07 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcm9DQTBsZFkzc1BJNnkxaHlxT2dOelJFRmdnQWRYa3NuUENVWV9rOExhOUJ5Tm5WX281a2F5eTBVblBVMjdvbDEwY1dmZVUxLUVLQzhVcEFBTV9fSHprWV9TNURJQ2M3bGEyOGdYZWtQeXBNSV9ROGVhRlV6U0lNYkJmUDRUbWNVRU9aN2lLMjVSQ1ZLRzNZUGtraGx2Ykc2VkRKTWE5ekk4b1gwMUR0VUFJbGNqZw?oc=5"
+  },
+  {
     "id": "source-ba33a78ca48aedd4",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -767,24 +785,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80ZGltX0FnVVgxX0tIaTRiQi1NdzQ3ZG5EVFVZbzNQb21CUXY5NDhsSkJPMUtPeVV4UmNCeHN3QlRxam9uNGdGLTBJWG5aUkJacC1QTFpuZEZEdVdiZ093OHFiTURzR3dTbGc?oc=5"
-  },
-  {
-    "id": "source-b19d67a13e044b4e",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Accident \u00e0 Palmar : Merilyn Patricia Marie Louise, 62 ans, perd la vie",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-10",
-    "publishedAt": "2026-11-10T05:01:47+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 10 November 2026 at 09:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMThSX2NjOGc0OFd4Nl9MMUV1T1E4dDJUbGxYclE4VnR4TVItQWxUc2lzZFhSRWRjMjNhM080M19WSTllMTItYnh1dHRBcHR6VEdObjJBclNwWTNzbEJkMjY0UlhxcFhGUXlPdDR1T1FsUGRobllBaGczdm1hWEpkV3dxVQ?oc=5"
   },
   {
     "id": "source-2bd951a1b7190041",
@@ -821,23 +821,5 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IQ1ZPNHRIVkNJWHptaEJtWjZLRXduS1hpWXRGc2hQYVRnWXZGSHByaDRqdEIwbGo4QTlNam5tTE9TU295OEF1R2FpWGg1bVRZQ01HOU44SmxtUQ?oc=5"
-  },
-  {
-    "id": "source-562b1e337244902d",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Mort d\u2019un ex-policier : Double enqu\u00eate sur fond de stup\u00e9fiants",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-09",
-    "publishedAt": "2026-11-09T05:01:33+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 09 November 2026 at 09:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlLWdMMkUxN3hSelc2cERCN0wyVjNlamZka29aX0UwR3ZPa0pZVDN0TjFkQ0I1U1pTNUtNdXRiTzZFbmZxLTVuNGliTDNwUTdfZkg3WUJrSVhIeVVXOHVHeGpMNHJybFR4bkNuVzI3VkZRRUVKWVE?oc=5"
   }
 ];
