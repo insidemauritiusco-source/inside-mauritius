@@ -12,13 +12,14 @@
     panel.id = "imAudioReader";
     panel.className = "im-audio-reader";
     panel.setAttribute("aria-label", "Listen to this article");
-    panel.innerHTML = '<strong>🔊 Listen to this article</strong><div class="im-audio-controls"><button type="button" data-audio="play">▶ Listen</button><button type="button" data-audio="pause" disabled>⏸ Pause</button><button type="button" data-audio="stop" disabled>■ Stop</button><label>Speed <select data-audio="speed" aria-label="Reading speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></label><label>Voice <select data-audio="voice" aria-label="Reading voice"><option value="">Device default</option></select></label></div><p data-audio="status" role="status" aria-live="polite">Tap Listen to hear the full article.</p>';
+    panel.innerHTML = '<strong>🔊 Listen to this article</strong><div class="im-audio-controls"><button type="button" data-audio="play">▶ Listen</button><button type="button" data-audio="pause" disabled>⏸ Pause</button><button type="button" data-audio="stop" disabled>■ Stop</button><label>Speed <select data-audio="speed" aria-label="Reading speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></label><label>Language <select data-audio="language" aria-label="Reading language"><option value="auto">Auto</option><option value="en">English</option><option value="fr">Français</option><option value="mfe">Kreol Morisien 🇲🇺</option></select></label><label>Voice <select data-audio="voice" aria-label="Reading voice"><option value="">Device default</option></select></label></div><p data-audio="status" role="status" aria-live="polite">Tap Listen to hear the full article.</p>';
     const deck = document.getElementById("articleDeck");
     (deck || title).insertAdjacentElement("afterend", panel);
     const play = panel.querySelector('[data-audio="play"]');
     const pause = panel.querySelector('[data-audio="pause"]');
     const stop = panel.querySelector('[data-audio="stop"]');
     const speed = panel.querySelector('[data-audio="speed"]');
+    const language = panel.querySelector('[data-audio="language"]');
     const voice = panel.querySelector('[data-audio="voice"]');
     const status = panel.querySelector('[data-audio="status"]');
     let queue = [], index = 0, active = false, paused = false, currentArticle = "";
@@ -46,6 +47,9 @@
       utterance.rate = Number(speed.value);
       const selected = synth.getVoices().find(v => v.voiceURI === voice.value);
       if (selected) { utterance.voice = selected; utterance.lang = selected.lang; }
+      else if (language.value === "mfe") utterance.lang = "mfe-MU";
+      else if (language.value === "fr") utterance.lang = "fr-FR";
+      else if (language.value === "en") utterance.lang = "en-GB";
       utterance.onend = () => { if (active && !paused) speakNext(); };
       utterance.onerror = e => {
         if (e.error === "canceled" || e.error === "interrupted") return;
@@ -60,7 +64,25 @@
       voice.replaceChildren(new Option("Device default", ""));
       voices.forEach(v => voice.add(new Option(v.name + " (" + v.lang + ")", v.voiceURI)));
       voice.value = voices.some(v => v.voiceURI === previous) ? previous : "";
+      if (!voice.value) selectSuggestedVoice();
     }
+    function selectSuggestedVoice() {
+      const code = language.value;
+      if (code === "auto") { voice.value = ""; return; }
+      const voices = synth.getVoices();
+      let match = voices.find(v => (v.lang || "").toLowerCase().startsWith(code === "mfe" ? "mfe" : code));
+      // A French voice is only an approximation for Kreol Morisien; it is not a native Kreol voice.
+      if (!match && code === "mfe") match = voices.find(v => (v.lang || "").toLowerCase().startsWith("fr"));
+      voice.value = match ? match.voiceURI : "";
+    }
+    function updateLanguageNotice() {
+      if (language.value !== "mfe") { status.textContent = "Tap Listen to hear the full article."; return; }
+      const nativeVoice = synth.getVoices().some(v => (v.lang || "").toLowerCase().startsWith("mfe"));
+      status.textContent = nativeVoice
+        ? "Kreol Morisien voice available. The reader speaks the article as written; it does not translate."
+        : "Kreol Morisien: your device has no native Kreol voice. A French or default voice may approximate pronunciation. Articles are not translated.";
+    }
+    language.addEventListener("change", () => { if (active) cancel(); selectSuggestedVoice(); updateLanguageNotice(); });
     populateVoices(); synth.addEventListener && synth.addEventListener("voiceschanged", populateVoices);
     play.addEventListener("click", () => {
       if (paused && active) { paused = false; synth.resume(); status.textContent = "Reading resumed."; setButtons(); return; }
@@ -70,7 +92,7 @@
       // Use short chunks for more reliable mobile-browser speech playback.
       queue = content.match(/.{1,180}(?:\s|$)/g) || [content];
       index = 0; active = true; paused = false; currentArticle = location.hash;
-      status.textContent = "Reading article aloud…"; setButtons(); speakNext();
+      status.textContent = language.value === "mfe" ? "Reading the written text using the available voice (no translation)…" : "Reading article aloud…"; setButtons(); speakNext();
     });
     pause.addEventListener("click", () => {
       if (!active) return;
