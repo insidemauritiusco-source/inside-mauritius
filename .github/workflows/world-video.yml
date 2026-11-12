@@ -17,15 +17,15 @@ jobs:
           ref: main
       - name: Install FFmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
-      - name: Generate original six-second MP4
+      - name: Generate original animated MP4 and WebM
         run: python3 scripts/build_world_intro.py
       - name: Publish generated video
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add media/global-perspective.mp4
+          git add media/global-perspective.mp4 media/global-perspective.webm
           git diff --cached --quiet && exit 0
-          git commit -m "Publish original global perspective video"
+          git commit -m "Publish original animated global perspective video formats"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             git push origin HEAD:main && exit 0
