@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b42">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Inside Mauritius private Google Analytics reporting console.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Analytics Dashboard | Inside Mauritius</title>
+  <script defer src="config.js"></script>
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analytics dashboard</a>
+  <header class="topbar">
+    <a class="brand" href="../../index.html" aria-label="Inside Mauritius homepage">
+      <img src="../../logo.png" width="64" height="52" alt="Inside Mauritius">
+      <span><strong>INSIDE MAURITIUS</strong><small>PRIVATE ANALYTICS CONSOLE</small></span>
+    </a>
+    <div class="header-actions">
+      <a href="https://analytics.google.com/" target="_blank" rel="noopener noreferrer">Google Analytics ↗</a>
+      <button id="signOut" type="button" class="ghost" hidden>Disconnect</button>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <div class="eyebrow">MAURITIUS NEWSROOM · OWNER REPORTING</div>
+    <div class="hero">
+      <div>
+        <h1>Audience intelligence<span class="accent">.</span></h1>
+        <p>Visitors, news readership and video engagement, powered by your own Google Analytics 4 property.</p>
+      </div>
+      <div class="live-label"><span class="live-dot"></span> Private reporting</div>
+    </div>
+    <section id="setup" class="notice" hidden aria-labelledby="setupTitle">
+      <h2 id="setupTitle">One-time Google connection required</h2>
+      <p>This preview is not yet connected to your private Analytics property. Add the <strong>numeric GA4 Property ID</strong> and a <strong>Google OAuth Web Client ID</strong> to <code>admin/analytics/config.js</code> after setting up the Google Analytics Data API. Never add a client secret or service-account key to this public repository.</p>
+      <a href="../../ANALYTICS-DASHBOARD-SETUP.md">Read the step-by-step setup guide ↗</a>
+    </section>
+    <section class="auth-panel" aria-labelledby="authTitle">
+      <div>
+        <h2 id="authTitle">Connect your Google Analytics account</h2>
+        <p>Sign in using a Google account with at least Viewer access to the Inside Mauritius GA4 property. Google handles authorization; this page never asks for your password.</p>
+      </div>
+      <button id="connect" type="button" class="primary" disabled>Connect with Google</button>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite">Checking dashboard configuration…</p>
+    <section id="report" hidden aria-label="Analytics statistics">
+      <div class="toolbar">
+        <label for="period">Reporting period
+          <select id="period">
+            <option value="today">Today (Mauritius time)</option>
+            <option value="7daysAgo" selected>Last 7 days including today</option>
+            <option value="30daysAgo">Last 30 days including today</option>
+          </select>
+        </label>
+        <button id="refresh" type="button" class="secondary">Refresh statistics</button>
+        <span id="lastUpdated" class="updated"></span>
+      </div>
+      <div class="cards">
+        <article class="metric metric-live"><div class="metric-label">Live visitors</div><div class="metric-value" id="liveVisitors">—</div><div class="metric-hint">Active in the last 30 minutes</div></article>
+        <article class="metric"><div class="metric-label">Active users</div><div class="metric-value" id="activeUsers">—</div><div class="metric-hint">For selected period</div></article>
+        <article class="metric"><div class="metric-label">Page views</div><div class="metric-value" id="pageViews">—</div><div class="metric-hint">News and other site pages</div></article>
+        <article class="metric"><div class="metric-label">News article views</div><div class="metric-value" id="articleViews">—</div><div class="metric-hint">Tracked article content group</div></article>
+        <article class="metric"><div class="metric-label">Video starts</div><div class="metric-value" id="videoStarts">—</div><div class="metric-hint">Playback events, not unique people</div></article>
+        <article class="metric"><div class="metric-label">Video completions</div><div class="metric-value" id="videoCompletions">—</div><div class="metric-hint">Video reached the end</div></article>
+      </div>
+      <div class="lower-grid">
+        <section class="panel" aria-labelledby="pagesTitle">
+          <div class="panel-head"><div><h2 id="pagesTitle">Most-read pages</h2><p>Based on recorded page views for the selected period</p></div></div>
+          <div class="table-wrap"><table><thead><tr><th scope="col">Page</th><th scope="col" class="num">Views</th></tr></thead><tbody id="pagesBody"><tr><td colspan="2">Connect your account to load pages.</td></tr></tbody></table></div>
+        </section>
+        <section class="panel" aria-labelledby="videoTitle">
+          <div class="panel-head"><div><h2 id="videoTitle">Video engagement</h2><p>Self-hosted video playback events</p></div></div>
+          <div class="engagement"><div class="engagement-row"><span>Video starts</span><strong id="eventStarts">—</strong></div><div class="engagement-row"><span>25%, 50%, 75% progress events</span><strong id="eventProgress">—</strong></div><div class="engagement-row"><span>Completed plays</span><strong id="eventCompletions">—</strong></div><div class="engagement-row"><span>External TikTok / YouTube link clicks</span><strong id="externalClicks">—</strong></div></div>
+          <p class="small-note">One playback may generate three progress events. Outbound clicks do not prove a video was watched on another platform. Google Analytics may exclude visitors who decline consent or use tracking blockers.</p>
+          <a class="report-link" href="https://analytics.google.com/" target="_blank" rel="noopener noreferrer">Open full Google Analytics reports ↗</a>
+        </section>
+      </div>
+    </section>
+    <p class="privacy">Access to report data is enforced by your Google Analytics property permissions. This static HTML page is publicly retrievable on GitHub Pages, but it contains no private data until an authorized Google account connects. Tokens are held in browser memory only and are cleared on disconnect or refresh.</p>
+  </main>
+  <footer>© Inside Mauritius · Read-only analytics · <a href="../../index.html">Back to website</a></footer>
+</body>
+</html>
