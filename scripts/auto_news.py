@@ -236,7 +236,7 @@ def video_from_feed(node):
         node.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or "",
     ]
     pattern = re.compile(
-        r"https://(?:www\\.)?(?:youtube\\.com/(?:watch\\?v=|embed/)|youtu\\.be/)"
+        r"https://(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/)|youtu\.be/)"
         r"([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])", re.IGNORECASE
     )
     for part in parts:
