@@ -87,7 +87,12 @@
   // 'playing' means actual media playback began (unlike a click on a play icon).
   document.addEventListener("playing", (event) => {
     if (!active || !(event.target instanceof HTMLVideoElement)) return;
-    const state = videoState(event.target);
+    let state = videoState(event.target);
+    // Starting again after completion is another playback, not a duplicate.
+    if (state.completed) {
+      state = { started: false, completed: false, milestones: new Set() };
+      videoStates.set(event.target, state);
+    }
     if (state.started) return;
     state.started = true;
     sendEvent("video_start", videoDetails(event.target));
@@ -188,7 +193,7 @@
     notice.setAttribute("role", "region");
     notice.hidden = true;
     notice.innerHTML =
-      '<p><strong>Help improve Inside Mauritius</strong> — Allow anonymous-style site analytics to measure news page visits and plays of videos hosted here. Google Analytics may use cookies and device information. TikTok clicks count as clicks, not confirmed views. You can decline or change your choice at any time.</p>' +
+      '<p><strong>Help improve Inside Mauritius</strong> — Allow optional site analytics to measure news page visits and plays of videos hosted here. Google Analytics may use cookies and device information. TikTok clicks count as clicks, not confirmed views. You can decline or change your choice at any time.</p>' +
       '<div class="im-analytics-actions"><button type="button" data-analytics-choice="deny">Decline</button><button type="button" data-analytics-choice="allow">Allow analytics</button></div>';
     document.body.appendChild(notice);
     const choice = getChoice();
