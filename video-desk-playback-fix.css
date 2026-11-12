@@ -1,0 +1,67 @@
+/* Inside Mauritius video desk: accessible HTML5 player, no fake overlay. */
+.video-section .video-art.video-art-player {
+  height:auto;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  background:#081b33;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+}
+.video-section .video-art.video-art-player::after {
+  display:none;
+  content:none;
+}
+.video-section .video-art.video-art-player video {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  background:#081b33;
+  object-fit:contain;
+}
+.video-art-player .video-art-description {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  padding:12px 15px 15px;
+  color:#f1f6fc;
+}
+.video-art-player .video-caption {
+  position:static;
+  z-index:auto;
+  letter-spacing:.08em;
+  font-size:11px;
+  line-height:1.4;
+}
+.video-art-player .video-art-silent {font-size:12px;line-height:1.5;color:#e0ebf3}
+.video-art-player a {
+  display:inline-block;
+  font-size:13px;
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.video-art-player .video-playback-error {
+  position:static;
+  padding:8px 14px 12px;
+  margin:0;
+  color:#fff;
+  font-size:13px;
+}
+.video-section .tiktok-featured-visual {
+  text-decoration:none;
+  cursor:pointer;
+}
+.video-section .tiktok-featured-visual:hover,
+.video-section .tiktok-featured-visual:focus-visible {
+  background:linear-gradient(135deg,#385779,#cd416a);
+  outline:3px solid #fff;
+  outline-offset:2px;
+}
+.video-section .tiktok-featured-visual span {pointer-events:none}
+@media(max-width:620px) {
+  .video-section .video-art.video-art-player {height:auto}
+  .video-art-player .video-art-description {padding:12px}
+}

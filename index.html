@@ -40,7 +40,11 @@
   <script defer src="article-reader.js?v=20261111kreol1"></script>
   <link rel="stylesheet" href="media-repair.css?v=20261109">
   <link rel="stylesheet" href="site-usability-20261112.css?v=1">
+  <link rel="stylesheet" href="video-desk-playback-fix.css?v=1">
+  <link rel="stylesheet" href="video-playback-20261112.css?v=1">
   <script defer src="media-repair.js?v=20261109"></script>
+  <script defer src="video-desk-playback-fix.js?v=1"></script>
+  <script defer src="video-playback-20261112.js?v=1"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -175,34 +179,45 @@
       </div>
 
       <section class="video-section" id="videos" aria-labelledby="videoHeading">
-        <div class="container video-inner"><div class="video-copy"><span class="eyebrow-light">IN FOCUS / VIDEO</span><h2 id="videoHeading">Stories worth <em>watching.</em></h2><p>Interviews, reports and first-hand perspectives from Mauritius. Video reports will appear here as they're published.</p><a href="#latest" data-filter-nav="Video" class="video-button">Browse video stories <span aria-hidden="true">↗</span></a><p style="margin:14px 0 0"><a class="video-source-link" href="https://topfm.mu/top-tv" target="_blank" rel="noopener noreferrer">Watch original TOP TV reports at Top FM ↗</a></p><p style="margin:8px 0 0"><a class="video-source-link" href="https://www.youtube.com/results?search_query=Top+FM+Mauritius+official+news" target="_blank" rel="noopener noreferrer">Find official Top FM news videos on YouTube ↗</a></p><p style="margin:10px 0 0"><a class="video-source-link" href="https://www.tiktok.com/@insidemauritius" target="_blank" rel="noopener noreferrer" aria-label="Follow Inside Mauritius on TikTok">Follow @insidemauritius on TikTok ↗</a></p></div><div class="video-art" aria-hidden="true"><img src="cover-video.svg" alt="" width="720" height="500"><span class="play-disc">▶</span><span class="video-caption">THE INSIDE MAURITIUS VIDEO DESK</span></div></div>
+        <div class="container video-inner"><div class="video-copy"><span class="eyebrow-light">IN FOCUS / VIDEO</span><h2 id="videoHeading">Stories worth <em>watching.</em></h2><p>Interviews, reports and first-hand perspectives from Mauritius. Video reports will appear here as they're published.</p><a href="#latest" data-filter-nav="Video" class="video-button">Browse video stories <span aria-hidden="true">↗</span></a><p style="margin:14px 0 0"><a class="video-source-link" href="https://topfm.mu/top-tv" target="_blank" rel="noopener noreferrer">Watch original TOP TV reports at Top FM ↗</a></p><p style="margin:8px 0 0"><a class="video-source-link" href="https://www.youtube.com/results?search_query=Top+FM+Mauritius+official+news" target="_blank" rel="noopener noreferrer">Find official Top FM news videos on YouTube ↗</a></p><p style="margin:10px 0 0"><a class="video-source-link" href="https://www.tiktok.com/@insidemauritius" target="_blank" rel="noopener noreferrer" aria-label="Follow Inside Mauritius on TikTok">Follow @insidemauritius on TikTok ↗</a></p></div><div class="video-art video-art-player">
+            <video id="worldIntroVideo" controls playsinline preload="metadata" poster="media/global-perspective.svg" width="960" height="540" aria-label="Play the Inside Mauritius six-second silent World News intro">
+              <source src="media/global-perspective.mp4" type="video/mp4">
+              Your browser does not support embedded MP4 playback. <a href="media/global-perspective.mp4">Open the video file directly</a>.
+            </video>
+            <div class="video-art-description">
+              <span class="video-caption">INSIDE MAURITIUS / WORLD NEWS INTRO</span>
+              <span class="video-art-silent">Original 6-second silent introduction — not footage of a news event.</span>
+              <a href="media/global-perspective.mp4" target="_blank" rel="noopener noreferrer">Open video directly ↗</a>
+            </div>
+            <p id="videoErrorNotice" class="video-playback-error" role="status" hidden>Video playback is unavailable here. Use the “Open video directly” link above.</p>
+          </div></div>
         <div class="container tiktok-feed" aria-labelledby="tiktokFeedHeading">
           <div class="tiktok-feed-heading">
             <span class="eyebrow-light">INSIDE MAURITIUS / TIKTOK</span>
             <h3 id="tiktokFeedHeading">Our latest TikTok news videos</h3>
-            <p>Catch our newest public video reports, breaking news clips and community stories here. Videos are provided directly by TikTok.</p>
+            <p>These two posts use TikTok short links, so the original videos play on TikTok rather than inside this website. Select “Play on TikTok” to watch with sound and captions.</p>
           </div>
           <div class="tiktok-featured-post">
-            <div class="tiktok-featured-visual" aria-hidden="true"><span>▶</span></div>
+            <a class="tiktok-featured-visual" href="https://vt.tiktok.com/ZSpr2jFB1/" target="_blank" rel="noopener noreferrer" aria-label="Play first featured video on TikTok"><span aria-hidden="true">▶</span></a>
             <div class="tiktok-featured-copy">
               <span class="eyebrow-light">NEW TIKTOK LINK</span>
               <h4>Featured TikTok video — new link</h4>
               <p>Watch the original post on TikTok for the video, caption and creator details.</p>
               <div class="tiktok-featured-actions">
-                <a href="#article/tiktok-ZSpr2jFB1" class="tiktok-featured-primary">View on Inside Mauritius</a>
-                <a href="https://vt.tiktok.com/ZSpr2jFB1/" target="_blank" rel="noopener noreferrer" class="tiktok-featured-secondary">Watch on TikTok ↗</a>
+                <a href="#article/tiktok-ZSpr2jFB1" class="tiktok-featured-primary">Read video details</a>
+                <a href="https://vt.tiktok.com/ZSpr2jFB1/" target="_blank" rel="noopener noreferrer" class="tiktok-featured-secondary">▶ Play on TikTok ↗</a>
               </div>
             </div>
           </div>
           <div class="tiktok-featured-post">
-            <div class="tiktok-featured-visual" aria-hidden="true"><span>▶</span></div>
+            <a class="tiktok-featured-visual" href="https://vt.tiktok.com/ZSprY5DKX/" target="_blank" rel="noopener noreferrer" aria-label="Play second featured video on TikTok"><span aria-hidden="true">▶</span></a>
             <div class="tiktok-featured-copy">
               <span class="eyebrow-light">FEATURED TIKTOK POST</span>
               <h4>Featured TikTok video</h4>
               <p>Open this featured post to see the original video and caption on TikTok.</p>
               <div class="tiktok-featured-actions">
-                <a href="#article/tiktok-ZSprY5DKX" class="tiktok-featured-primary">View on Inside Mauritius</a>
-                <a href="https://vt.tiktok.com/ZSprY5DKX/" target="_blank" rel="noopener noreferrer" class="tiktok-featured-secondary">Watch on TikTok ↗</a>
+                <a href="#article/tiktok-ZSprY5DKX" class="tiktok-featured-primary">Read video details</a>
+                <a href="https://vt.tiktok.com/ZSprY5DKX/" target="_blank" rel="noopener noreferrer" class="tiktok-featured-secondary">▶ Play on TikTok ↗</a>
               </div>
             </div>
           </div>
