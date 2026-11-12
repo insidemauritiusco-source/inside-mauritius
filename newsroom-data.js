@@ -1,6 +1,28 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-366d5b602194327d",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "New York : au moins cinq morts dans l\u2019effondrement d\u2019un immeuble \u00e0 Brooklyn, les secours fouillent toujours les d\u00e9combres",
+    "summary": "Short excerpt from Inside News RSS feed: Un immeuble de trois \u00e9tages s\u2019est effondr\u00e9 mercredi 11 novembre dans le quartier de Flatbush, \u00e0 Brooklyn. Au\u2026 The post New York : au\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T13:45:31+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/HW4G8E2aYAA0seE.jpeg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 17:45 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/new-york-au-moins-cinq-morts-dans-leffondrement-dun-immeuble-a-brooklyn-les-secours-fouillent-toujours-les-decombres/",
+    "photoSourceUrl": "https://www.inside.news/new-york-au-moins-cinq-morts-dans-leffondrement-dun-immeuble-a-brooklyn-les-secours-fouillent-toujours-les-decombres/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-3aa2217437ebcae8",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -20,6 +42,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoSourceUrl": "https://ionnews.mu/litige-psea-le-college-st-bartholomews-saisit-la-cour-supreme-par-lavoue-luchmun-et-lavocat-noor-hussenee/",
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-73e1c4716fef624a",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Conseil en investissement : une licence FSC est d\u00e9sormais termin\u00e9e",
+    "summary": "Short excerpt from Inside News RSS feed: La FSC a annonc\u00e9 la fin, avec effet au 4 juin 2026, d\u2019une licence de conseil en investissement sans restriction. Le r\u00e9gulateur invite le\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T13:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/ae2d4291-db9e-463b-9219-ba449f8b690a-819x1024.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 17:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/fsc-fin-licence-conseil-investissement-swiss-finance/",
+    "photoSourceUrl": "https://www.inside.news/fsc-fin-licence-conseil-investissement-swiss-finance/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
     "photoIllustrative": false
   },
   {
@@ -107,6 +151,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-4cfaea7c0c025769",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Tourisme : Maurice renouvelle sa repr\u00e9sentation sur neuf march\u00e9s \u00e9trangers",
+    "summary": "Short excerpt from Inside News RSS feed: La Mauritius Tourism Promotion Authority cherche des consultants pour repr\u00e9senter la destination sur neuf march\u00e9s, de la France \u00e0 l\u2019Inde en passant par le\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T12:10:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/Mauritius-Tourism-Expands-Global-Reach_no_a-1024x576.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 16:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/tourisme-maurice-representation-neuf-marches/",
+    "photoSourceUrl": "https://www.inside.news/tourisme-maurice-representation-neuf-marches/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-6ee3555512470130",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -123,6 +189,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVXVGX25RZDdUdHBtNDhvSE9SeW1Hd1NOd0V0ZExRcWNneGlfNjg4WGItdFZvR3drVUtJTnZsM3VvOHlTdncxSXg1RHRTRU9hY0JFZmZ3U1pXS2w3Rzd1dWZFd2pOWTFXaExSb3hUUzVyV3E1emRYX2UycUxEX2NsN0hzRTR3QUVoNElBU0M4dTNtRVB4YVQyaVNQX1dESEk?oc=5"
+  },
+  {
+    "id": "source-3aa5c2477ff6883b",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Trois bureaux de la S\u00e9curit\u00e9 sociale cherchent de nouveaux locaux",
+    "summary": "Short excerpt from Inside News RSS feed: Le minist\u00e8re de la S\u00e9curit\u00e9 sociale recherche des locaux \u00e0 Bambous, Centre de Flacq et Quatre-Bornes. Les offres de location ferment le 1er d\u00e9cembre\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T11:00:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/c221ded9-8bd7-4f93-8cf5-5745c0af1455_no_a.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 15:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/bureaux-securite-sociale-bambous-flacq-quatre-bornes/",
+    "photoSourceUrl": "https://www.inside.news/bureaux-securite-sociale-bambous-flacq-quatre-bornes/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
   },
   {
     "id": "source-8cc91fa28f8ce202",
@@ -161,6 +249,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSjBsVl9MOWRsbTBMM2dlaUZtb1hRazBkQ3gwVkMtaWg2WWp1ZXlmSU5DY0ZXVExHaGowdkVBYmJfZkFHcmlGYlJoaG1hdGlBM2hpSTFybFNHcUkzc293d0JtZVhKcFYyMHdEX3FMcFM4Yk1xazVmY0NIQ2xtQmFYRlBndV9Zdw?oc=5"
   },
   {
+    "id": "source-856573041bcfd783",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "La Cour de Rodrigues vise la visioconf\u00e9rence et l\u2019enregistrement num\u00e9rique",
+    "summary": "Short excerpt from Inside News RSS feed: Le pouvoir judiciaire a lanc\u00e9 un appel d\u2019offres pour \u00e9quiper la Cour de Rodrigues d\u2019un syst\u00e8me de visioconf\u00e9rence et d\u2019enregistrement num\u00e9rique. Les offres sont\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T10:05:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/rod_no_ai-1024x576.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 14:05 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/cour-rodrigues-visioconference-enregistrement-numerique/",
+    "photoSourceUrl": "https://www.inside.news/cour-rodrigues-visioconference-enregistrement-numerique/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-c224cecbaff7a3c9",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -179,40 +289,72 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYWhXVV91UlN1a25tR2h6cFpDc2g5S0Y4bDM5RVNLbXNPekhNRkZoZjR0NXBIbXp2cUMxVlRLTXd3eTNBNy1SeWxNVjl1N3lkTHNvZ0p2dVk0bGlKOXpFM3ZudTJzMkxZN1BmekJHdW5tY01TQzQxdWpOWWFtOEN0X1ZzdVJfRlFWVzJOMDg2QQ?oc=5"
   },
   {
-    "id": "source-bd090658959667fb",
+    "id": "source-491db32fdb5f4e85",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Baie-du-Tombeau : un homme de 31 ans retrouv\u00e9 gri\u00e8vement bless\u00e9 sur la route",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "title": "Trafic d\u2019armes : Maurice accueille un atelier r\u00e9gional sur les contr\u00f4les",
+    "summary": "Short excerpt from Inside News RSS feed: Des repr\u00e9sentants de l\u2019oc\u00e9an Indien se r\u00e9unissent \u00e0 Port-Louis du 11 au 13 novembre pour renforcer les contr\u00f4les sur les transferts d\u2019armes et la\u2026",
     "date": "2026-11-12",
-    "publishedAt": "2026-11-12T09:04:28+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "publishedAt": "2026-11-12T09:10:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/4ef60093-ccea-4fb4-8628-27af0221c0b2-819x1024.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
     "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 12 November 2026 at 13:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 13:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOUd1bHE1SGVPWEstV19iN3h0TFRnZjBCdm9acjNwRUhQUk1Iemh3UlhTUmRvRmYweXF6djdzRXBTVmx2VWRac3h1cEFWdTFHMmhEMlhLR3JOUWh3Yi1jcG9xMktkR3c4VU1JSGR6d2lud3NqakVDb05nM3RWRkcyVGNTN24wQmVwaTRBWU1adVAwdGI1S3A5Q2QtOG1HQQ?oc=5"
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/maurice-atelier-regional-traite-commerce-armes/",
+    "photoSourceUrl": "https://www.inside.news/maurice-atelier-regional-traite-commerce-armes/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
   },
   {
     "id": "source-5eb536428289df3b",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
+    "category": "Video",
+    "label": "SOURCE VIDEO",
     "title": "Des moments marquants des deux ann\u00e9es de mandat de l\u2019Alliance du changement",
     "summary": "Short excerpt from ION News RSS feed: Port\u00e9e au pouvoir par un raz-de-mar\u00e9e de 60-0 lors des l\u00e9gislatives du 10 novembre 2024, l\u2019Alliance du changement a entam\u00e9 son mandat dans l\u2019euphorie\u2026",
     "date": "2026-11-12",
     "publishedAt": "2026-11-12T08:55:57+00:00",
     "author": "ION News (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "image": "https://i.ytimg.com/vi/c7o6GM5AZRg/hqdefault.jpg",
+    "imageAlt": "Image preview supplied by ION News; copyright remains with its owner",
     "content": [
       "This headline was automatically collected from a news feed attributed to ION News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 12 November 2026 at 12:55 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 12 November 2026 at 12:55 Mauritius time. Please visit the original publisher to read the report and check subsequent updates.",
+      "This publisher included a YouTube link. The video stays on YouTube and playback depends on the publisher's settings."
     ],
     "sourceName": "ION News",
-    "sourceUrl": "https://ionnews.mu/des-moments-marquants-des-deux-annees-de-mandat-de-lalliance-du-changement/"
+    "sourceUrl": "https://ionnews.mu/des-moments-marquants-des-deux-annees-de-mandat-de-lalliance-du-changement/",
+    "video": "https://www.youtube.com/watch?v=c7o6GM5AZRg",
+    "photoSourceUrl": "https://ionnews.mu/des-moments-marquants-des-deux-annees-de-mandat-de-lalliance-du-changement/",
+    "photoAuthor": "ION News",
+    "photoCaption": "Source-provided external thumbnail from ION News. Copyright remains with the publisher; this is not an Inside Mauritius photograph.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-7845c149c19438b1",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "56 nouvelles recrues rejoignent l\u2019administration p\u00e9nitentiaire mauricienne",
+    "summary": "Short excerpt from Inside News RSS feed: Apr\u00e8s six mois de formation, 56 nouveaux agents, dont six femmes, ont int\u00e9gr\u00e9 le Mauritius Prison Service \u00e0 Beau-Bassin. Leur mission associe s\u00e9curit\u00e9, discipline\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T08:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/2e7d4043-93ae-4515-ada5-5e695b9050e4_no_a-1024x576.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 12:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/56-nouvelles-recrues-prisons-maurice/",
+    "photoSourceUrl": "https://www.inside.news/56-nouvelles-recrues-prisons-maurice/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
   },
   {
     "id": "source-b4e299c126a3ecc0",
@@ -259,6 +401,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-ec8be3aaf07614ec",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c9ducation ouverte et IA : Maurice accueille une r\u00e9union r\u00e9gionale sur les nouvelles comp\u00e9tences en Afrique",
+    "summary": "Short excerpt from Inside News RSS feed: Une r\u00e9union r\u00e9gionale du Commonwealth of Learning ouverte \u00e0 Eb\u00e8ne met l\u2019accent sur l\u2019enseignement \u00e0 distance, les micro-certifications et la gouvernance de l\u2019IA. The\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T07:30:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/03-education-ouverte-formation-ia-visuel-clean-b4ae9cf5.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 11:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/education-ouverte-ia-micro-credentials-maurice-afrique/",
+    "photoSourceUrl": "https://www.inside.news/education-ouverte-ia-micro-credentials-maurice-afrique/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-504662c92dfd5abf",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -279,6 +443,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "Radio Mo Pep",
     "photoCaption": "Photo preview linked from Radio Mo Pep. Copyright remains with the original publisher.",
     "photoIllustrative": false
+  },
+  {
+    "id": "source-a9e3d95464f37189",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Taux directeur \u00e0 5 % : Khushal Lobine met en garde contre le poids des emprunts",
+    "summary": "Latest headline from 5-Plus dimanche. Read the publisher's original report for the full details.",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T07:21:28+00:00",
+    "author": "5-Plus dimanche (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to 5-Plus dimanche. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 11:21 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "5-Plus dimanche (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOHI4OXdOZHdGMFhUU2ZJT3dTWElqWnFvb1RYMVRsX0hrUlRLaF9ocjVIVTNDMGJNWXZETFk1RjI0THU0UnNrbHp4dkdiTGVFT0RUTG5wUU40MVNRU0xFOTRCNGNRS0tIb0pZS2NPMndFbUExUHlQMl9BeUhOaUYzMEtQTS1lcnZJTW1qR1h5V3hBNm81dmZsSHdBZ3JSSE85cVpJVnhUbXZUQQ?oc=5"
   },
   {
     "id": "source-567acf0bc99edd42",
@@ -321,6 +503,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVFpUd1NFLXVLUWx1NUF3WTYxLTZ2TEtRallETXVsM3liWDMxYUxMX3ZlV2huZHNZOFVrY2ZJd2hCM2dXT2k4VDVVVlpoTGkzRWN4QTZMYnNjSWdVU0VsTGx4WFRDaUpveWdLazhkZ0Q3MFRlX0wzN1NiRWZYLTZCLXphdjFVcHVKcGRjby1rWVpMSTZiQmI4?oc=5"
   },
   {
+    "id": "source-1a01a6b96d07a29e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Voyager 1 atteindra une journ\u00e9e-lumi\u00e8re de la Terre le 18 novembre",
+    "summary": "Short excerpt from Inside News RSS feed: Pr\u00e8s d\u2019un demi-si\u00e8cle apr\u00e8s son lancement, Voyager 1 franchira une distance symbolique : vingt-quatre heures de trajet pour la lumi\u00e8re depuis la Terre. The\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T07:00:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/Voyager-1-_-Signal-a-Travers-les-Etoiles-2.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 11:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/voyager-1-journee-lumiere-terre-18-novembre-2026/",
+    "photoSourceUrl": "https://www.inside.news/voyager-1-journee-lumiere-terre-18-novembre-2026/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-4d98dcad052eb774",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -340,6 +544,28 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoSourceUrl": "https://ionnews.mu/politique-monetaire-le-taux-directeur-passe-a-5-pour-freiner-la-hausse-des-prix/",
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-72acf039c8347d55",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c9lections et IA g\u00e9n\u00e9rative : Bruxelles veut renforcer les obligations des grandes plateformes",
+    "summary": "Short excerpt from Inside News RSS feed: La Commission europ\u00e9enne propose d\u2019actualiser ses lignes directrices \u00e9lectorales du DSA pour tenir compte de l\u2019IA g\u00e9n\u00e9rative et des risques de manipulation. The post\u2026",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T06:30:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/inside-news-europe-elections-regles-ia-facebook-1080x1350-1.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 10:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/ue-elections-ia-generative-lignes-directrices-dsa/",
+    "photoSourceUrl": "https://www.inside.news/ue-elections-ia-generative-lignes-directrices-dsa/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
     "photoIllustrative": false
   },
   {
@@ -409,6 +635,42 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-e83a4491c2df2bb3",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00abKey Rate\u00bb \u00e0 5% : Le cr\u00e9dit va co\u00fbter plus cher aux m\u00e9nages et aux entreprises",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T05:01:15+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 09:01 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYkF4NzIzWnNZbHhtaUNtYXEyMWEwdGhEWTQwSDVHNDJZWi1PNWozbFJ6VEVqeDlDbnpCeVdOV0g5Y0RQXzNmOFdJaEtIOF9GakNRUDdSb1J6ejZndE0yVEJoaV9zaFhzQktXRTBqRWNMdlpCWlY4em1MYWNEY05jamJ5T2NZY3NDVGZkMHFRdHRudmc?oc=5"
+  },
+  {
+    "id": "source-aefbc9a76020485e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "S\u00e9ismes dans l\u2019oc\u00e9an Indien : quatre secousses en une dizaine de jours, faut-il s\u2019inqui\u00e9ter ?",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T04:48:24+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 08:48 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVWdONnVMRUJFc0R6cVBGM1YyOE5OY2lfMjViVW9GdmFvdHZCSUZhc3JWeERUYWJibU90MUoyVkRzWGl1bFNLWDFtV2RURnFaX1BpckphYy1IVXJGQ2RQZjNHcEFna2hRRE1ZajV3Y2k0ZXJkWERPZGNvbUp6U01hakhRZzNMTUg2d253Nk53QWtpMEtweU9mUklPOFVRR2k5NU5NTDNpM043S2JPUGc?oc=5"
+  },
+  {
     "id": "source-4d7987dead8c2bbc",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -425,6 +687,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxObVUzSE9sTUFxU182bFppZENpSzlNOTRlbWhRQjdXR1BFNy1jX2xlMkJvSzc3aUlpb3d6Q1lLTFc3YS1JWkZOaDdfNHQ2MjNKOG1paklObVdYaU9zVC1YdF9yd1M5aUhFcUZNTTEwUWxMVmpFV2h3Ni05S2xsTG05Qzgyd2ZpWW1OUks4ZkZtWXN1eDRYb0o1V0VFT0ZHdw?oc=5"
+  },
+  {
+    "id": "source-0271961563145001",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "En couverture : Les grands titres de l'express de ce jeudi 12 novembre 2026",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T02:06:14+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 12 November 2026 at 06:06 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQmNzM20tVTZBVjUzYllobWh1LTZHTDdiMFc1Mk15anNXd0pFbzI0ZDljWTQ5OWFqY3VzQk41cWhxdVF0M0wwRXJWVDRFRV9UY2kyaFB5aEhRdVFuNlc4UnBoX1dDWDlPOHVlei1Sb29zLXJQU1p1U2VXVTlPRXd4MVdwaE0tSW5fZGlCekV4bmw?oc=5"
   },
   {
     "id": "source-911219436781856b",
@@ -617,24 +897,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUjExeVZXQWJuVXgtaDRlS05aQm0xTnQ4Q1AzYURuUjF3djBnak91R0NSOGRNWDdaRDctRDh1MGpIb3lodW9iMUwyRk9wX2FEd0xyMGppZTZ0TXZYOXRPZTBiQlpzS3Etd0RmNkVSX3RhSGtIajIyR2RoeTRZMmZxQmxPazk1WW91LW1CWHRZZzV3alJORHc?oc=5"
-  },
-  {
-    "id": "source-5af2a674a657df1f",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Au C\u0153ur de l\u2019Info : Reza Uteem, l\u2019invit\u00e9 de l\u2019\u00e9mission ce mercredi",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T12:25:55+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 16:25 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWjF2UkFVWXJIakNvSVRuMVB0RjBCZVlfSDYzeDVzenZxRjVjbUtrRU1Pd1h5c2JUTHd3VTAtTm1vZ0ZYM05oUElQRVpfTFFSelZjZ0hBWEZGcVJFMjJQdHozakdrNm91UTFhaGlhMlZMT0dUUDA0VENkYUJFZDczYXE0T3h6OGVhX053Mg?oc=5"
   },
   {
     "id": "source-ee649e4f2bde3ced",
@@ -935,77 +1197,5 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUjlvVVRmazlYZWtPV0d6eDBqb0k0S3pZenhZNHlyeEF5UDE2Vmh0dFlnM2ZHZWxvOEdnUHNJbzU0WHZKQlp5SmxIZmowOW9FcW1EVElVMVhuRlZpX2pYcy1QUXNjNDEyNVl6U2NEZ1h2cERkaEcyVFY2SDR0ZzF2UmJrM0VvcW5Td2ZOSG1qQUNlM09JSnZ5MWQyZHJ1QQ?oc=5"
-  },
-  {
-    "id": "source-5a47afeb93543871",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Meurtre de Reddy Mooneesawmy : Le jury est constitu\u00e9, les d\u00e9bats reprennent aujourd\u2019hui",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T07:09:05+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 11:09 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdGZnWklpYWZVZmVhYVZaeURWcUhmck5KSWpoUWM5UThxcUdCaUpNQVVqMlhZcDVNSkxTVlVxcjZ2UjI2VFpFTml2WEhBbGtKem51RTBkOHdJdU5wYkdjZlpfbmp1Y2tzU3VJbGNEWnRMZnpoMWFLU0RBOVFMTVBFSkNaTmVuQ3hhSnlR?oc=5"
-  },
-  {
-    "id": "source-5891d56e196166cf",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Parlement : Ambiance sonn\u00e9e\u2026",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T06:32:28+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 10:32 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBIMFRWejF5N2pqYldFLU9TQ21yRW1CQ2lnTnQzYndBRHlxRTlCYklhVkpGSlVNMFhLVW10NTFhcTVpZkNtRmljV3ZaWTc4RmJZT0FYSFpGcw?oc=5"
-  },
-  {
-    "id": "source-2652b10ed1783c29",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Parlement : PNQ : Quatre enfants d\u00e9c\u00e9d\u00e9s, 409 plac\u00e9s en refuge et 103 arr\u00eat\u00e9s dans des affaires li\u00e9es \u00e0 la drogue",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-11",
-    "publishedAt": "2026-11-11T06:02:00+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 11 November 2026 at 10:02 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWjhxR2VlTEwwaHZzcENoZmhrcW5OMGJ2SDVoaGJEZTA5SWNwNDJlUzVMbFBCU0dhSGpYQmVpVDlwWXFzdTNSdEVPSzNZWlFISlZvc0NldkN5a1BkdVhjY3ptMExNSkJOS3diWGJNSDVMdGx4MUtIb3ZWSzVrYUUydzNSRlZjSnRNWFZTZldaSXplblNhX1hQT0JTZHVQdTJBMmxlUF8wMmxEcmJ5eENkb0Q4V2ZjODZSRVNmM0dKRzFiTkdQMlE?oc=5"
-  },
-  {
-    "id": "source-ec70ed70ad60552e",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Abus sexuels durant l\u2019enfance : les blessures invisibles peuvent r\u00e9appara\u00eetre des ann\u00e9es plus tard",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-10",
-    "publishedAt": "2026-11-10T09:45:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 10 November 2026 at 13:45 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMVQwQkd5THlfSW1mUzVkcXpIZ0l4a3NleVFsVVYxU1JWQWkzODRFdWxITzJrTDhGanVEV19fVG1sQTlGejhjQ0RSYTZobUlBaEdYbzA0RWU3Q1ZlQlVtd2VMc21IdkJBdFhVV18xMFNrbWNLdE9HNDlQSkU4U2xET251dW1XNW40TmdabFJ0anRJSHplWVlqdkpWWkVnYy1jMHZSMnMzZ3JuTlhPWlh4WEwzRUo4WTZlWWJQRm4xem9ZdWVZUWc?oc=5"
   }
 ];
