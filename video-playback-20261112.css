@@ -60,3 +60,28 @@
   .video-section .video-art-player{height:auto}
   .video-art-player .video-art-description{padding:13px}
 }
+
+/* Explicit format-switch button for browsers that reject H.264 MP4. */
+.video-art-player .video-alternative-button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 13px;
+  border:1px solid #c6dbe9;
+  border-radius:6px;
+  background:#eaf5fb;
+  color:#12334d;
+  font:800 12px/1.4 Arial,Helvetica,sans-serif;
+  cursor:pointer;
+  min-height:40px;
+}
+.video-art-player .video-alternative-button:hover,
+.video-art-player .video-alternative-button:focus-visible {
+  background:#fff;
+  outline:2px solid #ffce57;
+  outline-offset:2px;
+}
+.video-art-player .video-alternative-button:disabled {
+  opacity:.65;
+  cursor:wait;
+}
