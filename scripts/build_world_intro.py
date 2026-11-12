@@ -23,7 +23,9 @@ filter_expr = (
     "drawtext=text='INSIDE MAURITIUS':fontcolor=0x69e5d4:fontsize=34:x=60:y=80,"
     "drawtext=text='WORLD NEWS':fontcolor=white:fontsize=94:x=60:y=185,"
     "drawtext=text='GLOBAL PERSPECTIVE':fontcolor=0x73dfd2:fontsize=50:x=60:y=310,"
-    "drawtext=text='Mauritius first. The world in view.':fontcolor=white:fontsize=25:x=60:y=420"
+    "drawtext=text='Mauritius first. The world in view.':fontcolor=white:fontsize=25:x=60:y=420,"
+    "drawtext=text='●':fontcolor=0xffd65a:fontsize=48:x='50+140*t':y=464,"
+    "drawtext=text='▶  WORLD NEWS UPDATES':fontcolor=0x69e5d4:fontsize=19:x='960-175*t':y=495"
 )
 source = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "lavfi", "-i",
           "color=c=0x081b33:s=960x540:r=15:d=6", "-vf", filter_expr,
