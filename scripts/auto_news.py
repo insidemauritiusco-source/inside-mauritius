@@ -226,6 +226,27 @@ def publisher_excerpt(node, title, source):
         excerpt += "…"
     return "Short excerpt from " + source + " RSS feed: " + excerpt
 
+def video_from_feed(node):
+    """Extract only original YouTube links supplied in the publisher RSS item.
+
+    Media stays on YouTube; no downloading, copying or rehosting.
+    """
+    parts = [
+        node.findtext("description") or "",
+        node.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or "",
+    ]
+    pattern = re.compile(
+        r"https://(?:www\\.)?(?:youtube\\.com/(?:watch\\?v=|embed/)|youtu\\.be/)"
+        r"([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])", re.IGNORECASE
+    )
+    for part in parts:
+        content = html.unescape(part).replace("\\/", "/")
+        match = pattern.search(content)
+        if match:
+            return "https://www.youtube.com/watch?v=" + match.group(1)
+    return ""
+
+
 def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
@@ -263,10 +284,14 @@ def item_to_story(node, source, via_google):
         )
     digest = hashlib.sha256(link.encode("utf-8")).hexdigest()[:16]
     img = image_from_feed(node, source, link)
+    video = "" if via_google else video_from_feed(node)
+    if video and not img:
+        vid = urllib.parse.parse_qs(urllib.parse.urlsplit(video).query)["v"][0]
+        img = "https://i.ytimg.com/vi/" + vid + "/hqdefault.jpg"
     story = {
         "id": "source-" + digest,
-        "category": classify_category(title),
-        "label": "SOURCE HEADLINE",
+        "category": "Video" if video else classify_category(title),
+        "label": "SOURCE VIDEO" if video else "SOURCE HEADLINE",
         "title": title,
         "summary": summary,
         "date": local_date,
@@ -283,6 +308,9 @@ def item_to_story(node, source, via_google):
         "_published": publication.isoformat(),
         "_publisher": source
     }
+    if video:
+        story["video"] = video
+        story["content"].append("This publisher included a YouTube link. The video stays on YouTube and playback depends on the publisher's settings.")
     if img:
         story.update({
             "photoSourceUrl": link, "photoAuthor": source,
@@ -347,11 +375,22 @@ def main():
     for source, url in SOURCES:
         try:
             items = collect_source(source, url)
+            if not items and source in SOURCE_FALLBACKS:
+                items = collect_source(source, SOURCE_FALLBACKS[source])
             success += 1
             all_items.extend(items)
             print(source, "feed read:", len(items), "eligible recent headlines")
         except Exception as exc:
-            failures.append(source + ": " + str(exc)[:150])
+            if source in SOURCE_FALLBACKS:
+                try:
+                    items = collect_source(source, SOURCE_FALLBACKS[source])
+                    success += 1
+                    all_items.extend(items)
+                    print(source, "fallback read:", len(items), "eligible recent headlines")
+                except Exception as fallback_exc:
+                    failures.append(source + ": " + str(exc)[:110] + "; fallback: " + str(fallback_exc)[:110])
+            else:
+                failures.append(source + ": " + str(exc)[:150])
     for name, channel in VIDEO_CHANNELS:
         try:
             items = youtube_stories(name, channel)
