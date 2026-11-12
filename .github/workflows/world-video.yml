@@ -1,12 +1,18 @@
-name: Produce original global perspective intro video
+name: Produce original animated global perspective intro video
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - 'scripts/build_world_intro.py'
+
 permissions:
   contents: write
+
+concurrency:
+  group: inside-mauritius-video-render
+  cancel-in-progress: false
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -15,19 +21,30 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          persist-credentials: true
       - name: Install FFmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
-      - name: Generate original animated MP4 and WebM
+      - name: Generate compatible animated MP4 and WebM
         run: python3 scripts/build_world_intro.py
-      - name: Publish generated video
+      - name: Validate that both outputs can be decoded
+        run: |
+          ffmpeg -v error -i media/global-perspective.mp4 -f null -
+          ffmpeg -v error -i media/global-perspective.webm -f null -
+          test -s media/global-perspective.mp4
+          test -s media/global-perspective.webm
+      - name: Publish both video formats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add media/global-perspective.mp4 media/global-perspective.webm
-          git diff --cached --quiet && exit 0
-          git commit -m "Publish original animated global perspective video formats"
+          if git diff --cached --quiet; then
+            echo "Video formats already up to date"
+            exit 0
+          fi
+          git commit -m "Publish animated World News intro (MP4 and WebM)"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             git push origin HEAD:main && exit 0
             sleep 3
           done
+          exit 1
