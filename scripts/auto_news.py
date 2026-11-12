@@ -30,6 +30,7 @@ MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 YT_NS = "{http://www.youtube.com/xml/schemas/2015}"
 SOURCE_SITES = {
+    "Radio Mo Pep": "radiomopep.mu",
     "Top FM": "topfm.mu",
     "Le Défi Media / Radio Plus": "defimedia.info",
     "L'Express": "lexpress.mu",
@@ -43,6 +44,7 @@ SOURCES = [
     ("Le Défi Media / Radio Plus", "https://news.google.com/rss/search?q=site%3Adefimedia.info%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     ("L'Express", "https://news.google.com/rss/search?q=site%3Alexpress.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     # Direct publisher feeds: failures do not stop the other sources.
+    ("Radio Mo Pep", "https://radiomopep.mu/feed/"),
     ("ION News", "https://ionnews.mu/feed/"),
     ("Le Mauricien", "https://www.lemauricien.com/feed/"),
     ("Mauritius Times", "https://www.mauritiustimes.com/feed/"),
