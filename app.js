@@ -233,6 +233,8 @@
   }
   function makeStoryCard(story) {
     const card = element("article","story-card");
+    // Preserve full Radio Mo Pep photo-collage previews rather than cropping them.
+    if (/radio mo pep/i.test(story.sourceName || "")) card.classList.add("source-radio-mo-pep");
     // Only explicit editorial flags trigger Breaking News; never infer urgency from a headline.
     const isBreaking = story.breaking === true || story.isBreaking === true;
     if (isBreaking) card.classList.add("is-breaking");
