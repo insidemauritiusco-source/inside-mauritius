@@ -30,6 +30,12 @@ MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 YT_NS = "{http://www.youtube.com/xml/schemas/2015}"
 SOURCE_SITES = {
+    "INFORMUS": "informus.mu",
+    "Mopays.com": "mopays.com",
+    "GIS Mauritius": "gis.govmu.org",
+    "5-Plus dimanche": "5plus.mu",
+    "MNews": "mnews.mu",
+    "Inside News": "inside.news",
     "Radio Mo Pep": "radiomopep.mu",
     "Top FM": "topfm.mu",
     "Le Défi Media / Radio Plus": "defimedia.info",
@@ -43,12 +49,26 @@ SOURCES = [
     ("Top FM", "https://news.google.com/rss/search?q=site%3Atopfm.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     ("Le Défi Media / Radio Plus", "https://news.google.com/rss/search?q=site%3Adefimedia.info%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     ("L'Express", "https://news.google.com/rss/search?q=site%3Alexpress.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
+    # Source-linked Google News metadata; no rehosting or copying full publisher content.
+    ("Mopays.com", "https://news.google.com/rss/search?q=site%3Amopays.com%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
+    ("GIS Mauritius", "https://news.google.com/rss/search?q=site%3Agis.govmu.org%20when%3A3d&hl=en&gl=MU&ceid=MU%3Aen"),
+    ("5-Plus dimanche", "https://news.google.com/rss/search?q=site%3A5plus.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr"),
     # Direct publisher feeds: failures do not stop the other sources.
+    ("INFORMUS", "https://informus.mu/feed/"),
+    ("MNews", "https://www.mnews.mu/feed/"),
+    ("Inside News", "https://www.inside.news/feed/"),
     ("Radio Mo Pep", "https://radiomopep.mu/feed/"),
     ("ION News", "https://ionnews.mu/feed/"),
     ("Le Mauricien", "https://www.lemauricien.com/feed/"),
     ("Mauritius Times", "https://www.mauritiustimes.com/feed/"),
 ]
+# Direct feeds may fail or be stale. Use a publisher-scoped metadata fallback.
+SOURCE_FALLBACKS = {
+    "INFORMUS": "https://news.google.com/rss/search?q=site%3Ainformus.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr",
+    "MNews": "https://news.google.com/rss/search?q=site%3Amnews.mu%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr",
+    "Inside News": "https://news.google.com/rss/search?q=site%3Ainside.news%20when%3A3d&hl=fr&gl=MU&ceid=MU%3Afr",
+}
+
 VIDEO_CHANNELS = [
     # No channel feed is enabled until its ID and video RSS availability are verified.
     # Readers can access original Top FM / TOP TV videos from the website video desk.
