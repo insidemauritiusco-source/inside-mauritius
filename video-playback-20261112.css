@@ -1,0 +1,62 @@
+/* Inside Mauritius video desk: accessible native player and honest external links. */
+.video-section .video-art-player {
+  display:flex;
+  flex-direction:column;
+  height:auto;
+  min-height:0;
+  background:#091b2b;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:12px;
+  overflow:hidden;
+}
+.video-art-player::after {display:none}
+.video-art-player video {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  background:#081b33;
+}
+.video-art-player .video-art-description {
+  position:static;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:7px;
+  padding:13px 15px 16px;
+  background:#112d42;
+  color:#eff8ff;
+}
+.video-art-player .video-caption {
+  position:static;
+  display:block;
+  letter-spacing:.07em;
+  font-weight:900;
+  font-size:11px;
+}
+.video-art-silent {font-size:12px;line-height:1.5;color:#e0edf8}
+.video-art-player a {
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  font-size:13px;
+  font-weight:800;
+}
+.video-art-player a:hover,.video-art-player a:focus-visible {color:#ff9faf}
+.video-playback-error {margin:0;padding:11px 15px;color:#fff;background:#7b1c32;font-size:13px}
+.video-playback-error[hidden]{display:none}
+.tiktok-featured-visual {
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+.tiktok-featured-visual:hover,.tiktok-featured-visual:focus-visible {
+  outline:3px solid #fff;
+  outline-offset:2px;
+}
+.video-art-player video:focus-visible{outline:3px solid #f9c84d;outline-offset:-3px}
+@media(max-width:620px){
+  .video-section .video-art-player{height:auto}
+  .video-art-player .video-art-description{padding:13px}
+}
