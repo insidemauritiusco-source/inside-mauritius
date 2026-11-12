@@ -352,14 +352,9 @@
     filter=["All","Mauritius","Government","World","Community","Video"].includes(value)?value:"All";
     renderCards();
   }
-  // Compact headlines on the homepage; the full title remains on the article page.
+  // Never truncate a sourced headline; CSS lets the card grow to fit it.
   function compactLeadTitle(value) {
-    const title = String(value || "").trim();
-    const limit = window.matchMedia("(max-width: 620px)").matches ? 76 : 91;
-    if (title.length <= limit) return title;
-    const slice = title.slice(0, limit + 1);
-    const cut = slice.lastIndexOf(" ");
-    return (cut > limit * .65 ? slice.slice(0, cut) : slice.slice(0, limit)).trimEnd() + "…";
+    return String(value || "").trim();
   }
   function initFeature() {
     if(!articles.length) return;
@@ -395,6 +390,12 @@
       let id = host==="youtu.be" ? parsed.pathname.substring(1) : (parsed.searchParams.get("v") || parsed.pathname.split("/").pop());
       if(!/^[a-zA-Z0-9_-]{11}$/.test(id||"")) return;
       const iframe=element("iframe");iframe.src=`https://www.youtube-nocookie.com/embed/${id}`;iframe.title="Inside Mauritius video";iframe.loading="lazy";iframe.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";iframe.referrerPolicy="strict-origin-when-cross-origin";iframe.allowFullscreen=true;parent.append(iframe);
+      // Some browsers block embedded players. Keep an accessible original link.
+      const original=element("p","article-source media-source-link");
+      const link=element("a",null,"Watch the original video on YouTube ↗");
+      link.href=`https://www.youtube.com/watch?v=${id}`;
+      link.target="_blank";link.rel="noopener noreferrer";
+      original.append(link);parent.append(original);
     } else if (host === "www.tiktok.com" && /^\/@insidemauritius\/video\/\d{12,25}\/?$/.test(parsed.pathname)) {
       // Official TikTok video player; numeric ID is extracted only from the account's public post URL.
       const videoId = parsed.pathname.match(/\/video\/(\d{12,25})\/?$/)[1];
@@ -445,6 +446,12 @@
     } else if (/\.mp4($|\?)/i.test(parsed.pathname+parsed.search) && (parsed.origin===window.location.origin || parsed.protocol==="file:")) {
       const vid=element("video");vid.controls=true;vid.preload="metadata";vid.playsInline=true;
       const source=element("source");source.src=parsed.href;source.type="video/mp4";vid.append(source);parent.append(vid);
+      const notice=element("p","article-source media-source-link");
+      const link=element("a",null,"Open original MP4 video ↗");
+      link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";
+      notice.append(link);
+      vid.addEventListener("error",()=>{notice.prepend(document.createTextNode("Video could not play in this browser. "));},{once:true});
+      parent.append(notice);
     }
   }
   function renderArticle(story) {
