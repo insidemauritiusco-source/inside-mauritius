@@ -14,16 +14,18 @@ Open `inside-digital/index.html` in any modern browser. All assets use relative 
 - Native product-details dialogs with clear descriptions of each project's status
 - FAQ, contact mailto, and reduced-motion support
 - No account collection, tracking, backend dependencies, or direct Microsoft content or assets
+- Responsive-grid overflow fixes, 44px navigation/details touch targets, scrollable product dialogs, and improved mobile-menu dismissal
 
 ## Manual test checklist
 
-1. On mobile, open and close the navigation, and visit each anchor.
+1. On mobile, open and close the navigation using its button, a navigation link, tapping outside, and Escape; verify focus returns to the toggle after Escape.
 2. Search `LinkBook`, then `no match`; verify the filter and reset states.
 3. Select Media, Social, and Creative tabs; check card counts and aria-pressed.
 4. Open product details and close via button, Escape and backdrop.
 5. Visit Inside Mauritius's external site; check the new tab and safe rel attributes.
 6. Check keyboard tabbing, visible focus styles, desktop 1440px, mobile 360px, and console errors.
-7. Verify unaffected existing homepage and news updates before approving merge.
+7. Check widths 360px, 820px, 1024px, and 1440px, especially Solutions, Vision, and FAQ for unwanted horizontal scrolling; open a long dialog on a short-height screen.
+8. Verify unaffected existing homepage and news updates before approving merge.
 
 ## Important
 
