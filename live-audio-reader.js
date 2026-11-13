@@ -146,7 +146,6 @@
       paused = false;
       synth.resume();
       status.textContent = "Lektir pe kontinie.";
-      speakNext(session);
     } else {
       paused = true;
       synth.pause();
