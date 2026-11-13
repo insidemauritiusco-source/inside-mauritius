@@ -12,6 +12,7 @@
   <script defer src="analytics.js?v=20261112"></script>
   <script defer src="world-news-data.js"></script>
   <script defer src="world-news.js?v=20261113"></script>
+  <script defer src="world-media-recovery.js?v=20261113"></script>
 </head>
 <body>
   <header><div class="wrap masthead">
@@ -34,13 +35,22 @@
         <p class="kicker">From the archive · Photography</p>
         <h2>Earth from Apollo 17</h2>
         <p>NASA’s Apollo 17 crew photographed Earth on 7 December 1972. <a href="https://images.nasa.gov/details/as17-148-22727">Photo credit: NASA</a></p>
+        <p class="media-actions"><a href="media/apollo-17-earth.webp" target="_blank" rel="noopener noreferrer">Open full photo ↗</a><a href="https://images.nasa.gov/details/as17-148-22727" target="_blank" rel="noopener noreferrer">View original at NASA ↗</a></p>
+        <p id="worldPhotoStatus" class="media-warning" role="status" hidden>This photo cannot load here. Open the NASA archive link above to view the original.</p>
         <a class="source" href="https://apnews.com/photography">Browse AP world photography ↗</a>
       </article>
       <article id="world-video">
-        <video controls playsinline preload="metadata" poster="media/global-perspective.svg" width="960" height="540" aria-label="World Desk intro video">
+        <video id="worldIntroVideo" controls playsinline preload="metadata" poster="media/global-perspective.svg" width="960" height="540" aria-label="World Desk intro video" aria-describedby="worldVideoHelp">
           <source src="media/global-perspective.mp4" type="video/mp4">
           <source src="media/global-perspective.webm" type="video/webm">
         </video>
+        <div class="media-actions">
+          <button id="playWorldVideo" type="button" aria-controls="worldIntroVideo">▶ Play video</button>
+          <a href="media/global-perspective.mp4" target="_blank" rel="noopener noreferrer">Open MP4 video ↗</a>
+          <a href="media/global-perspective.webm" target="_blank" rel="noopener noreferrer">Alternative WebM ↗</a>
+        </div>
+        <p id="worldVideoHelp" class="media-help">This is a six-second silent introduction. Tap Play video. If your browser cannot play it, open a video file above.</p>
+        <p id="worldVideoStatus" class="media-warning" role="status" aria-live="polite" hidden>The video cannot play in this browser. Try Open MP4 video or Alternative WebM above.</p>
         <p class="kicker">Inside Mauritius · Video</p>
         <h2>Global Perspective</h2>
         <p>Our six-second silent World Desk introduction. <a href="media/global-perspective.mp4">Open video file</a></p>
