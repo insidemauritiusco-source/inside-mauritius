@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c3b">
+  <meta name="description" content="Browse the latest source-linked Mauritius and international headlines, photos and videos in one place. Publisher timestamps shown in Mauritius time.">
+  <title>Latest News Updates | Inside Mauritius</title>
+  <link rel="canonical" href="https://mr.insidemauritius.com/live-updates.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="live-updates.css?v=20261113">
+  <link rel="stylesheet" href="analytics.css?v=20261112">
+  <script defer src="newsroom-data.js"></script>
+  <script defer src="world-news-data.js"></script>
+  <script defer src="live-updates.js?v=20261113"></script>
+  <script defer src="analytics-config.js?v=20261112"></script>
+  <script defer src="analytics.js?v=20261112"></script>
+</head>
+<body>
+  <a class="skip-link" href="#headlines">Skip to news</a>
+  <div class="topline"><div class="wrap topline-inner"><span>INSIDE MAURITIUS · NEWS DESK</span><time id="mauritiusClock">Mauritius time · UTC+4</time></div></div>
+  <header class="site-header">
+    <div class="wrap header-content">
+      <a class="brand" href="./" aria-label="Inside Mauritius homepage"><img src="logo.png" alt="Inside Mauritius" width="190" height="112"></a>
+      <nav aria-label="Page navigation"><a href="./">Home</a><a href="world-news.html">World News</a><a href="statistics-2026.html">Statistics</a><a class="selected" href="live-updates.html" aria-current="page">Latest Updates</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="pageTitle">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> THE LATEST · SOURCE-LINKED REPORTS</div>
+      <h1 id="pageTitle">News updates<span class="accent">.</span></h1>
+      <p class="intro-copy">Mauritius first, with the world in view. Search recent headlines, explore publisher reports and find video coverage in one place.</p>
+      <p class="honesty">Articles are collected from outside publishers. Headlines and timestamps belong to the sources and are not independently verified breaking-news alerts.</p>
+    </section>
+    <section class="overview" aria-label="Feed overview">
+      <div><strong id="storyCount">—</strong><span>Source-linked items</span></div>
+      <div><strong id="sourceCount">—</strong><span>Publishers</span></div>
+      <div class="latest-time"><strong id="newestArticle">Checking…</strong><span>Newest source publication</span></div>
+    </section>
+    <section class="feed" id="headlines" aria-labelledby="feedTitle">
+      <div class="feed-heading"><div><p class="eyebrow">Browse coverage</p><h2 id="feedTitle">Latest headlines</h2></div><button id="refreshButton" type="button">↻ Check for updates</button></div>
+      <div class="controls">
+        <div id="categoryControls" class="categories" role="group" aria-label="Headline category">
+          <button type="button" data-category="All" aria-pressed="true">All stories</button>
+          <button type="button" data-category="Mauritius" aria-pressed="false">Mauritius</button>
+          <button type="button" data-category="World" aria-pressed="false">World</button>
+          <button type="button" data-category="Video" aria-pressed="false">Videos</button>
+        </div>
+        <label class="search">Search reports<input id="headlineSearch" type="search" placeholder="Search headlines or publishers" autocomplete="off"></label>
+      </div>
+      <p id="feedStatus" class="feed-status" role="status" aria-live="polite">Loading source-linked headlines…</p>
+      <div id="headlineGrid" class="headline-grid" aria-live="polite"></div>
+      <button type="button" id="moreButton" class="more-button" hidden>Show more reports</button>
+      <div class="footnote">Source times are shown in Mauritius Standard Time (UTC+4). Select a headline to read the original publisher's article. External links open in a new tab. The Check for updates button reloads the published feed files; it does not publish new news.</div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-content"><span>© Inside Mauritius · Independent source directory</span><a href="./">Return to homepage</a></div></footer>
+</body>
+</html>
