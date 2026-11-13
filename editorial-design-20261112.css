@@ -11,14 +11,19 @@
   --im-border: #dce5eb;
 }
 body {
-  background: #f4f6f8 !important;
-  background-image: none !important;
+  background:
+    radial-gradient(ellipse 58rem 44rem at 0 12rem, #d7eeeb, transparent 85%) top left / 100% 60rem no-repeat,
+    linear-gradient(112deg, #f1f8f7, #f5f6f0 62%, #f2eadb) !important;
   color: var(--im-ink);
 }
 ::selection { background: #f9dce0; color: #102a40; }
 .site-header {
-  background: #fff !important;
-  border-bottom: 1px solid #dce5eb;
+  /* Widely spaced lagoon contours fade into the white space around the logo. */
+  background:
+    linear-gradient(90deg, white 8%, rgba(255, 255, 255, .93) 30%, rgba(255, 255, 255, 0) 75%),
+    repeating-radial-gradient(ellipse 36rem 16rem at 96% 185%, transparent 0 22px, rgba(33, 113, 111, .14) 23px, transparent 25px 42px),
+    linear-gradient(115deg, #fff, #e3f3ef 72%, #d7eae9) !important;
+  border-bottom: 1px solid #cbdeda;
   box-shadow: 0 5px 30px rgba(13, 34, 53, .045);
 }
 .site-header .header-inner { padding-block: 5px; }
