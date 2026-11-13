@@ -1,13 +1,73 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>World News Desk | Inside Mauritius</title><meta name="description" content="Source-linked headlines from global publishers, organised by region for readers in Mauritius.">
-<link rel="icon" href="favicon.svg"><link rel="stylesheet" href="analytics.css?v=20261112"><script defer src="analytics-config.js?v=20261112"></script>
-  <script defer src="analytics.js?v=20261112"></script><style>
-:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#081626;color:#eaf3f8}*{box-sizing:border-box}body{margin:0}a{color:inherit}header{background:#10243c;border-bottom:1px solid #34506a}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}header img{width:75px;height:56px;object-fit:contain}header a{text-decoration:none}.wrap{max-width:1180px;margin:auto;padding:0 18px}.mast{padding:38px 0 24px;background:linear-gradient(130deg,#123456,#071a28)}.eyebrow{color:#6fe3d1;letter-spacing:.15em;font-weight:800;font-size:.78rem}.mast h1{font-size:clamp(2rem,5vw,4rem);line-height:1.05;margin:14px 0}.mast p{color:#c0d2df;max-width:750px}.status{color:#afc7d6;font-size:.85rem;margin-top:12px}.controls{display:flex;flex-wrap:wrap;gap:8px;padding:24px 0}.controls button{border:1px solid #416079;background:#132d45;color:#ecf8fa;border-radius:30px;padding:10px 15px;font:inherit;cursor:pointer}.controls button[aria-pressed="true"]{background:#5fe2cf;color:#09202b;border-color:#5fe2cf;font-weight:700}input{background:#11263d;color:#fff;border:1px solid #416079;border-radius:12px;padding:12px 14px;min-width:210px;flex:1}h2{margin:0 0 12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;padding:20px 0 48px}.item{background:#102940;border:1px solid #2f4b60;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px}.item h3{font-size:1.13rem;line-height:1.35;margin:0}.item p{color:#bed0df;margin:0;font-size:.91rem}.meta{color:#70decf;font-size:.78rem;font-weight:750}.item a{margin-top:auto;color:#91e7dc;font-weight:700;text-decoration:underline;text-underline-offset:4px}.source-directory{background:#10263b;padding:32px 0}.directory-list{display:flex;gap:10px;flex-wrap:wrap}.directory-list a{display:inline-block;border:1px solid #3c6078;border-radius:22px;padding:8px 12px;text-decoration:none;font-size:.86rem}.notice{border-left:3px solid #6de2d0;padding:12px 16px;color:#c8d9e4;background:#112b43;font-size:.9rem}footer{padding:32px 0;color:#bfd0de}.empty{padding:28px 0;color:#c8d9e4}time{white-space:normal}
-.media-feature{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:18px;margin:28px auto 32px}.media-feature figure{margin:0;background:#0b2a43;border:1px solid #38617b;border-radius:18px;overflow:hidden}.media-feature img,.media-feature video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#081b33}.media-feature figcaption{font-size:.85rem;color:#c9dbe5;padding:12px 16px}.media-feature h2{font-size:1rem;padding:12px 16px 0;margin:0}@media(max-width:720px){.media-feature{grid-template-columns:1fr}}</style></head><body>
-<header><div class="wrap"><a href="./" aria-label="Inside Mauritius home"><img src="logo.png" alt="Inside Mauritius logo"></a><a href="./">← Back to Inside Mauritius</a></div></header>
-<section class="mast"><div class="wrap"><div class="eyebrow">INSIDE MAURITIUS / WORLD DESK</div><h1>World news. Global perspective.</h1><p>Browse source-linked headlines across Africa, Europe, Asia, the Middle East, the Americas and Oceania. Headlines are credited to their original publishers.</p><div id="feedStatus" class="status" role="status">Checking published feed data…</div></div></section>
-<section class="wrap media-feature" aria-label="Global Perspective original image and video"><figure><img src="media/global-perspective.svg" loading="eager" width="1200" height="675" alt="Original illustrated blue globe with Inside Mauritius World News Global Perspective branding"><figcaption>Global Perspective — original Inside Mauritius world-news illustration, not a photograph of a current event.</figcaption></figure><figure><h2>World News video intro</h2><video controls playsinline preload="metadata" poster="media/global-perspective.svg" aria-label="Inside Mauritius World News Global Perspective brand introduction"><source src="media/global-perspective.mp4" type="video/mp4"><source src="media/global-perspective.webm" type="video/webm">The video is unavailable in this browser.</video><figcaption>Original silent six-second news intro, not actual event footage. If playback fails, <a href="media/global-perspective.mp4">open the original intro video directly</a>. The clip is intentionally silent.</figcaption></figure></section><main class="wrap"><div class="controls" role="group" aria-label="Filter world headlines" id="regionFilters"><button type="button" data-region="All" aria-pressed="true">All regions</button><button type="button" data-region="Africa">Africa</button><button type="button" data-region="Europe">Europe</button><button type="button" data-region="Asia">Asia</button><button type="button" data-region="Middle East">Middle East</button><button type="button" data-region="Americas">Americas</button><button type="button" data-region="Oceania">Oceania</button><input id="search" type="search" placeholder="Search world headlines" aria-label="Search world headlines"></div><p class="notice">Automatic feed collection is not independent fact-checking. Open each publisher's original article to verify developing details. Headlines, links and source publication times are shown; no full articles are republished.</p><h2>Latest global headlines</h2><div id="headlines" class="grid" aria-live="polite"><p class="empty">No verified feed data loaded yet.</p></div></main>
-<section class="source-directory"><div class="wrap"><h2>Global news source directory</h2><p>Explore original publishers. Inclusion is not an endorsement or a promise that every outlet is monitored in the automated feed.</p><div class="directory-list" id="directory"></div></div></section>
-<footer class="wrap">© Inside Mauritius · World Desk · All times shown in Mauritius time (UTC+4).</footer>
-<script defer src="world-news-data.js"></script><script defer src="world-news.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World News Desk | Inside Mauritius</title>
+  <meta name="description" content="World news, international video and photography for readers in Mauritius. Browse headlines by region and publisher.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="world-news.css">
+  <link rel="stylesheet" href="analytics.css?v=20261112">
+  <script defer src="analytics-config.js?v=20261112"></script>
+  <script defer src="analytics.js?v=20261112"></script>
+  <script defer src="world-news-data.js"></script>
+  <script defer src="world-news.js?v=20261113"></script>
+</head>
+<body>
+  <header><div class="wrap masthead">
+    <a href="./" aria-label="Inside Mauritius home"><img src="logo.png" alt="Inside Mauritius" width="110" height="74"></a>
+    <nav aria-label="World Desk navigation"><a href="./">Home</a><a href="#headlines-heading">Headlines</a><a href="#world-video">Video</a><a href="#world-photo">Photo</a></nav>
+  </div></header>
+  <main class="wrap">
+    <section class="intro">
+      <p class="kicker">Inside Mauritius / International</p>
+      <h1>The World Desk</h1>
+      <p>Reporting from six regions, with links to the original publishers.</p>
+      <p id="feedStatus" role="status">Checking published headlines…</p>
+    </section>
+    <section class="media-grid" aria-label="World photography and video">
+      <article id="world-photo">
+        <a class="photo-cover" id="openPhoto" href="media/apollo-17-earth.webp" aria-label="Open full-size photograph of Earth from Apollo 17">
+          <img src="media/apollo-17-earth.webp" width="1280" height="1280" alt="Earth above a black horizon of space, with Africa and the Indian Ocean in view">
+          <span>Open photo <b aria-hidden="true">⤢</b></span>
+        </a>
+        <p class="kicker">From the archive · Photography</p>
+        <h2>Earth from Apollo 17</h2>
+        <p>NASA’s Apollo 17 crew photographed Earth on 7 December 1972. <a href="https://images.nasa.gov/details/as17-148-22727">Photo credit: NASA</a></p>
+        <a class="source" href="https://apnews.com/photography">Browse AP world photography ↗</a>
+      </article>
+      <article id="world-video">
+        <video controls playsinline preload="metadata" poster="media/global-perspective.svg" width="960" height="540" aria-label="World Desk intro video">
+          <source src="media/global-perspective.mp4" type="video/mp4">
+          <source src="media/global-perspective.webm" type="video/webm">
+        </video>
+        <p class="kicker">Inside Mauritius · Video</p>
+        <h2>Global Perspective</h2>
+        <p>Our six-second silent World Desk introduction. <a href="media/global-perspective.mp4">Open video file</a></p>
+        <a class="source" href="https://www.aljazeera.com/videos/">Watch international reports on Al Jazeera ↗</a>
+      </article>
+    </section>
+    <dialog id="photoViewer" aria-labelledby="photoHeading">
+      <div class="viewer-bar"><h2 id="photoHeading">Earth from Apollo 17</h2><form method="dialog"><button autofocus>Close ×</button></form></div>
+      <img src="media/apollo-17-earth.webp" alt="NASA photograph of Earth from Apollo 17" width="1280" height="1280">
+    </dialog>
+    <section aria-labelledby="headlines-heading">
+      <h2 id="headlines-heading" class="section-heading">Latest global headlines</h2>
+      <div class="controls" id="regionFilters" role="group" aria-label="Filter world headlines">
+        <button type="button" data-region="All" aria-pressed="true">All regions</button>
+        <button type="button" data-region="Africa" aria-pressed="false">Africa</button>
+        <button type="button" data-region="Europe" aria-pressed="false">Europe</button>
+        <button type="button" data-region="Asia" aria-pressed="false">Asia</button>
+        <button type="button" data-region="Middle East" aria-pressed="false">Middle East</button>
+        <button type="button" data-region="Americas" aria-pressed="false">Americas</button>
+        <button type="button" data-region="Oceania" aria-pressed="false">Oceania</button>
+        <input id="search" type="search" aria-label="Search world headlines" placeholder="Search headlines or publishers">
+      </div>
+      <p class="feed-note">Headlines are collected automatically. Open the publisher’s report to check developing details.</p>
+      <div id="headlines" class="grid" aria-live="polite"><p>Loading headlines…</p></div>
+    </section>
+    <section class="directory" aria-labelledby="directory-heading"><h2 class="section-heading" id="directory-heading">Global news sources</h2><p>Explore the publishers directly. Feed coverage varies by region.</p><div id="directory"></div></section>
+  </main>
+  <footer><div class="wrap">© Inside Mauritius · World Desk · Times in Mauritius (UTC+4)</div></footer>
+</body>
+</html>

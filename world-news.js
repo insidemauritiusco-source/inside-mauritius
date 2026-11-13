@@ -1,4 +1,12 @@
 (() => {"use strict";
+const photoLink = document.getElementById("openPhoto");
+const viewer = document.getElementById("photoViewer");
+photoLink.addEventListener("click", event => {
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey ||
+      typeof viewer.showModal !== "function") return;
+  event.preventDefault();
+  viewer.showModal();
+});
 const directory = [
 ["Reuters","https://www.reuters.com/world/"],["Associated Press","https://apnews.com/world-news"],["AFP","https://www.afp.com/"],["BBC News","https://www.bbc.com/news/world"],["Al Jazeera","https://www.aljazeera.com/news/"],["France 24","https://www.france24.com/en/"],["DW News","https://www.dw.com/en/top-stories/s-9097"],["The Guardian","https://www.theguardian.com/world"],["Africanews","https://www.africanews.com/"],["SABC News","https://www.sabcnews.com/"],["The Hindu","https://www.thehindu.com/"],["NHK World","https://www3.nhk.or.jp/nhkworld/"],["CNA","https://www.channelnewsasia.com/"],["Arab News","https://www.arabnews.com/"],["ABC Australia","https://www.abc.net.au/news/"],["CBC News","https://www.cbc.ca/news"],["Agência Brasil","https://agenciabrasil.ebc.com.br/"]
 ];
