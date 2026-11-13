@@ -4,6 +4,7 @@ on:
     branches:
       - build/dark-web-navigator-apk-20261113
       - feature/dark-web-navigator-v2-20261113
+      - feature/dark-web-navigator-v2-pro-20261113
     paths:
       - "android/DarkWebNavigator/**"
       - ".github/workflows/build-dark-web-navigator-apk.yml"
@@ -20,10 +21,18 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
+      - name: Run pure-Java URL and search tests
+        shell: bash
+        run: |
+          mkdir -p /tmp/dwn-tests
+          javac -d /tmp/dwn-tests android/DarkWebNavigator/app/src/main/java/org/example/darkwebnavigator/UrlPolicy.java android/DarkWebNavigator/app/src/main/java/org/example/darkwebnavigator/SearchProvider.java android/DarkWebNavigator/tests/UrlPolicySmokeTest.java
+          java -cp /tmp/dwn-tests org.example.darkwebnavigator.UrlPolicySmokeTest
+      - name: Verify no app INTERNET permission
+        run: |
+          if grep -q 'android.permission.INTERNET' android/DarkWebNavigator/app/src/main/AndroidManifest.xml; then echo "Unexpected internet permission"; exit 1; fi
       - name: Install Android SDK (runner SDK)
         shell: bash
         run: |
-          echo "ANDROID_HOME=$ANDROID_HOME"
           if [ -x "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ]; then
             SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
           else
@@ -35,7 +44,11 @@ jobs:
           gradle-version: "8.9"
       - name: Build debug APK
         run: gradle --no-daemon -p android/DarkWebNavigator :app:assembleDebug
+      - name: Verify APK output
+        run: |
+          test -s android/DarkWebNavigator/app/build/outputs/apk/debug/app-debug.apk
+          sha256sum android/DarkWebNavigator/app/build/outputs/apk/debug/app-debug.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: dark-web-navigator-v1-1-debug-apk
+          name: dark-web-navigator-v2-pro-debug-apk
           path: android/DarkWebNavigator/app/build/outputs/apk/debug/app-debug.apk

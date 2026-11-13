@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- No INTERNET permission: app opens only official Tor Browser. -->
+    <!-- No INTERNET permission: all browsing must be opened in official Tor Browser. -->
     <queries>
-        <package android:name="org.torproject.torbrowser" />
+        <package android:name="org.torproject.torbrowser"/>
         <intent>
             <action android:name="android.intent.action.VIEW"/>
             <data android:scheme="https"/>
         </intent>
     </queries>
-    <application
-        android:label="Dark Web Navigator"
-        android:theme="@android:style/Theme.Material.NoActionBar"
+    <application android:label="Dark Web Navigator Pro"
+        android:icon="@drawable/ic_dark_web_navigator"
+        android:theme="@style/NavigatorTheme"
         android:usesCleartextTraffic="false"
         android:allowBackup="false"
         android:supportsRtl="true">
-        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+        <activity android:name=".MainActivity" android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
