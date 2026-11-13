@@ -9,19 +9,27 @@
 
   const navToggle = $('#nav-toggle');
   const nav = $('#primary-nav');
-  const closeNav = () => {
+  const closeNav = (restoreFocus = false) => {
+    const wasOpen = nav?.classList.contains('is-open');
     nav?.classList.remove('is-open');
     navToggle?.setAttribute('aria-expanded', 'false');
     navToggle?.setAttribute('aria-label', 'Open navigation');
+    if (wasOpen && restoreFocus) navToggle?.focus();
   };
   navToggle?.addEventListener('click', () => {
     const opened = nav.classList.toggle('is-open');
     navToggle.setAttribute('aria-expanded', String(opened));
     navToggle.setAttribute('aria-label', opened ? 'Close navigation' : 'Open navigation');
   });
-  $$('#primary-nav a').forEach(link => link.addEventListener('click', closeNav));
+  $$('#primary-nav a').forEach(link => link.addEventListener('click', () => closeNav()));
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeNav();
+    if (event.key === 'Escape') closeNav(true);
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (nav?.classList.contains('is-open') && !nav.contains(event.target) && !navToggle?.contains(event.target)) closeNav();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 820) closeNav();
   });
 
   const cards = $$('.product-card');
@@ -67,7 +75,7 @@
     searchInput?.focus();
   });
   $('#header-search')?.addEventListener('click', () => {
-    $('#products')?.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    $('#products')?.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
     searchInput?.focus({preventScroll: true});
   });
   updateResults();
