@@ -99,6 +99,15 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     card.append(time,link);
+    const listen = node("button","listen-headline","🔊 Ekout sa tit-la");
+    listen.type = "button";
+    listen.setAttribute("aria-label","Listen to headline: " + item.title);
+    listen.addEventListener("click", () => {
+      document.dispatchEvent(new CustomEvent("im:read-headline",{
+        detail:{ title:item.title, source:item.source, category:item.category }
+      }));
+    });
+    card.append(listen);
     return card;
   }
   function render() {

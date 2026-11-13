@@ -13,6 +13,7 @@
   <script defer src="newsroom-data.js"></script>
   <script defer src="world-news-data.js"></script>
   <script defer src="live-updates.js?v=20261113"></script>
+  <script defer src="live-audio-reader.js?v=20261113"></script>
   <script defer src="analytics-config.js?v=20261112"></script>
   <script defer src="analytics.js?v=20261112"></script>
 </head>
@@ -37,6 +38,22 @@
       <div><strong id="sourceCount">—</strong><span>Publishers</span></div>
       <div class="latest-time"><strong id="newestArticle">Checking…</strong><span>Newest source publication</span></div>
     </section>
+    <section class="kreol-reader" id="creoleNewsReader" aria-labelledby="readerTitle">
+      <div class="reader-heading">
+        <span class="reader-icon" aria-hidden="true">🔊</span>
+        <div><p class="eyebrow">Inside Mauritius · Nou bann nouvel</p><h2 id="readerTitle">Ekout bann tit nouvel</h2><p>Listen to the latest headlines, with a Mauritian Creole introduction.</p></div>
+      </div>
+      <div class="reader-controls">
+        <button id="readRoundup" type="button">▶ Ekout bann tit</button>
+        <button id="pauseReader" type="button" disabled>⏸ Pause</button>
+        <button id="stopReader" type="button" disabled>■ Stop</button>
+        <label for="readerSpeed">Speed <select id="readerSpeed"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></label>
+        <label for="readerVoice">Voice <select id="readerVoice"><option value="">Automatic (device voice)</option></select></label>
+      </div>
+      <p id="readerStatus" class="reader-status" role="status" aria-live="polite">Tap Ekout bann tit to listen.</p>
+      <p class="reader-note">The spoken introduction is in Kreol Morisien. News titles and source descriptions are read as published, without automatic translation. Sound quality and Creole pronunciation depend on your device's installed voices. No story text is sent to an AI service by this feature.</p>
+    </section>
+
     <section class="feed" id="headlines" aria-labelledby="feedTitle">
       <div class="feed-heading"><div><p class="eyebrow">Browse coverage</p><h2 id="feedTitle">Latest headlines</h2></div><button id="refreshButton" type="button">↻ Check for updates</button></div>
       <div class="controls">
