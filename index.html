@@ -36,7 +36,7 @@
   <script defer src="news-2026-11-11.js?v=20261111"></script>
   <script defer src="news-2026-11-13.js?v=20261113evening"></script>
   <script defer src="tiktok-posts.js?v=20261107tiktoktimefix"></script>
-  <script defer src="app.js?v=20261113navphotos"></script>
+  <script defer src="app.js?v=20261113blanknewsfix"></script>
   <link rel="stylesheet" href="article-reader.css?v=20261111">
   <script defer src="article-reader.js?v=20261111kreol1"></script>
   <link rel="stylesheet" href="media-repair.css?v=20261109">
@@ -51,6 +51,25 @@
   <link rel="stylesheet" href="editorial-design-20261112.css?v=20261113worldedition">
   <script defer src="analytics-config.js?v=20261112"></script>
   <script defer src="analytics.js?v=20261112"></script>
+  <style>
+    /* Essential fallbacks stay legible even when the homepage styles or news renderer fail. */
+    .im-news-fallback{margin-block:26px 38px;padding:20px;border:1px solid #cbd9e7;border-radius:16px;background:#f7faff;color:#182e42}
+    .im-news-fallback[hidden]{display:none!important}
+    .im-news-fallback-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:17px}
+    .im-news-fallback-heading h2{font:700 clamp(23px,4vw,34px)/1.2 system-ui,sans-serif;margin:7px 0}
+    .im-news-fallback-heading p{margin:0;font:14px/1.6 system-ui,sans-serif;color:#526779}
+    .im-news-fallback-kicker,.im-news-fallback-category{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.06em;color:#a1263b}
+    .im-news-fallback-heading>a{font:700 13px system-ui,sans-serif;white-space:nowrap}
+    .im-news-fallback-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    .im-news-fallback-card{overflow:hidden;border:1px solid #d6e2ed;border-radius:12px;background:white}
+    .im-news-fallback-card>a{display:block;line-height:0;background:#dce7f4}
+    .im-news-fallback-card img{display:block;width:100%;height:160px;object-fit:cover}
+    .im-news-fallback-card>div{padding:14px}
+    .im-news-fallback-card h3{font:700 18px/1.35 system-ui,sans-serif;margin:7px 0}
+    .im-news-fallback-card p{font:14px/1.55 system-ui,sans-serif;color:#44556a;margin:8px 0}
+    .im-news-fallback-source{font:700 13px/1.5 system-ui,sans-serif;color:#164d89}
+    @media(max-width:700px){.im-news-fallback{padding:12px}.im-news-fallback-grid{grid-template-columns:1fr}.im-news-fallback-heading{flex-wrap:wrap}.im-news-fallback-card img{height:175px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -123,6 +142,31 @@
 
   <main id="main">
     <div id="homePage">
+      <!-- Text-and-local-image fallback: usable when a remote news script is unavailable. -->
+      <section class="im-news-fallback container" id="newsStaticFallback" aria-labelledby="imFallbackTitle">
+        <div class="im-news-fallback-heading">
+          <div><span class="im-news-fallback-kicker">LATEST PUBLISHED EDITION · 13 NOVEMBER 2026</span><h2 id="imFallbackTitle">Mauritius news headlines</h2><p>Source-linked news remains available here if the interactive news desk cannot load.</p></div>
+          <a href="live-updates.html">Latest updates ↗</a>
+        </div>
+        <div class="im-news-fallback-grid">
+          <article class="im-news-fallback-card">
+            <a href="https://lexpress.mu/s/revers-cinglant-pour-mandarin-et-ses-compagnons-les-avis-dexpulsion-retablis-564685" target="_blank" rel="noopener noreferrer" aria-label="Read the original report: Chagos: BIOT Appeal Court Reinstates Eviction Notices for Four Chagossians"><img src="cover-government.svg" alt="Illustrative government news artwork, not a photograph of the Chagos court proceedings" width="540" height="300" loading="eager" decoding="async"></a>
+            <div><span class="im-news-fallback-category">CHAGOS · COURT</span><h3><a href="https://lexpress.mu/s/revers-cinglant-pour-mandarin-et-ses-compagnons-les-avis-dexpulsion-retablis-564685" target="_blank" rel="noopener noreferrer">Chagos: BIOT Appeal Court Reinstates Eviction Notices for Four Chagossians</a></h3><p>The BIOT Court of Appeal reversed an earlier ruling and restored eviction notices concerning four Chagossians who landed on Île du Coin in February.</p><a class="im-news-fallback-source" href="https://lexpress.mu/s/revers-cinglant-pour-mandarin-et-ses-compagnons-les-avis-dexpulsion-retablis-564685" target="_blank" rel="noopener noreferrer">Read original report at L&#39;Express ↗</a></div>
+          </article>
+          <article class="im-news-fallback-card">
+            <a href="https://lexpress.mu/s/ramgoolam-et-macron-discutent-securite-et-crise-de-leau-564682" target="_blank" rel="noopener noreferrer" aria-label="Read the original report: Mauritius–France Talks: Security, Maritime Cooperation and Water Infrastructure"><img src="cover-government.svg" alt="Illustrative Mauritius government graphic, not a photograph of the Paris meeting" width="540" height="300" loading="eager" decoding="async"></a>
+            <div><span class="im-news-fallback-category">DIPLOMACY · WATER</span><h3><a href="https://lexpress.mu/s/ramgoolam-et-macron-discutent-securite-et-crise-de-leau-564682" target="_blank" rel="noopener noreferrer">Mauritius–France Talks: Security, Maritime Cooperation and Water Infrastructure</a></h3><p>Prime Minister Navin Ramgoolam&#39;s Paris meetings with President Emmanuel Macron included security, maritime surveillance and the financing of water infrastructure.</p><a class="im-news-fallback-source" href="https://lexpress.mu/s/ramgoolam-et-macron-discutent-securite-et-crise-de-leau-564682" target="_blank" rel="noopener noreferrer">Read original report at L&#39;Express ↗</a></div>
+          </article>
+          <article class="im-news-fallback-card">
+            <a href="https://www.lemauricien.com/le-mauricien/assemblee-nationale-world-knits-group-les-actifs-evalues-a-rs-500-m-et-dettes-a-rs-14-milliard/723101/" target="_blank" rel="noopener noreferrer" aria-label="Read the original report: World Knits Group: Minister Reports Rs 1.4 Billion Debt and Rs 500 Million in Assets"><img src="cover-city.svg" alt="Illustrative Mauritius news artwork, not a photograph of the World Knits textile factories" width="540" height="300" loading="eager" decoding="async"></a>
+            <div><span class="im-news-fallback-category">JOBS · ECONOMY</span><h3><a href="https://www.lemauricien.com/le-mauricien/assemblee-nationale-world-knits-group-les-actifs-evalues-a-rs-500-m-et-dettes-a-rs-14-milliard/723101/" target="_blank" rel="noopener noreferrer">World Knits Group: Minister Reports Rs 1.4 Billion Debt and Rs 500 Million in Assets</a></h3><p>In parliamentary discussions on textile jobs, Labour Minister Reza Uteem gave approximate figures for World Knits Group&#39;s liabilities and assets.</p><a class="im-news-fallback-source" href="https://www.lemauricien.com/le-mauricien/assemblee-nationale-world-knits-group-les-actifs-evalues-a-rs-500-m-et-dettes-a-rs-14-milliard/723101/" target="_blank" rel="noopener noreferrer">Read original report at Le Mauricien ↗</a></div>
+          </article>
+          <article class="im-news-fallback-card">
+            <a href="https://www.lemauricien.com/actualites/societe/pmqt-i-pour-renforcer-la-competitivite-port-rs-52-milliards-pour-des-equipements-modernes/723083/" target="_blank" rel="noopener noreferrer" aria-label="Read the original report: Port Louis: Rs 5.2 Billion Equipment Plan Discussed in Parliament"><img src="cover-city.svg" alt="Illustrative port-city artwork, not a photograph of the planned port equipment" width="540" height="300" loading="eager" decoding="async"></a>
+            <div><span class="im-news-fallback-category">INFRASTRUCTURE · PORT</span><h3><a href="https://www.lemauricien.com/actualites/societe/pmqt-i-pour-renforcer-la-competitivite-port-rs-52-milliards-pour-des-equipements-modernes/723083/" target="_blank" rel="noopener noreferrer">Port Louis: Rs 5.2 Billion Equipment Plan Discussed in Parliament</a></h3><p>An acting prime ministerial response outlined Rs 2.7 billion in modern port equipment and Rs 2.5 billion for cranes, according to Le Mauricien.</p><a class="im-news-fallback-source" href="https://www.lemauricien.com/actualites/societe/pmqt-i-pour-renforcer-la-competitivite-port-rs-52-milliards-pour-des-equipements-modernes/723083/" target="_blank" rel="noopener noreferrer">Read original report at Le Mauricien ↗</a></div>
+          </article>
+        </div>
+      </section>
       <div class="dashboard-shell container">
         <div class="dashboard-main">
       <section class="top-section container" id="home" aria-labelledby="heroHeading">
