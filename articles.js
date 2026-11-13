@@ -14,7 +14,7 @@
   Upload new images or mp4 files next to index.html in your GitHub repository.
 */
 window.INSIDE_MAURITIUS_CONFIG = {
-  contactEmail: "", // e.g. news@yourdomain.com (only enter an address you own)
+  contactEmail: "mr@insidemauritius.com", // Inside Mauritius public newsroom contact
   breakingHeadline: "Water security: Business Mauritius launches a six-week water-saving toolkit for companies.",
   breakingIsBreaking: false, // set to true only for verified breaking news
   siteName: "Inside Mauritius"

@@ -246,7 +246,7 @@
     if (isTikTok || isArchivePhoto) { imgLink.target="_blank"; imgLink.rel="noopener noreferrer"; }
     if (isTikTok) imgLink.classList.add("story-video-cover");
     if (isArchivePhoto) imgLink.classList.add("government-photo-link");
-    const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="eager";img.width=800;img.height=480;
+    const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="lazy";img.decoding="async";img.width=800;img.height=480;
     if (isArchivePhoto) img.referrerPolicy="no-referrer";
     img.onerror=()=>{
       const fallback=story.category === "Government" ? "cover-government.svg" : "cover-mauritius.svg";
@@ -585,9 +585,26 @@
     $("resetFilters").addEventListener("click",()=>{query="";$("storySearch").value="";setFilter("All");});
     document.querySelectorAll("[data-filter-nav]").forEach(link=>link.addEventListener("click",()=>setFilter(link.dataset.filterNav)));
     const menu=$("menuToggle");const nav=$("primaryNav");
-    menu.addEventListener("click",()=>{const isOpen=menu.getAttribute("aria-expanded")==="true";menu.setAttribute("aria-expanded",String(!isOpen));nav.classList.toggle("is-open",!isOpen);});
-    nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{menu.setAttribute("aria-expanded","false");nav.classList.remove("is-open");}));
-    document.addEventListener("keydown",evt=>{if(evt.key==="Escape"){menu.setAttribute("aria-expanded","false");nav.classList.remove("is-open");}});
+    const closeMenu=(restoreFocus=false)=>{
+      const wasOpen=menu.getAttribute("aria-expanded")==="true";
+      menu.setAttribute("aria-expanded","false");
+      menu.setAttribute("aria-label","Open navigation");
+      nav.classList.remove("is-open");
+      if(wasOpen && restoreFocus)menu.focus();
+    };
+    menu.setAttribute("aria-label","Open navigation");
+    menu.addEventListener("click",()=>{
+      const shouldOpen=menu.getAttribute("aria-expanded")!=="true";
+      menu.setAttribute("aria-expanded",String(shouldOpen));
+      menu.setAttribute("aria-label",shouldOpen?"Close navigation":"Open navigation");
+      nav.classList.toggle("is-open",shouldOpen);
+    });
+    nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>closeMenu()));
+    document.addEventListener("keydown",evt=>{if(evt.key==="Escape")closeMenu(true);});
+    document.addEventListener("pointerdown",evt=>{
+      if(menu.getAttribute("aria-expanded")==="true" && !nav.contains(evt.target) && !menu.contains(evt.target))closeMenu();
+    });
+    window.addEventListener("resize",()=>{if(window.innerWidth>820)closeMenu();});
     $("shareStory").addEventListener("click",shareArticle);
     window.addEventListener("hashchange",updateRoute);updateRoute();
   }
