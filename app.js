@@ -231,7 +231,7 @@
     link.setAttribute("aria-label", "Follow Inside Mauritius on TikTok");
     return link;
   }
-  function makeStoryCard(story) {
+  function makeStoryCard(story, isAboveFold = false) {
     const card = element("article","story-card");
     // Preserve full Radio Mo Pep photo-collage previews rather than cropping them.
     if (/radio mo pep/i.test(story.sourceName || "")) card.classList.add("source-radio-mo-pep");
@@ -246,7 +246,7 @@
     if (isTikTok || isArchivePhoto) { imgLink.target="_blank"; imgLink.rel="noopener noreferrer"; }
     if (isTikTok) imgLink.classList.add("story-video-cover");
     if (isArchivePhoto) imgLink.classList.add("government-photo-link");
-    const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading="lazy";img.decoding="async";img.width=800;img.height=480;
+    const img=element("img","story-image");img.src=imageFor(story);img.alt=story.imageAlt || "Editorial illustration";img.loading=isAboveFold?"eager":"lazy";img.decoding="async";img.width=800;img.height=480;
     if (isArchivePhoto) img.referrerPolicy="no-referrer";
     img.onerror=()=>{
       const fallback=story.category === "Government" ? "cover-government.svg" : "cover-mauritius.svg";
@@ -324,10 +324,13 @@
   function renderCards() {
     const key=query.trim().toLocaleLowerCase();
     const matching=articles.filter(story => (filter === "All" || story.category === filter) && (!key || `${story.title} ${story.summary || ""} ${story.category} ${story.label || ""}`.toLocaleLowerCase().includes(key)));
-    $("storyGrid").replaceChildren(...matching.map(makeStoryCard));
+    $("storyGrid").replaceChildren(...matching.map((story,index)=>makeStoryCard(story,index<4)));
     renderTopStories();
     $("emptyResults").hidden=matching.length!==0;
     $("resultsNote").textContent = `${matching.length} ${matching.length===1?"story":"stories"} shown`;
+    // Hide the server-delivered fallback only after the interactive cards render successfully.
+    const staticFallback=$("newsStaticFallback");
+    if(staticFallback)staticFallback.hidden=true;
     document.querySelectorAll("[data-filter]").forEach(btn=>{const yes=btn.dataset.filter===filter;btn.classList.toggle("selected",yes);btn.setAttribute("aria-pressed",String(yes));});
   }
   // Real article headlines only. No invented AI summaries or false recency claims.
