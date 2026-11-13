@@ -44,6 +44,8 @@
   <link rel="stylesheet" href="video-playback-20261112.css?v=1">
   <script defer src="media-repair.js?v=20261109"></script>
   <script defer src="video-playback-20261112.js?v=2"></script>
+  <link rel="stylesheet" href="currency-dashboard.css?v=20261113">
+  <script defer src="currency-dashboard.js?v=20261113"></script>
   <link rel="stylesheet" href="analytics.css?v=20261112">
   <link rel="stylesheet" href="editorial-design-20261112.css?v=20261113worldedition">
   <script defer src="analytics-config.js?v=20261112"></script>
@@ -58,6 +60,26 @@
       <span class="utility-right">Independent stories. Local perspective.</span>
     </div>
   </div>
+  <section class="fx-dashboard" aria-label="Currency exchange dashboard">
+    <div class="container fx-dashboard-inner">
+      <div class="fx-mark"><span class="fx-mark-dot" aria-hidden="true"></span> CURRENCY <span class="sr-only">Rates per one US dollar</span></div>
+      <div id="fxTicker" class="fx-pairs" role="list" aria-label="Latest indicative exchange rates for one US dollar"><span class="fx-pending">Loading exchange rates…</span></div>
+      <button id="fxToggle" class="fx-toggle" type="button" aria-expanded="false" aria-controls="fxPanel">All currencies <span class="fx-chevron" aria-hidden="true">⌄</span></button>
+    </div>
+    <div id="fxPanel" class="container fx-expanded" hidden>
+      <div class="fx-panel-card">
+        <div class="fx-panel-top"><h2>Worldwide currency converter</h2><span>Indicative rates · USD base · USDC market quote when available</span></div>
+        <div class="fx-converter">
+          <div class="fx-field"><label for="fxAmount">Amount</label><input id="fxAmount" type="number" min="0" step="any" inputmode="decimal" value="1"></div>
+          <div class="fx-field"><label for="fxFrom">From</label><select id="fxFrom"><option value="USD">USD — US Dollar</option></select></div>
+          <button id="fxSwap" class="fx-swap" type="button" aria-label="Swap from and to currencies">⇄</button>
+          <div class="fx-field"><label for="fxTo">To</label><select id="fxTo"><option value="MUR">MUR — Mauritian Rupee</option></select></div>
+          <div class="fx-field"><label>Converted amount</label><output id="fxOutput" class="fx-result" for="fxAmount fxFrom fxTo" aria-live="polite">Loading rates…</output></div>
+        </div>
+        <div class="fx-details"><span id="fxStatus" role="status">Retrieving the latest available rates…</span><button id="fxRefresh" class="fx-refresh" type="button">↻ Refresh rates</button><span>Sources: <a href="https://github.com/fawazahmed0/exchange-api" target="_blank" rel="noopener noreferrer">Currency API</a> and <a href="https://www.coingecko.com/en/coins/usd-coin" target="_blank" rel="noopener noreferrer">CoinGecko USDC</a></span><p class="fx-note">Rates are indicative and may be delayed; bank, cash and trading rates can differ. USDC is a stablecoin, not a sovereign currency, and can trade above or below 1 USD.</p></div>
+      </div>
+    </div>
+  </section>
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Inside Mauritius home"><img src="logo.png" alt="Inside Mauritius official logo" width="195" height="132"><span class="brand-tagline">LOCAL NEWS <span aria-hidden="true">•</span> WORLD UPDATES</span></a>
