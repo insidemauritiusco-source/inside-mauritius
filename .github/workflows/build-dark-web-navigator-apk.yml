@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - build/dark-web-navigator-apk-20261113
+      - feature/dark-web-navigator-v2-20261113
     paths:
       - "android/DarkWebNavigator/**"
       - ".github/workflows/build-dark-web-navigator-apk.yml"
@@ -36,5 +37,5 @@ jobs:
         run: gradle --no-daemon -p android/DarkWebNavigator :app:assembleDebug
       - uses: actions/upload-artifact@v4
         with:
-          name: dark-web-navigator-debug-apk
+          name: dark-web-navigator-v1-1-debug-apk
           path: android/DarkWebNavigator/app/build/outputs/apk/debug/app-debug.apk
