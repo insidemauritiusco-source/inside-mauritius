@@ -71,6 +71,24 @@
     .im-news-fallback-card p{font:14px/1.55 system-ui,sans-serif;color:#44556a;margin:8px 0}
     .im-news-fallback-source{font:700 13px/1.5 system-ui,sans-serif;color:#164d89}
     @media(max-width:700px){.im-news-fallback{padding:12px}.im-news-fallback-grid{grid-template-columns:1fr}.im-news-fallback-heading{flex-wrap:wrap}.im-news-fallback-card img{height:175px}}
+
+    /* November 15 editorial desk: responsive, accessible, no external photo hotlinks */
+    .im-edition-15{margin:24px auto 34px;padding:clamp(18px,3vw,32px);border-radius:22px;background:linear-gradient(125deg,#102b45,#173f61);color:#fff}
+    .im-edition-15 .im-edition-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+    .im-edition-15 .im-edition-kicker{font:700 12px system-ui,sans-serif;letter-spacing:.13em;color:#b8dbf5}
+    .im-edition-15 h2{margin:8px 0;font:800 clamp(26px,4vw,39px)/1.15 system-ui,sans-serif;color:white}
+    .im-edition-15 .im-edition-head p{margin:0;color:#d4e5f4;font:14px/1.5 system-ui,sans-serif}
+    .im-edition-15 .im-edition-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .im-edition-15 article{overflow:hidden;border-radius:14px;background:#fff;color:#18334a;display:flex;flex-direction:column}
+    .im-edition-15 article img{display:block;width:100%;height:160px;object-fit:cover;background:#e6edf3}
+    .im-edition-15 .im-edition-content{padding:16px;display:flex;flex:1;flex-direction:column;gap:10px}
+    .im-edition-15 .im-edition-tag{font:700 11px system-ui,sans-serif;letter-spacing:.08em;color:#a12b3b}
+    .im-edition-15 h3{margin:0;font:750 19px/1.3 system-ui,sans-serif;color:#172e42}
+    .im-edition-15 article p{margin:0;font:14px/1.55 system-ui,sans-serif;color:#405568}
+    .im-edition-15 .im-edition-links{margin-top:auto;padding-top:8px;display:flex;gap:10px;flex-wrap:wrap}
+    .im-edition-15 a{color:#11548b;font:700 13px system-ui,sans-serif;text-decoration:underline}
+    .im-edition-15 .im-edition-note{margin:14px 0 0;font:12px/1.5 system-ui,sans-serif;color:#d3e4f0}
+    @media(max-width:850px){.im-edition-15 .im-edition-cards{grid-template-columns:1fr}.im-edition-15 article img{height:185px}}
   </style>
 </head>
 <body>
@@ -144,6 +162,14 @@
 
   <main id="main">
     <div id="homePage">
+      <section class="im-edition-15 container" aria-labelledby="imEdition15Title">
+        <div class="im-edition-head"><div><span class="im-edition-kicker">INSIDE MAURITIUS · ÉDITION DU 15 NOVEMBRE 2026</span><h2 id="imEdition15Title">À la une à Maurice</h2><p>Trois informations sourcées · Reportages et médias à consulter chez les éditeurs</p></div></div>
+        <div class="im-edition-cards">
+          <article><img src="cover-city.svg" alt="Illustration graphique de ville, pas une photo de l'accident" loading="lazy"><div class="im-edition-content"><span class="im-edition-tag">PORT-LOUIS · FAITS DIVERS</span><h3>Grand Prix : trois blessés après une sortie de piste</h3><p>Un incident s'est produit pendant le Grand Prix de Port-Louis le 15 novembre. Défi Media rapporte que trois personnes ont été transportées à l'hôpital. Les premiers comptes rendus divergent sur l'identité des blessés.</p><div class="im-edition-links"><a href="https://defimedia.info/grand-prix-port-louis-une-sortie-de-piste-fait-trois-blesses" target="_blank" rel="noopener noreferrer">Article et photo · Défi Media</a><a href="https://lexpress.mu/s/trois-spectateurs-blesses-dans-un-spectaculaire-accident-564763" target="_blank" rel="noopener noreferrer">Autre reportage · L'Express</a></div></div></article>
+          <article><img src="cover-mauritius.svg" alt="Illustration de Maurice, pas une photographie de victimes" loading="lazy"><div class="im-edition-content"><span class="im-edition-tag">SÉCURITÉ ROUTIÈRE · BILAN</span><h3>126 morts sur les routes au 4 novembre</h3><p>À l'occasion de la Journée mondiale du souvenir des victimes de la route, Top FM relaie le bilan présenté par le ministre Osman Mahomed : 126 décès et 123 accidents mortels depuis janvier, hors Rodrigues.</p><div class="im-edition-links"><a href="https://www.topfm.mu/actualites/journee-mondiale-du-souvenir-des-victimes-23-deces-supplementaires-en-un-osman-mahomed-appelle-une" target="_blank" rel="noopener noreferrer">Reportage · Top FM</a></div></div></article>
+          <article><img src="cover-government.svg" alt="Illustration éditoriale, pas une photographie du sommet" loading="lazy"><div class="im-edition-content"><span class="im-edition-tag">ÉCONOMIE · ENTREPRISES</span><h3>Sommet États-Unis–Afrique : les ambitions mauriciennes</h3><p>Dans un entretien publié le 15 novembre, L'Express donne la parole à Ved Luchmun sur l'ambition de faire de Maurice une plateforme productive et exportatrice.</p><div class="im-edition-links"><a href="https://lexpress.mu/" target="_blank" rel="noopener noreferrer">Lire et voir les médias · L'Express</a></div></div></article>
+        </div><p class="im-edition-note">Images : illustrations locales identifiées, non photographies des événements. Vidéos et photographies des éditeurs accessibles via les sources, sans republication non autorisée.</p>
+      </section>
       <!-- Text-and-local-image fallback: usable when a remote news script is unavailable. -->
       <section class="im-news-fallback container" id="newsStaticFallback" aria-labelledby="imFallbackTitle">
         <div class="im-news-fallback-heading">
