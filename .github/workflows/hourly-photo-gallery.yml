@@ -13,7 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Discover candidate photographs for editorial review\n        run: python scripts/discover_photo_candidates.py\n      - name: Validate approved photographs and regenerate feed
+      - name: Discover candidate photographs for editorial review
+        run: python scripts/discover_photo_candidates.py
+      - name: Validate approved photographs and regenerate feed
         run: python scripts/refresh_photo_gallery.py
       - name: Commit refreshed feed only when changed
         run: |
