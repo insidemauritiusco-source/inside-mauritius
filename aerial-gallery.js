@@ -3,7 +3,7 @@
  const places=[["Maurice","Mauritius aerial coastline"],["La Réunion","Reunion island aerial coastline"],["Rodrigues","Rodrigues island aerial lagoon"],["Seychelles","Seychelles aerial islands"],["Agaléga","Agalega island aerial"],["France","France Paris aerial panorama"]];
  const root=document.getElementById("imAerialGallery"); if(!root)return;
  const grid=root.querySelector(".im-aerial-grid"),status=root.querySelector(".im-aerial-status");
- const allowed=/^(cc-by(?:-sa)?(?:-[0-9.]+)?|cc0|public domain|pd)$/i;
+ const allowed=/^(cc[ -]by(?:[ -]sa)?(?:[ -][0-9.]+)?|cc0|public domain|pd)$/i;
  function card(place,query){const article=document.createElement("article");article.className="im-aerial-card";const heading=document.createElement("h3");heading.textContent=place;const area=document.createElement("div");area.className="im-aerial-photo";area.textContent="Photo en attente de vérification";const credit=document.createElement("p");credit.className="im-aerial-credit";const link=document.createElement("a");link.href="https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(query)+"&title=Special:MediaSearch&type=image";link.target="_blank";link.rel="noopener noreferrer";link.textContent="Voir les photos sur Wikimedia Commons";article.append(area,heading,credit,link);grid.append(article);return {area,credit};}
  const cards=places.map(([p,q])=>card(p,q));
  const plain=html=>{const el=document.createElement("div");el.innerHTML=html||"";return el.textContent||"";};
