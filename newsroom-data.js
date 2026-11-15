@@ -1,6 +1,28 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-e921d7f23eda4ea6",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "RDC : 30,3 millions de personnes menac\u00e9es par une ins\u00e9curit\u00e9 alimentaire aigu\u00eb d\u00e9but 2027",
+    "summary": "Short excerpt from Inside News RSS feed: Une analyse IPC projette 30,3 millions de personnes en situation de crise alimentaire ou pire en RDC entre janvier et juin 2027, dont 4,2\u2026",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-14T22:51:15+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/rdc_no_.webp",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 15 November 2026 at 02:51 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/rdc-30-3-millions-insecurite-alimentaire-2027/",
+    "photoSourceUrl": "https://www.inside.news/rdc-30-3-millions-insecurite-alimentaire-2027/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
     "id": "source-bdd5549ff5cda548",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -9,7 +31,7 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-15",
     "publishedAt": "2026-11-14T20:15:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/09/inside-news-blank-image.webp",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/b49fd96e-6f2b-4d23-b418-2fd279621b4d_n.webp",
     "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
@@ -89,6 +111,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-c3fea9ad62307b86",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Politique : Sanjeev Teeluckdharry critique l'ancien et l'actuel gouvernement",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T17:07:00+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 14 November 2026 at 21:07 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZnlLSmlBWHQ3bDVYUl9SWjV5dHZDOWYyY2NtNUs5Ukk2ZmxGRHNQa2E0LWtvTXkxR2I5UXUtZUVfYWdtZEFsb01HUVRMR3BzVVc2WVNlVEVDcHg5eXFpTm1tQTJyRXZHMlNiajdwbVhpOEZkQldHVFpZaE1RNW5lX1lXaXM5UnljTFhZcWdoeF9Tel9FMmQxdFpheTFCNk1BT1FhNzRCOA?oc=5"
+  },
+  {
     "id": "source-2f810d2c1b57def6",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -105,6 +145,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOHZRSW1xVXR0eFJsSFBOYjNILVhXclU4dGl2OW1Sa0dJUjlmT2duMjhIRmlrSlF5cFVyam5lNFNrQUpNdHRLZjZPWkxLTGQyUmxTdUxBenRyang4TXVPRVRNaG9sV1M0ZGpRbkNobkZaczVIa0tKLW0tdnhwMHo2cjd3?oc=5"
+  },
+  {
+    "id": "source-e5acf60d2f1fa44d",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab Nou espere sa vinn realite \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T16:10:08+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 14 November 2026 at 20:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MMzQ4S2tVM1JtMElYdVNGc05vNVFHZloycWRGVnJPSjBCVjVUc2VCNlk3TjY4a1FLS3d2N3BsSUVUWUdpajEtcmJTaUMxc1BQcmh2SDBrZkE4X3dqd3ZzN3c2MnhDSGdpWThaR1Fn?oc=5"
   },
   {
     "id": "source-ff616dc0ad6dd05a",
@@ -127,24 +185,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-c9cd6b7ac95ac559",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Politique : Sanjeev Teeluckdharry critique l'ancien et l'actuel gouvernement",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-14",
-    "publishedAt": "2026-11-14T15:56:49+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 14 November 2026 at 19:56 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaWNwNFZjSmdxOURCSGtrX09GeDlxN3J6VTQ1X25fYWljekF0WFpPVUNMcFJxMWpxaFJJbS16RVloVFNyaUpOZUQtRGJxeFA3eDJxS2t1U1dOYmFROUN0TzhpZWdHZDRHMWY2VkFKZWNZaWFDSl9XbDJNcHVrWl9tclU4MG1JVExfNzNyMjJxOVlrMTdaRHVPTXZwM2pPaU5VV0E?oc=5"
   },
   {
     "id": "source-8699f06c37644858",
@@ -631,28 +671,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
-    "id": "source-bfbc12a99d2b5019",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Fortes pluies : le gouvernement pr\u00e9pare des r\u00e8gles uniformes pour prot\u00e9ger les travailleurs",
-    "summary": "Short excerpt from Inside News RSS feed: Le Cabinet a approuv\u00e9 l\u2019introduction d\u2019un projet de loi destin\u00e9 \u00e0 officialiser le protocole national sur les pluies fortes et torrentielles et \u00e0 harmoniser\u2026",
-    "date": "2026-11-14",
-    "publishedAt": "2026-11-14T10:45:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/forte.webp",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 14 November 2026 at 14:45 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/fortes-pluies-protection-travailleurs-projet-loi-maurice/",
-    "photoSourceUrl": "https://www.inside.news/fortes-pluies-protection-travailleurs-projet-loi-maurice/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
     "id": "source-0a0e2415158ea9ee",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -673,6 +691,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
+  },
+  {
+    "id": "source-50f052a76e812f42",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Recherche",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T07:03:11+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 14 November 2026 at 11:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOU1p5YlJfcGRYNEtGM3BRTm1wMmhndVVVN08xZmFMTzNXaFVMQ0VZV2JuWHdhZk9YcHZQc2xRYmxDLTFXUks1WWdYMGltMDF4a0ZReVZkM21VRE01ZzhtM0RDQTh3MXVYRVF1aHVobHB5QjJBbFEyYUVfdmRfRTlmVWFWTGJqdFRHejl3TjY1QXFpUHJWVkE?oc=5"
   },
   {
     "id": "source-2a8777a7c6dd9d37",
@@ -901,40 +937,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WOWpSRFdvRHVvVG12YzBCejRiRnh0ZUh3OHB6MVFONFhacDJEM2M5TUtJUVdLMC1Qa1F2cU9ibXNpUXRRMnRUNUVhMlZsUV9RTG1HbzBEVWd1c2xydDZtYjJVOFFIZWx4dVZ3OTRLQk9CVHAxWGc?oc=5"
   },
   {
-    "id": "source-85272753a972de7f",
+    "id": "source-337e613221488d4d",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Conseil des ministres : Une \u00e9tude sur l\u2019impact des travailleurs \u00e9trangers \u00e0 Maurice",
+    "title": "\u00abU.S.-Africa Business Summit 2026\u00bb : Maurice accueillera les leaders \u00e9conomiques am\u00e9ricains et africains",
     "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
     "date": "2026-11-13",
-    "publishedAt": "2026-11-13T17:02:07+00:00",
+    "publishedAt": "2026-11-13T15:51:46+00:00",
     "author": "L'Express (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 13 November 2026 at 21:02 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 13 November 2026 at 19:51 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdFRPd094TF9TQlpmSzlDMHFRbndZU19DWlhaNTBpMFZtM2pIbURJQnJRdVdzOUEwMFYxYkVaOFNtMjQ4cnowZ1NEOGJsaEtXY2lUWFBKSm45NFBRRVE3Qzh2V05GNEx0U3N0QUVCUGpCTWwzaGVZa0dnYVpjbGhSZlFONy1XSkR2OVhNeEIzS0Q?oc=5"
-  },
-  {
-    "id": "source-33b1026256805467",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Conseil des ministres : Chagos, intemp\u00e9ries, travailleurs \u00e9trangers : les d\u00e9cisions du vendredi 13 novembre",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-13",
-    "publishedAt": "2026-11-13T16:04:55+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 13 November 2026 at 20:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ1U2UUdKSmI4T0tPS0F2RnFTd0U2M3Z0OEVOZVctZDdJRDBNMzZubmVDRVE3SFJDczh2dTBDMWZyMzNIdDk5alpfN1cxeXV3MkdxRzhBdC1IemVFUmVVX09iMk5Cb2F4d00xRzV0SlNkVFUyM1VLYk9zYkp1bjdXV00zR1BWc1BSbGdJUkQ5aHluQklVQmliTXZRb2czV0NoMHd0RWdRdU54RG5S?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMXNzbFVGSUtsd0NvWVlyR29HUDR2VW9RRExRYWZGT0FENjBmbmdlUmIzVEdPQ3hnekVPQmZRUVVXOGIxdDVmN0lZbGl2NUkxWkdQdWZ5U3lSSHA1dHFZZl94MzU4ZmZoUkRaTHZ4ZVJicjVmdmt4WTI1SC1LWkNWZjhvYXRyeU1TQjhxOFZQZjdxVGNFVFpjTHpFQmk?oc=5"
   },
   {
     "id": "source-5d5e5a706cd13c8a",
@@ -991,40 +1009,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4wWFBwVXNhMGxJMUI5U3dpejB2R0Y4R0tkUENFR2x4ekVYNHdMRmVkcVJkZXlLb04wcDRmMGdJSkFXVFg3Q1pBVUJaeVlITUstRGJRZXJ2d0JCRGhWQmNvZUtSaDZlVHZ2N2YyTW5mUzhucmswN0ZJNg?oc=5"
   },
   {
-    "id": "source-87e03328622bf506",
+    "id": "source-0f9253d5b8f8b951",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Meurtre de Selven Iyempermal : Manish Soumbur arr\u00eat\u00e9 par la MCIT",
+    "title": "Panne de Microsoft : la GRA confront\u00e9e \u00e0 des difficult\u00e9s techniques",
     "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
     "date": "2026-11-13",
-    "publishedAt": "2026-11-13T08:08:53+00:00",
+    "publishedAt": "2026-11-13T08:43:14+00:00",
     "author": "Le D\u00e9fi Media / Radio Plus (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 13 November 2026 at 12:08 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 13 November 2026 at 12:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbW5mUDNQMTZMYnJfaUVhbjVWdndaaWFOWDUtM1hLVmJHeGRBMUJNcWxibnJ0LXdSRUxVRHB4dnh2clc5amNGVDdfc09YUjhpakFnSzkxMk1XZkFTaVl2Q25GVWdBQncyNUtWaWVNc1BnZU1nZXA2LWNJbHRnb25sblMtOUdodDAzczdYbWx3?oc=5"
-  },
-  {
-    "id": "source-bf107e304642f3fb",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Taux directeur \u00e0 5 % : prudence mon\u00e9taire ou frein \u00e0 la croissance?",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-13",
-    "publishedAt": "2026-11-13T07:14:08+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 13 November 2026 at 11:14 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbEVBdGhPRmJmdWhRMFFReXlnN0N3cnV4aUtkaTlCZy16ZEp1RzZNbXdWSFZsdG00SDA2RkZjTlB5Z2JwelI4cDFUZDNEc3BrclVBaEJzbGM0ZTZpbEFHZXlIUDBzUlJ1cUVlVXl4VE1NY1VfMXlMdDZCcmhJVlZFcDBnenJsQlVQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNlBoZUhwbHBFcDdyOGZlamdfbjgtQ1lIQUxUMlNjQ2JwcFdZWG5UMXBMUzhnX1dZLWluSm5QUFA2aHpWb0tkWjl2bmt0WHVyaEhwR2JmdGstUlc2ekZEN2k2UzBtM3N2RTRLYWxKSXUyNnpSQzJQSERCTUNBdmdvSWxFd19LVHlxSldDOEMyVQ?oc=5"
   },
   {
     "id": "source-1bf648ecb2430749",
