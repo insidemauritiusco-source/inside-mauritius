@@ -1,0 +1,49 @@
+name: MUPublicVoice authorised TikTok vote sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mupublicvoice-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # Disabled by default. Enable only after TikTok has granted owned-video comment-read access,
+    # all repository secrets are configured, numeric video ID is confirmed, and the output
+    # privacy review has been completed. Automatic replies are never supported.
+    if: ${{ vars.MUPV_ENABLE_TIKTOK_SYNC == 'approved-and-enabled' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python -m unittest discover -s mupublicvoice/scripts -p "test_*.py"
+      - name: Sync verified public comments into aggregate totals
+        env:
+          MUPV_TIKTOK_ACCESS_TOKEN: ${{ secrets.MUPV_TIKTOK_ACCESS_TOKEN }}
+          MUPV_TIKTOK_BUSINESS_ID: ${{ secrets.MUPV_TIKTOK_BUSINESS_ID }}
+          MUPV_TIKTOK_VIDEO_ID: ${{ vars.MUPV_TIKTOK_VIDEO_ID }}
+        run: python mupublicvoice/scripts/sync_tiktok.py
+      - name: Commit public aggregate only when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mupublicvoice/results.json
+          if git diff --cached --quiet; then
+            echo "No change"
+          else
+            git commit -m "Update MUPublicVoice public aggregate vote totals"
+            git push origin HEAD:main
+          fi
