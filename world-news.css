@@ -63,3 +63,15 @@ dialog img { display: block; width: 100%; height: min(72vh, 750px); object-fit: 
   nav { gap: 10px; font-size: .9rem; }
   .media-grid article + article { border-top: 1px solid var(--line); padding-top: 20px; }
 }
+
+/* Accessible media controls for Android and desktop, November 2026. */
+.media-actions { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:12px 0; }
+.media-actions a, .media-actions button { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 14px; border:1px solid #b7c5cf; border-radius:6px; background:white; color:#172b38; font:700 14px/1.4 system-ui,sans-serif; text-decoration:none; }
+.media-actions button { background:#172b38; color:white; cursor:pointer; }
+.media-actions a:hover { color:#a62338; border-color:#a62338; }
+.media-actions button:hover { background:#a62338; }
+.media-help { color:var(--muted); font-size:14px; line-height:1.55; }
+.media-warning { margin:12px 0; padding:12px 14px; border-left:4px solid #a62338; background:#fff0ed; color:#6c192b; font-weight:650; }
+.media-warning[hidden] { display:none; }
+#world-video video { max-width:100%; }
+@media (max-width:420px) { .media-actions { flex-direction:column; align-items:stretch; } .media-actions a, .media-actions button { width:100%; } }
