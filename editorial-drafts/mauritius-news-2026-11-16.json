@@ -1,0 +1,113 @@
+{
+  "collection": "inside-mauritius-editorial-drafts",
+  "prepared_at": "2026-11-16",
+  "not_for_automatic_publication": true,
+  "duplicate_check": "GitHub code searches for five story topics returned no results; not an exhaustive site/content audit.",
+  "notes": "Editorial staging data only; no changes to homepage, templates, routing, or existing articles. Media must be licensed and verified before use.",
+  "stories": [
+    {
+      "slug": "grand-prix-port-louis-accident-2026-11-15",
+      "title": "Grand Prix de Port-Louis : trois blessés après une sortie de route",
+      "date": "2026-11-15",
+      "category": "Faits divers",
+      "summary": "Une voiture participant au Grand Prix de Port-Louis est sortie de route et a percuté un bâtiment. Trois personnes ont été blessées et prises en charge. Les sources divergent sur l'identité des blessés : L'Express évoque trois spectateurs, la MBC le pilote et deux spectateurs.",
+      "sources": [
+        "https://lexpress.mu/s/trois-spectateurs-blesses-dans-un-spectaculaire-accident-564763",
+        "https://www.mbc.mu/article/grand-prix-de-port-louis-une-voiture-termine-sa-course-contre-un-batiment"
+      ],
+      "editorial_note": "Confirmer l'identité des blessés avant publication.",
+      "hero_image": {
+        "status": "pending_license_verification",
+        "url": null,
+        "alt": null
+      },
+      "video": {
+        "status": "pending_permission_and_verification",
+        "url": null
+      },
+      "publication_status": "draft"
+    },
+    {
+      "slug": "deviation-mgr-leen-2026-11-16",
+      "title": "Port-Louis : nouveau plan de déviation à la rue Monseigneur Leen",
+      "date": "2026-11-16",
+      "category": "Circulation",
+      "summary": "Un nouveau plan de circulation entre en vigueur le 16 novembre autour de la rue Monseigneur Leen, en raison des travaux de réparation de la chaussée et du mur de soutènement.",
+      "sources": [
+        "https://www.lemauricien.com/actualites/societe/travaux-a-la-rue-monseigneur-leen-un-casse-tete-geant/723322/",
+        "https://gis.govmu.org/gis/?id=2980&page_id=4042"
+      ],
+      "hero_image": {
+        "status": "pending_license_verification",
+        "url": null,
+        "alt": null
+      },
+      "video": {
+        "status": "pending_permission_and_verification",
+        "url": null
+      },
+      "publication_status": "draft"
+    },
+    {
+      "slug": "tea-replantation-scheme-2026-11-15",
+      "title": "Filière théicole : aide annoncée jusqu'à Rs 25 000 par arpent",
+      "date": "2026-11-15",
+      "category": "Agriculture",
+      "summary": "Le Tea Replantation Scheme, annoncé après le Conseil des ministres du 13 novembre, vise la réhabilitation des terres théicoles abandonnées par l'intermédiaire du Small Farmers Welfare Fund.",
+      "sources": [
+        "https://ionnews.mu/page/2/"
+      ],
+      "hero_image": {
+        "status": "pending_license_verification",
+        "url": null,
+        "alt": null
+      },
+      "video": {
+        "status": "pending_permission_and_verification",
+        "url": null
+      },
+      "publication_status": "draft"
+    },
+    {
+      "slug": "bank-of-mauritius-key-rate-2026-11-11",
+      "title": "Banque de Maurice : le taux directeur passe à 5 %",
+      "date": "2026-11-11",
+      "category": "Économie",
+      "summary": "Le comité de politique monétaire de la Banque de Maurice a relevé le taux directeur de 25 points de base, de 4,75 % à 5,00 %.",
+      "sources": [
+        "https://www.bom.mu/media/media-releases/key-rate-raised-25-basis-points-500-cent-annum"
+      ],
+      "hero_image": {
+        "status": "pending_license_verification",
+        "url": null,
+        "alt": null
+      },
+      "video": {
+        "status": "pending_permission_and_verification",
+        "url": null
+      },
+      "publication_status": "draft"
+    },
+    {
+      "slug": "journee-mondiale-diabete-2026-11-14",
+      "title": "Diabète à Maurice : plus d'un adulte sur quatre concerné selon ION News",
+      "date": "2026-11-14",
+      "category": "Santé",
+      "summary": "À l'occasion de la Journée mondiale du diabète, ION News souligne l'importance de la prévention et cite des estimations de la Fédération internationale du diabète.",
+      "sources": [
+        "https://ionnews.mu/page/2/"
+      ],
+      "editorial_note": "Vérifier la statistique exacte dans la publication primaire de la FID avant diffusion.",
+      "hero_image": {
+        "status": "pending_license_verification",
+        "url": null,
+        "alt": null
+      },
+      "video": {
+        "status": "pending_permission_and_verification",
+        "url": null
+      },
+      "publication_status": "draft"
+    }
+  ]
+}
