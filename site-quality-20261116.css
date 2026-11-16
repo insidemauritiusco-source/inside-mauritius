@@ -1,0 +1,6 @@
+/* Small non-destructive mobile and accessibility improvements. */
+.im-live-time{display:inline-flex;align-items:center;gap:.4rem;font:600 13px/1.5 system-ui,sans-serif;color:inherit;max-width:100%;padding:.35rem .6rem;border:1px solid currentColor;border-radius:8px}
+.im-live-time time{font-variant-numeric:tabular-nums}
+@media(max-width:600px){.im-live-time{font-size:12px}img,video{max-width:100%;height:auto}}
+:focus-visible{outline:3px solid #e4a132;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
