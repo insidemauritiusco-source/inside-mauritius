@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-17",
+  "status": "draft-review-only",
+  "articles": [
+    {
+      "id": "assembly-17nov26",
+      "title": "National Assembly scheduled to sit on 17 November",
+      "category": "Government",
+      "date": "2026-11-17",
+      "summary": "The National Assembly lists a sitting for Tuesday 17 November at 11:30, with the order paper and parliamentary questions available.",
+      "source": "Mauritius National Assembly",
+      "sourceUrl": "https://mauritiusassembly.govmu.org/mauritiusassembly/",
+      "image": "cover-government.svg",
+      "imageAlt": "Original illustrative government artwork, not a photograph"
+    },
+    {
+      "id": "gis-diabetes-16nov26",
+      "title": "Mauritius updates guidelines for early action on diabetes",
+      "category": "Health",
+      "date": "2026-11-16",
+      "summary": "The Government Information Service reports updated guidelines to encourage early detection and intervention for diabetes.",
+      "source": "Government Information Service",
+      "sourceUrl": "https://gis.govmu.org/gis/?page=1&page_id=1917",
+      "image": "cover-community.svg",
+      "imageAlt": "Original illustrative community artwork, not a photograph"
+    },
+    {
+      "id": "gis-agrifood-16nov26",
+      "title": "Agri-food waste transformation project supports cooperatives",
+      "category": "Economy",
+      "date": "2026-11-16",
+      "summary": "The Government Information Service reports an initiative to transform agricultural surplus into useful resources and opportunities for cooperatives.",
+      "source": "Government Information Service",
+      "sourceUrl": "https://gis.govmu.org/gis/?page=1&page_id=1917",
+      "image": "cover-mauritius.svg",
+      "imageAlt": "Original illustrative Mauritius artwork, not a photograph"
+    },
+    {
+      "id": "cabinet-rain-13nov26",
+      "title": "Cabinet backs amendments addressing heavy rain and worker protection",
+      "category": "Government",
+      "date": "2026-11-13",
+      "summary": "Cabinet agreed to introduce amendments concerning the national heavy-rain protocol and protection of workers during extreme weather.",
+      "source": "Prime Minister's Office",
+      "sourceUrl": "https://pmo.govmu.org/CabinetDecision/2026/Highlights%20of%20Cabinet%20Meeting-%20Friday%2013%20November%202026.pdf",
+      "image": "cover-government.svg",
+      "imageAlt": "Original illustrative government artwork, not a photograph"
+    }
+  ]
+}
