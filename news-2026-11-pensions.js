@@ -18,7 +18,9 @@ window.INSIDE_MAURITIUS_ARTICLES = [
       "Editorial verification: the beneficiary counts come from the October 2026 table supplied to Inside Mauritius. The matching official October statistical PDF should be independently checked before publication. This report concerns October 2026, not live November totals."
     ],
     sourceName: "Ministry of Social Security (pension rates); October 2026 beneficiary table supplied for editorial review",
-    sourceUrl: "https://socialsecurity.govmu.org/socialsecurity/?page_id=5368"
+    sourceUrl: "https://socialsecurity.govmu.org/socialsecurity/?page_id=5368",
+    sourceName2: "Top FM — 16 November 2026, October beneficiary totals",
+    sourceUrl2: "https://www.topfm.mu/actualites/prestations-sociales-plus-de-2-400-beneficiaires-supplementaires-de-la-social-contribution-en-trois"
   },
   ...(Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [])
 ];
