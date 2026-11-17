@@ -509,6 +509,35 @@
     }
     const body=$("articleBody");body.replaceChildren();
     for(const paragraph of (Array.isArray(story.content)?story.content:[])) if(typeof paragraph==="string" && paragraph.trim()) body.append(element("p",null,paragraph));
+    if (Array.isArray(story.pensionTableRows) && story.pensionTableRows.length) {
+      const heading=element("h2",null,"October 2026 pensions and social benefits — full table");
+      const hint=element("p",null,"Beneficiary counts by island. Monthly rates in Rs; a dash means no rate specified in the supplied table.");
+      const wrap=element("div","im-pensions-table-scroll");
+      wrap.tabIndex=0;
+      wrap.setAttribute("role","region");
+      wrap.setAttribute("aria-label","October 2026 pension beneficiary table; scroll horizontally on small screens");
+      const table=element("table","im-pensions-table");
+      const caption=element("caption",null,"October 2026 beneficiaries — Republic of Mauritius, Mauritius island and Rodrigues");
+      const thead=element("thead");
+      const header=element("tr");
+      ["Section","Category","Republic","Mauritius","Rodrigues","Monthly Rs"].forEach(label=>header.append(element("th",null,label)));
+      thead.append(header);
+      const tbody=element("tbody");
+      for (const row of story.pensionTableRows) {
+        if (!Array.isArray(row) || row.length!==6) continue;
+        const tr=element("tr");
+        row.forEach((value,i)=>{
+          const cell=element(i<2?"th":"td",null,i>=2&&value!==""?Number(value).toLocaleString("en-GB"):value||"—");
+          if(i<2)cell.scope="row";
+          tr.append(cell);
+        });
+        tbody.append(tr);
+      }
+      table.append(caption,thead,tbody);
+      wrap.append(table);
+      body.append(heading,hint,wrap);
+    }
+
     if(typeof story.sourceUrl === "string" && /^https:\/\//i.test(story.sourceUrl)) {
       const sourceLine=element("p","article-source");
       sourceLine.append(document.createTextNode("Original source: "));

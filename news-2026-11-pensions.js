@@ -1,0 +1,26 @@
+/* Draft editorial: October 2026 pensions. Review original monthly PDF before merging. */
+window.INSIDE_MAURITIUS_ARTICLES = [
+  {
+    id: "mauritius-pensions-october-2026-beneficiaries",
+    category: "Mauritius", label: "SOCIAL BENEFITS · OCTOBER 2026",
+    title: "Pensions and Social Benefits: 272,454 Basic Retirement Pension Beneficiaries in October 2026",
+    summary: "October 2026 figures show 272,454 basic retirement pension beneficiaries across Mauritius and Rodrigues, including 267,025 aged 60–89.",
+    date: "2026-11-13", image: "pensions-october-2026-poster.svg",
+    imageAlt: "Inside Mauritius infographic showing October 2026 pension beneficiary counts and monthly rates; illustrative graphic",
+    author: "Inside Mauritius News Desk — source-attributed summary",
+    pensionTableRows: [["Retirement","Basic","272454","266429","6025",""],["Retirement","60-89 years","267025","261161","5864","15555"],["Retirement","90-99 years","5171","5018","153","23550"],["Retirement","100 years and above","258","250","8","28735"],["Retirement","Of whom severely handicapped","21325","19576","1749","4250"],["Retirement","Contributory","174646","172977","1669",""],["Retirement","BRP cases drawing child allowance","2062","1952","110",""],["Retirement","Beneficiaries of child allowance","2405","2265","140",""],["Retirement","Under 10 years","188","169","19","2500"],["Retirement","10 years and above","2217","2096","121","2500"],["Retirement","Food Aid","687","682","5","353"],["Retirement","Income Support","29457","29077","380","353"],["Widows","Basic","17684","17283","401","15555"],["Widows","Contributory all ages","40547","40374","173",""],["Widows","Under 60 years","12422","12306","116",""],["Widows","60 years and above","28125","28068","57",""],["Widows","BWP cases drawing child allowance","3181","3052","129",""],["Widows","Beneficiaries of child allowance","4210","4024","186",""],["Widows","Under 10 years","793","754","39","2500"],["Widows","10 years and above","3417","3270","147","2500"],["Widows","Food Aid","5","5","0","353"],["Widows","Income Support","732","707","25","353"],["Invalids","Basic","29549","27528","2021","15555"],["Invalids","Contributory","11324","11082","242",""],["Invalids","BIP cases drawing child allowance","4501","3928","573",""],["Invalids","Beneficiaries of child allowance","6591","5642","949",""],["Invalids","Under 10 years","2261","1803","458","2500"],["Invalids","10 years and above","4330","3839","491","2500"],["Invalids","Additional Allowance under 18 years","3901","3605","296","3000"],["Invalids","Carers Allowance ABIP","9021","8066","955","4250"],["Invalids","Food Aid","153","152","1","353"]],
+    content: [
+      "The supplied October 2026 social security statistics table records 272,454 Basic Retirement Pension beneficiaries in the Republic of Mauritius: 266,429 on the island of Mauritius and 6,025 in Rodrigues.",
+      "Among them, 267,025 were aged 60–89, 5,171 were aged 90–99, and 258 were aged 100 or above. The corresponding monthly pension rates were Rs 15,555, Rs 23,550 and Rs 28,735, as confirmed by the Ministry of Social Security.",
+      "Other figures in the supplied table include 17,684 basic widows' pension beneficiaries, 29,549 basic invalidity pension beneficiaries, and 9,021 carers' allowance beneficiaries. These categories overlap and should not be added together to count unique individuals.",
+      "Mauritius / Rodrigues breakdown: basic retirement 266,429 / 6,025; basic widows 17,283 / 401; basic invalidity 27,528 / 2,021; carers' allowance 8,066 / 955.",
+      "Monthly rates shown in the table include Rs 2,500 for child allowance, Rs 3,000 for additional allowance under 18, Rs 4,250 for carers' allowance, and Rs 353 for food aid and income support.",
+      "Editorial verification: the beneficiary counts come from the October 2026 table supplied to Inside Mauritius. The matching official October statistical PDF should be independently checked before publication. This report concerns October 2026, not live November totals."
+    ],
+    sourceName: "Ministry of Social Security (pension rates); October 2026 beneficiary table supplied for editorial review",
+    sourceUrl: "https://socialsecurity.govmu.org/socialsecurity/?page_id=5368",
+    sourceName2: "Top FM — 16 November 2026, October beneficiary totals",
+    sourceUrl2: "https://www.topfm.mu/actualites/prestations-sociales-plus-de-2-400-beneficiaires-supplementaires-de-la-social-contribution-en-trois"
+  },
+  ...(Array.isArray(window.INSIDE_MAURITIUS_ARTICLES) ? window.INSIDE_MAURITIUS_ARTICLES : [])
+];
