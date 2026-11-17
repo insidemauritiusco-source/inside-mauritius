@@ -1,0 +1,10 @@
+/* Only the pensions article table; mobile-safe without changing global branding. */
+.im-pensions-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid #d2dce6;border-radius:10px;margin:18px 0 26px}
+.im-pensions-table-scroll:focus-visible{outline:3px solid #175e9a;outline-offset:3px}
+.im-pensions-table{width:100%;min-width:730px;border-collapse:collapse;font:inherit;font-size:.88rem;color:#172b3c;background:#fff}
+.im-pensions-table caption{text-align:left;font-weight:700;padding:12px;background:#edf4fa}
+.im-pensions-table th,.im-pensions-table td{padding:9px 11px;border-bottom:1px solid #d8e1e9;text-align:left;white-space:nowrap}
+.im-pensions-table thead th{background:#0b3658;color:white;position:sticky;top:0}
+.im-pensions-table tbody tr:nth-child(even){background:#f5f8fb}
+.im-pensions-table tbody td{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.im-pensions-table{font-size:.8rem}.im-pensions-table th,.im-pensions-table td{padding:8px}}
