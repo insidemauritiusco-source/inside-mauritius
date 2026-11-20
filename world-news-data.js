@@ -1,14 +1,270 @@
 // External source-linked headlines, not independently verified.
 window.INSIDE_MAURITIUS_WORLD_NEWS = {
-  "generatedAt": "2026-11-19T21:38:06.223566+00:00",
+  "generatedAt": "2026-11-20T03:21:46.922299+00:00",
   "headlines": [
     {
-      "id": "fe4e62f1a660b029",
-      "title": "World of HR: 94% of employers in Europe are using AI in HR or employment law functions",
+      "id": "e7eb2ef97b3f06fe",
+      "title": "Asia\u2019s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+      "region": "Asia",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOTlLRHZDNTRIaV9TZFlkd3VqNHZUTHZ2OVI1N01jdlM1ZnF2RWdFT25RV2dKN0l5THVNQndQTzhrVlpRUmNrRjh4MloxWHo5OXRwTzBJQy1vLVRDUU5yMFpEblRycUYyZnI3MFJEaHBrU1Awa3JTdDlha2tYd0FlbU5FOVI2SW5Nb3hISDg2R0d5RTVXTHctZmhWcEdjU2ptVzdPMUVtLW8yR1l2YjV3UV9GcXBZdGxaR3FF0gHAAUFVX3lxTE9qaEdWMGtKak9xeE5PSTJIeklFdG11ZmIySmR4UHFMV3pENnRvSnp5LVozRThVaE52SDA2Q1VnXzBrYUFjXzFFZmJmLVBFTkxudDFXQ2MxVTNiRlNHTWxabEw3NXRLMlN0VWY5U3I3YXhRZ0tUU2FRdGR0MGxTSW4tMlY1QXVTX0xoYnFRVERZaUY4U0d5RWQyZW9ITlNDY0xOanllVFhpTEgtSmVQa3JHTDNpQWNidGVQUjVJcWxKVg?oc=5",
+      "publishedAt": "2026-11-20T02:56:13+00:00"
+    },
+    {
+      "id": "a59b21794a07df23",
+      "title": "Indian stocks seen falling from nine-month highs; Asia market rout deepens",
+      "region": "Asia",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaEJHRkZDOVdTT19VcGt0YU9SeHdvSmo4cDZVR1R2RzdDUUFJREc0bkNBcDFrUDN1X052bGljQUdsQ19jMTkxZlhYZTI3LW94RUFKb043WXpDZW5mUThLVk95eVcxU005bVNGV0EyY2JlWUlpWDAwZHJDaGJSMlNIMndQZ0QyWGtGVlo4WjB1YjZzNGlfYzBPVFdfaE1MTVdabVZmLXdLdkxsTDJmczdWSW5wRUNlMTg?oc=5",
+      "publishedAt": "2026-11-20T02:34:00+00:00"
+    },
+    {
+      "id": "b92462a7827d3e98",
+      "title": "PFL Africa Reveals Full Rwanda Finals Card for Dec. 12",
+      "region": "Africa",
+      "source": "MMA Sucka",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcF9QOTZaVkxMYlRGYloxdnZQZE9rcTdLTTI1ckx5bnNlTkY5bXd6a09Ta0lybXdrMnJ4T3JJVTlxYU04akl6REJqQWNfQ2ZCdkdpeDlDSVBSZ2lqbDFLMHl0RDJtZ1RsdzBHUDNOWjd1dVI0eFJMb29EaENtRGR0b01Hbk5GVFU?oc=5",
+      "publishedAt": "2026-11-20T02:20:21+00:00"
+    },
+    {
+      "id": "1c10c74691191748",
+      "title": "Half of Europe backs climate policy \u2013 only Germany acts on it",
       "region": "Europe",
-      "source": "HR Brew",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNd0owYjNXT3ZRYmVnblRwOEdTQ1NqMk1Rck1YY25vMlJ4X0pZbkgyYncyT1J4WWtMb3dpZlpnOVhwR1M3a2h4bHczeFNoU0lTR1F6NTZpaUF6a085ajEtd1RqZm5YenRzQkRJMUdlbFdXMnllbk1aT3VaYnFQYXJuR3dfODQ1dTFuLWZCMHZSU3B6cmFjVkJEN05FejVRck44UWFJR2JHRm00eVBvQXAxZ1hxQkNjUVE?oc=5",
-      "publishedAt": "2026-11-19T21:27:22+00:00"
+      "source": "LSE Blogs",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNT3JvOUZmMUdVako3ZS1TN1lKR1lqWjEyeTFEaWNTOXoxY3ZsTzczTUtQbEt1RkhZS241ZTl3V1lTaWFsM0xtakdBdjRmOWdZdXpROU9PcFVveE1ZaFFRRXBkVlUtZ0pWdkM2ZzBFUnlPZkNyejhtV05GTlNtQk4ySGRkRDVZUnNnOFF6eW5WaHY4c2JGcFQ4U2UwTmZ4bk5jVWdRbzlPT2MwUVFZWHhZ?oc=5",
+      "publishedAt": "2026-11-20T02:19:50+00:00"
+    },
+    {
+      "id": "5f3a1abb6fba3e4a",
+      "title": "ZF CVS Sets New Asia-Pacific Strategy, Scaling Up Local Innovations in China",
+      "region": "Asia",
+      "source": "Gasgoo",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPOTBJQzZMYzh2dXd0YmRWVzkzVTZETFQ0UkZyMFpRNHlYNUw5OGdYY2YtMnRiR1pOWTZzQUNGcmVTM3BOWXZrd3czQU5xYjZPdGZMWlB3Tmo2em00NWJEblJkV25maGMySWJYUmlWTDZVb0E5Y3VKNEswNzJoZnlwSzZ5bXJEOEdRMjJ3QnBhVjFVNkpUeDgySTE4YUtmUThTT3ZJbWRXcFlsaV85WDVDbzV6cm4xTEMxbDJ2UTBDbUViRHZTSUhyWmt6ME9YZXh3MV9j?oc=5",
+      "publishedAt": "2026-11-20T02:18:33+00:00"
+    },
+    {
+      "id": "b7f667b1710ce08d",
+      "title": "Pacific civil society refuses to let 1.5\u00b0C ambition slip",
+      "region": "Oceania",
+      "source": "Islands Business",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQVI3cFBqcXBIamtFdXFPcm40T3A1R2t0dkMwZ3J3Z0dnbEU4TE9RaE5hdGNGbVF6UVhrUVN3VnFOMlZDWE4wR0czdmZmd3R4TXBYOVNvYjV6bEVCS0RCZ1RPWWxncjJsaEx6bUptaGlkYWgxaTF0UGRYamFqMy1xMGt6NHh0RWxpb2k0T0loZ191OE5LUGtuUFlBeXplM1dzZENITy1nREhOVEs1QWZwQ1NVM3dZRXJRUkE?oc=5",
+      "publishedAt": "2026-11-20T02:05:42+00:00"
+    },
+    {
+      "id": "84ce59940483baf3",
+      "title": "Uruguay sells bonds in Europe",
+      "region": "Europe",
+      "source": "LatinFinance",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdW1lY1J5WGJhT0xPTnZDY1B5Y2pMUU5RZFB1R0wtNkdiVmJyV01xY2xtVGJYZnotVE56TFRqNGQxXzFxcjM3MEFlNUFKT0N5N3FiaFZJLWtvWGlJdHBCaGpKOUJMWnJ2U09LZGwxU1B0M2NQeWZzVE14THlrcFdxa1pCcV9oZw?oc=5",
+      "publishedAt": "2026-11-20T02:04:02+00:00"
+    },
+    {
+      "id": "fe3a512c4800fb54",
+      "title": "Lame, suffocated and dead: The drug supersizing America\u2019s cattle",
+      "region": "Americas",
+      "source": "Wausau Pilot & Review",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNjhIOExpWTVvVHEwblF6a0gwZGVLNmJ1X0Y0LW84U3FpbjA3R2VjSG12NmJNQ3dIaFhLRVlwQTc5Z3hEZUh5RVVMc0hZbVdGWThyQjFZUmE3dWhmSVB0SVRmS0FGbVQ1MFp1ei1fMy13c1dmODN1UlNUaEZGUmlFaGI5R20tTGdRWGZIQWlkbS0wTkh6a3BkVWl2RjdUdndsdXdaMVFiSW5TQQ?oc=5",
+      "publishedAt": "2026-11-20T02:04:00+00:00"
+    },
+    {
+      "id": "3fe594354620f34d",
+      "title": "Pacific countries among miniority voting with Israel against Palestinian rights at UN",
+      "region": "Oceania",
+      "source": "RNZ",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZEdZNVVWcDZWQkVtaVVXWDMzQU8tU3d4ZllsNjNpeTRyY3dTaFprTm14VVYwdDl5LXNvQmxTTEZBM1RoUC15ZHBDYWhfSF9kRlg2Uk5JZlNQXzR4OVhGMXFTSEJFekNKNlppcGdFcTN2OVNwS3JQdXN4eU0xMkNJc19URjFLVVp2blZ0aEQ5T3I0NlVaY3BKaVJMbUNYU0szY1pjbDIzaWZKejNYQXNuei0ySTlMXzN3ZC1iNHdmb2l1S0xuLVhJ?oc=5",
+      "publishedAt": "2026-11-20T01:49:09+00:00"
+    },
+    {
+      "id": "a4e4c6d523a5c460",
+      "title": "Escalation in the Middle East and Beyond \u2014 Mobility Report (03 to 16 November 2026)",
+      "region": "Middle East",
+      "source": "ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeW5IYjN0R2FlSzBVTExObVpIU1Q5Vlg2aGt1bU9idjhkbFZlZmNNekc0YlU2RWhLSWF0amVtZkJPeVkzV3gtd0NaZjEyU2RaUEtXbmlHTEw3TGZyVXVQRmZTemo0R1VlNFE1NXdzLTZaVlF6ekwwcWdHWG1VbHNYYWxTR243OFozOUlHX2tqdzNaYUwxNGdQYk9yOXVNSWhORHNFdF9iUQ?oc=5",
+      "publishedAt": "2026-11-20T01:33:24+00:00"
+    },
+    {
+      "id": "e06f1ab37af0df56",
+      "title": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+      "region": "Asia",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPV0Z3OWtzZHlQVU5iZEZqYV91VG00Vnd6M2J3dk12bUhiSmNRN21Vc3Z3Q3YyVjZLRDZjZmF4d0t3QWJDNTJzX0VfNzh6QmhueTIyUndyRkRkdWFpclpEcmVsVFpMTjRHeml3UEtQSklzcy12VVRlQ1F6WjcyNEh1UVN3b190d28zY2fSAY8BQVVfeXFMT3pEcUJ3Qmgwb3NFM3BNd1p2Rk5DYmZSaHVZcUxMeWFJZW9DQldzTXlaOHdBQ3Y4ZHhRbWVEZ0xwSVJnT1hOSWhJc0FOXzVvS3JsTWxibE9zc0xTRXlFcThPWkZHb1Fvd2pvNXM4eEtSejFMcm9oYWZXbUFzTWxEaE11ZzlCaWNYRktQUTAyLWM?oc=5",
+      "publishedAt": "2026-11-20T01:07:00+00:00"
+    },
+    {
+      "id": "8f275944de7362ef",
+      "title": "Will the US and Israel restart the war on Iran?",
+      "region": "Middle East",
+      "source": "Middle East Eye",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQVZyMWZUUklQRGpJa2pHZUJNbElIWHp2MVdfaGlkdlpOZFJoMnM5NjNxUDNsTGh6MGpxQjVfd3JOXzBFVFFHUUlicDNVOXlEeDlqN1pfd0pTYjM3dFpPM2FCaXhfVVBMMTJjVGxWTVFPSFlLS2xVRk5fV0NnTUROT1FUdDJiMnpVc0hXOHp5bDBSbXhRSlFV?oc=5",
+      "publishedAt": "2026-11-20T01:07:00+00:00"
+    },
+    {
+      "id": "ef4f546f9cad4720",
+      "title": "Who commands, who answers? The legal accountability of foreign police in the Pacific",
+      "region": "Oceania",
+      "source": "Lowy Institute",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQV1podlFrcXVUSGNYTGduZ083QklnaVJFSVNzM0Z1c3I1LV8wNjd6V3BOYVNnaFVSZndwcUJQNUFRb05SbkE3dUFuaFJYanRDcUxINXFmMjg0Q1lpeXRuaURMRFZkaFIxSUxjdS1pd0lHdDVrSXFtdTJRclNXY0dWSlB1Mm5uWm9QSjg5R3RpMXpMWW15T2lOTS12Vk5SeEZDem9NUHNacEYydUlfUzJIekRmVnBkcEFyR3NmT2dnUjVtbnk0THhZ?oc=5",
+      "publishedAt": "2026-11-20T01:00:00+00:00"
+    },
+    {
+      "id": "5c0a5b9f2b1539e7",
+      "title": "Asia FX Talk",
+      "region": "Asia",
+      "source": "MUFG Research",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nRUk2cWQ2WXdNNlIwM1lmci1fenh3LWhWcmJ4Vk9fQTNrNlgzT3FxTFFrenBZcFNZdkR2OUQ4VGRwVm05UC1FLW5Fc2xqUFNZc3E1ckFZM1ZFY3h6dUtIcHQ0VDRsU3lBeFZ1OHZVVQ?oc=5",
+      "publishedAt": "2026-11-20T00:43:29+00:00"
+    },
+    {
+      "id": "9ad6f7937b305b78",
+      "title": "Oil Rises Amid Middle East Tensions",
+      "region": "Middle East",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcVBOSVRMajQ2dG1xZGpJSFdUY21QeURFN3NpV21KeTBZRmFaaXU1ZEFZWVJjc2lqWk1yUkp1TGlZQ0JNX2dmdi15Nlc5aHZFSzhRdVpxOWVHYk90bjdkekxxU1lLa2h2eEFOaTA3SmJUbERUM1BudzhGYWRxeUsyLURFM1ZKMUdtTWxpSmF5TklJVnkzOXZz?oc=5",
+      "publishedAt": "2026-11-20T00:42:00+00:00"
+    },
+    {
+      "id": "75b24c966c047b14",
+      "title": "Cowboys great Michael Irvin outlines franchise's timeline to retain 'America\u2019s Team' status",
+      "region": "Americas",
+      "source": "Fox News",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeVYtYmpwQUFLOFIwM2ZHeThTNjZPZTBHbjNhZzB5MTN0YTY2TENUbFVvT3JYeHJvcXJtV0dkWkJSdVViZGRFMjI2Mm1SNmctTHJwR0lySzZyRVZlSWNseHd5aTVtWGNEb0FDODhEcUdQQlNselVTejVZQUNwRC1HYVIwSGNQN2xYaV9zLUlkZVl1OEtOXzNRcUFialczQlFBZ1RtTERfT0JJTkwtSzRUV0xpdlVkOXZSaUZMT0R5Rmg?oc=5",
+      "publishedAt": "2026-11-20T00:34:28+00:00"
+    },
+    {
+      "id": "3333e4b132106916",
+      "title": "Kushner Briefs Trump on European Unity as Ukraine Peace Positions Converge",
+      "region": "Europe",
+      "source": "Kyiv Post",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9HdzF1RXdDbDB4TFpOYWdkUWpWZkg5bGJBYmEzd1RYWHlFenRrN19NOWFIc2dqNmY2UFQ4RUpFZGk4RWk0c0RJdmNXMA?oc=5",
+      "publishedAt": "2026-11-20T00:32:32+00:00"
+    },
+    {
+      "id": "d03d8684cd8600fc",
+      "title": "Japan\u2019s Takaichi Walks Tightrope With Russia, China on Asia Trip",
+      "region": "Asia",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTm0wdzRQdDJpYVJrUHAxOTBVOUwyZ3hZTlFVd1ZkalV2S28yN0hDcjNLa3dWWG5CQ25HMEYtTXM0ejR2UFZ2M3FlWk9GQnBwSkZPcy1hTlh3d1dIemNBUkVwakw1OGdmTGk3SVJER3NaZmsyYXhVR0VVdFZRejlfakNzREFoeHdLUGhqM3hCcFBIZnhDWmI0X1UzcXQ1MmhVYlFHT1d5d1h3aGFkQndLNlBhUlM?oc=5",
+      "publishedAt": "2026-11-20T00:02:00+00:00"
+    },
+    {
+      "id": "dea644507d98418d",
+      "title": "Jackson\u2019s Warning and America\u2019s Way Back to the UN",
+      "region": "Americas",
+      "source": "Toda Peace Institute",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTDJBcEpLZlNFRzlOaTdxejZSenVNRU5BclBoTW1RcWFET1RXNEY4X2tXcUwxMVZRR2VLM3NxNUhoZmJyc3dEcE0yeXpGbjcySjV1bHUyX0pUS084OGVaX2hYTFpybFhXSjNWQ1IzVlZrM2tUdko0Wjh6QW11UE5DUU0xbUtobV9CUFE?oc=5",
+      "publishedAt": "2026-11-19T23:54:16+00:00"
+    },
+    {
+      "id": "b29918d528bd5ce7",
+      "title": "USS George Washington departs Middle East",
+      "region": "Middle East",
+      "source": "The Hill",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZmF4MFRtbE9wS2RHRDd3MExTcTZPWXFVQW9RNDdTS0hZR3NkVVZ1VDBVN01VZkE5SS1qTXVCOGNpNzFQaW9JNFFXLTJYcHlQaDA3ZDlHLUZnRkstd1NiaWRaZUgtelJ1ZDRvMklIZlJ0eHVhRWotcWRjSWlHLWhPZG1zYkltTkM4Q2xHUTZ6aUoxcU92Y0FFaGNCdjZyTklvWkRFVUVPaUI5RlJD0gGyAUFVX3lxTFBQRGFRVVdwS0xySjNyYUotd2V6XzRxTlRKUW1iem5tb1VHU21GR0JuZmtKakQ3TGVJV2VvR2RFWDVnWGJaZmxnNnFTaml2YTRBd1hLY01KcHFXSVZJemNxUjZpdW1hV2hnLXFfME9aXzhGQ2I5TDJJU0JkeWJZU1ZPLUU0S2lvU2ZaQTB4TnM3V1FMRlY3Y2xpQmt2OTV0eDRUZmFNejQ4UWVlQmNoSkMxcUE?oc=5",
+      "publishedAt": "2026-11-19T23:48:00+00:00"
+    },
+    {
+      "id": "9ca0e522642f0502",
+      "title": "Kushner says Russia \u2018comfortable\u2019 with NATO-like guarantees for Ukraine",
+      "region": "Europe",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdlJnSGR1SWI4TnZ5UHc4TzlBc215UXN4ZVRvYVZ0OHc2Uk9uTjN6N2hPZ212Z090eXpHWFB1bTgxVDFhSnBhOWFONkJ5NlU4cUNoWXNVYUpHR2VuOWtuT3pXa05QclJoM0kwZ1RmYnZPaHA4cVg3eU9WVjUtTVBKUG8zeGdWVkxVYXV5dUl2dk9raWFhTFFzVXlsWEVKbHZseUFpb01CLVQ5d9IBrwFBVV95cUxNLVN5MWFBRlFfZzZxY3g3amFZUktOcnM0XzItRFkteVl2dEM2c2Utem5kVU9EaXZmLVR5NmE2Y0tSOTM3cjF3VXdySmNMdE13OV9kQ0dQbG9XSWFvSWs4ZDJlYVVhMnRZZHF0c2RsazJwTnlvZkVIU3BacGRpUmtjMnVPeFd1Wlhqay1CMTVYUlBZTHowb2ZtZ3RkSW1FMjdQakFWakJnaUVTdUtCZTNF?oc=5",
+      "publishedAt": "2026-11-19T23:42:52+00:00"
+    },
+    {
+      "id": "e820e194cb9b9d91",
+      "title": "Israel\u2019s ambassador to US says the decision to strike Iran lies with Trump",
+      "region": "Middle East",
+      "source": "Middle East Eye",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeUpsQjNRSmFSN3djcTdXSGh4Z0dON0tJZUNoUy1aWWVrVTZOUndQTkF5MWhaY0JZUGNfU21YeFptSjUtZXVIaENDTWNPMndfenJQWk0xazhCZndaQWVRdDd5em9SVUN0Z0N1M1RoM0c2TFBJWHdBMzIzUWxweVR0dzZuQ3NNVGZnSjRIMzRscUNrNGdzRy0yRHNOZ1dRLWlSUTBGUjJHTmJzYTBaRHc2S3ZRVUdfdw?oc=5",
+      "publishedAt": "2026-11-19T23:40:00+00:00"
+    },
+    {
+      "id": "48ab77f2448b1a13",
+      "title": "New Ukraine talks including Europe to be held 'soon,' Germany's Merz says",
+      "region": "Europe",
+      "source": "DW.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbHFzMnBReUJOdVY4b2FCYkhqSmZfek1jYjg3dmlQMkNNVjdYVGlCY3hQYUNmRFFRZ0tiUVFqMHYtUHV1UnE3LU5CN0NLclpvR0V3Q1dkVGlfbjhFMG1zVkxKNmM3WEtMZEJOdmlLR1pXWkpaYUIyVlpqQ3l5MklON3NfZHJMVmkteGdjYks5Sml5UdIBkgFBVV95cUxNakZRekFTVEFRVG1wU2ZSOWVSVTY4aHhDRUZjc0FNUTRpaE5PR2RqNVZtT1MxZnVMem1SZHJCTm0tOWVkRzZuOUxYQldNWDZiSTdVdEZvLVExM2R0MkJtTzl1VVNrUzJaeFJkLUd3QlpBcjJISlBiWllwbmpNVFA3YUpGVC1GZWZEUHVQa1Vac0ZGUQ?oc=5",
+      "publishedAt": "2026-11-19T23:24:55+00:00"
+    },
+    {
+      "id": "6c30bff9ea6d10c6",
+      "title": "Trust Builds Sales: USW Board Team Sees U.S. Wheat at Work in South Africa, Tanzania and Nigeria",
+      "region": "Africa",
+      "source": "U.S. Wheat Associates",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRkhjWUlwSy1nT3JSZlFWNU5wQmdIYVIwQ3FNeUJpbzFiNEQxempVTlhsRk5QSDE4ZnRMYzdzN2lhNEZKdnlrc3RzYjlvb1RMUU4tQUtOUFIwWXp0NHE2bHZOUG5PYnB6b0E1bVZVcDB1Wmk2dGFHWnB2eHFtNkE1VTVNOGxacUhQZ2dtNUF0RG1vMHhHU1pqSWhKV0VaT05Hc1FnNExmQ3lLaFRQM3h0dGF0TmN2bmN2bEhfbS1FVEliY1lB?oc=5",
+      "publishedAt": "2026-11-19T23:23:45+00:00"
+    },
+    {
+      "id": "320e7eba3de7e37f",
+      "title": "Trump displays an all-male lineup of top aides on Asia trip",
+      "region": "Asia",
+      "source": "The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazUwcmhQS3lRamZfbUFOVExwRnRhQzVvZ0RiTWlQVkh1VWc5RlR2ZjdobzJidmxiVnd2RE5NX2tndFMwb3VtbkJyZ3Q1UXFFcTJ0TllodDFHUWcxMFBQOG44dmFvclhGNXVUNm1EMmozTjBheE4xOGxlYkpRc3dfVFBNU1NQeldQWDA5RVZOaVFrQmpaMUNma3JrdlVuOTlLY09RTTlIZno?oc=5",
+      "publishedAt": "2026-11-19T23:00:00+00:00"
+    },
+    {
+      "id": "4323408302423adc",
+      "title": "Oil Prices Swing on Middle East Uncertainty",
+      "region": "Middle East",
+      "source": "Rigzone",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd2JJc2tlRVZKTXU3VEVrRnBJUU9hbHdOUUNaU3RSODNHaWVEaGtFaERrTnhkWmFlSkZKeWhsUUpWOHJRczdBa2JvbmJEdGtnazVZYXg2OHFVMHFfMW1hVUpEbnQtVlg5UElhcFdlaDhaMzJlaHFHSjNIVWF0ZFR6SXFsbjRrTklDMVV5OE45dHZ2VWFaYmg4MzZ0OFJZNW1IRDExTGtLdkM?oc=5",
+      "publishedAt": "2026-11-19T22:31:00+00:00"
+    },
+    {
+      "id": "edbcfe6838e615ae",
+      "title": "The Army Is About To Test Where America\u2019s Factories Break",
+      "region": "Americas",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQkJQeEh5aTFOTnVQSE5QMzkxWHNDVHA5WU5NZGVLRmxaeXJkY05pTjY5TXhKSnU3Ym8zQi0xanpaQmltMkV3YU1vejFlMjM3S2VqZXJkemRERTJienlGWGttLXVXWXJqV1U2OHgtOF93TDRTbjdHUHlGZ2hxU1cxRWVTNWZEc3pWX2kzcjZlMjhiOUxzSHZIMS0tVVhGN2lfVE4wMDlPbWFfay1kZUE?oc=5",
+      "publishedAt": "2026-11-19T22:24:38+00:00"
+    },
+    {
+      "id": "185f3f6356a0b9b2",
+      "title": "European Tech Leaders Flag Reliance on Foreign Chipsets Amid Push for Strategic Autonomy",
+      "region": "Europe",
+      "source": "Via Satellite",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVEtZczlIUGtVRURXN3V2QUsxMDRnMlBodk1URlNGTGo0b0RRdlV6OXBqc2hmTmV0aGQ5d28yTldvUy1EcTNwMEE1QVBaWUNTcXN4QzBwSTY4a01EdlpqOG0xZDhSNzNOM0RWSkV0MjhDTUV6alBYY2tvbUR4MTdZdGxDdEhySUpXeng4eVJUdWQ5ZnBjWlpmSzd0LUl5a1RaUnRLV0FOZi1jNjVuRUNGVUh3aGpuMU5rZFJNLXBPNzhYa3pDVEdpT0tBVjVCbGZxbURLaUNsTFRXUQ?oc=5",
+      "publishedAt": "2026-11-19T22:20:58+00:00"
+    },
+    {
+      "id": "e116b07579ce7f88",
+      "title": "The Hidden Cost of America\u2019s Political Inconsistency",
+      "region": "Americas",
+      "source": "The Jerusalem Strategic Tribune",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iREVMNURHT3lDRGtCQVBvTE8wRTh5WHpIU2hoWG9iRWVZbVhHR0dDRGwzeGNKakl6cVNRQURFTUN3OTF1VmRxSlU2ZllnbVlBckJ3d2gyU3dwUlhGbTJweUZFQ3N6Tl84WGxnRHNveFE1U1lnQjQ3NGM5Z3FVLTg?oc=5",
+      "publishedAt": "2026-11-19T22:01:07+00:00"
+    },
+    {
+      "id": "96567eaad835ac37",
+      "title": "ANC\u2019s shrinking mandate should change how the world sees South Africa",
+      "region": "Africa",
+      "source": "JNS.org",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMHpoVnNqVUZtODBFX2dYdEJsZG83eGhRZ21Vb3ZMalVYT0NheXZYREJ0bFM3UWVSR3lvaWlWcWhzUWJLRnhBRzUxamZSZGliQkpyWFdOdUhDS0RXbEVLbjJNNzJJY3RHZ0tIeG9jdGRJQkdGbWxsX2ZQWVpHdXp3eW9kWThwYllPYkpWVzl3eDkzb2Z6S1JKelNxZ1EyUVh0X2Jxd29TRkVkZDZM?oc=5",
+      "publishedAt": "2026-11-19T22:00:39+00:00"
+    },
+    {
+      "id": "077677d52dd8a310",
+      "title": "The Middle East is being reshaped. Who\u2019s most at risk?",
+      "region": "Middle East",
+      "source": "Foundation for Defense of Democracies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc192SW1zXzlGbEVfTFBYRkZWbDJWY0pGMVRXLTQ4SG9pWGhNbTRKemthbUxUbUc4bi1HRXNpVy1wTUtiM3FqMXNGNW42VEdJRDZneXpqSUhFZHFLZ0oyTmlXNDBGMWFVbDJPc3lIQXRKeExTeXFHLVUybE5EaTlUZ2RLdHh6QklRWkFSNw?oc=5",
+      "publishedAt": "2026-11-19T21:51:07+00:00"
+    },
+    {
+      "id": "79bc9cf1f89180be",
+      "title": "Israeli ambassador: US troops will come home from Middle East \u2018when Iran is defeated\u2019",
+      "region": "Middle East",
+      "source": "The Times of Israel",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTXFBaXBsMElvY2FvTEVFeTRhdjNCSmxmQmpaYXVXaDlNcDdEdXVZM0xENmloWHVWZTVmY1NTYTFaYkJfeU1VdTZhenMxeF9laEJDXy10NmwwYU1PZ21vUnBwRDREbG5NeGFCYm5YYkxSSEVVcElfODNHaXF3RFRkSG9BOFY2TW9kUExrcFNhV2x2WEM1aDU0dE5HdDNHZzVZZ2xRT3hxYWpzQXJxVG5kWlg5MjFwVk5abUQ4RmVRbjlSdDNTbWlj?oc=5",
+      "publishedAt": "2026-11-19T21:44:34+00:00"
+    },
+    {
+      "id": "b3922c96e6c6f76a",
+      "title": "Middle Power Ties in the Gulf and Africa: The Iran War Inflection Point",
+      "region": "Africa",
+      "source": "CSIS | Center for Strategic and International Studies",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNLWkyNmN5OWxBa3VHNUtBaEJmRUUzMkEyS2xELWZWb2p1NENlYXB2aDVQcUNmcTF0emEtVVUxZGxXcDZoZnFfSWFyaURhTE1DU2NVcHFKNExRazhOVThVeGhIVzdxVlZuWlhubU9Lc0NfbzV3dHRZbEZrRU1BdDlWQktzYWFzOU0yOW1Eb3c4ZDN0U1E?oc=5",
+      "publishedAt": "2026-11-19T21:37:07+00:00"
     },
     {
       "id": "eb06100fe414f656",
@@ -19,20 +275,20 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T21:25:36+00:00"
     },
     {
-      "id": "7fe15d9bbdd7d4bc",
-      "title": "Everyone Is a Friend: Trump's Meetings in Asia Show His Varied Approaches to Shifting World Order",
+      "id": "c4ef805ec33cfd05",
+      "title": "Everyone is a friend: Trump's meetings in Asia show his varied approaches to shifting world order",
       "region": "Asia",
-      "source": "U.S. News & World Report",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaC1Sb2JndEhOVFphdTR2Y25aRDFTc1F1bHNpQXNEN1dFbGJVU1NNUlhzUmZTRi1NNVk2LWViOGZSVlIxMzRzNEJiZXhSdlV5TnRQYXVESGc0Y1pFbzlyMU9OdnAzZ1UzQVJ5bUYwcFNkTVRvZVJocU5yaTZjRm9zZXVLWVNhczdHU3J5S0tncWxkYVd3eUV4Vk5fZWp2Yl9IVDRwcm5nSVQ3MFBOQkhaOGRsOThVRDZULUpqOUtmRHBPaUJqN0pKN2M2QU04NEdnZFVydWplSUdSNVd3VmNj?oc=5",
+      "source": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUzNUZ054aWcxUXBpUmpxaXRRY0ZfTE9ydE54WFNzR2ladXF0Y2xQYzZONHprYTVfTEFzcjA3UUNUTEJtQWpJSjZ5MURIUmdXTGZPYW0zbG1tYkFfT1FPNW55eHdIUTNXZHpBLUYwLTU4bnZUMUJsSUlSMENtR2tiVGdYUGlhYzllLV9VMy1JWFNuRzdiRzNuLQ?oc=5",
       "publishedAt": "2026-11-19T21:25:00+00:00"
     },
     {
-      "id": "320e7eba3de7e37f",
-      "title": "Trump displays an all-male lineup of top aides on Asia trip",
-      "region": "Asia",
-      "source": "The Washington Post",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazUwcmhQS3lRamZfbUFOVExwRnRhQzVvZ0RiTWlQVkh1VWc5RlR2ZjdobzJidmxiVnd2RE5NX2tndFMwb3VtbkJyZ3Q1UXFFcTJ0TllodDFHUWcxMFBQOG44dmFvclhGNXVUNm1EMmozTjBheE4xOGxlYkpRc3dfVFBNU1NQeldQWDA5RVZOaVFrQmpaMUNma3JrdlVuOTlLY09RTTlIZno?oc=5",
-      "publishedAt": "2026-11-19T21:02:18+00:00"
+      "id": "36a25dcf057f1782",
+      "title": "The astonishing toll of America\u2019s food stamp cuts",
+      "region": "Americas",
+      "source": "Vox",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbHc4Ymk0eGMwXzhLRXZnTk1ZdVVLblRrU0NJNHJCbVFjRHowbC1lNUtCM2sybFJLaUd2aVA3STk2djQ2RFdGNFl3dFR4VDRCY01MU2lzOUZmOWJpMjF6M1VzVEkzenkxUkNNM3JVY3BjS042eFBzbThmUnFhSzN4Y2QzNndwUjFUX2RGTFpyNFJBQjhHQkg5TVgzRVg5dXc?oc=5",
+      "publishedAt": "2026-11-19T21:00:00+00:00"
     },
     {
       "id": "9b76ecc40f959e2e",
@@ -51,22 +307,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T20:49:00+00:00"
     },
     {
-      "id": "efa8609a4a20e214",
-      "title": "South Africa\u2019s power trading hinges on a price that doesn\u2019t exist yet",
-      "region": "Africa",
-      "source": "Solarplaza",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZWZLME1NaVBtT2JhN1F6M3Jaa2RKbkZVcmxiYWxRdlBfNERjLVFBNVdDbk1UY0Q1YkdZZUt4cnpoOFJLejFCT1hSMEFVX0lMR0h0aW1PNkxIQW1qTjRXWllZYWZnOEJuNHhCTnhFaXhxNmFRc2gtcUlVLVZSNkcxNVhzNzEtX3h6WTNUa2V0RHBieVRRMUFPTGpvdnlvWE5wUjdqb0MwamplV1g1M1prZ2ZTVmZ4T1Zic1ZqZnlNanA?oc=5",
-      "publishedAt": "2026-11-19T20:46:13+00:00"
-    },
-    {
-      "id": "dea644507d98418d",
-      "title": "Jackson\u2019s Warning and America\u2019s Way Back to the UN",
-      "region": "Americas",
-      "source": "Toda Peace Institute",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTDJBcEpLZlNFRzlOaTdxejZSenVNRU5BclBoTW1RcWFET1RXNEY4X2tXcUwxMVZRR2VLM3NxNUhoZmJyc3dEcE0yeXpGbjcySjV1bHUyX0pUS084OGVaX2hYTFpybFhXSjNWQ1IzVlZrM2tUdko0Wjh6QW11UE5DUU0xbUtobV9CUFE?oc=5",
-      "publishedAt": "2026-11-19T20:43:06+00:00"
-    },
-    {
       "id": "31a31a95d3b07bc9",
       "title": "Race to replant five South African baobabs after export blocked | Illegal wildlife trade",
       "region": "Africa",
@@ -75,12 +315,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T20:40:00+00:00"
     },
     {
-      "id": "0c804853ffce6951",
-      "title": "US Senate blocks Iran war powers resolution",
-      "region": "Middle East",
-      "source": "Middle East Monitor",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ0tIc1E4Q3NBMkwyRWlLNmY1Ri1adEYzVDVZclBERlV0a3hlUlVVMFdNTGlGVnJ2NjZhQVdjQ01zbjkwWjVjTHVtYUFkRmZHazJIcTFlWThldXpiT3dld1dSNXlkYTdtQjFhaUM3aXBSN2d3WnBacjZkMjBGQU51c3pUaTFGMTNLXzV4TFRYYnTSAZYBQVVfeXFMTWpUVVVXdV9PM0tXaHp4WFE2UUF4WEctYWx0X3NSYWQ0UUs1VmtmTkhsMGVGeUdxVEY1Ri05R3g0Ym5aZWI2Y0R5WlJRdEx2N25iLVVrNm9RNXV3Y3pzaGE2a1NOOVJWT2JZWFBoTFZNeFFBTjNud1Vjc0lBMkV2UzRtZldtekRIcjRLUmhwcWl5V1FERVln?oc=5",
-      "publishedAt": "2026-11-19T20:31:00+00:00"
+      "id": "105018c8128ea9e7",
+      "title": "How did introduced cats and pigs threaten tuatara on New Zealand islands?",
+      "region": "Oceania",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYTZQbG0xVkZaQ0FaUV9KMDBDU3JUdDZYTFpkeWdLRjVUeS1hbC1HemM2NEh4aGp6V3JBU0dwOUQ3S2hVRmZyenFzWElWZ1Vta09feFhQMDhoS1I2QlQyR0hCVHZJYzNzSEtrR0lnbjhfNmlrNGh2Um9fWlo1WEtmUk1IQ3h4T3FkV1pNSTNyUHJVT0FETTNzUmJCQ0RrVFV6aUF2a0FFa3RVdw?oc=5",
+      "publishedAt": "2026-11-19T20:37:51+00:00"
     },
     {
       "id": "457ad7218e08722a",
@@ -99,12 +339,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T20:12:27+00:00"
     },
     {
-      "id": "1b4ca648197ea207",
-      "title": "Watch Europe Won't Go Back to Buying Russian Energy, Says Secretary Wright",
-      "region": "Europe",
-      "source": "Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdjdfTGlBNlg3SjVSYW1Sc2k4TnJzOG1vWG9lZmI3S2Q4TzNrRWp1QUMzSTJQRjg1MkNRZ2VnY0dBWHQ1SGFlMm1FYU85QVhHT3ZDUXlkS1BiYTdwdDNULW05bHJIeVFJeGtQcXY5bGJKNjB3Z0JFWnNrbnlmVlZHNFJKMWFXSS1QNGFVUkRtbERVdHlaTnBGLVN0SVZpcXdXdHFGREI1dTFCWXc?oc=5",
-      "publishedAt": "2026-11-19T20:02:27+00:00"
+      "id": "400137c84b466dfa",
+      "title": "NSA outage hits key facility for Middle East intel operations as agency resorts to workarounds, sources say",
+      "region": "Middle East",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uTGlTZ0RCTDRIa3NSSk8zZ0hBRlNfNFlMY1hIZ1FRNEZLQXNrRmRXYV9ENG05SV96MXZLaFpwT1d1Y3lYcTFMVE05VWpvRDIxWE1tdm1ZUlRNeHA4?oc=5",
+      "publishedAt": "2026-11-19T20:08:30+00:00"
     },
     {
       "id": "667e5550da6e93df",
@@ -115,30 +355,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T19:56:48+00:00"
     },
     {
-      "id": "b87c42f3ca82117a",
-      "title": "Culver\u2019s is America\u2019s favorite restaurant, according to Forbes",
-      "region": "Americas",
-      "source": "Wausau Pilot & Review",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNY3RrT2hPRGlZYzh0TEN0T1QzQTVZWW94U0JwZzBucmI0SWpGRjhmQ052S25TeWZja3c0dUlzV2NnYVJUWmY4LWVJd0d3NWpTMVlRRDlYa0FPVHF3WnRxekNzRWJKTGZqaS1xR1oxSEFmdS1vZlZwbDZ3dlhHQVdxZlZrOFJBMjV4STQtU1h1Nlhva3pxYThkOTdXc2M4b0dEamdQem1iMA?oc=5",
-      "publishedAt": "2026-11-19T19:51:47+00:00"
-    },
-    {
-      "id": "79a884dbf3bcc513",
-      "title": "The Pivot to Asia: 15 Years Later | Proceedings - November 2026 Vol. 152/11/1,485",
-      "region": "Asia",
-      "source": "U.S. Naval Institute",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBoaXJ3UGJVaFMxZy1xVEN1NVFmdzFWaWxCYjlZaGlQNUFkV0JZOE5TWk1nVlRHcnE5YzNYc01YbG5jWFVfaU9Z?oc=5",
-      "publishedAt": "2026-11-19T19:50:14+00:00"
-    },
-    {
-      "id": "a3d1072892397e90",
-      "title": "Infantino\u2019s Path to a Fourth FIFA Presidency Runs Through Asia",
-      "region": "Asia",
-      "source": "New Lines Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcjlsYWhzNkhMTWl5elBhSkVuVXlYbWFQblpFZEpwQ20zYTBScHBVOWJWZDZLTWRMb3hlWEprVy01bG5XdEhteWFaaS1HdkVfRjB2VUhSTlU4X2VjazlRTkUtR1BDS1dqTmNYY0NiNlVTbXVnWUlSdnNHUzgxU1JFeVp4MjZ4OC1qVW05dHBBZURYOU1vOC1RWXNZX1laR1djcEE?oc=5",
-      "publishedAt": "2026-11-19T19:39:49+00:00"
-    },
-    {
       "id": "8d003875572011c4",
       "title": "Five European ministers on why they won\u2019t go back to business with Russia",
       "region": "Europe",
@@ -147,12 +363,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T19:30:00+00:00"
     },
     {
-      "id": "a73486fc3060a7fc",
-      "title": "Asia Minute: Regional diplomatic moves from 2 key U.S. allies",
+      "id": "a7af80432d814881",
+      "title": "Manjares Leads Philippines to Bronze at Asia-Pacific Sixes Championships",
       "region": "Asia",
-      "source": "Hawaii Public Radio",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRkN6RWVWYmllc2ZrRTRTZW9lZVNQTW1PY3p6MmhNcnNneVcwUEl4cHBpNkowMXh4eTJHblJ4MC1OU08tR09yMkZzS1p3RWxNVE9Uc0xIdlBEX3Atd3lEODN0WnIycGhGT0llM2lybXhxNFpYa21TVlN2ZU9uRmtoendRTnQ5Nnc3YlVvTTVPdWtqbnFRZ1A0X25RRWVJZ1otRlJ6RkgwMnN3aGNaTWotQmk1dFJTd2c?oc=5",
-      "publishedAt": "2026-11-19T19:08:00+00:00"
+      "source": "Maritime College Athletics",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPalA2cjgxNy1GZVpOMm5iMlZhS0FHdlFfVU53VHN5WXBGUmNiRmxRZ0FxUDBMbF9Dd29mUDdxM3g2NDBGbDNNVnVGWldMTnB4c0JILWRmb29MWGc1S2lJSkVTVDFnM2h5c3VHVDFpbURXRlJUUTNIQ3p0TUNpTnZSVnFOekEyRGF3SURiQ2hHbDFCbTZ5Z1Zab1NicDA0YWJRVzk0SzRVbDFtZ3g4N3E5aEY1RDJSdVVXQUFrU0dXYWl0dTVKWEhxb2FFNGZGUjBlYnBn?oc=5",
+      "publishedAt": "2026-11-19T19:24:28+00:00"
     },
     {
       "id": "cd19f2ef170eab11",
@@ -161,38 +377,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "source": "James Madison University - JMU",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdWVhNUJpVWtQNmR0Mng4dmE4SXVsQVFfVEJUMjFfYnZhY210RjZrcHB5TTNzSUQ5M2pZWFhPbGY2UjJMUTRlR2E0OVBoSEw3Nm5TYWtHeFFoaUw2eTZFMGtsbTZ3UUR1cFRKQUV1YVY0UTBPVk41VmRlSDZLR1phUHF6OGw?oc=5",
       "publishedAt": "2026-11-19T19:07:20+00:00"
-    },
-    {
-      "id": "64ca14b05847c37f",
-      "title": "Iran\u2019s Balkan Terror Network Demands Mossad Action",
-      "region": "Middle East",
-      "source": "Middle East Forum",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTlWMnRmbEZmNS16WmpyR0RVdWpzZmZrRGpzTWVjMDB5cXJHVF9fYnZ0ZTZUSmlPc0wtUElQclNTeHVuZHRmQWtoN3U1ZktONjZRcWpoaEpHT3JEMzNvMUk0d3JGVEVUejJCUExyVFZZY3JkeHBhYzgxdEx3a3lHNFdGQmJGMy1ud3didw?oc=5",
-      "publishedAt": "2026-11-19T18:54:23+00:00"
-    },
-    {
-      "id": "db6f730fe3e9b350",
-      "title": "Europe Launches Prototype Vessel for Protecting Undersea Cables",
-      "region": "Europe",
-      "source": "The Maritime Executive",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOclJ3em9ZSzJXczhrQ09jbE9hVE51SThkRVFjTGNjbTdNOW1XSXd5Qkg5UDlLYTBORWZFWXZXX1IzcllLOHpERHRveTUxNXBrMXUxeDk5QldVZV96NTllQ243MWxST3pyYzNvTkVvemxpSjdOVGowLWg3UWVJN3UzVDlkQUtxRE5hdkVtelROTlVDbkZsNGc3S0RDQzNLNW1lbHhheA?oc=5",
-      "publishedAt": "2026-11-19T18:54:00+00:00"
-    },
-    {
-      "id": "7eec477baf9205e7",
-      "title": "Trump Draws Ire Over Calling Putin His 'Friend' as Europe-U.S. Rift Widens",
-      "region": "Europe",
-      "source": "Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOHNobHVhRFB3TnlwNG8tUXBNSjkwNnUwSU9meDRlVk5mU0NScndhbUh0TGhndzVESFFiYllWcUp0OUtxVndNLWNsZEg1QnVMZ1BNam1PX1FlVXZhelFlUWdNNXIwTVFEN2pmaWdrdnU0QzF0QlduUnQ0U2hpSGo0M0swVlI2eEhFTHRjMmNFWUNOTWVNQlBBdHlpOHU?oc=5",
-      "publishedAt": "2026-11-19T18:51:11+00:00"
-    },
-    {
-      "id": "e1c3958b28c01d8d",
-      "title": "USS George Washington Departs Middle East After Replacement Arrives",
-      "region": "Middle East",
-      "source": "The Maritime Executive",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNGU3YkJ2cFY0N3ppV3VDbnpIbGRKUzNqWEdSNFRZWVA0MEFfLTVtZjJBb3hTWG4xMlk4MkFhX2Zjd0FmZlN2V1V4SDEtSWpVWEZHNHBJZG1sUkpmUEFnZFVwSEVOUndjajZ0NUFQVV8zQ24tLTNhVXF5NTI1TlVPd3I0TFZINVZkZFg5dnpERFUyZGE3QzJTeF9sUXh3aFBzTU5hUnBpczVPQQ?oc=5",
-      "publishedAt": "2026-11-19T18:48:29+00:00"
     },
     {
       "id": "143f4b2b92a57714",
@@ -219,14 +403,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T18:17:49+00:00"
     },
     {
-      "id": "5d4b43fbf6cc676b",
-      "title": "Game On: The Networks Powering America\u2019s Biggest Gaming Moment",
-      "region": "Americas",
-      "source": "NCTA",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JVjFQd1pORmlXYVpFUklmczF6d082U0thUEk5NnZHN3BTVmczWjd2NjJ5QnE0QjgwVmFhejF2MnZMVDAtNmNuVy1rNlhEUFBUMjN5UzFsN1JxVmNBczh3eU96RjVQZl94dEp3NzF4UENydDMwaUwtaUh1M0plVzQ?oc=5",
-      "publishedAt": "2026-11-19T18:17:35+00:00"
-    },
-    {
       "id": "88c9ff294f7ed407",
       "title": "A Conversation on Middle East Headlines",
       "region": "Middle East",
@@ -236,11 +412,19 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
     },
     {
       "id": "aa7a89a5163eeb31",
-      "title": "AMOC Risks Running AMOK: Putting Europe into Deep Freeze and Disrupting Monsoon Patterns in Africa and Asia",
+      "title": "AMOC Risks Running AMOK: Putting Europe Into Deep Freeze and Disrupting Monsoon Patterns in Africa and Asia",
       "region": "Africa",
       "source": "Health Policy Watch",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOY1ZCNjdKdXluYTlPSElOT0FzaDMxRU5TTkkxZ25FNWl0SE9Zd0pyWllVRG9ZQnlxZWd6X1RfZTljRDM4M2k4b2V6Z3ZDendxSEV0UU1LOXVSM3dmb1NhWVdUb1JicHNVSlN6R3pXNldYbXBUc2lNWDdzd0pocXJmbVlpZw?oc=5",
       "publishedAt": "2026-11-19T17:56:29+00:00"
+    },
+    {
+      "id": "faf6a24c2e2c2fd9",
+      "title": "Africa\u2019s expanding digital ID infrastructure faces a cybersecurity capacity gap",
+      "region": "Africa",
+      "source": "Biometric Update",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT0k5aWpwYkc4VE9lLUV3Y1R2VWp2VWdGenVtVTVBOXQ1NGRZNVI2WWRNSkRyc2V4elA1S2ptdk9QNFNXMXkyVk84SGtjUkxla21oWWVJQTE0cXpLOWhkcmFSdE1VWTRYQzJBb2thZXBiaDR2cDVYRGhvU0I5XzVXZGRSLXZxUWtMejFQbnRLcVNJSDhpX1QwNWtkcHk1N08tWEtkV2M3NlpTTXB2c3JLVklIWS0xWmhf?oc=5",
+      "publishedAt": "2026-11-19T17:53:00+00:00"
     },
     {
       "id": "7bbdb86c3c51770c",
@@ -251,20 +435,20 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T17:40:51+00:00"
     },
     {
-      "id": "ec2fe5fb69f1fb52",
-      "title": "Report: NSA Hub for Middle East Intelligence Hit by Network Outages",
-      "region": "Middle East",
-      "source": "Haaretz",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQLUh6XzY5c3hxMDFEUmp3Vl8xTkZhbGxHQmI5RVVyeG5PUzFpaDZNQXNfNUJLYVJpN0xHMmpWZnpONEJOeVAzVW1kWDBiZnRyWXV0cVNYbjFhRGN1UC1yalpZYlB3ZzhPQmhLVWpQSjA1cWllUWRzbW1EWEU0NTNJeUdkTVJISVd1YnpUZ1lXVHJfVkFEUGJUcXFzN2VuMzhpMDFzSjZpU2t4eThWekFxMGdqTk9VdElyOHdjemszcEpoNHRlckpmX0p6Z3FDVGdoNUtyb3ZHYnRfai10bENtOUFJRUptNHVzMGh4TVZR?oc=5",
-      "publishedAt": "2026-11-19T17:40:00+00:00"
+      "id": "d6394b44d91e0a2d",
+      "title": "Trump\u2019s Pick to Run America\u2019s Cyber Defense Agency Doesn\u2019t Think January 6 Was an Attack",
+      "region": "Americas",
+      "source": "Mother Jones",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOd2w4UzhpVVpSN0tOZHBaVlFUNVhtdWJTWi02OFF2NzBNczFsWlJES2w1c3U5VmdTYVRTcmxla25jS0FBVTdDTW03bXNNa0s0VE10eF81dkZrYXpHZ0dvOTB5Z3djQ0FxTXJnOUUtM3NoY2VUb1ExZ0VHdkMxbDNHSGxJYUt0T1ZmRDdObE1uR0NWVDN4WGJOYlVWN1p0clNlS3BmZkNuSjVqMEU1Smh1OWhRUXVra2dXUzhBSFk4WERVVVRsSDlfQUFFYw?oc=5",
+      "publishedAt": "2026-11-19T17:40:06+00:00"
     },
     {
-      "id": "390752cf177195b7",
-      "title": "The legacy of Dakar 2026: What Africa's first Olympic event leaves behind",
-      "region": "Africa",
-      "source": "Olympics",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQXRkUWI3TDhqR0FyNE5WQlhiRFdfSTVqSVlIUXJ4UkZNc3dHRllVLVI5MzNhTTZmS1REdkczdUlQeHVjaWotU1lFb0JhVGhVUFNvSnNhLXYyZVd4MWNOVjVoQTd0WnBsYW1LN2dqelh5RjdhSklXellvSjVpVHZiUjJacm1xUlUybkg3SzNENTdkUQ?oc=5",
-      "publishedAt": "2026-11-19T17:38:47+00:00"
+      "id": "adf3328b139f478c",
+      "title": "Connecting islands: PIDP meets Seasiders",
+      "region": "Oceania",
+      "source": "Brigham Young University\u2013Hawaii - BYU\u2013Hawaii",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxNjYzQUY1QkRvSnBJdVVFS2Y5UzJHQjF4X3JRdWJZRTNyX1hPWVpCSUxITGt3b0g2b2lpcVQ3N3ppNUxyYl9hMWRSVVl3QXptQ2EzOVBWeGJwRU1qTEtzNXNibG90eV8zVEhOQkxCVGp2UkU?oc=5",
+      "publishedAt": "2026-11-19T17:30:26+00:00"
     },
     {
       "id": "322682cf9d1a0bae",
@@ -275,52 +459,20 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T17:24:44+00:00"
     },
     {
-      "id": "0517ed63afd4e032",
-      "title": "Russia's Africa Corps Deploys New Drone in Mali as Strikes Increase, Analysis Says",
+      "id": "24c8fd784dc7b7cd",
+      "title": "BP Said to Weigh Divesting Its Key West Africa LNG Plant GTA",
       "region": "Africa",
-      "source": "The Moscow Times",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUWhTYXV6NGNCYXJqQVc0c2VRQW5VZ2tJeHp6aEVENWdPdjBYckRkbWlmcXFvNGlQdUlPSmdsSy1tcklJNDNNeHoybmRBaFVEckUxblVVYk5LV2ZZaldtUHQ5Z2kyOEpuYjdQRTRwWlBoRnNrU2JzWWlEclhaaXE5M0I1Mm5lRUc5WEVEX0JvZVpSMTltcTBVbVB3dzl3c1JzMlJ1V01LMndmZUpkd0JTTUFHc3h1UWZMVjRsckFhNGxpU1pQRHR5aA?oc=5",
-      "publishedAt": "2026-11-19T17:21:19+00:00"
-    },
-    {
-      "id": "adf3328b139f478c",
-      "title": "Connecting islands: PIDP meets Seasiders",
-      "region": "Oceania",
-      "source": "Brigham Young University\u2013Hawaii - BYU\u2013Hawaii",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxNjYzQUY1QkRvSnBJdVVFS2Y5UzJHQjF4X3JRdWJZRTNyX1hPWVpCSUxITGt3b0g2b2lpcVQ3N3ppNUxyYl9hMWRSVVl3QXptQ2EzOVBWeGJwRU1qTEtzNXNibG90eV8zVEhOQkxCVGp2UkU?oc=5",
-      "publishedAt": "2026-11-19T17:20:43+00:00"
-    },
-    {
-      "id": "d6394b44d91e0a2d",
-      "title": "Trump\u2019s Pick to Run America\u2019s Cyber Defense Agency Doesn\u2019t Think January 6 Was an Attack",
-      "region": "Americas",
-      "source": "Mother Jones",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOd2w4UzhpVVpSN0tOZHBaVlFUNVhtdWJTWi02OFF2NzBNczFsWlJES2w1c3U5VmdTYVRTcmxla25jS0FBVTdDTW03bXNNa0s0VE10eF81dkZrYXpHZ0dvOTB5Z3djQ0FxTXJnOUUtM3NoY2VUb1ExZ0VHdkMxbDNHSGxJYUt0T1ZmRDdObE1uR0NWVDN4WGJOYlVWN1p0clNlS3BmZkNuSjVqMEU1Smh1OWhRUXVra2dXUzhBSFk4WERVVVRsSDlfQUFFYw?oc=5",
-      "publishedAt": "2026-11-19T17:18:43+00:00"
-    },
-    {
-      "id": "a39da0757efcb081",
-      "title": "What the Midterms Taught Us About the State of America\u2019s Democracy",
-      "region": "Americas",
-      "source": "Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaG5tNzEzN3lOdEZDSzYtaGtNUU1kVFF4c01HVjg1TFFmQVVVVmtLZFNydGVsOHlaZ1FKUkEtLVdPeEFIal9FazFEY0pfVlpyTnlGNFdKenhodUlIemdJVTU4MUlyRGstNk55MEtoMUtLaHJCZ0pQQk1tVTA4Mm16X1pKMEQ3cHZzeHhEZTE2RmtkalktdmFwQlFBaGUzS2tONG1ITWdB?oc=5",
-      "publishedAt": "2026-11-19T17:15:33+00:00"
-    },
-    {
-      "id": "b9d3c4e6112b1a86",
-      "title": "Trump Says He\u2019ll Hold Friday Press Conference After Asia Trip",
-      "region": "Asia",
       "source": "Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQnVocEVvLXQxc2x1VlpOajNsMXVXV1hMUVFKQUY4eVJrV2lGcENfYUNUcDl6OXV6aERneWs4YWx6NTNXbWtzUmhuLThpLXZrSW1rN2VwQzZQSTJUWUE0c1pSLXlsckhkSHd5TVlGcHBPaXBqSjZCWnFpY25QWGhXUXYyOTEwMUtuMzRTMEpUMHgwWm5QQ2htNDdsR3FsRTlQRElYRHZnUVpueVdBbHVqZEx3?oc=5",
-      "publishedAt": "2026-11-19T17:08:54+00:00"
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUURRd3cwT2kycENhZnhOQXlMTTZVNU1qMkFJTFVjYTI0X3pMcHZFemgtRlRNaU9oSFF0MGVLaW5LUy05WnU4ZTJiYy15UUJBMHBpdVVIQmlSMFJFalNKNy1PZWEyQnJ3Q0xJc0RJWkhlbGFfUm9xNEhfRnJxREdRREx5YUZMZHNiU3c3UVpYYUhWYkl2ZGhlWFJ2TkM2N2c3TVAwb0Y1ZjFFb2hTUjRhUQ?oc=5",
+      "publishedAt": "2026-11-19T17:20:54+00:00"
     },
     {
-      "id": "aafa45868c3de437",
-      "title": "Nissan positions David Johnson as possible next Americas leader with promotion to vice chairman",
-      "region": "Americas",
-      "source": "Automotive News",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUWEtNUFZaVg0TUtZR0RfcHNTeTJFbmt5bFN0Z2E0clpZWWVNVWpWeE0xRk1aeFozYnlkc0cxS0x3VXlNbWVDaHNidVpmS0dNVklGdksxczJkWDk4U0lLeGt4QlBDQ092MUl4cUNTb3hnSTRSaVc2X1FXaXJpc3E5R19CbFBCMko4WmdpRnVNMU5uOG45?oc=5",
-      "publishedAt": "2026-11-19T17:08:00+00:00"
+      "id": "0d254db51d10d564",
+      "title": "A vanished bird from Haiti may help solve an ancient Pacific mystery",
+      "region": "Oceania",
+      "source": "Earth.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYTFEbFQxNjMzamduNlNiYll6YlAxT010UjhoWDF3Qll2R0JEOUFvX3ZPSFJRVy1sSE5CSDlleWFNcHNvTVpNYUZiWjNzdWVVRVNSYVVuRE9UZTRORXc0RUJFaUZkUE1jNFBWN3ZwTXZHaEEzZ0V5cFgwand3Y0Nfbk5WcW9vTFl4S25PcGZsUi1xR0lyTlBVcFd4SEtaTWMx?oc=5",
+      "publishedAt": "2026-11-19T17:07:38+00:00"
     },
     {
       "id": "f49fab7ae200e030",
@@ -329,14 +481,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "source": "IAPP",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOemZLclhXMXpSQjREQkZJUGlRT25FM3otNVNhSnN3UVU4MEM5cTRQRU9uTXdMUW4wQURhd1ctM3F3TkVDZUR2YmVQc1pVcWNhVmh6WFZrUS1MWkNYUF9DdzJ2bEVqc2g2Tl9GalgzSDdpRE9ZdGFnWnhtTmhuUm15b2RwbVBVeWllRURsVjNjZm9pZWY2R2c0ZjlGTEJ6VlVXdVNZUFFfeUVaLUt6QVdVU3ZfSVgwV09zUk9IaE5HYndaUmUyWXRz?oc=5",
       "publishedAt": "2026-11-19T16:44:31+00:00"
-    },
-    {
-      "id": "bf9eecd57950178c",
-      "title": "Beloved burger chain named America\u2019s favorite restaurant",
-      "region": "Americas",
-      "source": "Cleveland.com",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeFJYWktjSGh5RlBnRVlzYTlkQTBpZk5nWEhjclVRSVk0TmVFRi0yOHhoX1h4YUNpQlB2RnJocFo5bVNsWHlRZHpySHpSaFBaWjhjclEtbHJOT3JiQlJWWjRJOEQycUpoc0VON1FkVXA0NG9Jd2JPMW1fQzhZMHZWb1BCdWVmTTZMQVN3QUdrNmE5eUIxdFNKdkx5SC1pbGtHSUFiYi1pU1AtLUnSAb8BQVVfeXFMT3NWek5xZHp3Q29VTVZyZmtnanU1Wms2TTBJdU9paFM3Y3B0amY4eGlMRUZPZVVZenFvejlaU29tNFRDQkJwZThRVlV6OGpZN21rSWtxZm93Y1hCVXpUcXFIZlNWLUJnZHZ4aV81OWFoVUhxZzFuM2FnZWFKVGdIZnNna2Rra0w5ZlNHRE1iNTgzUU0zTUR5NFB6amliZEZ5NWpYcFBEWTdDeXAtNkJfQjhFT3lRNlV3aFB1WGlPVUk?oc=5",
-      "publishedAt": "2026-11-19T16:44:00+00:00"
     },
     {
       "id": "393de4ca7561ddd3",
@@ -355,12 +499,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T16:38:00+00:00"
     },
     {
-      "id": "ff72beee48719002",
-      "title": "Climate Change And El Ni\u00f1o Intensify Fires In Southeast Asia, Affect Health Across Nations",
-      "region": "Asia",
-      "source": "Health Policy Watch",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTUhueThHN3Q4TnQ4alFZU0U2cVFSQ0RHTldUbEl1d29EU1pVNHpSemZHWTljZkw4OHZKR0ZFVkt2ZDhhWjIxdXJyNFhkNjJaZjJzcndTTVVVRnQ4bjEyc0tFNUNvLWwyMEctdzVlbU9SRlZGejdheU5uZWtsdThKN3VtY0FRVW5wQzUydDZTZUQxbGdNZ1UtcXQwZ2c5WXpJeFZzXzc0RXdaLXhma1Z6bWRoU25kSWVPemJqSEpvcw?oc=5",
-      "publishedAt": "2026-11-19T16:12:16+00:00"
+      "id": "7eec477baf9205e7",
+      "title": "Trump Draws Ire Over Calling Putin His 'Friend' as Europe-U.S. Rift Widens",
+      "region": "Europe",
+      "source": "Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOHNobHVhRFB3TnlwNG8tUXBNSjkwNnUwSU9meDRlVk5mU0NScndhbUh0TGhndzVESFFiYllWcUp0OUtxVndNLWNsZEg1QnVMZ1BNam1PX1FlVXZhelFlUWdNNXIwTVFEN2pmaWdrdnU0QzF0QlduUnQ0U2hpSGo0M0swVlI2eEhFTHRjMmNFWUNOTWVNQlBBdHlpOHU?oc=5",
+      "publishedAt": "2026-11-19T16:29:45+00:00"
     },
     {
       "id": "76feb5caa0f558d0",
@@ -371,22 +515,6 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T16:12:11+00:00"
     },
     {
-      "id": "8d70b03851009c92",
-      "title": "U.S. Under-23 Women's National Team Will Travel to Europe for Matches Against Germany U-23 WNT and Chile WNT",
-      "region": "Europe",
-      "source": "US Soccer",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOS1BvZVVER21GM2FhclVXSjVqNFVVQmZYTXhMN0FLTWVHVGRhSExPYVVVa3lVRkpvc0MtSU1pR3BSdXg0Wk5DWnZjdlN3TEd0ek1ER1E0cU1UZlNGVHRtVXAtcDVydi1oRFRDTnRUa0dQMENrSDFLT3N4eTdGUlVBdUtKdTlpdG14YjJYbHJXRmM4aU55WEsyeEhGMFg4OGNNbUVXTF9MeHRPMWJXbnNTZ2hJSDhWM0NGYXh2eg?oc=5",
-      "publishedAt": "2026-11-19T16:01:40+00:00"
-    },
-    {
-      "id": "faf6a24c2e2c2fd9",
-      "title": "Africa\u2019s expanding digital ID infrastructure faces a cybersecurity capacity gap",
-      "region": "Africa",
-      "source": "Biometric Update",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT0k5aWpwYkc4VE9lLUV3Y1R2VWp2VWdGenVtVTVBOXQ1NGRZNVI2WWRNSkRyc2V4elA1S2ptdk9QNFNXMXkyVk84SGtjUkxla21oWWVJQTE0cXpLOWhkcmFSdE1VWTRYQzJBb2thZXBiaDR2cDVYRGhvU0I5XzVXZGRSLXZxUWtMejFQbnRLcVNJSDhpX1QwNWtkcHk1N08tWEtkV2M3NlpTTXB2c3JLVklIWS0xWmhf?oc=5",
-      "publishedAt": "2026-11-19T15:53:00+00:00"
-    },
-    {
       "id": "d3f2c018c9aa85af",
       "title": "Special Economic Zones: Lessons from South Africa's SEZs",
       "region": "Africa",
@@ -395,28 +523,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T15:49:31+00:00"
     },
     {
-      "id": "964b8395113d7d5c",
-      "title": "South Africa Hawkishly Holds Rates as Inflation Risks Widen",
-      "region": "Africa",
-      "source": "Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYmFqTnNoOVpLQTBSNHFZLWNHTUVPM1FsNGZ1dGo5eGpLQWtzelNkS1hWSVFGWWcwLXBCX2dZVGhpOFlRbC0tcnZCaEJnM3NLcnNCNnZvV3VqVnVUXzZBcEk1bHAxOVVha3Vqc01Eb2N4dk1qZllhQVNPSjByRDVXdFNRN01MdERvM204Z3VuLTdWQWxjYVRPcFJCN1hYWWNMcU5LcDVMQlBEcUlibWZj?oc=5",
-      "publishedAt": "2026-11-19T15:38:42+00:00"
-    },
-    {
-      "id": "64ccd0a244deb480",
-      "title": "US builds up forces around Iran, but can it sustain another war?",
-      "region": "Middle East",
-      "source": "Middle East Eye",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVy15MmNQOWlDN003N0dlQVNHWWtNVGs0Rk9LU3FSdFhzUG01bHpfMHZpckF3a1pJb3pRdHJnYzRfZ3BncjNIVzN1YlRYTFFIVFJWcHVpSUJ0QWI2VjFfdGtpQk1TZWs1MmNWSFRWc01Md0hENzJoRWZUWURRcE84RWFjRWw2T2NkR18tOERGZlU2YmRM?oc=5",
-      "publishedAt": "2026-11-19T15:17:00+00:00"
-    },
-    {
-      "id": "71ea16244cf74574",
-      "title": "El Ni\u00f1o shifts Pacific cyclone risk east \u2013 what it means for NZ",
-      "region": "Oceania",
-      "source": "1News",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTFRGR3ZtRXpNNkNxYjJadk00d3poeGhySHF4VG9NLWY2WTBGd1VzdDJhcDEtZ3dyQklORjA0aTUtTW1EYXNvaFduN192QlhXc215NTlyRGl3OS12TFYwZndJVV9qTVczYnpPTWlpYmM2VTJhMTBSUEZDbnZSN0ZfWHhjM3I0a0N0V01tZlRLWWswVTJwZ0phMDRwbF92dw?oc=5",
-      "publishedAt": "2026-11-19T14:54:58+00:00"
+      "id": "b60b95cf5683fd2d",
+      "title": "Why the Pessimists Are Wrong About Latin America",
+      "region": "Americas",
+      "source": "Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9TQktzTGtoLUtJbjZmbTlKajNlV2pQR05yOFgtNTBOWF9iVTMzc2ZzcTdWemVEWXA1ZnQxWnZnNWFhZUdXZldYRG9YUnFhV1Qyc3VOM0dPTlVzbWQtaFpJbjRxSFlXRlJkTWFSWGF6Vzc1NW8?oc=5",
+      "publishedAt": "2026-11-19T15:30:00+00:00"
     },
     {
       "id": "76d6c6eec9a4c830",
@@ -443,20 +555,20 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T14:36:59+00:00"
     },
     {
-      "id": "ce57e626eb45d790",
-      "title": "Why mental health medicines don\u2019t reach patients: lessons from five African countries",
-      "region": "Africa",
-      "source": "Clinton Health Access Initiative",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQUlBbUZ6a19meWc0RURpbDZJWXc3TmxhNEZOOEJ1U0t3NE5MNjBSaWdOMGdKYmFScEg5Z3hFbHhkb0FwNmhHVktPNndSbElaWkNZMDljYVNNZ0RBNEJMRHVhTmFzLW5nQTZsMk4zUGhKMmF1ZnV5Ukh5WUZKZ0JMaElxY0JzZG1oZzNqUlpaMERpVW44OEtzeXkyREZ0QQ?oc=5",
-      "publishedAt": "2026-11-19T14:02:07+00:00"
-    },
-    {
       "id": "c1e6f29c1daf3527",
       "title": "What is causing America\u2019s recent outages",
       "region": "Americas",
       "source": "The Economist",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeDJ3WllQREF3R3VjZkl1a01jY1F5THhKa000bGw2MTY0ekJKVGZSNEx3b0NYYUJpWVotd3BNa0pPUEtoT3pCVFc3a3B0OGxMQVhMYWtUTGtSU3puZDdDanZsczNpbGpCZElGRm1DT0tMUTVBTTI5VGtGU3BzcDFLcEhRNTlZVWk2YXNBekhKelZYdjd5?oc=5",
       "publishedAt": "2026-11-19T14:01:02+00:00"
+    },
+    {
+      "id": "2bff81e014edd3d6",
+      "title": "Woman unable to leave paradise island for three years, trapped in bureaucratic limbo",
+      "region": "Oceania",
+      "source": "\u041d\u0430\u0448\u0430 \u041d\u0456\u0432\u0430",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9jMWg5aFA0ZG1tNWp2SkwtU1BHV2tIVEd1Y3JKMFp2dEFZcGdLNE5zQ25BYUE2NFg3dTRPZHVIQVZna3Q1UHlLQmtHSdIBS0FVX3lxTE9jMWg5aFA0ZG1tNWp2SkwtU1BHV2tIVEd1Y3JKMFp2dEFZcGdLNE5zQ25BYUE2NFg3dTRPZHVIQVZna3Q1UHlLQmtHSQ?oc=5",
+      "publishedAt": "2026-11-19T13:55:11+00:00"
     },
     {
       "id": "6a6b092935810274",
@@ -467,36 +579,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T13:51:48+00:00"
     },
     {
-      "id": "4c8eda8f742645fa",
-      "title": "US Carrier Presence in Middle East Drops to 2 as USS George Washington Returns to Pacific",
-      "region": "Middle East",
-      "source": "The Media Line",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZHJVdG1rVlJnTnJVMkpNRm5UeWtsMlh5dkJkZGpzemllanA0N281bDJZNXZ4b2hNalRMVElNaGxkcDh6bk5Za0FnRGtWRmJCNGVCcUxaZEJrV1VTZUVpcGVVOEVvejlkMGR3MVBGbGpFNWQyaFZ0SDZMOFBnSzhSQnhaVWMtekZnelN1MVlZVEpELTIzN0FvOWZsblBHUEszN0ZsR3Vqc0hmSFo2WTlCbnZBYlNCQ0FGLXRiYnFrbHo3VEU?oc=5",
-      "publishedAt": "2026-11-19T13:34:49+00:00"
-    },
-    {
       "id": "1f0cda5b9f5946aa",
       "title": "Heightened hostilities in the Middle East reignite conflict",
       "region": "Middle East",
       "source": "Semafor",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPY1gydlFwNjVrZ1BCcXFwOFFXdkE1cWpja01MT1NjRUpfTTRvQWhQaDhHZ3ZDbXVVTl9PUUE4b0M5cWkzMW9odEZwd0hwQWE2bWNxbC15UmdRN3kzTnJQU19iR09TWXI0QkUwbVRKWFJOaS1vXzhtM19rRG5TdlNOWVcwckFsZFNEZnE0QjZGbXdZS2wzbDB6cnplZnFpclBpT3Q3eA?oc=5",
       "publishedAt": "2026-11-19T13:32:00+00:00"
-    },
-    {
-      "id": "ef43ab90b1ace03a",
-      "title": "Day 3 of Trump's Asia tour: big summits, bigger spectacle and unfinished deals",
-      "region": "Asia",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOHZpYjQ3S21yMDI2VkJiR2tMcjllZmRWdm14WGp0ZUhnMHhJemVoaXlYUEdYZ2NjVllXNExxeFNCVlRMYU4waVBVU25lSXAyejNwX1paV1FvZzctYXJubS1Oc0k3NnozQzRXUFJMOGZTMzd3NkhjTlV6NFpoUVFXNU9jNjltNlVHRnpHVldKSHE5dThsNFZWQ1lMd0x5NmVBUGlrMnZRb3hlSGRBNkhYUVdR?oc=5",
-      "publishedAt": "2026-11-19T13:31:28+00:00"
-    },
-    {
-      "id": "9aa765135cec8b18",
-      "title": "\u2018Jurassic World Rebirth,\u2019 \u2018Michael\u2019 and More Coming to Middle East TV Audiences With New Deal Between NBCUniversal and Qatar\u2019s BeIN Media Group",
-      "region": "Middle East",
-      "source": "Variety",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcjlyYkNZSVJNTnd5c3o0cl9qZ2t6cGlWRTJZVDM3QjB4RmIwUEhJQlZrczh0c3Y4U191c1dIaGJYUkQ5eHBRRkZRdy02SlA4cVBZM2t2YkNiNFkzR0NtNkNpcDN4Wmt6TVFNcF8ycGQzT0RJWm1ob0ZRWWxlZ3AtdTM5Vi1TRGFoNWlYT0pmZFo5MnlRcHFNU3RmNmRqZEVWVmpzQ0QtSQ?oc=5",
-      "publishedAt": "2026-11-19T13:27:00+00:00"
     },
     {
       "id": "4883c32b8fa83480",
@@ -507,44 +595,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T13:01:00+00:00"
     },
     {
-      "id": "0708495effd7f4b1",
-      "title": "Commentary | Japan\u2019s defence lessons from Ukraine and the Middle East",
-      "region": "Middle East",
-      "source": "The International Institute for Strategic Studies",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNenV0ZWJJTkR2cmRZajFhNWtJMjRBc0VUN1ZNQ0x0ZVg0N1U2TVZnYXJYenROZXBIakRWMDYwMXlCYWlWTXRhY1Z3dWdtVGt1dW1EcGRDYTg0SVhvenpqMUNGS24tcjJyWlpzOWIwX2dkb1Z6Vjg5NC1wUDlGSUtYMER5dTFGWTdTX1ZKUDJLc3VKSjJRbWEya3FHUHlZcjNIQnEtcFIxR2dxNVZLNE00amdn?oc=5",
-      "publishedAt": "2026-11-19T13:00:58+00:00"
-    },
-    {
       "id": "41b69bdc681b2c4c",
       "title": "Can Japan Lead on Climate Security for the Indo-Pacific?",
       "region": "Oceania",
       "source": "Foreign Policy in Focus",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lVDh2cHJBS3FhM25qYkFlMEc2V3R5VXdqTGpHRlZwcHNORUt2YXJjY3plZGc3YUlGS0JPdTRzcmNhSVV3U1BxSW9udktlandFbUtuejJ3bUFtS1Fkd01yUXF6ZEtoTG1TS1lNQjN2OEdmTVVYSlAzbHJoVEhMdw?oc=5",
       "publishedAt": "2026-11-19T12:57:11+00:00"
-    },
-    {
-      "id": "b148c08953b7c57c",
-      "title": "52 Weeks of Firsts: CHOP to be celebrated as America\u2019s first children's hospital",
-      "region": "Americas",
-      "source": "Billy Penn at WHYY",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ285S0s3SlJNWUdTLUhuWG9MVUN1TzBWOC1FdlR0eFA4bFhlUzY0dWUzdVhjVHc1ZTRqbW1rYzB3OE9iSXV5TmFTN0FIS2lNZUZRc2RUZW51ejB2VXNtT3J6bi0yREgtRzFRc1hIbkk5Z2tGTjdUeEwtQnV1NHU1Z0VzWjBYUnNRdzdQV1RFRDFZdmZVWDFsaXJIdDNQTFg2MkZMWmtWMTVqa294dEE?oc=5",
-      "publishedAt": "2026-11-19T12:44:36+00:00"
-    },
-    {
-      "id": "55c8303eecf849f3",
-      "title": "A Visual Tour of President Trump\u2019s Visits to Asia",
-      "region": "Asia",
-      "source": "The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ2Yyc0l6TGRJMDRyS0pLSk0taklRSXc0VjNCUE10UXRrTUpsUW5jZXBORVlLLVloVjlZbENIa1U5ZkxrWmx2WHRFRFJJSTA3ODVZOTl3akVDRGwtWlVLLXdyUWwtOUZmY2lzRDBlSFFxbHMtQWhyNFl4dG96aElYSmtEY0Y?oc=5",
-      "publishedAt": "2026-11-19T12:14:00+00:00"
-    },
-    {
-      "id": "06283d43162e00fe",
-      "title": "2026 COA Symposium: Latin America's Next Chapter\u2014Growth, Investment, and the AI Economy",
-      "region": "Americas",
-      "source": "AS/COA",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdkNpV0RIYTlsNGprVmlUUFV3c2xtaFUyUGhmM3NJaGpDN0Rva1pENUlQREJvSDhoYUkwVVJDUnFRM2E3T3lOWFg4YlRTQXZVMnRPSURXN1RqSnV2SkJTR1F5VTdHSVVQV1dNTFRJYnRiVVQyWWdHRU82UzRpSHBHbTRkbXJkR01iOXBoVGpvcHFwaElOZ3pwZjVad2h3V0E5Wm95NkNrakZ1aElWTGszSg?oc=5",
-      "publishedAt": "2026-11-19T12:00:00+00:00"
     },
     {
       "id": "fd47702d37701b7c",
@@ -555,12 +611,20 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T11:30:32+00:00"
     },
     {
-      "id": "89ebcaefd64fdfaa",
-      "title": "President Xi Jinping Chairs the 33rd APEC Economic Leaders\u2019 Meeting and Delivers Important Remarks",
+      "id": "5a7fd163e88bbd74",
+      "title": "See How Data Centers Became the Growth Engine of America\u2019s Power Grid",
+      "region": "Americas",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcXZvbVU1LVRUMmtueXBGN1ZyMlcyS19qZjEtMzhTZmsyR2JReHZDWmFWQ0thRklDNkV0MEMtQ0p1d2VIUW1VR0c0NzBaa2Z3STYyRkc2a1p0a2ljTnA4a1RfcHRUcDdWN3lHSG9WRzU1cmdsNWphdTNMMmdpSDh2STdMSGhRUHM4Z2ZSXzl0VVRqY2xHaWJGd1NHbk1MM3FyRzhGbFJWUkNfUWh5dXlFbDJpME5TRmE3?oc=5",
+      "publishedAt": "2026-11-19T11:02:00+00:00"
+    },
+    {
+      "id": "55c8303eecf849f3",
+      "title": "A Visual Tour of President Trump\u2019s Visits to Asia",
       "region": "Asia",
-      "source": "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u5916\u4ea4\u90e8",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8ySzNlR3ZkOFRuVE1KNGZBdE1Qa2tXTTRkbHExbGtZaG1HVFhmRzFjU1pUb3B5blE4YVktT050S1p2emZvMlNHYkJEZldxODRpaVlleXRESk45UHZ2UWdFTTQzM3duWXU0aFNrNnVfaGVhc3RuUlE?oc=5",
-      "publishedAt": "2026-11-19T10:50:00+00:00"
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ2Yyc0l6TGRJMDRyS0pLSk0taklRSXc0VjNCUE10UXRrTUpsUW5jZXBORVlLLVloVjlZbENIa1U5ZkxrWmx2WHRFRFJJSTA3ODVZOTl3akVDRGwtWlVLLXdyUWwtOUZmY2lzRDBlSFFxbHMtQWhyNFl4dG96aElYSmtEY0Y?oc=5",
+      "publishedAt": "2026-11-19T10:34:48+00:00"
     },
     {
       "id": "a3673bcbb33ce354",
@@ -595,6 +659,14 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T09:17:00+00:00"
     },
     {
+      "id": "78e09d35ca198f47",
+      "title": "Pacific island nations declare El Nino drought crisis",
+      "region": "Oceania",
+      "source": "myRepublica",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYzl1UXgyMzR5SExzMmF5eTNRZVV3ckpYZzZlUFV4anFpSWE0VnpQWlA5UEcxZXNZSlh1VkZULWhtb2xFMGpUSHpWVkpaaFEtZWU2NVVaYnI1OVJRbXg4NnNfWkRyNmlJTjIyYzlXUWZEY0ZNc3p0MXFKWmh4WGZNMmlkZHBIOW0zeUM0ZDBrY3RjMU5KQWZNTWdRVUR0VHRQNU1maEFOQWlQSUVq?oc=5",
+      "publishedAt": "2026-11-19T09:15:00+00:00"
+    },
+    {
       "id": "085e30496857b10d",
       "title": "Cabo Verde shares its digital health experience at the first Africa Health Data Forum",
       "region": "Africa",
@@ -603,44 +675,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T09:07:21+00:00"
     },
     {
-      "id": "941f2bee1848c746",
-      "title": "USS George Washington leaves Middle East, leaving region with two US carriers",
-      "region": "Middle East",
-      "source": "The Times of Israel",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcGJJR2k4cDlkdDBSb0trc2ROS0ZYeC1uVWlWWFZBb3hiY01yeUp5R0x1LUVLTmlFOGUtaTFHZzV1Ql85MlF4ZjcwZ3R2R19hd2hKNXEyMnRqeGxaeUJoNzByZ0Q1a2Q4TzRmRUUySzI0S1NzWDQwUlFRd0JlY1VZRUdFX3k3VTBMMzdvYy01alVnWHlPYXdMeHYxS2lMY3ZRTWJMeWM0dFNaMmc4ekppbnJFLVFVc2VrVGptYXRHVQ?oc=5",
-      "publishedAt": "2026-11-19T08:44:30+00:00"
-    },
-    {
-      "id": "62377f71cb59d55b",
-      "title": "PACNEWS THREE, 19 NOVEMBER 2026",
+      "id": "4763af3ac81b8dbc",
+      "title": "El Nino-driven drought prompts disaster declarations in Pacific island nations",
       "region": "Oceania",
-      "source": "Islands Business",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1zeFJJWFBxN3RJXy1XeWt1Wlh0d3h5OERYbXVKUUJyLWh0d1pfYlNJclp6eUt6LWZ3WW5Yb2pZZ2ZwZU9zOEFvR19Fb2xJRlRtaVZWTnZvWlQ3cGkta0d0ZXNzVEQ5eWkwcGRDUUJFLXBhWl8xNmc?oc=5",
-      "publishedAt": "2026-11-19T08:23:22+00:00"
-    },
-    {
-      "id": "cbdd7ab1ff3891e3",
-      "title": "New Zealand Olympic Team",
-      "region": "Oceania",
-      "source": "New Zealand Olympic Team",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE12cHIzeUVScUF1bFJ6aHR1YnBhR29xLWdSbDQwV0N1ZERubS1hbHR1c2dQNE5NTnNKMzh3SXRnS3VYS1NCeU5Za3JfV2VRVENGc0xuTkFqbFktRFlvMDdVMG9KTnNyUVBGNjYxVTlPNDJlVldyZ29TZm1B?oc=5",
-      "publishedAt": "2026-11-19T06:30:47+00:00"
-    },
-    {
-      "id": "75cd9970f209c5a2",
-      "title": "Pacific island nations declare El Ni\u00f1o drought crisis",
-      "region": "Oceania",
-      "source": "Inquirer.net",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRV85SjZRNldlLTdORzl6RXh4SmowMW1FRnlXb04wZ1pnWXJ5R1VuX0RibUNfYWhnejU0RGhqUkVPTFdUa3Qwb1BFclhyX0hTMEtZaTdQVlhoWlZjSFJmQ3YzV1dtajQzczQydHA0OUpUaVZoZUkyYldzRXpfRi1xdW8yV0xfM3VQLWlsUlNmUUFlVkZwU2kxR0530gGfAUFVX3lxTE1PbmVPUU9rYVpVdnEwaE1nNGw4S2dmdG9sdTVGVUEyVF9jT3lWQVJfQzBqYzh2clBQeWhLSllQYmRobUR5YV9NYkwxYnFwVlItSm9sdlNrM2NkcUM1dk02dTNoVGszWkprUHBER3BtcE1XTVI1NjVGWTVzSkQ5U2N1UXRrSExDZ2V1YWZhWmhfeERTcWs1bVpCemNyR2lfVQ?oc=5",
-      "publishedAt": "2026-11-19T06:00:00+00:00"
-    },
-    {
-      "id": "019be7bbe19d01a5",
-      "title": "Pacific Support Vessel Fills Solomon Islands Cup",
-      "region": "Oceania",
-      "source": "Mirage News",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ3hQcVFOWU9yN1pDLVVrRFIyYm1kRVAtbWZYSWliR1NnMktMQTExbHZDblAzVkZBQWhtMGxkRG5NS09sZ1dINGNfS3JaekdWNWhzRGl1Q0ZxemhqMkx3ZUVCQWxUS0NxalZJclV2MWtKWTNveHdKLTBOV1psU2otUzhQTFI2TWgxdG5QRQ?oc=5",
-      "publishedAt": "2026-11-19T04:54:00+00:00"
+      "source": "TRT World",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5UTh3YjAzdEFldXo3OHNRLU5JdVR5aUZZbXVRUkRKZTlCS1k1R1NFMF8yTEMyWEdoLV9aRU1VbnFUYVF2eU5HLTBRajNkNkZhejZINFBNR2Y?oc=5",
+      "publishedAt": "2026-11-19T06:14:50+00:00"
     },
     {
       "id": "cef1bf989dfadd58",
@@ -651,28 +691,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-19T03:52:23+00:00"
     },
     {
-      "id": "eff3493d1ff6b1fb",
-      "title": "Ten boats start Wellington's Brothers Islands Race as offshore fleet grows",
-      "region": "Oceania",
-      "source": "Live Sail Die",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTzhJS3pfcVBCaDA3aVI0RU1QOHZvYUxxTURtUzltLTE2cUZSdFk1QWR6bTdoY0g0Tl9JWjdpRnRCa3pQTnpZN0lINEIzaTN0YVBwanI2RTA0Tmc5ZHF3Y3J6ZDl1bjFkR0ttc0RMbEJ2amVfNV95THRZejVLSVA5ZWxockJEbUFsaFFxQlp4Nlg5SGYyTlhybjRaMTFuYzdsbGJB?oc=5",
-      "publishedAt": "2026-11-18T23:32:56+00:00"
-    },
-    {
       "id": "80accbed99ff804e",
       "title": "The yellow-eyed penguins face opposite situations on New Zealand islands just 200 kilometers apart",
       "region": "Oceania",
       "source": "Noticias Ambientales",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTGltMTRtZ2NkcHlQMFBBWTdyYzFqWEdPekdlT1B6bFpTaFdNZUJPZXZwZDZXVkc2Wl95U05RaldZSk8waEk4dlhvSlR6U1huemhJeU84aHJ1cFFCMzJ4SHY3UHdGVS01bUliSFNBYVdCT1ZNd3JkcXRDQVdDSnREMUlUOTZmR3VodUdJa21UZTVHWE1FZjdkMmJfM0FCUlhMTVItM2FtNGd6eGozNnZacUhPMmZtWF9iOXlnS3lJUjd6bWx5Um1PREZJWURPTThlMDd1aUJB0gHbAUFVX3lxTE5FNjVaRVFfNGdpa3hRbzQzOHZ1VGRKRlpSX3hEX0tFcVNHb2ozd0hhR0VmRmFmT2RJU3V1d3ZLT282c2kwNkNxOU95N2NHSHRDYkI5N1lWRDMtVjBteUJRVVN6ZXBWVmQ3bzgyYnhVeHgweDUtalQ5MnZhMlBRWXNKTWpBV1J6NkdfRGRqTnBGNDlSa1dTUE42Z2VleW1LLXdWdzI3eFVTc3Q5YUlEZzNiVVZqTzhrOWF4Z2Z2SGlta1czdzFVOGFkOXg0RWYyNmd1VDNpSElfVWh4WQ?oc=5",
       "publishedAt": "2026-11-18T23:04:15+00:00"
-    },
-    {
-      "id": "3e56ad3a7b4e4d34",
-      "title": "How to watch 'Love Island Australia' 2026 for FREE from anywhere",
-      "region": "Oceania",
-      "source": "Tom's Guide",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQUZoeEIwUlBIVEFVeEI1a0FOYzZKWDhrQ2lQQzlfbzdxTmxrR295S0dySWJXa2pxX283R3FseFNsSjFrNUYzcWk2c3pjWUp4QlBPVml2V2JmRDVSckVmQy1VZWRGYTA4anJZU3d0cW9wRExkekhFd1NnaXg4cVV0REZJRVFRTjRfdkRxUHVGdnpxTmFqT19HXzFFZDBXQmVzaTctLWFqbUlxWi02VlE3bU13?oc=5",
-      "publishedAt": "2026-11-18T17:44:07+00:00"
     },
     {
       "id": "4ca439d32999a762",
@@ -691,20 +715,12 @@ window.INSIDE_MAURITIUS_WORLD_NEWS = {
       "publishedAt": "2026-11-17T22:21:42+00:00"
     },
     {
-      "id": "782b654501ab39b4",
-      "title": "Green Climate Fund Directs $3.5 Billion to 14 Pacific Islands, Sets Sights on Regional Office in Fiji",
+      "id": "18252c5cf2a7f350",
+      "title": "Epidemic and emerging disease alerts in the Pacific as of 17 November 2026",
       "region": "Oceania",
-      "source": "Earth Journalism Network",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdU9zUEZCX29DaWVRWTgtUWtkSjc1bVQtQmpQZVZaLUtkcUlGODVWTmpGT0lNTGtZX3phdDZiTHBCcklMU1lOdjB6b25DMVcwYTdFY25CSVQyWEpFQmpqMkR4bHBOZkFkNVNjaUhfNzg4cmc1eDhBdG5GeGNuNk80T0I2dUJSMjY5ZzlaX3k0M1M1ZjBRQ1NWbjhJdS04SGxyOTB0d1dIcXJQdTgzV094ZF9LX0ZKU3AzUjVSSzJjeE5XWUR1?oc=5",
-      "publishedAt": "2026-11-17T11:19:58+00:00"
-    },
-    {
-      "id": "2dfd10fc2785406c",
-      "title": "Tanna | Vanuatu, Map, & Facts",
-      "region": "Oceania",
-      "source": "Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBCUGxFeER6U1QyRkFNQXFzamdod2puWUNiX0xzSWhwMXZNMDlvZkVjbzV4NzRnU3A2d0hGclFNMDlWaTdGaHBTLWx4dEs4ZDdkNXh2QUNUMFVKNk9IUk5ZQUphbw?oc=5",
-      "publishedAt": "2026-11-17T08:00:00+00:00"
+      "source": "ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ2N3cnBDUFZMV2U0VGFlbkJuR1hoSm5lZHFQa0hYVG5QTXB3Ukc2UVZURmY1SEpaUUtMSWFKcXNIR01vM1I2VzRLQUtEaHJMTThoM09qMFdYbkNEcUxBcVRfSUZVM01VY3FwbDlQclRCT2dyZVJmWTJxYWoxeTdJRXVLRm42T2xBRXZtV1UzOHJZc185YnhZaA?oc=5",
+      "publishedAt": "2026-11-17T08:59:37+00:00"
     }
   ]
 };
