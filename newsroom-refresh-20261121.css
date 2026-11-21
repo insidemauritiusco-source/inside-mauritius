@@ -1,0 +1,15 @@
+/* Inside Mauritius newsroom refresh — 21 November 2026. Additive only. */
+.im-verified-desk{max-width:1200px;margin:24px auto;padding:clamp(18px,3vw,30px);background:#f5f8fc;color:#162c42;border:1px solid #d9e4ee;border-radius:18px}
+.im-verified-desk *{box-sizing:border-box}.im-verified-desk__head{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:end;margin-bottom:18px}
+.im-verified-desk__eyebrow{font:750 12px system-ui,sans-serif;letter-spacing:.09em;color:#a32438}.im-verified-desk h2{font:800 clamp(24px,4vw,34px)/1.2 system-ui,sans-serif;margin:7px 0;color:#142b42}
+.im-verified-desk__head p{margin:0;color:#52667a;font:14px/1.5 system-ui,sans-serif}
+.im-verified-desk__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.im-verified-desk__card{padding:19px;background:#fff;border:1px solid #dbe5ed;border-radius:13px;display:flex;flex-direction:column;min-width:0}
+.im-verified-desk__meta{font:700 12px/1.5 system-ui,sans-serif;color:#8b3542}
+.im-verified-desk__card h3{font:750 19px/1.35 system-ui,sans-serif;margin:10px 0;color:#172e42}
+.im-verified-desk__card p{font:14px/1.6 system-ui,sans-serif;color:#41576a;flex:1}
+.im-verified-desk__card a{font:700 14px system-ui,sans-serif;color:#075b9c;text-decoration:underline;text-underline-offset:3px}
+.im-verified-desk__note{font:12px/1.5 system-ui,sans-serif;color:#54697b;margin:16px 0 0}
+@media(max-width:800px){.im-verified-desk__grid{grid-template-columns:1fr}.im-verified-desk{margin:18px 12px}.im-verified-desk__card{padding:16px}}
+/* Respect photo proportions; never alter source photos or the logo. */
+#main img{max-width:100%}#main img:not([width]):not([height]){height:auto}
