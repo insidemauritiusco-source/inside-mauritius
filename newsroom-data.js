@@ -1,6 +1,104 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-f5a7a79fe6db2e14",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "COP31 : financement climatique, catastrophes et \u00e9nergie, les trois enjeux majeurs pour Maurice",
+    "summary": "Short excerpt from Inside News RSS feed: Financement, adaptation aux catastrophes et transition \u00e9nerg\u00e9tique : les n\u00e9gociations climatiques soul\u00e8vent des enjeux d\u00e9terminants pour Maurice et les \u00c9tats insulaires. The post COP31\u2026",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T19:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/cop31-financement-climatique-catastrophes-energie-maurice__wordpress_featured__1920x1080-Removed.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 23:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/cop31-onu-adaptation-financement-climatique-antalya-2026/",
+    "photoSourceUrl": "https://www.inside.news/cop31-onu-adaptation-financement-climatique-antalya-2026/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-d5a30e7da6710872",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab INN MET DIFE PAR MESANSTE \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T17:18:19+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 21:18 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xdTVYUnFUaFJtY1hSbkNZZEVDbk9WTmo5LTdNXzhaZmlta3R6bk4wR3J4Z2U0YXcxZlBHUXJlSkl2MmZCQ3pudVYyQWhkWkh1OUlLbjNKQW5SMG9ueG5QcENKdGpYdHZtUE8wcQ?oc=5"
+  },
+  {
+    "id": "source-e884bb8c9c673340",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Info Soir\u00e9e] : \u00ab ZOT KAPAV PERDI ZOT LISANS \u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T16:43:55+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 20:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FZzAwM3p2dXpETnNFSEZOT1FldTExaW8wdC1zcFlSaFdBLW5wVE1fRDJienhVWHVRWkF6WVRnTG96TFFrckYySmN0aDRSa3ZadUFFbmJCOW5wNUN0TjFJZ0tvY3dSYm5OUUZXeldn?oc=5"
+  },
+  {
+    "id": "source-90ef5eceb22dacc8",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00c9lectricit\u00e9 \u00e0 Maurice : pourquoi \u00e9conomiser entre 18 h et 21 h cet \u00e9t\u00e9 ?",
+    "summary": "Short excerpt from Inside News RSS feed: La campagne \u00e9nerg\u00e9tique 2026-2027 du CEB encourage les Mauriciens \u00e0 r\u00e9duire leur consommation \u00e9lectrique entre 18 h et 21 h pour soulager le r\u00e9seau\u2026",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T16:30:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/10/Inside-News_-Economisons-lelectricite-1.png",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 20:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/electricite-maurice-economiser-consommation-18h-21h-ete-2026/",
+    "photoSourceUrl": "https://www.inside.news/electricite-maurice-economiser-consommation-18h-21h-ete-2026/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-00a7dd68e71bb569",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "[Blog] Senior Counsel : le m\u00e9rite avant le parrainage",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T16:09:35+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 20:09 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBqVzk3Wjc2ejM4TzNBdGhDM1prY2hxU3lvQWR1QmhobjB2TS1KWFlsUGFSNWxsSFV3bUI3TU0xeG16TEN5TjBFZTdFLW1DZ29FYkpOemREenBuYU9oZ2J3cUkzSXlYZHA1djY5dzU2dlR3bGZTOEVEVHJiVDU?oc=5"
+  },
+  {
     "id": "source-f29e76cc476b819d",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -21,6 +119,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "Inside News",
     "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
     "photoIllustrative": false
+  },
+  {
+    "id": "source-d4f3ff6aacfd9d14",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Mario Justin : \u00abJe veux retrouver la sc\u00e8ne\u00bb",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T14:59:00+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 18:59 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9STks4bVp0U0ZoTlpOdGNkTnlXcTh6bDB2djdLUTFYNWozVjlxR2JZdlp1c2N2TWwxZjJkYlNwUzVGT2RaN25oY0lnY0FfOXhHbElqak5KejIzc3ZmOHJGbkJmSEZQZDV1QVZ0elpwYw?oc=5"
   },
   {
     "id": "source-7b683f3325978106",
@@ -323,6 +439,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
+    "id": "source-2348ec2421236bea",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Commerce : 320 marchands attendus au Champ-de-Mars apr\u00e8s les tensions de l\u2019ex rue Desforges",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T11:04:53+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 15:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNOFowT0ZsUTNrM1JYRVpZbjVYNXppa0hBUk1ValNUUTd4UEpqeTQ3bG5xSTZ6cGR0ZFl4MWhxaEowVlBDbDR2X3RxMnhISVVEOXFaZno1eXBtZHJKeHVYQ0ZHR1pKWXpuYVdHTEY1czBGOV9uMzhsM2VMa29MWVdWQUxxVWRlUEw4N3Z2YUJKRXZ5OWV5MFQyNHRIbk5QMkJEc1pQQmw5SFBRVmJV?oc=5"
+  },
+  {
     "id": "source-5c5c354d28ec1b08",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -385,24 +519,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
-    "id": "source-23488ad6c55e7d97",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "R\u00e9seaux sociaux : le fil, l\u2019algorithme et nos enfants",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T10:29:00+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 14:29 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE84a2plZTlFRFppbTg0ODdZTzRScHE5X0NsOVdmd2VBMGFVMUhQbjBjY1BTN1VmbWE0QWFnV3VVcGU0ZHlyQ0tWakZCVDl5OFZHTGNQRTVucEtpbDJyY012QUtGRk5RT2hPSzk5dUtueGpXTjE4Ni1Ha3VxS1g?oc=5"
-  },
-  {
     "id": "source-1e1fae5094e70f35",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -423,24 +539,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "Inside News",
     "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-e8d5d43263ffd0aa",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Infrastructures temporaires : Rs 1,5 million pour installer les supports des drapeaux entre l\u2019a\u00e9roport et Grand-Baie",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T10:05:09+00:00",
-    "author": "L'Express (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 14:05 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM0JMTUJVcHhXQ1VpQlk1MVVyVl95MExwWHBUVDNscXBQVHd3QUdaNTFVZjRmYkFRZjVhUEFNUE5xTlBoZzFoc1JaT3JWZ19zX2N1RFJ4azg1c2p2aHpmRXI4VGFIV3p1U1FWaTlJYVhUSF90QU03cVcxbktmc2d6ZUNRVk1leDIyQ1ZQb2hadmgtaHhTVWExdWZaRHBnazZsZ0RMRkM1ZzM1Qlp3N01RSkFKMA?oc=5"
   },
   {
     "id": "source-609d25be13d4e56c",
@@ -545,50 +643,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoIllustrative": false
   },
   {
-    "id": "source-104d786e29c8e733",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Night Market au Champ-de-Mars : 320 emplacements annonc\u00e9s, jusqu\u2019\u00e0 350 marchands \u00e9voqu\u00e9s",
-    "summary": "Short excerpt from Inside News RSS feed: Le Conseil des ministres annonce environ 320 emplacements au Champ-de-Mars d\u00e8s le 18 d\u00e9cembre. Des pr\u00e9cisions municipales \u00e9voquent quelque 350 marchands et un tirage\u2026",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T09:15:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/Night_Market_at_Champ-de-Mars-2-Removed.png",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 13:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/night-market-champ-de-mars-2026-tirage-au-sort-controverses/",
-    "photoSourceUrl": "https://www.inside.news/night-market-champ-de-mars-2026-tirage-au-sort-controverses/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
-    "id": "source-938f1db67efe6f00",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Affaire Dreamer : 19e arrestation, les enqu\u00eateurs examinent les d\u00e9placements en mer",
-    "summary": "Short excerpt from Inside News RSS feed: Une 19e arrestation a \u00e9t\u00e9 rapport\u00e9e dans l\u2019affaire du yacht Dreamer. L\u2019ADSU poursuit ses investigations sur les trajets maritimes et les r\u00f4les pr\u00e9sum\u00e9s des\u2026",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T09:02:36+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/affaire-dreamer-19e-suspect-arrete-trajets-en-mer__facebook_vertical__1080x1350-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 13:02 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/affaire-yacht-dreamer-19e-suspect-adsu-enquete-maritime-maurice/",
-    "photoSourceUrl": "https://www.inside.news/affaire-yacht-dreamer-19e-suspect-adsu-enquete-maritime-maurice/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
     "id": "source-a81367a78be41903",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -605,6 +659,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSkVXWGtpc0hYLURsVmlJZGJ1NEUtNUF3WGJ4VlRIdFZJSGtxMDhVOEFtNkZEQ2FNMGVra2RXMjhxOHFDTUxiS3IzR2U3MUJiZnVmYm5SeC1CS0NGY2EwZmNCM3hNQ19KcXE0Z0xSMHJuMTcyeUUzTFgtbGlwWDc1ZXVQZm8zWFpwRU1kNjBHNDAzY2gxX1hYS1NIN1BzUjZUMGZYTUlNNVUyTjJmNFNVejRubw?oc=5"
+  },
+  {
+    "id": "source-74d83c0dc47dd121",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Toxicomanie - overdose : savoir reconna\u00eetre les signes et adopter les bons r\u00e9flexes peut sauver des vies",
+    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T08:47:00+00:00",
+    "author": "Top FM (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 22 November 2026 at 12:47 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Top FM (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0lERWFzNzdlRUY4MmRMMjdaWE8wZ3ctNTZnbXNVRFJscVJ0NWdSQTBxVmtNQTJVMGJMTnhFQlZ6Sm9tRlRvXzN6Q2JYTUY1UWhhZzRNR19aZDE2TnZSWDY0SnFTOU9aSi1keGpJdWV2YktQM2RzNWhyVUtadEVpbG0xRGlsTTV3U3hBVG9vTWFiaVNhQTZhTEpTMFhGcXVXclJjVVczYWFJaHZsbEhudVN6UnAxU3M1OGY0Y0hHakF1MXFDVjduQk4tdjg?oc=5"
   },
   {
     "id": "source-bdc7cb7dfabc4496",
@@ -683,24 +755,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPU2lhakw1VFJwemFYY1RmaVZuUlVGZTg4OVlEQWllbkJ4ZEFWVWF6STgtY0xQRkdZWW1hM2ZaR0x4S24tTkJ4MTgxSldiQkNjR202MHEwZXVJWjRkWjhOcmRlY0JScnRWMjhNMXZEU25UaDlFcy1BV2xRNDhtSEJ5MG1n?oc=5"
   },
   {
-    "id": "source-d36e8d15d6209fef",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Toxicomanie - overdose : savoir reconna\u00eetre les signes et adopter les bons r\u00e9flexes peut sauver des vies",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T06:26:54+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 10:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMHBCYWdHVnhQakw1UUlpMmVhbTNDSG9RUERMNUJIakJrWFI1MTNrdFgtLXczZDk1ZDBTSW5TRVpFU1JCQnk2RjV4eU14TjFsbFk0S09FUnNFM1g3bDBkSkRScldLZXpQOGpDbTFKSTEyaVBVMDhfbHNjbDMwN0Z2bTNJTmNudUM0ZWJTZU5rZlNqeEhRaVZUdWs1cFhPa1NNajV1TTg1YndjZmpWam9EdmIyMjE4aEVyZ09iOHNmclBSckJ0VzdN?oc=5"
-  },
-  {
     "id": "source-9c1143ed24bec093",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -753,42 +807,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUF9TYjJ1Mzh1djdMZkhqTkRxMkd6OTF1MzYyeWNfcDJJazhfYXFUc3c0Sm45V1Y1RGoxRHBFWWdfWk1MQnYyRXJCa1pEQVVSUk1KWEJPdHk1aV82c2FvcjZOaks2b2VpQWFWNHl1RndYc1dhM3FFSmJhNlY0enlUZW9R?oc=5"
-  },
-  {
-    "id": "source-33213de62059e141",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Notation souveraine : Maurice peut-il inverser la tendance?",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T02:10:00+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 06:10 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdklRb2h4WWtWS3lqNHNLc2Zsam1DUmlfcFBSMnJSQncxRXZwTHJTdVNNRWZudEFuYXBUUEJxNkY1ZDVRaUU4YjNCRjE1Yk1rSlprUFFqc3pablc2d3otU1NoWUxNUUxiT1ZvUEFYMG1vdG1FbE12ZTlKdXhSVm9yQlhZNVBvdw?oc=5"
-  },
-  {
-    "id": "source-10ea15b659c34080",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Berlin : des centaines de personnes d\u00e9filent en soutien aux Palestiniens",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-22",
-    "publishedAt": "2026-11-22T01:47:48+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 22 November 2026 at 05:47 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaG5JQUdjV0tTRTlkcWZSeGNrOTNnNFJHVDExU1g1cjZCSVRlTWFFbjFGZ2pUdllQV2d4MlhsMjBic0RnNWFBVDYwenZNY2YyeVlPMGU0SU04NnN4ZTBKb0pqY18xMy02eGhPdmNaa1hGRVI5ajBSVnIwbmhKNmdDM3FzNjlETGZ4NzZNRmlOREtDNW1lWHZ0Vw?oc=5"
   },
   {
     "id": "source-57e3039d53044e38",
@@ -999,24 +1017,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZmlCZy1BUVBLd1hfc0drbDFaOHpsRm1pOHdFMjFnaXFhVmUtMTdoNFFGdzJON1dqMDl4Z0hOOS1iWDFkWm5JRGVlRjZEREdXMC1EUDkwSGlsTFkwdkxEekV3TWJGUHhfcUxsY3oxeklCVUVTVmc3Qjd3WngyTURUV0hmbk5HX2FuQmlYYTFYVUZZQzVTSXlxU0tpeFJFRVRQYVF2bEE2WjlWY2dqYVE0b3NhU0RtLWNsQmVxOTVORjdoSXdUZFZ0QUNuLXJWTDBiRV9OT1pTdnNPU1BBSzRv?oc=5"
-  },
-  {
-    "id": "source-c2721f796dc7717c",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Il r\u00e9came une enqu\u00eate : Kulwant Ubheeram d\u00e9nonce des vid\u00e9os \u00abtruqu\u00e9es\u00bb",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-21",
-    "publishedAt": "2026-11-21T13:58:00+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 21 November 2026 at 17:58 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR21IRG1tblRFdlRoM2VibWdpWlI5NXBoTm9xZnhzNnBGbm5jNFBoU3lkZTFWNDR5eXg2ZHg0S3hSZjZaTDhnMHhMUG1fMGRyTHNkN0VFN3VYaE90N2dzSnU3NDlSS2JTOEdNWVZYYVBXdEdOYVBNenRJZHB3THVUQ1loQUp5Q0dsX3dXQ0RlRTlwWGM?oc=5"
   },
   {
     "id": "source-41e7125e6c208a23",
