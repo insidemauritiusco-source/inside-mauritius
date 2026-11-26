@@ -1,0 +1,45 @@
+
+/* V41 broadcast view: map fills remaining screen; controls float above it. */
+body.v41{background:#07121d;--card:#102331;--line:#294458}
+.v41 header{padding:9px 15px;gap:12px;background:#0b1a27;border-color:#294458}
+.v41 header h1{font-size:clamp(20px,1.65vw,34px);letter-spacing:-.025em}
+.v41 header .eyebrow{letter-spacing:.12em;color:#79e0ee}
+.v41 header a{font-size:12px}
+.v41 .notice{border-radius:0;background:#17232c;border:0;border-left:3px solid #d6a75d;padding:6px 10px;font-size:12px}
+.v41 main{padding:6px 9px;gap:0}
+.v41 .metrics{gap:6px;margin:6px 0}
+.v41 .tile{background:#0d2231;border-color:#284253;padding:6px 10px}
+.v41 .tile small{font-size:10px;letter-spacing:.055em}
+.v41 .tile strong{font-size:clamp(14px,1.15vw,24px);line-height:1.2}
+.v41 .layout{gap:7px;grid-template-columns:minmax(0,1fr) minmax(250px,23%)}
+.v41.v40maponly .layout{grid-template-columns:minmax(0,1fr)}
+.v41 .mapwrap,.v41.v40tv .mapwrap,.v41 .mapwrap:fullscreen{position:relative;display:flex;flex-direction:column;grid-template-columns:none;grid-template-rows:none;min-width:0;min-height:0;background:#07131e;border-radius:8px}
+.v41 #map,.v41 .mapwrap:fullscreen #map{flex:1 1 auto;width:100%;height:auto;min-height:350px;background:#0b1b26}
+.v41 #quick41{position:absolute;z-index:720;top:11px;left:52px;right:10px;display:flex;flex-wrap:wrap;align-items:center;gap:5px;pointer-events:none}
+.v41 #quick41 button{pointer-events:auto;background:#0d2233ed;border:1px solid #557387;border-radius:6px;font-size:13px;font-weight:650;padding:8px 11px;box-shadow:0 1px 7px #0007;color:#edf8ff}
+.v41 #quick41 button:hover,.v41 #quick41 button[aria-pressed=true]{background:#1d5266;border-color:#7fe8ee}
+.v41 #layerDrawer41{position:absolute;top:59px;left:10px;bottom:90px;width:min(240px,85%);max-height:none;z-index:730;display:flex;flex-direction:column;gap:7px;border:1px solid #49677b;border-radius:9px;padding:11px;background:#091b2af7;box-shadow:0 7px 24px #0009;overflow:auto}
+.v41 #layerDrawer41[hidden]{display:none!important}
+.v41 .controlgroup h3{color:#9cdce6;font-size:11px}
+.v41 .mapfoot{flex:none;display:flex;gap:5px 12px;align-items:center;background:#0b1d2b;padding:5px 10px;max-height:94px;overflow:auto;font-size:11px}
+.v41 .mapfoot #satStatus,.v41 .mapfoot #ir42Status{flex-basis:auto}
+.v41 .windbar{flex:none;max-height:110px;overflow:auto;background:#0d2231}
+.v41 .windbar[hidden]{display:none!important}
+.v41 #mapError{position:absolute;z-index:740;top:65px;left:10px;right:10px}
+.v41 .sidebar{background:#091b29;border:1px solid #294458;border-radius:8px;padding:6px}
+.v41 .panel{background:#102331;border-color:#294458}
+.v41 .f42card{color:#142a39;font-size:13px;line-height:1.35}
+.v41 .leaflet-popup-content .f42card,.v41 .f42system .f42card{color:#eef8ff}
+.v41 .leaflet-popup-content .f42card small,.v41 .f42system .f42card small{color:#adc7d6}
+.v41 .leaflet-tooltip.f42tooltip{max-width:190px;border:1px solid #dce7ea;border-left:3px solid #c63f4c;padding:7px 9px;background:#fff;box-shadow:0 3px 12px #0007}
+.v41 .leaflet-tooltip.f42tooltip strong{font-size:13px}
+.v41 .leaflet-control-zoom a{background:#102635;color:#fff;border-color:#456176}
+.v41 .leaflet-control-attribution{font-size:10px}
+.v41 .map-dark .baseWeatherTiles{filter:invert(1) hue-rotate(175deg) saturate(.45) brightness(.84) contrast(.92)}
+.v41 footer{max-height:27px;overflow:auto;font-size:10px}
+.v41.v40tv #quick41 button{font-size:clamp(13px,.85vw,26px)}
+.v41.v40tv .mapfoot{font-size:clamp(11px,.68vw,20px)}
+.v41 .mapwrap:fullscreen{width:100vw;height:100dvh;border-radius:0}
+.v41 .mapwrap:fullscreen #map{min-height:0}
+@media(min-width:1000px) and (min-height:620px){.v41 #map{min-height:0}.v41 .layout{flex:1;min-height:0}.v41 .mapwrap{height:100%}}
+@media(max-width:999px),(max-height:619px){.v41 .layout{grid-template-columns:1fr}.v41 #map{flex:none;height:65vh;min-height:300px}.v41 .mapwrap:fullscreen #map{flex:1;height:auto;min-height:0}.v41 #quick41{left:48px;gap:4px}.v41 #quick41 button{padding:6px 7px;font-size:11px}.v41 #layerDrawer41{top:90px;bottom:80px;max-height:50vh}.v41 .mapfoot{max-height:none}.v41 .sidebar{overflow:visible}.v41 footer{max-height:none}}
