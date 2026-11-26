@@ -46,6 +46,6 @@ mode.onchange=load;e('marineRefresh').onclick=load;seek.oninput=()=>{stop();inde
 map.on('movestart zoomstart',clear);map.on('moveend zoomend resize',resize);map.on('click',ev=>{if(!data||!fresh(data,mode.value==='sst'))return;const {lat,lng}=ev.latlng,g=data.grid,sst=mode.value==='sst',f=data.frames?.[index],fmt=(v,u)=>v===null?'not reported':v.toFixed(1)+' '+u;const v=sample(g,current(),lat,lng);point.textContent=lat.toFixed(2)+'°, '+lng.toFixed(2)+'° · '+(sst?'SST '+fmt(v,'°C'):'Significant height '+fmt(sample(g,f.height,lat,lng),'m')+' · Primary period '+fmt(sample(g,f.period,lat,lng),'s')+' · Primary direction '+fmt(sample(g,f.direction,lat,lng),'° true'))});
 function off(){if(mode.value!=='off'){mode.value='off';load()}}
 window.addEventListener('cyclone-marine-off',off);
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else if(mode.value!=='off')load()});setInterval(()=>{if(mode.value!=='off'&&!document.hidden)load()},300000);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else if(mode.value!=='off')load()});setInterval(()=>{if(mode.value!=='off'&&!document.hidden){if(data&&!fresh(data,mode.value==='sst'))fail('Marine data expired. Refresh to check for a newer dataset.');load()}},300000);
 resize();
 })();
