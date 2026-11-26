@@ -1,0 +1,36 @@
+name: Refresh Cyclone Watch GFS wind grid
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 */3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'cyclone/update-wind.py'
+      - '.github/workflows/cyclone-wind.yml'
+permissions:
+  contents: write
+concurrency:
+  group: cyclone-wind-data
+  cancel-in-progress: false
+jobs:
+  wind:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'eccodes>=2.38,<3' 'numpy>=1.26,<3'
+      - run: python cyclone/update-wind.py
+      - name: Publish only wind data
+        run: |
+          git config user.name 'cyclone-wind[bot]'
+          git config user.email 'cyclone-wind@users.noreply.github.com'
+          git add cyclone/wind.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh public NOAA GFS wind grid'
+          git pull --rebase origin main
+          git push origin HEAD:main
