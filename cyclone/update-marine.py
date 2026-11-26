@@ -82,7 +82,7 @@ def waves():
             write("waves.json",wave_build(c)); print("Published wave cycle",c.isoformat());return
         except Exception as exc: print("Wave cycle unavailable",c.isoformat(),str(exc)[:200])
     raise ValueError("No recent complete wave-height forecast")
-def sst():
+def sst_erddap():
     # NOAA preliminary OISST; exact timestamp comes from the dataset, not the request clock.
     base="https://www.ncei.noaa.gov/erddap/griddap/ncdc_oisst_v2_avhrr_prelim_by_time_zlev_lat_lon.csv?"
     query="sst[(last)][(0.0)][0:8:719][0:8:1439]"
@@ -108,6 +108,41 @@ def sst():
     if existing("sst.json").get("date","")>=t.isoformat(): return
     write("sst.json",{"schema":1,"source":"NOAA OISST v2.1 preliminary","date":t.isoformat(),"grid":grid,"values":vals})
     print("Published SST",t.isoformat())
+def sst():
+    try:
+        sst_erddap()
+        return
+    except Exception as exc:
+        print("ERDDAP unavailable; trying NOAA daily files:",str(exc)[:200])
+    from netCDF4 import Dataset, num2date
+    base="https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/"
+    today=dt.datetime.now(UTC).date()
+    for lag in range(1,7):
+        day=today-dt.timedelta(days=lag)
+        for suffix in ("_preliminary",""):
+            url=base+f"{day:%Y%m}/oisst-avhrr-v02r01.{day:%Y%m%d}{suffix}.nc"
+            try:
+                with Dataset("daily.nc",mode="r",memory=read(url)) as ds:
+                    sv=ds.variables["sst"]
+                    if sv.dimensions!=("time","zlev","lat","lon") or sv.shape!=(1,1,720,1440) or sv.units not in ("degree_C","degrees_C","degree_Celsius","degrees_Celsius","degC"): raise ValueError("Unexpected SST dimensions or units")
+                    lat=np.asarray(ds.variables["lat"][:]); lon=np.asarray(ds.variables["lon"][:])
+                    if not np.allclose(lat,np.arange(720)*.25-89.875,atol=.0001) or not np.allclose(lon,np.arange(1440)*.25+.125,atol=.0001): raise ValueError("Unexpected SST coordinates")
+                    tv=ds.variables["time"]
+                    stamp=num2date(tv[0],tv.units,getattr(tv,"calendar","standard"))
+                    when=dt.datetime(stamp.year,stamp.month,stamp.day,stamp.hour,stamp.minute,stamp.second,tzinfo=UTC)
+                    if when.date()!=day or not -43200<=(dt.datetime.now(UTC)-when).total_seconds()<=7*86400: raise ValueError("Invalid SST date")
+                    a=np.ma.asarray(sv[0,0,::8,::8],dtype=float).filled(np.nan)
+                    vals=[round(float(x),2) if math.isfinite(x) and -4<=x<=45 else None for x in a.ravel()]
+                    if len(vals)!=16200 or sum(x is not None for x in vals)<100: raise ValueError("Incomplete SST coverage")
+                    old=existing("sst.json")
+                    if old.get("date","")>when.isoformat(): return
+                    write("sst.json",{"schema":1,"source":"NOAA OISST v2.1 preliminary" if suffix else "NOAA OISST v2.1 final","date":when.isoformat(),"grid":{"nx":180,"ny":90,"lon0":.125,"lat0":-89.875,"dx":2,"dy":2},"values":vals})
+                    print("Published daily NOAA SST",when.isoformat())
+                    return
+            except Exception as exc:
+                print("Daily SST unavailable",day,suffix,str(exc)[:160])
+    raise ValueError("No recent validated daily OISST file")
+
 if __name__=="__main__":
     failed=[]
     for fn in (waves,sst):

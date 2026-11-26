@@ -11,7 +11,7 @@ function values(a,g,lo,hi){return Array.isArray(a)&&a.length===g.nx*g.ny&&a.ever
 function fresh(d,sst,now=Date.now()){const t=Date.parse(sst?d?.date:d?.cycle),age=now-t;return Number.isFinite(age)&&age>=(sst?-43200000:-300000)&&age<=(sst?7*86400000:18*3600000)}
 function validate(d,sst,now=Date.now()){
  if(d?.schema!==1||!validGrid(d.grid)||!fresh(d,sst,now))return false;
- if(sst)return d.source==='NOAA OISST v2.1 preliminary'&&values(d.values,d.grid,-4,45);
+ if(sst)return ['NOAA OISST v2.1 preliminary','NOAA OISST v2.1 final'].includes(d.source)&&values(d.values,d.grid,-4,45);
  return d.source==='NOAA GFS-Wave'&&Array.isArray(d.frames)&&d.frames.length===4&&d.frames.every((f,i)=>f.hour===[0,12,24,48][i]&&Date.parse(f.valid)===Date.parse(d.cycle)+f.hour*3600000&&values(f.height,d.grid,0,40)&&(!('direction'in f)||values(f.direction,d.grid,0,360))&&(!('period'in f)||values(f.period,d.grid,0,60)));
 }
 function sample(g,a,lat,lon){
@@ -38,14 +38,14 @@ async function load(){
  const token=++seq;stop();clear();data=null;paintLegend();seek.disabled=true;play.disabled=true;point.textContent='—';time.textContent='—';
  if(mode.value==='off'){bar.hidden=true;return}bar.hidden=false;
  // Avoid covering atmospheric data with a second canvas.
- if(e('windToggle').getAttribute('aria-pressed')==='true')e('windToggle').click();
+ window.dispatchEvent(new Event('cyclone-atmosphere-off'));
  const sst=mode.value==='sst';status.textContent='Checking NOAA marine data…';
  try{const r=await fetch(sst?'sst.json':'waves.json',{cache:'no-cache',signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error();const d=await r.json();if(token!==seq)return;if(!validate(d,sst))throw Error();data=d;index=0;seek.value=0;seek.disabled=sst;play.disabled=sst;update()}catch{if(token===seq)fail('No recent validated '+(sst?'SST analysis':'wave forecast')+' available. Check source links.')}
 }
 mode.onchange=load;e('marineRefresh').onclick=load;seek.oninput=()=>{stop();index=Number(seek.value);update()};play.onclick=()=>{if(timer){stop();return}if(!data||mode.value==='sst')return;play.textContent='Pause waves';timer=setInterval(()=>{index=(index+1)%4;seek.value=index;update()},2400)};
 map.on('movestart zoomstart',clear);map.on('moveend zoomend resize',resize);map.on('click',ev=>{if(!data||!fresh(data,mode.value==='sst'))return;const {lat,lng}=ev.latlng,g=data.grid,sst=mode.value==='sst',f=data.frames?.[index],fmt=(v,u)=>v===null?'not reported':v.toFixed(1)+' '+u;const v=sample(g,current(),lat,lng);point.textContent=lat.toFixed(2)+'°, '+lng.toFixed(2)+'° · '+(sst?'SST '+fmt(v,'°C'):'Significant height '+fmt(sample(g,f.height,lat,lng),'m')+' · Primary period '+fmt(sample(g,f.period,lat,lng),'s')+' · Primary direction '+fmt(sample(g,f.direction,lat,lng),'° true'))});
 function off(){if(mode.value!=='off'){mode.value='off';load()}}
-e('windToggle').addEventListener('click',()=>{if(e('windToggle').getAttribute('aria-pressed')==='true'||mode.value!=='off')off()});e('gfsMode').addEventListener('change',off);
+window.addEventListener('cyclone-marine-off',off);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else if(mode.value!=='off')load()});setInterval(()=>{if(mode.value!=='off'&&!document.hidden)load()},300000);
 resize();
 })();
