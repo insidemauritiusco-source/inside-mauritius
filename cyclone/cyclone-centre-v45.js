@@ -1,0 +1,30 @@
+(function(){'use strict';
+const e=id=>document.getElementById(id),map=window.cycloneWindMap;if(!map)return;
+const mode=e('trackerMode45'),gallery=e('gallery43'),panel=e('stormCentre45'),follow=e('follow45');
+let reports=[],official=[],selected=null,opened=false,manual=false,focused=false;
+const fmt=t=>new Date(t).toLocaleString('en-GB',{timeZone:'Indian/Mauritius',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})+' MUT';
+function node(tag,txt,cls){const n=document.createElement(tag);if(txt!==undefined)n.textContent=txt;if(cls)n.className=cls;return n}
+function entries(){return [...reports.map(s=>({key:s.id,id:s.id.slice(2,4)+'S',kind:s.invest?'Invest / disturbance':'Numbered system report',p:s.points.at(-1),time:s.points.at(-1).time,source:'JTWC track report',official:false})),...official.map(b=>({key:'official-'+b.system_number,id:String(b.system_number).padStart(2,'0'),kind:'Official bulletin position',p:b.anchor,time:b.issued_at,source:'RSMC La Réunion',official:true,bulletin:b}))]}
+function current(){return entries().find(s=>s.key===selected)}
+function focus(s){if(!s)return;window.dispatchEvent(new CustomEvent('cyclone-navigate',{detail:{lat:s.p.lat,lon:s.p.lon}}));map.setView([s.p.lat,s.p.lon],Math.max(map.getMinZoom(),Math.min(5.5,map.getMaxZoom())),{animate:false});focused=true}
+function fitAll(){const list=entries();if(!list.length)return;const outside=list.find(s=>s.p.lat< -29||s.p.lat> -4||s.p.lon<43||s.p.lon>83);if(outside)window.dispatchEvent(new CustomEvent('cyclone-navigate',{detail:{lat:outside.p.lat,lon:outside.p.lon}}));map.fitBounds(list.map(s=>[s.p.lat,s.p.lon]),{padding:[65,65],maxZoom:Math.max(map.getMinZoom(),5.3),animate:false});focused=true}
+function render(){
+ const list=entries();if(!list.some(s=>s.key===selected)){selected=(list.find(s=>s.official)||list[0])?.key||null;focused=false}
+ e('stormStatus45').textContent=list.length?reports.length+' JTWC reports · '+official.length+' official forecast systems':'No recent validated positions from connected feeds. This does not mean the ocean is clear.';
+ e('fitAll45').disabled=!list.length;
+ const root=e('stormCards45');root.replaceChildren();
+ for(const s of list){const card=node('button',undefined,'stormCard45');card.type='button';card.setAttribute('aria-pressed',String(s.key===selected));const badge=node('span',s.id,'stormBadge45'+(s.official?' official45':''));const detail=node('span',undefined,'stormText45');const vals=node('span',undefined,'stormValues45');const wind=s.official?s.p.max_wind_kt:s.p.wind_kt;const pressure=s.p.pressure_hpa;vals.append(node('b',Number.isFinite(wind)?wind+' kt':'Wind —'),node('b',Number.isFinite(pressure)?pressure+' hPa':'Pressure —'));detail.append(node('strong',s.official?'System '+s.id:s.id),node('span',s.kind),vals,node('small',fmt(s.time)+' · '+s.source));card.append(badge,detail);card.onclick=()=>{selected=s.key;manual=true;focus(s);render()};root.append(card)}
+ const chosen=current(),future=e('stormFuture45');future.replaceChildren();
+ if(chosen?.bulletin){const pts=chosen.bulletin.points.filter(p=>Date.parse(p.valid_at)>Date.now());e('stormForecast45').textContent='Published forecast · RSMC La Réunion · 10-minute sustained wind';for(const p of pts){const c=node('button',undefined,'stormFuture45');c.type='button';c.append(node('strong',fmt(p.valid_at)),node('div',(Number.isFinite(p.max_wind_kt)?p.max_wind_kt+' kt':'Wind —')+' | '+(Number.isFinite(p.pressure_hpa)?p.pressure_hpa+' hPa':'Pressure —')));c.onclick=()=>{window.dispatchEvent(new CustomEvent('cyclone-navigate',{detail:{lat:p.lat,lon:p.lon}}));map.setView([p.lat,p.lon],Math.max(map.getMinZoom(),5));};future.append(c)}}
+ else e('stormForecast45').textContent=chosen?'No matched official future track for this report. Historical track only; no projected positions generated.':'No official forecast available.';
+ if(opened&&follow.checked&&!focused&&list.length){if(list.length>1&&!manual)fitAll();else focus(chosen)}
+}
+function open(){opened=true;focused=false;gallery.classList.add('tracker45');panel.hidden=false;mode.setAttribute('aria-pressed','true');if(gallery.hidden)e('galleryToggle43').click();window.dispatchEvent(new Event('cyclone-atmosphere-off'));window.dispatchEvent(new Event('cyclone-marine-off'));if(e('investToggle45').getAttribute('aria-pressed')!=='true')e('investToggle45').click();if(e('forecast42').getAttribute('aria-pressed')!=='true')e('forecast42').click();if(e('labels42').getAttribute('aria-pressed')!=='true')e('labels42').click();e('quickRegion41').click();requestAnimationFrame(()=>requestAnimationFrame(()=>{map.invalidateSize({pan:false});render()}))}
+function close(){opened=false;panel.hidden=true;gallery.classList.remove('tracker45');mode.setAttribute('aria-pressed','false')}
+mode.onclick=()=>opened?close():open();e('trackerBack45').onclick=close;e('fitAll45').onclick=()=>{manual=false;fitAll()};follow.onchange=()=>{if(follow.checked){focused=false;render()}};
+window.addEventListener('cyclone-invest-reports',ev=>{const before=current()?.p;reports=Array.isArray(ev.detail)?ev.detail:[];const after=current()?.p;if(before&&after&&(before.lat!==after.lat||before.lon!==after.lon)&&follow.checked)focused=false;render()});
+window.addEventListener('cyclone-official-reports',ev=>{official=Array.isArray(ev.detail)?ev.detail:[];render()});
+window.addEventListener('cyclone-select-report',ev=>{selected=ev.detail;manual=true;focused=true;if(!opened){opened=true;gallery.classList.add('tracker45');panel.hidden=false;mode.setAttribute('aria-pressed','true');if(gallery.hidden)e('galleryToggle43').click()}render()});
+map.on('dragstart',()=>{if(opened)follow.checked=false});
+if(new URLSearchParams(location.search).get('view')==='cyclone-tracker')requestAnimationFrame(()=>requestAnimationFrame(open));
+})();
