@@ -1,6 +1,134 @@
 // Automated source-linked headlines and original YouTube videos. Not independently verified.
 window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
   {
+    "id": "source-2dd0b04d2e53ade9",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Pensions \u00e0 Maurice : le versement de janvier avanc\u00e9 au 31 d\u00e9cembre 2026",
+    "summary": "Short excerpt from Inside News RSS feed: Le Conseil des ministres a annonc\u00e9 que les pensions de janvier 2027 seront vers\u00e9es le 31 d\u00e9cembre 2026. Voici ce que cette mesure signifie\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T03:45:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/pensions-maurice-versement-31-decembre-2026__wordpress-featured__1920x1080-Removed.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 07:45 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/inside-news-pensions-demarches-2026/",
+    "photoSourceUrl": "https://www.inside.news/inside-news-pensions-demarches-2026/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-987cf8c40941472e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Cyber Monday 2026 \u00e0 Maurice : les offres en ligne et les pr\u00e9cautions avant de payer",
+    "summary": "Short excerpt from Inside News RSS feed: Le Cyber Monday tombe le 30 novembre. Certaines campagnes locales couvrent d\u00e9j\u00e0 cette date. Comment comparer les prix et s\u00e9curiser ses achats en ligne\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T03:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/cyber-monday-wordpress.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 07:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/cyber-monday-2026-maurice-achats-en-ligne-arnaques/",
+    "photoSourceUrl": "https://www.inside.news/cyber-monday-2026-maurice-achats-en-ligne-arnaques/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-6268fff44a810cc1",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Permis de conduire num\u00e9rique : les erreurs \u00e0 faire corriger avant janvier 2027",
+    "summary": "Short excerpt from Inside News RSS feed: Photographie, identit\u00e9 ou cat\u00e9gorie manquante : les automobilistes peuvent demander une rectification \u00e0 la Traffic Branch. Le permis physique original restera valable. The post\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T02:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/permis-numerique-erreurs-a-corriger__wordpress_featured__1920x1080-Removed.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 06:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/permis-conduire-numerique-korek-erreurs-correction-maurice/",
+    "photoSourceUrl": "https://www.inside.news/permis-conduire-numerique-korek-erreurs-correction-maurice/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-ede5dd9b64d95d2f",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "M\u00e9t\u00e9o Maurice 26 novembre : matin\u00e9e ensoleill\u00e9e, jusqu\u2019\u00e0 33 \u00b0C avant les averses",
+    "summary": "Short excerpt from Inside News RSS feed: Une matin\u00e9e g\u00e9n\u00e9ralement d\u00e9gag\u00e9e pr\u00e9c\u00e9dera des averses localis\u00e9es dans l\u2019Ouest et sur le Plateau central. Les temp\u00e9ratures atteindront 33 \u00b0C sur le littoral. The\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T01:30:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "https://www.inside.news/wp-content/uploads/2026/11/meteo-maurice-matinee-ensoleillee-33-c-averses__wordpress_featured__1920x1080-Removed.jpg",
+    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 05:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/meteo-maurice-26-novembre-2026/",
+    "photoSourceUrl": "https://www.inside.news/meteo-maurice-26-novembre-2026/",
+    "photoAuthor": "Inside News",
+    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-db41d351631cd36e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Permis num\u00e9rique : Les automobilistes face aux d\u00e9fis de la num\u00e9risation",
+    "summary": "Short excerpt from ION News RSS feed: \u00c0 l\u2019approche du 1er janvier 2027, date \u00e0 laquelle les photocopies des permis de conduire ne seront plus accept\u00e9es lors des contr\u00f4les routiers, la\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T01:20:03+00:00",
+    "author": "ION News (external report)",
+    "image": "https://i0.wp.com/ionnews.mu/wp-content/uploads/2026/11/New-Project-22-1.jpg?fit=1200%2C640&quality=89&ssl=1",
+    "imageAlt": "Source-provided photograph preview, credited to ION News; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to ION News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 05:20 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "ION News",
+    "sourceUrl": "https://ionnews.mu/permis-numerique-les-automobilistes-face-aux-defis-de-la-numerisation/",
+    "photoSourceUrl": "https://ionnews.mu/permis-numerique-les-automobilistes-face-aux-defis-de-la-numerisation/",
+    "photoAuthor": "ION News",
+    "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-0710ff1e191f0572",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Acc\u00e8s aux soins : l\u2019OMS r\u00e9v\u00e8le les limites des statistiques nationales",
+    "summary": "Short excerpt from Inside News RSS feed: Le nouvel atlas de l\u2019OMS montre pourquoi les moyennes nationales peuvent masquer des in\u00e9galit\u00e9s. Un enjeu majeur pour mieux orienter les politiques sanitaires. The\u2026",
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T00:15:00+00:00",
+    "author": "Inside News (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 26 November 2026 at 04:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Inside News",
+    "sourceUrl": "https://www.inside.news/inegalites-sante-oms-donnees-statistiques-nationales/"
+  },
+  {
     "id": "source-c03f3c2cf9417811",
     "category": "World",
     "label": "SOURCE HEADLINE",
@@ -9,18 +137,14 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-26",
     "publishedAt": "2026-11-25T20:30:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/taxes-sanitaires-wordpress-1920x1080-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
       "Published by the source on 26 November 2026 at 00:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/taxes-sante-tabac-alcool-boissons-sucrees-guide-onu/",
-    "photoSourceUrl": "https://www.inside.news/taxes-sante-tabac-alcool-boissons-sucrees-guide-onu/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
+    "sourceUrl": "https://www.inside.news/taxes-sante-tabac-alcool-boissons-sucrees-guide-onu/"
   },
   {
     "id": "source-8503c625aa59be32",
@@ -49,18 +173,14 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-25",
     "publishedAt": "2026-11-25T18:15:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/Un_reacteur_nucleaire_sur_la_Lune2-Removed-825x1024.jpeg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
       "Published by the source on 25 November 2026 at 22:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/nasa-reacteur-nucleaire-lune-lr1-2030/",
-    "photoSourceUrl": "https://www.inside.news/nasa-reacteur-nucleaire-lune-lr1-2030/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
+    "sourceUrl": "https://www.inside.news/nasa-reacteur-nucleaire-lune-lr1-2030/"
   },
   {
     "id": "source-afa9d9923b60fbac",
@@ -155,18 +275,14 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-25",
     "publishedAt": "2026-11-25T16:15:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/patrimoine-wordpress.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
       "Published by the source on 25 November 2026 at 20:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/ganga-snan-maurice-exposition-riaz-auladin-memoire-port-louis/",
-    "photoSourceUrl": "https://www.inside.news/ganga-snan-maurice-exposition-riaz-auladin-memoire-port-louis/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
+    "sourceUrl": "https://www.inside.news/ganga-snan-maurice-exposition-riaz-auladin-memoire-port-louis/"
   },
   {
     "id": "source-6482cf5b5c46b49e",
@@ -261,18 +377,14 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-25",
     "publishedAt": "2026-11-25T15:00:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/25-novembre-1960-soeurs-mirabal-symbole-mondial__wordpress-featured__1920x1080-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
       "Published by the source on 25 November 2026 at 19:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/25-novembre-mirabal-journee-violences-femmes-histoire/",
-    "photoSourceUrl": "https://www.inside.news/25-novembre-mirabal-journee-violences-femmes-histoire/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
+    "sourceUrl": "https://www.inside.news/25-novembre-mirabal-journee-violences-femmes-histoire/"
   },
   {
     "id": "source-af9aea88ea433820",
@@ -283,94 +395,32 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "date": "2026-11-25",
     "publishedAt": "2026-11-25T14:00:00+00:00",
     "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/justice-commerciale-wordpress.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
       "Published by the source on 25 November 2026 at 18:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/mediation-gavin-glover-projet-loi-convention-singapour-2027/",
-    "photoSourceUrl": "https://www.inside.news/mediation-gavin-glover-projet-loi-convention-singapour-2027/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
+    "sourceUrl": "https://www.inside.news/mediation-gavin-glover-projet-loi-convention-singapour-2027/"
   },
   {
-    "id": "source-bdbfb6733d26390f",
+    "id": "source-3c82c32a3f9687c3",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Exploration d'hydrocarbures : Maurice et les Seychelles lancent une \u00e9tude g\u00e9ophysique dans leur zone commune",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
+    "title": "55\u1d49 anniversaire de sa mort : le MMM rend hommage \u00e0 Azor Adela\u00efde",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
     "date": "2026-11-25",
-    "publishedAt": "2026-11-25T13:40:10+00:00",
-    "author": "Top FM (external report)",
+    "publishedAt": "2026-11-25T13:58:19+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 17:40 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 25 November 2026 at 17:58 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVXREUldSWHBOMnBidEE1REprMXBMNEd3aGN2Q1dsRzhaQkJpZ3FScUxRQTdrUjVteUlrT2hVc0hDUFhVTlRWN1F2ZXhNRnM5T0lsXzBTQmVvTXhYWGp6MUxySXdyN2tWa201RlhLNFdlekJ1cWROZWNIX2RrMktJTk0zNGZ2Y1NBTHNaUW9pdUdNX29Ec0hsenRUUlgzeUxiaHVJQ3JOcXpuUXdqRjBrNFV4RlRTbDM0NExzUmhnQlhmWXJNUDR5ag?oc=5"
-  },
-  {
-    "id": "source-89c3a312ad2786f9",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Produits subventionn\u00e9s : comment rep\u00e9rer les abus et prot\u00e9ger votre budget",
-    "summary": "Short excerpt from Inside News RSS feed: Farine, riz et autres produits subventionn\u00e9s font l\u2019objet de r\u00e8gles strictes. Voici comment reconna\u00eetre un emballage suspect et effectuer un signalement. The post Produits\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T13:00:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/produits-subventionnes-wordpress-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 17:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/produits-subventionnes-maurice-reconditionnement-illegal/",
-    "photoSourceUrl": "https://www.inside.news/produits-subventionnes-maurice-reconditionnement-illegal/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
-    "id": "source-8337c29c0f76a91b",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Le Morne Brabant : Rs 124 M pour pr\u00e9server le site et renforcer la s\u00e9curit\u00e9",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T12:26:47+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 16:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHp2RHRaOURVSU5sSzZEM21zT2g4MXozbk1sQW0wdU5BUFV1SElnc1JQQjJ6YkJPWDZaaXczekFLblU2cENxdjJoaVFqdXpIbGpsakhJQTZ0Z3pSZE9TSXJmUFA3eUl1eWg5S1V1NklsWG5oOTBmd3EtT29aN3lMMnc4d2FLVHNRLVpRNk5TZmpleW1qd21PcnZ2R2xiRTB5ZXJvZGRXYjU?oc=5"
-  },
-  {
-    "id": "source-088718305773538c",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Ini\u2019Ver : une nouvelle usine de recyclage pour r\u00e9duire la pollution plastique",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T12:26:46+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 16:26 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSXowU3V0NFYzYWdxRHZhNHZyTDRGRlRfXzZtNjI4cXJodElUNXo1UTNXeDNCbEN3bTV0cjlpNENZQlpwWm1MVVVWNWw0ZVdqZm14ckV2dkt4SWJScXNGM2RNQTd4ZFNEVlBIWGx1UHBwaTVYYkJNRmRBU2pVa3Uwd2RxTHp1NXhLNUVZdDZicjRsOW5PUFVpRVQyWnNZb2Y5YjNVUWNXejJkdw?oc=5"
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdFJVdWRaSkE1dXp0d21uLTh2UkF6MGNMeTN0ZUJPOURzUkF2VXlsbjgyb0VJMUNjaVFpZlV0UlN5LWZGU3ZuMUpSMmhGRHRYVmFSbUVTU1lRSkFRdER4MGlwWUsyVWpHRXBLQnFqaXBpWlAtRHZzbm0yOWhhY0dsMTNHU0NNQWNxcnVV?oc=5"
   },
   {
     "id": "source-9effa9f6d4830c6c",
@@ -409,28 +459,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUDdtRkR5WW9rNldoSUJSTmw3YjBNekpzRk1nQ1l5bHNxeW1pdnFYbjFrWVhYNi1jMDhLMnZ2SDd3MS1XWThFeHRMOS1SNWRtYXpjUzVXOTBsdWREUGsxbzVUbDR4cVVyNDRqX0RYY2pfSnJ3YUpFS3VnVzhzSWRZVXp5SFZob1EyREE?oc=5"
   },
   {
-    "id": "source-3fcef4484b6df263",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "World Knits : les travailleurs r\u00e9clament une solution pour leurs salaires impay\u00e9s",
-    "summary": "Short excerpt from Inside News RSS feed: Les repr\u00e9sentants des salari\u00e9s de World Knits demandent une intervention des autorit\u00e9s. Des rencontres sont envisag\u00e9es pour examiner les arri\u00e9r\u00e9s de salaires et les\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T12:00:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/world-knits-wordpress-Removed-1.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 16:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/world-knits-maurice-salaires-impayes-intervention-gouvernement/",
-    "photoSourceUrl": "https://www.inside.news/world-knits-maurice-salaires-impayes-intervention-gouvernement/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
     "id": "source-17eb49ee6908ad2c",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -451,24 +479,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-2ef28fc8a9c0d7b5",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Khulwant Ubheeram : un enregistrement \u00e9voque des honoraires pay\u00e9s \u00e0 Me Hawoldar \u2026",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T11:19:00+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 15:19 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVE1hWUFQUUtBdXdlVi1HTXl2RDk2Z2k1WENRd3BFYlZRYng4RXJYdXlydi1jTFBnUG5MNmNaR3dPWmRWWnh0VEtHcUpvei0wM0FyR2lyWGZNTk5XS3prMUcwWUR4cWJnLW5lR3d6c2JhRTRFc3dXOUdNM0ZTWU5UNFdOSXkyWFpyTndRbjJuQUI0SS1FOERacHg5QXZQT3NhNHdDSFBQMURGekE?oc=5"
   },
   {
     "id": "source-94d1a0b826793290",
@@ -507,28 +517,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92SUZWeFBnNVFXTTlBNERzdDByanB2V2N2MVIwRzVyb3hQOE1BWnZacl82OF9pV1dvNjdkak5IYndHdFhmWlNqSUJwcXdPVzBReWNnMTBjVWJaOGxyWVB5Q2xuV2tIemVZRkszZWswQlh6bDY3bml4VVI1MS1FczQ?oc=5"
   },
   {
-    "id": "source-eec22519ca6120ca",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Vos droits : comment pr\u00e9parer un affidavit \u00e0 Maurice sans commettre d\u2019erreur",
-    "summary": "Short excerpt from Inside News RSS feed: Une d\u00e9claration sous serment engage votre responsabilit\u00e9. D\u00e9couvrez les d\u00e9marches, les pr\u00e9cautions et les services officiels \u00e0 consulter. The post Vos droits : comment\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T11:00:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/affidavit-maurice__wordpress_featured__1920x1080-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 15:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/affidavit-maurice-faire-certifier-declaration-cour-supreme/",
-    "photoSourceUrl": "https://www.inside.news/affidavit-maurice-faire-certifier-declaration-cour-supreme/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
     "id": "source-ad2529045c98dd5b",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -549,46 +537,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoAuthor": "Radio Mo Pep",
     "photoCaption": "Photo preview linked from Radio Mo Pep. Copyright remains with the original publisher.",
     "photoIllustrative": false
-  },
-  {
-    "id": "source-e1a8a8add5c43241",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Boni de fin d\u2019ann\u00e9e 2026 \u00e0 Maurice : comment calculer votre montant et quand sera-t-il pay\u00e9 ?",
-    "summary": "Short excerpt from Inside News RSS feed: Qui a droit au boni, comment le calculer et \u00e0 quelles dates doit-il \u00eatre vers\u00e9 ? Les r\u00e8gles du Workers\u2019 Rights Act expliqu\u00e9es avec\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T10:15:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/boni-fin-annee-wordpress-1.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 14:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/boni-fin-annee-2026-maurice-calcul-paiement-droits/",
-    "photoSourceUrl": "https://www.inside.news/boni-fin-annee-2026-maurice-calcul-paiement-droits/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
-    "id": "source-82a3824a7ee71be5",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Environnement : des journalistes de l\u2019oc\u00e9an Indien lancent un hub r\u00e9gional",
-    "summary": "Latest headline from 5-Plus dimanche. Read the publisher's original report for the full details.",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T09:57:07+00:00",
-    "author": "5-Plus dimanche (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to 5-Plus dimanche. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 13:57 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "5-Plus dimanche (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVTA2OTVtQzZIdE5JQndZaTJuX1ZjYVdvSUp0c0pfVF9GdzlKVGItMWlfdVg3dHhRZnp0M2hpaTBVc1g2S0JULTY1NHZLaEhBc0lUeENQTkVldnJPZFJvbE5kUGF5SDJQVjlaOTlyejNMZ29famNjN2J2dk84WTlfSzRMWEwwUmtfRjh1bVI4ZE8xZE50Q0FlLWlRUVltWno4dklDUThn?oc=5"
   },
   {
     "id": "source-ec72d1bfeb39b6a4",
@@ -678,50 +626,6 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "photoSourceUrl": "https://ionnews.mu/rodrigues-deux-projets-de-drainage-inaugures-a-pistaches-et-a-baie-topaze/",
     "photoAuthor": "ION News",
     "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
-    "id": "source-eca3114900ae1683",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "National Women\u2019s Super League (2025-2026) : GRSE Wanderers SC et AS Quatre Bornes dominent apr\u00e8s la 3e journ\u00e9e",
-    "summary": "Short excerpt from ION News RSS feed: \u00c0 l\u2019issue de la troisi\u00e8me journ\u00e9e de la National Women\u2019s Super League (saison 2025-2026), organis\u00e9e sous l\u2019\u00e9gide de la Mauritius Football Association (MFA), deux\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T09:35:00+00:00",
-    "author": "ION News (external report)",
-    "image": "https://ionnews.mu/wp-content/uploads/2026/11/super-league.png",
-    "imageAlt": "Source-provided photograph preview, credited to ION News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to ION News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 13:35 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "ION News",
-    "sourceUrl": "https://ionnews.mu/national-womens-super-league-2025-2026-grse-wanderers-sc-et-as-quatre-bornes-dominent-apres-la-3e-journee/",
-    "photoSourceUrl": "https://ionnews.mu/national-womens-super-league-2025-2026-grse-wanderers-sc-et-as-quatre-bornes-dominent-apres-la-3e-journee/",
-    "photoAuthor": "ION News",
-    "photoCaption": "Photo preview linked from ION News. Copyright remains with the original publisher.",
-    "photoIllustrative": false
-  },
-  {
-    "id": "source-5b6e083126ec5af4",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Affaire des coffres-forts : la proc\u00e9dure constitutionnelle de Navin Ramgoolam reste en attente",
-    "summary": "Short excerpt from Inside News RSS feed: La plainte constitutionnelle li\u00e9e \u00e0 l\u2019affaire des coffres-forts reste en suspens, selon les informations du 24 novembre. The post Affaire des coffres-forts : la\u2026",
-    "date": "2026-11-25",
-    "publishedAt": "2026-11-25T09:30:00+00:00",
-    "author": "Inside News (external report)",
-    "image": "https://www.inside.news/wp-content/uploads/2026/11/affaire-coffres-forts-navin-ramgoolam__wordpress_featured__1920x1080-Removed.jpg",
-    "imageAlt": "Source-provided photograph preview, credited to Inside News; rights remain with the publisher",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Inside News. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 25 November 2026 at 13:30 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Inside News",
-    "sourceUrl": "https://www.inside.news/coffres-forts-ramgoolam-plainte-constitutionnelle-procedure/",
-    "photoSourceUrl": "https://www.inside.news/coffres-forts-ramgoolam-plainte-constitutionnelle-procedure/",
-    "photoAuthor": "Inside News",
-    "photoCaption": "Photo preview linked from Inside News. Copyright remains with the original publisher.",
     "photoIllustrative": false
   },
   {
@@ -833,6 +737,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPU2R4a1hGQ3hPSzB1ay14OTE0VDlCUjVmN0FLbnZPTlhZWGpuVEZ3aHJWRnU0LURQaExIZUhJLUdQcUNZQTByZFljWDVESnRsZDcyRGdybDVVQXNEZVJTQlVUT2tGZ0RnMDFLblRFNjNiZ1JJT0YyR3V6c3JwY1o3NlZlQXNDTVJnYXExWW9kWEZfcHND?oc=5"
   },
   {
+    "id": "source-71762dea84864f44",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Accidents routiers : Deux seniors d\u00e9c\u00e8dent \u00e0 Riche-Terre et Morcellement Saint-Andr\u00e9",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-25",
+    "publishedAt": "2026-11-25T04:04:02+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 25 November 2026 at 08:04 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWWtBckM4QzRQYXZaNlVVbU1SdDU2OGJaMDZELVBHa29jdUZ0SjZydWdPVTFYVnQzVDg3bjhuOTVRLWNUTE9CYnB0cktpZW9Tc0VaQUJ4UWpLbmFieE8tM3pWNEF6WktrS0JXLWU0dUtDcGdmXzZkRTJ5anotb1JDb1VNR1h2ekowV2JOMDFEV2dONDJkbmZF?oc=5"
+  },
+  {
     "id": "source-a9481f9090061092",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -849,6 +771,42 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS3JrZlNBWlhwa1VIdnBkNTlRNFJaSXpRTjZmVmtvenF3RmlRVjlOdnhib05HRGwwZHZtNEV6VFJiTG84LXotSTRxZmNvYVQ2QVVqTFh0eWZ2Ym1EaFFfZTRqbHd6dU9nbHhaUW1oRWR4TXZhb3JHajJQSDZfZkprdWoyYnZJck1w?oc=5"
+  },
+  {
+    "id": "source-e75e5f81d121940e",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "En couverture : Les grands titres de l'express de ce mercredi 25 novembre 2026",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-25",
+    "publishedAt": "2026-11-25T02:03:25+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 25 November 2026 at 06:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQXRfOHktYWY0RURQNjRSSUNiaWwzMWNzU0hmQ3ozNHh3RTl4VjBjdmI5bDFUZHVUMW44NmhfYXdmOHotV05pMUVJZF94dU1tTjVTb3NrM2VnNUZOdi1sTXpVcEtyQ2FVOV9IeXdxb0xqQ1l1aWVZcXF2b3BfX1MxSlAycmQ5NFdZT1hoeHBsNkhhbFBn?oc=5"
+  },
+  {
+    "id": "source-b31e48498ea17508",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "MICROSOFT 365 : a Global Outage, a Local Test",
+    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "date": "2026-11-25",
+    "publishedAt": "2026-11-25T01:28:00+00:00",
+    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 25 November 2026 at 05:28 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9haGtTclZrN3VacnNURk1tdGxrMjlqOTNLYXZhb3hBeldpUWc2WDdrenlQWmJ6YUY5YnNoWHRfUHQxZWp5dkhiNGM4ajl1alN1b0hrUjJ2SnkzS01jeXBmckl1TkJ4dko0cndoakNR?oc=5"
   },
   {
     "id": "source-767bffbc2dc08557",
@@ -887,6 +845,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGVPOWY0aG1SM3Z2XzNmY01iOHN1eWRZV1c3UEN4Sm1DbVgyaGk2MUVMZDdUaHRjbEFSaHZDQ2t4SDhRTGNrVTNyXzZIajlENEUzY0F1X1pyajJSUDBESV9uVVdRWko4SVZrVG5BSzFoTGpzZ0RuSUVOTmpBWlFpUnVXMmZyOFJKV1hrNE96bGltQzUzaGpFa09rT3Q?oc=5"
   },
   {
+    "id": "source-f9bfb1061b2f198b",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Journ\u00e9e mondiale de la p\u00eache : \u00c0 Mah\u00e9bourg, des preuves vivantes de l\u2019amour d\u2019un m\u00e9tier qui manque de rel\u00e8ve",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T15:54:24+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 19:54 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTDdSTnBsbnZiWGdBVFhGWDNYWmxXNVFiWndubTRVQThTMDFWRHNFa1FYcl9NcVN5RVpUZFh0NkhOMWxhMFdKQXZGcUlESl9VUW1PaU92dGtUbWhfRllBUklKc3Z1NTNISGwyNkRNRVVadjlYd0FpS3pRTlFHYVV4Y3dmRURzMXZtOVYwTTc1czE0NHlsb3phZUZsTG5MdUZKNXNBVnNR?oc=5"
+  },
+  {
     "id": "source-0ae78b698dc55233",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
@@ -905,76 +881,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5nTGFkQ0kyUWJOMTM1Sk5TaGVWODJORzFObWlWYTV2c2g0VjhXeUZ1NVdIRXMzTDQycTNHREo2amZVNmhkbUdtSTdBajFVWVhlVFd3RVBDSWZGeDVLWnhBNkxUM09VQmlWc0VR?oc=5"
   },
   {
-    "id": "source-3965fe53694187d2",
+    "id": "source-d27277d290b2da31",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Rodrigues : veille au tsunami apr\u00e8s un s\u00e9isme \u00e0 326 km au nord-est de l\u2019\u00eele",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
+    "title": "Thierry Hebraud : \u00abMaurice doit passer d\u2019une logique de transit \u00e0 une logique d\u2019ancrage\u00bb",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
     "date": "2026-11-24",
-    "publishedAt": "2026-11-24T14:17:52+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
+    "publishedAt": "2026-11-24T14:03:28+00:00",
+    "author": "L'Express (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 18:17 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 18:03 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSkd6RVlwREVkZEsxUzFVbjFzcTJORDdLNGF6MGJkM2JrZjBqb21fNXlZeUJjX2pXZHdXdG95dnhPdlllQ1lNMm03a182cU1EeTlXbFdGbGwtQnRkOVF0V3d1OF9uNlNvVF9JcnRFUlNXcW1rYlpTNHRYSk9mSER4THBtRm54dkVxc3BSRGRqRTQtU2JENno3bQ?oc=5"
-  },
-  {
-    "id": "source-246d85aae1932c57",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Ganga Snan : Belle Mare accueille de nombreux fid\u00e8les pour les c\u00e9l\u00e9brations",
-    "summary": "Latest headline from Le D\u00e9fi Media / Radio Plus. Read the publisher's original report for the full details.",
-    "date": "2026-11-24",
-    "publishedAt": "2026-11-24T13:41:04+00:00",
-    "author": "Le D\u00e9fi Media / Radio Plus (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Le D\u00e9fi Media / Radio Plus. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 17:41 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Le D\u00e9fi Media / Radio Plus (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQT3dPcGNkR1hzUnNfcUZiZF9sbHNsMlpUdk4wbmg4U3R2TmZSMWw3cWl5RjRBelNCOU4xRXVpeklyQWtraVVkZzdyVnlDQWl3MTlTUTRWa1ZUWWV0NlY4UnF0NnpFMWxETlRySmlpNDRKZ0IxcldFcUI2a0NSaVBDOGpyYmlueUs2b29yQUZXMm9iVW5JaWdOdjItS3U?oc=5"
-  },
-  {
-    "id": "source-0e156ca04dfd9220",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Khulwant Ubheeram : des enregistrements remis \u00e0 la CCID, la cr\u00e9dibilit\u00e9 de l\u2019ancien homme fort de People\u2019s Turf en question",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-24",
-    "publishedAt": "2026-11-24T13:37:08+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 17:37 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPajhVdjhTaDJiR3BZcnRmNUJ1YW9wR0lUTkxsU0ZWMU1iMFYzLWJIRzJZbXQ0d002X1NSUFNFRVlNM0hOS1o5WWNSdkZENjZNR2pwVDhtNDBIQnlycURoR0hOYUktNEJ3Q0I0Z2ZXQS1BQ21GUUFkVm95d3FwX1hLclNKc0p5TUg2RS1qV25GdUxKNDREREZHb09tenBfTFZwVWxqSzZSbTAzWUVERVBGU2pDMEZPeWZFQk16TVJjQzFZb1NUb19ReTYwYw?oc=5"
-  },
-  {
-    "id": "source-07cff45619f762bc",
-    "category": "Mauritius",
-    "label": "SOURCE HEADLINE",
-    "title": "Affaire des Boeing retrouv\u00e9s en Iran : Andry Rajoelina et Christian Ntsay vis\u00e9s par des mandats d\u2019arr\u00eat",
-    "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
-    "date": "2026-11-24",
-    "publishedAt": "2026-11-24T13:15:24+00:00",
-    "author": "Top FM (external report)",
-    "image": "cover-mauritius.svg",
-    "imageAlt": "Inside Mauritius generic illustration, not event footage",
-    "content": [
-      "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 17:15 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
-    ],
-    "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORUdTbkFJblpEeHcwSkx1QTl0a0lreC1aUTNaZ1ZDMDhkTkVCRmk3MG9aQjhmWHMtSW52UVpCMG8tZnhRcWlFVDZQb3pndVV1ZzNsNDBQd1RnNnJsWUZUWV9yTXdiQUMyMFBmd0tOdm1UNnF1bTJzNGxFOGI2a2NMSG1pc0pQZFFJclhvUFFKOEhZa0hucndTUng2Tm9WWG8yUzZDOVZpUDBxYUYzOUdaTldXbGp3bnJCRUxncU9xZHlWRnBYRnZv?oc=5"
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMVVFQjB2Um9JRTNySmIyekFIa3hpanVyRk1Vb3RJbEVnM0R5TGJXMW16bG1rdHlCc3JHUldzd2UtSDVyclNXU3hRcUFPZWMycGVEOGNOTTFDN2xpYVRoVXBuMERUSGRFbDhhelRLQmZXdkdEYW8wTlVqZ2JaYk8zWHRzSVZxTUV5dlZUUGlhVVlGdFFBck5ZSWFuNTFiTVlKRE1hQWxCY1QxclNvTDM1bA?oc=5"
   },
   {
     "id": "source-78be5c9f757becc3",
@@ -1067,22 +989,22 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRjZpSWhNUHRxVlJpdW14MXB2VXNpcXVBREREYlprUjdSbkdUNmkyTElkODFNQmdURlZtVFlYTU9iRUFXeDBfVC1ITF8wR2dyTkhiaWlBRkxpTXdYX2MwdHl5Z01ia1laLVotdDJWNHZCb3NLdTZoWXRtRDI0RlozVW16QmU1ekxqbHJCNkZHUDFPQVJMTHUxNklvZTRfNXJRTW1kV1BBaWZzTmdlelFacmU5T3RRWUFPcXhUSA?oc=5"
   },
   {
-    "id": "source-e06eaa7146a69b50",
+    "id": "source-612f57818219a003",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Crise hydrique : les risques sanitaires li\u00e9s \u00e0 l\u2019utilisation de l\u2019eau des rivi\u00e8res suscitent des inqui\u00e9tudes",
+    "title": "Retards de paiement : les \u00e9coles pr\u00e9primaires priv\u00e9es tirent la sonnette d\u2019alarme",
     "summary": "Latest headline from Top FM. Read the publisher's original report for the full details.",
     "date": "2026-11-24",
-    "publishedAt": "2026-11-24T10:54:00+00:00",
+    "publishedAt": "2026-11-24T10:44:00+00:00",
     "author": "Top FM (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
       "This headline was automatically collected from a news feed attributed to Top FM. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 14:54 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "Published by the source on 24 November 2026 at 14:44 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
     "sourceName": "Top FM (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdWZNSFJOdkR0TEtJNU5BQl9hRzd2UURjeFFVSnQzc2R2RC0yZ2RiSGRmTDBjUzY0alNjZFZlTzgxdmEzSjJqS2M5OWZtZk4wa2JQOGQ1VjB0Z2JQTjhLR3N5M203T0dVaUN6WjRGaVlKd2xZci1mYVZBMThEOG02ejN1MGFpMjEyY253cjljUUVLWENITzJtTEtxSVc5YU1LOW9XWl9pejUxS2s1VGk0bnVfZHl4MWV5bkROTEpFNA?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTUkzUXJyUld5SGVtcXVYTFFXTmJyOE5MdGwxejdWS0lJVDg3OFVqZ3BPY1dtTkhWaFUzX2djekItci1fYWlXVW5JU3Z1aE1BSEZKSkd2YXhhdlBjcjR5VFo4aGhpRXpnSVVmb1Fpbk1xejJ6RXA2Mjh4OUptVWZWQkJCQlVNNzRPeGhEVFhLX3hCa2tscFlrd3gwOFpBcHlFVnVzV1lUMTg4QQ?oc=5"
   },
   {
     "id": "source-827a4b527b3337e8",
@@ -1101,6 +1023,24 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     ],
     "sourceName": "L'Express (via Google News)",
     "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVU5lUUlTNkNVTUhBcmVodE5JNThCaGZyYU1PWGlwd1U0aW13c1doMi1XZEU5cktMc00wN3loN2xJdmx3RWJ1SjVkY1VXNlY3dlY2WlVNMEZxLWRKclJ5Zm9sVHBBeldzS3VjbWhhamVjbUNHZjh2bzJnSWRvZFVWT1BDVHBtTnRzR2JRT2NLV3hBamE0dDF4aERuWEZZdWtS?oc=5"
+  },
+  {
+    "id": "source-fcb99b69b13a9e31",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "Accident mortel \u00e0 Riche-Terre : Un motocycliste de 68 ans perd la vie",
+    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T08:41:54+00:00",
+    "author": "L'Express (external report)",
+    "image": "cover-mauritius.svg",
+    "imageAlt": "Inside Mauritius generic illustration, not event footage",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 12:41 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "L'Express (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxVHVHN28xUnRGdUFaZWtmQ21aUldrRXVTdl9hcl93TDcyeDVHMGlTRXpYS1FMN01OY2VvWmZnelo5ZTE4a0NtcmJtU2JBaFR0X3dwTXJUTWROVDhYa2kzajg5ODMxVDZ0LXpfVWpaQ3plVjJl?oc=5"
   },
   {
     "id": "source-29f51fbf5a1f7b64",
@@ -1139,39 +1079,83 @@ window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES = [
     "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE53el9KWVhBU093eHZ4VXBMYWFmdDZ5RkpFamxFVzl3NkVqM2lRMUlTZWEzOGs4NzY0NjIxZWpmQ3FRdGRSV0NmdXFTUGhUa19pRC1rTHVQN3dNamxSNHBHUVlFQ2c0WHVTam1aUmRLSzhVcnNHbjJSSEp4ZkI?oc=5"
   },
   {
-    "id": "source-474e5a8c2698fd8b",
+    "id": "source-0ae6ecefe658bf46",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "Parlement : PNQ : Chetan Baboolall interpelle Arvin Boolell sur la fi\u00e8vre aphteuse",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "title": "Child Adoption Bill : ce qui est pr\u00e9vu au Parlement aujourd\u2019hui",
+    "summary": "Latest headline from 5-Plus dimanche. Read the publisher's original report for the full details.",
     "date": "2026-11-24",
-    "publishedAt": "2026-11-24T04:55:50+00:00",
-    "author": "L'Express (external report)",
+    "publishedAt": "2026-11-24T04:35:31+00:00",
+    "author": "5-Plus dimanche (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 08:55 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to 5-Plus dimanche. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 08:35 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdVJ3WUkzaUVXSzZNLTJCVEZidFRjVklYMWVhSGZydmlqdzZMY1QydWFlUTJWRnR1WUJtUHVwLXRIeVNvaFZDaWR4dzVfT0hVcWlQQ0tNLUdySUY0UGNfRThwc1hEektERHVfN2djS3RZODdsYmFKOWwtY2h2d0hKQkpLS0VIX2hLRHpBN2tmaXFmU0ppVVF2VHh4VGZOUQ?oc=5"
+    "sourceName": "5-Plus dimanche (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZDI2WGI4X2FCa0UwWE9nV0p3aUZUQjVral94Y0NFNXZKVkhaRHdkbDdTR2NrMWM0eEhoaE5yZ1ZXOHRMU29WbTdoaU91WU9oQ3RtNkhuVUtWUkNOY0s0VWpKamlXMWVjcWF4aU8xR3g5bGxRVUxYSXh1NXNwUHlkM1V2TUgyNE5XMTF5VGU4cDJxbGpFYW9F?oc=5"
   },
   {
-    "id": "source-028637936bd4d7e3",
+    "id": "source-78e7d386ca842bc2",
+    "category": "World",
+    "label": "SOURCE HEADLINE",
+    "title": "IShowSpeed court le 100 m\u00e8tres en 10,35 secondes : Usain Bolt impressionn\u00e9 par sa performance",
+    "summary": "Short excerpt from Radio Mo Pep RSS feed: Le c\u00e9l\u00e8bre streameur am\u00e9ricain IShowSpeed vient de r\u00e9aliser une performance qui fait beaucoup parler dans le monde du sport. Sous les yeux de la\u2026",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T04:00:07+00:00",
+    "author": "Radio Mo Pep (external report)",
+    "image": "https://radiomopep.mu/wp-content/uploads/2026/11/Sprint-records-en-vedette-1024x576.png",
+    "imageAlt": "Source-provided photograph preview, credited to Radio Mo Pep; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Radio Mo Pep. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 08:00 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Radio Mo Pep",
+    "sourceUrl": "https://radiomopep.mu/ishowspeed-100-metres-1035-secondes-usain-bolt/",
+    "photoSourceUrl": "https://radiomopep.mu/ishowspeed-100-metres-1035-secondes-usain-bolt/",
+    "photoAuthor": "Radio Mo Pep",
+    "photoCaption": "Photo preview linked from Radio Mo Pep. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-449ac5ba96c79c05",
     "category": "Mauritius",
     "label": "SOURCE HEADLINE",
-    "title": "\u00c9v\u00e9nement : Top 100 Companies Award ceremonies : ces entreprises qui se sont distingu\u00e9es",
-    "summary": "Latest headline from L'Express. Read the publisher's original report for the full details.",
+    "title": "Myasth\u00e9nie grave \u00e0 34 ans : Fasiha, m\u00e8re de quatre enfants, hospitalis\u00e9e en soins intensifs,un appel urgent \u00e0 la solidarit\u00e9",
+    "summary": "Short excerpt from Radio Mo Pep RSS feed: \u00c0 seulement 34 ans, Fasiha traverse une \u00e9preuve particuli\u00e8rement difficile. M\u00e8re de quatre enfants \u00e2g\u00e9s de 13 ans, 10 ans, 6 ans et 15\u2026",
     "date": "2026-11-24",
-    "publishedAt": "2026-11-24T04:38:24+00:00",
-    "author": "L'Express (external report)",
+    "publishedAt": "2026-11-24T03:43:55+00:00",
+    "author": "Radio Mo Pep (external report)",
+    "image": "https://radiomopep.mu/wp-content/uploads/2026/11/8DF13DBA-D9A4-4F2A-B70D-5818C4BBEDC9-1024x576.png",
+    "imageAlt": "Source-provided photograph preview, credited to Radio Mo Pep; rights remain with the publisher",
+    "content": [
+      "This headline was automatically collected from a news feed attributed to Radio Mo Pep. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 07:43 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+    ],
+    "sourceName": "Radio Mo Pep",
+    "sourceUrl": "https://radiomopep.mu/myasthenie-grave-fasiha-transfert-medical-inde/",
+    "photoSourceUrl": "https://radiomopep.mu/myasthenie-grave-fasiha-transfert-medical-inde/",
+    "photoAuthor": "Radio Mo Pep",
+    "photoCaption": "Photo preview linked from Radio Mo Pep. Copyright remains with the original publisher.",
+    "photoIllustrative": false
+  },
+  {
+    "id": "source-c0d91a2840db62b3",
+    "category": "Mauritius",
+    "label": "SOURCE HEADLINE",
+    "title": "\u00abDan Lasam Ber\u00bb : Bernard Moonsamy, parle-nous de la violence domestique...",
+    "summary": "Latest headline from 5-Plus dimanche. Read the publisher's original report for the full details.",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-23T21:22:15+00:00",
+    "author": "5-Plus dimanche (external report)",
     "image": "cover-mauritius.svg",
     "imageAlt": "Inside Mauritius generic illustration, not event footage",
     "content": [
-      "This headline was automatically collected from a news feed attributed to L'Express. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
-      "Published by the source on 24 November 2026 at 08:38 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
+      "This headline was automatically collected from a news feed attributed to 5-Plus dimanche. It is not independent reporting or a verified breaking-news alert from Inside Mauritius.",
+      "Published by the source on 24 November 2026 at 01:22 Mauritius time. Please visit the original publisher to read the report and check subsequent updates."
     ],
-    "sourceName": "L'Express (via Google News)",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc054cUFEYlNjZUF4cWZiMzEyLU1LcXV4MWJIOFFJY1J6MktVTEFzTnMwUjdIdTZNeHM1LV8yeW0wckYzZlVJWjBXOXBpWlMzejIyOEN6LXdIY0FpZ0sxeHYyX2J0NWQ0LUJSWUk5YThnaV9zWkxmOXVhcDNZNkxqSFVPLVVVN0V4UDQ4eFhlTWd1RjYwV3BmTFpGbEtvaW5NaENkNmpn?oc=5"
+    "sourceName": "5-Plus dimanche (via Google News)",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNX3JRWkFJbjdfdy16Z3dOX05IdmNPRmEwUVNHbGdOcHV5TkVyN1VmcGtFZGNEN09uYXo4TE53cEQyZjZST3FhVkNZVTVrLXE3Yk5teDI3UkJ6NU12bld5cFVTb2FoVXZsQk1peVpIVGxYMFJ5Q2l5cFJ6YXVHeU9jWmdubFVZb3JBajhSN0diU1JlREN0Mm9kNXZVV3ByTUE?oc=5"
   }
 ];
