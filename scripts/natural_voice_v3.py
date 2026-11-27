@@ -47,7 +47,7 @@ def build(root,limit=30,now=None):
             created+=1
             try: synthesize(title,lang,path,pipelines)
             except Exception as e: errors+=1;print("Generation failed:",type(e).__name__);continue
-        current.append(dict(title=title,sourceUrl=url,audioUrl=rel,voice=voice,language=lang,engine="Kokoro",generated=True,lastSeen=now.date().isoformat()))
+        current.append(dict(title=title,sourceUrl=url,audioUrl=rel,voice=voice,language=lang,engine="Kokoro",generated=True,lastSeen=now.date().isoformat(),legacyV2=bool(old and (old.get("legacyV2") or not old.get("lastSeen")))))
     if errors: raise RuntimeError(f"{errors} generation failures; previous manifest retained")
     if not current: raise RuntimeError("Empty audio registry; refusing replacement")
     # Retain inactive records for seven days, but never delete unmanaged V2 assets.
@@ -65,11 +65,11 @@ def build(root,limit=30,now=None):
     bulletin_file=root/"audio-bulletins.js"
     bulletins=read_data(bulletin_file) if bulletin_file.exists() else []
     # Build a dated source-linked headline roundup, not an invented or live report.
-    edition="morning" if now.hour<12 else "evening"
+    edition="morning" if now.hour<18 else "evening"
     today=now.date().isoformat()
-    recent=[r for r in current if stamps.get(r["sourceUrl"],0)>=now.timestamp()-86400][:8]
+    recent=[r for r in current if now.timestamp()-86400 <= stamps.get(r["sourceUrl"],0) <= now.timestamp()][:8]
     existing=next((b for b in bulletins if b.get("date")==today and b.get("edition")==edition and BULLETIN.fullmatch(str(b.get("audioUrl",""))) and valid_mp3(root/b["audioUrl"])),None)
-    if recent and not existing:
+    if recent and not existing and (6 <= now.hour < 12 or now.hour >= 18):
         dest=out/f"bulletin-{edition}-{today}.mp3"
         with tempfile.TemporaryDirectory(dir=out) as d:
             listing=pathlib.Path(d)/"concat.txt"
