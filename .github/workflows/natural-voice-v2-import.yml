@@ -1,0 +1,101 @@
+name: Natural Voice V2 import and mobile verification
+on:
+  pull_request:
+    types: [synchronize, opened, reopened]
+    branches: [main]
+    paths:
+      - '.github/workflows/natural-voice-v2-import.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: natural-voice-v2-import
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: ${{ (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/natural-voice-v2') || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/review/natural-voice-v2') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: natural-voice-v2-review
+          run-id: 45938899502
+          github-token: ${{ github.token }}
+          path: .
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Verify exact source/title matching and all audio files
+        run: |
+          python - <<'PY'
+          import json,pathlib,re,subprocess
+          from urllib.parse import urlsplit
+          def data(p):
+              return json.loads(pathlib.Path(p).read_text().split("=",1)[1].strip().rstrip(";"))
+          local=data("newsroom-data.js")
+          world=data("world-news-data.js")["headlines"]
+          feed={}
+          for row in local+world:
+              for k in ("sourceUrl","videoUrl","tiktokUrl","url"):
+                  u=row.get(k)
+                  if isinstance(u,str) and urlsplit(u).scheme=="https" and urlsplit(u).hostname:
+                      feed.setdefault(u,row.get("title"))
+                      break
+          manifest=data("headline-audio-data.js")
+          assert len(manifest)==148
+          assert len({r["audioUrl"] for r in manifest})==148
+          assert len({(r["sourceUrl"],r["title"]) for r in manifest})==148
+          for r in manifest:
+              assert feed.get(r["sourceUrl"])==r["title"], "Source headline changed"
+              assert re.fullmatch(r"audio/headline-[0-9a-f]{32}\.mp3",r["audioUrl"])
+              assert (r["language"],r["voice"]) in [("fr","ff_siwis"),("en","bm_george")]
+              assert r["engine"]=="Kokoro" and r["generated"] is True
+              p=pathlib.Path(r["audioUrl"])
+              assert p.is_file()
+              info=json.loads(subprocess.check_output(["ffprobe","-v","error","-select_streams","a:0","-show_entries","stream=codec_name:format=duration","-of","json",str(p)]))
+              assert info["streams"][0]["codec_name"]=="mp3" and float(info["format"]["duration"])>.2
+          print("148/148 exact headline matches and valid MP3 files")
+          PY
+      - run: node --check live-updates.js && node --check headline-audio-data.js
+      - name: Browser playback with Android mobile emulation
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 > /tmp/voice-http.log 2>&1 &
+          node <<'JS'
+          const { chromium, devices } = require('playwright');
+          (async () => {
+            const browser=await chromium.launch({headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+            try {
+              const context=await browser.newContext({...devices['Galaxy S9+']});
+              const page=await context.newPage();
+              await page.goto('http://127.0.0.1:8765/live-updates.html');
+              await page.locator('#headlineGrid audio').first().waitFor();
+              for (const lang of ['fr','en']) {
+                const record=await page.evaluate(lang=>window.INSIDE_MAURITIUS_HEADLINE_AUDIO.find(r=>r.language===lang),lang);
+                await page.locator('#headlineSearch').fill(record.title);
+                const audio=page.locator('#headlineGrid audio').first();
+                await audio.waitFor();
+                await audio.evaluate(async a=>{await a.play()});
+                await page.waitForFunction(()=>{const a=document.querySelector('#headlineGrid audio');return a && a.currentTime>0.1});
+                await page.getByRole('button',{name:'Stop audio',exact:true}).first().click();
+                if (!await audio.evaluate(a=>a.paused && a.currentTime===0)) throw Error('Stop failed');
+              }
+              await page.locator('#headlineSearch').fill('');
+              const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2);
+              if(overflow) throw Error('Mobile layout overflow');
+              console.log('French and English playback, stop, search and mobile layout passed');
+            } finally {await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Install verified audio on review branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- headline-audio-data.js audio/headline-*.mp3
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Install 148 validated Natural Voice V2 recordings"
+          git push origin HEAD:refs/heads/review/natural-voice-v2

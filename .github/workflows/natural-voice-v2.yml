@@ -1,0 +1,41 @@
+name: Natural Voice V2 review
+on:
+  workflow_dispatch:
+  push:
+    branches: ['review/natural-voice-v2']
+    paths:
+      - 'scripts/generate_headline_audio.py'
+      - 'scripts/test_headline_audio.py'
+      - '.github/workflows/natural-voice-v2.yml'
+      - 'live-updates.js'
+      - 'live-updates.html'
+      - 'newsroom-data.js'
+      - 'world-news-data.js'
+  pull_request:
+    paths: ['scripts/generate_headline_audio.py', 'live-updates.js', 'live-updates.html']
+permissions:
+  contents: read
+concurrency:
+  group: voice-v2-review-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - run: python -m unittest discover -s scripts -p test_headline_audio.py
+      - run: node --check live-updates.js && python scripts/generate_headline_audio.py --limit 150
+      - run: node --check headline-audio-data.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: natural-voice-v2-review
+          path: |
+            audio/headline-*.mp3
+            headline-audio-data.js
+          if-no-files-found: error
