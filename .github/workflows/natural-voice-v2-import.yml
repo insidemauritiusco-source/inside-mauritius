@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/natural-voice-v2-import.yml'
+      - 'live-updates.js'
   workflow_dispatch:
 permissions:
   contents: write
@@ -81,8 +82,8 @@ jobs:
                 await audio.waitFor();
                 await audio.evaluate(async a=>{await a.play()});
                 await page.waitForFunction(()=>{const a=document.querySelector('#headlineGrid audio');return a && a.currentTime>0.1});
-                await page.getByRole('button',{name:'Stop audio',exact:true}).first().click();
-                if (!await audio.evaluate(a=>a.paused && a.currentTime===0)) throw Error('Stop failed');
+                await audio.locator('..').getByRole('button',{name:'Stop audio',exact:true}).first().click();
+                await page.waitForFunction(()=>{const a=document.querySelector('#headlineGrid audio');return a && a.paused && a.currentTime===0});
               }
               await page.locator('#headlineSearch').fill('');
               const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2);
