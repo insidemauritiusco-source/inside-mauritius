@@ -1,0 +1,67 @@
+name: Solid Newsroom 2027 review
+on:
+  push:
+    branches: ['review/gloss-newsroom-2027']
+  pull_request:
+    branches: [main]
+    paths: ['gloss-newsroom-2027.css','index.html','world-news.html','live-updates.html','.github/workflows/gloss-newsroom-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    if: github.ref == 'refs/heads/review/gloss-newsroom-2027' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/gloss-newsroom-2027')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Check responsive styling and existing audio
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/gloss-http.log 2>&1 &
+          mkdir -p review-screenshots
+          curl --fail --silent --show-error --retry 15 --retry-connrefused --retry-delay 1 --max-time 3 http://127.0.0.1:8765/index.html >/dev/null
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const b=await chromium.launch();
+            try{
+              for(const [name,options] of [['desktop',{viewport:{width:1440,height:900}}],['android',devices['Galaxy S9+']]]){
+                const p=await b.newPage(options);
+                p.on('pageerror',e=>console.error('Page error:',e.message));
+                p.on('requestfailed',r=>console.log('Request failed:',r.url(),r.failure()?.errorText));
+                for(const file of ['index.html','world-news.html','live-updates.html']){
+                  console.log('Testing '+name+' '+file);
+                  await p.goto('http://127.0.0.1:8765/'+file,{waitUntil:'domcontentloaded'});
+                  await p.waitForFunction(()=>Array.from(document.styleSheets).some(s=>s.href?.includes('gloss-newsroom-2027.css')));
+                  await p.screenshot({path:'review-screenshots/'+name+'-'+file+'.png',animations:'disabled'});
+                  const bg=await p.evaluate(()=>{const s=getComputedStyle(document.body);return {image:s.backgroundImage,color:s.backgroundColor}});
+                  console.log('Page background:',bg);
+                  if(bg.image!=='none'||bg.color!=='rgb(232, 237, 243)')throw Error('Solid page background missing');
+                  const selector=file==='index.html'?'#imDashboardVoice':file==='world-news.html'?'.item':'.news-card';
+                  await p.waitForSelector(selector);
+                  if(!await p.locator(selector).first().evaluate(el=>{const s=getComputedStyle(el);return s.backgroundColor==='rgb(255, 255, 255)'&&s.backgroundImage==='none'&&s.opacity==='1'&&s.backdropFilter==='none'}))throw Error('Non-opaque news panel '+file);
+                  if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Horizontal overflow '+file+' '+name);
+                  await p.screenshot({path:'review-screenshots/'+name+'-'+file+'.png',animations:'disabled'});
+                  if(file==='index.html'){
+                    await p.waitForFunction(()=>parseInt(document.querySelector('#imDashboardCoverage').textContent)>0);
+                    await p.locator('#imDashboardStart').click();
+                    await p.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                    if(!/^audio\/summary-/.test(await p.locator('#imDashboardPlayer').getAttribute('src')))throw Error('Summary playback missing');
+                    await p.locator('#imDashboardStop').click();
+                    await p.locator('#storyGrid a[href^="#article/"]').first().click();
+                    await p.waitForSelector('#imNaturalArticle audio');
+                    await p.screenshot({path:'review-screenshots/'+name+'-article.png',animations:'disabled'});
+                  }
+                }
+                await p.close();
+              }
+            }finally{await b.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: solid-newsroom-screenshots
+          path: review-screenshots/

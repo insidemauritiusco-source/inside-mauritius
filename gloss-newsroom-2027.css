@@ -1,0 +1,79 @@
+/* Inside Mauritius | Solid Newsroom 2027. Opaque, high-contrast presentation only. */
+:root {
+  --gloss-ink:#122b40; --gloss-muted:#425b70; --gloss-blue:#0b435f;
+  --gloss-teal:#087b83; --gloss-line:#c5d9e5; --gloss-radius:12px;
+  --gloss-panel:#ffffff;
+  --gloss-shadow:0 3px 12px #243b5314;
+}
+html:root {background:#e8edf3 !important}
+html body {
+  background:#e8edf3 !important;
+  background-attachment:scroll !important; color:var(--gloss-ink);
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+body .site-header,body .brand-identity-band,body .breaking-ribbon {background:#fff !important;border-bottom:1px solid var(--gloss-line)}
+body .utility-strip,body .topline,body .site-footer {background:#102b46 !important;color:#fff}
+body .nav-wrap {background:#102b46 !important;border-bottom:4px solid #b91f38;box-shadow:0 5px 18px #183b5930}
+body .nav-wrap .primary-nav .nav-link {color:#f4fbff}
+body .nav-wrap .primary-nav .nav-link:hover,body .nav-wrap .primary-nav .nav-link.active {background:#294967;border-radius:9px}
+body .nav-wrap .primary-nav.is-open {background:#102c44 !important}
+body .dashboard-shell {gap:24px}
+body .dashboard-main .section-title-line {border-bottom:2px solid #98bdce}
+body .dashboard-main .section-title-line h2,body .dashboard-widget-heading h2 {font-family:system-ui,sans-serif;letter-spacing:-.035em;color:var(--gloss-ink)}
+body .dashboard-main .story-card,body .dashboard-main .story-grid .story-card:first-child,body .dashboard-main .feature-side-news .feature-headline-card,body .dashboard-widget,body #homePage .im-edition-15,body #homePage .im-news-fallback,body #homePage .im-edition-15 article,body .im-verified-desk,body .im-verified-desk__card,body .article-page,body .media-grid article,body .item,body .news-card,body .kreol-reader,body .reader-status,body .overview>div {
+  background:var(--gloss-panel) !important;color:var(--gloss-ink);border:1px solid var(--gloss-line);border-radius:var(--gloss-radius) !important;box-shadow:var(--gloss-shadow);
+}
+body .dashboard-main .story-card h3,body .dashboard-main .feature-headline-copy h3 {font-family:system-ui,sans-serif;font-weight:750;letter-spacing:-.025em;color:var(--gloss-ink)}
+body .dashboard-main .story-card .story-excerpt {color:var(--gloss-muted)}
+body .dashboard-main .story-card .story-posted-row {background:#e3f0f7;border-left-color:var(--gloss-teal);border-radius:9px}
+body .dashboard-main .lead-feature {border-radius:24px !important;box-shadow:0 15px 32px #102d4540}
+body .dashboard-main .hero-copy .im-natural-post-audio {background:#eef7fc;color:var(--gloss-ink)}
+body .dashboard-main .hero-copy .im-natural-post-audio p {color:var(--gloss-ink);display:block;overflow:visible;-webkit-line-clamp:unset}
+body .dashboard-main .news-live-time {background:#102b46 !important;border-radius:14px}
+body .dashboard-main .filter-button,body .dashboard-main .news-search {border-radius:12px;border:1px solid var(--gloss-line);background:#f7fcff}
+body .dashboard-main .filter-button.selected,body .dashboard-main .filter-button[aria-pressed="true"] {background:#16465f;color:white;border-color:#16465f}
+body .dashboard-widget-heading {border-bottom:1px solid #9bbfce}
+body #imDashboardVoice {
+  background:#ffffff !important;
+  color:var(--gloss-ink) !important;border:1px solid #abcbd9 !important;border-radius:24px !important;
+  padding:clamp(18px,3vw,30px) !important;box-shadow:var(--gloss-shadow);
+}
+body #imDashboardVoiceTitle {font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.035em;line-height:1.2;margin:0 0 12px}
+body #imDashboardCoverage,body #imDashboardStatus {overflow-wrap:anywhere;color:var(--gloss-muted)}
+body #imDashboardVoice button,body .im-natural-post-audio button {font:inherit;font-weight:700;min-height:44px;padding:9px 14px;border:1px solid #b7cdd9;border-radius:10px;background:#edf2f7;color:var(--gloss-ink);cursor:pointer}
+body #imDashboardVoice #imDashboardStart {background:#07556b;color:#fff;border-color:#0b4c62;box-shadow:0 4px 12px #0b4c6230}
+body #imDashboardVoice select {min-height:44px;max-width:100%;border:1px solid #a8c4d2;background:white;border-radius:10px;padding:8px;color:var(--gloss-ink)}
+body .im-natural-post-audio {min-width:0;max-width:100%;margin-top:12px;padding:12px;border:1px solid #c6dce7;border-radius:13px;background:#eef3f8;color:var(--gloss-ink)}
+body .im-natural-post-audio p {font-size:12px;line-height:1.5;margin:0 0 8px;color:var(--gloss-muted);overflow-wrap:anywhere}
+body .im-natural-post-audio audio,body #imDashboardPlayer {display:block;width:100%;min-width:0;max-width:100%;margin-bottom:8px}
+body .article-page {padding:clamp(16px,3vw,36px)}
+body .intro {color:var(--gloss-ink)}
+body a:focus-visible,body button:focus-visible,body input:focus-visible,body select:focus-visible {outline:3px solid #087b83 !important;outline-offset:3px}
+@media(max-width:680px){body .dashboard-shell{gap:18px}body #imDashboardVoice{padding:16px !important}body .dashboard-main .story-card,body .dashboard-widget{border-radius:16px !important}body #imDashboardVoice label{max-width:100%}body .im-natural-post-audio{padding:9px}body .dashboard-main .hero-copy .im-natural-post-audio{margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){body .story-card,body .feature-headline-card{transition:none !important}}
+
+/* Opaque mastheads, surfaces and navigation; no glass or blur. */
+body .site-header,body .nav-wrap,body .brand-identity-band,body .breaking-ribbon,body .dashboard-widget,body .story-card,body #imDashboardVoice,body .im-natural-post-audio {
+  -webkit-backdrop-filter:none !important;backdrop-filter:none !important;opacity:1 !important;
+}
+body>header {background:#fff !important;color:#142b43}
+body>footer {background:#102b46 !important;color:#fff}
+body .dashboard-main .hero-copy {background:#102b46 !important;box-sizing:border-box;padding:20px !important;border-radius:10px;color:#fff;}
+body .dashboard-main .hero-copy h1,body .dashboard-main .hero-copy>p {color:#fff !important;text-shadow:none}
+body .dashboard-main .hero-copy .im-natural-post-audio {background:#fff !important;color:#142b43}
+body .dashboard-main .hero-copy .im-natural-post-audio p {color:#142b43 !important}
+body .dashboard-main .hero-shade {background:none !important}
+body #imDashboardVoice {border-top:5px solid #b91f38 !important;border-radius:12px !important}
+body #imDashboardVoiceTitle {color:#102b46}
+body .dashboard-main .story-card .story-excerpt {font-size:16px;line-height:1.6;color:#273b50}
+body .dashboard-main .story-card h3,body .dashboard-main .feature-headline-copy h3 {color:#102b46}
+body .dashboard-main .story-card .story-category {background:#fbe8ec;color:#9c1730}
+body .dashboard-main .filter-button,body .dashboard-main .news-search {background:#fff}
+body .dashboard-main .filter-button.selected,body .dashboard-main .filter-button[aria-pressed="true"] {background:#102b46;color:#fff}
+body .media-grid article,body .item {padding:16px;min-width:0}
+body .grid {gap:16px}
+body .item .im-natural-post-audio {width:100%;box-sizing:border-box}
+body .reader-status {padding:15px}
+body .im-natural-post-audio p {font-size:14px;color:#273b50}
+body .im-natural-post-audio button {font-size:14px}
+@media(max-width:680px){body .dashboard-main .hero-copy{padding:14px !important}body .dashboard-main .story-card .story-excerpt{font-size:16px}}
