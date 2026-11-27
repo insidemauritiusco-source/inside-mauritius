@@ -88,8 +88,7 @@
   // Approved, title-matched recordings only. Never silently substitute device TTS.
   const recordings = Array.isArray(window.INSIDE_MAURITIUS_HEADLINE_AUDIO)
     ? window.INSIDE_MAURITIUS_HEADLINE_AUDIO : [];
-  const recordingMap = new Map(recordings.filter(r => r && r.approved === true &&
-    r.voice === "Tanguy" && typeof r.title === "string" && cleanUrl(r.sourceUrl) &&
+  const recordingMap = new Map(recordings.filter(r => r && ((r.approved === true && r.voice === "Tanguy") || (r.generated === true && r.engine === "Kokoro" && ["ff_siwis","bm_george"].includes(r.voice) && /^audio\/headline-[a-f0-9]{32}\.mp3$/.test(r.audioUrl))) && typeof r.title === "string" && cleanUrl(r.sourceUrl) &&
     typeof r.audioUrl === "string").map(r => [JSON.stringify([cleanUrl(r.sourceUrl), r.title]), r]));
   function recordingFor(item) {
     const record = recordingMap.get(JSON.stringify([item.url, item.title]));
@@ -127,8 +126,9 @@
     link.rel = "noopener noreferrer";
     card.append(time,link);
     const audioUrl = recordingFor(item);
+    const recording = recordingMap.get(JSON.stringify([item.url, item.title]));
     const notice = node("p","reader-note",audioUrl
-      ? "Approved recording · HeyGen Tanguy (AI voice)"
+      ? (recording.engine === "Kokoro" ? "Kokoro AI voice · " + (recording.language === "fr" ? "French" : "English") : "Approved recording · HeyGen Tanguy (AI voice)")
       : "Natural voice recording not available yet.");
     notice.setAttribute("role","status");
     if (audioUrl) {
@@ -141,7 +141,10 @@
       audio.addEventListener("error", () => {
         notice.textContent = "Recording unavailable. Please try again later or choose the optional device voice.";
       });
-      card.append(audio);
+      const stopAudio = node("button","listen-headline","■ Stop audio");
+      stopAudio.type = "button";
+      stopAudio.addEventListener("click", () => { audio.pause(); audio.currentTime = 0; });
+      card.append(audio,stopAudio);
     }
     card.append(notice);
     const listen = node("button","listen-headline","🔊 Optional device voice");
@@ -154,7 +157,7 @@
         return;
       }
       $("creoleNewsReader")?.querySelector("details")?.setAttribute("open","");
-      notice.textContent = "Using your device voice, not the Tanguy recording. Pause and stop are in the audio section above.";
+      notice.textContent = "Using your device voice, not the generated recording. Pause and stop are in the audio section above.";
       document.dispatchEvent(new CustomEvent("im:read-headline",{
         detail:{ title:item.title, source:item.source, category:item.category }
       }));
