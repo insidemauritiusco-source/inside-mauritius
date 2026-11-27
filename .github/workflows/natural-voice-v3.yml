@@ -43,6 +43,42 @@ jobs:
               assert BULLETIN.fullmatch(b['audioUrl']) and valid_mp3(root/b['audioUrl']) and b['headlines']
           print('Preserved',len(prior),'legacy recordings; manifests and MP3 files validated')
           PY
+      - name: Verify both bulletin editions against real cached audio (review only)
+        if: github.ref == 'refs/heads/review/natural-voice-v3'
+        run: |
+          python - <<'PY'
+          import datetime as dt,json,pathlib,shutil,sys,tempfile
+          sys.path.insert(0,'scripts')
+          from natural_voice_v3 import build,read_data,write_js,PREFIX,MUT,valid_mp3
+          root=pathlib.Path('.')
+          records=read_data(root/'headline-audio-data.js')
+          chosen=[next(r for r in records if r.get('engine')=='Kokoro' and r.get('language')==lang) for lang in ('fr','en')]
+          with tempfile.TemporaryDirectory() as d:
+              p=pathlib.Path(d);(p/'audio').mkdir()
+              for r in chosen: shutil.copyfile(root/r['audioUrl'],p/r['audioUrl'])
+              write_js(p/'headline-audio-data.js',PREFIX,chosen)
+              day=dt.datetime(2026,11,27,7,tzinfo=MUT)
+              rows=[dict(title=r['title'],sourceUrl=r['sourceUrl'],language=r['language'],publishedAt=day.isoformat()) for r in chosen]
+              (p/'newsroom-data.js').write_text('window.fixture = '+json.dumps(rows)+';')
+              (p/'world-news-data.js').write_text('window.fixture = {"headlines":[]};')
+              build(p,0,day.replace(hour=8))
+              build(p,0,day.replace(hour=18))
+              b=read_data(p/'audio-bulletins.js')
+              assert {r['edition'] for r in b}=={'morning','evening'}
+              assert all(valid_mp3(p/r['audioUrl']) and len(r['headlines'])==2 for r in b)
+              print('Morning and evening fixture bulletins validated using actual cached French/English audio')
+          PY
+      - name: Version audio registry URLs to avoid stale browser caches
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib,re
+          p=pathlib.Path('live-updates.html');s=p.read_text()
+          for name in ('headline-audio-data.js','audio-bulletins.js','live-updates.js'):
+              digest=hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()[:16]
+              s,n=re.subn(r'(src="'+re.escape(name)+r')(?:\?v=[^"]*)?"',lambda m:m.group(1)+'?v='+digest+'"',s)
+              assert n==1,name
+          p.write_text(s)
+          PY
       - run: node --check live-updates.js && node --check headline-audio-data.js && node --check audio-bulletins.js
       - name: Android emulated playback
         run: |
@@ -61,8 +97,12 @@ jobs:
                 await page.locator('#v3ListenAll').click();
                 await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
                 const previous=await page.locator('#v3QueueAudio').getAttribute('src');
-                await page.locator('#v3Next').click();
+                await page.locator('#v3QueueAudio').evaluate(a=>a.pause());
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
+                await page.locator('#v3QueueAudio').evaluate(a=>a.play());
+                await page.locator('#v3QueueAudio').evaluate(a=>{a.currentTime=Math.max(0,a.duration-0.05);});
                 await page.waitForFunction(p=>document.querySelector('#v3QueueAudio').getAttribute('src')!==p,previous);
+                await page.locator('#v3Next').click();
                 await page.locator('#v3Stop').click();
                 await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
               }
@@ -81,4 +121,26 @@ jobs:
             audio/bulletin-*.mp3
             headline-audio-data.js
             audio-bulletins.js
+            live-updates.html
           if-no-files-found: error
+  install-review:
+    needs: review
+    if: github.ref == 'refs/heads/review/natural-voice-v3' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: natural-voice-v3-review
+          path: .
+      - name: Commit tested audio only to V3 review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- headline-audio-data.js audio-bulletins.js live-updates.html
+          git add -- audio/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Install verified V3 audio and cache versions on review branch"
+          git push origin HEAD:refs/heads/review/natural-voice-v3
