@@ -77,3 +77,26 @@ body .reader-status {padding:15px}
 body .im-natural-post-audio p {font-size:14px;color:#273b50}
 body .im-natural-post-audio button {font-size:14px}
 @media(max-width:680px){body .dashboard-main .hero-copy{padding:14px !important}body .dashboard-main .story-card .story-excerpt{font-size:16px}}
+
+/* Solid newsroom responsive repair: allow navigation and narrow cards to reflow. */
+body .nav-wrap .nav-inner{min-width:0;max-width:100%;gap:8px}
+@media(min-width:821px){
+ body .nav-wrap .primary-nav{display:flex;flex:1 1 0;min-width:0;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:2px}
+ body .nav-wrap .primary-nav .nav-link{flex:0 0 auto;max-width:100%;white-space:normal;padding:10px 9px !important;font-size:13px !important}
+ body .nav-wrap .nav-search{flex:0 0 auto}
+}
+body .header-inner,body .utility-inner,body .breaking-inner,body .brand,body .header-side{min-width:0}
+body .header-inner,body .utility-inner,body .breaking-inner{max-width:100%}
+body .breaking-inner p{min-width:0;overflow-wrap:anywhere}
+body .dashboard-main .feature-grid,body .dashboard-main .story-grid,body .dashboard-main .top-stories-grid,body .feature-headline-grid{min-width:0;max-width:100%}
+body .dashboard-main .story-card,body .story-content,body .feature-headline-copy,body .dashboard-headlines li,body .dashboard-widget,body .im-natural-post-audio{min-width:0;box-sizing:border-box}
+body .im-natural-post-audio{width:100%;overflow-wrap:anywhere}
+body .im-natural-post-audio button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+body #imDashboardVoice label,body .story-social-actions{min-width:0;max-width:100%;flex-wrap:wrap}
+body .story-social-actions>*{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+body .dashboard-main .hero-copy{max-width:calc(100% - 34px) !important;min-width:0}
+body .dashboard-main .hero-cta-row{flex-wrap:wrap}
+body .article-body,body .article-deck,body .article-title{overflow-wrap:anywhere;min-width:0}
+body .article-body iframe,body .article-body video,body .article-body audio{max-width:100%}
+@media(max-width:900px){body .dashboard-shell{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:680px){body .dashboard-sidebar{grid-template-columns:minmax(0,1fr)}body .dashboard-main .feature-headline-card,body .dashboard-main .feature-headline-card-primary{grid-template-columns:minmax(0,1fr)}body .dashboard-main .feature-headline-image{max-width:100%}body .dashboard-main .hero-copy{margin-inline:17px !important}}
