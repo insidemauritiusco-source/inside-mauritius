@@ -47,7 +47,7 @@
   }
   function populateVoices() {
     const previous = voiceSelect.value;
-    voiceSelect.replaceChildren(new Option("Natural news audio (when available)","natural"), new Option("Automatic (best device voice)","device"));
+    voiceSelect.replaceChildren(new Option("Tanguy · Natural news voice (when available)","natural"), new Option("Automatic (best device voice)","device"));
     voices().forEach(v => voiceSelect.add(new Option(v.name+" ("+v.lang+")",v.voiceURI)));
     if (previous === "device" || previous === "natural" || voices().some(v => v.voiceURI === previous)) voiceSelect.value = previous;
   }
