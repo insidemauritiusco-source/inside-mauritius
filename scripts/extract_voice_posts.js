@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm');
+const window={};const context=vm.createContext({window});
+const html=fs.readFileSync('index.html','utf8');
+const names=[...html.matchAll(/<script defer src="([^"?]+)(?:\?[^"]*)?"/g)].map(m=>m[1]).filter(n=>/^(articles|newsroom-data|news-\d{4}-\d{2}(?:-\d{2}|-pensions)|tiktok-posts)\.js$/.test(n));
+for(const name of [...names,'world-news-data.js'])vm.runInContext(fs.readFileSync(name,'utf8'),context,{timeout:2000,filename:name});
+const w=context.window,seen=new Set();
+const time=x=>Date.parse(x.publishedAt||x.addedAt||x.date||'')||0;
+const home=[...(w.INSIDE_MAURITIUS_ARTICLES||[]),...(w.INSIDE_MAURITIUS_TIKTOK_POSTS||[]),...(w.INSIDE_MAURITIUS_NEWSROOM_ARTICLES||[])].filter(x=>x&&typeof x.id==='string'&&typeof x.title==='string').sort((a,b)=>time(b)-time(a)).filter(x=>!seen.has(x.id)&&seen.add(x.id));
+const rows=[...home,...(w.INSIDE_MAURITIUS_WORLD_NEWS?.headlines||[])];
+process.stdout.write(JSON.stringify(rows.map(x=>({id:x.id||null,title:x.title,sourceUrl:[x.sourceUrl,x.videoUrl,x.tiktokUrl,x.url].map(u=>{try{const a=new URL(u);return a.protocol==='https:'?a.href:null}catch{return null}}).find(Boolean)||null,language:x.language||x.lang||null,summary:x.summary||''}))));
