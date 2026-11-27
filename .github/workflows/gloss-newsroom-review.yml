@@ -1,7 +1,7 @@
-name: Solid Newsroom 2027 review
+name: Solid Newsroom layout repair
 on:
   push:
-    branches: ['review/gloss-newsroom-2027']
+    branches: ['review/solid-newsroom-layout-fix']
   pull_request:
     branches: [main]
     paths: ['gloss-newsroom-2027.css','index.html','world-news.html','live-updates.html','.github/workflows/gloss-newsroom-review.yml']
@@ -10,7 +10,7 @@ permissions:
   contents: read
 jobs:
   review:
-    if: github.ref == 'refs/heads/review/gloss-newsroom-2027' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/gloss-newsroom-2027')
+    if: github.ref == 'refs/heads/review/solid-newsroom-layout-fix' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/solid-newsroom-layout-fix')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -42,7 +42,9 @@ jobs:
                   const selector=file==='index.html'?'#imDashboardVoice':file==='world-news.html'?'.item':'.news-card';
                   await p.waitForSelector(selector);
                   if(!await p.locator(selector).first().evaluate(el=>{const s=getComputedStyle(el);return s.backgroundColor==='rgb(255, 255, 255)'&&s.backgroundImage==='none'&&s.opacity==='1'&&s.backdropFilter==='none'}))throw Error('Non-opaque news panel '+file);
-                  if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Horizontal overflow '+file+' '+name);
+                  const overflow=await p.evaluate(()=>({width:document.documentElement.scrollWidth,viewport:innerWidth,offenders:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.right>innerWidth+2&&getComputedStyle(e).position!=='fixed'}).slice(0,20).map(e=>({tag:e.tagName,id:e.id,cls:String(e.className).slice(0,100),right:Math.round(e.getBoundingClientRect().right)}))}));
+                  console.log('Layout measurement',JSON.stringify(overflow));
+                  if(overflow.width>overflow.viewport+2)throw Error('Horizontal overflow '+file+' '+name);
                   await p.screenshot({path:'review-screenshots/'+name+'-'+file+'.png',animations:'disabled'});
                   if(file==='index.html'){
                     await p.waitForFunction(()=>parseInt(document.querySelector('#imDashboardCoverage').textContent)>0);
