@@ -85,6 +85,33 @@
     return el;
   }
 
+  // Approved, title-matched recordings only. Never silently substitute device TTS.
+  const recordings = Array.isArray(window.INSIDE_MAURITIUS_HEADLINE_AUDIO)
+    ? window.INSIDE_MAURITIUS_HEADLINE_AUDIO : [];
+  const recordingMap = new Map(recordings.filter(r => r && r.approved === true &&
+    r.voice === "Tanguy" && typeof r.title === "string" && cleanUrl(r.sourceUrl) &&
+    typeof r.audioUrl === "string").map(r => [JSON.stringify([cleanUrl(r.sourceUrl), r.title]), r]));
+  function recordingFor(item) {
+    const record = recordingMap.get(JSON.stringify([item.url, item.title]));
+    if (!record) return null;
+    // Audio is either an HTTPS URL or a locally hosted audio file, never executable content.
+    if (/^audio\/[a-zA-Z0-9_-]+\.(mp3|wav)$/.test(record.audioUrl)) return record.audioUrl;
+    return cleanUrl(record.audioUrl);
+  }
+  let currentAudio = null;
+  document.addEventListener("play", event => {
+    if (event.target.tagName !== "AUDIO") return;
+    document.querySelectorAll("audio").forEach(a => { if (a !== event.target) a.pause(); });
+    $("stopReader")?.click();
+    currentAudio = event.target;
+  }, true);
+  function stopNatural() {
+    if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  }
+  document.addEventListener("im:read-headline", stopNatural);
+  $("readRoundup")?.addEventListener("click", stopNatural);
+  window.addEventListener("pagehide", stopNatural);
+
   function makeCard(item) {
     const card = node("article", "news-card");
     const meta = node("span", "meta", item.category + " · " + item.source);
@@ -99,10 +126,35 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     card.append(time,link);
-    const listen = node("button","listen-headline","🔊 Ekout sa tit-la");
+    const audioUrl = recordingFor(item);
+    const notice = node("p","reader-note",audioUrl
+      ? "Approved recording · HeyGen Tanguy (AI voice)"
+      : "Natural voice recording not available yet.");
+    notice.setAttribute("role","status");
+    if (audioUrl) {
+      const audio = node("audio","");
+      audio.controls = true;
+      audio.preload = "none";
+      audio.style.width = "100%";
+      audio.setAttribute("aria-label","Listen to headline: " + item.title);
+      audio.src = audioUrl;
+      audio.addEventListener("error", () => {
+        notice.textContent = "Recording unavailable. Please try again later or choose the optional device voice.";
+      });
+      card.append(audio);
+    }
+    card.append(notice);
+    const listen = node("button","listen-headline","🔊 Optional device voice");
     listen.type = "button";
-    listen.setAttribute("aria-label","Listen to headline: " + item.title);
+    listen.setAttribute("aria-label","Read with device voice: " + item.title);
     listen.addEventListener("click", () => {
+      stopNatural();
+      if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
+        notice.textContent = "Device speech is not supported in this browser.";
+        return;
+      }
+      $("creoleNewsReader")?.querySelector("details")?.setAttribute("open","");
+      notice.textContent = "Using your device voice, not the Tanguy recording. Pause and stop are in the audio section above.";
       document.dispatchEvent(new CustomEvent("im:read-headline",{
         detail:{ title:item.title, source:item.source, category:item.category }
       }));
@@ -115,6 +167,7 @@
       (category === "All" || x.category === category) &&
       (!query || (x.title + " " + x.source + " " + x.summary).toLowerCase().includes(query))
     );
+    stopNatural();
     grid.replaceChildren();
     matching.slice(0,visible).forEach(x => grid.append(makeCard(x)));
     if (!matching.length) grid.append(node("p","empty","No source reports match your search. Try another category or keyword."));
