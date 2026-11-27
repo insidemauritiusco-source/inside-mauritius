@@ -25,6 +25,24 @@ jobs:
       - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
       - run: python -m unittest discover -s scripts -p 'test_*voice_v3.py'
       - run: python scripts/natural_voice_v3.py --limit 30
+      - name: Validate V2 preservation and all registry files
+        run: |
+          python - <<'PY'
+          import json,pathlib,subprocess,sys
+          sys.path.insert(0,'scripts')
+          from natural_voice_v3 import read_data,valid_mp3,HEADLINE,BULLETIN
+          root=pathlib.Path('.')
+          current=read_data(root/'headline-audio-data.js')
+          old=json.loads(subprocess.check_output(['git','show','HEAD:headline-audio-data.js'],text=True).split('=',1)[1].strip().rstrip(';'))
+          prior={r['audioUrl'] for r in old if r.get('engine')=='Kokoro' and (r.get('legacyV2') or not r.get('lastSeen'))}
+          assert prior <= {r['audioUrl'] for r in current}, 'Legacy V2 registry entry missing'
+          for p in prior: assert (root/p).exists(), 'Legacy V2 file missing'
+          for r in current:
+              if r.get('engine')=='Kokoro': assert HEADLINE.fullmatch(r['audioUrl']) and valid_mp3(root/r['audioUrl'])
+          for b in read_data(root/'audio-bulletins.js'):
+              assert BULLETIN.fullmatch(b['audioUrl']) and valid_mp3(root/b['audioUrl']) and b['headlines']
+          print('Preserved',len(prior),'legacy recordings; manifests and MP3 files validated')
+          PY
       - run: node --check live-updates.js && node --check headline-audio-data.js && node --check audio-bulletins.js
       - name: Android emulated playback
         run: |
@@ -48,6 +66,8 @@ jobs:
                 await page.locator('#v3Stop').click();
                 await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
               }
+              const bulletins=await page.evaluate(()=>window.INSIDE_MAURITIUS_AUDIO_BULLETINS);
+              if(bulletins.length){await page.locator('#v3Bulletins button').first().click();await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);await page.locator('#v3Stop').click();}
               if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Mobile overflow');
               console.log('French and English playlist, next, stop and mobile layout verified');
             }finally{await browser.close()}
