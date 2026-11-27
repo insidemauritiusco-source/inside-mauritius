@@ -1,0 +1,43 @@
+name: Natural Voice dashboard review
+on:
+  push:
+    branches: ['review/natural-voice-all-posts']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --check natural-post-audio.js && node --check app.js && node --check world-news.js
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Check direct dashboard playback on desktop and Android
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/dashboard-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              for(const options of [{viewport:{width:1440,height:900}},devices['Galaxy S9+']]){
+                const page=await browser.newPage(options);
+                await page.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+                await page.waitForFunction(()=>parseInt(document.querySelector('#imDashboardCoverage').textContent)>0);
+                await page.locator('#imDashboardStart').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                await page.locator('#imDashboardNext').click();
+                await page.locator('#imDashboardStop').click();
+                if(!await page.locator('#imDashboardPlayer').evaluate(a=>a.paused))throw Error('Stop failed');
+                if(!await page.locator('#storyGrid .im-natural-post-audio').count())throw Error('Post controls missing');
+                await page.locator('#storyGrid a[href^="#article/"]').first().click();
+                await page.waitForSelector('#imNaturalArticle');
+                await page.goto('http://127.0.0.1:8765/world-news.html',{waitUntil:'domcontentloaded'});
+                await page.waitForSelector('#headlines .im-natural-post-audio');
+                await page.close();
+              }
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
