@@ -39,7 +39,10 @@
   <script defer src="news-2026-11-pensions.js?v=20261117draft"></script>
   <script defer src="news-2026-11-14.js?v=20261114morning"></script>
   <script defer src="tiktok-posts.js?v=20261107tiktoktimefix"></script>
-  <script defer src="app.js?v=20261117pensionstable"></script>
+  <script defer src="headline-audio-data.js?v=898d606180b2d09c"></script>
+  <script defer src="post-audio-data.js?v=89bb03281264c2e3"></script>
+  <script defer src="natural-post-audio.js?v=f41ecf6884ec26f1"></script>
+  <script defer src="app.js?v=477cf1bbf0aebfc8"></script>
   <link rel="stylesheet" href="pensions-table-2026.css?v=1">
   <link rel="stylesheet" href="article-reader.css?v=20261111">
   <script defer src="article-reader.js?v=20261111kreol1"></script>
@@ -346,6 +349,17 @@
       </section>
       <div class="dashboard-shell container">
         <div class="dashboard-main">
+          <section id="imDashboardVoice" aria-labelledby="imDashboardVoiceTitle" style="background:#fff;color:#18334a;border:1px solid #cbd5e1;border-radius:8px;padding:18px;margin-bottom:20px;min-width:0">
+            <h2 id="imDashboardVoiceTitle">Natural Voice V3 · Listen to all news</h2>
+            <p id="imDashboardCoverage">Checking available recordings…</p>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px">
+              <label>Language <select id="imDashboardLanguage"><option value="all">French &amp; English</option><option value="fr">Français</option><option value="en">English</option></select></label>
+              <button type="button" id="imDashboardStart">▶ Listen to all posts</button><button type="button" id="imDashboardNext">Next</button><button type="button" id="imDashboardStop">Stop</button>
+              <label><input type="checkbox" id="imDashboardRepeat"> Repeat continuously</label>
+            </div>
+            <audio id="imDashboardPlayer" controls preload="none" aria-label="All posts news playlist" style="display:block;width:100%;margin-top:10px"></audio>
+            <p id="imDashboardStatus" role="status" aria-live="polite">Press Listen to start recorded news headlines.</p>
+          </section>
       <section class="top-section container" id="home" aria-labelledby="heroHeading">
         <div class="section-eyebrow"><span class="eyebrow-line"></span> TOP NEWS <span class="eyebrow-date" id="todayLine"></span></div>
         <div class="feature-grid">
