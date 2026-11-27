@@ -143,6 +143,7 @@
       });
       const stopAudio = node("button","listen-headline","■ Stop audio");
       stopAudio.type = "button";
+      stopAudio.setAttribute("aria-label","Stop audio");
       stopAudio.addEventListener("click", () => { audio.pause(); audio.currentTime = 0; });
       card.append(audio,stopAudio);
     }
