@@ -1,0 +1,102 @@
+name: Natural Voice summary review
+on:
+  push:
+    branches: ['review/natural-voice-summaries']
+  pull_request:
+    branches: [main]
+    paths: ['summary-audio-data.js','scripts/generate_summary_audio.py','natural-post-audio.js','index.html','world-news.html','.github/workflows/natural-voice-summary-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/review/natural-voice-summaries' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/natural-voice-summaries')
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --check natural-post-audio.js && node --check app.js && node --check world-news.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - run: python scripts/generate_summary_audio.py --limit 200
+      - name: Confirm existing V3 audio registry remains unchanged
+        run: git diff --exit-code -- headline-audio-data.js post-audio-data.js audio-bulletins.js
+      - name: Update browser cache versions
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib,re
+          for filename in ('index.html','world-news.html'):
+              p=pathlib.Path(filename);s=p.read_text()
+              for name in ('summary-audio-data.js','post-audio-data.js','headline-audio-data.js','natural-post-audio.js','app.js','world-news.js'):
+                  digest=hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()[:16]
+                  s=re.sub(r'(src="'+re.escape(name)+r')(?:\?[^"]*)?"',lambda m:m.group(1)+'?v='+digest+'"',s)
+              p.write_text(s)
+          PY
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Check direct dashboard playback on desktop and Android
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/dashboard-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              for(const options of [{viewport:{width:1440,height:900}},devices['Galaxy S9+']]){
+                const page=await browser.newPage(options);
+                await page.goto('http://127.0.0.1:8765/index.html',{waitUntil:'domcontentloaded'});
+                await page.waitForFunction(()=>parseInt(document.querySelector('#imDashboardCoverage').textContent)>0);
+                await page.locator('#imDashboardStart').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                const first=await page.locator('#imDashboardPlayer').getAttribute('src');
+                if(!/^audio\/summary-[a-f0-9]{32}\.mp3$/.test(first))throw Error('Dashboard did not prioritize summary audio');
+                if(!await page.locator('#storyGrid audio[src^="audio/summary-"]').count())throw Error('Post summary audio missing');
+                await page.locator('#imDashboardPlayer').evaluate(a=>{a.currentTime=Math.max(0,a.duration-0.05)});
+                await page.waitForFunction(first=>document.querySelector('#imDashboardPlayer').getAttribute('src')!==first,first);
+                await page.locator('#imDashboardNext').click();
+                await page.locator('#imDashboardStop').click();
+                if(!await page.locator('#imDashboardPlayer').evaluate(a=>a.paused))throw Error('Stop failed');
+                if(!await page.locator('#storyGrid .im-natural-post-audio').count())throw Error('Post controls missing');
+                await page.locator('#storyGrid a[href^="#article/"]').first().click();
+                await page.waitForSelector('#imNaturalArticle audio[src^="audio/summary-"]');
+                await page.goto('http://127.0.0.1:8765/world-news.html',{waitUntil:'domcontentloaded'});
+                await page.waitForSelector('#headlines .im-natural-post-audio');
+                await page.close();
+              }
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-post-summary-audio
+          path: |
+            summary-audio-data.js
+            summary-audio-review.json
+            audio/summary-*.mp3
+            index.html
+            world-news.html
+          if-no-files-found: error
+  install-review:
+    needs: review
+    if: github.ref == 'refs/heads/review/natural-voice-summaries' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: verified-post-summary-audio
+          path: .
+      - name: Install verified files on review branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- summary-audio-data.js summary-audio-review.json index.html world-news.html
+          git add -- audio/summary-*.mp3
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Install verified headline and summary audio"
+          git push origin HEAD:refs/heads/review/natural-voice-summaries
