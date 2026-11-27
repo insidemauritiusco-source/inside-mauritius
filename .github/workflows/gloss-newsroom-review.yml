@@ -1,4 +1,4 @@
-name: Gloss Newsroom 2027 review
+name: Solid Newsroom 2027 review
 on:
   push:
     branches: ['review/gloss-newsroom-2027']
@@ -27,7 +27,10 @@ jobs:
                 for(const file of ['index.html','world-news.html','live-updates.html']){
                   await p.goto('http://127.0.0.1:8765/'+file,{waitUntil:'domcontentloaded'});
                   await p.waitForFunction(()=>Array.from(document.styleSheets).some(s=>s.href?.includes('gloss-newsroom-2027.css')));
-                  if(!await p.evaluate(()=>getComputedStyle(document.body).backgroundImage.includes('gradient')))throw Error('Gloss background missing');
+                  if(!await p.evaluate(()=>{const s=getComputedStyle(document.body);return s.backgroundImage==='none'&&s.backgroundColor==='rgb(232, 237, 243)'}))throw Error('Solid page background missing');
+                  const selector=file==='index.html'?'#imDashboardVoice':file==='world-news.html'?'.item':'.news-card';
+                  await p.waitForSelector(selector);
+                  if(!await p.locator(selector).first().evaluate(el=>{const s=getComputedStyle(el);return s.backgroundColor==='rgb(255, 255, 255)'&&s.backgroundImage==='none'&&s.opacity==='1'&&s.backdropFilter==='none'}))throw Error('Non-opaque news panel '+file);
                   if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Horizontal overflow '+file+' '+name);
                   await p.screenshot({path:'review-screenshots/'+name+'-'+file+'.png',animations:'disabled'});
                   if(file==='index.html'){
@@ -49,5 +52,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: gloss-newsroom-screenshots
+          name: solid-newsroom-screenshots
           path: review-screenshots/
