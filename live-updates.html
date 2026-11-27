@@ -13,7 +13,8 @@
   <script defer src="newsroom-data.js"></script>
   <script defer src="world-news-data.js"></script>
   <script defer src="headline-audio-data.js?v=701a550-audio148"></script>
-  <script defer src="live-updates.js?v=701a550-audio148"></script>
+  <script defer src="audio-bulletins.js?v=v3-review"></script>
+  <script defer src="live-updates.js?v=v3-review"></script>
   <script defer src="live-audio-reader.js?v=20261113"></script>
   <script defer src="analytics-config.js?v=20261112"></script>
   <script defer src="analytics.js?v=20261112"></script>
@@ -54,6 +55,21 @@
         </audio>
         <p><a href="https://resource2.heygen.ai/text_to_speech/f09831f114ac4ce1bbe075083026eae6/341b4807e5e6455fa88f34bda5d6eeea/id=6ba19922153a4606a5f34cd28835b081.wav" target="_blank" rel="noopener noreferrer">Open the approved recording</a></p>
         <p class="reader-note">Recorded bulletin from 27 November 2026; not a live broadcast or an automatic reading of newly added headlines. Source-linked press review, not independently verified.</p>
+      </section>
+      <section class="reader-status" aria-labelledby="v3Title">
+        <h3 id="v3Title">Natural Voice V3 · Listen to the news</h3>
+        <p class="reader-note">AI headline recordings in their original language. Playback starts only when you choose it.</p>
+        <div class="reader-controls">
+          <label for="v3Language">Language <select id="v3Language"><option value="all">All</option><option value="fr">Français</option><option value="en">English</option></select></label>
+          <button id="v3ListenAll" type="button">▶ Listen to all matching headlines</button>
+          <button id="v3Next" type="button">Next</button>
+          <button id="v3Stop" type="button">Stop playlist</button>
+        </div>
+        <audio id="v3QueueAudio" controls preload="none" style="width:100%;max-width:100%" aria-label="News playlist"></audio>
+        <p id="v3QueueStatus" role="status" aria-live="polite">Choose a language and press Listen.</p>
+        <h4>Morning and evening headline roundups</h4>
+        <p class="reader-note">Dated AI recordings of source-linked headlines, not independently verified reports or live broadcasts.</p>
+        <div id="v3Bulletins" class="reader-controls"></div>
       </section>
       <details><summary>Optional device voice controls (not Tanguy)</summary>
       <div class="reader-controls">
