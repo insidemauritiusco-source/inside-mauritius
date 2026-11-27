@@ -1,534 +1,14 @@
 window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
   {
-    "title": "Norse Atlantic suspend ses vols et avertit d’un possible dépôt de bilan",
-    "sourceUrl": "https://www.inside.news/norse-atlantic-vols-suspendus-risque-faillite/",
-    "audioUrl": "audio/headline-717b05cef8ad1c72c865e2bb5ce92bb3.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Détroit d’Ormuz : deux pétroliers touchés par des mines selon l’Iran, le risque pétrolier augmente",
-    "sourceUrl": "https://www.inside.news/detroit-ormuz-petroliers-mines-prix-petrole-maurice/",
-    "audioUrl": "audio/headline-65038c68677a226c36a1ea7c4874c168.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Nita Deerpalsing s’interroge sur l’origine de l’argent finançant les sorties des associations",
-    "sourceUrl": "https://ionnews.mu/nita-deerpalsing-sinterroge-sur-lorigine-de-largent-financant-les-sorties-des-associations/",
-    "audioUrl": "audio/headline-e3cdde16fc916b92732acaa6b1927f95.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Trois ouvriers bangladais morts : l’employeur pourrait être poursuivi pour manquements à la sécurité",
-    "sourceUrl": "https://www.inside.news/ouvriers-bangladais-plaine-papayes-securite-employeur/",
-    "audioUrl": "audio/headline-4c1191facdc6e19f3eb0e68960205507.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Violences basées sur le genre : au-delà des 16 jours d'activisme, une mobilisation durable réclamée",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVU9lNkg4WGRrTDlCMS1GSGVYaFVzalVzQ1c1aG1xVUZYeHhkcmxfVVUzRHdYaWF6UXJ6ME5Ocm4tbXpsUnoxa0NBelJ4U1k3RlVBVmRBaEVfY191aWI5eWYwazNoMGVUQVBqQ241UnQ3Z2h4Qng2clhlUXV5OFkwdVJ4U2tsczhER0FJbDJiNWluZGpCck9BS0dySWpmVVBtMHlxRlE0QjNVVjRZTTF6cmduWFgyYy1YSjdLeWN2T3lYcTRsZnc?oc=5",
-    "audioUrl": "audio/headline-89a31afa247eb4b81bd1909f567b48f4.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Fièvre aphteuse : premiers résultats des analyses attendus ce vendredi",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb08yZzNKUEdQalcwQnh1Z0hsMUNsWHZEZThGWHl4WlYtX25WQjh6YmZyenpkLWpMcGVSbExuX1VuNG50T1BpejNiNlJsbVUtWmVSQnVtNUl1YWM3cUVlSFpQYlpTX2tCcTFpWnd1YkZZSDBjTUJJOElQeHgwZE5aUXFaRU9hM2ZScDZXTEllRDBacUtWRzNRQi1IYlh1NFoyT3c?oc=5",
-    "audioUrl": "audio/headline-0d3f0db691f5518117b8d1d970fbf6e6.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Nita Deerpalsing alerte sur une perte de confiance dans l’avenir de Maurice",
-    "sourceUrl": "https://ionnews.mu/nita-deerpalsing-alerte-sur-une-perte-de-confiance-dans-lavenir-de-maurice/",
-    "audioUrl": "audio/headline-8d544deb7d603e214de3f029e54958fb.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "France : interdite dans la mairie, la crèche de Noël renaît en version monumentale à Perpignan",
-    "sourceUrl": "https://www.inside.news/creche-noel-geante-perpignan/",
-    "audioUrl": "audio/headline-87421e8d3da8832a0a8fbd757d6d0437.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Violences domestiques à Maurice : 7 562 cas en 2025, une hausse de 31 %",
-    "sourceUrl": "https://www.inside.news/violences-domestiques-maurice-7562-cas-2025/",
-    "audioUrl": "audio/headline-87b8a4acff7fc5e1d0d005482fe3cf1f.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Compensation salariale 2027 : Pourquoi de petites primes ne suffisent plus face au salaire de base ?",
-    "sourceUrl": "https://ionnews.mu/compensation-salariale-2027-pourquoi-de-petites-primes-ne-suffisent-plus-face-au-salaire-de-base/",
-    "audioUrl": "audio/headline-e70496b3d9a272eee106dd9390b2b73f.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Moka : Un charpentier de 41 ans arrêté pour le vol de bijoux et d’argent chez une retraitée",
-    "sourceUrl": "https://ionnews.mu/moka-un-charpentier-de-41-ans-arrete-pour-le-vol-de-bijoux-et-dargent-chez-une-retraitee/",
-    "audioUrl": "audio/headline-4948d0b7a782c95abb0184b21bb53b42.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Rodrigues : Vingt plantes de cannabis déracinées par l’ADSU",
-    "sourceUrl": "https://ionnews.mu/rodrigues-vingt-plantes-de-cannabis-deracinees-par-ladsu/",
-    "audioUrl": "audio/headline-7be0c304bbea1463e6f958f09b9cbad3.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Mare-Longue et Les Mares : 308 plantes de cannabis déracinées",
-    "sourceUrl": "https://ionnews.mu/mare-longue-et-les-mares-308-plantes-de-cannabis-deracinees/",
-    "audioUrl": "audio/headline-42b99d440a9c6f178f827b22bb0a7d49.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Fonctionnaires suspendus : Rs 127 millions versées, le coût des procédures prolongées",
-    "sourceUrl": "https://www.inside.news/fonctionnaires-suspendus-127-millions-salaires-maurice/",
-    "audioUrl": "audio/headline-cce7cbcd2d7e3ee258be8e50495cbaed.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "U.S.-Africa Business Summit 2026",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80S0tsbUtraU9vRlVSaTNkaGJjR3BpeWlwY3owbHNONmV2c1ZWZHFfMjZ4bDZRQ1p0aGRhTlVSMk5lM25CZmpFeHBVSXByOFpVTHdnT2xUR19MZWxCdTlz?oc=5",
-    "audioUrl": "audio/headline-091be6dc90c61519baaf11513d539737.mp3",
-    "voice": "bm_george",
-    "language": "en",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Saint-Hubert et Saint-Hilaire : des navettes toutes les 30 minutes dès le 1er décembre",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRGw0MFZGMjhjb1QyWmVpemp4WGZEY3BYaEJ0VkoxdHhhQ045Qzh1MV9ZdEJJcHQwZTN5TFRYdTR5bnVjTW9TRlJhY1hfaEtqZFp6Y1JYWXNrdzRmaVRpb2E1a00yS3A3V3ZnX2ZGUmZ6SFpfZGVVZkNXSS1tMXl0WGFMaklhWVBDTUg2aUlobUEzQl8xRmNWcUlHNUNpUE1NZDZLTmVCcEI3RXJtekoxZXJ3?oc=5",
-    "audioUrl": "audio/headline-fc13ab74cafeb7f5f3e9c3f24dc05973.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Décès en cellule : l’autopsie révèle une hémorragie traumatique chez Louis Stéphane Bill",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNTk1aEFYdF9mME1qazNJRVZoem5sbFZPelh5T3lKYU5SV2FHb3J4TXo5SGU5WTc3b0pnVFFxUWNteTJCbXhrTHBEZ0pQNTZxRFFfLVR5bXJQVHctd3VFS0lMS084ODBvWE5EWW04Qm43NHRDRlJSZUlLQzFXalFtVms4NzRIcGtGdk1ZcDU4RUNDbWdpODNoaVBYQWRSanBTbE0tZWVrdkdYLWtDZ3NSak9FT3Q?oc=5",
-    "audioUrl": "audio/headline-f24106f5715dd79707ffe8ae328381dc.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Beau-Bassin : Un habitant de Rose-Hill arrêté avec 35 gélules d’opioïdes",
-    "sourceUrl": "https://ionnews.mu/beau-bassin-un-habitant-de-rose-hill-arrete-avec-35-gelules-dopioides/",
-    "audioUrl": "audio/headline-973890648641e9f04044c625d0f67a31.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Bagatelle : Krispy Kreme inaugure sa première boutique à Maurice avec une longue file d’attente",
-    "sourceUrl": "https://ionnews.mu/bagatelle-krispy-kreme-inaugure-sa-premiere-boutique-a-maurice-avec-une-longue-file-dattente/",
-    "audioUrl": "audio/headline-ba6acba495c3321f2b78f115a3b0d532.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Ce jour-là, 26 novembre 2016 : quand le monde a commencé à repenser ses transports",
-    "sourceUrl": "https://www.inside.news/26-novembre-2016-conference-transport-durable-histoire-maurice/",
-    "audioUrl": "audio/headline-4d6068a4f9447bda9e0ab7fbb4f13ff1.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "[En direct] L’Heure du Débat axée sur les actualités brûlantes de la semaine",
-    "sourceUrl": "https://ionnews.mu/en-direct-lheure-du-debat-axee-sur-les-actualites-brulantes-de-la-semaine/",
-    "audioUrl": "audio/headline-32fb4b07b0edaddbbdccebc7bcb7a8a8.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Mangroves et herbiers marins : Maurice prépare un projet de protection de ses côtes",
-    "sourceUrl": "https://www.inside.news/maurice-blue-carbon-horizons-mangroves-protection-cotes/",
-    "audioUrl": "audio/headline-22c3961b1c68ef9861521c61b607793e.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "CSR : Des critères d’attribution qui soulèvent des questions",
-    "sourceUrl": "https://ionnews.mu/csr-des-criteres-dattribution-qui-soulevent-des-questions/",
-    "audioUrl": "audio/headline-3d1b0d4325edee8ce5781435c99270ac.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Dans la capitale : Drogue de synthèse, héroïne et cannabis saisis",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPczM3SVRaXzE1N2FwNmE1bmxpRTFEWjBFV1VXSnpJbnFIVEJZbng1bkNSMW5lTm40UW8tUDN0SnNGejgwamdBa213T21YWGJXLUk3WllMdmcwVjd5bW90VU5RVl9UZWJJcnBoWFFlMW5SZUNXTkpXdDl1ZlZkeGsyQzZDXzFBMUZwNjNMeFhR?oc=5",
-    "audioUrl": "audio/headline-b52a4dcd939a19c708f9805dc20c55dc.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Festival Kreol 2026 : sept jours de séga, de gastronomie et de culture à travers Maurice",
-    "sourceUrl": "https://www.inside.news/festival-internasional-kreol-2026-programme-dates-lieux/",
-    "audioUrl": "audio/headline-2fe24928db6dec67f338ee632aacccd1.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Au-delà des lois, agir contre les violences faites aux femmes",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlRjaHViN0RCQ1lhOF9Jcmc4dERwWW9raVZ5QUVxd05XZC1jbndSLTVlbVpwYnljMURxTDRGZkNuNXM0ZEpNZElTYjQ5ckVKWnZ4OVdXQ0t5SFlyT0FoYW1nc0FaRExqT1RQdGFDRnN4c1JHWHBxbW44Z0hMbjlMRG1HVkNyWVlROWQzN1hWSjJVanNZcElN?oc=5",
-    "audioUrl": "audio/headline-d6e99b8fe2d1a6c482acdb3b697ae509.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Formation et employabilité : le FSI relancé pour préparer les talents de demain",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHlmZ1RDWkJoUEliWndMVUlnZzh1bGNreFFFa1NsQUlDOEdRQmxKaHMxbzBhZUcyNDVCTkYwODVvNHlrcGJnbWNQaXNieFFxT04tY3phZEtPeXBkQ2Y0RTF4X1JLQWRTb0lHV1A2TEZTcmxVXzJERG5zUHdFVGVPeEJNU0JkSVlZTHdwLUt2M2FxTTdsTUZVOVJaWUFyR0FDbFY4ZU81b1pWdTlKbGc?oc=5",
-    "audioUrl": "audio/headline-078c2cb6127926bce8e7685cd7754994.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Transports durables : Maurice vise une réduction de 40% de ses émissions d'ici 2035",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdlBxX2d2SGcycmVkcXhjQVl5eGhZTWFZQVE1eVBZLVk3bzBmNDJscElkc3lkajY2Ml9DOWNvV3h6N183SHNNOENpUmZYOGNZRGZZNl9Oa3JhYUpJTVBXWjUwcFQ5dkcxaFY2SVFjRnIwd0hJU1gyNTh0VWFfSHQySzRKdVRoRXhldEtKQmJ0aVhPRElFTU9rR2lCU2pfbXRadGxNNW1EcXhMSjVYZGI3ag?oc=5",
-    "audioUrl": "audio/headline-d7bb8775f304698a3e2aa3751ed38c8c.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "À Rodrigues : des tomates, poivrons et piments introduits sans autorisation, une menace pour les cultures locales…",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMmpqSWs2WTJvS2dTeTRoMXFiVnk4QjRtZm1sbm9ibGpNWUFDdDJydThXRThtbENZb3FVejloVzRhdURJaFhqZUVqanpwNTlTT1FQZFFxb293WEh1SGpUQ3U1LUlwTS1fMzQxTl9ybjBZblItOEJnRWh3dDlpN280SWt2bU5zblNRUTJtX19ZVzh3amIzR3FvNTN5Nk1LVHViQnZGTld5TzNhcTVVNHZSczY3Tk42Q3RlZkdkZDRTaWQ1cFhZWk16Q3Fsdw?oc=5",
-    "audioUrl": "audio/headline-0f12a88355b377d53b1b5a44c1aee535.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Santé à Maurice : le gouvernement explore une coopération médicale avec Narayana en Inde",
-    "sourceUrl": "https://www.inside.news/sante-maurice-cooperation-narayana-inde-soins-specialises/",
-    "audioUrl": "audio/headline-ebf310c1bd7f717671e755a4db1fc352.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Menaces, chantage, diffusion : comment la loi défend les victimes",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnJ6V19fdWlNdDVrNXN0UU01TUJJeW5TY0tDbTlTVC1CYW85YlYydjJRTzA2alk4U2hhT0lZQ1ZkYVZIUGtvUzRtZWROX2lEVFlMUi14Ul9Samo1SmVwdUZkYU14emlBMFQxVmxWM2RZVkxkM1AwZ210Rkdkb2ttOTdfbnBjbjVFSURpbg?oc=5",
-    "audioUrl": "audio/headline-31775e5e88e805d8c092def2f12f9392.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Fin de la 3G d’ici 2028 : l’ICTA appelle à moderniser les équipements pour éviter toute interruption de service",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQUhVQW8yTi1yWUh1S3ZkajBXUTk1NHdnUFRoNnFDVDZzbDlyZk1kTk9jYjFsTndybmIxazlBSVhPTlJ1ZkxoOTBTU1I5cndRMHB3eUhsNmJyaEhuLTV5MjN3Mmt2dzhSaERYZHNuYTNLcF82ektfeW00VHlaVC1xaWJPem9zUUUyemVWNDZwc1VRWldGR0lldW9kd0NSenlaU25WYkFZalVJMGRkOVBKODRBbWNlU1V4Uk5nODJ1Z2VJLTBid21SUg?oc=5",
-    "audioUrl": "audio/headline-d0c377c4237bfac1e1000412ad66ac8c.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Cyberviolences : les signalements dépassent déjà les totaux de 2025",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOS3JKaDRUVmtvX0JwSm5ZWlRHTU4zSEs4TUg5TnY1dmhnNGlKWGdzQ19ZaUpCVlVkS2lpc2N5eGoyR25hQ0VSa3Y2em9QNy1Kc21RRWJSbjI1RWEybVhKN01xdXlkQXpEdk9pM3R3TnpnaWpNX0c0Vk04THlDODE4MG96aDJhMEZHV1pSV2xxQk5adw?oc=5",
-    "audioUrl": "audio/headline-8672883c20c6b12190f989571e92f47a.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Violences numériques : l’emprise jusque dans l’intimité",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKR3lJZnZhQ1pZQ2tVaDZVdVpNdG5WOWUxbHdlQjRQT2s0Sm5MaWNrSHM1ZW80aDM1RE4zNWhILVdHeDVSZGdKcWFBc09nY1hrUFE5QV9nYndjdzBxQ0tRSU5rYjh0Nk9yYUpHVDNhUGIxamRqeEtJU0RfdFBhRzQ?oc=5",
-    "audioUrl": "audio/headline-75fb24ab5b3b7bdd0feb7f9dc4390af3.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Festival Fruits, Fleurs et Légumes 2026",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkY1lwMEpGU0ZkM1N5NGR3dDBnVHoyTWlTclZMZERvSll1YXVEZ1A1b0JqNmdjdjlZcjIzZHpXMUREeXNJSTB0bllwWTFqeUlrUUZERXEya2R2dHNVVUcyRHkzTFB0UDZRRk1UV1V3?oc=5",
-    "audioUrl": "audio/headline-4bbefcb97034c92e9cb865d701bf140f.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Santé - Suicide : Maurice au-dessus de la moyenne mondiale",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNkZxZGlfRTVKbFI3TVR5NnZaMWhYYXNnOVE0dFAwanhQQU1SWlVrMlFtRDdJUlU4dGpSd2QwcWtOSjhwUkJJSThPZHNGMW1lTkF2S2pLUHJrT2x2N2VHemd4b05kcE50alg5QU1nZTlDNnhDazJVTGNCZE5PcE8zVmEwTQ?oc=5",
-    "audioUrl": "audio/headline-cbd735a9a2195bb96e777a6fde33e26e.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Obituaire : Rajendra Appa Jala, l’avoué qui défendait les plus démunis",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXRqekdLLTJFNFJ2QWhvdGpuM0FuaE1JWFMzSmE3OWNsRE1aSFVQYllLRGMtRV9XeFFQSjdEamVBNWp3QkZqRnFmQkVIcE9HeU00Y1h1YTkzdTZ2UzZZSFRMMldheDRQYjh1VjdiNHlrSTJhYUpjVjhrczVEbldkaml0NTllNnBoU3gyN1dCb1FNdlk?oc=5",
-    "audioUrl": "audio/headline-858d2e1d09d82c60e2d591b2cc924a87.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Mort du petit Ayaan, 2 ans : sa mère, une femme médecin et un policier reconnus coupables",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUkJJaWZhYmcwdXpMQnJfXzBsUUlfZm5xS3RMRGZXRFowZTBwcWxybzBLdlNROHRoSE51N0ZZVjNrVEJvTFlKajlOTkFYM3Zfd1pqWnRXYlY0SkROUThkcEpkQkgwcUJnXzlrNW8zdnktTGs5a3Ywa3h4N2NBeUhad1dOTi0yUEhweWN4V1d5enlJeDl1Mmwwdl8wWndyOUJsM2o3UDcxcE9mUzh2?oc=5",
-    "audioUrl": "audio/headline-a9e31da411d774313f4da530c1e03b62.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Champ-de-Mars - Night Market : déjà 500 inscriptions pour 320 emplacements",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaW5qLWdDcWo0N0IwMUlKSDhYZkZjb3drWDZLeWx6WUUwWVJLVUZNa1pDVWxWZVZNZnhkOGlWdmpBMUtHc3o0ODRCY1daN3NtTWRCc2NpUVJrd09KWGNGeWJkdXQ0c1VqMVE0WXJXWlFMd1JCN1FPOEM3Yi1FS21nNHlRako4Xy16Y3ZlNmwtc3lsVTJyeHAzNQ?oc=5",
-    "audioUrl": "audio/headline-20442424be31369263382e209c8d0d51.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Advanced Sport Management Course (ASMC) : À l’école de la bonne gouvernance",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fX0x2MlkwSVY5V1JLTkgyRUFVOHVVRlZDbHhMTGVYMU1lQ2t2SmVQQlp4czBHdmhULXhIam9sSmlMbGF1SEZ4R2g2UnhFQzBkNldPNUVqWW1Fc0RrZFZNc0l0ZzUtelpxTEMyV3NPUGdnZw?oc=5",
-    "audioUrl": "audio/headline-0a701a1559d57ce1984d5d1b40378b87.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Pascal de Izaguirre : «Maurice est une destination de cœur et une place forte dans l’avenir de Corsair»",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdHBKMnJGTDhJSE9sUkFwNjJRYVdsRE9Zb2k4V0xfLXdTYUFtTmFLN1lSWWI0blJBTnJpMFhRWW1aUmZDT29ENjlJMUMxYUtjVEpFaGd6Y0Z3UVZ6MmhYTXM2bnh2TFJ3bHp4ejJrNngyOHFyYzR6WGZOSjJYSkk0QmxNdkVjMlFBbEEtODQyWnFEWFowSEM4Skp3SHlJcnVHTXpsejRYWDkwbGtVcjFhT21nYkZYNTJrQ09UV2V4Ui1ZYkFqYm5R?oc=5",
-    "audioUrl": "audio/headline-d408c19d4fa588e79ea0787eb8907fcd.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Azor Adélaïde, 55 ans après son assassinat : « Une victime de l’engrenage de l’histoire », selon Paul Bérenger",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ2lTV1NHS3RKTUtaTHhueVlRam9qNEhOWUt3SmU3cjF5NXhZazN2Y0pIWkp3R09tMHVxS04tbDZQdml4M0pKRE9hUHlJQWN0a0V1VVNscVdSVFVCSEFSSUx0eVFkbFByUHRINjVpVVZQeXF3NVlxR2VxeTA5V01HVFBXZjlUYXpScGRLcG1XdWpZdmVGbEdjNHhvMEs2UlJYeEpkampwaXQwbEwtV01QYk42Q2MyYmxrTXNaUlV1ZzFabGpkVnV0RHM1cEE?oc=5",
-    "audioUrl": "audio/headline-917e1c8fb7ccecd57b9f3b643c450ec6.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Sécheresse et restrictions d’eau : l’irrigation limitée à trois jours par semaine inquiète le secteur agricole",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOLTZWN0ZkajhQUWdPSS00bFNoUDVfelh4OTRON1ZMbGh6UmdSQjJUZ0V1T3R1TUZwMkQ3RkpkUHNlN0dkb09hSFNDTjZ6dWpPY3hJTGs2WHFqdWFMa056bzRNVXBFS1ViOFcySUJJbkdqd3ZTLVNhV0Y3MUlhSlNaRFo2OUhEOUg1bEJDbE5ER1FFVE5ZQTBFc3FzclpVWGFUYjAxQ0NDSlNVQ19JU0d1MEc2Y3lYR2d2ZjRkZXRPY0U?oc=5",
-    "audioUrl": "audio/headline-e9cdab1664e651478b8cc30ff768ef31.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "DéfiXplik | Compensation salariale 2027 : six questions pour comprendre les négociations",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNUlJN0ZiVVpESkZwS0h1TTc1R3p3eVVxa3pncnphNFJhdm5vTU5qRXhTcWtobUp5NFR5ZHN4MVFZZTZOaktsS29JWUN1WnRGSXZxNUlKZlVlUi1VY2hZTGRiZXNFZGpRNDhuNzlkbGM1a285QkQ1VFJDbEFNNlBidEkyLUZBamliYjJtWDZ5RFNXQXpiUmxFeFJXeWRLTk1Vc3RyQmV6bi10cHc?oc=5",
-    "audioUrl": "audio/headline-f403c1fc6fa0b375b5ae78bdd50c18ae.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Loto : prochain jackpot à Rs 40 millions",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTb3lGTExDcWhNNmpxZFl3THVxVkJoR0JtOERSX0k4NDI0S0dLUk05X0ZEUVlKeU8xMDRiYVZaQ0pOM3VuSzBZLXZTUVBSNGFxb1FDWjBlVXFMOC1pSWV5Z1ZHM2czNnNyaVZpOXp3?oc=5",
-    "audioUrl": "audio/headline-20eafc816ee7ea81eee7bbf45381338e.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Miss Univers : une nouvelle reine sacrée après une année tumultueuse pour le concours",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSmxvVVVyaS1fOVcxUlBWOGoteTJMWlFjNXVESFo0U1AxSjFieS1sbmxwLWwxTTFWbmE3cW1PTnpEOFJON25NMmZRTVNuTXc5UHF6U0stTTgyam5xdEc5LVVDaUt0Y0JuQW1uZlJFWlUxRXlHOUpUVS0tWENTNDdzOTJoN2M0UGFsZXd6aXJNZGE5NHUzeGhYZ25IaTFONVlEaFg1ZzlNVDY2dw?oc=5",
-    "audioUrl": "audio/headline-fd9b6242bdc6407831c5952b898fb39b.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "55ᵉ anniversaire de sa mort : le MMM rend hommage à Azor Adelaïde",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdFJVdWRaSkE1dXp0d21uLTh2UkF6MGNMeTN0ZUJPOURzUkF2VXlsbjgyb0VJMUNjaVFpZlV0UlN5LWZGU3ZuMUpSMmhGRHRYVmFSbUVTU1lRSkFRdER4MGlwWUsyVWpHRXBLQnFqaXBpWlAtRHZzbm0yOWhhY0dsMTNHU0NNQWNxcnVV?oc=5",
-    "audioUrl": "audio/headline-b4343de21a20137b90acc3dabe5c339a.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Plan stratégique des prisons à Maurice : cinq priorités pour la période 2027-2030",
-    "sourceUrl": "https://radiomopep.mu/plan-strategique-prisons-maurice-2027-2030/",
-    "audioUrl": "audio/headline-0cd642050a02861ebeaf48ad0b8c9776.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Environnement : des journalistes de l’océan Indien lancent un hub régional",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVTA2OTVtQzZIdE5JQndZaTJuX1ZjYVdvSUp0c0pfVF9GdzlKVGItMWlfdVg3dHhRZnp0M2hpaTBVc1g2S0JULTY1NHZLaEhBc0lUeENQTkVldnJPZFJvbE5kUGF5SDJQVjlaOTlyejNMZ29famNjN2J2dk84WTlfSzRMWEwwUmtfRjh1bVI4ZE8xZE50Q0FlLWlRUVltWno4dklDUThn?oc=5",
-    "audioUrl": "audio/headline-090923077bc0da0a89ff99906e6b4e2e.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "World Knits : Salaires impayés : le DPP sollicité sur d’éventuelles poursuites",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR2tjc1dLdGtrMV8yS3I0aTdqb3JTckpXYkVUeTJFZFMtS1p0TWIzZ0JXaXIwRkRpamlXQ3J3V2loQ2Rad3lGNDRkM0JvYmR4RkhFWngyQUc3Q1UxSXgzbFRSdnl3eTZsc2VFY3VkU1FyUXBPbXlnZHI4by1PRy11U196UWdBejRjaVN2SmJQRHdPUGNv?oc=5",
-    "audioUrl": "audio/headline-982dd731d1f5b08f0d0b53b9fc7499c0.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Décès en cellule policière : La famille souhaite un médecin légiste indépendant pour l’autopsie",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ1ZBTnlzWEZGUUduWkZlQXRrMUE1M2lWeFRZYlctbGhCZFNMWWl6M056ZC03RjJrZ0VvZzV5TzlIUi0xZFNJdE0xRGxBM2U5bElmVXdRdTBOM1FwUDVrOEZrNEUweVhNYzd2ZjFxbURSQjF0NnNqQTZleENPYzFxdGVjWnlWYjdRdnRFNkotUnUxY0xya0Q4VjlR?oc=5",
-    "audioUrl": "audio/headline-142dd1ddac7a650e4976a0093da16a48.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Point de presse : Chetan Baboolall dénonce des incohérences dans les explications d’Arvin Boolell",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTE9lbHRyTXp4cld3ZXp1VlZvamR2dkNwNUVLV2xXOENZMVBoODZJLThoUXV0SDR0S2F0bC1yekhOVHBkMk9Lb0pNYkNVLTdlZ1VNeXZPSkM3MFp6dEs2T1dmWFRselh0SmtDNW13WXNHYXdnM2NpUGdJWXRNakFjMjVKeXU5ZGRYdkVLaW5KSWwwQVJCd3BxaG9XclhTNXpHMWlFLXFUMk1CU0U?oc=5",
-    "audioUrl": "audio/headline-eb9cabc3a678a7810b9c3de2014bb297.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Responsabilité pénale des mineurs : Navin Ramgoolam prône une approche axée sur la réhabilitation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb2gtbURad3Z6cHZYSEp2MkxTZ3JxYmZkYU16N2VZWE9yNkRqY1VueEpYWFk0MmRIeUdLTkhyVkM4S1JOUk8xSjgyNmgwOUNmd0ltX045MEFpbk1KZGdfNmJ1amk0bWxQdWxaaktjSDJyemdEblEzWG4tODNtd1FtME9MeU54eGNQLTdRUEVRNUZmRXox?oc=5",
-    "audioUrl": "audio/headline-46c095ce041f837922a6e78e7887f66d.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Parlement : Ambiance : Compter les bovins pour ne pas dormir",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOFZnQlh1MWtmejRWXzkzY2lHZG9MV1ZmdVAya1p2ZnQ5aDFHZVRxVDRPcTQzRFFqZG9CQUxXRnhlYlZ3dVJ0TzVXUXNqbDk1QUJOdHE0OVM2b0M2TF9OM0VuZGtLSThkSUZFeXZDc2paRy01T0YxSzlMUEJ4c2c0Xw?oc=5",
-    "audioUrl": "audio/headline-d83681e37f39c4f4840bcae67c1aacf7.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "PNQ : Fièvre aphteuse : 6281 animaux importés de Namibie placés en quarantaine, le cadre légal bientôt revu",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdjZ2NXRuQ3VLWW03LU5zRUZqTG9TR3ByVVdLZWZXTEg2QzZMczRoSm9GTFFQOEJWTFlmT2Q5bGZCQ1hBZEhxdkRheHp4OFpjUTFKQ1Q5Y19qNGxjMl9nazhSWVNqZFRjWlRvaEtPR1FUYmwwZ0V4bGwzcWxWejJDY21oNzZ2WmMxNVpfUGhTcnVlTVVWVzR0U1hJanl4bVBJRm5vVlBZY2VmdHBjZUNzTWJ4MnVaS2xOcS02Rl9UZkpqRlNrNlE?oc=5",
-    "audioUrl": "audio/headline-429dc96de46335ff0879fa91ff54d1c3.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "50ᵉ anniversaire de la mort de Loïs Lagesse : Son héritage continue d’éclairer la vie des non-voyants",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbHN2SEhxQllmTkZFbmJmUFlHdXo3cGdlNHBLVXNBSXMzc1R1Ry0yVHhYSDJBbDRnVkYyNW5PRXFJS3E3M1BPakNwV1JTdFF0OVJwTHUyeWhjZGxLaGNkYUVyOTF1TnRtU2tkQ2Q5ZXM1TDVhVG1GUGVpd1BiRUE2eFh5cUF1TFVPYkZ3?oc=5",
-    "audioUrl": "audio/headline-bee1824e1ed17cceb6cd12efd5a44141.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Au nord-est de Rodrigues : Séisme de magnitude 6,4 à 326 km, aucune secousse ressentie",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdU1xdXY5YjJBSmZhTHM3V1l6cEZ6TExCU2V4VmRPSDhsOHphdDZ6X1I4ZVZZY2trUlF6bm90aXdCXzRUQzhzcnhyMTJxSjRJcTVGcGs4NW4wdlpLemg3QkxTdUtmMzFyVHBhdkw2VjU0ZzY4amVsNi1RX1FNY1JlcDBZVFhJdW1RT1dLbkp2QQ?oc=5",
-    "audioUrl": "audio/headline-d10db9aab71f3359bfd2734cabb47ad1.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
-    "title": "Journée mondiale de la pêche : Objectif : 50 000 tonnes de production locale malgré les difficultés",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY0cwc2VTX0xYdWcwUUtWakFyY3J4STVCRVNKRUxCaVlGOVFOaVJzOUJYbjVXVVhJbEJNUWtOWmY1MG1kdmJYUi1QeE80dlJiMW90b21vUzktNUVYaWxzUXJ6YVh6VkpyX2RMdVAtSEhLS2oyc2QyNENxRkJPdlFjdEJYVEd5UWNMNWxUQVpSQXBFYmhubF9YeEhGaw?oc=5",
-    "audioUrl": "audio/headline-870a9fc9370813631f5106d6631ae6e2.mp3",
-    "voice": "ff_siwis",
-    "language": "fr",
-    "engine": "Kokoro",
-    "generated": true
-  },
-  {
     "title": "ASEAN must move beyond its fear of external support",
     "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbVZQZkRyY2FxLUhMLXc5Tzl3XzRIT3V4R3VsYVFUVnZrb3VwLW8yMnBvNElEX0RKY1MzNk5SYVNxdGUzOHUyNjdRdkd6bHV4cHYwdHR3Y3ZGRzdGazlZaW83elBwQVRiTnVrM0V3b3luMHVyTjFZaGIyV216dzdOVmxzWjFjazJ2ZzhJRExQRTZvVms?oc=5",
     "audioUrl": "audio/headline-2d4d251feb6e066f5687b8d4fc2a959a.mp3",
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Bolstering resilience in the Pacific: The building blocks for a regional partners agenda",
@@ -537,7 +17,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "South Africa and New Zealand Players Not Post-Match Drug Tested in Rugby’s Greatest Rivalry Series",
@@ -546,7 +28,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "The dangerous illusion of Middle East peace",
@@ -555,7 +39,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Norse Atlantic suspend ses vols et avertit d’un possible dépôt de bilan",
+    "sourceUrl": "https://www.inside.news/norse-atlantic-vols-suspendus-risque-faillite/",
+    "audioUrl": "audio/headline-717b05cef8ad1c72c865e2bb5ce92bb3.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Jensen Huang: How the Nvidia scandal exposed the risks of Asia's big AI bet",
@@ -564,7 +61,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "The IC Story – How we helped shape journalism in Africa Part 1",
@@ -573,7 +72,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Trump says he asked Putin to 'pull back' military aggression throughout Europe",
@@ -582,7 +83,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Bournemouth set new English record in Europe with 5th straight win",
@@ -591,7 +94,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Anarchy Breaks Out at One of America’s Most Beloved Public Golf Courses",
@@ -600,7 +105,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "An ‘SNL’ skit exposed America’s elder care plan: daughters",
@@ -609,7 +116,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Sex, drugs, Israeli tech and Trump rivalries: Five explosive claims from Kushner-UAE book",
@@ -618,7 +127,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Understanding Online Antiquities Markets in Southeast Asia: A Series of Three Studies",
@@ -627,7 +138,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Settlers smash foundations of Palestinian family's homes in West Bank",
@@ -636,7 +149,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Solita and ConfidentialMind Target Europe’s Sovereign AI Gap",
@@ -645,7 +160,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Taking Agriculture to New Heights: Summit Agro Chile Trains the Next Generation of Drone Pilots",
@@ -654,7 +171,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "| Sumitomo Corporation of Americas",
@@ -663,7 +182,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "China Is Changing How It Engages with Asia. What Comes Next?",
@@ -672,7 +193,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Détroit d’Ormuz : deux pétroliers touchés par des mines selon l’Iran, le risque pétrolier augmente",
+    "sourceUrl": "https://www.inside.news/detroit-ormuz-petroliers-mines-prix-petrole-maurice/",
+    "audioUrl": "audio/headline-65038c68677a226c36a1ea7c4874c168.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "American Doctor: Why this film isn’t what you think it’s about",
@@ -681,7 +215,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Gaza’s health ministry says 19 Palestinians killed by Israeli attacks in 48 hours",
@@ -690,7 +226,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia hits pause on chip shipments to Southeast Asia",
@@ -699,7 +237,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Opinion: Why solidarity with Gaza failed to stop the genocide",
@@ -708,7 +248,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "US billionaire signs deal for Russian oil giant’s $16 billion global portfolio with energy interests in five African countries",
@@ -717,7 +259,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "America’s Race Team Returns",
@@ -726,7 +270,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Nita Deerpalsing s’interroge sur l’origine de l’argent finançant les sorties des associations",
+    "sourceUrl": "https://ionnews.mu/nita-deerpalsing-sinterroge-sur-lorigine-de-largent-financant-les-sorties-des-associations/",
+    "audioUrl": "audio/headline-e3cdde16fc916b92732acaa6b1927f95.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Saudi Arabia says operations at refinery in Jazan halted after attack",
@@ -735,7 +292,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Trois ouvriers bangladais morts : l’employeur pourrait être poursuivi pour manquements à la sécurité",
+    "sourceUrl": "https://www.inside.news/ouvriers-bangladais-plaine-papayes-securite-employeur/",
+    "audioUrl": "audio/headline-4c1191facdc6e19f3eb0e68960205507.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Brent settles higher as mine strikes, refinery attack stoke Middle East supply concerns",
@@ -744,7 +314,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "South Africa’s Biovac to boost its vaccine production with EU loan",
@@ -753,7 +325,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Violences basées sur le genre : au-delà des 16 jours d'activisme, une mobilisation durable réclamée",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVU9lNkg4WGRrTDlCMS1GSGVYaFVzalVzQ1c1aG1xVUZYeHhkcmxfVVUzRHdYaWF6UXJ6ME5Ocm4tbXpsUnoxa0NBelJ4U1k3RlVBVmRBaEVfY191aWI5eWYwazNoMGVUQVBqQ241UnQ3Z2h4Qng2clhlUXV5OFkwdVJ4U2tsczhER0FJbDJiNWluZGpCck9BS0dySWpmVVBtMHlxRlE0QjNVVjRZTTF6cmduWFgyYy1YSjdLeWN2T3lYcTRsZnc?oc=5",
+    "audioUrl": "audio/headline-89a31afa247eb4b81bd1909f567b48f4.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Trump Urges Putin to ‘Pull Back’ Military Aggression in Europe",
@@ -762,7 +347,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Despite market disruptions, is an oil glut on the way?",
@@ -771,7 +358,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "On his last Africa trip, Steinmeier urges German firms to invest and take risks as China pushes ahead",
@@ -780,7 +369,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Opinion | Russia Escalates Attacks on Europe",
@@ -789,7 +380,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Threatened by Wagner, this Nigerian journalist uncovered Russia’s war machine in Africa",
@@ -798,7 +391,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Fièvre aphteuse : premiers résultats des analyses attendus ce vendredi",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb08yZzNKUEdQalcwQnh1Z0hsMUNsWHZEZThGWHl4WlYtX25WQjh6YmZyenpkLWpMcGVSbExuX1VuNG50T1BpejNiNlJsbVUtWmVSQnVtNUl1YWM3cUVlSFpQYlpTX2tCcTFpWnd1YkZZSDBjTUJJOElQeHgwZE5aUXFaRU9hM2ZScDZXTEllRDBacUtWRzNRQi1IYlh1NFoyT3c?oc=5",
+    "audioUrl": "audio/headline-0d3f0db691f5518117b8d1d970fbf6e6.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Africa’s manosphere",
@@ -807,7 +413,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "2027 Africa Triathlon Cup Hurghada",
@@ -816,7 +424,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Nita Deerpalsing alerte sur une perte de confiance dans l’avenir de Maurice",
+    "sourceUrl": "https://ionnews.mu/nita-deerpalsing-alerte-sur-une-perte-de-confiance-dans-lavenir-de-maurice/",
+    "audioUrl": "audio/headline-8d544deb7d603e214de3f029e54958fb.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "France : interdite dans la mairie, la crèche de Noël renaît en version monumentale à Perpignan",
+    "sourceUrl": "https://www.inside.news/creche-noel-geante-perpignan/",
+    "audioUrl": "audio/headline-87421e8d3da8832a0a8fbd757d6d0437.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "After Cyberattacks and Bomb Threats Hit Europe, Survivalism Goes Mainstream",
@@ -825,7 +457,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Violences domestiques à Maurice : 7 562 cas en 2025, une hausse de 31 %",
+    "sourceUrl": "https://www.inside.news/violences-domestiques-maurice-7562-cas-2025/",
+    "audioUrl": "audio/headline-87b8a4acff7fc5e1d0d005482fe3cf1f.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Ford GT41 Hypecar: A New Chapter for America's Race Team",
@@ -834,7 +479,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "NVIDIA Reportedly Halts AI Chip Shipments To Southeast Asia",
@@ -843,7 +490,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Opinion | Putin Extends His War to Europe—He’s Not Our ‘Friend’",
@@ -852,7 +501,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Ford unveils GT41, as America’s Race Team vows to ‘Go Like Hell’",
@@ -861,7 +512,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "China’s Drones Are Reshaping Asia’s Militaries",
@@ -870,7 +523,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "UH Mānoa ranked among Forbes’ America’s Top Colleges",
@@ -879,7 +534,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Families line Detroit streets to celebrate the 100th America's Thanksgiving Parade",
@@ -888,7 +545,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "A remote island in New Zealand was supposed to be a safe haven for wildlife",
@@ -897,7 +556,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Detroit celebrates 100th anniversary of America's Thanksgiving Parade",
@@ -906,7 +567,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Compensation salariale 2027 : Pourquoi de petites primes ne suffisent plus face au salaire de base ?",
+    "sourceUrl": "https://ionnews.mu/compensation-salariale-2027-pourquoi-de-petites-primes-ne-suffisent-plus-face-au-salaire-de-base/",
+    "audioUrl": "audio/headline-e70496b3d9a272eee106dd9390b2b73f.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Tankers take fire in Middle East, one crew 'severely injured'; PGSA adds tugs to 'non-compliant list'",
@@ -915,7 +589,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Moka : Un charpentier de 41 ans arrêté pour le vol de bijoux et d’argent chez une retraitée",
+    "sourceUrl": "https://ionnews.mu/moka-un-charpentier-de-41-ans-arrete-pour-le-vol-de-bijoux-et-dargent-chez-une-retraitee/",
+    "audioUrl": "audio/headline-4948d0b7a782c95abb0184b21bb53b42.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Trump Says He Told Putin To ‘Pull Back’ All Military Aggression Against Europe",
@@ -924,7 +611,42 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Rodrigues : Vingt plantes de cannabis déracinées par l’ADSU",
+    "sourceUrl": "https://ionnews.mu/rodrigues-vingt-plantes-de-cannabis-deracinees-par-ladsu/",
+    "audioUrl": "audio/headline-7be0c304bbea1463e6f958f09b9cbad3.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Mare-Longue et Les Mares : 308 plantes de cannabis déracinées",
+    "sourceUrl": "https://ionnews.mu/mare-longue-et-les-mares-308-plantes-de-cannabis-deracinees/",
+    "audioUrl": "audio/headline-42b99d440a9c6f178f827b22bb0a7d49.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Fonctionnaires suspendus : Rs 127 millions versées, le coût des procédures prolongées",
+    "sourceUrl": "https://www.inside.news/fonctionnaires-suspendus-127-millions-salaires-maurice/",
+    "audioUrl": "audio/headline-cce7cbcd2d7e3ee258be8e50495cbaed.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
@@ -933,7 +655,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Why pie was once America's most-hated dessert",
@@ -942,7 +666,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Why France and Vanuatu are fighting over two uninhabited volcanic islands",
@@ -951,7 +677,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "U.S.-Africa Business Summit 2026",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80S0tsbUtraU9vRlVSaTNkaGJjR3BpeWlwY3owbHNONmV2c1ZWZHFfMjZ4bDZRQ1p0aGRhTlVSMk5lM25CZmpFeHBVSXByOFpVTHdnT2xUR19MZWxCdTlz?oc=5",
+    "audioUrl": "audio/headline-091be6dc90c61519baaf11513d539737.mp3",
+    "voice": "bm_george",
+    "language": "en",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Trump says he urged Putin to 'pull back' military aggression in Europe",
@@ -960,7 +699,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Can a Democratic Congress change US Middle East policy?",
@@ -969,7 +710,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Exclusive / MTN eyes bank licenses in Africa fintech push",
@@ -978,7 +721,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "America's Reading Crisis Demands More Than Concern. It Demands Action.",
@@ -987,7 +732,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Saint-Hubert et Saint-Hilaire : des navettes toutes les 30 minutes dès le 1er décembre",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRGw0MFZGMjhjb1QyWmVpemp4WGZEY3BYaEJ0VkoxdHhhQ045Qzh1MV9ZdEJJcHQwZTN5TFRYdTR5bnVjTW9TRlJhY1hfaEtqZFp6Y1JYWXNrdzRmaVRpb2E1a00yS3A3V3ZnX2ZGUmZ6SFpfZGVVZkNXSS1tMXl0WGFMaklhWVBDTUg2aUlobUEzQl8xRmNWcUlHNUNpUE1NZDZLTmVCcEI3RXJtekoxZXJ3?oc=5",
+    "audioUrl": "audio/headline-fc13ab74cafeb7f5f3e9c3f24dc05973.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Houthi attack targets oil refinery in southwestern Saudi Arabia: Coalition",
@@ -996,7 +754,42 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Décès en cellule : l’autopsie révèle une hémorragie traumatique chez Louis Stéphane Bill",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNTk1aEFYdF9mME1qazNJRVZoem5sbFZPelh5T3lKYU5SV2FHb3J4TXo5SGU5WTc3b0pnVFFxUWNteTJCbXhrTHBEZ0pQNTZxRFFfLVR5bXJQVHctd3VFS0lMS084ODBvWE5EWW04Qm43NHRDRlJSZUlLQzFXalFtVms4NzRIcGtGdk1ZcDU4RUNDbWdpODNoaVBYQWRSanBTbE0tZWVrdkdYLWtDZ3NSak9FT3Q?oc=5",
+    "audioUrl": "audio/headline-f24106f5715dd79707ffe8ae328381dc.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Beau-Bassin : Un habitant de Rose-Hill arrêté avec 35 gélules d’opioïdes",
+    "sourceUrl": "https://ionnews.mu/beau-bassin-un-habitant-de-rose-hill-arrete-avec-35-gelules-dopioides/",
+    "audioUrl": "audio/headline-973890648641e9f04044c625d0f67a31.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Bagatelle : Krispy Kreme inaugure sa première boutique à Maurice avec une longue file d’attente",
+    "sourceUrl": "https://ionnews.mu/bagatelle-krispy-kreme-inaugure-sa-premiere-boutique-a-maurice-avec-une-longue-file-dattente/",
+    "audioUrl": "audio/headline-ba6acba495c3321f2b78f115a3b0d532.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Bolt teams up with Microsoft to put AI skills in the driver’s seat",
@@ -1005,7 +798,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Ce jour-là, 26 novembre 2016 : quand le monde a commencé à repenser ses transports",
+    "sourceUrl": "https://www.inside.news/26-novembre-2016-conference-transport-durable-histoire-maurice/",
+    "audioUrl": "audio/headline-4d6068a4f9447bda9e0ab7fbb4f13ff1.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "[En direct] L’Heure du Débat axée sur les actualités brûlantes de la semaine",
+    "sourceUrl": "https://ionnews.mu/en-direct-lheure-du-debat-axee-sur-les-actualites-brulantes-de-la-semaine/",
+    "audioUrl": "audio/headline-32fb4b07b0edaddbbdccebc7bcb7a8a8.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Russia’s Unconventional War on Europe: Sabotage, Deterrence and Future Scenarios",
@@ -1014,7 +831,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "IISS paper finds Iran has sustained operations in Europe despite frequent arrests",
@@ -1023,7 +842,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Gallagher finds gap in commercial crime cover across Asia",
@@ -1032,7 +853,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Mangroves et herbiers marins : Maurice prépare un projet de protection de ses côtes",
+    "sourceUrl": "https://www.inside.news/maurice-blue-carbon-horizons-mangroves-protection-cotes/",
+    "audioUrl": "audio/headline-22c3961b1c68ef9861521c61b607793e.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia Halts Server Shipments to Southeast Asia, Says Report. The Stock Can’t Catch a Break.",
@@ -1041,7 +875,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Cyril Ramaphosa is letting South Africa drift into chaos",
@@ -1050,7 +886,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "CSR : Des critères d’attribution qui soulèvent des questions",
+    "sourceUrl": "https://ionnews.mu/csr-des-criteres-dattribution-qui-soulevent-des-questions/",
+    "audioUrl": "audio/headline-3d1b0d4325edee8ce5781435c99270ac.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Everything to know about the 100th America's Thanksgiving Parade",
@@ -1059,7 +908,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Dans la capitale : Drogue de synthèse, héroïne et cannabis saisis",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPczM3SVRaXzE1N2FwNmE1bmxpRTFEWjBFV1VXSnpJbnFIVEJZbng1bkNSMW5lTm40UW8tUDN0SnNGejgwamdBa213T21YWGJXLUk3WllMdmcwVjd5bW90VU5RVl9UZWJJcnBoWFFlMW5SZUNXTkpXdDl1ZlZkeGsyQzZDXzFBMUZwNjNMeFhR?oc=5",
+    "audioUrl": "audio/headline-b52a4dcd939a19c708f9805dc20c55dc.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Festival Kreol 2026 : sept jours de séga, de gastronomie et de culture à travers Maurice",
+    "sourceUrl": "https://www.inside.news/festival-internasional-kreol-2026-programme-dates-lieux/",
+    "audioUrl": "audio/headline-2fe24928db6dec67f338ee632aacccd1.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Africa’s family-centered Catholicism offers lessons to all, American university president says",
@@ -1068,7 +941,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Oil Prices Rise as Traders Weigh Middle East Supply Risks, OPEC+ Meeting",
@@ -1077,7 +952,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Solomon Islands Ditches China Pact for Australia",
@@ -1086,7 +963,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Europe’s Economic Sovereignty Is All Talk and Little Action",
@@ -1095,7 +974,53 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Au-delà des lois, agir contre les violences faites aux femmes",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlRjaHViN0RCQ1lhOF9Jcmc4dERwWW9raVZ5QUVxd05XZC1jbndSLTVlbVpwYnljMURxTDRGZkNuNXM0ZEpNZElTYjQ5ckVKWnZ4OVdXQ0t5SFlyT0FoYW1nc0FaRExqT1RQdGFDRnN4c1JHWHBxbW44Z0hMbjlMRG1HVkNyWVlROWQzN1hWSjJVanNZcElN?oc=5",
+    "audioUrl": "audio/headline-d6e99b8fe2d1a6c482acdb3b697ae509.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Formation et employabilité : le FSI relancé pour préparer les talents de demain",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHlmZ1RDWkJoUEliWndMVUlnZzh1bGNreFFFa1NsQUlDOEdRQmxKaHMxbzBhZUcyNDVCTkYwODVvNHlrcGJnbWNQaXNieFFxT04tY3phZEtPeXBkQ2Y0RTF4X1JLQWRTb0lHV1A2TEZTcmxVXzJERG5zUHdFVGVPeEJNU0JkSVlZTHdwLUt2M2FxTTdsTUZVOVJaWUFyR0FDbFY4ZU81b1pWdTlKbGc?oc=5",
+    "audioUrl": "audio/headline-078c2cb6127926bce8e7685cd7754994.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Transports durables : Maurice vise une réduction de 40% de ses émissions d'ici 2035",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdlBxX2d2SGcycmVkcXhjQVl5eGhZTWFZQVE1eVBZLVk3bzBmNDJscElkc3lkajY2Ml9DOWNvV3h6N183SHNNOENpUmZYOGNZRGZZNl9Oa3JhYUpJTVBXWjUwcFQ5dkcxaFY2SVFjRnIwd0hJU1gyNTh0VWFfSHQySzRKdVRoRXhldEtKQmJ0aVhPRElFTU9rR2lCU2pfbXRadGxNNW1EcXhMSjVYZGI3ag?oc=5",
+    "audioUrl": "audio/headline-d7bb8775f304698a3e2aa3751ed38c8c.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "À Rodrigues : des tomates, poivrons et piments introduits sans autorisation, une menace pour les cultures locales…",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMmpqSWs2WTJvS2dTeTRoMXFiVnk4QjRtZm1sbm9ibGpNWUFDdDJydThXRThtbENZb3FVejloVzRhdURJaFhqZUVqanpwNTlTT1FQZFFxb293WEh1SGpUQ3U1LUlwTS1fMzQxTl9ybjBZblItOEJnRWh3dDlpN280SWt2bU5zblNRUTJtX19ZVzh3amIzR3FvNTN5Nk1LVHViQnZGTld5TzNhcTVVNHZSczY3Tk42Q3RlZkdkZDRTaWQ1cFhZWk16Q3Fsdw?oc=5",
+    "audioUrl": "audio/headline-0f12a88355b377d53b1b5a44c1aee535.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "As Honiara turns to Canberra, Beijing may rethink Pacific playbook",
@@ -1104,7 +1029,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Santé à Maurice : le gouvernement explore une coopération médicale avec Narayana en Inde",
+    "sourceUrl": "https://www.inside.news/sante-maurice-cooperation-narayana-inde-soins-specialises/",
+    "audioUrl": "audio/headline-ebf310c1bd7f717671e755a4db1fc352.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Menaces, chantage, diffusion : comment la loi défend les victimes",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnJ6V19fdWlNdDVrNXN0UU01TUJJeW5TY0tDbTlTVC1CYW85YlYydjJRTzA2alk4U2hhT0lZQ1ZkYVZIUGtvUzRtZWROX2lEVFlMUi14Ul9Samo1SmVwdUZkYU14emlBMFQxVmxWM2RZVkxkM1AwZ210Rkdkb2ttOTdfbnBjbjVFSURpbg?oc=5",
+    "audioUrl": "audio/headline-31775e5e88e805d8c092def2f12f9392.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Ukraine’s Shadow War in Africa",
@@ -1113,7 +1062,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "US chip curbs will slow Asia data-center investment, Fitch says",
@@ -1122,7 +1073,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia Halts Server Shipments To 4 Southeast Asian Countries Amid New U.S. Export Curbs, Report Says",
@@ -1131,7 +1084,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia, Solomon Islands Sign Treaty Barring Foreign Military Bases",
@@ -1140,7 +1095,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Electric trucks gain ground as Europe faces the wider challenge of making transport sustainable",
@@ -1149,7 +1106,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Vote in the 2026 Battle of the Bands after America’s Thanksgiving Parade presented by Gardner White",
@@ -1158,7 +1117,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "US gains foothold in race for Africa’s critical minerals in Kenya’s Mrima Hill project",
@@ -1167,7 +1128,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Relearning how to live with wolves in Europe",
@@ -1176,7 +1139,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Fin de la 3G d’ici 2028 : l’ICTA appelle à moderniser les équipements pour éviter toute interruption de service",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQUhVQW8yTi1yWUh1S3ZkajBXUTk1NHdnUFRoNnFDVDZzbDlyZk1kTk9jYjFsTndybmIxazlBSVhPTlJ1ZkxoOTBTU1I5cndRMHB3eUhsNmJyaEhuLTV5MjN3Mmt2dzhSaERYZHNuYTNLcF82ektfeW00VHlaVC1xaWJPem9zUUUyemVWNDZwc1VRWldGR0lldW9kd0NSenlaU25WYkFZalVJMGRkOVBKODRBbWNlU1V4Uk5nODJ1Z2VJLTBid21SUg?oc=5",
+    "audioUrl": "audio/headline-d0c377c4237bfac1e1000412ad66ac8c.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Cyberviolences : les signalements dépassent déjà les totaux de 2025",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOS3JKaDRUVmtvX0JwSm5ZWlRHTU4zSEs4TUg5TnY1dmhnNGlKWGdzQ19ZaUpCVlVkS2lpc2N5eGoyR25hQ0VSa3Y2em9QNy1Kc21RRWJSbjI1RWEybVhKN01xdXlkQXpEdk9pM3R3TnpnaWpNX0c0Vk04THlDODE4MG96aDJhMEZHV1pSV2xxQk5adw?oc=5",
+    "audioUrl": "audio/headline-8672883c20c6b12190f989571e92f47a.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "MIDDLE EAST TAX ALERT | UAE Corporate Tax | What the FTA’s Revised Tax Groups Guide Means for Your Group",
@@ -1185,7 +1172,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "How a Screen-Free Retreat in South Africa’s Cederberg Rewired My Nervous System",
@@ -1194,7 +1183,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Watch live: America’s Thanksgiving Parade, presented by Gardner White",
@@ -1203,7 +1194,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Trump’s latest tariff salvo rattles an already shaky Asia",
@@ -1212,7 +1205,31 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Violences numériques : l’emprise jusque dans l’intimité",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKR3lJZnZhQ1pZQ2tVaDZVdVpNdG5WOWUxbHdlQjRQT2s0Sm5MaWNrSHM1ZW80aDM1RE4zNWhILVdHeDVSZGdKcWFBc09nY1hrUFE5QV9nYndjdzBxQ0tRSU5rYjh0Nk9yYUpHVDNhUGIxamRqeEtJU0RfdFBhRzQ?oc=5",
+    "audioUrl": "audio/headline-75fb24ab5b3b7bdd0feb7f9dc4390af3.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Festival Fruits, Fleurs et Légumes 2026",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkY1lwMEpGU0ZkM1N5NGR3dDBnVHoyTWlTclZMZERvSll1YXVEZ1A1b0JqNmdjdjlZcjIzZHpXMUREeXNJSTB0bllwWTFqeUlrUUZERXEya2R2dHNVVUcyRHkzTFB0UDZRRk1UV1V3?oc=5",
+    "audioUrl": "audio/headline-4bbefcb97034c92e9cb865d701bf140f.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "How Europe Comes Apart",
@@ -1221,7 +1238,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Oil Mixed Amid Middle East Attacks, U.S. Inventory Build",
@@ -1230,7 +1249,97 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Santé - Suicide : Maurice au-dessus de la moyenne mondiale",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNkZxZGlfRTVKbFI3TVR5NnZaMWhYYXNnOVE0dFAwanhQQU1SWlVrMlFtRDdJUlU4dGpSd2QwcWtOSjhwUkJJSThPZHNGMW1lTkF2S2pLUHJrT2x2N2VHemd4b05kcE50alg5QU1nZTlDNnhDazJVTGNCZE5PcE8zVmEwTQ?oc=5",
+    "audioUrl": "audio/headline-cbd735a9a2195bb96e777a6fde33e26e.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Obituaire : Rajendra Appa Jala, l’avoué qui défendait les plus démunis",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXRqekdLLTJFNFJ2QWhvdGpuM0FuaE1JWFMzSmE3OWNsRE1aSFVQYllLRGMtRV9XeFFQSjdEamVBNWp3QkZqRnFmQkVIcE9HeU00Y1h1YTkzdTZ2UzZZSFRMMldheDRQYjh1VjdiNHlrSTJhYUpjVjhrczVEbldkaml0NTllNnBoU3gyN1dCb1FNdlk?oc=5",
+    "audioUrl": "audio/headline-858d2e1d09d82c60e2d591b2cc924a87.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Mort du petit Ayaan, 2 ans : sa mère, une femme médecin et un policier reconnus coupables",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUkJJaWZhYmcwdXpMQnJfXzBsUUlfZm5xS3RMRGZXRFowZTBwcWxybzBLdlNROHRoSE51N0ZZVjNrVEJvTFlKajlOTkFYM3Zfd1pqWnRXYlY0SkROUThkcEpkQkgwcUJnXzlrNW8zdnktTGs5a3Ywa3h4N2NBeUhad1dOTi0yUEhweWN4V1d5enlJeDl1Mmwwdl8wWndyOUJsM2o3UDcxcE9mUzh2?oc=5",
+    "audioUrl": "audio/headline-a9e31da411d774313f4da530c1e03b62.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Champ-de-Mars - Night Market : déjà 500 inscriptions pour 320 emplacements",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaW5qLWdDcWo0N0IwMUlKSDhYZkZjb3drWDZLeWx6WUUwWVJLVUZNa1pDVWxWZVZNZnhkOGlWdmpBMUtHc3o0ODRCY1daN3NtTWRCc2NpUVJrd09KWGNGeWJkdXQ0c1VqMVE0WXJXWlFMd1JCN1FPOEM3Yi1FS21nNHlRako4Xy16Y3ZlNmwtc3lsVTJyeHAzNQ?oc=5",
+    "audioUrl": "audio/headline-20442424be31369263382e209c8d0d51.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Advanced Sport Management Course (ASMC) : À l’école de la bonne gouvernance",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fX0x2MlkwSVY5V1JLTkgyRUFVOHVVRlZDbHhMTGVYMU1lQ2t2SmVQQlp4czBHdmhULXhIam9sSmlMbGF1SEZ4R2g2UnhFQzBkNldPNUVqWW1Fc0RrZFZNc0l0ZzUtelpxTEMyV3NPUGdnZw?oc=5",
+    "audioUrl": "audio/headline-0a701a1559d57ce1984d5d1b40378b87.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Pascal de Izaguirre : «Maurice est une destination de cœur et une place forte dans l’avenir de Corsair»",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdHBKMnJGTDhJSE9sUkFwNjJRYVdsRE9Zb2k4V0xfLXdTYUFtTmFLN1lSWWI0blJBTnJpMFhRWW1aUmZDT29ENjlJMUMxYUtjVEpFaGd6Y0Z3UVZ6MmhYTXM2bnh2TFJ3bHp4ejJrNngyOHFyYzR6WGZOSjJYSkk0QmxNdkVjMlFBbEEtODQyWnFEWFowSEM4Skp3SHlJcnVHTXpsejRYWDkwbGtVcjFhT21nYkZYNTJrQ09UV2V4Ui1ZYkFqYm5R?oc=5",
+    "audioUrl": "audio/headline-d408c19d4fa588e79ea0787eb8907fcd.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Azor Adélaïde, 55 ans après son assassinat : « Une victime de l’engrenage de l’histoire », selon Paul Bérenger",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ2lTV1NHS3RKTUtaTHhueVlRam9qNEhOWUt3SmU3cjF5NXhZazN2Y0pIWkp3R09tMHVxS04tbDZQdml4M0pKRE9hUHlJQWN0a0V1VVNscVdSVFVCSEFSSUx0eVFkbFByUHRINjVpVVZQeXF3NVlxR2VxeTA5V01HVFBXZjlUYXpScGRLcG1XdWpZdmVGbEdjNHhvMEs2UlJYeEpkampwaXQwbEwtV01QYk42Q2MyYmxrTXNaUlV1ZzFabGpkVnV0RHM1cEE?oc=5",
+    "audioUrl": "audio/headline-917e1c8fb7ccecd57b9f3b643c450ec6.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Sécheresse et restrictions d’eau : l’irrigation limitée à trois jours par semaine inquiète le secteur agricole",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOLTZWN0ZkajhQUWdPSS00bFNoUDVfelh4OTRON1ZMbGh6UmdSQjJUZ0V1T3R1TUZwMkQ3RkpkUHNlN0dkb09hSFNDTjZ6dWpPY3hJTGs2WHFqdWFMa056bzRNVXBFS1ViOFcySUJJbkdqd3ZTLVNhV0Y3MUlhSlNaRFo2OUhEOUg1bEJDbE5ER1FFVE5ZQTBFc3FzclpVWGFUYjAxQ0NDSlNVQ19JU0d1MEc2Y3lYR2d2ZjRkZXRPY0U?oc=5",
+    "audioUrl": "audio/headline-e9cdab1664e651478b8cc30ff768ef31.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports",
@@ -1239,7 +1348,20 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "DéfiXplik | Compensation salariale 2027 : six questions pour comprendre les négociations",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNUlJN0ZiVVpESkZwS0h1TTc1R3p3eVVxa3pncnphNFJhdm5vTU5qRXhTcWtobUp5NFR5ZHN4MVFZZTZOaktsS29JWUN1WnRGSXZxNUlKZlVlUi1VY2hZTGRiZXNFZGpRNDhuNzlkbGM1a285QkQ1VFJDbEFNNlBidEkyLUZBamliYjJtWDZ5RFNXQXpiUmxFeFJXeWRLTk1Vc3RyQmV6bi10cHc?oc=5",
+    "audioUrl": "audio/headline-f403c1fc6fa0b375b5ae78bdd50c18ae.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Nvidia halts chip shipments to south-east Asia",
@@ -1248,7 +1370,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "What will China learn from the Australia–Solomon Islands treaty?",
@@ -1257,7 +1381,64 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Loto : prochain jackpot à Rs 40 millions",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTb3lGTExDcWhNNmpxZFl3THVxVkJoR0JtOERSX0k4NDI0S0dLUk05X0ZEUVlKeU8xMDRiYVZaQ0pOM3VuSzBZLXZTUVBSNGFxb1FDWjBlVXFMOC1pSWV5Z1ZHM2czNnNyaVZpOXp3?oc=5",
+    "audioUrl": "audio/headline-20eafc816ee7ea81eee7bbf45381338e.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Miss Univers : une nouvelle reine sacrée après une année tumultueuse pour le concours",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSmxvVVVyaS1fOVcxUlBWOGoteTJMWlFjNXVESFo0U1AxSjFieS1sbmxwLWwxTTFWbmE3cW1PTnpEOFJON25NMmZRTVNuTXc5UHF6U0stTTgyam5xdEc5LVVDaUt0Y0JuQW1uZlJFWlUxRXlHOUpUVS0tWENTNDdzOTJoN2M0UGFsZXd6aXJNZGE5NHUzeGhYZ25IaTFONVlEaFg1ZzlNVDY2dw?oc=5",
+    "audioUrl": "audio/headline-fd9b6242bdc6407831c5952b898fb39b.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "55ᵉ anniversaire de sa mort : le MMM rend hommage à Azor Adelaïde",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdFJVdWRaSkE1dXp0d21uLTh2UkF6MGNMeTN0ZUJPOURzUkF2VXlsbjgyb0VJMUNjaVFpZlV0UlN5LWZGU3ZuMUpSMmhGRHRYVmFSbUVTU1lRSkFRdER4MGlwWUsyVWpHRXBLQnFqaXBpWlAtRHZzbm0yOWhhY0dsMTNHU0NNQWNxcnVV?oc=5",
+    "audioUrl": "audio/headline-b4343de21a20137b90acc3dabe5c339a.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Plan stratégique des prisons à Maurice : cinq priorités pour la période 2027-2030",
+    "sourceUrl": "https://radiomopep.mu/plan-strategique-prisons-maurice-2027-2030/",
+    "audioUrl": "audio/headline-0cd642050a02861ebeaf48ad0b8c9776.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Environnement : des journalistes de l’océan Indien lancent un hub régional",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVTA2OTVtQzZIdE5JQndZaTJuX1ZjYVdvSUp0c0pfVF9GdzlKVGItMWlfdVg3dHhRZnp0M2hpaTBVc1g2S0JULTY1NHZLaEhBc0lUeENQTkVldnJPZFJvbE5kUGF5SDJQVjlaOTlyejNMZ29famNjN2J2dk84WTlfSzRMWEwwUmtfRjh1bVI4ZE8xZE50Q0FlLWlRUVltWno4dklDUThn?oc=5",
+    "audioUrl": "audio/headline-090923077bc0da0a89ff99906e6b4e2e.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia, Solomon Islands sign historic pact amid China's deepening influence in Pacific",
@@ -1266,7 +1447,42 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "World Knits : Salaires impayés : le DPP sollicité sur d’éventuelles poursuites",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR2tjc1dLdGtrMV8yS3I0aTdqb3JTckpXYkVUeTJFZFMtS1p0TWIzZ0JXaXIwRkRpamlXQ3J3V2loQ2Rad3lGNDRkM0JvYmR4RkhFWngyQUc3Q1UxSXgzbFRSdnl3eTZsc2VFY3VkU1FyUXBPbXlnZHI4by1PRy11U196UWdBejRjaVN2SmJQRHdPUGNv?oc=5",
+    "audioUrl": "audio/headline-982dd731d1f5b08f0d0b53b9fc7499c0.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Décès en cellule policière : La famille souhaite un médecin légiste indépendant pour l’autopsie",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ1ZBTnlzWEZGUUduWkZlQXRrMUE1M2lWeFRZYlctbGhCZFNMWWl6M056ZC03RjJrZ0VvZzV5TzlIUi0xZFNJdE0xRGxBM2U5bElmVXdRdTBOM1FwUDVrOEZrNEUweVhNYzd2ZjFxbURSQjF0NnNqQTZleENPYzFxdGVjWnlWYjdRdnRFNkotUnUxY0xya0Q4VjlR?oc=5",
+    "audioUrl": "audio/headline-142dd1ddac7a650e4976a0093da16a48.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Point de presse : Chetan Baboolall dénonce des incohérences dans les explications d’Arvin Boolell",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTE9lbHRyTXp4cld3ZXp1VlZvamR2dkNwNUVLV2xXOENZMVBoODZJLThoUXV0SDR0S2F0bC1yekhOVHBkMk9Lb0pNYkNVLTdlZ1VNeXZPSkM3MFp6dEs2T1dmWFRselh0SmtDNW13WXNHYXdnM2NpUGdJWXRNakFjMjVKeXU5ZGRYdkVLaW5KSWwwQVJCd3BxaG9XclhTNXpHMWlFLXFUMk1CU0U?oc=5",
+    "audioUrl": "audio/headline-eb9cabc3a678a7810b9c3de2014bb297.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
@@ -1275,7 +1491,42 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Responsabilité pénale des mineurs : Navin Ramgoolam prône une approche axée sur la réhabilitation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb2gtbURad3Z6cHZYSEp2MkxTZ3JxYmZkYU16N2VZWE9yNkRqY1VueEpYWFk0MmRIeUdLTkhyVkM4S1JOUk8xSjgyNmgwOUNmd0ltX045MEFpbk1KZGdfNmJ1amk0bWxQdWxaaktjSDJyemdEblEzWG4tODNtd1FtME9MeU54eGNQLTdRUEVRNUZmRXox?oc=5",
+    "audioUrl": "audio/headline-46c095ce041f837922a6e78e7887f66d.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Parlement : Ambiance : Compter les bovins pour ne pas dormir",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOFZnQlh1MWtmejRWXzkzY2lHZG9MV1ZmdVAya1p2ZnQ5aDFHZVRxVDRPcTQzRFFqZG9CQUxXRnhlYlZ3dVJ0TzVXUXNqbDk1QUJOdHE0OVM2b0M2TF9OM0VuZGtLSThkSUZFeXZDc2paRy01T0YxSzlMUEJ4c2c0Xw?oc=5",
+    "audioUrl": "audio/headline-d83681e37f39c4f4840bcae67c1aacf7.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "PNQ : Fièvre aphteuse : 6281 animaux importés de Namibie placés en quarantaine, le cadre légal bientôt revu",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdjZ2NXRuQ3VLWW03LU5zRUZqTG9TR3ByVVdLZWZXTEg2QzZMczRoSm9GTFFQOEJWTFlmT2Q5bGZCQ1hBZEhxdkRheHp4OFpjUTFKQ1Q5Y19qNGxjMl9nazhSWVNqZFRjWlRvaEtPR1FUYmwwZ0V4bGwzcWxWejJDY21oNzZ2WmMxNVpfUGhTcnVlTVVWVzR0U1hJanl4bVBJRm5vVlBZY2VmdHBjZUNzTWJ4MnVaS2xOcS02Rl9UZkpqRlNrNlE?oc=5",
+    "audioUrl": "audio/headline-429dc96de46335ff0879fa91ff54d1c3.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "This nation had a security pact with China. It’s just signed a deal with a US ally instead",
@@ -1284,7 +1535,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
@@ -1293,7 +1546,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia Aims to Sign Another Deal to Block China in Pacific",
@@ -1302,7 +1557,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia signs treaty with Solomon Islands, a blow for China’s ambitions in the Pacific",
@@ -1311,7 +1568,9 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Australia, Solomon Islands sign security pact in blow to China",
@@ -1320,7 +1579,42 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "50ᵉ anniversaire de la mort de Loïs Lagesse : Son héritage continue d’éclairer la vie des non-voyants",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbHN2SEhxQllmTkZFbmJmUFlHdXo3cGdlNHBLVXNBSXMzc1R1Ry0yVHhYSDJBbDRnVkYyNW5PRXFJS3E3M1BPakNwV1JTdFF0OVJwTHUyeWhjZGxLaGNkYUVyOTF1TnRtU2tkQ2Q5ZXM1TDVhVG1GUGVpd1BiRUE2eFh5cUF1TFVPYkZ3?oc=5",
+    "audioUrl": "audio/headline-bee1824e1ed17cceb6cd12efd5a44141.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Au nord-est de Rodrigues : Séisme de magnitude 6,4 à 326 km, aucune secousse ressentie",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdU1xdXY5YjJBSmZhTHM3V1l6cEZ6TExCU2V4VmRPSDhsOHphdDZ6X1I4ZVZZY2trUlF6bm90aXdCXzRUQzhzcnhyMTJxSjRJcTVGcGs4NW4wdlpLemg3QkxTdUtmMzFyVHBhdkw2VjU0ZzY4amVsNi1RX1FNY1JlcDBZVFhJdW1RT1dLbkp2QQ?oc=5",
+    "audioUrl": "audio/headline-d10db9aab71f3359bfd2734cabb47ad1.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
+  },
+  {
+    "title": "Journée mondiale de la pêche : Objectif : 50 000 tonnes de production locale malgré les difficultés",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY0cwc2VTX0xYdWcwUUtWakFyY3J4STVCRVNKRUxCaVlGOVFOaVJzOUJYbjVXVVhJbEJNUWtOWmY1MG1kdmJYUi1QeE80dlJiMW90b21vUzktNUVYaWxzUXJ6YVh6VkpyX2RMdVAtSEhLS2oyc2QyNENxRkJPdlFjdEJYVEd5UWNMNWxUQVpSQXBFYmhubF9YeEhGaw?oc=5",
+    "audioUrl": "audio/headline-870a9fc9370813631f5106d6631ae6e2.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   },
   {
     "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says",
@@ -1329,6 +1623,8 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "voice": "bm_george",
     "language": "en",
     "engine": "Kokoro",
-    "generated": true
+    "generated": true,
+    "lastSeen": "2026-11-27",
+    "legacyV2": true
   }
 ];
