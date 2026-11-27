@@ -1,0 +1,64 @@
+name: Natural Voice V3 automatic review
+on:
+  push:
+    branches: ['review/natural-voice-v3']
+    paths: ['.github/workflows/natural-voice-v3.yml','scripts/natural_voice_v3.py','scripts/test_natural_voice_v3.py','live-updates.js','live-updates.html']
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: natural-voice-v3-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  review:
+    if: github.ref == 'refs/heads/review/natural-voice-v3' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - run: python -m unittest discover -s scripts -p 'test_*voice_v3.py'
+      - run: python scripts/natural_voice_v3.py --limit 30
+      - run: node --check live-updates.js && node --check headline-audio-data.js && node --check audio-bulletins.js
+      - name: Android emulated playback
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/v3-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({args:['--autoplay-policy=no-user-gesture-required']});
+            try {
+              const page=await browser.newPage({...devices['Galaxy S9+']});
+              await page.goto('http://127.0.0.1:8765/live-updates.html');
+              for(const lang of ['fr','en']){
+                await page.locator('#v3Language').selectOption(lang);
+                await page.locator('#v3ListenAll').click();
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
+                const previous=await page.locator('#v3QueueAudio').getAttribute('src');
+                await page.locator('#v3Next').click();
+                await page.waitForFunction(p=>document.querySelector('#v3QueueAudio').getAttribute('src')!==p,previous);
+                await page.locator('#v3Stop').click();
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
+              }
+              if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Mobile overflow');
+              console.log('French and English playlist, next, stop and mobile layout verified');
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: natural-voice-v3-review
+          path: |
+            audio/headline-*.mp3
+            audio/bulletin-*.mp3
+            headline-audio-data.js
+            audio-bulletins.js
+          if-no-files-found: error
