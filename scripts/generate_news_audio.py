@@ -9,6 +9,13 @@ import json
 import os
 from pathlib import Path
 import urllib.request
+import urllib.parse
+import subprocess
+import tempfile
+import shutil
+
+VOICE_ID = "341b4807e5e6455fa88f34bda5d6eeea"
+VOICE_NAME = "Tanguy"
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "news-audio"
@@ -42,15 +49,28 @@ def tracks():
 def generate(text, path, key, voice):
     if path.exists() and path.stat().st_size > 1024:
         return
-    payload = {"model":"gpt-4o-mini-tts","voice":voice,"input":text,"response_format":"mp3","instructions":"Read exactly the supplied words. Calm professional radio newsreader, natural pacing, clear French or English pronunciation as appropriate, brief pauses. Do not add information or commentary."}
-    request = urllib.request.Request("https://api.openai.com/v1/audio/speech", data=json.dumps(payload).encode(), headers={"Authorization":"Bearer "+key,"Content-Type":"application/json"}, method="POST")
-    with urllib.request.urlopen(request, timeout=90) as response:
-        data = response.read(5_000_001)
-    if len(data) < 1024 or len(data) > 5_000_000:
+    payload = {"voice_id":voice,"text":text,"seed":27,"speed":0.95}
+    request = urllib.request.Request("https://api.heygen.com/v3/models/audio/tts", data=json.dumps(payload).encode(), headers={"X-Api-Key":key,"Content-Type":"application/json"}, method="POST")
+    with urllib.request.urlopen(request, timeout=160) as response:
+        result = json.loads(response.read(500_001))
+    url = result.get("data", {}).get("audio_url", "")
+    parsed = urllib.parse.urlsplit(url)
+    if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+        raise ValueError("Missing valid HTTPS audio URL")
+    # No authentication header is forwarded to the audio download.
+    with urllib.request.urlopen(url, timeout=60) as response:
+        data = response.read(20_000_001)
+    if len(data) < 1024 or len(data) > 20_000_000:
         raise ValueError("Unexpected audio response size")
-    tmp = path.with_suffix(".tmp")
-    tmp.write_bytes(data)
-    tmp.replace(path)
+    with tempfile.TemporaryDirectory() as folder:
+        raw = Path(folder) / "source.audio"
+        mp3 = Path(folder) / "output.mp3"
+        raw.write_bytes(data)
+        subprocess.run(["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-i",str(raw),"-vn","-c:a","libmp3lame","-b:a","128k","-ar","44100","-ac","1",str(mp3)],check=True,timeout=60)
+        subprocess.run(["ffmpeg","-nostdin","-v","error","-xerror","-i",str(mp3),"-f","null","-"],check=True,timeout=60)
+        tmp = path.with_suffix(".tmp")
+        tmp.write_bytes(mp3.read_bytes())
+        tmp.replace(path)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -60,12 +80,14 @@ def main():
     if not rows:
         raise SystemExit("No matching news headlines")
     if not args.generate:
-        print(f"Dry run: {len(rows)} headline recordings planned. No API requests.")
+        print(f"Dry run: {len(rows)} headline recordings planned with Tanguy. No API requests.")
         return
-    key = os.environ.get("OPENAI_API_KEY")
+    key = os.environ.get("HEYGEN_API_KEY")
     if not key:
-        raise SystemExit("Missing server-side OPENAI_API_KEY; no requests made.")
-    voice = "onyx"
+        raise SystemExit("Missing server-side HEYGEN_API_KEY; no requests made.")
+    if not shutil.which("ffmpeg"):
+        raise SystemExit("Install ffmpeg before generating audio; no requests made.")
+    voice = VOICE_ID
     OUT.mkdir(exist_ok=True)
     for row in rows:
         digest = hashlib.sha256(json.dumps([voice,row],ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:24]
@@ -73,7 +95,7 @@ def main():
         generate(row["title"]+". Source: "+row["source"]+".",file,key,voice)
         row["file"] = "news-audio/"+file.name
     # Do not replace the active manifest: editor must review each recording.
-    (OUT / "manifest.review.json").write_text(json.dumps({"version":1,"tracks":rows},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (OUT / "manifest.review.json").write_text(json.dumps({"version":1,"voice":"Tanguy","tracks":rows},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Review MP3s and exact headline attribution before approving manifest.review.json.")
 if __name__ == "__main__":
     main()
