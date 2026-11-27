@@ -1,0 +1,43 @@
+/* Inside Mauritius | Transparent Newsroom. Presentation only; solid theme remains available. */
+.im-theme-bar{display:flex;justify-content:flex-end;align-items:center;gap:10px;padding:7px max(16px,calc((100% - 1440px)/2));background:#102b46;color:#fff;font:600 12px/1.5 system-ui,sans-serif;box-sizing:border-box}
+.im-theme-bar button{font:inherit;background:#fff;color:#102b46;border:1px solid #b1c5d4;border-radius:6px;padding:8px 12px;min-height:36px;cursor:pointer}
+.im-theme-bar button:focus-visible{outline:3px solid #f9c557;outline-offset:2px}
+html[data-im-theme="transparent"]{background:#dceaf4 !important}
+html[data-im-theme="transparent"] body{background:linear-gradient(145deg,#d6e9f3 0%,#edf5fa 34%,#cbddeb 72%,#e4eef5 100%) !important;color:#102b46}
+html[data-im-theme="transparent"] body .site-header,html[data-im-theme="transparent"] body .brand-identity-band,html[data-im-theme="transparent"] body .breaking-ribbon,html[data-im-theme="transparent"] body>header:not(.site-head){
+ background:rgba(255,255,255,.68) !important;border-bottom:1px solid #b7cbd9;
+}
+html[data-im-theme="transparent"] body .nav-wrap,html[data-im-theme="transparent"] body .utility-strip,html[data-im-theme="transparent"] body .topline,html[data-im-theme="transparent"] body .site-footer,html[data-im-theme="transparent"] body>footer,html[data-im-theme="transparent"] body .site-head,html[data-im-theme="transparent"] body[data-im-page="stats"]>header{
+ background:rgba(16,43,70,.94) !important;color:#fff;
+}
+html[data-im-theme="transparent"] body .nav-wrap .primary-nav.is-open{background:#102b46 !important}
+html[data-im-theme="transparent"] body .dashboard-main .story-card,
+html[data-im-theme="transparent"] body .dashboard-main .story-grid .story-card:first-child,
+html[data-im-theme="transparent"] body .dashboard-main .feature-side-news .feature-headline-card,
+html[data-im-theme="transparent"] body .dashboard-widget,
+html[data-im-theme="transparent"] body #homePage .im-edition-15,
+html[data-im-theme="transparent"] body #homePage .im-edition-15 article,
+html[data-im-theme="transparent"] body #homePage .im-news-fallback,
+html[data-im-theme="transparent"] body .im-verified-desk,
+html[data-im-theme="transparent"] body .im-verified-desk__card,
+html[data-im-theme="transparent"] body .article-page,
+html[data-im-theme="transparent"] body .media-grid article,
+html[data-im-theme="transparent"] body .item,
+html[data-im-theme="transparent"] body .news-card,
+html[data-im-theme="transparent"] body .kreol-reader,
+html[data-im-theme="transparent"] body .reader-status,
+html[data-im-theme="transparent"] body .overview>div,
+html[data-im-theme="transparent"] body[data-im-page="stats"] :is(.card,.panel,.metric,.info,.viewer,.stat-section,.smallcard,.topic,.stat-num){
+ background:rgba(255,255,255,.64) !important;color:#102b46;border:1px solid #b4c9d8;box-shadow:0 4px 15px #16334b12;
+}
+html[data-im-theme="transparent"] body #imDashboardVoice{background:rgba(255,255,255,.75) !important;border-color:#a8c2d4 !important;color:#102b46 !important}
+html[data-im-theme="transparent"] body .im-natural-post-audio,html[data-im-theme="transparent"] body .dashboard-main .hero-copy .im-natural-post-audio{background:rgba(255,255,255,.88) !important;color:#102b46}
+html[data-im-theme="transparent"] body .dashboard-main .hero-copy{background:rgba(16,43,70,.95) !important}
+html[data-im-theme="transparent"] body .dashboard-main .hero-copy .im-natural-post-audio p{color:#102b46 !important}
+html[data-im-theme="transparent"] body .dashboard-main .story-card .story-posted-row,html[data-im-theme="transparent"] body .headline-stripe-list,html[data-im-theme="transparent"] body .coverage-inner>a{background:rgba(255,255,255,.48)}
+html[data-im-theme="transparent"] body .dashboard-main .filter-button:not([aria-pressed="true"]),html[data-im-theme="transparent"] body .dashboard-main .news-search{background:rgba(255,255,255,.8)}
+html[data-im-theme="transparent"] body .dashboard-main .news-live-time,html[data-im-theme="transparent"] body[data-im-page="stats"] .hero{background:rgba(16,43,70,.94) !important;color:white}
+html[data-im-theme="transparent"] body .im-theme-bar{background:rgba(16,43,70,.94)}
+/* Do not apply opacity to text, photos, charts or controls. No blur on mobile. */
+@media(prefers-contrast:more){html[data-im-theme="transparent"] body .story-card,html[data-im-theme="transparent"] body .item,html[data-im-theme="transparent"] body .news-card,html[data-im-theme="transparent"] body #imDashboardVoice{background:#fff !important}}
+@media(max-width:680px){.im-theme-bar{justify-content:center;flex-wrap:wrap}}
