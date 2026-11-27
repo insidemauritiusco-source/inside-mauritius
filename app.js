@@ -198,6 +198,7 @@
     const time=element("time","feature-headline-date",displayPostTime(story));
     time.dateTime=story.publishedAt || story.addedAt || story.date || "";
     body.append(cat,title,time);
+    if(window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO) body.append(window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.panel(story));
     card.append(imageLink,body);
     if(index===0)card.classList.add("feature-headline-card-primary");
     return card;
@@ -310,7 +311,7 @@
     const postedDate=element("time","story-posted-time",displayPostTime(story));
     postedDate.dateTime=story.publishedAt || story.addedAt || story.date || "";
     posted.append(postedLabel,postedDate);
-    content.append(meta,title,summary,bottom,socialActions,posted);card.prepend(imgLink);card.append(content);
+    content.append(meta,title,summary,bottom,socialActions,posted);if(window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO) content.append(window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.panel(story));card.prepend(imgLink);card.append(content);
     return card;
   }
   function renderTopStories() {
@@ -465,6 +466,8 @@
     $("articleTopline").textContent=`${(story.category||"News").toUpperCase()} / ${(story.label||"STORY").toUpperCase()}`;
     $("articleTitle").textContent=story.title;
     $("articleDeck").textContent=story.summary||"";
+    document.getElementById("imNaturalArticle")?.remove();
+    if(window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO){const panel=window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.panel(story);panel.id="imNaturalArticle";$("articleDeck").after(panel);}
     const byline=$("articleByline");
     const bylineTime=element("time",null,displayPostTime(story,true));
     bylineTime.dateTime=story.publishedAt || story.date || "";
