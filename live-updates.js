@@ -111,6 +111,64 @@
   $("readRoundup")?.addEventListener("click", stopNatural);
   window.addEventListener("pagehide", stopNatural);
 
+  // V3: one native audio player, source-linked queue, no autoplay on arrival.
+  const queueAudio = $("v3QueueAudio");
+  const queueStatus = $("v3QueueStatus");
+  let queue = [], queueIndex = 0, queueToken = 0;
+  function clearQueue() {
+    queueToken++; queue = []; queueIndex = 0;
+    queueAudio.pause(); queueAudio.removeAttribute("src"); queueAudio.load();
+    queueStatus.textContent = "Playlist stopped.";
+  }
+  async function playQueue(index) {
+    if (index >= queue.length) { clearQueue(); queueStatus.textContent = "Playlist completed."; return; }
+    queueIndex = index;
+    const token = ++queueToken;
+    const entry = queue[index];
+    queueAudio.src = entry.url;
+    queueStatus.textContent = (index+1) + " / " + queue.length + " · " + entry.title;
+    try {
+      if ("mediaSession" in navigator && "MediaMetadata" in window) {
+        navigator.mediaSession.metadata = new MediaMetadata({title:entry.title,artist:"Inside Mauritius · AI audio"});
+      }
+      await queueAudio.play();
+    } catch (_) {
+      if (token === queueToken) queueStatus.textContent = "Tap Play to continue. Audio may be unavailable.";
+    }
+  }
+  function startQueue(items) {
+    clearQueue(); queue = items;
+    if (!queue.length) { queueStatus.textContent = "No matching recordings available."; return; }
+    playQueue(0);
+  }
+  $("v3ListenAll").addEventListener("click", () => {
+    const lang = $("v3Language").value;
+    startQueue(entries.filter(item => category === "All" || item.category === category)
+      .filter(item => !query || (item.title+" "+item.source+" "+item.summary).toLowerCase().includes(query))
+      .map(item => ({item,record:recordingMap.get(JSON.stringify([item.url,item.title])),url:recordingFor(item)}))
+      .filter(x => x.url && (lang === "all" || x.record?.language === lang))
+      .map(x => ({title:x.item.title,url:x.url})));
+  });
+  $("v3Next").addEventListener("click", () => {if(queue.length) playQueue(queueIndex+1);});
+  $("v3Stop").addEventListener("click", clearQueue);
+  queueAudio.addEventListener("ended", () => {if(queue.length) playQueue(queueIndex+1);});
+  queueAudio.addEventListener("error", () => {if(queue.length) queueStatus.textContent="Recording failed. Choose Next or Stop.";});
+  document.addEventListener("play", e => {
+    if(e.target.tagName === "AUDIO" && e.target !== queueAudio && queue.length) clearQueue();
+  },true);
+  document.addEventListener("im:read-headline",clearQueue);
+  $("readRoundup")?.addEventListener("click",clearQueue);
+  window.addEventListener("pagehide",clearQueue);
+  const bulletinList = $("v3Bulletins");
+  const bulletins = Array.isArray(window.INSIDE_MAURITIUS_AUDIO_BULLETINS) ? window.INSIDE_MAURITIUS_AUDIO_BULLETINS : [];
+  const today = new Intl.DateTimeFormat("en-CA",{timeZone:"Indian/Mauritius",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  for (const b of bulletins.filter(b => /^audio\/bulletin-(morning|evening)-\d{4}-\d{2}-\d{2}\.mp3$/.test(b.audioUrl)).sort((a,b)=>b.date.localeCompare(a.date)||b.edition.localeCompare(a.edition)).slice(0,4)) {
+    const button = node("button","listen-headline",b.date+" · "+b.edition+" headline roundup");
+    button.type="button";button.addEventListener("click",()=>startQueue([{title:button.textContent,url:b.audioUrl}]));
+    bulletinList.append(button);
+  }
+  if(!bulletinList.children.length) bulletinList.textContent="No generated roundups yet.";
+
   function makeCard(item) {
     const card = node("article", "news-card");
     const meta = node("span", "meta", item.category + " · " + item.source);
@@ -171,7 +229,7 @@
       (category === "All" || x.category === category) &&
       (!query || (x.title + " " + x.source + " " + x.summary).toLowerCase().includes(query))
     );
-    stopNatural();
+    if (currentAudio !== queueAudio) stopNatural();
     grid.replaceChildren();
     matching.slice(0,visible).forEach(x => grid.append(makeCard(x)));
     if (!matching.length) grid.append(node("p","empty","No source reports match your search. Try another category or keyword."));

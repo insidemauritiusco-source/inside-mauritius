@@ -1,0 +1,211 @@
+name: Natural Voice V3 automatic review
+on:
+  push:
+    branches: ['review/natural-voice-v3']
+    paths: ['.github/workflows/natural-voice-v3.yml','scripts/natural_voice_v3.py','scripts/test_natural_voice_v3.py','live-updates.js','live-updates.html']
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/natural-voice-v3.yml','scripts/natural_voice_v3.py','scripts/test_natural_voice_v3.py','live-updates.js','live-updates.html','headline-audio-data.js','audio-bulletins.js']
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: natural-voice-v3-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  review:
+    if: github.ref == 'refs/heads/review/natural-voice-v3' || github.event_name == 'schedule' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/natural-voice-v3')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - run: python -m unittest discover -s scripts -p 'test_*voice_v3.py'
+      - run: python scripts/natural_voice_v3.py --limit 30
+      - name: Validate V2 preservation and all registry files
+        run: |
+          python - <<'PY'
+          import json,pathlib,subprocess,sys
+          sys.path.insert(0,'scripts')
+          from natural_voice_v3 import read_data,valid_mp3,HEADLINE,BULLETIN
+          root=pathlib.Path('.')
+          current=read_data(root/'headline-audio-data.js')
+          old=json.loads(subprocess.check_output(['git','show','HEAD:headline-audio-data.js'],text=True).split('=',1)[1].strip().rstrip(';'))
+          prior={r['audioUrl'] for r in old if r.get('engine')=='Kokoro' and (r.get('legacyV2') or not r.get('lastSeen'))}
+          assert prior <= {r['audioUrl'] for r in current}, 'Legacy V2 registry entry missing'
+          for p in prior: assert (root/p).exists(), 'Legacy V2 file missing'
+          for r in current:
+              if r.get('engine')=='Kokoro': assert HEADLINE.fullmatch(r['audioUrl']) and valid_mp3(root/r['audioUrl'])
+          for b in read_data(root/'audio-bulletins.js'):
+              assert BULLETIN.fullmatch(b['audioUrl']) and valid_mp3(root/b['audioUrl']) and b['headlines']
+          print('Preserved',len(prior),'legacy recordings; manifests and MP3 files validated')
+          PY
+      - name: Verify both bulletin editions against real cached audio (review only)
+        if: github.ref == 'refs/heads/review/natural-voice-v3'
+        run: |
+          python - <<'PY'
+          import datetime as dt,json,pathlib,shutil,sys,tempfile
+          sys.path.insert(0,'scripts')
+          from natural_voice_v3 import build,read_data,write_js,PREFIX,MUT,valid_mp3
+          root=pathlib.Path('.')
+          records=read_data(root/'headline-audio-data.js')
+          chosen=[next(r for r in records if r.get('engine')=='Kokoro' and r.get('language')==lang) for lang in ('fr','en')]
+          with tempfile.TemporaryDirectory() as d:
+              p=pathlib.Path(d);(p/'audio').mkdir()
+              for r in chosen: shutil.copyfile(root/r['audioUrl'],p/r['audioUrl'])
+              write_js(p/'headline-audio-data.js',PREFIX,chosen)
+              day=dt.datetime(2026,11,27,7,tzinfo=MUT)
+              rows=[dict(title=r['title'],sourceUrl=r['sourceUrl'],language=r['language'],publishedAt=day.isoformat()) for r in chosen]
+              (p/'newsroom-data.js').write_text('window.fixture = '+json.dumps(rows)+';')
+              (p/'world-news-data.js').write_text('window.fixture = {"headlines":[]};')
+              build(p,0,day.replace(hour=8))
+              build(p,0,day.replace(hour=18))
+              b=read_data(p/'audio-bulletins.js')
+              assert {r['edition'] for r in b}=={'morning','evening'}
+              assert all(valid_mp3(p/r['audioUrl']) and len(r['headlines'])==2 for r in b)
+              print('Morning and evening fixture bulletins validated using actual cached French/English audio')
+          PY
+      - name: Version audio registry URLs to avoid stale browser caches
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib,re
+          p=pathlib.Path('live-updates.html');s=p.read_text()
+          for name in ('headline-audio-data.js','audio-bulletins.js','live-updates.js'):
+              digest=hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()[:16]
+              s,n=re.subn(r'(src="'+re.escape(name)+r')(?:\?v=[^"]*)?"',lambda m:m.group(1)+'?v='+digest+'"',s)
+              assert n==1,name
+          p.write_text(s)
+          PY
+      - run: node --check live-updates.js && node --check headline-audio-data.js && node --check audio-bulletins.js
+      - name: Android emulated playback
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/v3-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({args:['--autoplay-policy=no-user-gesture-required']});
+            try {
+              const page=await browser.newPage({...devices['Galaxy S9+']});
+              await page.goto('http://127.0.0.1:8765/live-updates.html');
+              for(const lang of ['fr','en']){
+                await page.locator('#v3Language').selectOption(lang);
+                await page.locator('#v3ListenAll').click();
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
+                const previous=await page.locator('#v3QueueAudio').getAttribute('src');
+                await page.locator('#v3QueueAudio').evaluate(a=>a.pause());
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
+                await page.locator('#v3QueueAudio').evaluate(a=>a.play());
+                await page.locator('#v3QueueAudio').evaluate(a=>{a.currentTime=Math.max(0,a.duration-0.05);});
+                await page.waitForFunction(p=>document.querySelector('#v3QueueAudio').getAttribute('src')!==p,previous);
+                await page.locator('#v3Next').click();
+                await page.locator('#v3Stop').click();
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').paused);
+              }
+              const bulletins=await page.evaluate(()=>window.INSIDE_MAURITIUS_AUDIO_BULLETINS);
+              if(bulletins.length){await page.locator('#v3Bulletins button').first().click();await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);await page.locator('#v3Stop').click();}
+              if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Mobile overflow');
+              console.log('French and English playlist, next, stop and mobile layout verified');
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Record validated audio removals
+        run: git diff --name-only --diff-filter=D -- audio/ > v3-audio-removals.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: natural-voice-v3-review
+          path: |
+            audio/headline-*.mp3
+            audio/bulletin-*.mp3
+            headline-audio-data.js
+            audio-bulletins.js
+            live-updates.html
+            v3-audio-removals.txt
+          if-no-files-found: error
+  install-review:
+    needs: review
+    if: github.ref == 'refs/heads/review/natural-voice-v3' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: natural-voice-v3-review
+          path: .
+      - name: Apply validated audio removals
+        run: |
+          python - <<'PY'
+          import pathlib,re,json
+          root=pathlib.Path('.')
+          def data(name):
+              return json.loads((root/name).read_text().split('=',1)[1].strip().rstrip(';'))
+          refs={r['audioUrl'] for r in data('headline-audio-data.js')+data('audio-bulletins.js')}
+          for rel in (root/'v3-audio-removals.txt').read_text().splitlines():
+              assert re.fullmatch(r'audio/(headline-[a-f0-9]{32}|bulletin-(morning|evening)-[0-9]{4}-[0-9]{2}-[0-9]{2})\.mp3',rel)
+              assert rel not in refs
+              (root/rel).unlink(missing_ok=True)
+          PY
+      - name: Commit tested audio only to V3 review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- headline-audio-data.js audio-bulletins.js live-updates.html
+          git add -- audio/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Install verified V3 audio and cache versions on review branch"
+          git push origin HEAD:refs/heads/review/natural-voice-v3
+  prepare-hourly-approval:
+    needs: review
+    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: natural-voice-v3-review
+          path: .
+      - name: Apply validated audio removals
+        run: |
+          python - <<'PY'
+          import pathlib,re,json
+          root=pathlib.Path('.')
+          def data(name):
+              return json.loads((root/name).read_text().split('=',1)[1].strip().rstrip(';'))
+          refs={r['audioUrl'] for r in data('headline-audio-data.js')+data('audio-bulletins.js')}
+          for rel in (root/'v3-audio-removals.txt').read_text().splitlines():
+              assert re.fullmatch(r'audio/(headline-[a-f0-9]{32}|bulletin-(morning|evening)-[0-9]{4}-[0-9]{2}-[0-9]{2})\.mp3',rel)
+              assert rel not in refs
+              (root/rel).unlink(missing_ok=True)
+          PY
+      - name: Open approval-only audio update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add -- headline-audio-data.js audio-bulletins.js live-updates.html audio/
+          if git diff --cached --quiet; then echo "No audio changes"; exit 0; fi
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "Main changed during review; skip stale update"; exit 0
+          fi
+          if [ "$(gh pr list --base main --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("review/voice-v3-hourly-"))] | length')" != 0 ]; then
+            echo "An audio approval is already open"; exit 0
+          fi
+          branch="review/voice-v3-hourly-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Prepare validated hourly V3 audio update"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "Natural Voice V3 hourly audio approval" --body "Generated and technically verified by the V3 review workflow. Review source coverage and playback before manual merge. No automatic publication."
