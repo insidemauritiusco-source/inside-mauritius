@@ -1,0 +1,39 @@
+name: News Radio V4 review
+on:
+  push:
+    branches: ['review/natural-voice-v4-radio']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --check news-radio-v4.js
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          python -m http.server 8765 > /tmp/radio-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const b=await chromium.launch();
+            try{
+              for(const options of [{viewport:{width:1440,height:900}},devices['Galaxy S9+']]){
+                const p=await b.newPage(options);
+                await p.goto('http://localhost:8765/news-radio.html');
+                await p.waitForFunction(()=>parseInt(document.querySelector('#counts').textContent)>0);
+                await p.locator('#start').click();
+                await p.waitForFunction(()=>document.querySelector('#player').currentTime>0.1);
+                const old=await p.locator('#player').getAttribute('src');
+                await p.locator('#next').click();
+                await p.waitForFunction(old=>document.querySelector('#player').getAttribute('src')!==old,old);
+                await p.locator('#stop').click();
+                if(!await p.locator('#player').evaluate(a=>a.paused))throw Error('Stop failed');
+                if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Layout overflow');
+                await p.close();
+              }
+            }finally{await b.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
