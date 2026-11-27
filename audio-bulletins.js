@@ -38,5 +38,45 @@ window.INSIDE_MAURITIUS_AUDIO_BULLETINS = [
       }
     ],
     "generatedAt": "2026-11-27T09:12:50.196742+04:00"
+  },
+  {
+    "date": "2026-11-27",
+    "edition": "evening",
+    "audioUrl": "audio/bulletin-evening-2026-11-27.mp3",
+    "headlines": [
+      {
+        "title": "Ce jour-là, 27 novembre 1895 : le testament qui a donné naissance aux prix Nobel",
+        "sourceUrl": "https://www.inside.news/27-novembre-1895-testament-alfred-nobel-histoire/"
+      },
+      {
+        "title": "Le Seggae Day sera désormais célébré le 9 décembre",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBjelIyTnJ0cVJvSEpFb3Rjbm54Tm5GSnh5eEl2UHpGT3p3bm90WnNUZ0tmSnBpMHpwLVV6a213Zmt1Qk5BUTJFTXFlY01fN0RzT0VVZ3FCZVluamhyS2UzQXpQV1JQTF9BdjRFSEVfd052SS1uaE5uZzJLRHdodw?oc=5"
+      },
+      {
+        "title": "Marie Yolande Vadivel célèbre ses 100 ans et rejoint le club des centenaires à Maurice",
+        "sourceUrl": "https://radiomopep.mu/marie-yolande-vadivel-100-ans-maurice/"
+      },
+      {
+        "title": "Fibre my.t : Internet plus rapide, mais les abonnés fidèles sont-ils vraiment gagnants ?",
+        "sourceUrl": "https://www.inside.news/nouveaux-forfaits-myt-maurice-abonnes-fideles/"
+      },
+      {
+        "title": "Salines Pilot : Amirek obtient son permis, mais le dessalement reste soumis à une autre autorisation",
+        "sourceUrl": "https://www.inside.news/amirek-salines-pilot-permis-objections-pecheurs/"
+      },
+      {
+        "title": "Travaux parlementaires : Joanna Bérenger interpelle la Speaker sur les retards et engagements non tenus",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZlBBOVNNYUN3Q2FDbTNucWZrQlJlMldSLXhfQkhxT2VsZG9pY1JiNjRiTHExTTBiUV93N2tyXzZOOFc2cGowUEFHT0pnN2NBVWtWNGRmQUR2czlIeDlkQUFCc0t2a1NpVmljeUJONWdjeThkeGxwQjhPSVlsSVgxUUNVSEFZVFIyYUl0S1UwR0ZPLTk1WVNRZnIyX2dUYlkyTVBoQVY0WHBrTEVvN0ZVRlhoejFieFRoOG9yQWF4NG9CT1V3Tmc?oc=5"
+      },
+      {
+        "title": "Plants de cannabis valant Rs 2,9M saisis à Pont Bondieu en 2017 : Domun condamné à 14 ans de prison, Auckloo acquitté",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUGUwRVl5WEhkNWNkUHA0dW4tZ1RhT3RMcHgzS2tRMTFlVm5CU19MNjAtc0tSUHlvUzhrSUo2MnVKNW5zZ2R0VHpqUWF2TDhIcWwwN0VjRXUxb01rLTZaek5ZOVhxR0J6RWNTbFp5WUE3SUMwR3pkTmhTWWdvUTQ0aGRRRDVrWDhJd09LRzhaOEhCMU1xcEEwbVBzaU9rV3ZvOG1INlZCTEVNX2tFeGJiLTJjaDUzaloyQXZLbjBmdmdCM3MtUFVfOWdyM20?oc=5"
+      },
+      {
+        "title": "Black Friday : la Consumer Affairs Unit appelle à la vigilance face aux promotions",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcUVJcjRwTXRNNE9QQmVNRl9pakVsX2ROWFRjbFk0YjZQU1pLdFdUb2pVaVZydG9CTkJFVTJqdHNSQ3NhVHlLNTlVRlNSQzk2Qy1xVlNnZkI1SHdFVDMxeHYzR2JERWk2UFZrUDJJZWk2b2ZqNXRmTHdKOEdSa2FPc1JKWlRvbllJblRzMnJ5czREOEJXNXpTOWVDNXhobE1uakItNW10Tk9lNm4yb3BN?oc=5"
+      }
+    ],
+    "generatedAt": "2026-11-27T20:36:21.582321+04:00"
   }
 ];
