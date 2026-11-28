@@ -38,5 +38,86 @@ window.INSIDE_MAURITIUS_AUDIO_BULLETINS = [
       }
     ],
     "generatedAt": "2026-11-27T09:12:50.196742+04:00"
+  },
+  {
+    "date": "2026-11-28",
+    "edition": "morning",
+    "audioUrl": "audio/bulletin-morning-2026-11-28.mp3",
+    "headlines": [
+      {
+        "title": "Australia signs anti-China security pact with Solomon Islands",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBVZW9wdXcxUU85cVlqbFBGbEVqR3RHaXc3WVg2blhpZmRIaUs0NTFYTjFpVW5RMUlXVHU0enhmRFo4cHBHc3ZkMnp1RDhWN01IVW1MZGhGbHVBTTNHV1FhUXZDR2Racmsz?oc=5"
+      },
+      {
+        "title": "Anthropic Finishes First Full Week Above IPO Price",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeVhwM1d4VGtCX3pRUlBUcWljb2JSOENMbHhNcW9WRDFCNnBrd2I5MzdkLVdOSkViVWFXeHNPQ1lwN0Rwd1kwR19XdGs0Ykd2NzBlNUVoaUMyVW5GRHFWYTl5MHlPQ0dibURnUkc5al8xczVnMmluV1ptWUhDVkQtNm9VYl9RWU1VWnVtQll3a0ZMQjFERHQ0T3F4ek80MjE4bWZWcHE0MF9Eb1ZZSzVuZk9EVHNSUQ?oc=5"
+      },
+      {
+        "title": "Seeking Refuge on Resolution Island",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRVpHMnhHMWZzU2VLZUFBTHdSeDAxYlFnRHdYLUtodjBMclgxdy1zR0JLSFdrWmZyLVV2b3AtU3k4Z2hRNkxTaG95dTZfak1yVnp4dW5Ec1kwbE1uTGR0ZzU3cXBpVS00SXlPSHRNVHp0SWpkREh1SXB2VGZ6bnlQRGVPYVFQMUpyVVFuSWNn?oc=5"
+      },
+      {
+        "title": "Solomon Islands Ditches China Pact for Australia",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX21qZTNGc25TcWpTWWFIU190VFNFSXZZem1KTTE0WXFubGx4aXNNbUJmajN0WEhkMmNzS3NnQmYwbEZjRURaVlFnR1JZTTlGNDJyWXR0aEFVLU1EaThDTEg2R21DX2V2NGlXSThuNU5OVlJtQ2dOVkJWb3F2VDJLeHRpTUxvX2s?oc=5"
+      },
+      {
+        "title": "UN warns hunger will deepen in Middle East as war, fuel costs and aid cuts collide",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONzZpQ09uRXdNY3pCRG1XNzQyMHN0d2J1UHNLWkJ2Zld2cVRnd1dMc3QwSkRlSVZKeWJ6QV82LXdLN1B2M1hUVUUwMWFuWGQxdkFJZVRiQTFycXRoUjBFbkpseVJnVHdzRE1MVHBtWEE5NlhLVlVMR1Y5dlEtN054NWZFcEpWRWkzRHNhQ1FCVGI1ZUxHNjlaQTdEOEx4emhrYkp5U204VWh6dWtXR25CeTdlZmJycUFENEhmOHMzaWxwRVJ4b19TS25lcG5fSjhPX1luNjdrMHg2a0M4MGZqSklkYnlLSmRscUFmUWJLSHBpMXVBRGc?oc=5"
+      },
+      {
+        "title": "Is the Premier League the most competitive out of Europe's top 5 leagues? | ESPN FC",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkV4ZVNCN2wtMWU4U3hZdnNYT3ZyMHl0bnBqc05tb3BQaXdkSGFzSEVTYlZCcGp5TUlZZ0NPNy1TZW1ScFNlWTNHdEU1dXIxSlZ1TUVqRXA4SEk4Vng0dE5QMFhSX1RGbTV0Tkl5aFZMMnJqcXJNclRUWHFyTjhGUURoY0R4MnFvYlJMYnc4MklETjRTV3U3elRVNVFLd3pFdlVscExXMzRWOExXQ1E?oc=5"
+      },
+      {
+        "title": "UH Manoa ranked 240th among Forbes’ America’s Top Colleges",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLVdaVFZHeE1KY3JxbnlJUXhqSHVvRGZWdF9GaDZUZDRoTHBjbkVULXk3UEJyR1RVbFVUZE5jeGx3Sk5yc3M0WjdzcE5OblJRMWJuQ2dwLUZfdW1mYUdENXhkYnVtY1RZU3JOWnAtUW5FOWIzQXNUZE5xSXhfc3E3T0FkX3hFS3pydi02bm5CdlBlRktSaVVYOHp5Ukp3ZmfSAbMBQVVfeXFMUEUzT3R2NS1QTjc1dGNmUkdfUDVTbHpNbDA2X3MxRS0taWZEaEdJX21VT1NkUEJvRlJxc2VINkNCZkJVM21XVXk3Q2NCYXpxbHNaOHZKb3VEVTBXMDZCd0czSFVPZ09xMDZUeXAxOWxCSEhRVHVDQ2JOb29zQzNacWdnM0FNQ0xKRkFvWVRZZjhudVhQSEhXMlhLdkprY2oycmw1V3FNVHR1RVlUZHJ3bTFpYWs?oc=5"
+      },
+      {
+        "title": "Israel could split like Syria: Middle East Expert",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9pUmI4ZS11SDQ1ZkozOG5XOGVQSENJUWJCOXRJS2RoMUNDZzRsUktUVkdtN0ZMTEtCUTh5amlDSWYwRUlYRUpyUndLSXk2R2J1b1NfbGFlak10a1paMGZJ0gFcQVVfeXFMUF9BbFl6QmdpY0w3ZVRrNXNqVVY4SEtpTHh0WGg1dERRbDFMR21IYjZQa3lhdmRyOEVsTVVnanlwSzktaGxYb09xQklEQlg2bUptaFhjSnNGeW9WWFM?oc=5"
+      }
+    ],
+    "generatedAt": "2026-11-28T07:47:57.139053+04:00"
+  },
+  {
+    "date": "2026-11-27",
+    "edition": "evening",
+    "audioUrl": "audio/bulletin-evening-2026-11-27.mp3",
+    "headlines": [
+      {
+        "title": "Compensation salariale 2027 : les syndicats réclament Rs 1 200 pour les salariés modestes",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNnJjRmJXNkc1Z2ZlaXlabjNrXzRPX2l2aEpSVksyY3ZXVGNEcFRpWDhoRE5BNF9JTFNsXzJQUG5UdXJNQUotWmx4Wi1ia1dnS1ZfeHlWcE40NHBfdVVRNG45ZkxzVEFhZnlpRmJkcTcyN21WTTNhTjVvXzBULVJReC16QWNyRS1UVFpDSlMwekVOeVlTVmJfcjV5R0VHS29zZzk1STRkWmN3M2Y2VnlYRDRaNXpEc28zajRB?oc=5"
+      },
+      {
+        "title": "Meurtre de Soopramanien Mooneesawmy : Jean Brandon Adolphe Joli acquitté à sept voix contre deux",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObUdFZHpPSmdVUjdJZHVZbjdCbXI4OWNGOUhkbGhJNEgyZzBlbDRhVDdfaHVHX3NwdDc2aWxneExFbjFyaGZ5dWhveWRKck9jYjAzYThGSUMydDg1Y2FhM21fVWNoVy1JMEFVaG5LTXBIbmo2RV85bnV4UTRXQktoaHRKX19RcHUtanI4UE9NaGo0U3c3Z2k4dlpwMGtydE8tOTBuQlc5LVpCNWJQc1hrdGZ3U1NDSC1QOTRHcWtJcDA0Zw?oc=5"
+      },
+      {
+        "title": "Joshua, 13 ans, risque de perdre la vue : « Que deviendra mon fils lorsque je ne serai plus là ? »",
+        "sourceUrl": "https://radiomopep.mu/joshua-risque-perdre-vue/"
+      },
+      {
+        "title": "National Handisports Games : 195 athlètes attendus pour la 4e édition ce week-end",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV3BRUC1DNVlKOFp1NEczVTg0Z1lyNk1XTWNCZ29HNHZkalNxX19RWWcySGJYUm42dC1HaURsSDVSb0daZVJib2RSVXQxZllYTE05bk1Cc0REazAwOW1lZ1NTSXd3VTFjMi1ZZkVNYWlTQUZhc2RYUVJ6UnIwQWdCRXBneUlhR0g5RDhzN0pvX21UMUl4UEUxZ0FSUE52Z3Y5VjhaMjNFcXVmdDg?oc=5"
+      },
+      {
+        "title": "Recrutements à Air Mauritius : des noms de personnalités politiques figuraient sur certaines convocations à des entretiens, affirme Anba Manikham dans son affidavit",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbFl1ZUtuWGNGMzM2UDhIQk4wanRoSk9mT3NvWUg2ZWRjakVkeWZ1Wk1EZ1JEcHk2MEp2c3pEeU0yRUtiR2tkcE9iSTRGd3VpNGYwbWxfb2JMOE0zb19TdjZuM09XLWIyU2N1UExQNmlvN1FxaGFaYm90VWl3SFdEVWxjeW82SGNvYktIWTRlRW5KSGRZak84MWdTel95eW0wMHBaUlJPME85MXY3eWRpRVdHM2FIaVE?oc=5"
+      },
+      {
+        "title": "Krispy Kreme : la célèbre enseigne américaine de doughnuts débarque à Maurice",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLWJRejQ0ZE1famhWNGxMQXZwcjVBYTdoaGprTXpVbUktS1hjSTJHWmtwU0RhYVBhNngycnJSdlpfN3VZN3FCbkRMc3VjSkQ0QmFCVGJJWUtQdkczRWw0T3ZMWGY0WmEyLUlnR1dWSHlkLVZkQ2pjSDFYV3JseWN0aGI3Q1JuYkhLRlZBdkxrdVFKczJOQ3pwcVdKZlY?oc=5"
+      },
+      {
+        "title": "Sécurité sociale : Ashok Subron plaide pour l’auto-organisation des bénéficiaires de la NEF",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUW4xREEzWUtVNnh1Q1RCbERYb3gwYXJpNjR4MXEwLTdjbWpsU3E0X0I0R0N4RjEtaGx5RkxyOXJIVWRVb0JLcjVFc0RTYkM4TVZSWlZyVUVpRGhRdHV1akJxQzJOS0xlRjE5MFhIdmxkUnIwbm5sZVBaQmJYa3NqZGZRMmdhRThRZzNobDBRMmpneWMwUmM3UmJVRzN0d0RqSVFYcTlhWGhzalNrQ3UtRmpDbnhsNDQ?oc=5"
+      },
+      {
+        "title": "[En images] Meeting du MSM à Triolet",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvZXc3WXhPSFQ5SE1pV3lHQlVUd1drblh3eG5BTEdNM3h3WF9OS0FOZ2FYZGg5SlBGbVRLVFFJaURZQVp6cjVLa1JkTE96WkYyb3c4T0tmSEZCNGlUcDR3Nmk2MnQtZw?oc=5"
+      }
+    ],
+    "generatedAt": "2026-11-28T08:56:24.406391+04:00",
+    "retrospective": true
   }
 ];

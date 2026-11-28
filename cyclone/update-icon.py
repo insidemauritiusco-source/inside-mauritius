@@ -9,10 +9,17 @@ TARGET=pathlib.Path(__file__).with_name("icon.json")
 STEPS=(0,12,24,48)
 FIELDS={"U_10M":("u",0,2,2,"heightAboveGround",10,-150,150),"V_10M":("v",0,2,3,"heightAboveGround",10,-150,150),"PMSL":("p",0,3,1,"meanSea",None,800,1150),"T_2M":("t",0,0,0,"heightAboveGround",2,-100,75)}
 def read(url,limit):
-    with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/39"}),timeout=60) as r:
-        b=r.read(limit+1)
-    if len(b)>limit: raise ValueError("Download exceeds size limit")
-    return b
+    import time
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/39"}),timeout=60) as r:
+                b=r.read(limit+1)
+            if len(b)>limit: raise ValueError("Download exceeds size limit")
+            return b
+        except (OSError, TimeoutError) as exc:
+            print('Source request failed', attempt+1, str(exc)[:180], flush=True)
+            if attempt == 2: raise
+            time.sleep(2 ** attempt)
 def remap_files(folder):
     archive=folder/"weights.tar.bz2"
     archive.write_bytes(read(ROOT+"lib/cdo/ICON_GLOBAL2WORLD_025_EASY.tar.bz2",65_000_000))
