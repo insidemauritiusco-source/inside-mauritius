@@ -69,7 +69,7 @@ def build(root,limit=30,now=None):
     today=now.date().isoformat()
     recent=[r for r in current if now.timestamp()-86400 <= stamps.get(r["sourceUrl"],0) <= now.timestamp()][:8]
     existing=next((b for b in bulletins if b.get("date")==today and b.get("edition")==edition and BULLETIN.fullmatch(str(b.get("audioUrl",""))) and valid_mp3(root/b["audioUrl"])),None)
-    if recent and not existing and (6 <= now.hour < 12 or now.hour >= 18):
+    if recent and not existing and (now.hour >= 6):
         dest=out/f"bulletin-{edition}-{today}.mp3"
         with tempfile.TemporaryDirectory(dir=out) as d:
             listing=pathlib.Path(d)/"concat.txt"

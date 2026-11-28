@@ -8,10 +8,17 @@ ROOT="https://noaa-gmgsi-pds.s3.amazonaws.com/"
 OUT=pathlib.Path(__file__).parent/"world-motion"
 UTC=dt.timezone.utc
 def read(url,limit):
-    with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/44"}),timeout=45) as r:
-        data=r.read(limit+1)
-    if len(data)>limit: raise ValueError("Response too large")
-    return data
+    import time
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/44"}),timeout=45) as r:
+                data=r.read(limit+1)
+            if len(data)>limit: raise ValueError("Response too large")
+            return data
+        except (OSError, TimeoutError) as exc:
+            print('Source request failed', attempt+1, str(exc)[:180], flush=True)
+            if attempt == 2: raise
+            time.sleep(2 ** attempt)
 def candidates(t):
     prefix=f"GMGSI_LW/{t:%Y/%m/%d/%H}/"
     root=ET.fromstring(read(ROOT+"?"+urllib.parse.urlencode({"list-type":"2","prefix":prefix}),2_000_000))
