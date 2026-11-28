@@ -1,0 +1,93 @@
+name: Outstanding weather and photo retest (review only)
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/outstanding-weather-photo-review.yml']
+permissions:
+  contents: read
+jobs:
+  weather:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        feed: [world-motion, icon]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: matrix.feed == 'icon'
+        run: sudo apt-get update && sudo apt-get install -y cdo
+      - run: pip install 'numpy>=1.26,<3' 'netCDF4>=1.7,<2' 'Pillow>=10,<13' 'eccodes>=2.42,<3'
+      - name: Fetch and validate real upstream observations or forecast
+        env:
+          FEED: ${{ matrix.feed }}
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/retest
+          case "$FEED" in
+            world-motion) rm -rf cyclone/world-motion ;;
+            icon) rm -f cyclone/icon.json ;;
+          esac
+          python "cyclone/update-$FEED.py" 2>&1 | tee /tmp/retest/source.log
+          case "$FEED" in
+            world-motion) test -s cyclone/world-motion/manifest.json ;;
+            icon) test -s cyclone/icon.json ;;
+          esac
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: retest-${{ matrix.feed }}
+          path: /tmp/retest
+  photo-candidates:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: pip install 'Pillow>=10,<13'
+      - name: Check candidate links, original images and approval isolation
+        run: |
+          python - <<'PY'
+          import json, pathlib, urllib.request, io
+          from PIL import Image
+          candidates=json.loads(pathlib.Path('photo-gallery-candidates.json').read_text())['items']
+          gallery=json.loads(pathlib.Path('photo-gallery-approved.json').read_text())['items']
+          results=[]
+          for c in candidates:
+              assert c['approved'] is False
+              assert all(c.get(k) for k in ('credit','license','license_url','source_url','photo_date'))
+              assert c['source_url'].startswith('https://commons.wikimedia.org/wiki/File:')
+              result={'title':c['title'],'approved':False,'reachable':False}
+              try:
+                  req=urllib.request.Request(c['image_url'],headers={'User-Agent':'InsideMauritiusPhotoReview/1.0 (https://mr.insidemauritius.com)','Accept':'image/*'})
+                  with urllib.request.urlopen(req,timeout=20) as r:
+                      assert r.geturl().startswith('https://upload.wikimedia.org/')
+                      assert r.headers.get('Content-Type','').startswith('image/')
+                      data=r.read(12_000_001)
+                      assert len(data)<=12_000_000
+                  with Image.open(io.BytesIO(data)) as im:
+                      result['dimensions']=im.size
+                      im.verify()
+                  result['reachable']=True
+              except Exception as exc:
+                  result['error']=str(exc)[:180]
+              results.append(result)
+          report={'candidates':results,'approved_gallery_count':len(gallery),'manual_approval_pending':True}
+          pathlib.Path('/tmp/photo-candidates-review.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report))
+          assert all(r['reachable'] for r in results),'Candidate retrieval failed'
+          print('Technical candidate checks complete; editorial approval remains pending.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: photo-candidates-review
+          path: /tmp/photo-candidates-review.json

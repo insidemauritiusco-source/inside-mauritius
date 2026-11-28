@@ -44,7 +44,14 @@ def decode(folder,grid,weights,cycle,step,key):
         try:
             if tuple(codes_get(g,k) for k in ("discipline","parameterCategory","parameterNumber"))!=(disc,cat,num): raise ValueError("Wrong parameter")
             if codes_get(g,"typeOfLevel")!=leveltype or (level is not None and codes_get(g,"level")!=level): raise ValueError("Wrong level")
-            if (codes_get(g,"dataDate"),codes_get(g,"dataTime"),codes_get(g,"endStep"))!=(int(cycle.strftime("%Y%m%d")),cycle.hour*100,step): raise ValueError("Wrong forecast timestamp")
+            # Compare reference and absolute valid times, rather than assuming endStep is in hours.
+            ref=tuple(int(codes_get(g,k)) for k in ("dataDate","dataTime"))
+            actual=tuple(int(codes_get(g,k)) for k in ("validityDate","validityTime"))
+            valid_at=cycle+dt.timedelta(hours=step)
+            expected_ref=(int(cycle.strftime("%Y%m%d")),cycle.hour*100+cycle.minute)
+            expected_valid=(int(valid_at.strftime("%Y%m%d")),valid_at.hour*100+valid_at.minute)
+            if ref!=expected_ref or actual!=expected_valid:
+                raise ValueError(f"Wrong forecast timestamp {key}: ref={ref} expected={expected_ref}, valid={actual} expected={expected_valid}, endStep={codes_get(g,'endStep')} units={codes_get(g,'stepUnits')}")
         finally: codes_release(g)
         extra=codes_grib_new_from_file(f)
         if extra is not None:

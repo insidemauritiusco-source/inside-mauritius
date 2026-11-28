@@ -55,16 +55,27 @@ def make(t,key):
             j=np.clip(np.searchsorted(src,targets),1,len(src)-1)
             return np.where(abs(src[j]-targets)<abs(src[j-1]-targets),j,j-1)
         sample=a[np.ix_(yi[nearest(lat,y)],xi[nearest(lon,x)])]
+        # netCDF4 has already unpacked scale_factor/add_offset and masked fill values.
         units=str(getattr(var,"units","")).strip().lower()
+        unit=re.sub(r"[\s_\-]+","",units).replace("°","")
+        finite=sample[np.isfinite(sample)]
+        print("IR metadata",json.dumps({"units":units,"dtype":str(var.dtype),"scale_factor":str(getattr(var,"scale_factor",None)),"add_offset":str(getattr(var,"add_offset",None)),"valid_range":str(getattr(var,"valid_range",None)),"finite_fraction":float(np.isfinite(sample).mean()),"sample_min":float(finite.min()) if finite.size else None,"sample_max":float(finite.max()) if finite.size else None}),flush=True)
         valid=np.isfinite(sample)
-        if units in ("k","kelvin","degrees kelvin","degree_kelvin"):
-            valid &= (sample>=140)&(sample<=350)
-            bright=np.clip((310-sample)/130,0,1)
-        else:
-            # NOAA digital IR counts, displayed as counts without conversion to Kelvin.
+        if unit in ("k","kelvin","degreek","degreesk","degreekelvin","degreeskelvin"):
+            kelvin=sample
+            valid &= (kelvin>=140)&(kelvin<=350)
+            bright=np.clip((310-kelvin)/130,0,1)
+        elif unit in ("c","degc","celsius","degreec","degreesc","degreecelsius","degreescelsius"):
+            kelvin=sample+273.15
+            valid &= (kelvin>=140)&(kelvin<=350)
+            bright=np.clip((310-kelvin)/130,0,1)
+        elif unit in ("count","counts","digitalcount","digitalcounts","1","unitless","dimensionless"):
             valid &= (sample>=0)&(sample<=255)
             bright=np.clip(sample/255,0,1)
-        if np.mean(valid)<.7: raise ValueError("Insufficient valid image coverage")
+        else:
+            raise ValueError("Unrecognized infrared units: "+repr(units))
+        coverage=float(np.mean(valid))
+        if coverage<.7: raise ValueError(f"Insufficient valid image coverage: {coverage:.3f}; units={units!r}")
         gray=np.uint8(np.nan_to_num(bright)*255)
         rgba=np.stack([gray,gray,gray,np.where(valid,255,0).astype(np.uint8)],axis=-1)
         dest=OUT/(t.strftime("%Y%m%d%H")+".png")
