@@ -258,7 +258,7 @@ def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
     publication = pub_date(node.findtext("pubDate") or node.findtext("published") or node.findtext(ATOM_NS+"published"))
-    if not title or len(title) < 12 or not publication or promotional_headline(title):
+    if not title or len(title) < 12 or title.strip().casefold() == 'recherche' or not publication or promotional_headline(title):
         return None
     if title.casefold().strip(" .:!?-") in {"blog", "actualités", "actualites", "news", "accueil", "home", "vidéos", "videos"}:
         return None
