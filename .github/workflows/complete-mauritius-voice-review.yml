@@ -1,0 +1,133 @@
+name: Complete Mauritius voice coverage (review only)
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/complete-mauritius-voice-review.yml']
+permissions:
+  contents: write
+concurrency:
+  group: complete-mauritius-voice-review
+  cancel-in-progress: false
+jobs:
+  complete:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: review/homepage-freshness-20261128
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - name: Generate targeted French headline recordings and validate coverage
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          PYTHONPATH=scripts python - <<'PY'
+          import json, pathlib, hashlib, datetime, re, subprocess
+          from concurrent.futures import ThreadPoolExecutor
+          from zoneinfo import ZoneInfo
+          from generate_headline_audio import read_data, valid_mp3, valid_url, key, synthesize, PREFIX, VOICES
+          from natural_voice_v3 import write_js
+          root=pathlib.Path('.')
+          targets=set(["source-01f2a566376ea3a5","source-ff34370d19f3a2b7","source-c1b2016bdbb31959","source-dc0fc62545891ee4","source-ef1765f3dae3422b","source-481afe45a04b285c","source-4f83c3b762e5bf3e","source-0df64bb5316172b5","source-d187ea8aa8de9cef","source-4e075c85719b4387","source-cfdca3e4b1e916a3","source-9bb403a20ad4e035","source-a5a0e53acf184a30","source-9a84e058a2d41f43","source-8288b853dba2d8c5","source-f1806674f184fa65","source-824aab85c94e54ae","source-5dc6ce8f79e60d38","source-6ea838abda69f1c7","source-3dc1254a2f9802cf","source-1a522a0b7f083154","source-07d661728d9db1f0","source-7ebbdc195228b459","source-b3e73a81ed535b77","source-3c109b2b4cc618a3","source-061ded78b6899541","source-a43ef600bd95c9db","source-5a9492d83df4244b","source-3959b6ef37c3d8a2","source-39d5249e08406d87","source-1f0e679ffe919532","source-9388e9790a149e4e","source-67485eb9d5965b3f","source-e08e409f86370bc4","source-a5315fffe977848d","source-2029c19a6daf9ed7","source-dce63ab57ea7af47"])
+          skipped="source-b3b685d32566f08f"
+          feed=read_data(root/'newsroom-data.js')
+          rows={r['id']:r for r in feed}
+          assert len(targets)==37 and targets <= rows.keys()
+          assert rows[skipped]['title']=='Recherche'
+          names=('headline-audio-data.js','post-audio-data.js','summary-audio-data.js','audio-bulletins.js')
+          prior={name:read_data(root/name) for name in names}
+          old_files={p:hashlib.sha256(p.read_bytes()).hexdigest() for p in (root/'audio').rglob('*') if p.is_file()}
+          def playable(r):
+              return r.get('engine')=='Kokoro' and r.get('generated') is True and r.get('language') in VOICES
+          def matches(s,r):
+              return playable(r) and s['title']==r.get('title') and (s['id']==r.get('id') or s['sourceUrl']==r.get('sourceUrl'))
+          records=list(prior[names[0]])
+          previous=records+prior[names[1]]+prior[names[2]]
+          pipelines={}
+          added=[]
+          for row in feed:
+              if row['id'] not in targets: continue
+              if any(matches(row,r) for r in previous): continue
+              title,url=row['title'],row['sourceUrl']
+              assert valid_url(url) and title.strip()
+              # All 37 selected headlines were reviewed as French-language text.
+              lang='fr'; voice=VOICES[lang][1]
+              rel='audio/headline-'+key(title,url,voice)+'.mp3'
+              p=root/rel
+              if p.exists():
+                  assert valid_mp3(p), 'Existing file invalid; refusing overwrite: '+rel
+              else:
+                  synthesize(title,lang,p,pipelines)
+              assert valid_mp3(p)
+              record=dict(title=title,sourceUrl=url,audioUrl=rel,voice=voice,language=lang,engine='Kokoro',generated=True,lastSeen=datetime.datetime.now(ZoneInfo('Indian/Mauritius')).date().isoformat(),legacyV2=False)
+              added.append(record)
+          records.extend(added)
+          assert records[:len(prior[names[0]])]==prior[names[0]]
+          combined=records+prior[names[1]]+prior[names[2]]
+          missing=[r['id'] for r in feed if r['id']!=skipped and not any(matches(r,a) for a in combined)]
+          assert not missing, missing
+          for p,digest in old_files.items():
+              assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==digest, str(p)
+          files={r['audioUrl'] for r in records+prior[names[1]]+prior[names[2]]+prior[names[3]] if str(r.get('audioUrl','')).startswith('audio/')}
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              assert all(pool.map(lambda p:valid_mp3(root/p),sorted(files)))
+          write_js(root/names[0],PREFIX,records)
+          digest=hashlib.sha256((root/names[0]).read_bytes()).hexdigest()[:16]
+          for name in ('index.html','live-updates.html'):
+              p=root/name
+              text=p.read_text()
+              text,n=re.subn(r'(src="headline-audio-data\.js)(?:\?v=[^"]*)?"',lambda m:m[1]+'?v='+digest+'"',text)
+              assert n==1,name
+              p.write_text(text)
+          report={'feed_entries':len(feed),'eligible_entries':len(feed)-1,'eligible_with_audio':len(feed)-1,'added':len(added),'excluded_navigation':[skipped],'existing_audio_files_preserved':len(old_files),'validated_audio_files':len(files),'bulletins_preserved':len(prior[names[3]])}
+          pathlib.Path('/tmp/mauritius-voice-review.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report))
+          PY
+      - name: Verify actual website audio lookup and playback
+        run: |
+          node --check headline-audio-data.js
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/voice-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              for(const cfg of [{viewport:{width:1440,height:900}},devices['Galaxy S9+']]){
+                const page=await browser.newPage(cfg);
+                await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8765/')?r.continue():r.abort());
+                await page.goto('http://127.0.0.1:8765/index.html');
+                await page.waitForFunction(()=>!!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO);
+                const missing=await page.evaluate(()=>window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES.filter(s=>s.id!=="source-b3b685d32566f08f"&&!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.find(s)).map(s=>s.id));
+                if(missing.length)throw Error('Website audio lookup failed: '+missing.join(','));
+                await page.locator('#imDashboardStart').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                await page.locator('#imDashboardNext').click();
+                await page.locator('#imDashboardStop').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').paused);
+                await page.close();
+              }
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mauritius-voice-coverage-report
+          path: /tmp/mauritius-voice-review.json
+      - name: Commit validated additions to review branch only
+        run: |
+          test "$GITHUB_REF" = refs/heads/review/homepage-freshness-20261128
+          git fetch origin review/homepage-freshness-20261128
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- audio/ headline-audio-data.js index.html live-updates.html
+          test -z "$(git diff --cached --name-only --diff-filter=D)"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Complete validated Mauritius headline audio coverage on review branch'
+          git push origin HEAD:refs/heads/review/homepage-freshness-20261128

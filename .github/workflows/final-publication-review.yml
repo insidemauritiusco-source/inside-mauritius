@@ -1,0 +1,227 @@
+name: Final publication checks (review only)
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/final-publication-review.yml']
+permissions:
+  contents: read
+concurrency:
+  group: final-publication-review
+  cancel-in-progress: false
+jobs:
+  weather:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        feed: [marine, world-motion, icon, wind, ifs, indian-systems]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: matrix.feed == 'icon'
+        run: sudo apt-get update && sudo apt-get install -y cdo
+      - run: pip install 'numpy>=1.26,<3' 'netCDF4>=1.7,<2' 'Pillow>=10,<13' 'eccodes>=2.42,<3' 'ecmwf-opendata>=0.3,<1'
+      - name: Test real upstream retrieval in disposable checkout
+        env:
+          FEED: ${{ matrix.feed }}
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/weather-check
+          # Remove cached outputs in the disposable runner only: require a new retrieval.
+          case "$FEED" in
+            marine) rm -f cyclone/waves.json cyclone/sst.json ;;
+            world-motion) rm -rf cyclone/world-motion ;;
+            icon|wind|ifs|indian-systems) rm -f "cyclone/$FEED.json" ;;
+          esac
+          python "cyclone/update-$FEED.py" 2>&1 | tee /tmp/weather-check/run.log
+          case "$FEED" in
+            marine) test -s cyclone/waves.json && test -s cyclone/sst.json ;;
+            world-motion) test -s cyclone/world-motion/manifest.json ;;
+            *) test -s "cyclone/$FEED.json" ;;
+          esac
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weather-review-${{ matrix.feed }}
+          path: /tmp/weather-check/
+  photos:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'Pillow>=10,<13'
+      - name: Check existing article previews and editorial approval
+        run: |
+          python scripts/refresh_photo_gallery.py
+          python - <<'PY'
+          import json, pathlib, io, urllib.request
+          from concurrent.futures import ThreadPoolExecutor
+          from PIL import Image
+          root=pathlib.Path('.')
+          raw=(root/'newsroom-data.js').read_text()
+          rows=json.loads(raw.split('=',1)[1].strip().rstrip(';'))
+          approved=json.loads((root/'photo-gallery-approved.json').read_text())['items']
+          gallery=json.loads((root/'photo-gallery-feed.json').read_text())['items']
+          def check(url):
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'InsideMauritiusReview/1.0','Accept':'image/*'})
+                  with urllib.request.urlopen(req,timeout=10) as r:
+                      if not r.geturl().startswith('https://'): raise ValueError('Non-HTTPS final URL')
+                      if not r.headers.get('Content-Type','').startswith('image/'): raise ValueError('Not an image')
+                      data=r.read(8_000_001)
+                      if len(data)>8_000_000: raise ValueError('Image too large for bounded validation')
+                  with Image.open(io.BytesIO(data)) as im: im.verify()
+                  return {'url':url,'reachable':True}
+              except Exception as e: return {'url':url,'reachable':False,'reason':str(e)[:180]}
+          local=[r['image'] for r in rows if r.get('image') and not r['image'].startswith('https://')]
+          urls=sorted({r['image'] for r in rows if r.get('image','').startswith('https://')} | {r['image_url'] for r in gallery})
+          with ThreadPoolExecutor(max_workers=6) as pool: remote=list(pool.map(check,urls))
+          report={'local_references':len(local),'missing_local':[x for x in local if not (root/x).is_file()],'external':remote,'approved_gallery_count':len(gallery),'rights_clearance_pending':not bool(gallery),'note':'Reachability does not confer reuse permission. No new photos approved.'}
+          pathlib.Path('/tmp/photo-review.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report))
+          assert not report['missing_local']
+          assert all(x['reachable'] for x in remote),'External images require attention'
+          assert gallery,'No editor-approved gallery photographs; rights clearance required'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: photo-review
+          path: /tmp/photo-review.json
+  audio-and-regression:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: review/homepage-freshness-20261128
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Build retrospective 27 November evening bulletin using archived source headlines
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          PYTHONPATH=scripts python - <<'PY'
+          import datetime as dt, pathlib, json, hashlib, subprocess, tempfile, re
+          from concurrent.futures import ThreadPoolExecutor
+          from zoneinfo import ZoneInfo
+          from generate_headline_audio import read_data, valid_mp3
+          from natural_voice_v3 import write_js, BULLETIN_PREFIX
+          from auto_news import promotional_headline
+          root=pathlib.Path('.')
+          mut=ZoneInfo('Indian/Mauritius')
+          now=dt.datetime.now(mut)
+          end=dt.datetime(2026,11,27,23,59,59,tzinfo=mut)
+          assert now>end,'Cannot backfill a future edition'
+          prior={p:hashlib.sha256(p.read_bytes()).hexdigest() for p in (root/'audio').rglob('*') if p.is_file()}
+          manifest=root/'audio-bulletins.js'
+          bulletins=read_data(manifest)
+          names=('headline-audio-data.js','post-audio-data.js','summary-audio-data.js')
+          registries=[read_data(root/name) for name in names]
+          head=registries[0]
+          lookup={(r.get('sourceUrl'),r.get('title')):r for r in head if r.get('engine')=='Kokoro' and r.get('generated') is True and r.get('language') in ('fr','en')}
+          feed=read_data(root/'newsroom-data.js')
+          recent=[]
+          for s in feed:
+              stamp=dt.datetime.fromisoformat(s['publishedAt'].replace('Z','+00:00'))
+              assert stamp.tzinfo
+              r=lookup.get((s['sourceUrl'],s['title']))
+              if r and end-dt.timedelta(hours=24)<stamp<=end and s['title']!='Recherche' and not promotional_headline(s['title']):
+                  recent.append((stamp,r))
+          recent.sort(key=lambda x:x[0],reverse=True)
+          selected=[r for _,r in recent[:8]]
+          assert len(selected)>=2,'Insufficient real archived news'
+          date='2026-11-27'; rel='audio/bulletin-evening-'+date+'.mp3'; dest=root/rel
+          assert not dest.exists(),'Existing edition protected'
+          assert not any(b['date']==date and b['edition']=='evening' for b in bulletins)
+          with tempfile.TemporaryDirectory() as tmp:
+              p=pathlib.Path(tmp)
+              listing=p/'concat.txt'
+              listing.write_text(''.join("file '"+str((root/r['audioUrl']).resolve())+"'\n" for r in selected))
+              subprocess.run(['ffmpeg','-nostdin','-v','error','-f','concat','-safe','0','-i',str(listing),'-ac','1','-ar','44100','-b:a','96k',str(p/'edition.mp3')],check=True)
+              assert valid_mp3(p/'edition.mp3')
+              dest.write_bytes((p/'edition.mp3').read_bytes())
+          bulletins.append(dict(date=date,edition='evening',audioUrl=rel,headlines=[dict(title=r['title'],sourceUrl=r['sourceUrl']) for r in selected],generatedAt=now.isoformat(),retrospective=True))
+          write_js(manifest,BULLETIN_PREFIX,bulletins)
+          for p,digest in prior.items():
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==digest,p
+          files={r['audioUrl'] for r in sum(registries,[])+bulletins}
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              assert all(pool.map(lambda p:valid_mp3(root/p),sorted(files)))
+          js=root/'live-updates.js'; s=js.read_text()
+          old='b.date+" · "+b.edition+" headline roundup"'
+          assert s.count(old)==1
+          js.write_text(s.replace(old,'b.date+" · "+b.edition+" headline roundup"+(b.retrospective?" (retrospective)":"")'))
+          html=root/'live-updates.html'; s=html.read_text()
+          for name in ('audio-bulletins.js','live-updates.js'):
+              digest=hashlib.sha256((root/name).read_bytes()).hexdigest()[:16]
+              s,n=re.subn(r'(src="'+re.escape(name)+r')(?:\?v=[^"]*)?"',lambda m:m[1]+'?v='+digest+'"',s)
+              assert n==1,name
+          html.write_text(s)
+          print(json.dumps({'existing_preserved':len(prior),'validated_mp3':len(files),'bulletins':len(bulletins),'retrospective_date':date,'headline_count':len(selected),'generated_at':now.isoformat()}))
+          PY
+      - name: Regression tests including all local news audio and retrospective bulletin playback
+        run: |
+          for f in app.js natural-post-audio.js live-updates.js media-repair.js photo-gallery.js headline-audio-data.js audio-bulletins.js; do node --check "$f"; done
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/final-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              for(const cfg of [{viewport:{width:1440,height:900}},devices['Galaxy S9+'],{viewport:{width:384,height:832},isMobile:true,hasTouch:true}]){
+                const page=await browser.newPage(cfg);
+                await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8765/')?r.continue():r.abort());
+                await page.goto('http://127.0.0.1:8765/index.html');
+                await page.locator('#storyGrid .story-card').first().waitFor();
+                const missing=await page.evaluate(()=>window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES.filter(s=>s.title!=='Recherche'&&!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.find(s)).map(s=>s.id));
+                if(missing.length)throw Error('Missing audio '+missing.join(','));
+                if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Homepage overflow');
+                await page.locator('#imDashboardStart').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                await page.locator('#imDashboardNext').click();
+                await page.locator('#imDashboardStop').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').paused);
+                await page.goto('http://127.0.0.1:8765/live-updates.html');
+                await page.locator('#v3Bulletins button').filter({hasText:'retrospective'}).click();
+                await page.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
+                await page.locator('#v3Stop').click();
+                await page.goto('http://127.0.0.1:8765/photo-gallery.html');
+                await page.locator('#gallery section').first().waitFor();
+                await page.close();
+              }
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Commit retrospective bulletin only to review branch
+        run: |
+          test "$GITHUB_REF" = refs/heads/review/homepage-freshness-20261128
+          git fetch origin review/homepage-freshness-20261128
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- audio/bulletin-evening-2026-11-27.mp3 audio-bulletins.js live-updates.js live-updates.html
+          test -z "$(git diff --cached --name-only --diff-filter=D)"
+          git commit -m 'Add verified retrospective evening bulletin to review branch'
+          git push origin HEAD:refs/heads/review/homepage-freshness-20261128

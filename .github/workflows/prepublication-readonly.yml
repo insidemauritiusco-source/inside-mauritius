@@ -1,0 +1,114 @@
+name: Pre-publication read-only validation
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-and-browser:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.ref == 'review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and source filters
+        run: |
+          python -m py_compile scripts/auto_news.py scripts/natural_voice_v3.py cyclone/update-marine.py cyclone/update-icon.py cyclone/update-world-motion.py
+          PYTHONPATH=scripts python - <<'PY'
+          import json
+          from pathlib import Path
+          from auto_news import promotional_headline
+          assert promotional_headline('Slotautomaten Strategien: So Wählen Sie Die Besten Spiele Aus')
+          assert not promotional_headline('Police investigate online casino fraud')
+          assert not promotional_headline('Mauritius publishes new public transport timetable')
+          def registry(name):
+              return json.loads(Path(name).read_text().split('=',1)[1].strip().rstrip(';'))
+          for name in ('headline-audio-data.js','post-audio-data.js','summary-audio-data.js','audio-bulletins.js'):
+              rows=registry(name)
+              assert rows, name
+              for row in rows:
+                  assert Path(row['audioUrl']).is_file(), row['audioUrl']
+          for row in registry('newsroom-data.js'):
+              assert not promotional_headline(row['title']), row['id']
+              image=row.get('image','')
+              if image and not image.startswith('https://'):
+                  assert Path(image).is_file(), image
+          print('Registry, local images and news filters passed')
+          PY
+          for f in app.js natural-post-audio.js live-updates.js media-repair.js photo-gallery.js; do node --check "$f"; done
+      - name: Browser checks on mobile and desktop
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/im-http.log 2>&1 &
+          node <<'JS'
+          const { chromium, devices } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch();
+            try {
+              for (const config of [{viewport:{width:1440,height:900}}, devices['Galaxy S9+'], {viewport:{width:384,height:832},isMobile:true,hasTouch:true}]) {
+                const page = await browser.newPage(config);
+                await page.route('**/*', route => route.request().url().startsWith('http://127.0.0.1:8765/') ? route.continue() : route.abort());
+                await page.goto('http://127.0.0.1:8765/index.html');
+                await page.locator('#storyGrid .story-card').first().waitFor({timeout:15000});
+                if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2)) throw Error('Homepage horizontal overflow');
+                await page.locator('#imDashboardCoverage').waitFor();
+                const text=await page.locator('#imDashboardCoverage').innerText();
+                if(!/posts have matching recordings/.test(text)) throw Error('Audio dashboard not initialized');
+                await page.locator('#imDashboardStart').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+                await page.locator('#imDashboardNext').click();
+                await page.locator('#imDashboardStop').click();
+                await page.waitForFunction(()=>document.querySelector('#imDashboardPlayer').paused);
+                await page.goto('http://127.0.0.1:8765/photo-gallery.html');
+                await page.locator('#gallery section').first().waitFor();
+                await page.close();
+              }
+            } finally { await browser.close(); }
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+  voice-review:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.ref == 'review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+      - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - run: python -m unittest discover -s scripts -p 'test_*voice_v3.py'
+      - run: python scripts/natural_voice_v3.py --limit 60
+      - name: Check V2 preservation
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          def parse(s): return json.loads(s.split('=',1)[1].strip().rstrip(';'))
+          old=parse(subprocess.check_output(['git','show','HEAD:headline-audio-data.js'],text=True))
+          new=parse(Path('headline-audio-data.js').read_text())
+          prior={r['audioUrl'] for r in old if r.get('engine')=='Kokoro' and (r.get('legacyV2') or not r.get('lastSeen'))}
+          assert prior <= {r['audioUrl'] for r in new}
+          assert all(Path(p).exists() for p in prior)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: review-only-voice-output
+          path: |
+            audio/headline-*.mp3
+            audio/bulletin-*.mp3
+            headline-audio-data.js
+            audio-bulletins.js
+          if-no-files-found: error

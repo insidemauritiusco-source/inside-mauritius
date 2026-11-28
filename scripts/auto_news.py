@@ -247,11 +247,18 @@ def video_from_feed(node):
     return ""
 
 
+# Reject clearly promotional headlines without excluding ordinary public-interest reporting.
+PROMOTIONAL = re.compile(r"\b(?:slotautomaten|online[- ]casino|casino[- ]bonus|free spins|bonus sans dépôt|casino en ligne)\b", re.I)
+PUBLIC_INTEREST = re.compile(r"\b(?:regulation|régulation|législation|law|police|justice|fraude|fraud|prévention|prevention|addiction)\b", re.I)
+
+def promotional_headline(title):
+    return bool(PROMOTIONAL.search(title) and not PUBLIC_INTEREST.search(title))
+
 def item_to_story(node, source, via_google):
     title = clean(node.findtext("title"), 190)
     link = clean(node.findtext("link"), 2000)
     publication = pub_date(node.findtext("pubDate") or node.findtext("published") or node.findtext(ATOM_NS+"published"))
-    if not title or len(title) < 12 or not publication:
+    if not title or len(title) < 12 or title.strip().casefold() == 'recherche' or not publication or promotional_headline(title):
         return None
     if title.casefold().strip(" .:!?-") in {"blog", "actualités", "actualites", "news", "accueil", "home", "vidéos", "videos"}:
         return None
@@ -261,6 +268,8 @@ def item_to_story(node, source, via_google):
     if not link:
         return None
     source_element = node.find("source")
+    if via_google and source_element is None:
+        return None
     if via_google and source_element is not None:
         source_home = valid_url(source_element.get("url", ""), (SOURCE_SITES[source],))
         if not source_home:

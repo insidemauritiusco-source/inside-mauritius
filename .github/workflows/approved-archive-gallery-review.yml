@@ -1,0 +1,56 @@
+name: Approved archive gallery review
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/approved-archive-gallery-review.yml']
+permissions:
+  contents: read
+jobs:
+  gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate preserved metadata
+        run: |
+          python scripts/refresh_photo_gallery.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path('photo-gallery-approved.json').read_text())['items']
+          b=json.loads(Path('photo-gallery-feed.json').read_text())['items']
+          assert len(a)==len(b)==4
+          for x in a:
+              y=next(y for y in b if x['source_url']==y['source_url'])
+              for k in ('credit','license','license_url','photo_date','archive','approved','modification_note'):
+                  assert x[k]==y[k],k
+              assert y['archive'] is True and y['approved'] is True
+          PY
+          node --check photo-gallery.js
+      - name: Desktop and mobile attribution display
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/gallery-http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          (async()=>{const b=await chromium.launch();try{
+            for(const cfg of [{viewport:{width:1440,height:900}},devices['Galaxy S9+']]){
+              const p=await b.newPage(cfg);
+              await p.goto('http://127.0.0.1:8765/photo-gallery.html');
+              await p.locator('#gallery article').nth(3).waitFor();
+              if(await p.locator('#gallery article').count()!==4)throw Error('Wrong count');
+              if(await p.locator('#gallery article').filter({hasText:'Archive photograph'}).count()!==4)throw Error('Missing archive labels');
+              if(await p.locator('#gallery article a').count()!==8)throw Error('Missing licence/source links');
+              await p.locator('#gallery article button').first().click();
+              await p.locator('#viewer[open]').waitFor();
+              if(await p.locator('#credit a').count()!==2)throw Error('Missing viewer attribution links');
+              await p.locator('#close').click();
+              await p.close();
+            }
+          }finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});
+          JS

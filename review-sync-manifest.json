@@ -1,0 +1,11 @@
+{
+  "main_snapshot": "f22ca8e8ea65bd4044a96df04b1efe83464be8c7",
+  "review_parent": "7cacebd870321adb1488cb36bd5d4c18c31b4fae",
+  "news_source_entries": 55,
+  "news_eligible_entries": 51,
+  "excluded_navigation": 3,
+  "excluded_promotional": 1,
+  "audio_entries_to_add": 10,
+  "weather_snapshot_checked_at": "2026-11-28T04:18:58.751526+00:00",
+  "manual_approval_required": true
+}

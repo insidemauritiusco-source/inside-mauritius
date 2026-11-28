@@ -9,10 +9,17 @@ TARGET=pathlib.Path(__file__).with_name("icon.json")
 STEPS=(0,12,24,48)
 FIELDS={"U_10M":("u",0,2,2,"heightAboveGround",10,-150,150),"V_10M":("v",0,2,3,"heightAboveGround",10,-150,150),"PMSL":("p",0,3,1,"meanSea",None,800,1150),"T_2M":("t",0,0,0,"heightAboveGround",2,-100,75)}
 def read(url,limit):
-    with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/39"}),timeout=60) as r:
-        b=r.read(limit+1)
-    if len(b)>limit: raise ValueError("Download exceeds size limit")
-    return b
+    import time
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/39"}),timeout=60) as r:
+                b=r.read(limit+1)
+            if len(b)>limit: raise ValueError("Download exceeds size limit")
+            return b
+        except (OSError, TimeoutError) as exc:
+            print('Source request failed', attempt+1, str(exc)[:180], flush=True)
+            if attempt == 2: raise
+            time.sleep(2 ** attempt)
 def remap_files(folder):
     archive=folder/"weights.tar.bz2"
     archive.write_bytes(read(ROOT+"lib/cdo/ICON_GLOBAL2WORLD_025_EASY.tar.bz2",65_000_000))
@@ -37,7 +44,14 @@ def decode(folder,grid,weights,cycle,step,key):
         try:
             if tuple(codes_get(g,k) for k in ("discipline","parameterCategory","parameterNumber"))!=(disc,cat,num): raise ValueError("Wrong parameter")
             if codes_get(g,"typeOfLevel")!=leveltype or (level is not None and codes_get(g,"level")!=level): raise ValueError("Wrong level")
-            if (codes_get(g,"dataDate"),codes_get(g,"dataTime"),codes_get(g,"endStep"))!=(int(cycle.strftime("%Y%m%d")),cycle.hour*100,step): raise ValueError("Wrong forecast timestamp")
+            # Compare reference and absolute valid times, rather than assuming endStep is in hours.
+            ref=tuple(int(codes_get(g,k)) for k in ("dataDate","dataTime"))
+            actual=tuple(int(codes_get(g,k)) for k in ("validityDate","validityTime"))
+            valid_at=cycle+dt.timedelta(hours=step)
+            expected_ref=(int(cycle.strftime("%Y%m%d")),cycle.hour*100+cycle.minute)
+            expected_valid=(int(valid_at.strftime("%Y%m%d")),valid_at.hour*100+valid_at.minute)
+            if ref!=expected_ref or actual!=expected_valid:
+                raise ValueError(f"Wrong forecast timestamp {key}: ref={ref} expected={expected_ref}, valid={actual} expected={expected_valid}, endStep={codes_get(g,'endStep')} units={codes_get(g,'stepUnits')}")
         finally: codes_release(g)
         extra=codes_grib_new_from_file(f)
         if extra is not None:

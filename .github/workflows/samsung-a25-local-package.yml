@@ -1,0 +1,53 @@
+name: Private LAN Samsung A25 test package (review only)
+on:
+  push:
+    branches: ['review/final-reconciled-20261128']
+permissions:
+  contents: read
+jobs:
+  package:
+    if: github.ref == 'refs/heads/review/final-reconciled-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify preserved website and build local test package
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib, subprocess, zipfile
+          root=pathlib.Path('.')
+          def rows(n):return json.loads((root/n).read_text().split('=',1)[1].strip().rstrip(';'))
+          audio={x['audioUrl'] for name in ('headline-audio-data.js','post-audio-data.js','summary-audio-data.js','audio-bulletins.js') for x in rows(name)}
+          assert len(audio)==445 and all((root/p).is_file() for p in audio)
+          assert len(rows('newsroom-data.js'))==51
+          assert len(json.loads((root/'photo-gallery-approved.json').read_text())['items'])==4
+          for f in ('wind.json','ifs.json','icon.json','waves.json','sst.json','indian-systems.json','world-motion/manifest.json'):
+              assert (root/'cyclone'/f).is_file()
+          manifest=json.loads((root/'cyclone/world-motion/manifest.json').read_text())
+          assert len(manifest['frames'])==6
+          for f in manifest['frames']: assert (root/'cyclone/world-motion'/f['file']).is_file()
+          files=subprocess.check_output(['git','ls-files','-z']).decode().strip('\0').split('\0')
+          out=pathlib.Path('/tmp/samsung-review');out.mkdir()
+          package=out/'Inside-Mauritius-Samsung-A25-review.zip'
+          included=[p for p in files if not p.startswith('.github/') and not p.startswith('scripts/')]
+          with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in included:z.write(root/p,p)
+          with zipfile.ZipFile(package) as z:
+              assert z.testzip() is None
+              assert audio<=set(z.namelist())
+              assert {'index.html','START-SAMSUNG-TEST.cmd','samsung-local-test.py','SAMSUNG-A25-TEST.md'}<=set(z.namelist())
+          sha=hashlib.sha256(package.read_bytes()).hexdigest()
+          (out/'SHA256.txt').write_text(sha+'  '+package.name+'\n')
+          print(json.dumps({'package_files':len(included),'audio':len(audio),'photos':4,'news':51,'satellite_frames':6,'sha256':sha,'bytes':package.stat().st_size}))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Samsung-A25-review
+          path: /tmp/samsung-review/
+          if-no-files-found: error
+          retention-days: 7

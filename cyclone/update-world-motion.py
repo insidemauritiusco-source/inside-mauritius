@@ -8,10 +8,17 @@ ROOT="https://noaa-gmgsi-pds.s3.amazonaws.com/"
 OUT=pathlib.Path(__file__).parent/"world-motion"
 UTC=dt.timezone.utc
 def read(url,limit):
-    with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/44"}),timeout=45) as r:
-        data=r.read(limit+1)
-    if len(data)>limit: raise ValueError("Response too large")
-    return data
+    import time
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Inside-Mauritius-CycloneWatch/44"}),timeout=45) as r:
+                data=r.read(limit+1)
+            if len(data)>limit: raise ValueError("Response too large")
+            return data
+        except (OSError, TimeoutError) as exc:
+            print('Source request failed', attempt+1, str(exc)[:180], flush=True)
+            if attempt == 2: raise
+            time.sleep(2 ** attempt)
 def candidates(t):
     prefix=f"GMGSI_LW/{t:%Y/%m/%d/%H}/"
     root=ET.fromstring(read(ROOT+"?"+urllib.parse.urlencode({"list-type":"2","prefix":prefix}),2_000_000))
@@ -48,16 +55,52 @@ def make(t,key):
             j=np.clip(np.searchsorted(src,targets),1,len(src)-1)
             return np.where(abs(src[j]-targets)<abs(src[j-1]-targets),j,j-1)
         sample=a[np.ix_(yi[nearest(lat,y)],xi[nearest(lon,x)])]
+        # netCDF4 has already unpacked scale_factor/add_offset and masked fill values.
         units=str(getattr(var,"units","")).strip().lower()
+        unit=re.sub(r"[\s_\-]+","",units).replace("°","")
+        finite=sample[np.isfinite(sample)]
+        print("IR metadata",json.dumps({"units":units,"dtype":str(var.dtype),"scale_factor":str(getattr(var,"scale_factor",None)),"add_offset":str(getattr(var,"add_offset",None)),"valid_range":str(getattr(var,"valid_range",None)),"finite_fraction":float(np.isfinite(sample).mean()),"sample_min":float(finite.min()) if finite.size else None,"sample_max":float(finite.max()) if finite.size else None}),flush=True)
         valid=np.isfinite(sample)
-        if units in ("k","kelvin","degrees kelvin","degree_kelvin"):
-            valid &= (sample>=140)&(sample<=350)
-            bright=np.clip((310-sample)/130,0,1)
-        else:
-            # NOAA digital IR counts, displayed as counts without conversion to Kelvin.
+        # GMGSI v3 blended LIR imagery is distributed on a 0–255 display
+        # count scale, even in files with a misleading Kelvin units attribute.
+        # Restrict this handling to the known NOAA product/version and an
+        # unscaled, integer-valued count field. Do not infer temperatures.
+        v3_counts=bool(re.fullmatch(r"GMGSI_LW/\d{4}/\d{2}/\d{2}/\d{2}/GLOBCOMPLIR_v3r0_blend_s\d{15}_e\d{15}_c\d{15}\.nc",key))
+        if v3_counts and unit in ("k","kelvin") and getattr(var,"scale_factor",None) is None and getattr(var,"add_offset",None) is None:
+            if not finite.size or np.any(finite<0) or np.any(finite>255) or not np.all(finite==np.round(finite)):
+                raise ValueError("Unexpected v3 brightness-count encoding")
             valid &= (sample>=0)&(sample<=255)
             bright=np.clip(sample/255,0,1)
-        if np.mean(valid)<.7: raise ValueError("Insufficient valid image coverage")
+            # Use a matching source quality field if supplied. Unknown flag
+            # semantics fail closed, rather than guessing which pixels are good.
+            quality_names=[n for n in ds.variables if n.lower() in ("quality_flag","quality_flags","quality","dqf","qualityflag","data_quality_flag","data_quality_flags")]
+            print("GMGSI variable names",list(ds.variables),flush=True)
+            if len(quality_names)>1: raise ValueError("Ambiguous quality flags")
+            if quality_names:
+                q=ds.variables[quality_names[0]]
+                flags=np.ma.asarray(q[:],dtype=float).squeeze().filled(np.nan)
+                if flags.shape!=a.shape: raise ValueError("Unexpected quality grid")
+                meanings=str(getattr(q,"flag_meanings","")).lower().split()
+                values=np.asarray(getattr(q,"flag_values",[])).ravel()
+                if len(values) and (len(values)!=len(meanings) or not any(v==0 and any(w in m for w in ("good","valid","clear","nominal")) and not any(w in m for w in ("invalid","not_good","not_valid")) for v,m in zip(values,meanings))):
+                    raise ValueError("Unrecognized quality flag semantics")
+                valid &= flags[np.ix_(yi[nearest(lat,y)],xi[nearest(lon,x)])]==0
+            print("GMGSI v3 count display; not calibrated Kelvin; quality field:",quality_names,flush=True)
+        elif unit in ("k","kelvin","degreek","degreesk","degreekelvin","degreeskelvin"):
+            kelvin=sample
+            valid &= (kelvin>=140)&(kelvin<=350)
+            bright=np.clip((310-kelvin)/130,0,1)
+        elif unit in ("c","degc","celsius","degreec","degreesc","degreecelsius","degreescelsius"):
+            kelvin=sample+273.15
+            valid &= (kelvin>=140)&(kelvin<=350)
+            bright=np.clip((310-kelvin)/130,0,1)
+        elif unit in ("count","counts","digitalcount","digitalcounts","1","unitless","dimensionless"):
+            valid &= (sample>=0)&(sample<=255)
+            bright=np.clip(sample/255,0,1)
+        else:
+            raise ValueError("Unrecognized infrared units: "+repr(units))
+        coverage=float(np.mean(valid))
+        if coverage<.7: raise ValueError(f"Insufficient valid image coverage: {coverage:.3f}; units={units!r}")
         gray=np.uint8(np.nan_to_num(bright)*255)
         rgba=np.stack([gray,gray,gray,np.where(valid,255,0).astype(np.uint8)],axis=-1)
         dest=OUT/(t.strftime("%Y%m%d%H")+".png")

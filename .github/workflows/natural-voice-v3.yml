@@ -18,7 +18,7 @@ jobs:
   review:
     if: github.ref == 'refs/heads/review/natural-voice-v3' || github.event_name == 'schedule' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'review/natural-voice-v3')
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,7 +27,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg libsndfile1
       - run: pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
       - run: python -m unittest discover -s scripts -p 'test_*voice_v3.py'
-      - run: python scripts/natural_voice_v3.py --limit 30
+      - run: python scripts/natural_voice_v3.py --limit 60
       - name: Validate V2 preservation and all registry files
         run: |
           python - <<'PY'
@@ -208,4 +208,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Prepare validated hourly V3 audio update"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "Natural Voice V3 hourly audio approval" --body "Generated and technically verified by the V3 review workflow. Review source coverage and playback before manual merge. No automatic publication."
+          if ! gh pr create --base main --head "$branch" --title "Natural Voice V3 hourly audio approval" --body "Generated and technically verified by the V3 review workflow. Review source coverage and playback before manual merge. No automatic publication."; then
+            echo "::warning::Automatic PR creation unavailable; validated audio retained on $branch. Open the PR manually."
+            echo "Manual review required: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1" >> "$GITHUB_STEP_SUMMARY"
+          fi

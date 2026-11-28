@@ -84,7 +84,7 @@ def waves():
     raise ValueError("No recent complete wave-height forecast")
 def sst_erddap():
     # NOAA preliminary OISST; exact timestamp comes from the dataset, not the request clock.
-    base="https://www.ncei.noaa.gov/erddap/griddap/ncdc_oisst_v2_avhrr_prelim_by_time_zlev_lat_lon.csv?"
+    base="https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg.csv?"
     query="sst[(last)][(0.0)][0:8:719][0:8:1439]"
     raw=read(base+urllib.parse.quote(query,safe="[]():,")).decode("utf-8")
     rows=csv.DictReader(io.StringIO(raw)); units=next(rows)

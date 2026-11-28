@@ -1,0 +1,56 @@
+name: NOAA satellite count decoding retest (review only)
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/noaa-count-retest.yml']
+permissions:
+  contents: read
+jobs:
+  satellite:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'numpy>=1.26,<3' 'netCDF4>=1.7,<2' 'Pillow>=10,<13'
+      - name: Fetch fresh official images and validate coverage
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/noaa-review
+          rm -rf cyclone/world-motion
+          python -m py_compile cyclone/update-world-motion.py
+          python cyclone/update-world-motion.py 2>&1 | tee /tmp/noaa-review/source.log
+          python - <<'PY'
+          import json, datetime as dt, pathlib
+          import numpy as np
+          from PIL import Image
+          root=pathlib.Path('cyclone/world-motion')
+          m=json.loads((root/'manifest.json').read_text())
+          assert m['source']=='NOAA GMGSI LWIR'
+          assert m['bounds']==[-60,-180,60,180]
+          assert 2<=len(m['frames'])<=6
+          times=[]
+          for f in m['frames']:
+              t=dt.datetime.fromisoformat(f['time'])
+              times.append(t)
+              assert f['file']==t.strftime('%Y%m%d%H')+'.png'
+              with Image.open(root/f['file']) as img:
+                  a=np.array(img.convert('RGBA'))
+              assert (a[:,:,3]>0).mean()>=.7
+              assert np.std(a[:,:,0][a[:,:,3]>0])>1
+          assert times==sorted(set(times))
+          assert dt.timedelta(0)<=dt.datetime.now(dt.timezone.utc)-times[-1]<=dt.timedelta(hours=10)
+          print('Verified',len(times),'fresh NOAA image frames, each with at least 70% valid coverage')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noaa-count-review
+          path: |
+            /tmp/noaa-review/source.log
+            cyclone/world-motion/
