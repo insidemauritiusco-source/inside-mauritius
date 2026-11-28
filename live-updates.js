@@ -163,7 +163,7 @@
   const bulletins = Array.isArray(window.INSIDE_MAURITIUS_AUDIO_BULLETINS) ? window.INSIDE_MAURITIUS_AUDIO_BULLETINS : [];
   const today = new Intl.DateTimeFormat("en-CA",{timeZone:"Indian/Mauritius",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
   for (const b of bulletins.filter(b => /^audio\/bulletin-(morning|evening)-\d{4}-\d{2}-\d{2}\.mp3$/.test(b.audioUrl)).sort((a,b)=>b.date.localeCompare(a.date)||b.edition.localeCompare(a.edition)).slice(0,4)) {
-    const button = node("button","listen-headline",b.date+" · "+b.edition+" headline roundup");
+    const button = node("button","listen-headline",b.date+" · "+b.edition+" headline roundup"+(b.retrospective?" (retrospective)":""));
     button.type="button";button.addEventListener("click",()=>startQueue([{title:button.textContent,url:b.audioUrl}]));
     bulletinList.append(button);
   }

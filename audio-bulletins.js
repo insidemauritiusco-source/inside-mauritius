@@ -78,5 +78,46 @@ window.INSIDE_MAURITIUS_AUDIO_BULLETINS = [
       }
     ],
     "generatedAt": "2026-11-28T07:47:57.139053+04:00"
+  },
+  {
+    "date": "2026-11-27",
+    "edition": "evening",
+    "audioUrl": "audio/bulletin-evening-2026-11-27.mp3",
+    "headlines": [
+      {
+        "title": "Compensation salariale 2027 : les syndicats réclament Rs 1 200 pour les salariés modestes",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNnJjRmJXNkc1Z2ZlaXlabjNrXzRPX2l2aEpSVksyY3ZXVGNEcFRpWDhoRE5BNF9JTFNsXzJQUG5UdXJNQUotWmx4Wi1ia1dnS1ZfeHlWcE40NHBfdVVRNG45ZkxzVEFhZnlpRmJkcTcyN21WTTNhTjVvXzBULVJReC16QWNyRS1UVFpDSlMwekVOeVlTVmJfcjV5R0VHS29zZzk1STRkWmN3M2Y2VnlYRDRaNXpEc28zajRB?oc=5"
+      },
+      {
+        "title": "Meurtre de Soopramanien Mooneesawmy : Jean Brandon Adolphe Joli acquitté à sept voix contre deux",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObUdFZHpPSmdVUjdJZHVZbjdCbXI4OWNGOUhkbGhJNEgyZzBlbDRhVDdfaHVHX3NwdDc2aWxneExFbjFyaGZ5dWhveWRKck9jYjAzYThGSUMydDg1Y2FhM21fVWNoVy1JMEFVaG5LTXBIbmo2RV85bnV4UTRXQktoaHRKX19RcHUtanI4UE9NaGo0U3c3Z2k4dlpwMGtydE8tOTBuQlc5LVpCNWJQc1hrdGZ3U1NDSC1QOTRHcWtJcDA0Zw?oc=5"
+      },
+      {
+        "title": "Joshua, 13 ans, risque de perdre la vue : « Que deviendra mon fils lorsque je ne serai plus là ? »",
+        "sourceUrl": "https://radiomopep.mu/joshua-risque-perdre-vue/"
+      },
+      {
+        "title": "National Handisports Games : 195 athlètes attendus pour la 4e édition ce week-end",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV3BRUC1DNVlKOFp1NEczVTg0Z1lyNk1XTWNCZ29HNHZkalNxX19RWWcySGJYUm42dC1HaURsSDVSb0daZVJib2RSVXQxZllYTE05bk1Cc0REazAwOW1lZ1NTSXd3VTFjMi1ZZkVNYWlTQUZhc2RYUVJ6UnIwQWdCRXBneUlhR0g5RDhzN0pvX21UMUl4UEUxZ0FSUE52Z3Y5VjhaMjNFcXVmdDg?oc=5"
+      },
+      {
+        "title": "Recrutements à Air Mauritius : des noms de personnalités politiques figuraient sur certaines convocations à des entretiens, affirme Anba Manikham dans son affidavit",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbFl1ZUtuWGNGMzM2UDhIQk4wanRoSk9mT3NvWUg2ZWRjakVkeWZ1Wk1EZ1JEcHk2MEp2c3pEeU0yRUtiR2tkcE9iSTRGd3VpNGYwbWxfb2JMOE0zb19TdjZuM09XLWIyU2N1UExQNmlvN1FxaGFaYm90VWl3SFdEVWxjeW82SGNvYktIWTRlRW5KSGRZak84MWdTel95eW0wMHBaUlJPME85MXY3eWRpRVdHM2FIaVE?oc=5"
+      },
+      {
+        "title": "Krispy Kreme : la célèbre enseigne américaine de doughnuts débarque à Maurice",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLWJRejQ0ZE1famhWNGxMQXZwcjVBYTdoaGprTXpVbUktS1hjSTJHWmtwU0RhYVBhNngycnJSdlpfN3VZN3FCbkRMc3VjSkQ0QmFCVGJJWUtQdkczRWw0T3ZMWGY0WmEyLUlnR1dWSHlkLVZkQ2pjSDFYV3JseWN0aGI3Q1JuYkhLRlZBdkxrdVFKczJOQ3pwcVdKZlY?oc=5"
+      },
+      {
+        "title": "Sécurité sociale : Ashok Subron plaide pour l’auto-organisation des bénéficiaires de la NEF",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUW4xREEzWUtVNnh1Q1RCbERYb3gwYXJpNjR4MXEwLTdjbWpsU3E0X0I0R0N4RjEtaGx5RkxyOXJIVWRVb0JLcjVFc0RTYkM4TVZSWlZyVUVpRGhRdHV1akJxQzJOS0xlRjE5MFhIdmxkUnIwbm5sZVBaQmJYa3NqZGZRMmdhRThRZzNobDBRMmpneWMwUmM3UmJVRzN0d0RqSVFYcTlhWGhzalNrQ3UtRmpDbnhsNDQ?oc=5"
+      },
+      {
+        "title": "[En images] Meeting du MSM à Triolet",
+        "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvZXc3WXhPSFQ5SE1pV3lHQlVUd1drblh3eG5BTEdNM3h3WF9OS0FOZ2FYZGg5SlBGbVRLVFFJaURZQVp6cjVLa1JkTE96WkYyb3c4T0tmSEZCNGlUcDR3Nmk2MnQtZw?oc=5"
+      }
+    ],
+    "generatedAt": "2026-11-28T08:56:24.406391+04:00",
+    "retrospective": true
   }
 ];
