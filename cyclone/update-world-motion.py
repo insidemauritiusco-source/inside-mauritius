@@ -61,7 +61,32 @@ def make(t,key):
         finite=sample[np.isfinite(sample)]
         print("IR metadata",json.dumps({"units":units,"dtype":str(var.dtype),"scale_factor":str(getattr(var,"scale_factor",None)),"add_offset":str(getattr(var,"add_offset",None)),"valid_range":str(getattr(var,"valid_range",None)),"finite_fraction":float(np.isfinite(sample).mean()),"sample_min":float(finite.min()) if finite.size else None,"sample_max":float(finite.max()) if finite.size else None}),flush=True)
         valid=np.isfinite(sample)
-        if unit in ("k","kelvin","degreek","degreesk","degreekelvin","degreeskelvin"):
+        # GMGSI v3 blended LIR imagery is distributed on a 0–255 display
+        # count scale, even in files with a misleading Kelvin units attribute.
+        # Restrict this handling to the known NOAA product/version and an
+        # unscaled, integer-valued count field. Do not infer temperatures.
+        v3_counts=bool(re.fullmatch(r"GMGSI_LW/\d{4}/\d{2}/\d{2}/\d{2}/GLOBCOMPLIR_v3r0_blend_s\d{15}_e\d{15}_c\d{15}\.nc",key))
+        if v3_counts and unit in ("k","kelvin") and getattr(var,"scale_factor",None) is None and getattr(var,"add_offset",None) is None:
+            if not finite.size or np.any(finite<0) or np.any(finite>255) or not np.all(finite==np.round(finite)):
+                raise ValueError("Unexpected v3 brightness-count encoding")
+            valid &= (sample>=0)&(sample<=255)
+            bright=np.clip(sample/255,0,1)
+            # Use a matching source quality field if supplied. Unknown flag
+            # semantics fail closed, rather than guessing which pixels are good.
+            quality_names=[n for n in ds.variables if n.lower() in ("quality_flag","quality_flags","quality","dqf","qualityflag","data_quality_flag","data_quality_flags")]
+            print("GMGSI variable names",list(ds.variables),flush=True)
+            if len(quality_names)>1: raise ValueError("Ambiguous quality flags")
+            if quality_names:
+                q=ds.variables[quality_names[0]]
+                flags=np.ma.asarray(q[:],dtype=float).squeeze().filled(np.nan)
+                if flags.shape!=a.shape: raise ValueError("Unexpected quality grid")
+                meanings=str(getattr(q,"flag_meanings","")).lower().split()
+                values=np.asarray(getattr(q,"flag_values",[])).ravel()
+                if len(values) and (len(values)!=len(meanings) or not any(v==0 and any(w in m for w in ("good","valid","clear","nominal")) and not any(w in m for w in ("invalid","not_good","not_valid")) for v,m in zip(values,meanings))):
+                    raise ValueError("Unrecognized quality flag semantics")
+                valid &= flags[np.ix_(yi[nearest(lat,y)],xi[nearest(lon,x)])]==0
+            print("GMGSI v3 count display; not calibrated Kelvin; quality field:",quality_names,flush=True)
+        elif unit in ("k","kelvin","degreek","degreesk","degreekelvin","degreeskelvin"):
             kelvin=sample
             valid &= (kelvin>=140)&(kelvin<=350)
             bright=np.clip((310-kelvin)/130,0,1)
