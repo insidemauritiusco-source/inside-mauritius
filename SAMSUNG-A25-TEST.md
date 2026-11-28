@@ -20,4 +20,6 @@ No merge or deployment is authorized.
 - Record Samsung A25 Android/Chrome versions and PASS/FAIL for each item. Physical hardware verification is manual.
 - Stop the server. Return the checklist results for review; do not merge or deploy.
 
+The launcher binds only to the selected private Wi-Fi address. Automated self-tests use loopback, never a public interface.
+
 The candidate's website files are preserved from the audited snapshot. GitHub artifact access follows repository permissions; downloading and testing on your own network is not a private-hosting guarantee. Do not place secrets in this static package.

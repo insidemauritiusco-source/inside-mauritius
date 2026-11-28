@@ -45,9 +45,67 @@ jobs:
           (out/'SHA256.txt').write_text(sha+'  '+package.name+'\n')
           print(json.dumps({'package_files':len(included),'audio':len(audio),'photos':4,'news':51,'satellite_frames':6,'sha256':sha,'bytes':package.stat().st_size}))
           PY
+      - name: Test extracted ZIP on local server with desktop and Android browsers
+        run: |
+          set -eu
+          mkdir -p /tmp/samsung-extracted
+          python -m zipfile -e /tmp/samsung-review/Inside-Mauritius-Samsung-A25-review.zip /tmp/samsung-extracted
+          cd /tmp/samsung-extracted
+          python samsung-local-test.py --self-test >/tmp/samsung-review/server.log 2>&1 &
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          curl -fsSI http://127.0.0.1:8765/ | grep -i 'Cache-Control: no-store'
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          const fs=require('fs');
+          (async()=>{const b=await chromium.launch();const report=[];try{
+            for(const [name,cfg] of [['desktop',{viewport:{width:1440,height:900}}],['Android emulation',devices['Galaxy S9+']],['A25-sized emulation',{viewport:{width:384,height:832},isMobile:true,hasTouch:true}]]){
+              const p=await b.newPage(cfg);
+              await p.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8765/')?r.continue():r.abort());
+              await p.goto('http://127.0.0.1:8765/');
+              await p.waitForFunction(()=>!!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO);
+              const missing=await p.evaluate(()=>window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES.filter(s=>!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.find(s)).length);
+              if(missing)throw Error('Missing audio '+missing);
+              await p.locator('#imDashboardStart').click();
+              await p.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+              await p.locator('#imDashboardNext').click();
+              await p.locator('#imDashboardStop').click();
+              await p.waitForFunction(()=>document.querySelector('#imDashboardPlayer').paused);
+              if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Homepage overflow');
+              await p.goto('http://127.0.0.1:8765/live-updates.html');
+              await p.locator('#v3Bulletins button').filter({hasText:'retrospective'}).click();
+              await p.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
+              await p.locator('#v3Stop').click();
+              await p.goto('http://127.0.0.1:8765/photo-gallery.html');
+              await p.locator('#gallery article').nth(3).waitFor();
+              if(await p.locator('#gallery article').count()!==4||await p.locator('#gallery article a').count()!==8)throw Error('Gallery mismatch');
+              await p.locator('#gallery article button').first().click();
+              await p.locator('#viewer[open]').waitFor();
+              await p.locator('#close').click();
+              for(const file of ['wind.json','ifs.json','icon.json','waves.json','sst.json','indian-systems.json','world-motion/manifest.json']){
+                const r=await p.request.get('http://127.0.0.1:8765/cyclone/'+file);
+                if(!r.ok())throw Error('Weather file missing: '+file);
+                await r.json();
+              }
+              const satellite=await (await p.request.get('http://127.0.0.1:8765/cyclone/world-motion/manifest.json')).json();
+              for(const f of satellite.frames){
+                const r=await p.request.get('http://127.0.0.1:8765/cyclone/world-motion/'+f.file);
+                if(!r.ok()||!(await r.body()).length)throw Error('Satellite missing');
+              }
+              report.push({device:name,homepage:'pass',audio:'pass',bulletin:'pass',gallery:'pass',weather_assets:'pass'});
+              await p.close();
+            }
+          }finally{await b.close();fs.writeFileSync('/tmp/samsung-review/browser-results.json',JSON.stringify(report,null,2));}
+          console.log(JSON.stringify(report));
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
       - uses: actions/upload-artifact@v4
         with:
-          name: Samsung-A25-review
+          name: Samsung-A25-review-tested
           path: /tmp/samsung-review/
           if-no-files-found: error
           retention-days: 7
