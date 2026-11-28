@@ -1,0 +1,75 @@
+name: Final file cleanup and security performance audit
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/review-final-cleanup.yml']
+permissions:
+  contents: write
+concurrency:
+  group: review-final-cleanup
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: review/homepage-freshness-20261128
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Scan files and remove unreferenced obsolete copies
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          python scripts/review_release_audit.py /tmp/final-audit
+      - name: Desktop and Android local performance and access checks
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/final-audit/http.log 2>&1 &
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          const fs=require('fs');
+          (async()=>{const b=await chromium.launch();const results=[];try{
+            for(const [name,cfg] of [['desktop',{viewport:{width:1440,height:900}}],['android',devices['Galaxy S9+']]]){
+              const p=await b.newPage(cfg);
+              await p.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8765/')?r.continue():r.abort());
+              for(const path of ['index.html','world-news.html','live-updates.html','photo-gallery.html']){
+                const start=Date.now();
+                await p.goto('http://127.0.0.1:8765/'+path,{waitUntil:'load'});
+                if(path==='index.html'){
+                  await p.locator('#storyGrid .story-card').first().waitFor();
+                  const missing=await p.evaluate(()=>window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES.filter(s=>!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.find(s)).length);
+                  if(missing)throw Error('Missing audio: '+missing);
+                }
+                if(path==='photo-gallery.html')await p.locator('#gallery article').nth(3).waitFor();
+                const metrics=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+2,resources:performance.getEntriesByType('resource').length,transferBytes:performance.getEntriesByType('resource').reduce((s,r)=>s+r.transferSize,0)}));
+                results.push({device:name,path,elapsedMs:Date.now()-start,...metrics});
+              }
+              await p.goto('http://127.0.0.1:8765/admin/analytics/index.html');
+              if(await p.locator('#report').isVisible())throw Error('Unauthenticated report visible');
+              if(!(await p.locator('meta[name=robots]').getAttribute('content')).includes('noindex'))throw Error('Admin indexing not disabled');
+              await p.close();
+            }
+          }finally{await b.close();fs.writeFileSync('/tmp/final-audit/performance.json',JSON.stringify(results,null,2));}})().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: final-file-security-performance-report
+          path: /tmp/final-audit/
+      - name: Commit verified cleanup on review branch only
+        run: |
+          test "$GITHUB_REF" = refs/heads/review/homepage-freshness-20261128
+          git fetch origin review/homepage-freshness-20261128
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Remove verified unreferenced legacy copies from review tree'
+          git push origin HEAD:refs/heads/review/homepage-freshness-20261128

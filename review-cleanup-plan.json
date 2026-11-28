@@ -1,0 +1,56 @@
+{
+  "base_revision": "b64cc1f230d216037bb074bf0be1c15270076201",
+  "policy": "Remove obsolete copies only when no tracked source references them. Original blobs remain in Git history. Do not merge or deploy.",
+  "candidates": [
+    {
+      "path": "Inside_Mauritius_Professional_Website.zip",
+      "bytes": 227369,
+      "sha": "9fd94d9ab0ab3b983619ddf7d66ca843b8d710f5"
+    },
+    {
+      "path": "Screenshot_20261105_084909_ChatGPT.jpg",
+      "bytes": 751524,
+      "sha": "c752632e195bc7d98af1fedfb9f3374f2a70c994"
+    },
+    {
+      "path": "Screenshot_20261105_085834_GitHub.jpg",
+      "bytes": 244578,
+      "sha": "c7cc0cb4314abda28cf3742836d38f323619a5aa"
+    },
+    {
+      "path": "Screenshot_20261105_090246_GitHub.jpg",
+      "bytes": 460932,
+      "sha": "c1c5a732b1026fce30cb1545e58352a8f4e5ae75"
+    },
+    {
+      "path": "Screenshot_20261105_090843_Chrome.jpg",
+      "bytes": 333459,
+      "sha": "85e5e97f3f670a5cf0e36a4c3022c263b010b9ab"
+    },
+    {
+      "path": "index (1).html",
+      "bytes": 12421,
+      "sha": "df2a3b873d9672deb6f247f8723bd548a531d71f"
+    },
+    {
+      "path": "index.html.html",
+      "bytes": 12421,
+      "sha": "df2a3b873d9672deb6f247f8723bd548a531d71f"
+    },
+    {
+      "path": "inside-mauritius-preview-desktop.png",
+      "bytes": 847101,
+      "sha": "c15f27b027e2c0210e481da3080861b278bd935e"
+    },
+    {
+      "path": "inside-mauritius-preview-mobile.png",
+      "bytes": 575690,
+      "sha": "a0ec2153bba75e31d14b45a92dcac77e0f18feb4"
+    }
+  ],
+  "notes": [
+    "Google OAuth controls analytics report access, not static page access.",
+    "Noindex does not provide confidentiality.",
+    "No full history or live HTTP header audit is claimed."
+  ]
+}
