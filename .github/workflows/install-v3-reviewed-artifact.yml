@@ -1,0 +1,84 @@
+name: Install verified V3 artifact on review branch
+on:
+  push:
+    branches: ['review/homepage-freshness-20261128']
+    paths: ['.github/workflows/install-v3-reviewed-artifact.yml']
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: install-v3-reviewed-artifact
+  cancel-in-progress: false
+jobs:
+  install:
+    if: github.ref == 'refs/heads/review/homepage-freshness-20261128' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: review/homepage-freshness-20261128
+      - name: Download exact successful review artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          gh api repos/$GITHUB_REPOSITORY/actions/runs/46104371729 --jq '.conclusion' | grep -x success
+          gh api repos/$GITHUB_REPOSITORY/actions/artifacts/15246778385/zip > /tmp/verified-v3.zip
+          echo 'bdf3104c6f777672c1c0015ef9578c6e3d95b71c6f8efa1fb7b3319255ec4c1f  /tmp/verified-v3.zip' | sha256sum -c -
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Validate every recording and preserve existing audio
+        run: |
+          python - <<'PY'
+          import json, pathlib, zipfile, re, subprocess, hashlib
+          from concurrent.futures import ThreadPoolExecutor
+          root=pathlib.Path('.')
+          def parse(data):
+              return json.loads(data.decode('utf-8').split('=',1)[1].strip().rstrip(';'))
+          names=('headline-audio-data.js','audio-bulletins.js')
+          with zipfile.ZipFile('/tmp/verified-v3.zip') as z:
+              entries=z.namelist()
+              assert len(entries)==len(set(entries))
+              assert all(n in names or re.fullmatch(r'audio/(headline-[a-f0-9]{32}|bulletin-(morning|evening)-[0-9]{4}-[0-9]{2}-[0-9]{2})\.mp3',n) for n in entries)
+              prior=parse((root/names[0]).read_bytes())
+              fresh=parse(z.read(names[0]))
+              bulletins=parse(z.read(names[1]))
+              legacy={r['audioUrl'] for r in prior if r.get('engine')=='Kokoro' and (r.get('legacyV2') or not r.get('lastSeen'))}
+              assert legacy <= {r['audioUrl'] for r in fresh}
+              assert all((root/p).is_file() and (root/p).read_bytes()==z.read(p) for p in legacy)
+              assert all(r['audioUrl'] in entries for r in fresh+bulletins)
+              assert len(fresh)==208 and len(bulletins)==2
+              assert all(b.get('headlines') for b in bulletins)
+              for n in entries:
+                  p=root/n
+                  if n.endswith('.mp3') and p.exists():
+                      assert p.read_bytes()==z.read(n), 'Existing audio changed: '+n
+                  p.parent.mkdir(parents=True,exist_ok=True)
+                  p.write_bytes(z.read(n))
+              def check(n):
+                  result=subprocess.check_output(['ffprobe','-v','error','-select_streams','a:0','-show_entries','stream=codec_name:format=duration','-of','json',n])
+                  obj=json.loads(result)
+                  assert obj['streams'][0]['codec_name']=='mp3' and float(obj['format']['duration'])>.2,n
+              mp3=[n for n in entries if n.endswith('.mp3')]
+              with ThreadPoolExecutor(max_workers=8) as pool:
+                  list(pool.map(check,mp3))
+              for html in ('index.html','live-updates.html'):
+                  p=root/html
+                  s=p.read_text()
+                  for n in names:
+                      digest=hashlib.sha256((root/n).read_bytes()).hexdigest()[:16]
+                      s=re.sub(r'(src=["\'](?:\./)?'+re.escape(n)+r')(?:\?v=[^"\']*)?(["\'])',lambda m:m[1]+'?v='+digest+m[2],s)
+                  p.write_text(s)
+              print(f'Validated {len(mp3)} MP3s; {len(legacy)} legacy V2 references preserved; {len(bulletins)} dated bulletins')
+          PY
+          node --check headline-audio-data.js
+          node --check audio-bulletins.js
+      - name: Commit only to the existing review branch
+        run: |
+          test "$GITHUB_REF" = refs/heads/review/homepage-freshness-20261128
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- audio/ headline-audio-data.js audio-bulletins.js index.html live-updates.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Install checksum-verified Natural Voice V3 recordings on review branch'
+          git push origin HEAD:refs/heads/review/homepage-freshness-20261128
