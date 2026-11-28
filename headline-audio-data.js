@@ -2693,5 +2693,115 @@ window.INSIDE_MAURITIUS_HEADLINE_AUDIO = [
     "generated": true,
     "lastSeen": "2026-11-28",
     "legacyV2": false
+  },
+  {
+    "title": "Air Mauritius : Ken Arian directement mis en cause dans un affidavit d’Anba Manikham",
+    "sourceUrl": "https://ionnews.mu/air-mauritius-ken-arian-directement-mis-en-cause-dans-un-affidavit-danba-manikham/",
+    "audioUrl": "audio/headline-cff256bc34e890b39cad50f45ac49ae2.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Confidentiels d’ION",
+    "sourceUrl": "https://ionnews.mu/confidentiels-dion-2/",
+    "audioUrl": "audio/headline-890a4b4ff188c77513465d1aa99f8100.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Chemin-Grenier : Le nouveau marché peine à attirer commerçants et clients",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ1FLbFpDbC1nU3gyZW1BclM2RXd0dzZhSE9ieXU0ZzI1emJDS0FWR2lGeU5WX3VTM0ZiMVRla3NrNTdZbk5zbzdaN1Q4dUlSLXhtX3hJdmpPU09UWEY1UWdaS2pyWlROZzFIYnBSM2hmUXk2VlJnV05qdkVWSkZnQ1VkaUhCelpRWVk2LTl3?oc=5",
+    "audioUrl": "audio/headline-9c6da8724d8fe6e79295990fa0692ca4.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "L’école est finie : Quand les organisations non gouvernementales réinventent les vacances des enfants",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYmJzVmZ4TWl5RURSWUdlMThGUm92QTZzT2ltV0lldGNJcDlWcEZCX1o5bkFnbWJxc3QxOENEQ3lhVks2d1RJM2lWRlJULTZZdW9sX241WDQ0aFhXNWZmSXhKekpLQWZxM212Tnp0Um5LdGR2TGg5cGFiUElQdWhWQmM4dmxCdUlPbUs3X3UxWmhETlhFM0JyZnZDZVUybFR0aDlkbDJtOFdEaVE3MGNJ?oc=5",
+    "audioUrl": "audio/headline-87cae8389e127dbeb6bd17acf0d5738c.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Plants de cannabis valant Rs 2,9M saisis à Pont Bondieu en 2017 : Domun condamné à 14 ans de prison, Auckloo acquitté",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUGUwRVl5WEhkNWNkUHA0dW4tZ1RhT3RMcHgzS2tRMTFlVm5CU19MNjAtc0tSUHlvUzhrSUo2MnVKNW5zZ2R0VHpqUWF2TDhIcWwwN0VjRXUxb01rLTZaek5ZOVhxR0J6RWNTbFp5WUE3SUMwR3pkTmhTWWdvUTQ0aGRRRDVrWDhJd09LRzhaOEhCMU1xcEEwbVBzaU9rV3ZvOG1INlZCTEVNX2tFeGJiLTJjaDUzaloyQXZLbjBmdmdCM3MtUFVfOWdyM20?oc=5",
+    "audioUrl": "audio/headline-428ba91c10edeb288429a61e0409e128.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Camp-Caval : un chauffeur de taxi de 85 ans retrouvé mort, un couple arrêté",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNmp6amhNM1ctdmQyaDhLckNPLWNiT3FTTUpmM0dQVmNYUXZDOHd6aW9qV3pHUk9CMFVJTjRBNzZIX0dneWVuWHVpZ3k1dVo1SjJaM3pMaElKLVNLOE10SERoX0UxWTZlZklrMUZmS0hUb2NQbmE5T2JxWFZQVE82bGN2QnRGRHVlNFlETkdlc0xfcVYxRlVsU3pvQQ?oc=5",
+    "audioUrl": "audio/headline-c4636fcd56b5cb7c31f75dc86f017893.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Notation de Moody’s : Raphaele Auberty : “An upgrade is unlikely at this stage”",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJHTzN2WldVZTE2YUtwSDFaNjZ3V0ltRUJGR3ZhaXFPcS1wZExmUlRsb1dGYzAxSGhzaDZrNUZINEZPMnFzRDVQVWMyWXpHMHVGYVExUFdycmFPY0dBeHJhZUFEdUloazVpbEJuRTA1dUtVVDdiZDBPcDJKV3dtMVp3Y2NZV2xUckE?oc=5",
+    "audioUrl": "audio/headline-c31638b9430ffef6833657db1dc46ce0.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "Norse Atlantic : vols suspendus et financement urgent",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55TkstbGR4Vl93djN5YnFTQklLRVhYUDlhOWVnYUNpRTl6Rmw2NGdtY1pVd1FpRE8ta0ZGLWx4TzFtbUVSazl3a1RhM3BPNE5JZGhTWE9rU2pyQkJ4aVF2OXM0ZnR0V2UxdWVteTVIS1RzVDJKRU1yNFBR?oc=5",
+    "audioUrl": "audio/headline-977b748f0f0d96f98bc0c45d18918da3.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "France : interdite dans la mairie, la crèche de Noël renaît en version monumentale à Perpignan",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBkeHJ0RnlKR0xjNjR2UGVJVFlYWDMwdW1fN0hyWjZNTjVYVDRvcFdpU1NRa3lLSDB1dGpPYWhLb2JzVXV2ejdOenJ0VEZTRlotcU10NG96bDd3TWFwbkJUbWU4cw?oc=5",
+    "audioUrl": "audio/headline-69c81ab58cb6bea8b4132d751e104869.mp3",
+    "voice": "ff_siwis",
+    "language": "fr",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
+  },
+  {
+    "title": "[Blog] Whistleblower protection as a Human Rights duty",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41UzVFbjFaaE1vTlJNbFE5UHN1c19iVEJtbUk2TE9PdkU2TVVOYlRjRVJ5N1RXSFJweW9SSndRRUw3NGZiWmhMb2dueWpFRm1uYVJpa19lSW83amxlOVFQcFMtam9XUkZ1MHRUY3FxWjZLeUFKX1dNQU9n?oc=5",
+    "audioUrl": "audio/headline-07539d6f8e6b94ce90f7cf421d21ea87.mp3",
+    "voice": "bm_george",
+    "language": "en",
+    "engine": "Kokoro",
+    "generated": true,
+    "lastSeen": "2026-11-28",
+    "legacyV2": false
   }
 ];
