@@ -1,0 +1,95 @@
+name: Install tested 500-recording audio package (review only)
+on:
+  push:
+    branches: ['review/final-reconciled-20261128']
+    paths: ['.github/workflows/install-tested-500-audio.yml']
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: install-tested-500-audio
+  cancel-in-progress: false
+jobs:
+  install:
+    if: github.ref == 'refs/heads/review/final-reconciled-20261128' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve exact successful audio and browser test artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          gh api "repos/$GITHUB_REPOSITORY/actions/jobs/140967212286" --jq '.conclusion' | grep -x success
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/15261554845" --jq '.workflow_run.head_sha' | grep -x 3b856c22316ec090aecaa7c12525bcb8f02702ea
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/15261554845/zip" > /tmp/review-artifact.zip
+          echo '118638c24c98498a55f6dcf524e3bb276c5250bf16040c92c9e81ad6c96e01c4  /tmp/review-artifact.zip' | sha256sum -c -
+          python - <<'PY'
+          import zipfile, pathlib, hashlib
+          with zipfile.ZipFile('/tmp/review-artifact.zip') as z:
+              names=[n for n in z.namelist() if pathlib.PurePosixPath(n).name=='Inside-Mauritius-Samsung-A25-review.zip']
+              assert len(names)==1
+              b=z.read(names[0])
+              assert hashlib.sha256(b).hexdigest()=='a49925e9b10b618f4523af8682861a81979673063f589312ffeeae622d5ca6c5'
+              pathlib.Path('/tmp/verified-audio-package.zip').write_bytes(b)
+          PY
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Preserve archive and install only verified additive audio
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib, zipfile, re, subprocess
+          from concurrent.futures import ThreadPoolExecutor
+          root=pathlib.Path('.')
+          names=('headline-audio-data.js','post-audio-data.js','summary-audio-data.js','audio-bulletins.js')
+          def parse(b): return json.loads(b.decode('utf-8').split('=',1)[1].strip().rstrip(';'))
+          def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+          old={n:parse((root/n).read_bytes()) for n in names}
+          prior={r['audioUrl'] for rows in old.values() for r in rows}
+          assert len(prior)==445
+          before={p:sha(p) for p in (root/'audio').rglob('*') if p.is_file()}
+          with zipfile.ZipFile('/tmp/verified-audio-package.zip') as z:
+              entries=z.namelist()
+              assert len(entries)==len(set(entries))
+              new={n:parse(z.read(n)) for n in names}
+              assert all(new[n]==old[n] for n in names[1:])
+              assert new[names[0]][:len(old[names[0]])]==old[names[0]]
+              after={r['audioUrl'] for rows in new.values() for r in rows}
+              assert prior<=after and len(after)==500 and len(after-prior)==55
+              for p in sorted(after):
+                  assert re.fullmatch(r'audio/[A-Za-z0-9_-]+\.mp3',p),p
+                  dest=root/p
+                  b=z.read(p)
+                  if dest.exists():
+                      assert dest.read_bytes()==b, 'Existing recording mismatch: '+p
+                  else:
+                      assert p not in prior
+                      dest.parent.mkdir(parents=True,exist_ok=True)
+                      with dest.open('xb') as out: out.write(b)
+              assert all(p.is_file() and sha(p)==h for p,h in before.items())
+              def check(p):
+                  d=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','a:0','-show_entries','stream=codec_name:format=duration','-of','json',p]))
+                  assert d['streams'][0]['codec_name']=='mp3' and float(d['format']['duration'])>.2,p
+              with ThreadPoolExecutor(max_workers=8) as pool: list(pool.map(check,sorted(after)))
+              (root/names[0]).write_bytes(z.read(names[0]))
+          for page in ('index.html','world-news.html','live-updates.html'):
+              p=root/page
+              text=p.read_text(encoding='utf-8')
+              for name in (names[0],'world-news-data.js'):
+                  version=sha(root/name)[:16]
+                  text=re.sub(r'(src="'+re.escape(name)+r')(?:\?v=[^"]*)?"',lambda m:m[1]+'?v='+version+'"',text)
+              p.write_text(text,encoding='utf-8')
+          print('500 validated MP3 references; 445 original recordings preserved; 55 additive recordings')
+          PY
+          node --check headline-audio-data.js
+          git add -- audio/ headline-audio-data.js index.html world-news.html live-updates.html
+          test -z "$(git diff --cached --diff-filter=DM --name-only -- audio/)"
+          test "$(git diff --cached --diff-filter=A --name-only -- audio/ | wc -l)" -eq 55
+      - name: Commit only to review branch, no force push
+        run: |
+          test "$GITHUB_REF" = refs/heads/review/final-reconciled-20261128
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Install verified 500-recording audio library on final review branch'
+          git push origin HEAD:refs/heads/review/final-reconciled-20261128
