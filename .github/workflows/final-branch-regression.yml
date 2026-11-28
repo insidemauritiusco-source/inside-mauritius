@@ -1,0 +1,224 @@
+name: Final branch audio weather and Samsung review
+on:
+  push:
+    branches: ['review/final-reconciled-20261128']
+    paths: ['.github/workflows/final-branch-regression.yml','scripts/review_add_missing_audio.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: final-branch-regression
+  cancel-in-progress: false
+jobs:
+  weather:
+    if: github.ref == 'refs/heads/review/final-reconciled-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        feed: [marine, world-motion, icon, wind, ifs, indian-systems]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: matrix.feed == 'icon'
+        run: sudo apt-get update && sudo apt-get install -y cdo
+      - run: pip install 'numpy>=1.26,<3' 'netCDF4>=1.7,<2' 'Pillow>=10,<13' 'eccodes>=2.42,<3' 'ecmwf-opendata>=0.3,<1'
+      - name: Retrieve fresh official source data and validate
+        env:
+          FEED: ${{ matrix.feed }}
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/sync-weather
+          case "$FEED" in
+            marine) rm -f cyclone/waves.json cyclone/sst.json ;;
+            world-motion) rm -rf cyclone/world-motion ;;
+            *) rm -f "cyclone/$FEED.json" ;;
+          esac
+          python -m py_compile "cyclone/update-$FEED.py"
+          python "cyclone/update-$FEED.py"
+          if [ "$FEED" = icon ]; then
+            python - <<'PY'
+          import datetime as dt, json, math
+          m=json.load(open('cyclone/icon.json'))
+          cycle=dt.datetime.fromisoformat(m['cycle'])
+          assert m['model']=='DWD ICON' and m['nx']==180 and m['ny']==91
+          assert dt.timedelta(0)<=dt.datetime.now(dt.timezone.utc)-cycle<=dt.timedelta(hours=24)
+          assert [f['hour'] for f in m['frames']]==[0,12,24,48]
+          for f in m['frames']:
+              assert dt.datetime.fromisoformat(f['valid'])==cycle+dt.timedelta(hours=f['hour'])
+              for k in ('u','v','p','t'):
+                  assert len(f[k])==16380 and all(math.isfinite(x) for x in f[k])
+          PY
+          fi
+          case "$FEED" in
+            marine) test -s cyclone/waves.json && test -s cyclone/sst.json; cp cyclone/waves.json cyclone/sst.json /tmp/sync-weather/ ;;
+            world-motion)
+              python - <<'PY'
+          import json, pathlib, datetime as dt
+          from PIL import Image
+          import numpy as np
+          root=pathlib.Path('cyclone/world-motion')
+          m=json.loads((root/'manifest.json').read_text())
+          assert m['source']=='NOAA GMGSI LWIR' and m['bounds']==[-60,-180,60,180]
+          assert 2<=len(m['frames'])<=6
+          times=[]
+          for f in m['frames']:
+              t=dt.datetime.fromisoformat(f['time'])
+              times.append(t)
+              assert f['file']==t.strftime('%Y%m%d%H')+'.png'
+              with Image.open(root/f['file']) as image:
+                  a=np.array(image.convert('RGBA'))
+              assert (a[:,:,3]>0).mean()>=.7
+              assert np.std(a[:,:,0][a[:,:,3]>0])>1
+          assert times==sorted(set(times))
+          assert dt.timedelta(0)<=dt.datetime.now(dt.timezone.utc)-times[-1]<=dt.timedelta(hours=10)
+          PY
+              cp -r cyclone/world-motion /tmp/sync-weather/
+              ;;
+            indian-systems)
+              python -c "import json; assert json.load(open('cyclone/indian-systems.json'))['status']=='ok'"
+              cp cyclone/indian-systems.json /tmp/sync-weather/
+              ;;
+            *) test -s "cyclone/$FEED.json"; cp "cyclone/$FEED.json" /tmp/sync-weather/ ;;
+          esac
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synchronized-weather-${{ matrix.feed }}
+          path: /tmp/sync-weather/
+          if-no-files-found: error
+  audio_and_mobile:
+    if: github.ref == 'refs/heads/review/final-reconciled-20261128'
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install existing audio generator dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak-ng libsndfile1
+          pip install 'kokoro==0.9.4' 'soundfile==0.13.1' 'langdetect==1.0.9'
+      - name: Generate missing audio without modifying the remote branch
+        run: |
+          python -m py_compile scripts/review_add_missing_audio.py
+          python scripts/review_add_missing_audio.py --limit 150 --report /tmp/audio-review.json
+          git add -- audio/ headline-audio-data.js index.html world-news.html live-updates.html
+          git diff --cached --diff-filter=DM --name-only -- audio/ | tee /tmp/audio-changed-existing.txt
+          test ! -s /tmp/audio-changed-existing.txt
+          node --check headline-audio-data.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: additive-audio-review
+          path: |
+            /tmp/audio-review.json
+            headline-audio-data.js
+            audio/
+            index.html
+            world-news.html
+            live-updates.html
+          if-no-files-found: error
+          retention-days: 7
+      - name: Verify preserved website and build local test package
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib, subprocess, zipfile
+          root=pathlib.Path('.')
+          def rows(n):return json.loads((root/n).read_text().split('=',1)[1].strip().rstrip(';'))
+          audio={x['audioUrl'] for name in ('headline-audio-data.js','post-audio-data.js','summary-audio-data.js','audio-bulletins.js') for x in rows(name)}
+          assert len(audio)>=445 and all((root/p).is_file() for p in audio)
+          assert len(rows('newsroom-data.js'))>=51
+          assert len(json.loads((root/'photo-gallery-approved.json').read_text())['items'])==4
+          for f in ('wind.json','ifs.json','icon.json','waves.json','sst.json','indian-systems.json','world-motion/manifest.json'):
+              assert (root/'cyclone'/f).is_file()
+          manifest=json.loads((root/'cyclone/world-motion/manifest.json').read_text())
+          assert len(manifest['frames'])==6
+          for f in manifest['frames']: assert (root/'cyclone/world-motion'/f['file']).is_file()
+          files=subprocess.check_output(['git','ls-files','-z']).decode().strip('\0').split('\0')
+          out=pathlib.Path('/tmp/samsung-review');out.mkdir()
+          package=out/'Inside-Mauritius-Samsung-A25-review.zip'
+          included=[p for p in files if not p.startswith('.github/') and not p.startswith('scripts/')]
+          with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in included:z.write(root/p,p)
+          with zipfile.ZipFile(package) as z:
+              assert z.testzip() is None
+              assert audio<=set(z.namelist())
+              assert {'index.html','START-SAMSUNG-TEST.cmd','samsung-local-test.py','SAMSUNG-A25-TEST.md'}<=set(z.namelist())
+          sha=hashlib.sha256(package.read_bytes()).hexdigest()
+          (out/'SHA256.txt').write_text(sha+'  '+package.name+'\n')
+          print(json.dumps({'package_files':len(included),'audio':len(audio),'photos':4,'news':len(rows('newsroom-data.js')),'satellite_frames':6,'sha256':sha,'bytes':package.stat().st_size}))
+          PY
+      - name: Test extracted ZIP on local server with desktop and Android browsers
+        run: |
+          set -eu
+          mkdir -p /tmp/samsung-extracted
+          python -m zipfile -e /tmp/samsung-review/Inside-Mauritius-Samsung-A25-review.zip /tmp/samsung-extracted
+          cd /tmp/samsung-extracted
+          python samsung-local-test.py --self-test >/tmp/samsung-review/server.log 2>&1 &
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          curl -fsSI http://127.0.0.1:8765/ | grep -i 'Cache-Control: no-store'
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+          node <<'JS'
+          const {chromium,devices}=require('playwright');
+          const fs=require('fs');
+          (async()=>{const b=await chromium.launch();const report=[];try{
+            for(const [name,cfg] of [['desktop',{viewport:{width:1440,height:900}}],['Android emulation',devices['Galaxy S9+']],['A25-sized emulation',{viewport:{width:384,height:832},isMobile:true,hasTouch:true}]]){
+              const p=await b.newPage(cfg);
+              await p.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8765/')?r.continue():r.abort());
+              await p.goto('http://127.0.0.1:8765/');
+              await p.waitForFunction(()=>!!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO);
+              const missing=await p.evaluate(()=>window.INSIDE_MAURITIUS_NEWSROOM_ARTICLES.filter(s=>!window.INSIDE_MAURITIUS_NATURAL_POST_AUDIO.find(s)).length);
+              if(missing)throw Error('Missing audio '+missing);
+              await p.locator('#imDashboardStart').click();
+              await p.waitForFunction(()=>document.querySelector('#imDashboardPlayer').currentTime>0.1);
+              await p.locator('#imDashboardNext').click();
+              await p.locator('#imDashboardStop').click();
+              await p.waitForFunction(()=>document.querySelector('#imDashboardPlayer').paused);
+              if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2))throw Error('Homepage overflow');
+              await p.goto('http://127.0.0.1:8765/live-updates.html');
+              await p.locator('#v3Bulletins button').filter({hasText:'retrospective'}).click();
+              await p.waitForFunction(()=>document.querySelector('#v3QueueAudio').currentTime>0.1);
+              await p.locator('#v3Stop').click();
+              await p.goto('http://127.0.0.1:8765/photo-gallery.html');
+              await p.locator('#gallery article').nth(3).waitFor();
+              if(await p.locator('#gallery article').count()!==4||await p.locator('#gallery article a').count()!==8)throw Error('Gallery mismatch');
+              await p.locator('#gallery article button').first().click();
+              await p.locator('#viewer[open]').waitFor();
+              await p.locator('#close').click();
+              for(const file of ['wind.json','ifs.json','icon.json','waves.json','sst.json','indian-systems.json','world-motion/manifest.json']){
+                const r=await p.request.get('http://127.0.0.1:8765/cyclone/'+file);
+                if(!r.ok())throw Error('Weather file missing: '+file);
+                await r.json();
+              }
+              const satellite=await (await p.request.get('http://127.0.0.1:8765/cyclone/world-motion/manifest.json')).json();
+              for(const f of satellite.frames){
+                const r=await p.request.get('http://127.0.0.1:8765/cyclone/world-motion/'+f.file);
+                if(!r.ok()||!(await r.body()).length)throw Error('Satellite missing');
+              }
+              report.push({device:name,homepage:'pass',audio:'pass',bulletin:'pass',gallery:'pass',weather_assets:'pass'});
+              await p.close();
+            }
+          }finally{await b.close();fs.writeFileSync('/tmp/samsung-review/browser-results.json',JSON.stringify(report,null,2));}
+          console.log(JSON.stringify(report));
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Samsung-A25-audio-review-tested
+          path: /tmp/samsung-review/
+          if-no-files-found: error
+          retention-days: 7
