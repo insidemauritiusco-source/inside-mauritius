@@ -88,7 +88,7 @@ def sst_erddap():
     query="sst[(last)][(0.0)][0:8:719][0:8:1439]"
     raw=read(base+urllib.parse.quote(query,safe="[]():,")).decode("utf-8")
     rows=csv.DictReader(io.StringIO(raw)); units=next(rows)
-    if units.get("sst") not in ("degree_C","degrees_C","degree_Celsius","degrees_Celsius","degC"): raise ValueError("Unexpected SST units")
+    if units.get("sst") not in ("degree_C","degrees_C","degree_Celsius","degrees_Celsius","degC","Celsius"): raise ValueError("Unexpected SST units")
     grid={"nx":180,"ny":90,"lon0":.125,"lat0":-89.875,"dx":2,"dy":2}
     vals=[None]*16200; seen=set(); stamps=set()
     for r in rows:
@@ -124,7 +124,7 @@ def sst():
             try:
                 with Dataset("daily.nc",mode="r",memory=read(url)) as ds:
                     sv=ds.variables["sst"]
-                    if sv.dimensions!=("time","zlev","lat","lon") or sv.shape!=(1,1,720,1440) or sv.units not in ("degree_C","degrees_C","degree_Celsius","degrees_Celsius","degC"): raise ValueError("Unexpected SST dimensions or units")
+                    if sv.dimensions!=("time","zlev","lat","lon") or sv.shape!=(1,1,720,1440) or sv.units not in ("degree_C","degrees_C","degree_Celsius","degrees_Celsius","degC","Celsius"): raise ValueError(f"Unexpected SST metadata: dimensions={sv.dimensions!r}, shape={sv.shape!r}, units={getattr(sv, 'units', None)!r}")
                     lat=np.asarray(ds.variables["lat"][:]); lon=np.asarray(ds.variables["lon"][:])
                     if not np.allclose(lat,np.arange(720)*.25-89.875,atol=.0001) or not np.allclose(lon,np.arange(1440)*.25+.125,atol=.0001): raise ValueError("Unexpected SST coordinates")
                     tv=ds.variables["time"]
