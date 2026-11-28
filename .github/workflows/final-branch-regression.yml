@@ -2,7 +2,7 @@ name: Final branch audio weather and Samsung review
 on:
   push:
     branches: ['review/final-reconciled-20261128']
-    paths: ['.github/workflows/final-branch-regression.yml','scripts/review_add_missing_audio.py']
+    paths: ['.github/workflows/final-branch-regression.yml','scripts/review_add_missing_audio.py','cyclone/update-*.py']
   workflow_dispatch:
 permissions:
   contents: read
