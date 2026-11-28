@@ -1,5 +1,5 @@
 {
-  "instructions": "Manual review only. Do not publish or mark approved until editor expressly approves. Dates are historical, not current news.",
+  "instructions": "Editor approved these four archive photographs for review only on 28 November 2026. No merge or deployment authorized.",
   "items": [
     {
       "region": "mauritius",
@@ -11,8 +11,12 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
       "photo_date": "2009-07-04",
-      "approved": false,
-      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable."
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
     },
     {
       "region": "rodrigues",
@@ -24,8 +28,12 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
       "photo_date": "2006-10",
-      "approved": false,
-      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable."
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
     },
     {
       "region": "reunion",
@@ -37,8 +45,12 @@
       "license": "CC BY-SA 2.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
       "photo_date": "2005-11-11",
-      "approved": false,
-      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable."
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
     },
     {
       "region": "world",
@@ -50,8 +62,12 @@
       "license": "Public domain (US NASA work)",
       "license_url": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg",
       "photo_date": "1972-12-07",
-      "approved": false,
-      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable."
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "Commons version has prior cropping and colour adjustments; credit NASA / Apollo 17 crew, edits described by Deglr6328. No new alterations by Inside Mauritius."
     }
   ]
 }

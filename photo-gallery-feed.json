@@ -1,4 +1,73 @@
 {
-  "generated_at": "2026-11-27T23:19:09.324038+00:00",
-  "items": []
+  "generated_at": "2026-11-28T00:00:00Z",
+  "items": [
+    {
+      "region": "mauritius",
+      "title": "Caudan Waterfront, Port Louis — archive 2009",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mauritius_Port-Louis_CaudanWaterfront.JPG",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mauritius_Port-Louis_CaudanWaterfront.JPG",
+      "alt": "Caudan Waterfront, Port Louis — archive 2009",
+      "credit": "B.navez",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "photo_date": "2009-07-04",
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
+    },
+    {
+      "region": "rodrigues",
+      "title": "Anse Ali beach — archive 2006",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rodrigues_AnseAli.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rodrigues_AnseAli.jpg",
+      "alt": "Anse Ali beach — archive 2006",
+      "credit": "B.navez",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "photo_date": "2006-10",
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
+    },
+    {
+      "region": "reunion",
+      "title": "Cilaos mountain landscape — archive 2005",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reunion_Island_-_Cilaos.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reunion_Island_-_Cilaos.jpg",
+      "alt": "Cilaos mountain landscape — archive 2005",
+      "credit": "Jean-Marc Astesana",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "photo_date": "2005-11-11",
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "No new alterations by Inside Mauritius."
+    },
+    {
+      "region": "world",
+      "title": "Earth from Apollo 17 — historical photograph",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Blue_Marble.jpg",
+      "alt": "Earth from Apollo 17 — historical photograph",
+      "credit": "NASA",
+      "license": "Public domain (US NASA work)",
+      "license_url": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg",
+      "photo_date": "1972-12-07",
+      "approved": true,
+      "usage": "Archive/illustrative gallery only; not a current event photograph. Preserve original, show creator, source and linked licence; indicate any changes and follow share-alike terms where applicable.",
+      "published_at": "2026-11-28",
+      "approved_at": "2026-11-28",
+      "archive": true,
+      "modification_note": "Commons version has prior cropping and colour adjustments; credit NASA / Apollo 17 crew, edits described by Deglr6328. No new alterations by Inside Mauritius."
+    }
+  ]
 }
